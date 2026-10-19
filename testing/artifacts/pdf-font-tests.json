@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "python": "C:\\Users\\lucky\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "script": "testing/tests/test_pdf_fonts.py",
+  "scientificVerification": false
+}

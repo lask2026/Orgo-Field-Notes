@@ -23,7 +23,7 @@ jobs:
       - name: Validate graph references and build
         run: |
           npm test
-          node scripts/build.mjs
+          node dev/scripts/build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

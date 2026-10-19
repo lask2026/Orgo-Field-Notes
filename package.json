@@ -4,17 +4,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "test": "node --test tests/unit.test.mjs tests/chapter02-review.test.mjs tests/chapter03-review.test.mjs tests/chapter04-review.test.mjs tests/chapter05-review.test.mjs tests/chapter06-review.test.mjs tests/chapter07-review.test.mjs tests/chapter08-review.test.mjs tests/chapter09-review.test.mjs tests/chapter10-review.test.mjs tests/chapter11-review.test.mjs tests/chapter12-review.test.mjs tests/audit.test.mjs tests/review-panel.test.mjs",
-    "test:schema": "python scripts/validate_schema.py",
-    "test:browser": "node tests/browser.mjs",
-    "test:regression": "node tests/regression.mjs",
-    "audit:build": "node scripts/audit/build-packets.mjs",
-    "audit:check": "node scripts/audit/check-packets.mjs",
-    "test:audit": "node --test tests/audit.test.mjs",
-    "test:panel": "node --test tests/review-panel.test.mjs",
-    "audit:panel": "node scripts/audit/review-panel.mjs",
-    "dev": "node scripts/serve.mjs"
+    "build": "node dev/scripts/build.mjs",
+    "test": "node --test testing/tests/unit.test.mjs testing/tests/chapter02-review.test.mjs testing/tests/chapter03-review.test.mjs testing/tests/chapter04-review.test.mjs testing/tests/chapter05-review.test.mjs testing/tests/chapter06-review.test.mjs testing/tests/chapter07-review.test.mjs testing/tests/chapter08-review.test.mjs testing/tests/chapter09-review.test.mjs testing/tests/chapter10-review.test.mjs testing/tests/chapter11-review.test.mjs testing/tests/chapter12-review.test.mjs testing/tests/audit.test.mjs testing/tests/review-panel.test.mjs testing/tests/layout.test.mjs",
+    "test:schema": "python testing/scripts/validate_schema.py",
+    "test:browser": "node testing/tests/browser.mjs",
+    "test:regression": "node testing/tests/regression.mjs",
+    "audit:build": "node review/scripts/build-packets.mjs",
+    "audit:check": "node review/scripts/check-packets.mjs",
+    "test:audit": "node --test testing/tests/audit.test.mjs",
+    "test:panel": "node --test testing/tests/review-panel.test.mjs",
+    "audit:panel": "node review/scripts/review-panel.mjs",
+    "dev": "node dev/scripts/serve.mjs",
+    "test:layout": "node --test testing/tests/layout.test.mjs",
+    "test:pdf": "node testing/scripts/run-pdf-tests.mjs",
+    "report": "node testing/scripts/report.mjs",
+    "subject:new": "node dev/scripts/new-subject.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

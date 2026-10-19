@@ -1,0 +1,25 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {spawnSync} from 'node:child_process';
+import {root,readJSON,buildCases,sourceSnapshot,reviewSchema,casePrompt,systemPrompt} from './cases.mjs';
+process.chdir(root);
+const args=process.argv.slice(2),idx=args.indexOf('--chapter'),chapter=idx>=0?Number(args[idx+1]):null;
+if(chapter!==null&&(!Number.isInteger(chapter)||chapter<1||chapter>12))throw Error('--chapter must be 1–12');
+const chapters=fs.readdirSync('dev/chapters').filter(f=>/^chapter-\d\d.json$/.test(f)).sort().map(f=>readJSON('dev/chapters/'+f)).filter(c=>chapter===null||c.id===chapter),molecules=readJSON('dev/chapters/molecules.json');
+fs.mkdirSync('review/packets',{recursive:true});fs.writeFileSync('review/packets/response.schema.json',JSON.stringify(reviewSchema,null,2)+'\n');
+for(const ch of chapters){const dir=`review/packets/chapter-${String(ch.id).padStart(2,'0')}`;fs.mkdirSync(dir,{recursive:true});const {cases,used}=buildCases(ch,molecules),snapshot=sourceSnapshot(ch,molecules);
+ const packet={packetVersion:1,chapter:ch.id,title:ch.title,sourceSnapshot:snapshot,referencePassagesIncluded:false,scientificVerification:false,cases};
+ fs.writeFileSync(`${dir}/cases.json`,JSON.stringify(packet,null,2)+'\n');fs.writeFileSync(`${dir}/chapter-data.json`,JSON.stringify(ch,null,2)+'\n');fs.writeFileSync(`${dir}/molecules.json`,JSON.stringify(Object.fromEntries(used.map(id=>[id,molecules[id]])),null,2)+'\n');
+ fs.writeFileSync(`${dir}/BLIND-EXERCISES.json`,JSON.stringify({chapter:ch.id,sourceSnapshot:snapshot,exercises:cases.filter(c=>c.kind==='blind').map(c=>c.payload)},null,2)+'\n');
+ fs.writeFileSync(`${dir}/LLAMA-PROMPTS.jsonl`,cases.map(c=>JSON.stringify({id:c.id,kind:c.kind,itemIds:c.itemIds,messages:[{role:'system',content:systemPrompt},{role:'user',content:casePrompt(c)}]})).join('\n')+'\n');
+ const prompt=`Review Chapter ${ch.id}: ${ch.title} of Orgo Field Notes. Read the attached PDF as an audit packet, not as a trusted textbook. It contains original app content and labeled screenshots.\n\nAudit every lesson card, walkthrough step, molecular name/formula/charge, graph, diagram, atom selection, hint, answer key, option feedback, and explanation. Re-derive answers. Check curriculum coverage against the included section-heading checklist. Look for scientifically incorrect claims, missing reaction conditions, stereochemical errors, ambiguous questions, valid answer aliases, and misleading highlights/arrows. Check the visual evidence for clipping, readability, labels and consistency with explanations.\n\nFor each finding give the exact item ID/page, severity (critical/major/minor), problematic claim, reasoning, supporting evidence, proposed correction, and confidence. Distinguish confirmed errors from suspicions. Source titles and URLs are not supplied reference passages: do not pretend to have read them. Ask for an authoritative excerpt when needed.\n\nReturn a coverage checklist using the item IDs, and list all unreviewed/uncertain items. Screenshots cannot prove that clicks, persistence or animations work; those need execution. Do not claim to run the app. Do not call a chapter verified just because no errors were found. All model output is a candidate review pending adjudication.\n\nFor independent solving, first use 01-BLIND-EXERCISES.pdf in a separate chat with no full review packet or keys. Solve each numbered stage from the graph, diagram and context, marking missing information. Save that attempt before opening 02-CHAPTER-REVIEW.pdf, then compare it with the keys.\n`;
+ fs.writeFileSync(`${dir}/AI-STUDIO-PROMPT.txt`,prompt);fs.writeFileSync(`${dir}/inventory.csv`,'caseId,kind,coverageItems\n'+cases.map(c=>`${c.id},${c.kind},${c.itemIds.length}`).join('\n')+'\n');
+ console.log(`Prepared chapter ${ch.id}: ${cases.length} model cases.`);
+}
+if(args.includes('--text-only')){spawnSync(process.execPath,['review/scripts/index-packets.mjs'],{stdio:'inherit',windowsHide:true});console.log('Text-only packets prepared. PDF and screenshot evidence have NOT been regenerated.');process.exit(0);}
+function run(bin,args){const r=spawnSync(bin,args,{stdio:'inherit',windowsHide:true});if(r.status!==0)process.exit(r.status||1);}
+run(process.execPath,['dev/scripts/build.mjs']);run(process.execPath,['review/scripts/capture.mjs',...(chapter?['--chapter',String(chapter)]:[])]);
+const candidates=[process.env.ORGO_AUDIT_PYTHON,'python',path.join(os.homedir(),'.cache','codex-runtimes','codex-primary-runtime','dependencies','python','python.exe')].filter(Boolean);
+const python=candidates.find(bin=>spawnSync(bin,['-c','import reportlab,pypdf,PIL'],{stdio:'ignore',windowsHide:true}).status===0);
+if(!python)throw Error('PDF libraries missing. Run python -m pip install -r review/requirements.txt; then rerun. Text packets and captured screenshots are preserved.');
+run(python,['review/scripts/make_pdfs.py',...(chapter?['--chapter',String(chapter)]:[])]);
+run(process.execPath,['review/scripts/index-packets.mjs']);
+console.log('Chapter review packets are ready in review/packets/. No files were uploaded.');

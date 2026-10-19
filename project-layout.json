@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "subject": {"id": "orgo", "title": "Orgo Field Notes", "targetLevel": "MCAT", "adapter": "orgo"},
+  "paths": {
+    "source": "dev/src",
+    "content": "dev/chapters",
+    "schema": "dev/schema",
+    "authoring": "dev/scripts",
+    "references": "dev/references",
+    "tests": "testing/tests",
+    "testTools": "testing/scripts",
+    "artifacts": "testing/artifacts",
+    "reviewTools": "review/scripts",
+    "reviewConfig": "review/config",
+    "reviewPackets": "review/packets",
+    "reviewResults": "review/results",
+    "reviewTemplates": "review/templates",
+    "reviewDocs": "review/docs",
+    "build": "dist"
+  },
+  "privateReferenceDirectories": ["organic_chemistry_kaplan"]
+}

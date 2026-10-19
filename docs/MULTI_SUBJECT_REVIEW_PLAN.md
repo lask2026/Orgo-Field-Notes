@@ -4,7 +4,7 @@
 
 Use one repeatable process for MCAT biology, physics, organic chemistry and subsequent subjects. Reuse the review contracts, evidence formats and software checks; supply a subject-specific curriculum, visual representation and scientific rubric. Do not assume every subject has twelve chapters or that chemistry-specific atom rules apply to physics or biology.
 
-This document and the prompts/rubrics in `review-templates/` are reusable now. The current application and `scripts/audit/` runners remain Orgo-specific. A subject-neutral packet builder, adapters, report importer and AI Studio browser automation are proposed work, not completed features. Existing Orgo tests or model results do not certify another subject.
+This document and the prompts/rubrics in `review/templates/` are reusable now. The current application and `review/scripts/` runners remain Orgo-specific. A subject-neutral packet builder, adapters, report importer and AI Studio browser automation are proposed work, not completed features. Existing Orgo tests or model results do not certify another subject.
 
 ## Common application contract
 
@@ -76,7 +76,7 @@ Maintain separate status fields: software checks and their environment; model co
 | General chemistry / biochemistry | Species, equilibria, energy diagrams, pathways and quantitative data | System conditions, conservation/stoichiometry, equilibrium versus kinetics, thermodynamic conventions, biochemical state and approximation validity |
 | New subjects | Their own typed assets and objective map | Add a substantive rubric and validator tests before claiming subject support |
 
-Detailed biology and physics checklists are in `review-templates/SUBJECT-RUBRICS.md`. These are audit questions, not a verified curriculum or a substitute for sources.
+Detailed biology and physics checklists are in `review/templates/SUBJECT-RUBRICS.md`. These are audit questions, not a verified curriculum or a substitute for sources.
 
 ## Rollout plan
 
@@ -90,4 +90,4 @@ Detailed biology and physics checklists are in `review-templates/SUBJECT-RUBRICS
 
 ## Definition of a completed review cycle
 
-All actual chapters/items have explicit coverage, every stage has a verdict, local tests are recorded for the current source/environment, candidate findings have adjudication statuses, and regenerated packets match the repaired source. Uncertainty and external sign-off requirements remain visible. A cycle can be fully documented while scientific approval is still pending; it must not be reported as independent expert verification in that state.
+All actual dev/chapters/items have explicit coverage, every stage has a verdict, local tests are recorded for the current source/environment, candidate findings have adjudication statuses, and regenerated packets match the repaired source. Uncertainty and external sign-off requirements remain visible. A cycle can be fully documented while scientific approval is still pending; it must not be reported as independent expert verification in that state.

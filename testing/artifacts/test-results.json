@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-19",
+  "counts": {
+    "chapters": 12,
+    "lessons": 51,
+    "workshops": 60,
+    "stages": 181,
+    "molecules": 71
+  },
+  "schema": {
+    "documents": 13,
+    "status": "passed",
+    "validator": "jsonschema 4.26.0; Draft 2020-12"
+  },
+  "unit": {
+    "groups": 60,
+    "status": "passed",
+    "runner": "Node.js built-in test runner",
+    "files": [
+      "testing/tests/unit.test.mjs",
+      "testing/tests/chapter02-review.test.mjs",
+      "testing/tests/chapter03-review.test.mjs",
+      "testing/tests/chapter04-review.test.mjs",
+      "testing/tests/chapter05-review.test.mjs",
+      "testing/tests/chapter06-review.test.mjs",
+      "testing/tests/chapter07-review.test.mjs",
+      "testing/tests/chapter08-review.test.mjs",
+      "testing/tests/chapter09-review.test.mjs",
+      "testing/tests/chapter10-review.test.mjs",
+      "testing/tests/chapter11-review.test.mjs",
+      "testing/tests/chapter12-review.test.mjs"
+    ]
+  },
+  "auditInfrastructure": {
+    "groups": 8,
+    "status": "passed",
+    "file": "testing/tests/audit.test.mjs"
+  },
+  "reviewPanelInfrastructure": {
+    "groups": 14,
+    "status": "passed",
+    "file": "testing/tests/review-panel.test.mjs"
+  },
+  "projectLayoutInfrastructure": {
+    "groups": 4,
+    "status": "passed",
+    "file": "testing/tests/layout.test.mjs"
+  },
+  "browser": {
+    "status": "passed",
+    "chapters": [
+      {
+        "id": 1,
+        "lessons": 6,
+        "exercises": 12,
+        "stages": 34,
+        "status": "passed"
+      },
+      {
+        "id": 2,
+        "lessons": 6,
+        "exercises": 8,
+        "stages": 24,
+        "status": "passed"
+      },
+      {
+        "id": 3,
+        "lessons": 3,
+        "exercises": 3,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 4,
+        "lessons": 5,
+        "exercises": 5,
+        "stages": 15,
+        "status": "passed"
+      },
+      {
+        "id": 5,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 6,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 7,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 8,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 9,
+        "lessons": 3,
+        "exercises": 3,
+        "stages": 9,
+        "status": "passed"
+      },
+      {
+        "id": 10,
+        "lessons": 4,
+        "exercises": 5,
+        "stages": 15,
+        "status": "passed"
+      },
+      {
+        "id": 11,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 12,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      }
+    ],
+    "checks": [
+      "Keyboard atom selection",
+      "Incorrect answers rejected",
+      "All lesson steps and challenges",
+      "All guided stages",
+      "Assisted/reveal persistence",
+      "Mobile 375px",
+      "Dark mode",
+      "Reduced motion",
+      "Standalone file offline: navigation and molecular rendering",
+      "Blocked local storage fallback"
+    ]
+  },
+  "regression": {
+    "status": "passed",
+    "checks": [
+      "Correct stage progress persists across reload",
+      "Export/import round trip; reset cancellation and confirmation",
+      "Real UI rejects missing naming hyphen; no solution/name in rendered SVG labels",
+      "Hint-assisted completion does not increment independent-solve count",
+      "Downloaded app loads and checks answers with network disabled",
+      "Save App works again from file:// with no dependency fetches",
+      "All 51 concepts at 320, 375, 768px: no page overflow; one h1/main; named controls",
+      "Large-molecule atom controls have 44px touch targets",
+      "Interactive Newman angle changes interpretation; Fischer diagram rendered",
+      "Guided Newman captions withhold answers at changed angles; chair transfer switches graph; optical unit text and cards render",
+      "Chapter 3 mobile orbital occupancy, expanded cards and sources, quiz concealment, pointer/keyboard N selection, and explicit acetate charge",
+      "TLC eluent slider updates model Rf",
+      "pH slider updates ionization model",
+      "Chapter 4 speciation labels/extremes and accessible slider, alpha challenge, forward equation, no early numeric answer, 1e5/+1 parsing",
+      "Chapter 5 actual active-step and disabled-choice contrast >=4.5:1 in light/dark at mobile/desktop; aliases and product formula",
+      "Chapter 6 isopropyl alcohol alias, reduced product formula, new cyanohydrin atom-pair assessment and visible carbonyl flow",
+      "Chapter 7 charged carbon contributor, formula/charge, mobile numbering and Michael carbonyl/beta contrast without success leakage",
+      "Chapter 8 exact aliases/rejections, product formula concealment and completion, complete soap-head focus",
+      "Chapter 9 spaced intermediate arrows, acetate/ethanoate wording and explicit CH3OH/MeOH aliases reject methoxide",
+      "Chapter 10 mobile oxygen badge click, two-decimal pI rejection/success, new Gabriel workshop and conventional phosphate formula",
+      "Chapter 11 matched IR broad bands, eight NMR multiplet lines and distinct signal labels, candidate graph absent until successful completion",
+      "Chapter 12 labeled TLC spots and accessible slider extremes; independent worked-distance question has no conflicting model and validates 0.30",
+      "Corrupt saved JSON recovers without crashing"
+    ]
+  },
+  "chemistry": "Author reviewed; independent expert review pending",
+  "limitations": [
+    "Chromium on Windows tested; Safari/Firefox not tested",
+    "Accessibility checks are targeted and not certification",
+    "No remote repository or live deployment supplied"
+  ]
+}

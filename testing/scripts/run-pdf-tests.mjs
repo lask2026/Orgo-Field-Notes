@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import {spawnSync} from 'node:child_process';
+import {projectRoot} from '../../project-layout.mjs';
+process.chdir(projectRoot);
+const candidates=[process.env.ORGO_AUDIT_PYTHON,'python',path.join(os.homedir(),'.cache','codex-runtimes','codex-primary-runtime','dependencies','python','python.exe')].filter(Boolean);
+const python=candidates.find(bin=>spawnSync(bin,['-c','import reportlab,pypdf,PIL'],{stdio:'ignore',windowsHide:true}).status===0);
+if(!python)throw Error('PDF test dependencies missing. Install review/requirements.txt or set ORGO_AUDIT_PYTHON.');
+const result=spawnSync(python,['testing/tests/test_pdf_fonts.py'],{stdio:'inherit',windowsHide:true});
+fs.mkdirSync('testing/artifacts',{recursive:true});
+fs.writeFileSync('testing/artifacts/pdf-font-tests.json',JSON.stringify({status:result.status===0?'passed':'failed',python,script:'testing/tests/test_pdf_fonts.py',scientificVerification:false},null,2)+'\n');
+process.exitCode=result.status===0?0:(result.status||1);

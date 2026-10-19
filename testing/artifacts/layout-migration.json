@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "projectRootUnchanged": true,
+  "booksMoved": false,
+  "semanticContentChanged": false,
+  "groups": {
+    "canonicalSource": {
+      "files": 27,
+      "identical": 27,
+      "logicalInventorySha256": "41939736d4d34628a347aa6071554b4bcd2da798d5c2a56e79249a9367e7e974"
+    },
+    "originalPilotRecord": {
+      "files": 1,
+      "identical": 1,
+      "logicalInventorySha256": "224dd66c6fa12c8cf60455df1426a65659067c3841d2816590a085ee5bf9e4ea"
+    },
+    "reviewPacketEvidence": {
+      "files": 996,
+      "identical": 996,
+      "logicalInventorySha256": "57e184c6191ba2be37c325203bcb6a3da52eeca280153cd47533057b71c4b1ea"
+    },
+    "originalReviewEvidence": {
+      "files": 63,
+      "identical": 63,
+      "logicalInventorySha256": "6fab53e7e43ea66579eb53e1101acc273f1629e9941bd0fd06133e08e9c735f0"
+    },
+    "approvedReferences": {
+      "files": 2,
+      "identical": 2,
+      "logicalInventorySha256": "a855fdbb613945a76851a7570cce2c1fbc0e343d80a51d182e3a9028f6a945b7"
+    }
+  },
+  "mismatches": [],
+  "note": "One-time byte preservation check against the pre-move inventory. Later intentional content edits require new review snapshots; this report is historical evidence, not an immutable-content unit test."
+}
