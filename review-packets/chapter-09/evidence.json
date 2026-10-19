@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "6155664634c695f24c00b63203875a747c2b8d959f43daca2ab73998d6e79301",
+    "sha256": "61f01981f61b79e85d49955fe93d7d1e83b45ecf90c85ecfb318e4a99e122c0d",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -82,7 +82,7 @@
       "id": "cyclic-derivative-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/cyclic-derivative-stage-1-molecule.png",
-      "sha256": "b4138907eb13eaa39ee010e305d69c7ebeb4dc29253b3cd15ff51a357de1da19",
+      "sha256": "f993875ee9286381f7a4304e9109cd49a1450f5e76f7fddba86f3a139eee8d08",
       "width": 661,
       "height": 419
     },
@@ -162,7 +162,7 @@
       "id": "acyl-order-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/acyl-order-stage-1-molecule.png",
-      "sha256": "ad8e51946d9fea8c69edc071b54cb1cb6f4013f14667ddeaa614bee4130db77e",
+      "sha256": "3071427fde88daef4db63a9703c6b84f9350cba7ae7e50b8a5f05fb3cb3c9fcc",
       "width": 661,
       "height": 419
     },
@@ -242,7 +242,7 @@
       "id": "hydrolysis-products-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/hydrolysis-products-stage-1-molecule.png",
-      "sha256": "ad8e51946d9fea8c69edc071b54cb1cb6f4013f14667ddeaa614bee4130db77e",
+      "sha256": "3071427fde88daef4db63a9703c6b84f9350cba7ae7e50b8a5f05fb3cb3c9fcc",
       "width": 661,
       "height": 419
     },
@@ -322,7 +322,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "3b0e8f7e46348eb8f256dcdf45136d0dcc4205c17db940753445f5ae4c0d8a59",
+      "sha256": "626346f5a8cb7665eaed96f9b963fe6c70320843590f6cfc73fa64833c5f4435",
       "width": 1360,
       "height": 1008
     },
@@ -330,17 +330,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "8550664c5406a65581b0917d7d9f4901c4dacacf949654d411fd469301acbe8b",
+      "sha256": "4ea43a42edac49f4eebe0edc7218bdeb7c469e6aeed19fa5796c60dbedac778a",
       "width": 375,
-      "height": 1934
+      "height": 1968
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "bda67cb5fd08d7c02bc0a15541cb3c081e8873061d462bba89563b202fa7e733",
+      "sha256": "0c9767972f808d41c25ac7bfd030631e26dd3ed7843d5de88b45d6de94ba7df3",
       "width": 375,
-      "height": 1934
+      "height": 1968
     }
   ],
   "interactions": [

@@ -3,7 +3,7 @@
   "chapter": 6,
   "title": "Aldehydes and Ketones I",
   "sourceSnapshot": {
-    "sha256": "d0d0d09227b74ef7d4660bad9ddd184acdb205f5dac847a6beb7bcfcd817be05",
+    "sha256": "ddc0dfe617b9e1328d9aa0ad66ae49f297cff24645ab83aaec5ca185f01eedbe",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -24,17 +24,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],
@@ -467,17 +467,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],
@@ -1034,17 +1034,17 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               },
               {
                 "e": "O",
-                "x": 108,
+                "x": 189,
                 "y": 25
               }
             ],
@@ -1652,17 +1652,17 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               },
               {
                 "e": "O",
-                "x": 108,
+                "x": 189,
                 "y": 25
               }
             ],
@@ -1785,17 +1785,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],

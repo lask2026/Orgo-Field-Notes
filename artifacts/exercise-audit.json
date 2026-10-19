@@ -715,6 +715,20 @@
     "scientificReview": "Author reviewed; not independently expert verified"
   },
   {
+    "chapter": 10,
+    "id": "gabriel-route",
+    "lesson": "synthesis",
+    "molecule": "phthalimide-anion",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
     "chapter": 11,
     "id": "ir-read",
     "lesson": "ir",
@@ -758,7 +772,7 @@
   },
   {
     "chapter": 11,
-    "id": "combined-data",
+    "id": "combined-evidence",
     "lesson": "combine",
     "molecule": "acetone",
     "stages": 3,

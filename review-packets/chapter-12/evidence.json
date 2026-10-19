@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "85a6e74e3884be40c19a6be27b9b39ff01c92acc5cc0dcb4e834e2c96cb453e1",
+    "sha256": "f65296249b8be1b32f61761b9cf5146a7d198458f55addcb797b14aff35d96ec",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,7 +34,7 @@
       "id": "distillation-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/distillation-step-1.png",
-      "sha256": "e1196d2ea6bbd838f968c9455ffb9f655aa6724455a48aa081f41b8ed3e474b8",
+      "sha256": "f4ce598a8ef37a31eb50d6fc0c453a83fdc9e1b4974e3d40e2fda59151551542",
       "width": 661,
       "height": 359
     },
@@ -42,7 +42,7 @@
       "id": "distillation-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/distillation-step-2.png",
-      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "sha256": "ffa7fdb17bb84da9a9fd8480ecae91e20cb1e5b30125d198206a908e7d25f412",
       "width": 661,
       "height": 359
     },
@@ -58,25 +58,17 @@
       "id": "tlc-step-1-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/tlc-step-1-diagram.png",
-      "sha256": "ba97c4e73c24cd8e774d209cf01c5fc869313b5b0b6695d519bed5cb734ac859",
+      "sha256": "a2480cd653757cb551a5ac7f007c19420c61df8abb4948a675a7c0bb5a18a58c",
       "width": 661,
-      "height": 445
+      "height": 466
     },
     {
       "id": "tlc-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/tlc-step-2.png",
-      "sha256": "4e4c9ec837329041b98bb48924a2618a3620a71e0b460dea0869bcd144c4111c",
+      "sha256": "0eba99a530fb512298b95c77906629c9a9965011808c3071af8d36ac4eaadd55",
       "width": 661,
       "height": 359
-    },
-    {
-      "id": "tlc-step-2-diagram",
-      "kind": "learn-diagram",
-      "file": "screenshots/tlc-step-2-diagram.png",
-      "sha256": "ce5507ff7cd2f5661a05b663720539c28215e4ece158d73c06fce680825d755f",
-      "width": 661,
-      "height": 424
     },
     {
       "id": "specialized-step-1",
@@ -98,7 +90,7 @@
       "id": "acid-extraction-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/acid-extraction-stage-1-molecule.png",
-      "sha256": "964e72f7c0b7008aacaaae07fb2f361ea6a84d0b98cf4f377be5dd66018405e9",
+      "sha256": "0ada5d8c360b771edbac3043fa94a0a4687fb932bcb8d5e87621332912d942f2",
       "width": 661,
       "height": 419
     },
@@ -178,7 +170,7 @@
       "id": "choose-distillation-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/choose-distillation-stage-1-molecule.png",
-      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "sha256": "ffa7fdb17bb84da9a9fd8480ecae91e20cb1e5b30125d198206a908e7d25f412",
       "width": 661,
       "height": 359
     },
@@ -202,7 +194,7 @@
       "id": "choose-distillation-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/choose-distillation-stage-2-molecule.png",
-      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "sha256": "ffa7fdb17bb84da9a9fd8480ecae91e20cb1e5b30125d198206a908e7d25f412",
       "width": 661,
       "height": 359
     },
@@ -226,7 +218,7 @@
       "id": "choose-distillation-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/choose-distillation-stage-3-molecule.png",
-      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "sha256": "ffa7fdb17bb84da9a9fd8480ecae91e20cb1e5b30125d198206a908e7d25f412",
       "width": 661,
       "height": 359
     },
@@ -250,7 +242,7 @@
       "id": "choose-distillation-complete",
       "kind": "practice-complete",
       "file": "screenshots/choose-distillation-complete.png",
-      "sha256": "56ec82cc0944d90e6c09700731a19746917d4cec17757244f5310cb87dd46bdc",
+      "sha256": "98f0f2698c8bece124756191ea9bf81bc5fb448ef02a81626692805ca3557093",
       "width": 1324,
       "height": 612
     },
@@ -269,14 +261,6 @@
       "sha256": "2a2f063d2672343eda4ee6c03831a910d7c342fd3a35caac8e0e827281e84892",
       "width": 607,
       "height": 255
-    },
-    {
-      "id": "rf-calculation-diagram",
-      "kind": "practice-diagram",
-      "file": "screenshots/rf-calculation-diagram.png",
-      "sha256": "5ae6e791b36126009751756e815c50ed21d7d641bf0dad1abde7cfc4e0f73a5e",
-      "width": 661,
-      "height": 424
     },
     {
       "id": "rf-calculation-stage-1-feedback",
@@ -338,9 +322,9 @@
       "id": "rf-calculation-complete",
       "kind": "practice-complete",
       "file": "screenshots/rf-calculation-complete.png",
-      "sha256": "d9c8f2e528eb4ffdb2d0b3d4307b5375490a77bf6a95e51ea86c8ed1f7bdfb5f",
+      "sha256": "a674e288041a7d089b20e2b3fe814dfc0de659a2cea29e6430ceec56852150ad",
       "width": 1324,
-      "height": 1030
+      "height": 653
     },
     {
       "id": "chromatography-match-stage-1-molecule",
@@ -426,7 +410,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "42dc3abd05ef9d8116ef3792d9bd30b9a055722884e4d7c72f6e1c6be849e118",
+      "sha256": "4a9d6c90cb20a77a077aeac2f1b4245267192c105c3484c07e9dc8404961a45e",
       "width": 1360,
       "height": 1090
     },
@@ -434,17 +418,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "edb2d13f52424816453ef82070c0513e7fb6cb7984e7a08e4181c17abe0f9ffa",
+      "sha256": "85e6ee2edb550744fd06d1909bdca07bd0790e59681286800848a71cd56a842c",
       "width": 375,
-      "height": 2206
+      "height": 2229
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "3079ce7438082536ea4a48deb2d85b323bad3b4233f6244b6a0551eb552df875",
+      "sha256": "16bdec53ef0940bcf32abe9c6f732cbb4a6646fb90a86f85e182c777b2e6bc75",
       "width": 375,
-      "height": 2206
+      "height": 2229
     }
   ],
   "interactions": [

@@ -3,7 +3,7 @@
   "chapter": 5,
   "title": "Alcohols",
   "sourceSnapshot": {
-    "sha256": "abaec75d990db6ff0ddd7d875947d6667a6be2f1a7584af2577b306ee8379625",
+    "sha256": "e0aba8415372238842de622276ebe08c610a249120b149a4661cad480286128c",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1737,17 +1737,17 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               },
               {
                 "e": "O",
-                "x": 108,
+                "x": 189,
                 "y": 25
               }
             ],
@@ -2587,17 +2587,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],

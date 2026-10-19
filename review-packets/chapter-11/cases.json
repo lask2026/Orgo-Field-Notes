@@ -3,7 +3,7 @@
   "chapter": 11,
   "title": "Spectroscopy",
   "sourceSnapshot": {
-    "sha256": "62bb9823874ba4729b5d48335a400ea6e22a2b685ec0cc1e2fb8bd9893db1f38",
+    "sha256": "572d417848c5a0499da334708ac3a96bdb0a56b6b661172c4172b787e3756caf",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -66,7 +66,7 @@
           "min": 400,
           "max": 4000,
           "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
-          "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+          "caption": "Schematic ketone absorption; not measured data. Real IR spectra often plot transmittance downward.",
           "peaks": [
             {
               "x": 1715,
@@ -104,7 +104,48 @@
               "An alcohol OH",
               "Only a new alkane",
               "A nitrile as the sole explanation"
-            ]
+            ],
+            "molecule": {
+              "atoms": [
+                {
+                  "e": "C",
+                  "x": 50,
+                  "y": 115
+                },
+                {
+                  "e": "C",
+                  "x": 108,
+                  "y": 85
+                },
+                {
+                  "e": "C",
+                  "x": 166,
+                  "y": 115
+                },
+                {
+                  "e": "O",
+                  "x": 108,
+                  "y": 25
+                }
+              ],
+              "bonds": [
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  1
+                ]
+              ]
+            }
           }
         ]
       }
@@ -262,22 +303,27 @@
           "min": 0,
           "max": 5,
           "unit": "Chemical shift δ / ppm",
-          "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+          "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
           "peaks": [
             {
               "x": 4.1,
               "height": 0.65,
-              "label": "A"
+              "label": "Signal 1",
+              "lines": 4,
+              "spacing": 0.06
             },
             {
               "x": 2,
               "height": 0.85,
-              "label": "B"
+              "label": "Signal 2",
+              "lines": 1
             },
             {
               "x": 1.2,
               "height": 0.85,
-              "label": "C"
+              "label": "Signal 3",
+              "lines": 3,
+              "spacing": 0.06
             }
           ]
         },
@@ -307,67 +353,27 @@
       }
     },
     {
-      "id": "ch11:blind:combined-data",
+      "id": "ch11:blind:combined-evidence",
       "chapter": 11,
       "kind": "blind",
       "itemIds": [
-        "combined-data:stage-1",
-        "combined-data:stage-2",
-        "combined-data:stage-3"
+        "combined-evidence:stage-1",
+        "combined-evidence:stage-2",
+        "combined-evidence:stage-3"
       ],
       "payload": {
-        "id": "combined-data",
-        "molecule": {
-          "atoms": [
-            {
-              "e": "C",
-              "x": 50,
-              "y": 115
-            },
-            {
-              "e": "C",
-              "x": 108,
-              "y": 85
-            },
-            {
-              "e": "C",
-              "x": 166,
-              "y": 115
-            },
-            {
-              "e": "O",
-              "x": 108,
-              "y": 25
-            }
-          ],
-          "bonds": [
-            [
-              0,
-              1,
-              1
-            ],
-            [
-              1,
-              2,
-              1
-            ],
-            [
-              1,
-              3,
-              2
-            ]
-          ]
-        },
+        "id": "combined-evidence",
+        "structureWithheld": true,
         "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm.",
         "stages": [
           {
-            "id": "combined-data:stage-1",
+            "id": "combined-evidence:stage-1",
             "type": "number",
             "prompt": "For formula C3H6O, calculate DBE.",
             "unit": "DBE"
           },
           {
-            "id": "combined-data:stage-2",
+            "id": "combined-evidence:stage-2",
             "type": "choice",
             "prompt": "A single 6H singlet near 2 ppm suggests…",
             "options": [
@@ -377,7 +383,7 @@
             ]
           },
           {
-            "id": "combined-data:stage-3",
+            "id": "combined-evidence:stage-3",
             "type": "text",
             "prompt": "With a ketone-like IR band, name the consistent C3H6O structure."
           }
@@ -453,7 +459,8 @@
                 "Reduction retains oxygen.",
                 "C=O becomes C–OH."
               ],
-              "highlights": {}
+              "highlights": {},
+              "molecule": "isopropanol"
             }
           ],
           "summary": "IR supports functional groups, with positions interpreted as ranges.",
@@ -462,7 +469,7 @@
             "min": 400,
             "max": 4000,
             "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
-            "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+            "caption": "Schematic ketone absorption; not measured data. Real IR spectra often plot transmittance downward.",
             "peaks": [
               {
                 "x": 1715,
@@ -524,7 +531,55 @@
           "cond": "propanone",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         },
-        "stageMolecules": {}
+        "stageMolecules": {
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
       },
       "dependsOn": "ch11:blind:ir-read"
     },
@@ -729,22 +784,27 @@
             "min": 0,
             "max": 5,
             "unit": "Chemical shift δ / ppm",
-            "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+            "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
             "peaks": [
               {
                 "x": 4.1,
                 "height": 0.65,
-                "label": "A"
+                "label": "Signal 1",
+                "lines": 4,
+                "spacing": 0.06
               },
               {
                 "x": 2,
                 "height": 0.85,
-                "label": "B"
+                "label": "Signal 2",
+                "lines": 1
               },
               {
                 "x": 1.2,
                 "height": 0.85,
-                "label": "C"
+                "label": "Signal 3",
+                "lines": 3,
+                "spacing": 0.06
               }
             ]
           }
@@ -821,17 +881,17 @@
       "dependsOn": "ch11:blind:nmr-ethyl"
     },
     {
-      "id": "ch11:exercise:combined-data",
+      "id": "ch11:exercise:combined-evidence",
       "chapter": 11,
       "kind": "exercise",
       "itemIds": [
-        "combined-data:stage-1",
-        "combined-data:stage-2",
-        "combined-data:stage-3"
+        "combined-evidence:stage-1",
+        "combined-evidence:stage-2",
+        "combined-evidence:stage-3"
       ],
       "payload": {
         "exercise": {
-          "id": "combined-data",
+          "id": "combined-evidence",
           "lesson": "combine",
           "molecule": "acetone",
           "label": "Test a structure against combined data",
@@ -875,7 +935,9 @@
               "accepted": [
                 "acetone",
                 "propanone",
-                "propan-2-one"
+                "propan-2-one",
+                "2-propanone",
+                "dimethyl ketone"
               ],
               "explanation": "Acetone has one DBE, a ketone, and two equivalent methyl groups.",
               "hints": [
@@ -886,7 +948,8 @@
             }
           ],
           "summary": "Formula + IR + NMR consistently identify acetone.",
-          "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm."
+          "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm.",
+          "concealStructure": true
         },
         "molecule": {
           "name": "propanone",
@@ -937,7 +1000,7 @@
         },
         "stageMolecules": {}
       },
-      "dependsOn": "ch11:blind:combined-data"
+      "dependsOn": "ch11:blind:combined-evidence"
     },
     {
       "id": "ch11:lesson:ir",
@@ -982,7 +1045,7 @@
                 "min": 400,
                 "max": 4000,
                 "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
-                "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+                "caption": "Schematic ketone absorption; not measured data. Real IR spectra often plot transmittance downward.",
                 "peaks": [
                   {
                     "x": 1715,
@@ -1006,7 +1069,28 @@
                   3
                 ]
               },
-              "reveal": true
+              "reveal": true,
+              "diagram": {
+                "type": "spectrum",
+                "min": 400,
+                "max": 4000,
+                "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+                "caption": "Schematic hydrogen-bonded alcohol: broad OH and no ketone carbonyl. Widths and intensities are illustrative.",
+                "peaks": [
+                  {
+                    "x": 3400,
+                    "height": 0.8,
+                    "label": "O–H",
+                    "shape": "broad",
+                    "width": 400
+                  },
+                  {
+                    "x": 2950,
+                    "height": 0.35,
+                    "label": "C–H"
+                  }
+                ]
+              }
             },
             {
               "label": "3. Acid pattern",
@@ -1019,7 +1103,28 @@
                   3
                 ]
               },
-              "reveal": true
+              "reveal": true,
+              "diagram": {
+                "type": "spectrum",
+                "min": 400,
+                "max": 4000,
+                "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+                "caption": "Schematic carboxylic acid: very broad OH together with C=O; not measured data.",
+                "peaks": [
+                  {
+                    "x": 2900,
+                    "height": 0.6,
+                    "label": "Acid O–H",
+                    "shape": "broad",
+                    "width": 800
+                  },
+                  {
+                    "x": 1710,
+                    "height": 0.9,
+                    "label": "C=O"
+                  }
+                ]
+              }
             }
           ]
         },
@@ -1188,7 +1293,7 @@
           "molecule": "butadiene",
           "tag": "Longer wavelength means lower photon energy",
           "cards": {
-            "rule": "<p>UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime.</p>",
+            "rule": "<p>UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime. For a simple pi system, a pi → pi* excitation can promote an electron from the highest occupied molecular orbital (HOMO) to the lowest unoccupied molecular orbital (LUMO). Extended conjugation often narrows that gap in comparable systems; allowed transitions and actual spectra also depend on the molecule.</p>",
             "cue": "<p>More extended conjugation often gives a red shift. Doubling wavelength halves photon energy.</p>",
             "trap": "<p>Conjugation trends compare appropriate related systems, not every possible molecule. UV absorption does not uniquely identify a structure. Beer–Lambert requires compatible units and an appropriate concentration range.</p>",
             "app": "<p>Conjugated chromophores underlie retinal photochemistry and many biological absorbance measurements.</p>"
@@ -1276,12 +1381,12 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               }
             ],
@@ -1322,25 +1427,23 @@
           "tag": "Three independent kinds of evidence",
           "cards": {
             "rule": "<p>Chemical shift reports environment; integration reports relative proton count; splitting reports coupling. In simple first-order cases, coupling to n equivalent neighboring protons produces n+1 lines. Equivalent protons do not split one another. Deshielded protons appear downfield at higher ppm.</p>",
-            "cue": "<p>Shift = neighborhood; area = population; splitting = neighbors.</p>",
-            "trap": "<p>n+1 is a limited first-order rule, not universal. Nonequivalent neighbors can give more complex patterns; exchangeable OH/NH protons often do not show the expected simple coupling. Chemical equivalence depends on symmetry and timescale.</p>",
+            "cue": "<p>Shift = neighborhood; area = population; splitting = neighbors. Upfield means lower ppm and greater shielding; downfield means higher ppm. Tetramethylsilane (TMS) is commonly assigned δ = 0 ppm. Coupling constant J is the line spacing in Hz, not the integral or chemical shift.</p>",
+            "trap": "<p>n+1 is a limited first-order rule, not universal. Nonequivalent neighbors can give more complex patterns; exchangeable OH/NH protons often do not show the expected simple coupling. Chemical equivalence depends on symmetry and timescale. NMR requires nonzero nuclear spin. Odd-mass isotopes such as ¹H and ¹³C are active; odd-atomic-number nuclei with even mass, such as ²H and ¹⁴N, can also be active. Even-proton/even-neutron nuclei such as ¹²C and ¹⁶O have spin zero. Some active isotopes have broad or difficult signals, so activity alone does not guarantee easy detection.</p>",
             "app": "<p>Typical rough proton regions: alkyl 0–3 ppm; C next to O often 3–4.5; vinylic about 4.5–6.5; aromatic 6–8.5; aldehydic 9–10; acid OH often 10–13. Use the full pattern.</p>"
           },
           "steps": [
             {
               "label": "1. Three proton sets",
-              "text": "<p>Ethyl ethanoate has acyl methyl, OCH2, and terminal ethyl methyl proton sets. Their integrals are 3:2:3. The carbonyl carbon has no H.</p>",
+              "text": "<p>Ethyl ethanoate has acyl methyl, OCH2, and terminal ethyl methyl proton sets. Their integrals are 3:2:3. The carbonyl carbon has no H. The three green carbon sites carry separate proton environments, not one combined set. Their positions and integrals distinguish them; the orange carbonyl carbon carries no H.</p>",
               "molecule": "ethylacetate",
               "highlights": {
-                "sub": [
+                "prin": [
                   0,
                   4,
                   5
                 ],
-                "prin": [
-                  1,
-                  2,
-                  3
+                "sub": [
+                  1
                 ]
               },
               "reveal": true,
@@ -1349,22 +1452,27 @@
                 "min": 0,
                 "max": 5,
                 "unit": "Chemical shift δ / ppm",
-                "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+                "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
                 "peaks": [
                   {
                     "x": 4.1,
                     "height": 0.65,
-                    "label": "A"
+                    "label": "Signal 1",
+                    "lines": 4,
+                    "spacing": 0.06
                   },
                   {
                     "x": 2,
                     "height": 0.85,
-                    "label": "B"
+                    "label": "Signal 2",
+                    "lines": 1
                   },
                   {
                     "x": 1.2,
                     "height": 0.85,
-                    "label": "C"
+                    "label": "Signal 3",
+                    "lines": 3,
+                    "spacing": 0.06
                   }
                 ]
               }
@@ -1375,7 +1483,6 @@
               "molecule": "ethylacetate",
               "highlights": {
                 "path": [
-                  3,
                   4,
                   5
                 ],
@@ -1392,22 +1499,27 @@
                 "min": 0,
                 "max": 5,
                 "unit": "Chemical shift δ / ppm",
-                "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+                "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
                 "peaks": [
                   {
                     "x": 4.1,
                     "height": 0.65,
-                    "label": "A"
+                    "label": "Signal 1",
+                    "lines": 4,
+                    "spacing": 0.06
                   },
                   {
                     "x": 2,
                     "height": 0.85,
-                    "label": "B"
+                    "label": "Signal 2",
+                    "lines": 1
                   },
                   {
                     "x": 1.2,
                     "height": 0.85,
-                    "label": "C"
+                    "label": "Signal 3",
+                    "lines": 3,
+                    "spacing": 0.06
                   }
                 ]
               }
@@ -1430,22 +1542,27 @@
                 "min": 0,
                 "max": 5,
                 "unit": "Chemical shift δ / ppm",
-                "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+                "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
                 "peaks": [
                   {
                     "x": 4.1,
                     "height": 0.65,
-                    "label": "A"
+                    "label": "Signal 1",
+                    "lines": 4,
+                    "spacing": 0.06
                   },
                   {
                     "x": 2,
                     "height": 0.85,
-                    "label": "B"
+                    "label": "Signal 2",
+                    "lines": 1
                   },
                   {
                     "x": 1.2,
                     "height": 0.85,
-                    "label": "C"
+                    "label": "Signal 3",
+                    "lines": 3,
+                    "spacing": 0.06
                   }
                 ]
               }
@@ -1575,12 +1692,12 @@
             },
             {
               "label": "3. Challenge an alternative",
-              "text": "<p>Ethanal has only two carbons and an aldehydic H; it cannot fit C3H6O or the supplied 6H singlet. Test each candidate against every observation.</p>",
-              "molecule": "acetaldehyde",
+              "text": "<p>Propanal shares C3H6O and DBE=1 with acetone, and both have C=O absorption. But propanal has an aldehydic H (shown explicitly as CH at the terminal carbonyl carbon) and multiple proton environments; it does not fit the single 6H singlet. Compare every observation, not just formula and IR.</p>",
+              "molecule": "propanal",
               "highlights": {
                 "prin": [
-                  1,
-                  2
+                  2,
+                  3
                 ]
               },
               "reveal": true
@@ -1635,24 +1752,30 @@
             "cond": "propanone",
             "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
           },
-          "acetaldehyde": {
-            "name": "ethanal",
-            "formula": "C2H4O",
+          "propanal": {
+            "name": "propanal",
+            "formula": "C3H6O",
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 95,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 155,
                 "y": 85
               },
               {
+                "e": "C",
+                "x": 215,
+                "y": 115,
+                "showHydrogens": true
+              },
+              {
                 "e": "O",
-                "x": 108,
-                "y": 25
+                "x": 267,
+                "y": 85
               }
             ],
             "bonds": [
@@ -1664,13 +1787,18 @@
               [
                 1,
                 2,
+                1
+              ],
+              [
+                2,
+                3,
                 2
               ]
             ],
-            "w": 320,
+            "w": 340,
             "h": 200,
-            "cond": "ethanal",
-            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+            "cond": "propanal",
+            "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
           }
         }
       }
@@ -1922,12 +2050,12 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             }
           ],
@@ -2024,32 +2152,38 @@
       }
     },
     {
-      "id": "ch11:molecule:acetaldehyde",
+      "id": "ch11:molecule:propanal",
       "chapter": 11,
       "kind": "molecule",
       "itemIds": [
-        "acetaldehyde"
+        "propanal"
       ],
       "payload": {
-        "id": "acetaldehyde",
+        "id": "propanal",
         "authorClaims": {
-          "name": "ethanal",
-          "formula": "C2H4O",
+          "name": "propanal",
+          "formula": "C3H6O",
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 95,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 155,
               "y": 85
             },
             {
+              "e": "C",
+              "x": 215,
+              "y": 115,
+              "showHydrogens": true
+            },
+            {
               "e": "O",
-              "x": 108,
-              "y": 25
+              "x": 267,
+              "y": 85
             }
           ],
           "bonds": [
@@ -2061,13 +2195,18 @@
             [
               1,
               2,
+              1
+            ],
+            [
+              2,
+              3,
               2
             ]
           ],
-          "w": 320,
+          "w": 340,
           "h": 200,
-          "cond": "ethanal",
-          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          "cond": "propanal",
+          "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
         }
       }
     },
@@ -2117,7 +2256,7 @@
             "id": "uv",
             "title": "UV–visible: conjugation and energy",
             "tag": "Longer wavelength means lower photon energy",
-            "coreRule": "UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime.",
+            "coreRule": "UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime. For a simple pi system, a pi → pi* excitation can promote an electron from the highest occupied molecular orbital (HOMO) to the lowest unoccupied molecular orbital (LUMO). Extended conjugation often narrows that gap in comparable systems; allowed transitions and actual spectra also depend on the molecule.",
             "stepTopics": [
               "1. Follow conjugation",
               "2. Connect wavelength to energy"
@@ -2178,7 +2317,7 @@
             ]
           },
           {
-            "id": "combined-data",
+            "id": "combined-evidence",
             "title": "Test a structure against combined data",
             "lesson": "combine",
             "stages": [
@@ -2205,6 +2344,14 @@
           {
             "label": "Conjugation and UV absorption: OpenStax 14.8",
             "location": "https://openstax.org/books/organic-chemistry/pages/14-8-interpreting-ultraviolet-spectra-the-effect-of-conjugation"
+          },
+          {
+            "label": "NMR-active nuclei: OpenStax 13.1, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/13-1-nuclear-magnetic-resonance-spectroscopy"
+          },
+          {
+            "label": "UV HOMO/LUMO excitation: OpenStax 14.7, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/14-7-ultraviolet-spectroscopy"
           }
         ],
         "referencePassages": []

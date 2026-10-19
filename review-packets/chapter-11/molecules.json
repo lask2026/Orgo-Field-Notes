@@ -193,12 +193,12 @@
     "atoms": [
       {
         "e": "C",
-        "x": 50,
+        "x": 131,
         "y": 115
       },
       {
         "e": "C",
-        "x": 108,
+        "x": 189,
         "y": 85
       }
     ],
@@ -281,24 +281,30 @@
     "cond": "ethyl ethanoate",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },
-  "acetaldehyde": {
-    "name": "ethanal",
-    "formula": "C2H4O",
+  "propanal": {
+    "name": "propanal",
+    "formula": "C3H6O",
     "atoms": [
       {
         "e": "C",
-        "x": 50,
+        "x": 95,
         "y": 115
       },
       {
         "e": "C",
-        "x": 108,
+        "x": 155,
         "y": 85
       },
       {
+        "e": "C",
+        "x": 215,
+        "y": 115,
+        "showHydrogens": true
+      },
+      {
         "e": "O",
-        "x": 108,
-        "y": 25
+        "x": 267,
+        "y": 85
       }
     ],
     "bonds": [
@@ -310,12 +316,17 @@
       [
         1,
         2,
+        1
+      ],
+      [
+        2,
+        3,
         2
       ]
     ],
-    "w": 320,
+    "w": 340,
     "h": 200,
-    "cond": "ethanal",
-    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+    "cond": "propanal",
+    "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
   }
 }

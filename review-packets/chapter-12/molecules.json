@@ -211,37 +211,37 @@
       {
         "e": "C",
         "x": 170,
-        "y": 37
+        "y": 93
       },
       {
         "e": "C",
         "x": 228.88972745734185,
-        "y": 71
+        "y": 127
       },
       {
         "e": "C",
         "x": 228.88972745734185,
-        "y": 139
+        "y": 195
       },
       {
         "e": "C",
         "x": 170,
-        "y": 173
+        "y": 229
       },
       {
         "e": "C",
         "x": 111.11027254265817,
-        "y": 139
+        "y": 195
       },
       {
         "e": "C",
         "x": 111.11027254265818,
-        "y": 71
+        "y": 127
       },
       {
         "e": "C",
         "x": 170,
-        "y": 5
+        "y": 25
       }
     ],
     "bonds": [
@@ -282,7 +282,7 @@
       ]
     ],
     "w": 320,
-    "h": 203,
+    "h": 260,
     "cond": "methylbenzene (toluene)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },

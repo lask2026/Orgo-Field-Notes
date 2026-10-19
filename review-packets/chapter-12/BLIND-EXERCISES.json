@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "85a6e74e3884be40c19a6be27b9b39ff01c92acc5cc0dcb4e834e2c96cb453e1",
+    "sha256": "f65296249b8be1b32f61761b9cf5146a7d198458f55addcb797b14aff35d96ec",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -137,37 +137,37 @@
           {
             "e": "C",
             "x": 170,
-            "y": 37
+            "y": 93
           },
           {
             "e": "C",
             "x": 228.88972745734185,
-            "y": 71
+            "y": 127
           },
           {
             "e": "C",
             "x": 228.88972745734185,
-            "y": 139
+            "y": 195
           },
           {
             "e": "C",
             "x": 170,
-            "y": 173
+            "y": 229
           },
           {
             "e": "C",
             "x": 111.11027254265817,
-            "y": 139
+            "y": 195
           },
           {
             "e": "C",
             "x": 111.11027254265818,
-            "y": 71
+            "y": 127
           },
           {
             "e": "C",
             "x": 170,
-            "y": 5
+            "y": 25
           }
         ],
         "bonds": [
@@ -338,10 +338,7 @@
           ]
         ]
       },
-      "diagram": {
-        "type": "tlc",
-        "caption": "Explore the normal-phase trend; use the distances in the question for the calculation."
-      },
+      "context": "Use only the stated travel distances for this calculation. The separate Learn & Explore slider illustrates an independent TLC trend, not these measurements.",
       "stages": [
         {
           "id": "rf-calculation:stage-1",

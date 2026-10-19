@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "6b989303fa56f8031e1c25019a744972a5edba574aedfdf91bc5b8ae88dd9d06",
+    "sha256": "521e89fcbb1f092d4a6f4f9718e92bc66ebf8d573e2c3af43d35f43158d8f927",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -10,7 +10,7 @@
       "id": "orbitals-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/orbitals-step-1.png",
-      "sha256": "eba0e62990a03e57b6d547712d565112465b20268155246851927625ead5b975",
+      "sha256": "f5a4445ea727641ddcfa5f211f65f12963abd698aa86b9515bce48e30dc27b26",
       "width": 661,
       "height": 359
     },
@@ -26,7 +26,7 @@
       "id": "orbitals-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/orbitals-step-2.png",
-      "sha256": "45fcfd718afb4ba14e8c9260a33169fb7b1d42395519fb9b155e0d928289554a",
+      "sha256": "c7e978dbb94e70e50f9e20ebe515373d954ade2edfa17ceae5ead5eb8e0feae9",
       "width": 661,
       "height": 359
     },
@@ -42,7 +42,7 @@
       "id": "sigma-pi-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/sigma-pi-step-1.png",
-      "sha256": "abd9187b27145697084ca96ce0328c08e2f3d299250cb7e78ac055c9ba8fc7c6",
+      "sha256": "6963d331fa82eb4b1da54b1f0173d0175b7f353953370763f9cc9956f45cf410",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "hybridization-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/hybridization-step-1.png",
-      "sha256": "9507e25517c70e5499e92900b53da837e8734f445130dfb76774f523c9af3d38",
+      "sha256": "5b2bc666f5e5686edccbb11c9e2dfd451faae36d350122c4bf0c2dc556ff637c",
       "width": 661,
       "height": 359
     },
@@ -66,7 +66,7 @@
       "id": "hybridization-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/hybridization-step-1-challenge.png",
-      "sha256": "d638edafd96a4576297bc9a7daeac7a5f47d1e5cd1cc84703130548f4de95a30",
+      "sha256": "b9d5bcf1bdc77e699418fc95fae6fa3faad2d7b8f690e963ce7d47a8854c3d09",
       "width": 699,
       "height": 647
     },
@@ -90,7 +90,7 @@
       "id": "quantum-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-1-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -114,7 +114,7 @@
       "id": "quantum-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-2-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -138,7 +138,7 @@
       "id": "quantum-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-3-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -162,7 +162,7 @@
       "id": "quantum-stage-4-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-4-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -186,7 +186,7 @@
       "id": "quantum-stage-5-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-5-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -210,7 +210,7 @@
       "id": "quantum-stage-6-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/quantum-stage-6-molecule.png",
-      "sha256": "d09ddd8a0255bad46fa1973c8b8e0c5b2bc05927bda1851d97239b7ab2a20a33",
+      "sha256": "7696f5b5ab2c2b33ee5e44e41fd0bf05c1efa19ffe788afb1c2a6a53b5c88ebc",
       "width": 661,
       "height": 359
     },
@@ -234,7 +234,7 @@
       "id": "quantum-complete",
       "kind": "practice-complete",
       "file": "screenshots/quantum-complete.png",
-      "sha256": "226666e2b2d0fec8b27c6b5f83ee329605add4ad9e0f3537f49974ed5698beb5",
+      "sha256": "6e3c6e6b61c734ca6476c97a7b8816a70bd970416104684e6220bbbd5586c310",
       "width": 1324,
       "height": 928
     },
@@ -242,7 +242,7 @@
       "id": "bond-count-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/bond-count-stage-1-molecule.png",
-      "sha256": "5261c37dd3e53d44d0b4c6edf513874a2af3f077d3d3ddb9ff93283a3ec8f122",
+      "sha256": "895740a1785e0d8241d1dad6ea1765c1a0f094d380ff7855b70931cc908e7b80",
       "width": 661,
       "height": 419
     },
@@ -322,7 +322,7 @@
       "id": "amide-resonance-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/amide-resonance-stage-1-molecule.png",
-      "sha256": "b564a31236f13e1791c67d036b2a2af1d093ea594ed1f8b3b213217684dcea96",
+      "sha256": "33dba54d4fb82c7f9efe5d0c2660798f43f94a3a3e85b8ecd1635b480ad1823d",
       "width": 661,
       "height": 419
     },
@@ -402,7 +402,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "00f70437b6c11d6b77c6495b8e8b48d1c9b3d6a2897d7e10636774804b54f41f",
+      "sha256": "52331d4636759221ac8bc8c6377c47c9fa53957a10f9b949f0e0ac5e948af239",
       "width": 1360,
       "height": 1460
     },
@@ -410,7 +410,7 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "7c8e60e3119d1c9cffaaf031ef3399c2c9e7ab364ee53d297d2797ed2fcd2e18",
+      "sha256": "0fe566a8fd45927357b0545b7d2ff0f7fb0b6c18de6334c44cf112d2f216d81f",
       "width": 375,
       "height": 2616
     },
@@ -418,7 +418,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "71834b7998424e70c7b8e4a75ce7438fb8b6303cb058ce6fc3080082ff240c0b",
+      "sha256": "0aacffed3cf1f3c30711c141693dea6b696f2d80c1804e69ed72ba48ebf806d0",
       "width": 375,
       "height": 2616
     }

@@ -757,5 +757,27 @@
     "bonds": 2,
     "internalFormulaMatch": true,
     "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "id": "propanal",
+    "name": "propanal",
+    "formula": "C3H6O",
+    "graphFormula": "C3H6O",
+    "charge": 0,
+    "atoms": 4,
+    "bonds": 3,
+    "internalFormulaMatch": true,
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "id": "phthalimide-anion",
+    "name": "phthalimide anion (potassium counterion omitted)",
+    "formula": "C8H4NO2",
+    "graphFormula": "C8H4NO2",
+    "charge": -1,
+    "atoms": 11,
+    "bonds": 12,
+    "internalFormulaMatch": true,
+    "scientificReview": "Author reviewed; not independently expert verified"
   }
 ]

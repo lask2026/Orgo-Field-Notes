@@ -1,7 +1,7 @@
 {
   "chapter": 11,
   "sourceSnapshot": {
-    "sha256": "62bb9823874ba4729b5d48335a400ea6e22a2b685ec0cc1e2fb8bd9893db1f38",
+    "sha256": "572d417848c5a0499da334708ac3a96bdb0a56b6b661172c4172b787e3756caf",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -53,7 +53,7 @@
         "min": 400,
         "max": 4000,
         "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
-        "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+        "caption": "Schematic ketone absorption; not measured data. Real IR spectra often plot transmittance downward.",
         "peaks": [
           {
             "x": 1715,
@@ -91,7 +91,48 @@
             "An alcohol OH",
             "Only a new alkane",
             "A nitrile as the sole explanation"
-          ]
+          ],
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ]
+          }
         }
       ]
     },
@@ -229,22 +270,27 @@
         "min": 0,
         "max": 5,
         "unit": "Chemical shift δ / ppm",
-        "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+        "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
         "peaks": [
           {
             "x": 4.1,
             "height": 0.65,
-            "label": "A"
+            "label": "Signal 1",
+            "lines": 4,
+            "spacing": 0.06
           },
           {
             "x": 2,
             "height": 0.85,
-            "label": "B"
+            "label": "Signal 2",
+            "lines": 1
           },
           {
             "x": 1.2,
             "height": 0.85,
-            "label": "C"
+            "label": "Signal 3",
+            "lines": 3,
+            "spacing": 0.06
           }
         ]
       },
@@ -273,58 +319,18 @@
       ]
     },
     {
-      "id": "combined-data",
-      "molecule": {
-        "atoms": [
-          {
-            "e": "C",
-            "x": 50,
-            "y": 115
-          },
-          {
-            "e": "C",
-            "x": 108,
-            "y": 85
-          },
-          {
-            "e": "C",
-            "x": 166,
-            "y": 115
-          },
-          {
-            "e": "O",
-            "x": 108,
-            "y": 25
-          }
-        ],
-        "bonds": [
-          [
-            0,
-            1,
-            1
-          ],
-          [
-            1,
-            2,
-            1
-          ],
-          [
-            1,
-            3,
-            2
-          ]
-        ]
-      },
+      "id": "combined-evidence",
+      "structureWithheld": true,
       "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm.",
       "stages": [
         {
-          "id": "combined-data:stage-1",
+          "id": "combined-evidence:stage-1",
           "type": "number",
           "prompt": "For formula C3H6O, calculate DBE.",
           "unit": "DBE"
         },
         {
-          "id": "combined-data:stage-2",
+          "id": "combined-evidence:stage-2",
           "type": "choice",
           "prompt": "A single 6H singlet near 2 ppm suggests…",
           "options": [
@@ -334,7 +340,7 @@
           ]
         },
         {
-          "id": "combined-data:stage-3",
+          "id": "combined-evidence:stage-3",
           "type": "text",
           "prompt": "With a ketone-like IR band, name the consistent C3H6O structure."
         }

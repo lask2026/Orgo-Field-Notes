@@ -62,13 +62,13 @@ function molecularFormula(m){
   return order.filter(e=>counts[e]).map(e=>e+(counts[e]===1?'':counts[e])).join('');
 }
 function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
-function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
+function formulaLabel(m){const charge=netCharge(m);return (m.displayFormula||m.formula)+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
-function numberBadgePosition(m,i){
+function numberBadgePosition(m,i,radius=28){
   const a=m.atoms[i];
   const distance=(p,u,v)=>{const dx=v.x-u.x,dy=v.y-u.y,t=Math.max(0,Math.min(1,((p.x-u.x)*dx+(p.y-u.y)*dy)/(dx*dx+dy*dy||1)));return Math.hypot(p.x-u.x-t*dx,p.y-u.y-t*dy);};
   // Search around the vertex instead of placing every number on an upward carbonyl bond.
-  const candidates=Array.from({length:16},(_,j)=>{const angle=-Math.PI/2+j*Math.PI/8;return{x:a.x+28*Math.cos(angle),y:a.y+28*Math.sin(angle)};});
+  const candidates=Array.from({length:16},(_,j)=>{const angle=-Math.PI/2+j*Math.PI/8;return{x:a.x+radius*Math.cos(angle),y:a.y+radius*Math.sin(angle)};}).filter(p=>p.x>=-6&&p.x<=m.w+6&&p.y>=-10&&p.y<=m.h+10);
   const score=p=>Math.min(...m.bonds.map(([u,v])=>distance(p,m.atoms[u],m.atoms[v])),...m.atoms.filter((b,j)=>j!==i&&b.e!=='C').map(b=>Math.hypot(p.x-b.x,p.y-b.y)-16));
   return candidates.reduce((best,p)=>score(p)>score(best)+.01?p:best,candidates[0]);
 }
@@ -83,7 +83,7 @@ function electronFlowGeometry(m,flow){
 function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
-    if(a.e==='C'&&!a.charge&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
+    if(a.e==='C'&&!a.charge&&!a.showHydrogens&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
     const count=hydrogens(m,i),h=count?'H'+(count>1?String(count).replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[n]):''):'';
     const bond=m.bonds.find(([u,v])=>u===i||v===i),neighbor=bond?m.atoms[bond[0]===i?bond[1]:bond[0]]:null;
     return (h&&neighbor?.x>a.x+14?h+a.e:a.e+h)+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
@@ -107,8 +107,8 @@ function drawMolecule(m,opts={}){
     const l=label(a,i);
     if(l)h+=`<text x="${a.x}" y="${a.y+6}" text-anchor="middle" style="font-size:16px;fill:${a.e==='O'?'#047857':a.e==='N'?'#1d4ed8':'#0f172a'}">${esc(l)}</text>`;
     if(opts.click){
-      const y=l?a.y+26:a.y;
-      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${a.x}" cy="${y}" r="16"/><text x="${a.x}" y="${y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
+      const p=l?numberBadgePosition(m,i,42):a;
+      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<path d="M${a.x},${a.y} L${p.x},${p.y}" style="stroke:transparent;stroke-width:20;pointer-events:stroke"/><circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${p.x}" cy="${p.y}" r="16"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
     }
     if(opts.num?.includes(i)){const ix=opts.num.indexOf(i),p=numberBadgePosition(m,i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${p.x}" cy="${p.y}" r="10" fill="#2563eb"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
   });
@@ -142,13 +142,23 @@ function drawDiagram(d,value,{concealAnswers=false}={}){
   }else if(d.type==='spectrum'){
     svg='<path d="M35 25 V165 H335"/>';
     const peaks=d.peaks;
-    for(const [i,p] of peaks.entries()){const x=35+300*(d.max-p.x)/(d.max-d.min),y=165-p.height*110;svg+=`<line x1="${x}" y1="165" x2="${x}" y2="${y}" stroke="#2563eb" stroke-width="4"/><text x="${x}" y="${y-8}">${esc(p.label)}</text>`;}
+    for(const [i,p] of peaks.entries()){const x=35+300*(d.max-p.x)/(d.max-d.min),y=165-p.height*110;
+      if(p.shape==='broad'){
+        const points=Array.from({length:151},(_,i)=>{const px=35+2*i,v=d.max-i*(d.max-d.min)/150,py=165-p.height*110*Math.exp(-4*Math.log(2)*((v-p.x)/p.width)**2);return `${i?'L':'M'}${px},${py}`;}).join(' ');
+        svg+=`<path class="spectral-band" d="${points}" stroke="#2563eb"/>`;
+      }else{
+        const n=p.lines||1,weights=Array.from({length:n},(_,k)=>{let r=1;for(let j=1;j<=k;j++)r=r*(n-j)/j;return r;}),maxWeight=Math.max(...weights);
+        for(let k=0;k<n;k++){const xx=x+(k-(n-1)/2)*(p.spacing||.05)*300/(d.max-d.min),yy=165-p.height*110*weights[k]/maxWeight;svg+=`<line class="spectral-line" x1="${xx}" y1="165" x2="${xx}" y2="${yy}" stroke="#2563eb" stroke-width="${n>1?2:4}"/>`;}
+      }
+      svg+=`<text x="${x}" y="${y-8-(peaks.some((q,j)=>j<i&&Math.abs(q.x-p.x)*300/(d.max-d.min)<60)?20:0)}">${esc(p.label)}</text>`;
+    }
     svg+=`<text x="40" y="190">${d.max}</text><text x="320" y="190">${d.min}</text><text x="180" y="215">${esc(d.unit)}</text>`;
-    controls='<p>Illustrative peak positions only; heights and line shapes are schematic.</p>';
+    controls='<p>Illustrative spectrum, not experimental data. Band widths, line spacing and heights are schematic; signal integration is not peak height.</p>';
   }else if(d.type==='tlc'){
     const strength=value??30,rf=Math.min(.9,.15+strength*.006);
-    svg=`<rect x="85" y="20" width="190" height="170" fill="#fff"/><path d="M85 170 H275 M85 40 H275" stroke-dasharray="5 4"/><circle cx="150" cy="${170-130*rf}" r="7" fill="#2563eb"/><circle cx="215" cy="${170-130*Math.min(.95,rf+.2)}" r="7" fill="#059669"/><text x="180" y="215">Baseline below • solvent front above</text>`;
-    controls=`<label>Relative eluent strength <output>${strength}</output><input data-control="diagram" type="range" min="0" max="100" value="${strength}" aria-label="Eluent strength"></label><p>Model spot A Rf = ${rf.toFixed(2)}. On polar silica, a stronger eluent usually increases Rf. This trend model does not predict experimental values.</p>`;
+    const rfB=Math.min(.95,rf+.2);
+    svg=`<rect x="85" y="20" width="190" height="170" fill="#fff"/><path d="M85 170 H275 M85 40 H275" stroke-dasharray="5 4"/><circle cx="150" cy="${170-130*rf}" r="7" fill="#2563eb"/><text x="130" y="${174-130*rf}">A</text><circle cx="215" cy="${170-130*rfB}" r="7" fill="#059669"/><text x="235" y="${174-130*rfB}">B</text><text x="180" y="215">Baseline below • solvent front above</text>`;
+    controls=`<label>Relative eluent strength <output>${strength}</output><input data-control="diagram" type="range" min="0" max="100" value="${strength}" aria-label="Eluent strength" aria-valuetext="Strength ${strength}; spot A Rf ${rf.toFixed(2)}; spot B Rf ${rfB.toFixed(2)}"></label><p>Model spot A (blue, left) Rf = ${rf.toFixed(2)}; spot B (green, right) Rf = ${rfB.toFixed(2)}. On polar silica, a stronger eluent usually increases Rf. This independent trend model does not predict experimental values or the separate worked-distance calculation.</p>`;
   }else if(d.type==='acid'){
     const ph=value??d.pKa,f=1/(1+10**(d.pKa-ph));
     svg=`<rect x="40" y="70" width="280" height="45" fill="#dbeafe"/><rect x="40" y="70" width="${280*f}" height="45" fill="#059669"/><text x="180" y="145">${(100*f).toFixed(1)}% deprotonated</text>`;
@@ -187,7 +197,7 @@ function renderPractice(ch,molecules,state,ui){
   const displayed=done?ex.stages.at(-1):s,molecule=displayed.molecule||ex.molecule;
   const switched=molecule!==(ex.stages[p.stage-1]?.molecule||ex.molecule);
   const opts=done?(ex.stages.at(-1).highlights||{}):{...(switched?{}:(ex.stages[p.stage-1]?.highlights||{})),...(s.type==='atoms'?{click:true,sel:ui.selected}:{})};
-  return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div><div class="stage">${drawMolecule(molecules[molecule],opts)}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
+  return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div><div class="stage">${ex.concealStructure&&!done?'<p class="concealed-structure">Candidate structure withheld. Use the supplied observations to infer it; the structure is shown after completion.</p>':drawMolecule(molecules[molecule],opts)}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
   ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Displayed structure: ${esc(molecules[molecule].name)}<br>Formula: ${esc(formulaLabel(molecules[molecule]))}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
   ${done?ex.stages.map((st,i)=>`<div class="scard"><h2 class="shead">${i+1}. ${esc(st.prompt)}</h2><p><strong>${esc(solutionText(st))}</strong></p><div class="sexp">${esc(st.explanation)}</div></div>`).join(''):`${p.stage?`<p class="muted">${p.stage} earlier decision${p.stage>1?'s':''} completed.</p>`:''}<div class="scard"><h2 class="shead" tabindex="-1" id="stageTitle">${esc(s.prompt)}</h2><span class="stag">${esc(s.skill)}</span>${s.type==='choice'?`<div class="clist">${s.options.map((o,i)=>`<button class="copt ${ui.correct&&i===s.answer?'ok':''}" data-act="choice" data-idx="${i}" ${ui.correct?'disabled':''}><span class="clet">${atomLabel(i)}</span>${esc(o)}</button>`).join('')}</div>`:s.type==='atoms'?`<p>Select atoms on the structure using click or Tab and Enter. Selected: <strong>${ui.selected.map(atomLabel).join(', ')||'None'}</strong></p><button class="btn pri" data-act="checkAnswer" ${ui.correct?'disabled':''}>Check selection</button>`:`<form id="answerForm"><label for="answer">${s.type==='number'?`Numeric answer${s.unit?' ('+esc(s.unit)+')':''}`:'Your answer'}</label><input id="answer" class="tinp" autocomplete="off" spellcheck="false" ${s.type==='number'?'inputmode="decimal"':''} value="${esc(ui.value)}" ${ui.correct?'disabled':''}><button class="btn pri" type="submit" ${ui.correct?'disabled':''}>Check answer</button></form>`}
   ${ui.feedback?`<div class="fbox ${ui.correct?'ok':'err'}" role="status">${esc(ui.feedback)}</div>`:''}
@@ -224,7 +234,7 @@ function startApp(data){
     document.getElementById('progressText').textContent=`${solved} / ${ch.exercises.length} workshops solved independently`;
     document.getElementById('progFill').style.width=`${100*solved/ch.exercises.length}%`;
     document.getElementById('storageWarn').hidden=!storageError;
-    document.getElementById('view').innerHTML=`<p class="chapter-intro">Chapter ${ch.id} · ${esc(ch.description)}</p><nav class="cnav" aria-label="Concepts">${ch.lessons.map((l,i)=>`<button class="cbtn" data-act="lesson" data-idx="${i}" aria-pressed="${i===state.lesson}"><span>${ch.id}.${i+1}</span>${esc(l.label)}</button>`).join('')}</nav>`+(state.mode==='learn'?renderLearn(ch,molecules,state,ui):renderPractice(ch,molecules,state,ui));
+    document.getElementById('view').innerHTML=`<p class="chapter-intro">Chapter ${ch.id} · ${esc(ch.title)} — ${esc(ch.description)}</p><nav class="cnav" aria-label="Concepts">${ch.lessons.map((l,i)=>`<button class="cbtn" data-act="lesson" data-idx="${i}" aria-pressed="${i===state.lesson}"><span>Lesson ${i+1}</span>${esc(l.label)}</button>`).join('')}</nav>`+(state.mode==='learn'?renderLearn(ch,molecules,state,ui):renderPractice(ch,molecules,state,ui));
     if(focus)document.querySelector(focus)?.focus();
   }
   function check(value){const ex=exercise(),p=getProgress(state,chapter(),ex),s=ex.stages[p.stage];if(!s||ui.correct)return;

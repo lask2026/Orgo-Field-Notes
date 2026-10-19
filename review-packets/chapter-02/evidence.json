@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "afa3e9c3de14864556969b486dacab90ee20a862847863d497ab8aa3875ae5ef",
+    "sha256": "9a800919ca77b16c4906fed565b7d6465a2952dd97300f7ea94960e3a2f84600",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -74,7 +74,7 @@
       "id": "chirality-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/chirality-step-1-challenge.png",
-      "sha256": "3be72c07913b16c8ccea134c878ea42c7d0175912a2a3782c413bf93f0a19887",
+      "sha256": "963c267cd23421587cba964c6998479840c3457a72e69289370e2de579b3507e",
       "width": 699,
       "height": 647
     },
@@ -178,7 +178,7 @@
       "id": "isomer-pair-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/isomer-pair-stage-1-molecule.png",
-      "sha256": "dffe5ec5c2d8d74284979ea8487c47418a177ba0233c81295d06d23b67bd3e9d",
+      "sha256": "df64c8afc6a92683cedf0c90e09d5288111d8556306f972016403e7b1b98566c",
       "width": 661,
       "height": 419
     },
@@ -346,7 +346,7 @@
       "id": "stereocenters-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/stereocenters-stage-1-molecule.png",
-      "sha256": "769b3c3cbea80c3b0eb478a411baf7c1dd164aa73153e2d1326c1424ea48b48f",
+      "sha256": "f72de380d1f14662db700b4e16774dc3f8eb44179c9b3f0caf46b74f3b592036",
       "width": 661,
       "height": 419
     },
@@ -834,7 +834,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "2d6faea0a8792b272b87fbb27a3bda8a856dd89eb282c42b979247ba9ac57125",
+      "sha256": "44f377eeabc93c7025d914efa2bc0992b71cccdd9d58e129a715664c9893bdd0",
       "width": 1360,
       "height": 1055
     },
@@ -842,17 +842,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "779b68f58a3327e9763893cf861e98548ad9919fc692fa4141c60d32de83372e",
+      "sha256": "758d6c42068ff3c9f13084bac21956527b70c58a2787a5fc432040652604c466",
       "width": 375,
-      "height": 2157
+      "height": 2203
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "b9feae3b285854c07c2b7eeae2bee9a094819a5c638b802351935252c49cf23d",
+      "sha256": "41cd965d317f61bcd9cd540910bd1e0351bf0ef981dfd3e4a2246f93c93a9daa",
       "width": 375,
-      "height": 2157
+      "height": 2203
     }
   ],
   "interactions": [

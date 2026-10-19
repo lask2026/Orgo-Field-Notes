@@ -4,11 +4,11 @@ Completed 2026-10-19. All 12 chapters are implemented; there are no placeholder 
 
 ## Delivered
 
-- 51 interactive lessons, 59 guided workshops, 178 stages, and 69 molecular graphs.
+- 51 interactive lessons, 60 guided workshops, 181 stages, and 71 molecular graphs.
 - Reusable rendering, animation, learning, practice, validation, progress, and schematic-diagram modules.
 - Twelve chapter JSON files, shared molecule repository, documented JSON Schemas, and automated tests.
 - GitHub Pages-compatible build in `dist/` and a Pages workflow.
-- Standalone `Orgo-Field-Notes-offline.html` (299 KiB), with no runtime network dependency.
+- Standalone `Orgo-Field-Notes-offline.html` (311 KiB), with no runtime network dependency.
 - A meaningful Git checkpoint after every chapter. Original reference files are preserved; textbook sources are excluded from Git/builds.
 
 Both principal modes are preserved: Learn & Explore and Guided Practice. V5 styles, color roles, dark mode, step highlighting, animations, and name-assembly patterns are retained. No Exam Mode or Mistake Review was added.
@@ -26,16 +26,16 @@ Both principal modes are preserved: Learn & Explore and Guided Practice. V5 styl
 | 7 | Aldehydes and Ketones II: Enolates | 4 | 4 | 12 | Passed |
 | 8 | Carboxylic Acids | 4 | 4 | 12 | Passed |
 | 9 | Carboxylic Acid Derivatives | 3 | 3 | 9 | Passed |
-| 10 | Nitrogen- and Phosphorus-Containing Compounds | 4 | 4 | 12 | Passed |
+| 10 | Nitrogen- and Phosphorus-Containing Compounds | 4 | 5 | 15 | Passed |
 | 11 | Spectroscopy | 4 | 4 | 12 | Passed |
 | 12 | Separations and Purifications | 4 | 4 | 12 | Passed |
 
 ## Verification
 
 - Draft 2020-12 validation: 12 chapter documents plus the molecule repository passed.
-- Unit/integration: 49 application test groups passed, including graph/formula consistency, references, answer semantics, storage bounds, challenge concealment, revised stereochemical aliases, Fischer consistency, polarimetry arithmetic, atomic occupancy/node models, two-carbon labels, explicit ionic charge and prior-completion invalidation. Eight additional audit-infrastructure groups passed.
+- Unit/integration: 60 application test groups passed, including graph/formula consistency, references, answer semantics, storage bounds, challenge concealment, revised stereochemical aliases, Fischer consistency, polarimetry arithmetic, atomic occupancy/node models, two-carbon labels, explicit ionic charge and prior-completion invalidation. Eight additional audit-infrastructure groups passed.
 - Full Playwright run: every lesson step and embedded atom challenge, every guided stage with rejection and success paths, keyboard atom selection, dark mode, reduced motion, mobile navigation, and offline navigation passed.
-- Final regression: 20 groups passed, including stage persistence, export/import/reset, strict naming punctuation, assisted progress, both website-to-offline and offline-to-offline downloads, and answer checking with networking disabled.
+- Final regression: 23 groups passed, including stage persistence, export/import/reset, strict naming punctuation, assisted progress, both website-to-offline and offline-to-offline downloads, and answer checking with networking disabled.
 - All 51 concepts checked at 320, 375, and 768 px without page overflow. Large-molecule alternative atom buttons have 44 px touch targets. Targeted contrast corrections were applied. Desktop, mobile, Fischer, and Newman screenshots were visually reviewed.
 - No JavaScript page errors were recorded in the passing final suites.
 
@@ -54,6 +54,8 @@ Chapter 4 review clarified the forward proton-transfer equilibrium, removed earl
 Chapter 5 and 6 candidate audits repaired product-canvas/formula context, expanded explicit aliases and condition-qualified curriculum coverage, distinguished traditional ketal terminology, replaced an unrelated cyanohydrin task under a new workshop ID, and corrected shared contrast and curved-arrow placement. See docs/CHAPTER_05_REVIEW_ADJUDICATION.md and docs/CHAPTER_06_REVIEW_ADJUDICATION.md. All 24 review PDFs were refreshed; independent chemistry sign-off remains pending.
 
 Chapter 7–9 audits corrected carbonyl/intermediate layouts and locant collisions, added the carbon-charged enolate contributor with visible charge, repaired task context/head-tail focus and decarboxylation product display, expanded explicit aliases and condition-qualified coverage. All 33 original stage keys were retained. See docs/CHAPTER_07_REVIEW_ADJUDICATION.md, docs/CHAPTER_08_REVIEW_ADJUDICATION.md and docs/CHAPTER_09_REVIEW_ADJUDICATION.md. Refreshed packet integrity covers 276 cases, 817 screenshots and 24 PDFs; visual QA is sampled, not chemistry sign-off.
+
+Chapter 10–12 candidate audits retained the original 36 stage keys, expanded exact aliases and added three Gabriel-route stages. Synthesis atom tracking, explicit pI precision, phosphate notation/buffering qualifications, matched IR bands, NMR multiplets/signal labels, TLC context and conventional drawing geometry were corrected. The combined spectroscopy workshop withholds its candidate graph until completion and uses a fresh ID. See docs/CHAPTER_10_REVIEW_ADJUDICATION.md, docs/CHAPTER_11_REVIEW_ADJUDICATION.md and docs/CHAPTER_12_REVIEW_ADJUDICATION.md.
 
 Spectra and TLC behavior are labeled schematic; no experimental-data verification is claimed. Browser checks ran in Chromium on Windows, not Safari/Firefox. Targeted accessibility checks are not a WCAG certification or screen-reader user study.
 

@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "6a660424c7aefa674f5574d79a21137095eded03627468fcff1dfe919d95e722",
+    "sha256": "5637575dec7c1af3eaaec7357befc0a72897b2e2b86825c54344949f5cd8a9a8",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -244,17 +244,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],
@@ -844,17 +844,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],
@@ -1239,17 +1239,17 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               },
               {
                 "e": "O",
-                "x": 108,
+                "x": 189,
                 "y": 25
               }
             ],
@@ -1640,17 +1640,17 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
+                "x": 131,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 108,
+                "x": 189,
                 "y": 85
               },
               {
                 "e": "O",
-                "x": 108,
+                "x": 189,
                 "y": 25
               }
             ],
@@ -2018,17 +2018,17 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
+              "x": 131,
               "y": 115
             },
             {
               "e": "C",
-              "x": 108,
+              "x": 189,
               "y": 85
             },
             {
               "e": "O",
-              "x": 108,
+              "x": 189,
               "y": 25
             }
           ],

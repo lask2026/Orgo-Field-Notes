@@ -1,7 +1,7 @@
 {
   "chapter": 6,
   "sourceSnapshot": {
-    "sha256": "d0d0d09227b74ef7d4660bad9ddd184acdb205f5dac847a6beb7bcfcd817be05",
+    "sha256": "ddc0dfe617b9e1328d9aa0ad66ae49f297cff24645ab83aaec5ca185f01eedbe",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -10,7 +10,7 @@
       "id": "carbonyl-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-step-1.png",
-      "sha256": "ccf9fe142dc30bcc93428ba12d5e3d90d85925819174ed20a67d29e3a1d59da4",
+      "sha256": "58c6b5bb61989200dc08d67a07817a6bea609e804c62bb9ed9a02114da90599c",
       "width": 661,
       "height": 359
     },
@@ -18,7 +18,7 @@
       "id": "carbonyl-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/carbonyl-step-1-challenge.png",
-      "sha256": "abee11f9777961f24f91ad647418a675cc679057283ff649fe5398f749c420a4",
+      "sha256": "fbc9bed894ba87134c090aab90d71fd1d317aeffc40226a6fe54ce5d960511a2",
       "width": 699,
       "height": 611
     },
@@ -26,7 +26,7 @@
       "id": "carbonyl-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-step-2.png",
-      "sha256": "6a71f5a6bd4d6e1156245b55d031e6a4eba622904d813f4143c206ce1c7af062",
+      "sha256": "12a81721ea1e3bf8cdf04460f458272eeec56d5beedec5c6c223302f8c191b8e",
       "width": 661,
       "height": 359
     },
@@ -82,7 +82,7 @@
       "id": "carbonyl-redox-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-redox-step-1.png",
-      "sha256": "85412040fb2a8af684739468f1e19768d4ebd7e6d83e8d83374efde9d81bbbe5",
+      "sha256": "30df2a81da48a82a4c0b21af0fb523da263b0860fcaa90d2bae54f4beef6b28f",
       "width": 661,
       "height": 359
     },
@@ -106,7 +106,7 @@
       "id": "addition-site-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/addition-site-stage-1-molecule.png",
-      "sha256": "c9e1767eb6ea9a0dd2960ecdf6bdab0b4d170565e584dc492ed72fde0cafaf2e",
+      "sha256": "7ccb132a25825889972e33701ffd7178c6523f87a40225522c15b7235cf61a36",
       "width": 661,
       "height": 419
     },
@@ -130,7 +130,7 @@
       "id": "addition-site-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/addition-site-stage-2-molecule.png",
-      "sha256": "1a1af2670a5462840a376b852ea34646f5e724ee51bc72aa3c4c82932b467c70",
+      "sha256": "7522ef84a9125a412136b58604170f55699da226d75bcb99fb175d2ad87c537c",
       "width": 661,
       "height": 359
     },
@@ -154,7 +154,7 @@
       "id": "addition-site-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/addition-site-stage-3-molecule.png",
-      "sha256": "5b8d908f18492f5215ea28fcbce473d2e84de03b28f2fea66f15af6535402b08",
+      "sha256": "986334c5c92dbbd8a7eb19a7585131f201706cee86515b137a8410ce2af6b1e7",
       "width": 661,
       "height": 359
     },
@@ -178,7 +178,7 @@
       "id": "addition-site-complete",
       "kind": "practice-complete",
       "file": "screenshots/addition-site-complete.png",
-      "sha256": "ba97e311c54aaef16fae4bdbac9e62fd88b6e170a8fe86d92482a317fbc95885",
+      "sha256": "796e64bbab5a55ff3fabde40f158c30b6002e252b5a5a971b903b881d3a3b662",
       "width": 1324,
       "height": 653
     },
@@ -186,7 +186,7 @@
       "id": "hemiacetal-identify-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/hemiacetal-identify-stage-1-molecule.png",
-      "sha256": "886c1d295fce9f6b48b9a96d57bc139815ab91867cddecaa87529ca45d8ab822",
+      "sha256": "ea6a90074e70a266edf7a1c9158a6672200c144f627d66ae9e5850463b6abdad",
       "width": 661,
       "height": 419
     },
@@ -266,7 +266,7 @@
       "id": "cyanohydrin-bond-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/cyanohydrin-bond-stage-1-molecule.png",
-      "sha256": "a138df3f8ee59a03954d92f4c19c1777bc603c4d3d7ccedad83c7bfc8992529e",
+      "sha256": "3f20d4a056822c1b3146e04db7f869095c8362eff33b18c6f1981c6842be80be",
       "width": 661,
       "height": 419
     },
@@ -314,7 +314,7 @@
       "id": "cyanohydrin-bond-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/cyanohydrin-bond-stage-3-molecule.png",
-      "sha256": "a138df3f8ee59a03954d92f4c19c1777bc603c4d3d7ccedad83c7bfc8992529e",
+      "sha256": "3f20d4a056822c1b3146e04db7f869095c8362eff33b18c6f1981c6842be80be",
       "width": 661,
       "height": 419
     },
@@ -346,7 +346,7 @@
       "id": "hydride-product-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/hydride-product-stage-1-molecule.png",
-      "sha256": "1d8ffbae41a8e653f5dea7ecc74ce72c73e3178b1818627ab44467905215307e",
+      "sha256": "ad7436c9600eceb8f389e5a322938068a62f93400dd379792b84c8fa2298c1d0",
       "width": 661,
       "height": 419
     },
@@ -426,7 +426,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "d6dbd4251a4175fbaa3ea100b33c2c769fee95d1704831078465a40793a3f6b6",
+      "sha256": "562782411205b55d5e2ed3bf2675d16cbcdfe3ebc518284606c2ba2bee7058b2",
       "width": 1360,
       "height": 1014
     },
@@ -434,17 +434,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "adc8019e3dc4ddeccd243b4c966c282c0eb007b503c9455bf4b265a101624f2b",
+      "sha256": "c31ae68483e7f58551b7718b1a3e2322d1a07d7c92cc7e2c1ca077ad281c5081",
       "width": 375,
-      "height": 2097
+      "height": 2120
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "9dc1c2b9783c7cb7919f54609c1b422e05e168f6434da30cd46cd08fcd428fa0",
+      "sha256": "adb6060bdbb08b4346c927c228b998ac3b5da0399f731b6016945d009c4c82f2",
       "width": 375,
-      "height": 2097
+      "height": 2120
     }
   ],
   "interactions": [

@@ -3,9 +3,9 @@
   "counts": {
     "chapters": 12,
     "lessons": 51,
-    "workshops": 59,
-    "stages": 178,
-    "molecules": 69
+    "workshops": 60,
+    "stages": 181,
+    "molecules": 71
   },
   "schema": {
     "documents": 13,
@@ -13,7 +13,7 @@
     "validator": "jsonschema 4.26.0; Draft 2020-12"
   },
   "unit": {
-    "groups": 49,
+    "groups": 60,
     "status": "passed",
     "runner": "Node.js built-in test runner",
     "files": [
@@ -25,7 +25,10 @@
       "tests/chapter06-review.test.mjs",
       "tests/chapter07-review.test.mjs",
       "tests/chapter08-review.test.mjs",
-      "tests/chapter09-review.test.mjs"
+      "tests/chapter09-review.test.mjs",
+      "tests/chapter10-review.test.mjs",
+      "tests/chapter11-review.test.mjs",
+      "tests/chapter12-review.test.mjs"
     ]
   },
   "auditInfrastructure": {
@@ -102,8 +105,8 @@
       {
         "id": 10,
         "lessons": 4,
-        "exercises": 4,
-        "stages": 12,
+        "exercises": 5,
+        "stages": 15,
         "status": "passed"
       },
       {
@@ -156,6 +159,9 @@
       "Chapter 7 charged carbon contributor, formula/charge, mobile numbering and Michael carbonyl/beta contrast without success leakage",
       "Chapter 8 exact aliases/rejections, product formula concealment and completion, complete soap-head focus",
       "Chapter 9 spaced intermediate arrows, acetate/ethanoate wording and explicit CH3OH/MeOH aliases reject methoxide",
+      "Chapter 10 mobile oxygen badge click, two-decimal pI rejection/success, new Gabriel workshop and conventional phosphate formula",
+      "Chapter 11 matched IR broad bands, eight NMR multiplet lines and distinct signal labels, candidate graph absent until successful completion",
+      "Chapter 12 labeled TLC spots and accessible slider extremes; independent worked-distance question has no conflicting model and validates 0.30",
       "Corrupt saved JSON recovers without crashing"
     ]
   },

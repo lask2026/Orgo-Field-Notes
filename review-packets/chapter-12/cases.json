@@ -3,7 +3,7 @@
   "chapter": 12,
   "title": "Separations and Purifications",
   "sourceSnapshot": {
-    "sha256": "85a6e74e3884be40c19a6be27b9b39ff01c92acc5cc0dcb4e834e2c96cb453e1",
+    "sha256": "f65296249b8be1b32f61761b9cf5146a7d198458f55addcb797b14aff35d96ec",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -160,37 +160,37 @@
             {
               "e": "C",
               "x": 170,
-              "y": 37
+              "y": 93
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 170,
-              "y": 173
+              "y": 229
             },
             {
               "e": "C",
               "x": 111.11027254265817,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 111.11027254265818,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 170,
-              "y": 5
+              "y": 25
             }
           ],
           "bonds": [
@@ -371,10 +371,7 @@
             ]
           ]
         },
-        "diagram": {
-          "type": "tlc",
-          "caption": "Explore the normal-phase trend; use the distances in the question for the calculation."
-        },
+        "context": "Use only the stated travel distances for this calculation. The separate Learn & Explore slider illustrates an independent TLC trend, not these measurements.",
         "stages": [
           {
             "id": "rf-calculation:stage-1",
@@ -796,37 +793,37 @@
             {
               "e": "C",
               "x": 170,
-              "y": 37
+              "y": 93
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 170,
-              "y": 173
+              "y": 229
             },
             {
               "e": "C",
               "x": 111.11027254265817,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 111.11027254265818,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 170,
-              "y": 5
+              "y": 25
             }
           ],
           "bonds": [
@@ -867,7 +864,7 @@
             ]
           ],
           "w": 320,
-          "h": 203,
+          "h": 260,
           "cond": "methylbenzene (toluene)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         },
@@ -940,10 +937,7 @@
             }
           ],
           "summary": "Rf is a condition-dependent distance ratio.",
-          "diagram": {
-            "type": "tlc",
-            "caption": "Explore the normal-phase trend; use the distances in the question for the calculation."
-          }
+          "context": "Use only the stated travel distances for this calculation. The separate Learn & Explore slider illustrates an independent TLC trend, not these measurements."
         },
         "molecule": {
           "name": "benzoic acid",
@@ -1527,9 +1521,9 @@
           "molecule": "toluene",
           "tag": "Vapor is enriched in the more volatile component",
           "cards": {
-            "rule": "<p>Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids.</p>",
+            "rule": "<p>Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids. Superheating means a liquid is above its boiling temperature without sustained boiling. Nucleation sites from appropriate boiling aids or stirring can support smooth boiling; chips are not added to an already hot superheated liquid.</p>",
             "cue": "<p>Fractionating column = repeated equilibrium stages. Vacuum = lower boiling temperature.</p>",
-            "trap": "<p>Boiling-point cutoffs are heuristics, not universal rules. Azeotropes can limit ordinary distillation. Distillation does not guarantee a pure first fraction merely because one component has a lower boiling point.</p>",
+            "trap": "<p>Boiling-point cutoffs are heuristics, not universal rules. Azeotropes can limit ordinary distillation. Distillation does not guarantee a pure first fraction merely because one component has a lower boiling point. The supplied curriculum suggests simple distillation for boiling points roughly 25 °C or more apart and below about 150 °C, fractionation for closer boiling points, and considering vacuum for high normal boiling temperatures (around or above 150 °C) or heat-sensitive materials. These are selection heuristics, not guarantees; pressure, relative volatility, composition, apparatus and decomposition behavior matter.</p>",
             "app": "<p>Choose a method based on volatility, thermal stability, pressure, and mixture behavior; record boiling temperatures with pressure.</p>"
           },
           "steps": [
@@ -1569,37 +1563,37 @@
               {
                 "e": "C",
                 "x": 170,
-                "y": 37
+                "y": 93
               },
               {
                 "e": "C",
                 "x": 228.88972745734185,
-                "y": 71
+                "y": 127
               },
               {
                 "e": "C",
                 "x": 228.88972745734185,
-                "y": 139
+                "y": 195
               },
               {
                 "e": "C",
                 "x": 170,
-                "y": 173
+                "y": 229
               },
               {
                 "e": "C",
                 "x": 111.11027254265817,
-                "y": 139
+                "y": 195
               },
               {
                 "e": "C",
                 "x": 111.11027254265818,
-                "y": 71
+                "y": 127
               },
               {
                 "e": "C",
                 "x": 170,
-                "y": 5
+                "y": 25
               }
             ],
             "bonds": [
@@ -1640,7 +1634,7 @@
               ]
             ],
             "w": 320,
-            "h": 203,
+            "h": 260,
             "cond": "methylbenzene (toluene)",
             "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
           }
@@ -1667,10 +1661,10 @@
           "molecule": "benzoicacid",
           "tag": "Retention competes with the mobile phase",
           "cards": {
-            "rule": "<p>In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica.</p>",
+            "rule": "<p>In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica. Paper chromatography uses polar cellulose and often an associated water layer; partitioning and adsorption depend on the solvent system. Invisible TLC spots can be visualized by UV or suitable iodine, vanillin or phosphomolybdic-acid stains; detection depends on the analyte.</p>",
             "cue": "<p>Stronger stationary-phase binding → slower travel. Rf has no units.</p>",
             "trap": "<p>Rf depends on plate, solvent, and conditions; it is not a permanent molecular constant. Equal Rf is supporting evidence, not definitive identification. In reversed-phase systems the stationary phase is nonpolar, so polarity trends differ.</p>",
-            "app": "<p>TLC can follow reaction progress by comparing starting-material and product spots under the same conditions; a single spot is not proof of absolute purity.</p>"
+            "app": "<p>TLC can follow reaction progress by comparing starting-material and product spots under the same conditions; a single spot is not proof of absolute purity. Preparative TLC can isolate material from bands; flash column chromatography uses pressure to drive mobile phase through a packed stationary phase. The analytical TLC trend is not an experimental Rf prediction.</p>"
           },
           "steps": [
             {
@@ -1701,11 +1695,7 @@
                   8
                 ]
               },
-              "reveal": false,
-              "diagram": {
-                "type": "tlc",
-                "caption": "Schematic plate; baseline and solvent front define the distance ratio."
-              }
+              "reveal": false
             }
           ]
         },
@@ -1838,7 +1828,7 @@
             "rule": "<p>Ion exchange separates by charge: a positively charged anion exchanger binds anions; a negatively charged cation exchanger binds cations. Size exclusion separates by access to pores, with larger species generally eluting first. Affinity chromatography uses specific binding. GC requires adequate volatility and thermal stability; HPLC uses a liquid mobile phase under pressure and can handle many nonvolatile analytes.</p>",
             "cue": "<p>Ion exchange: charge. Size exclusion: pore access. Affinity: specific interaction.</p>",
             "trap": "<p>Small molecules enter more pore volume and usually elute later in size exclusion. “Anion exchanger” names the species it binds, not the resin’s own charge. Reversed-phase HPLC usually retains hydrophobic analytes more strongly than polar ones under comparable conditions.</p>",
-            "app": "<p>Protein purification often combines orthogonal methods: charge, size, and affinity. Choose based on protein stability as well as separation power.</p>"
+            "app": "<p>Protein purification often combines orthogonal methods: charge, size, and affinity. Choose based on protein stability as well as separation power. GC–MS couples separation of suitably volatile analytes with ionization and mass-to-charge analysis. Fragmentation depends on ionization mode; molecular-ion and fragment patterns can support identification, but not every peak is the intact molecular mass.</p>"
           },
           "steps": [
             {
@@ -2219,37 +2209,37 @@
             {
               "e": "C",
               "x": 170,
-              "y": 37
+              "y": 93
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 228.88972745734185,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 170,
-              "y": 173
+              "y": 229
             },
             {
               "e": "C",
               "x": 111.11027254265817,
-              "y": 139
+              "y": 195
             },
             {
               "e": "C",
               "x": 111.11027254265818,
-              "y": 71
+              "y": 127
             },
             {
               "e": "C",
               "x": 170,
-              "y": 5
+              "y": 25
             }
           ],
           "bonds": [
@@ -2290,7 +2280,7 @@
             ]
           ],
           "w": 320,
-          "h": 203,
+          "h": 260,
           "cond": "methylbenzene (toluene)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         }
@@ -2452,7 +2442,7 @@
             "id": "distillation",
             "title": "Distillation and volatility",
             "tag": "Vapor is enriched in the more volatile component",
-            "coreRule": "Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids.",
+            "coreRule": "Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids. Superheating means a liquid is above its boiling temperature without sustained boiling. Nucleation sites from appropriate boiling aids or stirring can support smooth boiling; chips are not added to an already hot superheated liquid.",
             "stepTopics": [
               "1. A molecular property",
               "2. Choose a method"
@@ -2462,7 +2452,7 @@
             "id": "tlc",
             "title": "TLC and normal-phase columns",
             "tag": "Retention competes with the mobile phase",
-            "coreRule": "In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica.",
+            "coreRule": "In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica. Paper chromatography uses polar cellulose and often an associated water layer; partitioning and adsorption depend on the solvent system. Invisible TLC spots can be visualized by UV or suitable iodine, vanillin or phosphomolybdic-acid stains; detection depends on the analyte.",
             "stepTopics": [
               "1. Identify polar interactions",
               "2. Calculate normalized travel"

@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "df002651b045eb856970f6f7c855e0117e5bcf8bdb60ad038d5b73269e4ceffd",
+    "sha256": "c79826a794164a21394863004b938faf59738f32cccc97169d32a44eb89edb60",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,7 +34,7 @@
       "id": "amino-acids-step-3-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/amino-acids-step-3-diagram.png",
-      "sha256": "7705bef6c9216b3bb6ffbe731d06b7a00556ad09480cab04e7ae6afc5e9a4ba8",
+      "sha256": "a1c18b06f6f10f5dae31efeb04208405330407984c16b01e0960dd4a18998f3b",
       "width": 661,
       "height": 300
     },
@@ -42,7 +42,7 @@
       "id": "peptides-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/peptides-step-1.png",
-      "sha256": "54faf1a2e92d91a6e0dfaaddf1d72cffabe4bd3a6ce01ca552c2b09fef3556ec",
+      "sha256": "16c3cfceca514fda01773ec08bd3f87ddd9dd0be05c6f93d4d2d1d93144e3223",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "peptides-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/peptides-step-2.png",
-      "sha256": "896948b934f426c11e8e52f8f2ae5aae0cc57b5d603dee9d49b47ad4185e128e",
+      "sha256": "1b96c2877352a42d6e8b0fc62086f970b1a40251ba2f20b73f10cec7a35f9e8e",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "synthesis-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/synthesis-step-1.png",
-      "sha256": "5e206d84b837426efdf3730f9bf309716dc00af24a47d4ba4b27cd250f8705ab",
+      "sha256": "55573fa939a0ed13d82b339641e2473a77c235b49838514a8ab294a2301ed313",
       "width": 661,
       "height": 359
     },
@@ -66,7 +66,7 @@
       "id": "synthesis-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/synthesis-step-2.png",
-      "sha256": "ea2355909d5a4ec4b61d787453bc446facca2c9668da0c14c48c64bbf2614d2c",
+      "sha256": "b88360a2af1ff177c009e8525013fb67e208351df05a5423c36cf1d93b8e6843",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "synthesis-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/synthesis-step-3.png",
-      "sha256": "1689e3366f18194af542f6fc05d4585d7fc5e128b9dd926ac77fc29e70b2334b",
+      "sha256": "925130066c153a2344abe38359f083061ea81b29c4b360d4ed3e3e48702d1474",
       "width": 661,
       "height": 359
     },
@@ -98,7 +98,7 @@
       "id": "phosphorus-step-2-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/phosphorus-step-2-challenge.png",
-      "sha256": "f9c3b9e37a5cead92eee32661695627f78f514949001fa0b7cdc67a94d92acbb",
+      "sha256": "2612847130a511c3a5d65e04095d904c91fc86d06b5ffb68b7a8048705ebfc24",
       "width": 699,
       "height": 647
     },
@@ -122,7 +122,7 @@
       "id": "glycine-charge-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/glycine-charge-stage-1-feedback.png",
-      "sha256": "92db1bf1cf471648c7b69e649b4dc057f2930e75e5707b8468ea6cb6b7bd8982",
+      "sha256": "f5bf9aae4d0109ad86dc362e20b08b4602b209f9864a221a22264c6bbed2b635",
       "width": 607,
       "height": 326
     },
@@ -146,7 +146,7 @@
       "id": "glycine-charge-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/glycine-charge-stage-2-feedback.png",
-      "sha256": "f50777f9b1a007c909c41c7438fa8656cda39d63ae3827b8817da6b6296c5c77",
+      "sha256": "dbc8f4ce8e10798cd309a01616f8675da730dfff69eb367e6d27c27b969b847f",
       "width": 607,
       "height": 326
     },
@@ -162,7 +162,7 @@
       "id": "glycine-charge-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/glycine-charge-stage-3-question.png",
-      "sha256": "9df09ea50a35c629bcb16dd79f4c5f4b72cacc90b0b59d5d832f85a65db0941b",
+      "sha256": "6781bb1ac37c2613446a04187057fcff1fa01f9057c04bcfcc43666e6e277f85",
       "width": 607,
       "height": 280
     },
@@ -170,7 +170,7 @@
       "id": "glycine-charge-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/glycine-charge-stage-3-feedback.png",
-      "sha256": "a3087eb4855e39c646c1538694efd8980348e7a8c992aeda64853adfa57fc0cc",
+      "sha256": "07657a7c8dba76bdc8447607f1c3521c516d5c0c29c11211fba16ba3c838e65a",
       "width": 607,
       "height": 316
     },
@@ -178,7 +178,7 @@
       "id": "glycine-charge-complete",
       "kind": "practice-complete",
       "file": "screenshots/glycine-charge-complete.png",
-      "sha256": "f3a92ef82b01af6274fcb94cb55c20dbdba41f3948e971cbe9af52b1f89aa916",
+      "sha256": "e57b49940cdc08fea23bff0cbd38328623152bdef8579b9c8f51f9c72f48b8f1",
       "width": 1324,
       "height": 595
     },
@@ -186,7 +186,7 @@
       "id": "peptide-link-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/peptide-link-stage-1-molecule.png",
-      "sha256": "952c4f8151b8050acb9e9b147b2b791610fd60fb68354c443d93b156f46fd35b",
+      "sha256": "1e17d8818c3156bac4cfb951874e0b108edcd26d40d4fd2f390a8a3096f8778b",
       "width": 661,
       "height": 419
     },
@@ -202,7 +202,7 @@
       "id": "peptide-link-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/peptide-link-stage-1-feedback.png",
-      "sha256": "f1a6dde172a362f241621123a04b117fb7fb90e7f7f80e86748d21badfbd7a58",
+      "sha256": "b32bf46ef8fa1c3a17edaec0e628be3f9464d0b636e6600db4e5e7b2cb839d32",
       "width": 607,
       "height": 237
     },
@@ -210,7 +210,7 @@
       "id": "peptide-link-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/peptide-link-stage-2-molecule.png",
-      "sha256": "60dfd57bfbebe13d0fd039984cdf178b7523023825227c8a317a25b9b2a29d88",
+      "sha256": "84df420816bfea0b1409688349cea17d2b15b285c8410b28662188ad8cc9c514",
       "width": 661,
       "height": 359
     },
@@ -226,7 +226,7 @@
       "id": "peptide-link-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/peptide-link-stage-2-feedback.png",
-      "sha256": "623472d5a30129d796d9a816a14cb553ef0f5ce143bf1357fceec04eb6ca87ee",
+      "sha256": "da45eeff8b66ad2909a49112080b08485748259f67c6654490738a1be34de955",
       "width": 607,
       "height": 326
     },
@@ -250,7 +250,7 @@
       "id": "peptide-link-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/peptide-link-stage-3-feedback.png",
-      "sha256": "65400f2779f551df2f1b2eb78f6259d69b2a187fd101dd3deeaa3285b77b695b",
+      "sha256": "f51a2a415317ce50e92610fee2533224e89b5d0f2a84c6d61b391360b713f951",
       "width": 607,
       "height": 276
     },
@@ -258,7 +258,7 @@
       "id": "peptide-link-complete",
       "kind": "practice-complete",
       "file": "screenshots/peptide-link-complete.png",
-      "sha256": "b19b61cb20034dcad6b58c01fa07a82f56416746a5e559d8244a70848a9fdf54",
+      "sha256": "804c6abce191072d2b03cb8625c3e0edd62cf43dbf382b283be11b53bb21d807",
       "width": 1324,
       "height": 595
     },
@@ -266,7 +266,7 @@
       "id": "strecker-map-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/strecker-map-stage-1-molecule.png",
-      "sha256": "0654ef8436faba9f77e73bacea399b4bd45ed5c87392bb3b1da902d5cba54eb7",
+      "sha256": "bdde304ef396fd0e578da5b3b0af71c943ee8db06633371b26720d63e12e407a",
       "width": 661,
       "height": 419
     },
@@ -282,7 +282,7 @@
       "id": "strecker-map-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/strecker-map-stage-1-feedback.png",
-      "sha256": "d49682dfbc6f4db9dde80e5f77905d4c7a8becca4681e2687da55c22f49fe51f",
+      "sha256": "420933ccf2099253f6801060d7fa3d7c06f076ce38a879f9b026d772ed51cfcb",
       "width": 607,
       "height": 237
     },
@@ -290,7 +290,7 @@
       "id": "strecker-map-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/strecker-map-stage-2-molecule.png",
-      "sha256": "7777485369276444fd921971f51cdd64a1dcb70a4b86847e1607ddb11252a922",
+      "sha256": "09e22e96512e3128dcc7cb90255613a31f3a4eaf5c121ce7ab782c8fead74a87",
       "width": 661,
       "height": 359
     },
@@ -306,7 +306,7 @@
       "id": "strecker-map-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/strecker-map-stage-2-feedback.png",
-      "sha256": "8494cb8182f776c709e62e660df26321b739e98d8eca8dfb802c4581a7d84dd3",
+      "sha256": "259617856463725e3b0af0b715d196ea71bab68c37e57db914a24f220af3c910",
       "width": 607,
       "height": 326
     },
@@ -314,7 +314,7 @@
       "id": "strecker-map-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/strecker-map-stage-3-molecule.png",
-      "sha256": "541d4f5210329397239aed303964879e597ca1733b59021faac904ad6d792407",
+      "sha256": "1d5bdb5cc0a9f06269635064f25cf3337c62b3b7084b09fa33f3d8044bb5c17d",
       "width": 661,
       "height": 359
     },
@@ -330,7 +330,7 @@
       "id": "strecker-map-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/strecker-map-stage-3-feedback.png",
-      "sha256": "83bcd1a54658dec3c0b6b849ff1fe03ba3b552785907696a84fc5b7725afa6de",
+      "sha256": "ac2ffeae8b9ed1140d2dbf904de27ffe480c53d65b28eeede7a2a41b5c266e3e",
       "width": 607,
       "height": 348
     },
@@ -338,7 +338,7 @@
       "id": "strecker-map-complete",
       "kind": "practice-complete",
       "file": "screenshots/strecker-map-complete.png",
-      "sha256": "ef525249841f0498f08e305e6905d30dcb6be8c368b94ff0b98cf0b81f5623b2",
+      "sha256": "a627f36d92be6a11785755ae6773c35f3aea84e9a69dac469591a9465635ab10",
       "width": 1324,
       "height": 595
     },
@@ -346,7 +346,7 @@
       "id": "phosphate-links-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/phosphate-links-stage-1-molecule.png",
-      "sha256": "9aa25a4867f9fe33924e285962161ed73d841289c8907052c964c7a82b50293b",
+      "sha256": "449f09d3078f69d803e0f82b8e6c6c2e335de301d506ec779c1a8e5bb2bdb579",
       "width": 661,
       "height": 419
     },
@@ -362,7 +362,7 @@
       "id": "phosphate-links-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/phosphate-links-stage-1-feedback.png",
-      "sha256": "77bf2480369e6351d1626107acfec007c252c8a219de0aed6338dfdaa92eed86",
+      "sha256": "da60967b88c15113074faabae0e965b086b399753c0a188a63a87d1af7a9bf86",
       "width": 607,
       "height": 237
     },
@@ -386,7 +386,7 @@
       "id": "phosphate-links-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/phosphate-links-stage-2-feedback.png",
-      "sha256": "83aee5918bf871d05e2136fc22d329369b270934df0c2a94eeb4a7f93ba012ec",
+      "sha256": "a280109a6a60b44d3ad637e6d4f345e0dfcd1fc8d3bb782e174165e62f0d7194",
       "width": 607,
       "height": 326
     },
@@ -410,7 +410,7 @@
       "id": "phosphate-links-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/phosphate-links-stage-3-feedback.png",
-      "sha256": "a5caa06fb4b7c3c8d752909f1d1265910623868df7a902d471e582036218683f",
+      "sha256": "2c916c159f41a136de95656e9afcce1fdcb9bf17e2e998929dbfcf60bdc1fdb4",
       "width": 607,
       "height": 348
     },
@@ -418,33 +418,113 @@
       "id": "phosphate-links-complete",
       "kind": "practice-complete",
       "file": "screenshots/phosphate-links-complete.png",
-      "sha256": "d7f6e118d4223aacd099942a8a0c3faf54073a0cce67ade27a47ef69306618af",
+      "sha256": "54147fcd4e5564e5e6dbbe6a78975630dc58ed46a10ea4ef7689cb2a4a05bd0c",
       "width": 1324,
       "height": 595
+    },
+    {
+      "id": "gabriel-route-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/gabriel-route-stage-1-molecule.png",
+      "sha256": "df5054d2367c906a7ec38459aa487323c4a9b004d9f4f6126c8afdf97c372268",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "gabriel-route-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/gabriel-route-stage-1-question.png",
+      "sha256": "6505b4590c4f4dc2542c9b84324ba606b342343d9c97536ab14a0f3a69da1a9b",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "gabriel-route-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/gabriel-route-stage-1-feedback.png",
+      "sha256": "04d35c551b3c75af6f1af1a5b24840757f2babcc5b7b4d9788e6c4e56db51272",
+      "width": 607,
+      "height": 259
+    },
+    {
+      "id": "gabriel-route-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/gabriel-route-stage-2-molecule.png",
+      "sha256": "925130066c153a2344abe38359f083061ea81b29c4b360d4ed3e3e48702d1474",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "gabriel-route-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/gabriel-route-stage-2-question.png",
+      "sha256": "401c7c5860dbdcfd25a6f4060a10b581fe0274d1974c4cf108339953e9071add",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "gabriel-route-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/gabriel-route-stage-2-feedback.png",
+      "sha256": "d2d023639da997d9bb202b6547414d71a47c89420917d83d3885001cea8755d3",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "gabriel-route-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/gabriel-route-stage-3-molecule.png",
+      "sha256": "d8e79fd78460a8e16861b6f8870e2eca193b40e252c47bd80d4f6913e1838dc7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "gabriel-route-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/gabriel-route-stage-3-question.png",
+      "sha256": "77b7579f8010997541eb53cbad49fbfd4aa2e16106209b26ffc49d60831848a9",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "gabriel-route-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/gabriel-route-stage-3-feedback.png",
+      "sha256": "9fc4c3c5dc446623959e3197eef8ca8e82e64faf9825fcaa0aed9dade29ffc49",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "gabriel-route-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/gabriel-route-complete.png",
+      "sha256": "e1a1b48713ccc24ae0bb888ea5c8c04b0a86ef84b3b48b32a376e6354343225f",
+      "width": 1324,
+      "height": 706
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "95235116d5dae543afeb0e1963bd7c0f5450120492b4e6f7013f976b47a53b8c",
+      "sha256": "5aebe8a150b358fa9afa2122308ca63a0ab3f7e0200aeceb19b5238e9fc0aa7e",
       "width": 1360,
-      "height": 1008
+      "height": 1055
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "a3ec19129f77830bdde83e53db9ddd8f7433dda178ef0f1226b8369572b643fb",
+      "sha256": "e631e18dea0f822b540445e88237ac6cd5e08e120d41af9ff329959adc81d619",
       "width": 375,
-      "height": 2220
+      "height": 2314
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "176bd51f554805def9534f4f5835a3fc51f2f87e31334c68c3f9aa70245beb2c",
+      "sha256": "054be97da38224a6d00a780c3d2a9d02730ab515e8c45904c8aec57150adcbbd",
       "width": 375,
-      "height": 2220
+      "height": 2314
     }
   ],
   "interactions": [
@@ -498,6 +578,18 @@
     },
     {
       "id": "phosphate-links-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "gabriel-route-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "gabriel-route-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "gabriel-route-stage-3",
       "result": "incorrect rejected; encoded key accepted; continued"
     }
   ],

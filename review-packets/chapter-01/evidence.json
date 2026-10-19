@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "sourceSnapshot": {
-    "sha256": "a251804a79200a19db0e9896bd141f9915425655e333788d2f259a1ec3bbe8c9",
+    "sha256": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -82,7 +82,7 @@
       "id": "alcohols-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/alcohols-step-1-challenge.png",
-      "sha256": "a696a39129261775ef91ca557003e3fcff28342bec3f9dbdd755a73301322797",
+      "sha256": "4506b4cf30b228e5ce2e6fd7aca529d3a6f65e8763dce49916b48dc6c0276d67",
       "width": 699,
       "height": 647
     },
@@ -98,7 +98,7 @@
       "id": "alcohols-step-2-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/alcohols-step-2-challenge.png",
-      "sha256": "a696a39129261775ef91ca557003e3fcff28342bec3f9dbdd755a73301322797",
+      "sha256": "4506b4cf30b228e5ce2e6fd7aca529d3a6f65e8763dce49916b48dc6c0276d67",
       "width": 699,
       "height": 647
     },
@@ -114,7 +114,7 @@
       "id": "alcohols-step-3-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/alcohols-step-3-challenge.png",
-      "sha256": "a696a39129261775ef91ca557003e3fcff28342bec3f9dbdd755a73301322797",
+      "sha256": "4506b4cf30b228e5ce2e6fd7aca529d3a6f65e8763dce49916b48dc6c0276d67",
       "width": 699,
       "height": 647
     },
@@ -130,7 +130,7 @@
       "id": "alcohols-step-4-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/alcohols-step-4-challenge.png",
-      "sha256": "a696a39129261775ef91ca557003e3fcff28342bec3f9dbdd755a73301322797",
+      "sha256": "4506b4cf30b228e5ce2e6fd7aca529d3a6f65e8763dce49916b48dc6c0276d67",
       "width": 699,
       "height": 647
     },
@@ -194,7 +194,7 @@
       "id": "diols-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/diols-step-1-challenge.png",
-      "sha256": "b295a4672303fbb430d46c92e62cc73ae9b7b186bb7f847a94c68de775f06be4",
+      "sha256": "a9e80c319b12660b7ff5ab9c3062fcd52f6a2b373cd8af806fced4853724a92b",
       "width": 699,
       "height": 647
     },
@@ -210,7 +210,7 @@
       "id": "diols-step-2-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/diols-step-2-challenge.png",
-      "sha256": "5f43ac3e6a4209ff278b51fd5adf57c3ed46e4e21a5fbf6c598bff8768cbc797",
+      "sha256": "9100ef577705c30c14000d4501c03655900b78f2569a65e11350b8bb4e42ac07",
       "width": 699,
       "height": 672
     },
@@ -226,7 +226,7 @@
       "id": "carbonyls-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/carbonyls-step-1-challenge.png",
-      "sha256": "0f942368b0c82a0214991a53d4bf92a22079970e2e3d009c7585f176743e1c5f",
+      "sha256": "724309be1847ef4390345f828edf1b9d60bb6377d1fd1711b4d3c87c5c10735e",
       "width": 699,
       "height": 647
     },
@@ -242,7 +242,7 @@
       "id": "carbonyls-step-2-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/carbonyls-step-2-challenge.png",
-      "sha256": "0f942368b0c82a0214991a53d4bf92a22079970e2e3d009c7585f176743e1c5f",
+      "sha256": "724309be1847ef4390345f828edf1b9d60bb6377d1fd1711b4d3c87c5c10735e",
       "width": 699,
       "height": 647
     },
@@ -258,7 +258,7 @@
       "id": "carbonyls-step-3-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/carbonyls-step-3-challenge.png",
-      "sha256": "0f942368b0c82a0214991a53d4bf92a22079970e2e3d009c7585f176743e1c5f",
+      "sha256": "724309be1847ef4390345f828edf1b9d60bb6377d1fd1711b4d3c87c5c10735e",
       "width": 699,
       "height": 647
     },
@@ -274,7 +274,7 @@
       "id": "carbonyls-step-4-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/carbonyls-step-4-challenge.png",
-      "sha256": "f50235002a338174f5d5bed7fd95123112d0f2ae52eae0e3907ea65d0e9f7f60",
+      "sha256": "cdb50cc52fdbe5910fc7f6366ac6e907a86ec8fd1371c0cf633af2f8bad21057",
       "width": 699,
       "height": 672
     },
@@ -290,7 +290,7 @@
       "id": "derivatives-step-1-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/derivatives-step-1-challenge.png",
-      "sha256": "1951a80895992aeea87174f06878f45965b8eb39e0c80ee22e2241f347faca27",
+      "sha256": "2be86a73be94d11535948b84dd6a8b1b2bd387f53c0e4eb331f4c15196543088",
       "width": 699,
       "height": 647
     },
@@ -306,7 +306,7 @@
       "id": "derivatives-step-2-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/derivatives-step-2-challenge.png",
-      "sha256": "c7a4c9180305f4d8d8891b75439c55f589450e05ea82e571250ec53ae41cc0e7",
+      "sha256": "a2ae00283d96072d6aabab40252b97832287aedefd38d1d6abcd191756367221",
       "width": 699,
       "height": 647
     },
@@ -322,7 +322,7 @@
       "id": "derivatives-step-3-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/derivatives-step-3-challenge.png",
-      "sha256": "93a5cb0cdd05b2e72add0085cb7254973a37cf4bf98b6ce277fe994aef23cf5e",
+      "sha256": "14edae34f220f92a26f9e1507710c64bc2cd91463c579594e296d36573b786ed",
       "width": 699,
       "height": 647
     },
@@ -338,7 +338,7 @@
       "id": "derivatives-step-4-challenge",
       "kind": "learn-challenge",
       "file": "screenshots/derivatives-step-4-challenge.png",
-      "sha256": "438f4bc78bd1e3c18cdafdc347a2c8a6a08c724413b8c848466deb261d9b09b3",
+      "sha256": "e9c0f6208bc089a77ecec635a5c9bb0d08d647939c2ea43cb2b4db0a8084a691",
       "width": 699,
       "height": 647
     },
@@ -530,7 +530,7 @@
       "id": "gp2a-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp2a-stage-2-molecule.png",
-      "sha256": "fc9311711ae11d1a47b5345d96c1733f8c64fa9ddfec59130b2fa8336b87a924",
+      "sha256": "61bfacdd8d24e6882f152c886c071ee1b86d8dd6c4b26eca4c7ee150256f44ad",
       "width": 661,
       "height": 419
     },
@@ -610,7 +610,7 @@
       "id": "gp2b-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp2b-stage-2-molecule.png",
-      "sha256": "0f2802235654b3fceb6f0aae78af3e0b2c9615ea05841a261a79cdab47d2da49",
+      "sha256": "ef30eed45f9f0a6fee2c08f55dae8606c663abaef52382088bb683adbd4c1faf",
       "width": 661,
       "height": 419
     },
@@ -746,7 +746,7 @@
       "id": "gp3b-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp3b-stage-1-molecule.png",
-      "sha256": "e1d531d1c2491659c03a24bae418ff6414bab9a60bd4795b3381945270b72178",
+      "sha256": "f5524f11662923e43f5c6981984b59726bd2ca324f5bd0dc9f31962a2cced3e9",
       "width": 661,
       "height": 419
     },
@@ -882,7 +882,7 @@
       "id": "gp4b-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp4b-stage-1-molecule.png",
-      "sha256": "bda0ba372d41638613888300c1972deb32dc15803d9d4862b76eec57bcd8591a",
+      "sha256": "5177fb1d361bbbc542ca70daaaedbf5927ab3f656daf64a89c311e06e2046d4b",
       "width": 661,
       "height": 419
     },
@@ -938,7 +938,7 @@
       "id": "gp5a-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp5a-stage-1-molecule.png",
-      "sha256": "c8e7a720f5fb05348ff16774229a851c7af30d5f18ddefa382e9b2f56c67dc10",
+      "sha256": "f88af49ecbeb48dd36dfef79c208ff743e72c506fc91ced82019224aebf299ce",
       "width": 661,
       "height": 419
     },
@@ -1018,7 +1018,7 @@
       "id": "gp5b-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp5b-stage-1-molecule.png",
-      "sha256": "6d1fc393856fabd991874dad75542c05725053e343f0559040b907a167afc7ec",
+      "sha256": "30153794f8fd4eae244133abff89e8f404a93ac6e89831594288b93ef0412f25",
       "width": 661,
       "height": 419
     },
@@ -1098,7 +1098,7 @@
       "id": "gp6a-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp6a-stage-1-molecule.png",
-      "sha256": "08ed5e4c65511d498f7a930853fe00ed90019404e20a2650192024bc024a2894",
+      "sha256": "7e4533102c33e2fc1f3cc76c7a7fd4cfdd8db0cbc9a9210bafab9cf2a86dece3",
       "width": 661,
       "height": 419
     },
@@ -1258,7 +1258,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "ed1adeb6a0781152ed118e722d507c5d24aa1c3dd9b4818cb9282e791236ccf3",
+      "sha256": "bf62afc8cadd3a37f0e4a5d9e16cc8c406f96108f3c83d6bcecfc37bf58edecf",
       "width": 1360,
       "height": 1073
     },
@@ -1266,17 +1266,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "88fde03506681c672d007d6f4f0f838415021cb77441f9abeb5ed095a77e78f4",
+      "sha256": "18b294a987491fe4e37ec645319b0ca7346e2c400dd2263f01eb8b72f172cbbb",
       "width": 375,
-      "height": 2126
+      "height": 2298
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "02a8828dc5325ffdd7242efadf5513b9baa74ee795e9d11a5f93de46310b7f25",
+      "sha256": "d4afd64920726018a21e785963e21e8e292cbfba34b8a034269dc699f0faf668",
       "width": 375,
-      "height": 2126
+      "height": 2298
     }
   ],
   "interactions": [

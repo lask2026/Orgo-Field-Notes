@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "df002651b045eb856970f6f7c855e0117e5bcf8bdb60ad038d5b73269e4ceffd",
+    "sha256": "c79826a794164a21394863004b938faf59738f32cccc97169d32a44eb89edb60",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -84,7 +84,7 @@
         {
           "id": "glycine-charge:stage-3",
           "type": "number",
-          "prompt": "Using pKa values 2.3 and 9.6 for this neutral-side-chain model, calculate pI.",
+          "prompt": "Using model pKa values 2.30 and 9.60, calculate pI. Report two decimal places.",
           "unit": "pH units"
         }
       ]
@@ -391,6 +391,156 @@
             "Breaking a bond itself releases energy",
             "All phosphate bonds break spontaneously at the same rate"
           ]
+        }
+      ]
+    },
+    {
+      "id": "gabriel-route",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 130,
+            "y": 45
+          },
+          {
+            "e": "C",
+            "x": 177.63139720814414,
+            "y": 72.5
+          },
+          {
+            "e": "C",
+            "x": 177.63139720814414,
+            "y": 127.5
+          },
+          {
+            "e": "C",
+            "x": 130,
+            "y": 155
+          },
+          {
+            "e": "C",
+            "x": 82.36860279185586,
+            "y": 127.5
+          },
+          {
+            "e": "C",
+            "x": 82.36860279185588,
+            "y": 72.5
+          },
+          {
+            "e": "C",
+            "x": 240,
+            "y": 50
+          },
+          {
+            "e": "N",
+            "x": 280,
+            "y": 100,
+            "charge": -1,
+            "h": 0
+          },
+          {
+            "e": "C",
+            "x": 240,
+            "y": 150
+          },
+          {
+            "e": "O",
+            "x": 240,
+            "y": 5
+          },
+          {
+            "e": "O",
+            "x": 240,
+            "y": 195
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            1
+          ],
+          [
+            7,
+            8,
+            1
+          ],
+          [
+            8,
+            2,
+            1
+          ],
+          [
+            6,
+            9,
+            2
+          ],
+          [
+            8,
+            10,
+            2
+          ]
+        ]
+      },
+      "context": "The canvas shows the protected nitrogen reagent, with its potassium counterion omitted; later questions refer to the route described in Learn & Explore.",
+      "stages": [
+        {
+          "id": "gabriel-route:stage-1",
+          "type": "atoms",
+          "prompt": "Select the nitrogen nucleophile of the displayed phthalimide anion."
+        },
+        {
+          "id": "gabriel-route:stage-2",
+          "type": "choice",
+          "prompt": "After protected aminomalonate formation and deprotonation, a suitable primary alkyl halide installs the side chain mainly by…",
+          "options": [
+            "SN2 carbon alkylation",
+            "Electrophilic aromatic substitution on the product amino acid",
+            "Direct reduction of the ester to an alkane"
+          ]
+        },
+        {
+          "id": "gabriel-route:stage-3",
+          "type": "number",
+          "prompt": "After hydrolysis of the malonate esters, how many carboxyl carbons are lost as CO2 in the usual single decarboxylation?",
+          "unit": "carboxyl carbons"
         }
       ]
     }

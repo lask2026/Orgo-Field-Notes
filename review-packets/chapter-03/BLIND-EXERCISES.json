@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "6b989303fa56f8031e1c25019a744972a5edba574aedfdf91bc5b8ae88dd9d06",
+    "sha256": "521e89fcbb1f092d4a6f4f9718e92bc66ebf8d573e2c3af43d35f43158d8f927",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -11,12 +11,12 @@
         "atoms": [
           {
             "e": "C",
-            "x": 50,
+            "x": 131,
             "y": 115
           },
           {
             "e": "C",
-            "x": 108,
+            "x": 189,
             "y": 85
           }
         ],

@@ -2,11 +2,11 @@ caseId,kind,coverageItems
 ch11:blind:ir-read,blind,3
 ch11:blind:uv-energy,blind,3
 ch11:blind:nmr-ethyl,blind,3
-ch11:blind:combined-data,blind,3
+ch11:blind:combined-evidence,blind,3
 ch11:exercise:ir-read,exercise,3
 ch11:exercise:uv-energy,exercise,3
 ch11:exercise:nmr-ethyl,exercise,3
-ch11:exercise:combined-data,exercise,3
+ch11:exercise:combined-evidence,exercise,3
 ch11:lesson:ir,lesson,7
 ch11:lesson:uv,lesson,6
 ch11:lesson:nmr,lesson,7
@@ -17,5 +17,5 @@ ch11:molecule:aceticacid,molecule,1
 ch11:molecule:butadiene,molecule,1
 ch11:molecule:ethene,molecule,1
 ch11:molecule:ethylacetate,molecule,1
-ch11:molecule:acetaldehyde,molecule,1
+ch11:molecule:propanal,molecule,1
 ch11:curriculum,curriculum,3

@@ -283,6 +283,135 @@
     "cond": "2-aminopropanenitrile (stereochemistry unspecified)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },
+  "phthalimide-anion": {
+    "name": "phthalimide anion (potassium counterion omitted)",
+    "formula": "C8H4NO2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 130,
+        "y": 45
+      },
+      {
+        "e": "C",
+        "x": 177.63139720814414,
+        "y": 72.5
+      },
+      {
+        "e": "C",
+        "x": 177.63139720814414,
+        "y": 127.5
+      },
+      {
+        "e": "C",
+        "x": 130,
+        "y": 155
+      },
+      {
+        "e": "C",
+        "x": 82.36860279185586,
+        "y": 127.5
+      },
+      {
+        "e": "C",
+        "x": 82.36860279185588,
+        "y": 72.5
+      },
+      {
+        "e": "C",
+        "x": 240,
+        "y": 50
+      },
+      {
+        "e": "N",
+        "x": 280,
+        "y": 100,
+        "charge": -1,
+        "h": 0
+      },
+      {
+        "e": "C",
+        "x": 240,
+        "y": 150
+      },
+      {
+        "e": "O",
+        "x": 240,
+        "y": 5
+      },
+      {
+        "e": "O",
+        "x": 240,
+        "y": 195
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        1
+      ],
+      [
+        7,
+        8,
+        1
+      ],
+      [
+        8,
+        2,
+        1
+      ],
+      [
+        6,
+        9,
+        2
+      ],
+      [
+        8,
+        10,
+        2
+      ]
+    ],
+    "w": 340,
+    "h": 225,
+    "cond": "protected nitrogen nucleophile for Gabriel synthesis",
+    "review": "Original fused-ring graph for the phthalimide anion; formal negative charge on N, explicit zero N-H. Composition C8H4NO2 and charge -1 exclude the potassium counterion. Connectivity/formula author-reviewed; expert verification pending."
+  },
   "dimethylphosphate": {
     "name": "dimethyl phosphate monoanion (formal Lewis representation)",
     "formula": "C2H6O4P",
@@ -416,6 +545,7 @@
     "w": 320,
     "h": 200,
     "cond": "phosphoric acid (formal Lewis representation)",
-    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending.",
+    "displayFormula": "H3PO4"
   }
 }
