@@ -3,7 +3,7 @@
   "chapter": 2,
   "title": "Isomers",
   "sourceSnapshot": {
-    "sha256": "22b996e8be8e705c37407c92ba9f1d04c2b2e61066f7e3bf0bbd650678d6ab96",
+    "sha256": "6c40d702deeda03a4e1539a94e522d300625a69c1306c2e48429dab43bb57dfb",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1970,7 +1970,15 @@
                   "label": "Space",
                   "text": "Compare spatial arrangement"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Same elemental composition, different atom connectivity: alcohol versus ether."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2239,7 +2247,14 @@
                   "label": "Steric strain",
                   "text": "Crowding of nonbonded atoms"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0
+                ],
+                "caption": "Newman projection of the lesson graph, shown at the anti teaching angle."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2285,7 +2300,14 @@
                   "label": "Cyclohexane",
                   "text": "Chair, boat and twist-boat differ"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             }
           }
         },
@@ -2492,7 +2514,14 @@
                   "label": "Whole molecule",
                   "text": "Compare every center and internal symmetry"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0
+                ],
+                "caption": "Inspect the four substituents at the OH-bearing carbon. Flat connectivity alone does not assign R/S."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2776,7 +2805,15 @@
                   "label": "Group 4 away",
                   "text": "Clockwise is R; counterclockwise is S"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0,
+                  2
+                ],
+                "caption": "Fischer projections: horizontal bonds point forward; vertical bonds point back."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2963,7 +3000,15 @@
                   "label": "Compare the winners",
                   "text": "Same side Z; opposite sides E"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Compare the substituents across C=C. Rank each alkene carbon separately."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -3188,7 +3233,12 @@
                   "label": "Normalize",
                   "text": "[α] = αobs / (l × c)"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "polarimeter",
+                "steps": [],
+                "caption": "Instrument schematic: rotation is measured after light passes through the sample; no measured angle is supplied."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -3206,7 +3256,14 @@
                   "label": "R/S label",
                   "text": "Does not predict +/− rotation"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -3234,7 +3291,14 @@
                   "label": "Matched conditions",
                   "text": "Rotation can report signed enantiomer excess"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             }
           }
         },

@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "22b996e8be8e705c37407c92ba9f1d04c2b2e61066f7e3bf0bbd650678d6ab96",
+    "sha256": "6c40d702deeda03a4e1539a94e522d300625a69c1306c2e48429dab43bb57dfb",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,9 +34,9 @@
       "id": "connectivity-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/connectivity-visuals.png",
-      "sha256": "b6d0b53c005feab5a93f34cbc69d33f386ce2397b9b88d46071c621a649b519a",
+      "sha256": "0a947bb1a28310c69d80809bb418db4ef42e7f8b8fa2a3c96e60f226db4295eb",
       "width": 607,
-      "height": 1791
+      "height": 1810
     },
     {
       "id": "conformations-step-1",
@@ -74,9 +74,9 @@
       "id": "conformations-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/conformations-visuals.png",
-      "sha256": "6a12282c17286acc59e06abf5f236e8730c5bdf56b37b5ab2e11a0d8a2fdb052",
+      "sha256": "7665ef1ca3714872e70dbab8d6fdf93237afd170a1c3544ab9ae66371fbb2c25",
       "width": 607,
-      "height": 1738
+      "height": 2119
     },
     {
       "id": "chirality-step-1",
@@ -106,9 +106,9 @@
       "id": "chirality-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/chirality-visuals.png",
-      "sha256": "3a87af5a72ce70c801e1f5382f24738369cb6483a6e03bbbbb9d8f6f7d96a73f",
+      "sha256": "f5ffe1a64a607ae283563230e8b0725a8f7368b1fb324edab3c3977f64c1804e",
       "width": 607,
-      "height": 1791
+      "height": 1854
     },
     {
       "id": "configuration-step-1",
@@ -162,9 +162,9 @@
       "id": "configuration-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/configuration-visuals.png",
-      "sha256": "36fe01af6a40303b046093c504d61a4c6344231270be43e1eb5c782bdaab50bc",
+      "sha256": "f92b287e4693c6ae7cf9130a50761e35361c960fa028147c61974477389353ad",
       "width": 607,
-      "height": 1805
+      "height": 1818
     },
     {
       "id": "alkene-step-1",
@@ -186,9 +186,9 @@
       "id": "alkene-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/alkene-visuals.png",
-      "sha256": "528b8257ad110375e119bcbf5d269ce83807c4db79533d306d3aeda4c7664f02",
+      "sha256": "6ac662cc81085f5abffe5282f270e3d90f6e785d26d7cbd3069c87a82ca8373f",
       "width": 607,
-      "height": 1791
+      "height": 1810
     },
     {
       "id": "optical-step-1",
@@ -218,9 +218,9 @@
       "id": "optical-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/optical-visuals.png",
-      "sha256": "507aa6e54123836fcf1747a12fd4afa4b6c5ff765bcb078bed03595275dac914",
+      "sha256": "732d8856ca0aa259fcd26f69263be22fddbbb630e629053228a0a57c4221b85c",
       "width": 607,
-      "height": 1813
+      "height": 2354
     },
     {
       "id": "isomer-pair-stage-1-molecule",
@@ -882,9 +882,9 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "5cd02216e89b6ea28b080e720c9c790dd838ca76de702afefea1af7e2a3a4433",
+      "sha256": "83296671086970466dee13886b50c27a575c54638d8586b56ca31e69a4f4789b",
       "width": 1360,
-      "height": 2175
+      "height": 2194
     },
     {
       "id": "visual-notes-expanded",
@@ -898,7 +898,7 @@
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "128dd9f85c36c8dd6f5d78c0a26aa715446983ec093baf11f9afd984b95659ad",
+      "sha256": "90cf656d1c02c0091c94132ac9812f6bbf4dd11c4f50bcde38f14b9f150eac05",
       "width": 1000,
       "height": 741
     },
@@ -906,17 +906,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "a97836b4db7899c6438e8bd351d9ce22e4484a2b1ad0e561670fcf2bd12a0b70",
+      "sha256": "5eca0ef987fcfae1a2ef8c10c776c20973fc0b12e35952ad52484937a0c39a01",
       "width": 375,
-      "height": 3897
+      "height": 4185
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "de0a360a4a46af599ba81f180685315c80a7ca41f7f6fd48ecafb527b7bc96db",
+      "sha256": "864d8421a6343cf5ee2273b299307710940c7939dbb7206736f3b7c72c5c91ff",
       "width": 375,
-      "height": 3897
+      "height": 4185
     },
     {
       "id": "projection-mobile-dark",
