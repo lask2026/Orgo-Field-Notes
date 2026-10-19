@@ -105,7 +105,15 @@
               "label": "Sum",
               "text": "Net zero does not mean no formal charges"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Illustrative amino-acid zwitterions. Formal charges can sum to net zero."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -225,7 +233,14 @@
               "label": "Sequence",
               "text": "N-terminus to C-terminus"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0
+            ],
+            "caption": "Locate the peptide C–N linkage and the termini. The drawing is not a measured three-dimensional geometry."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -347,7 +362,15 @@
               "label": "Hydrolysis",
               "text": "Nitrile carbon becomes carboxyl carbon"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Nitrile-carbon tracking through hydrolysis. Product is drawn as a zwitterion after appropriate workup; not a balanced equation."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -465,7 +488,15 @@
               "label": "P–O–P",
               "text": "Phosphoanhydride linkage"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Phosphoric acid and a phosphate ester: formal Lewis representations, not localized-bonding measurements."
+          }
         },
         "cue": {
           "layout": "decision",

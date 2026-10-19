@@ -3,7 +3,7 @@
   "chapter": 10,
   "title": "Nitrogen- and Phosphorus-Containing Compounds",
   "sourceSnapshot": {
-    "sha256": "163a79182f0b65a9a66a5220c65c0d92571f7d4b1d0adb7991e63147fce8aace",
+    "sha256": "10675b9e0d66423ee2793b5e0a7fdb57aac4de2f0142441efd34c64c185c15b1",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1495,7 +1495,15 @@
                   "label": "Sum",
                   "text": "Net zero does not mean no formal charges"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Illustrative amino-acid zwitterions. Formal charges can sum to net zero."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1760,7 +1768,14 @@
                   "label": "Sequence",
                   "text": "N-terminus to C-terminus"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0
+                ],
+                "caption": "Locate the peptide C–N linkage and the termini. The drawing is not a measured three-dimensional geometry."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1999,7 +2014,15 @@
                   "label": "Hydrolysis",
                   "text": "Nitrile carbon becomes carboxyl carbon"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Nitrile-carbon tracking through hydrolysis. Product is drawn as a zwitterion after appropriate workup; not a balanced equation."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2389,7 +2412,15 @@
                   "label": "P–O–P",
                   "text": "Phosphoanhydride linkage"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Phosphoric acid and a phosphate ester: formal Lewis representations, not localized-bonding measurements."
+              }
             },
             "cue": {
               "layout": "decision",
