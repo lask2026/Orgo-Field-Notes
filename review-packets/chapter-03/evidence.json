@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "9d35b62738688572f7650f53049e0603b320b4fa51a0d73d3353dda8ca28bc3a",
+    "sha256": "788f2cee548413419c5de9db3fdeb349e0f07229e2b64cc1209e540ea4fd2f64",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -106,7 +106,7 @@
       "id": "quantum-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/quantum-stage-1-feedback.png",
-      "sha256": "1d3047c6d7ac1f91dc802932adafd11f4e57e97a44fc8fc7fe20453ee2be6bde",
+      "sha256": "2ec77313e9fc03962da488a994b33f2a1d1b4871255de1b9c330bc4323fcae60",
       "width": 607,
       "height": 326
     },
@@ -226,7 +226,7 @@
       "id": "quantum-stage-6-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/quantum-stage-6-feedback.png",
-      "sha256": "4e204ea706cfb7ddc7674f7925058f8836593db1a1e77663f25d55b39d2b17eb",
+      "sha256": "42fb3dd1d60e6af459a4f57a4f303df91a2c65a5573cbd4ef584c3dec8c0bfa1",
       "width": 607,
       "height": 373
     },
@@ -234,7 +234,7 @@
       "id": "quantum-complete",
       "kind": "practice-complete",
       "file": "screenshots/quantum-complete.png",
-      "sha256": "e444a8da90a136660155e47199c1c30ae199638ccb7cd19fb7dc9348c2a594ec",
+      "sha256": "226666e2b2d0fec8b27c6b5f83ee329605add4ad9e0f3537f49974ed5698beb5",
       "width": 1324,
       "height": 928
     },
@@ -314,9 +314,9 @@
       "id": "bond-count-complete",
       "kind": "practice-complete",
       "file": "screenshots/bond-count-complete.png",
-      "sha256": "1a3ce19865ccc4eb742dd36152dcde89a26821dc5f9fbba943eee0fab54642bd",
+      "sha256": "df75d47f7af9121c7dfdc6adf7c0a1c4004eebc3277590b0e3cafdb02eafa14c",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "amide-resonance-stage-1-molecule",
@@ -362,7 +362,7 @@
       "id": "amide-resonance-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/amide-resonance-stage-2-feedback.png",
-      "sha256": "26104c9d8dc1ca163bcff1c2c21ba01513168e4f52db4702650056e231835527",
+      "sha256": "03793190e602f4cb180afc67af6bfe3194df03e41b095aa03becd53cd10e3666",
       "width": 607,
       "height": 326
     },
@@ -386,7 +386,7 @@
       "id": "amide-resonance-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/amide-resonance-stage-3-feedback.png",
-      "sha256": "1ee7cf07c3ba0714ceb9f8bc26aa2c2d5d3c54474e7041836a58573c8aa311dc",
+      "sha256": "10a517e70a927762bd34b36566bb719c85b85f457a1c3f97f38b22cd743ad83e",
       "width": 607,
       "height": 326
     },
@@ -394,9 +394,9 @@
       "id": "amide-resonance-complete",
       "kind": "practice-complete",
       "file": "screenshots/amide-resonance-complete.png",
-      "sha256": "41c1746045de4c4741eafa9575e0bb73cf2c545a3ed729bfbc04bbc4cc15be04",
+      "sha256": "73c09e2c5283602717aad047172aed66f134fba8f9a0a9dea24dc12fe527fbbc",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "layout-desktop-light",
@@ -418,7 +418,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "a130c0adc4c3025ef9a7eee0e258c5ae001b9f433f5a89fc0f1445578f62d5ba",
+      "sha256": "71834b7998424e70c7b8e4a75ce7438fb8b6303cb058ce6fc3080082ff240c0b",
       "width": 375,
       "height": 2616
     }

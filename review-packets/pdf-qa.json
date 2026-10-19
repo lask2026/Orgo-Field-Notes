@@ -12,7 +12,7 @@
         6,
         13
       ],
-      "sha256": "270bb47a65511788ea9f2a7f321a959a32f1fa244b2682153fe66b75f0a5b9da"
+      "sha256": "b1dfb6128562282a1e4e4f1a6c6fcbf407c333ecebe6bb42271aa88df5fd7e28"
     },
     {
       "chapter": 1,
@@ -25,7 +25,7 @@
         50,
         101
       ],
-      "sha256": "6a1a56a63190b6605dbf2414801ec1fccc6c99e9ac2b5f0149ee4359c6414a1c"
+      "sha256": "0e0383cb21f0af16cfbb76612c6b969ef19d7fad7b28068f52665337841dc646"
     },
     {
       "chapter": 2,
@@ -38,7 +38,7 @@
         6,
         12
       ],
-      "sha256": "2a00c48329325838dddb5ff05e22f9d8d43010a58287f106f9844b49bd2ff390"
+      "sha256": "ff776c3271dcbff4679bfd5b8679fe5bc4d56f920b23788ac9fc7f7bcb7f322d"
     },
     {
       "chapter": 2,
@@ -51,7 +51,7 @@
         32,
         65
       ],
-      "sha256": "ac06ed4104f7a604574a977af10ddd0016158c3bb301585e7bd863fae470cef3"
+      "sha256": "82e3902afeb37a9f169ed72c3e32dd0c95ed3133f9ab2b6c6cb046e0856192af"
     },
     {
       "chapter": 3,
@@ -63,7 +63,7 @@
         2,
         5
       ],
-      "sha256": "63718af3e2840e53fdcdab75ef3f517a08cd75dc41aa9227783f740dd809c994"
+      "sha256": "d5407d2b0d9aab529eb923895dc30d84b2a429443503971ba6e8789499474f23"
     },
     {
       "chapter": 3,
@@ -76,7 +76,7 @@
         17,
         34
       ],
-      "sha256": "4287189ba179f39f75b397a5b2bb1dc7be3bac04657699d693011da9be45d151"
+      "sha256": "d326b485fff7dc808a8efc00bed272e956cbcfe5c99f2c5eb5faf9966d5c5c59"
     },
     {
       "chapter": 4,
@@ -89,7 +89,7 @@
         3,
         6
       ],
-      "sha256": "15cdae4392ccabfb8bb0bd5ade78f9121d523f6995f1e4cab9b1bd60c55257ba"
+      "sha256": "46b2b7f0199996b4d842b002d2760b3f3174fd25f811d9a26aebc8fc30dc1a56"
     },
     {
       "chapter": 4,
@@ -102,19 +102,20 @@
         22,
         44
       ],
-      "sha256": "1cf457526371eec65b958a32bd7b5d3eac11b48dfcf78fc4d37387d1f13fb551"
+      "sha256": "af45119503c53ff528bf1cf0f344e397a7b2f983ffba918ba9993583da4eda74"
     },
     {
       "chapter": 5,
       "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
+      "pages": 8,
       "textCoverage": "passed",
       "renderedPages": [
         1,
         2,
-        5
+        4,
+        8
       ],
-      "sha256": "d52ca74ef80aaa8c944d0a24f7dc0476a346df14ff5633fec2dcb6b614ccfef6"
+      "sha256": "1038f00a1c88170c192f7397988dd1c717b76a8db34a5f71c194b62fa8a63058"
     },
     {
       "chapter": 5,
@@ -127,32 +128,7 @@
         18,
         36
       ],
-      "sha256": "2c46a6dea10f42707e26839c4c4571f9b893b9e1960f5e9f0e903d284a9860ab"
-    },
-    {
-      "chapter": 6,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "97196cd6536c4ca2d8a342249b98d6e31563874b9fb5c0788d2369df7042d4d0"
-    },
-    {
-      "chapter": 6,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 36,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        18,
-        36
-      ],
-      "sha256": "e829685044378edb520cb5aa4e14f4b1b4371fddf952dd68605aadf376776df0"
+      "sha256": "571b39c33fa390789c4a6e36a79f65aaad73a4ef9a16e9a8a3f9d5f42312e370"
     },
     {
       "chapter": 7,
@@ -164,7 +140,7 @@
         2,
         5
       ],
-      "sha256": "54bf751f260ed313bb098a3799f68b8e755f1e5e3269357a85f67e3c491ff616"
+      "sha256": "5668f00c50cfc0f2142754a42828181dd912527d5cda4f10b6644ec4c9a2b045"
     },
     {
       "chapter": 7,
@@ -177,7 +153,7 @@
         17,
         35
       ],
-      "sha256": "ef510741c771aad5467d7bd1c43fe01b8d45831c3ab8588cbb2bc7e18a72ca6a"
+      "sha256": "b82b7b270d8e295f9929b3f301999a8dfdcc5a14fced115fbf6d5b4dbf8cb1bb"
     },
     {
       "chapter": 8,
@@ -190,7 +166,7 @@
         3,
         6
       ],
-      "sha256": "3d20826ffe1757aaa2486c53cdb5117b64ad7cdbb437ac323748bdda512dc231"
+      "sha256": "72bf1c8d761e6f465ee7c251e06bbda4be11912d920085819cbb8837d17633af"
     },
     {
       "chapter": 8,
@@ -203,7 +179,7 @@
         17,
         35
       ],
-      "sha256": "358e67c96c913fcd9ebdc6363dc9c01add60a31182572699bed6cbc5e4c56e13"
+      "sha256": "f09ebca1861019ce236c1690509eb3118bc90b758cf20881ef22e18568a10930"
     },
     {
       "chapter": 9,
@@ -215,7 +191,7 @@
         2,
         4
       ],
-      "sha256": "f668d56e89521da92255a981eb915feb2dfd6a2ac666d9c9345bbdc1dcf2ca59"
+      "sha256": "9de9ea2ea8db2aa79b722a476945025d5cc6c5fae2e15fd01dbd205968a5d0d7"
     },
     {
       "chapter": 9,
@@ -228,7 +204,7 @@
         14,
         28
       ],
-      "sha256": "02c2b4412bdf3ca9347fe7ee11893439d034cd446243099f5d03d902d31a935c"
+      "sha256": "d7afde0fa31070f320461701290b724edd2cef31560507f998700d7c4fceaba3"
     },
     {
       "chapter": 10,
@@ -240,7 +216,7 @@
         2,
         5
       ],
-      "sha256": "0f06d34af022d7ff8444059a861faf650dc2daa2c3790fde2bfe29a23126686c"
+      "sha256": "f4ec37125822a10af766fd0dfcc1996107f7df5ed5c8c25c1f298a4c38d24a73"
     },
     {
       "chapter": 10,
@@ -253,7 +229,7 @@
         18,
         37
       ],
-      "sha256": "07a6e8612760c299daf2bf0d3cd5368fe6ee18299491b3df18ec74e07c96d682"
+      "sha256": "be53dc81c88abeb288afb6155cd02e7842b51123c921e796db48dc08ab68cfe7"
     },
     {
       "chapter": 11,
@@ -266,7 +242,7 @@
         3,
         7
       ],
-      "sha256": "22e429b2a82ee31272807fe5100ca6aebc5a104f61bec34a034ec46b8ecd03c8"
+      "sha256": "c71d75923ce0c2ee76ff47fb3c024db64b6bce59d405b0947a7805d68da189c5"
     },
     {
       "chapter": 11,
@@ -279,7 +255,7 @@
         20,
         40
       ],
-      "sha256": "4c24d4eb7f126e56020cf866f90d2dcc7a74370b08c0d9290273d248b91dc9d7"
+      "sha256": "2b281f7d026c93d92578ae5285d94f7d3619f7f17c87224c8c7b6b29445e49b4"
     },
     {
       "chapter": 12,
@@ -292,7 +268,7 @@
         4,
         8
       ],
-      "sha256": "76d069e311204db0bb5c925e2371c5256ac4962455048eea2da94faa9133060a"
+      "sha256": "8d2bc27b22fb926d39bef3e46a257eae67323cb99d8b8fed74f02dbae0acff3c"
     },
     {
       "chapter": 12,
@@ -305,24 +281,39 @@
         18,
         37
       ],
-      "sha256": "e67706d52859e6193f722717c9872194b387b5ca5823e062cfc82c347329023d"
+      "sha256": "b9992a95a02b6329bd692376add781f7035e1ca0de00d0ad3e3407664644a5b1"
+    },
+    {
+      "chapter": 6,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 6,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "sha256": "36e60babb38a5dd531b664b204a1d53e7ecaa7be117d5f9cba6478501a22d3ee"
+    },
+    {
+      "chapter": 6,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 37,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        37
+      ],
+      "sha256": "a86c12859f05c849942ab5f4ee1487522d365aae3e1cd4c850381e4e4818eff0"
     }
   ],
   "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
   "visualInspection": {
-    "status": "sampled-pages-inspected",
-    "samplePages": 90,
-    "contactSheets": 8,
-    "additionalChecks": [
-      "Chapter 4 full page 3: supported equilibrium arrow glyph",
-      "Chapter 4 blind page 2: forward equation and concealed numeric key",
-      "Speciation legend and mobile expanded teaching cards",
-      "Tertiary/primary neighbor highlights and redox focus/signed input"
-    ],
-    "pdfTextChecks": [
-      "Equilibrium arrow U+21CC retained in both Chapter 4 PDFs",
-      "Blind equilibrium page contains no 100000 numeric key"
-    ],
-    "limits": "Sampled visual checks, not every PDF page and not independent chemistry verification."
+    "date": "2026-10-19",
+    "status": "passed",
+    "scope": "All eight all-chapter contact sheets (92 sample pages); Chapter 5/6 full pages 3-4; refreshed Chapter 6 contact sheet and full page 3 after comparator repair; mechanism flow in chapters 6/7/9, mesylate, mobile-dark product completion. Complete comparison also asserted in PDF extracted text. No remaining missing text, clipping or glyph boxes in inspected samples. Not full-page certification or independent chemistry verification."
   }
 }

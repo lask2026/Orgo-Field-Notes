@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "879cc182a549d26acc8bc2878a40fac08c888a695dc824071e43aa4bbe7f4c4d",
+    "sha256": "e5dd1487d0782972ee9385f3a13e04a39e248a0f93cbef2455348bcf33dce6d2",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,7 +34,7 @@
       "id": "acyl-mechanism-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-1.png",
-      "sha256": "1e5a9bfe0370457aed379caffeff12552147b4fcd7520c0d933ee017713c4d67",
+      "sha256": "6be6a761ef6977c25aaac8e720ff6a030dd7b135ba716207bab246ae7f085dc8",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "acyl-mechanism-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-3.png",
-      "sha256": "4583b413c75c0686d6fbcb8d4f5256b6a2c103856a1f7036f09f2bf3e8867c5f",
+      "sha256": "cc65f68550c10d6d5412472260e18e613a5c0a8973163bbbb794af2aa07980aa",
       "width": 661,
       "height": 359
     },
@@ -146,7 +146,7 @@
       "id": "cyclic-derivative-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/cyclic-derivative-stage-3-feedback.png",
-      "sha256": "7988a6e30bd897cbe53f2599b7bf9c372a3f68b33766eb9702d3900a879ab0d2",
+      "sha256": "40218f95afbbfb0b4bb84f68631da8f33f99adfbbefd40c887d589bdfecbdaa0",
       "width": 607,
       "height": 326
     },
@@ -154,9 +154,9 @@
       "id": "cyclic-derivative-complete",
       "kind": "practice-complete",
       "file": "screenshots/cyclic-derivative-complete.png",
-      "sha256": "ee103796142d12ccf80cf982d38d26d12612853a9df81c6d8a69ce25cde184be",
+      "sha256": "a37ac480a79500a27d0e92ff76a8d180e648f6fb7dfa64348d4ca62a92e4d5bd",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "acyl-order-stage-1-molecule",
@@ -202,7 +202,7 @@
       "id": "acyl-order-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/acyl-order-stage-2-feedback.png",
-      "sha256": "ed66fbfad408fe1cb6f224dbd56847053d24a82753d9add4d27a6763055fc6e8",
+      "sha256": "5330a2047fad7a5abd9bba569bf6e2221a6e2525a082f232a8eaa7fa1e9972fc",
       "width": 607,
       "height": 326
     },
@@ -226,7 +226,7 @@
       "id": "acyl-order-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/acyl-order-stage-3-feedback.png",
-      "sha256": "a12059bdbce3c3a2615dd419b22154afce35834092ad322a409fce7b35cc474c",
+      "sha256": "58606885bdc2c420c6c7999ddec728001694d6f7b0deb116eb053dd6f2962b85",
       "width": 607,
       "height": 351
     },
@@ -234,9 +234,9 @@
       "id": "acyl-order-complete",
       "kind": "practice-complete",
       "file": "screenshots/acyl-order-complete.png",
-      "sha256": "02915b78fa697bca0b39d971654068173acc89d6b9fa18bf58cd022c9a8c8089",
+      "sha256": "6ce46f54d9019583ce6a75c4d56c24067d80a0ca883cf9bee5514fe4f3a39136",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "hydrolysis-products-stage-1-molecule",
@@ -282,7 +282,7 @@
       "id": "hydrolysis-products-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hydrolysis-products-stage-2-feedback.png",
-      "sha256": "9ae2279653bd1a2a9caac13e364e8a1a47b17496764597b073bfa1052486cfa6",
+      "sha256": "0f3c31713a8d14db16c933c6981093d8d4d20b4aaf8f51cb6e2155c1a2e9168c",
       "width": 607,
       "height": 326
     },
@@ -314,9 +314,9 @@
       "id": "hydrolysis-products-complete",
       "kind": "practice-complete",
       "file": "screenshots/hydrolysis-products-complete.png",
-      "sha256": "950236250c0736531fdfed20ac0aa448b254c62b5d87a4c0afb5be3b43f9dfef",
+      "sha256": "3a4e25c42556af845a46690cb847f15e10457bd464ac513ca0b91576f20e766f",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "layout-desktop-light",
@@ -338,7 +338,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "20e69429b38e8e4ef09e313b553291cc8797a42c5cd2f1bf6ee75cc28d08cbbe",
+      "sha256": "4d0966f7867ca6c7c523fbdf4fa04b3bf4392f3b7e661f4114bfab236f9dfe3c",
       "width": 375,
       "height": 1910
     }

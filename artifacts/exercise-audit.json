@@ -478,14 +478,14 @@
   },
   {
     "chapter": 6,
-    "id": "cyanohydrin-count",
+    "id": "cyanohydrin-bond",
     "lesson": "nitrogen-addition",
     "molecule": "cyanohydrin",
     "stages": 3,
     "types": [
       "atoms",
       "number",
-      "choice"
+      "atoms"
     ],
     "browserStatus": "passed",
     "scientificReview": "Author reviewed; not independently expert verified"

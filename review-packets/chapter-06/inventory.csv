@@ -1,11 +1,11 @@
 caseId,kind,coverageItems
 ch06:blind:addition-site,blind,3
 ch06:blind:hemiacetal-identify,blind,3
-ch06:blind:cyanohydrin-count,blind,3
+ch06:blind:cyanohydrin-bond,blind,3
 ch06:blind:hydride-product,blind,3
 ch06:exercise:addition-site,exercise,3
 ch06:exercise:hemiacetal-identify,exercise,3
-ch06:exercise:cyanohydrin-count,exercise,3
+ch06:exercise:cyanohydrin-bond,exercise,3
 ch06:exercise:hydride-product,exercise,3
 ch06:lesson:carbonyl,lesson,6
 ch06:lesson:oxygen-addition,lesson,7
@@ -21,4 +21,5 @@ ch06:molecule:cyanohydrin,molecule,1
 ch06:molecule:aceticacid,molecule,1
 ch06:molecule:ethanol,molecule,1
 ch06:molecule:acetone,molecule,1
+ch06:molecule:isopropanol,molecule,1
 ch06:curriculum,curriculum,3

@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "965e99720454ecb4108d9722e7f1dd9d26005a1329ce0de844da2e161de370e1",
+    "sha256": "cb7252ea632ae0b9efc0d1f184c6746967bd86d6423936f67e896cbd0f6c6410",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -122,7 +122,7 @@
       "id": "glycine-charge-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/glycine-charge-stage-1-feedback.png",
-      "sha256": "ffae33329849b1df8887623b5a19415bd15405cece244169007d95eb7508d6c7",
+      "sha256": "92db1bf1cf471648c7b69e649b4dc057f2930e75e5707b8468ea6cb6b7bd8982",
       "width": 607,
       "height": 326
     },
@@ -146,7 +146,7 @@
       "id": "glycine-charge-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/glycine-charge-stage-2-feedback.png",
-      "sha256": "bf4d228a48857fce966df38575fc66bc7d177b90f1a4b4e58c74ed42ec2f2c5d",
+      "sha256": "f50777f9b1a007c909c41c7438fa8656cda39d63ae3827b8817da6b6296c5c77",
       "width": 607,
       "height": 326
     },
@@ -178,9 +178,9 @@
       "id": "glycine-charge-complete",
       "kind": "practice-complete",
       "file": "screenshots/glycine-charge-complete.png",
-      "sha256": "f2d27dd970091fed90b8ac722e7cf249ce02bbd337dcce327818380ac6e88aa6",
+      "sha256": "f3a92ef82b01af6274fcb94cb55c20dbdba41f3948e971cbe9af52b1f89aa916",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "peptide-link-stage-1-molecule",
@@ -226,7 +226,7 @@
       "id": "peptide-link-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/peptide-link-stage-2-feedback.png",
-      "sha256": "4757d0efe04ec26e95a4e59ce8cb790b1ffbc8671b0e7aea3ef709de6efd5b7c",
+      "sha256": "623472d5a30129d796d9a816a14cb553ef0f5ce143bf1357fceec04eb6ca87ee",
       "width": 607,
       "height": 326
     },
@@ -250,7 +250,7 @@
       "id": "peptide-link-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/peptide-link-stage-3-feedback.png",
-      "sha256": "8e94aa80106917c502a7eb571117afe8633e481f57a4aff3f66acce1d3f8e495",
+      "sha256": "65400f2779f551df2f1b2eb78f6259d69b2a187fd101dd3deeaa3285b77b695b",
       "width": 607,
       "height": 276
     },
@@ -258,9 +258,9 @@
       "id": "peptide-link-complete",
       "kind": "practice-complete",
       "file": "screenshots/peptide-link-complete.png",
-      "sha256": "43a1eedaf85d18710000c1e3a047560ddab1ad10a0488701ff5a98934e842265",
+      "sha256": "b19b61cb20034dcad6b58c01fa07a82f56416746a5e559d8244a70848a9fdf54",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "strecker-map-stage-1-molecule",
@@ -306,7 +306,7 @@
       "id": "strecker-map-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/strecker-map-stage-2-feedback.png",
-      "sha256": "612302a94587c48d76ddaa2f60171e1be8c521f2650abca465886b85edb0dc9b",
+      "sha256": "8494cb8182f776c709e62e660df26321b739e98d8eca8dfb802c4581a7d84dd3",
       "width": 607,
       "height": 326
     },
@@ -330,7 +330,7 @@
       "id": "strecker-map-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/strecker-map-stage-3-feedback.png",
-      "sha256": "368c750edf2aaf28655a72b1394284ad7645b501b993cd03ceb5080730323feb",
+      "sha256": "83bcd1a54658dec3c0b6b849ff1fe03ba3b552785907696a84fc5b7725afa6de",
       "width": 607,
       "height": 348
     },
@@ -338,9 +338,9 @@
       "id": "strecker-map-complete",
       "kind": "practice-complete",
       "file": "screenshots/strecker-map-complete.png",
-      "sha256": "107c48876430cfb8563b37f1360b6430ee983fb2b1ee40409704d9a6f92037fd",
+      "sha256": "ef525249841f0498f08e305e6905d30dcb6be8c368b94ff0b98cf0b81f5623b2",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "phosphate-links-stage-1-molecule",
@@ -386,7 +386,7 @@
       "id": "phosphate-links-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/phosphate-links-stage-2-feedback.png",
-      "sha256": "b7251b96538d42d169c2367625cdfca1fa33432609c9aefdfff35ded9d3300b8",
+      "sha256": "83aee5918bf871d05e2136fc22d329369b270934df0c2a94eeb4a7f93ba012ec",
       "width": 607,
       "height": 326
     },
@@ -410,7 +410,7 @@
       "id": "phosphate-links-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/phosphate-links-stage-3-feedback.png",
-      "sha256": "ea6fd07aef5dcf59ef5f3b1ab986303581e7e56c80c216f448d48e06e75421ab",
+      "sha256": "a5caa06fb4b7c3c8d752909f1d1265910623868df7a902d471e582036218683f",
       "width": 607,
       "height": 348
     },
@@ -418,9 +418,9 @@
       "id": "phosphate-links-complete",
       "kind": "practice-complete",
       "file": "screenshots/phosphate-links-complete.png",
-      "sha256": "f82c9e3712c86e34a9b2a6fb0c6fdb5a7b9caf8f32464339f5549daf582cecb0",
+      "sha256": "d7f6e118d4223aacd099942a8a0c3faf54073a0cce67ade27a47ef69306618af",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "layout-desktop-light",
@@ -442,7 +442,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "24b1c9d9448eb135433edcc9dfcf202c1e9aab0ab0e5920ffd82fcb4599bd619",
+      "sha256": "176bd51f554805def9534f4f5835a3fc51f2f87e31334c68c3f9aa70245beb2c",
       "width": 375,
       "height": 2220
     }

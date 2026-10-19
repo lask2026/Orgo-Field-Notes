@@ -64,6 +64,14 @@ function molecularFormula(m){
 function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
 function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
+function electronFlowGeometry(m,flow){
+  const point=side=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
+  const a=point('from'),b=point('to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,nx=-dy/len,ny=dx/len;
+  const labeled=side=>flow[side+'Atom']!==undefined&&m.atoms[flow[side+'Atom']].e!=='C';
+  const startGap=labeled('from')?24:6;
+  // Approach visible labels from the curve's outer side, keeping the shaft and head off the glyph.
+  return {start:{x:a.x+nx*startGap,y:a.y+ny*startGap},control:{x:(a.x+b.x)/2+nx*45,y:(a.y+b.y)/2+ny*45},end:labeled('to')?{x:b.x+nx*24,y:b.y+ny*24}:{x:b.x-dx/len*12,y:b.y-dy/len*12}};
+}
 function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
@@ -85,8 +93,7 @@ function drawMolecule(m,opts={}){
   }
   if(opts.flow?.length){
     h+='<defs><marker id="electronArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#6d28d9" stroke-width="1.5"/></marker></defs>';
-    const point=(flow,side)=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
-    for(const flow of opts.flow){const a=point(flow,'from'),b=point(flow,'to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,tx=b.x-dx/len*16,ty=b.y-dy/len*16;h+=`<path class="anim-path" pathLength="100" d="M${a.x+8},${a.y} Q${(a.x+b.x)/2+45},${(a.y+b.y)/2-25} ${tx},${ty}" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#electronArrow)"/>`;}
+    for(const flow of opts.flow){const {start:a,control:c,end:b}=electronFlowGeometry(m,flow);h+=`<path class="anim-path" pathLength="100" d="M${a.x},${a.y} Q${c.x},${c.y} ${b.x},${b.y}" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#electronArrow)"/>`;}
   }
   m.atoms.forEach((a,i)=>{
     const l=label(a,i);
@@ -100,7 +107,7 @@ function drawMolecule(m,opts={}){
   return h+'</svg>'+(opts.click?`<div class="atom-controls" aria-label="Atom selection buttons">${m.atoms.map((a,i)=>`<button class="atom-key" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Select atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${atomLabel(i)} <small>${a.e}</small></button>`).join('')}</div>`:'')+`<details class="graph-text"><summary>Accessible atom and bond description</summary><p>${esc(graphDescription(m))}</p></details>`;
 }
 
-return {valences,hydrogens,molecularFormula,netCharge,formulaLabel,graphDescription,drawMolecule};})();
+return {valences,hydrogens,molecularFormula,netCharge,formulaLabel,graphDescription,electronFlowGeometry,drawMolecule};})();
 const diagrams=(()=>{
 const {escapeHTML:esc}=validation;
 function drawDiagram(d,value,{concealAnswers=false}={}){
@@ -173,8 +180,8 @@ function renderPractice(ch,molecules,state,ui){
   const switched=molecule!==(ex.stages[p.stage-1]?.molecule||ex.molecule);
   const opts=done?(ex.stages.at(-1).highlights||{}):{...(switched?{}:(ex.stages[p.stage-1]?.highlights||{})),...(s.type==='atoms'?{click:true,sel:ui.selected}:{})};
   return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div><div class="stage">${drawMolecule(molecules[molecule],opts)}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
-  ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Formula: ${esc(formulaLabel(molecules[molecule]))}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
-  ${done?ex.stages.map((st,i)=>`<div class="scard"><h2 class="shead">${i+1}. ${esc(st.prompt)}</h2><p><strong>${esc(solutionText(st))}</strong></p><div class="sexp">${esc(st.explanation)}</div></div>`).join(''):`${p.stage?`<p class="muted">${p.stage} earlier decision${p.stage>1?'s':''} completed.</p>`:''}<div class="scard"><h2 class="shead" tabindex="-1" id="stageTitle">${esc(s.prompt)}</h2><span class="stag">${esc(s.skill)}</span>${s.type==='choice'?`<div class="clist">${s.options.map((o,i)=>`<button class="copt" data-act="choice" data-idx="${i}" ${ui.correct?'disabled':''}><span class="clet">${atomLabel(i)}</span>${esc(o)}</button>`).join('')}</div>`:s.type==='atoms'?`<p>Select atoms on the structure using click or Tab and Enter. Selected: <strong>${ui.selected.map(atomLabel).join(', ')||'None'}</strong></p><button class="btn pri" data-act="checkAnswer" ${ui.correct?'disabled':''}>Check selection</button>`:`<form id="answerForm"><label for="answer">${s.type==='number'?`Numeric answer${s.unit?' ('+esc(s.unit)+')':''}`:'Your answer'}</label><input id="answer" class="tinp" autocomplete="off" spellcheck="false" ${s.type==='number'?'inputmode="decimal"':''} value="${esc(ui.value)}" ${ui.correct?'disabled':''}><button class="btn pri" type="submit" ${ui.correct?'disabled':''}>Check answer</button></form>`}
+  ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Displayed structure: ${esc(molecules[molecule].name)}<br>Formula: ${esc(formulaLabel(molecules[molecule]))}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
+  ${done?ex.stages.map((st,i)=>`<div class="scard"><h2 class="shead">${i+1}. ${esc(st.prompt)}</h2><p><strong>${esc(solutionText(st))}</strong></p><div class="sexp">${esc(st.explanation)}</div></div>`).join(''):`${p.stage?`<p class="muted">${p.stage} earlier decision${p.stage>1?'s':''} completed.</p>`:''}<div class="scard"><h2 class="shead" tabindex="-1" id="stageTitle">${esc(s.prompt)}</h2><span class="stag">${esc(s.skill)}</span>${s.type==='choice'?`<div class="clist">${s.options.map((o,i)=>`<button class="copt ${ui.correct&&i===s.answer?'ok':''}" data-act="choice" data-idx="${i}" ${ui.correct?'disabled':''}><span class="clet">${atomLabel(i)}</span>${esc(o)}</button>`).join('')}</div>`:s.type==='atoms'?`<p>Select atoms on the structure using click or Tab and Enter. Selected: <strong>${ui.selected.map(atomLabel).join(', ')||'None'}</strong></p><button class="btn pri" data-act="checkAnswer" ${ui.correct?'disabled':''}>Check selection</button>`:`<form id="answerForm"><label for="answer">${s.type==='number'?`Numeric answer${s.unit?' ('+esc(s.unit)+')':''}`:'Your answer'}</label><input id="answer" class="tinp" autocomplete="off" spellcheck="false" ${s.type==='number'?'inputmode="decimal"':''} value="${esc(ui.value)}" ${ui.correct?'disabled':''}><button class="btn pri" type="submit" ${ui.correct?'disabled':''}>Check answer</button></form>`}
   ${ui.feedback?`<div class="fbox ${ui.correct?'ok':'err'}" role="status">${esc(ui.feedback)}</div>`:''}
   ${ui.correct?'<button class="btn suc" data-act="continue">Continue →</button>':`<button class="btn hint" data-act="hint" ${p.hints>=s.hints.length?'disabled':''}>${p.hints>=s.hints.length?'All hints shown':'Show next hint'}</button>${s.hints.slice(0,p.hints).map(h=>`<p class="sexp">${esc(h)}</p>`).join('')}`}</div><p class="locked">${ex.stages.length-p.stage-1} later stage(s) concealed until you continue.</p>`}</section></div>`;
 }

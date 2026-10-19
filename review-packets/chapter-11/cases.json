@@ -3,7 +3,7 @@
   "chapter": 11,
   "title": "Spectroscopy",
   "sourceSnapshot": {
-    "sha256": "d49cc1fae30b7ba3624726d48a5e1e4bd0b67aea1ea182945430252d29c1f396",
+    "sha256": "1f45de04732d703eeaf1d823b4ae4f9462006e204c8cade9a8c9c44847c0ea6a",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

@@ -4,17 +4,17 @@ Read [START-HERE.md](START-HERE.md) for the AI Studio and PowerShell Llama workf
 
 | Chapter | Independent solving | Content/rendering audit | Instructions |
 |---|---|---|---|
-| 01 · Nomenclature | [Blind exercises](chapter-01/01-BLIND-EXERCISES.pdf) (13 pages, 207 KiB) | [Full review](chapter-01/02-CHAPTER-REVIEW.pdf) (101 pages, 2710 KiB) | [Prompt](chapter-01/AI-STUDIO-PROMPT.txt) |
-| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (12 pages, 142 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (65 pages, 1631 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
-| 03 · Bonding | [Blind exercises](chapter-03/01-BLIND-EXERCISES.pdf) (5 pages, 74 KiB) | [Full review](chapter-03/02-CHAPTER-REVIEW.pdf) (34 pages, 941 KiB) | [Prompt](chapter-03/AI-STUDIO-PROMPT.txt) |
-| 04 · Analyzing Organic Reactions | [Blind exercises](chapter-04/01-BLIND-EXERCISES.pdf) (6 pages, 126 KiB) | [Full review](chapter-04/02-CHAPTER-REVIEW.pdf) (44 pages, 1352 KiB) | [Prompt](chapter-04/AI-STUDIO-PROMPT.txt) |
-| 05 · Alcohols | [Blind exercises](chapter-05/01-BLIND-EXERCISES.pdf) (5 pages, 108 KiB) | [Full review](chapter-05/02-CHAPTER-REVIEW.pdf) (36 pages, 977 KiB) | [Prompt](chapter-05/AI-STUDIO-PROMPT.txt) |
-| 06 · Aldehydes and Ketones I | [Blind exercises](chapter-06/01-BLIND-EXERCISES.pdf) (5 pages, 99 KiB) | [Full review](chapter-06/02-CHAPTER-REVIEW.pdf) (36 pages, 983 KiB) | [Prompt](chapter-06/AI-STUDIO-PROMPT.txt) |
-| 07 · Aldehydes and Ketones II: Enolates | [Blind exercises](chapter-07/01-BLIND-EXERCISES.pdf) (5 pages, 91 KiB) | [Full review](chapter-07/02-CHAPTER-REVIEW.pdf) (35 pages, 1051 KiB) | [Prompt](chapter-07/AI-STUDIO-PROMPT.txt) |
-| 08 · Carboxylic Acids | [Blind exercises](chapter-08/01-BLIND-EXERCISES.pdf) (6 pages, 115 KiB) | [Full review](chapter-08/02-CHAPTER-REVIEW.pdf) (35 pages, 995 KiB) | [Prompt](chapter-08/AI-STUDIO-PROMPT.txt) |
-| 09 · Carboxylic Acid Derivatives | [Blind exercises](chapter-09/01-BLIND-EXERCISES.pdf) (4 pages, 75 KiB) | [Full review](chapter-09/02-CHAPTER-REVIEW.pdf) (28 pages, 811 KiB) | [Prompt](chapter-09/AI-STUDIO-PROMPT.txt) |
-| 10 · Nitrogen- and Phosphorus-Containing Compounds | [Blind exercises](chapter-10/01-BLIND-EXERCISES.pdf) (5 pages, 106 KiB) | [Full review](chapter-10/02-CHAPTER-REVIEW.pdf) (37 pages, 1088 KiB) | [Prompt](chapter-10/AI-STUDIO-PROMPT.txt) |
-| 11 · Spectroscopy | [Blind exercises](chapter-11/01-BLIND-EXERCISES.pdf) (7 pages, 116 KiB) | [Full review](chapter-11/02-CHAPTER-REVIEW.pdf) (40 pages, 1039 KiB) | [Prompt](chapter-11/AI-STUDIO-PROMPT.txt) |
-| 12 · Separations and Purifications | [Blind exercises](chapter-12/01-BLIND-EXERCISES.pdf) (8 pages, 105 KiB) | [Full review](chapter-12/02-CHAPTER-REVIEW.pdf) (37 pages, 980 KiB) | [Prompt](chapter-12/AI-STUDIO-PROMPT.txt) |
+| 01 · Nomenclature | [Blind exercises](chapter-01/01-BLIND-EXERCISES.pdf) (13 pages, 207 KiB) | [Full review](chapter-01/02-CHAPTER-REVIEW.pdf) (101 pages, 2722 KiB) | [Prompt](chapter-01/AI-STUDIO-PROMPT.txt) |
+| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (12 pages, 142 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (65 pages, 1648 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
+| 03 · Bonding | [Blind exercises](chapter-03/01-BLIND-EXERCISES.pdf) (5 pages, 74 KiB) | [Full review](chapter-03/02-CHAPTER-REVIEW.pdf) (34 pages, 944 KiB) | [Prompt](chapter-03/AI-STUDIO-PROMPT.txt) |
+| 04 · Analyzing Organic Reactions | [Blind exercises](chapter-04/01-BLIND-EXERCISES.pdf) (6 pages, 126 KiB) | [Full review](chapter-04/02-CHAPTER-REVIEW.pdf) (44 pages, 1358 KiB) | [Prompt](chapter-04/AI-STUDIO-PROMPT.txt) |
+| 05 · Alcohols | [Blind exercises](chapter-05/01-BLIND-EXERCISES.pdf) (8 pages, 131 KiB) | [Full review](chapter-05/02-CHAPTER-REVIEW.pdf) (36 pages, 1034 KiB) | [Prompt](chapter-05/AI-STUDIO-PROMPT.txt) |
+| 06 · Aldehydes and Ketones I | [Blind exercises](chapter-06/01-BLIND-EXERCISES.pdf) (6 pages, 105 KiB) | [Full review](chapter-06/02-CHAPTER-REVIEW.pdf) (37 pages, 992 KiB) | [Prompt](chapter-06/AI-STUDIO-PROMPT.txt) |
+| 07 · Aldehydes and Ketones II: Enolates | [Blind exercises](chapter-07/01-BLIND-EXERCISES.pdf) (5 pages, 91 KiB) | [Full review](chapter-07/02-CHAPTER-REVIEW.pdf) (35 pages, 1057 KiB) | [Prompt](chapter-07/AI-STUDIO-PROMPT.txt) |
+| 08 · Carboxylic Acids | [Blind exercises](chapter-08/01-BLIND-EXERCISES.pdf) (6 pages, 115 KiB) | [Full review](chapter-08/02-CHAPTER-REVIEW.pdf) (35 pages, 1000 KiB) | [Prompt](chapter-08/AI-STUDIO-PROMPT.txt) |
+| 09 · Carboxylic Acid Derivatives | [Blind exercises](chapter-09/01-BLIND-EXERCISES.pdf) (4 pages, 75 KiB) | [Full review](chapter-09/02-CHAPTER-REVIEW.pdf) (28 pages, 815 KiB) | [Prompt](chapter-09/AI-STUDIO-PROMPT.txt) |
+| 10 · Nitrogen- and Phosphorus-Containing Compounds | [Blind exercises](chapter-10/01-BLIND-EXERCISES.pdf) (5 pages, 106 KiB) | [Full review](chapter-10/02-CHAPTER-REVIEW.pdf) (37 pages, 1095 KiB) | [Prompt](chapter-10/AI-STUDIO-PROMPT.txt) |
+| 11 · Spectroscopy | [Blind exercises](chapter-11/01-BLIND-EXERCISES.pdf) (7 pages, 116 KiB) | [Full review](chapter-11/02-CHAPTER-REVIEW.pdf) (40 pages, 1044 KiB) | [Prompt](chapter-11/AI-STUDIO-PROMPT.txt) |
+| 12 · Separations and Purifications | [Blind exercises](chapter-12/01-BLIND-EXERCISES.pdf) (8 pages, 105 KiB) | [Full review](chapter-12/02-CHAPTER-REVIEW.pdf) (37 pages, 985 KiB) | [Prompt](chapter-12/AI-STUDIO-PROMPT.txt) |
 
 Cases and screenshots were generated from a source snapshot. Regenerate after app/content edits. Packet completeness and model completion are not scientific verification.

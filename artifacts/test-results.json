@@ -13,14 +13,16 @@
     "validator": "jsonschema 4.26.0; Draft 2020-12"
   },
   "unit": {
-    "groups": 31,
+    "groups": 39,
     "status": "passed",
     "runner": "Node.js built-in test runner",
     "files": [
       "tests/unit.test.mjs",
       "tests/chapter02-review.test.mjs",
       "tests/chapter03-review.test.mjs",
-      "tests/chapter04-review.test.mjs"
+      "tests/chapter04-review.test.mjs",
+      "tests/chapter05-review.test.mjs",
+      "tests/chapter06-review.test.mjs"
     ]
   },
   "auditInfrastructure": {
@@ -146,6 +148,8 @@
       "TLC eluent slider updates model Rf",
       "pH slider updates ionization model",
       "Chapter 4 speciation labels/extremes and accessible slider, alpha challenge, forward equation, no early numeric answer, 1e5/+1 parsing",
+      "Chapter 5 actual active-step and disabled-choice contrast >=4.5:1 in light/dark at mobile/desktop; aliases and product formula",
+      "Chapter 6 isopropyl alcohol alias, reduced product formula, new cyanohydrin atom-pair assessment and visible carbonyl flow",
       "Corrupt saved JSON recovers without crashing"
     ]
   },

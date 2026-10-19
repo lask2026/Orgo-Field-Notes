@@ -60,3 +60,7 @@ details.tcard>summary{list-style:none;cursor:pointer;display:flex;justify-conten
 @media(max-width:600px){.hdr{position:relative}.hdr-ctrl{grid-template-columns:repeat(3,minmax(0,1fr))}.ch-sel{max-width:none}.wrap{padding-top:12px}.mol{min-height:150px}.diagram svg{max-height:220px}.footer-buttons{width:100%}.btn,.sbtn,.cbtn,.mtab,.ubtn{min-height:44px}.cnav{gap:6px}.card{padding:12px}.stage{padding:8px}.sbar{justify-content:flex-start}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .atom-controls{display:flex;flex-wrap:wrap;gap:5px;padding:8px 0}.atom-key{min-width:44px;min-height:44px;border:1px solid #94a3b8;border-radius:7px;background:#f8fafc;color:#0f172a;font-weight:750}.atom-key small{font-size:.72rem}.atom-key[aria-pressed=true]{background:#dbeafe;border:2px solid #2563eb}.c-tag{color:#065f46}.btn.suc{background:#047857;border-color:#047857}[data-theme=dark] .c-tag{color:#6ee7b7}[data-theme=dark] .mtab[aria-current=page]{color:#93c5fd}.workshops .btn[aria-pressed=true]{box-shadow:0 0 0 2px var(--blue-bd)}
+
+/* Keep active steps and completed choices readable in both themes. */
+[data-theme=dark] .sbar .sbtn[aria-pressed=true]{background:#2563eb;color:#fff;border-color:#2563eb}
+.copt:disabled{opacity:1}

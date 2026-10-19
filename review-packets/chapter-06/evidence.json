@@ -1,7 +1,7 @@
 {
   "chapter": 6,
   "sourceSnapshot": {
-    "sha256": "ed070c32c4a2dec86bb7fb5ce3e58d705f334ffc3d4c9b2abb009c7fcd902ffd",
+    "sha256": "88af82736a530bedddcb5e88583e87bea622ab318cc13a76399852a9f8f3122f",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -26,7 +26,7 @@
       "id": "carbonyl-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-step-2.png",
-      "sha256": "ba8e118ed55719fcb73b63266b2a68758c40a988d6b956956c79a92b2c6071e5",
+      "sha256": "6a71f5a6bd4d6e1156245b55d031e6a4eba622904d813f4143c206ce1c7af062",
       "width": 661,
       "height": 359
     },
@@ -42,7 +42,7 @@
       "id": "oxygen-addition-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/oxygen-addition-step-2.png",
-      "sha256": "74b6b265e5060f579200ffb52c2c5faa20c17d9179f9696f10a588f138b33a2c",
+      "sha256": "c5c09bf6f4726f8e7bbfc83c90bfa06e228325f7e6a261ade87f96417fab862c",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "oxygen-addition-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/oxygen-addition-step-3.png",
-      "sha256": "eafdb1b184a27a327edb471eb2afd6bb220c063bea4fca7970fe1bcedab48a4e",
+      "sha256": "95c26d238b1ca3b02015ba987a2befd13c6fcb93f6bc6b54acc02e19184ae57b",
       "width": 661,
       "height": 359
     },
@@ -146,7 +146,7 @@
       "id": "addition-site-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/addition-site-stage-2-feedback.png",
-      "sha256": "0361bdfce45bb02965a43394bc9eca599b5425b8e7e8c1e0e2d93891cc8567c7",
+      "sha256": "1b9e4603e8ec3a5fa457f59603266cb6b996a2d23528732d91fd87aa50a1e92c",
       "width": 607,
       "height": 326
     },
@@ -154,7 +154,7 @@
       "id": "addition-site-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/addition-site-stage-3-molecule.png",
-      "sha256": "6abfb2509cb814b4a9dee403ea1f21032bc246596cb2a310f4291ec30ec6cfe1",
+      "sha256": "5b8d908f18492f5215ea28fcbce473d2e84de03b28f2fea66f15af6535402b08",
       "width": 661,
       "height": 359
     },
@@ -170,7 +170,7 @@
       "id": "addition-site-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/addition-site-stage-3-feedback.png",
-      "sha256": "65ddb16f37ad01f5bf8729de3aba9679c6a5ddf3e2703da0720026670ec058ff",
+      "sha256": "8832d5e1501a4dafc014f4e7da2f9972aab399e8a2891b08cbfed00123a494ad",
       "width": 607,
       "height": 326
     },
@@ -178,9 +178,9 @@
       "id": "addition-site-complete",
       "kind": "practice-complete",
       "file": "screenshots/addition-site-complete.png",
-      "sha256": "7788785abe4f1f28114301f7d955f2de0d741a8d0da23ecb3bdafd757f109836",
+      "sha256": "ba97e311c54aaef16fae4bdbac9e62fd88b6e170a8fe86d92482a317fbc95885",
       "width": 1324,
-      "height": 574
+      "height": 653
     },
     {
       "id": "hemiacetal-identify-stage-1-molecule",
@@ -226,7 +226,7 @@
       "id": "hemiacetal-identify-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hemiacetal-identify-stage-2-feedback.png",
-      "sha256": "b4ec320d7be1cc6ea90cbf9732a9741df58964020ac0cb91d036a5e3d7abce8f",
+      "sha256": "8b6df01853f8fe0d9adae78689f58f6c64697fc81065965a47130a6aefb57cd6",
       "width": 607,
       "height": 326
     },
@@ -250,7 +250,7 @@
       "id": "hemiacetal-identify-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hemiacetal-identify-stage-3-feedback.png",
-      "sha256": "ed27dbdd408faaa3d6ad6e514334f8934cf52d3b45b7ac8b50f53fbff7d1a81c",
+      "sha256": "1d1eca8bc3bdfd20986acd7d084c1c4ba6ea0e02a6f6a029ab7023cee3f27196",
       "width": 607,
       "height": 326
     },
@@ -258,89 +258,89 @@
       "id": "hemiacetal-identify-complete",
       "kind": "practice-complete",
       "file": "screenshots/hemiacetal-identify-complete.png",
-      "sha256": "3bef41f1a65192b9dde467bf003a35136f1c1ef0ef6ac61be133f5f1cb5e78e4",
+      "sha256": "d9c7c37b1ef25c104bee6327a7633af16392fe2917ccf586a1629e28788e6b39",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
-      "id": "cyanohydrin-count-stage-1-molecule",
+      "id": "cyanohydrin-bond-stage-1-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/cyanohydrin-count-stage-1-molecule.png",
+      "file": "screenshots/cyanohydrin-bond-stage-1-molecule.png",
       "sha256": "a138df3f8ee59a03954d92f4c19c1777bc603c4d3d7ccedad83c7bfc8992529e",
       "width": 661,
       "height": 419
     },
     {
-      "id": "cyanohydrin-count-stage-1-question",
+      "id": "cyanohydrin-bond-stage-1-question",
       "kind": "practice-question",
-      "file": "screenshots/cyanohydrin-count-stage-1-question.png",
+      "file": "screenshots/cyanohydrin-bond-stage-1-question.png",
       "sha256": "4a0815d12a248a0d599bf4b23f325d7b8a6b5c091980d5522d0a84123dbbc457",
       "width": 607,
       "height": 162
     },
     {
-      "id": "cyanohydrin-count-stage-1-feedback",
+      "id": "cyanohydrin-bond-stage-1-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/cyanohydrin-count-stage-1-feedback.png",
+      "file": "screenshots/cyanohydrin-bond-stage-1-feedback.png",
       "sha256": "5ade22120369259ce9e5dffc8ab8fa41f56946a1e9b752f31b8272d99d04f92f",
       "width": 607,
       "height": 237
     },
     {
-      "id": "cyanohydrin-count-stage-2-molecule",
+      "id": "cyanohydrin-bond-stage-2-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/cyanohydrin-count-stage-2-molecule.png",
-      "sha256": "93e2586c9dd45a438666f15efcd7b5b484d7a11b9da1274fd06a117c159fbbc4",
+      "file": "screenshots/cyanohydrin-bond-stage-2-molecule.png",
+      "sha256": "b9ff8a1f2824baa4aed866184a5bb61f440a234cef59fa063128ef18beec1802",
       "width": 661,
       "height": 359
     },
     {
-      "id": "cyanohydrin-count-stage-2-question",
+      "id": "cyanohydrin-bond-stage-2-question",
       "kind": "practice-question",
-      "file": "screenshots/cyanohydrin-count-stage-2-question.png",
+      "file": "screenshots/cyanohydrin-bond-stage-2-question.png",
       "sha256": "8238fd0a3cef4b1597311bb77bf98a0f008131c63c5a0c9262834851cc865c3f",
       "width": 607,
       "height": 255
     },
     {
-      "id": "cyanohydrin-count-stage-2-feedback",
+      "id": "cyanohydrin-bond-stage-2-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/cyanohydrin-count-stage-2-feedback.png",
+      "file": "screenshots/cyanohydrin-bond-stage-2-feedback.png",
       "sha256": "deb89c3c7a7c07f33c19f7fd1b5f2eae586ce00a37607dfe809900c621f78ed8",
       "width": 607,
       "height": 291
     },
     {
-      "id": "cyanohydrin-count-stage-3-molecule",
+      "id": "cyanohydrin-bond-stage-3-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/cyanohydrin-count-stage-3-molecule.png",
-      "sha256": "f5d2babc2aae2e40ce34d695e84f416daa8a5fda18aea1a9e63dd9f5faa8caff",
+      "file": "screenshots/cyanohydrin-bond-stage-3-molecule.png",
+      "sha256": "a138df3f8ee59a03954d92f4c19c1777bc603c4d3d7ccedad83c7bfc8992529e",
       "width": 661,
-      "height": 359
+      "height": 419
     },
     {
-      "id": "cyanohydrin-count-stage-3-question",
+      "id": "cyanohydrin-bond-stage-3-question",
       "kind": "practice-question",
-      "file": "screenshots/cyanohydrin-count-stage-3-question.png",
-      "sha256": "f6c0d26208eb23e8db33a993bfd1ae2f3d59d544431857c0fb7ef90dc020f8c9",
+      "file": "screenshots/cyanohydrin-bond-stage-3-question.png",
+      "sha256": "1666b2f71aae40350717a29e22fb48fbaa40fc9571de2f12b32bea52fb9f72ee",
       "width": 607,
-      "height": 291
+      "height": 187
     },
     {
-      "id": "cyanohydrin-count-stage-3-feedback",
+      "id": "cyanohydrin-bond-stage-3-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/cyanohydrin-count-stage-3-feedback.png",
-      "sha256": "d7bbce9b945e40db9c2078995db3e7be0da13ab1f8b964391005a14b10c63dd7",
+      "file": "screenshots/cyanohydrin-bond-stage-3-feedback.png",
+      "sha256": "999f53b93773925c824ef4cb28def175311290040832011f1be9bd2059012bd2",
       "width": 607,
-      "height": 326
+      "height": 284
     },
     {
-      "id": "cyanohydrin-count-complete",
+      "id": "cyanohydrin-bond-complete",
       "kind": "practice-complete",
-      "file": "screenshots/cyanohydrin-count-complete.png",
-      "sha256": "fb30837709a2c93e1aa0e4bacb3c7faa9c486c0f771f8a25c9d0b35728fcb0cf",
+      "file": "screenshots/cyanohydrin-bond-complete.png",
+      "sha256": "33178746c200540e0b6e6a518bbc7625d3436bd8d55c70adfbd3d15ab30790cd",
       "width": 1324,
-      "height": 574
+      "height": 612
     },
     {
       "id": "hydride-product-stage-1-molecule",
@@ -386,7 +386,7 @@
       "id": "hydride-product-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hydride-product-stage-2-feedback.png",
-      "sha256": "ee53158175565411768cf7a9af4429d681f524cbfa6063c56627ea98298374f1",
+      "sha256": "046679a2b757c603ad07f5711b21033eb4c7ec5f863e42b5352ecd8b535da6f9",
       "width": 607,
       "height": 326
     },
@@ -394,7 +394,7 @@
       "id": "hydride-product-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/hydride-product-stage-3-molecule.png",
-      "sha256": "12ce5410c9043b5c318dcb7a430e7402283d35c89b522771588379277fb681f1",
+      "sha256": "378c1f4b22788efa57831566d5e6b2492b09f2c0b58a90aed2efd28a6721421f",
       "width": 661,
       "height": 359
     },
@@ -418,9 +418,9 @@
       "id": "hydride-product-complete",
       "kind": "practice-complete",
       "file": "screenshots/hydride-product-complete.png",
-      "sha256": "2fa5f0bb536ec5bae437fe9bf6df71e99fcd6c7e3024309781b0c9540bc000ef",
+      "sha256": "f6a7e56bbc94cc456d464799629ef4307e1b82b1786d4d564e12b51c3aee775e",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "layout-desktop-light",
@@ -442,7 +442,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "59759d75e9dd686d9a7f07ef17c2935f8b69c57ee3fbcfbcdcab1049c194d8fe",
+      "sha256": "9dc1c2b9783c7cb7919f54609c1b422e05e168f6434da30cd46cd08fcd428fa0",
       "width": 375,
       "height": 2097
     }
@@ -477,15 +477,15 @@
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "cyanohydrin-count-stage-1",
+      "id": "cyanohydrin-bond-stage-1",
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "cyanohydrin-count-stage-2",
+      "id": "cyanohydrin-bond-stage-2",
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "cyanohydrin-count-stage-3",
+      "id": "cyanohydrin-bond-stage-3",
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {

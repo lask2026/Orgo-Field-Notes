@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "656d33192ab6da9ed78fb4a6a01e7f7b5154bf6feb88b857b469c85de149ebc7",
+    "sha256": "a10a64e812eded49798c2edbcabe857eb4236474eecb3dc3350764b35e21181e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -154,7 +154,7 @@
       "id": "acid-ratio-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/acid-ratio-stage-3-feedback.png",
-      "sha256": "ccba811a488977cf7579286b06b3071666e0f1786d734053762d0b8298cae876",
+      "sha256": "3d41b05d5b0d9f27c63f8d70677f7cb141d7d7c9420a78aee5c0641afeda866d",
       "width": 607,
       "height": 276
     },
@@ -162,9 +162,9 @@
       "id": "acid-ratio-complete",
       "kind": "practice-complete",
       "file": "screenshots/acid-ratio-complete.png",
-      "sha256": "1d220cbc8f26569f42cbe69ba2ed7bff36e22583e80c2d31d77962403c739e20",
+      "sha256": "25d7b2d84172e0c7e0f4e67c7a201fe0365318bb50e96463cfa4c49ea92a1508",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "make-ester-stage-1-molecule",
@@ -210,7 +210,7 @@
       "id": "make-ester-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/make-ester-stage-2-feedback.png",
-      "sha256": "15b91334b013fb156c0d6f4e10b0555d21a5185758a28be0a1f6654a8a823e3f",
+      "sha256": "94b4e02cebb375bcd58c2e30904c74c879f8edeeec74b3529f74489272f1467f",
       "width": 607,
       "height": 326
     },
@@ -234,7 +234,7 @@
       "id": "make-ester-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/make-ester-stage-3-feedback.png",
-      "sha256": "1cab761909344c05ef564b399724548f29f93db49358abac6944300a2f81b5b9",
+      "sha256": "29ec40ab20d5793f2c16cd65d9a8dafd765767f8713e5df6705618ff3cd0d92b",
       "width": 607,
       "height": 348
     },
@@ -242,9 +242,9 @@
       "id": "make-ester-complete",
       "kind": "practice-complete",
       "file": "screenshots/make-ester-complete.png",
-      "sha256": "5f861e9cccba08c679472238625bb484502534161a49493aa1d974609d333dfe",
+      "sha256": "b52e29a415dfdbfa7fc4e0a7ccd368334516a01c707e9af5678e06477c135364",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "lose-co2-stage-1-molecule",
@@ -322,9 +322,9 @@
       "id": "lose-co2-complete",
       "kind": "practice-complete",
       "file": "screenshots/lose-co2-complete.png",
-      "sha256": "188be1c4a66ab21b5652480002c424dbc315cdfa8c1ffbb18689e9ddd51adbfc",
+      "sha256": "7ab43a0801309d230a5bacb9a3f4979f8584d92d255a606aaca58597db19a45b",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "soap-head-stage-1-molecule",
@@ -370,7 +370,7 @@
       "id": "soap-head-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/soap-head-stage-2-feedback.png",
-      "sha256": "c78127b31b85f6610f557a9d6f235e19f233a3589a073f4c7cd980b51980951a",
+      "sha256": "a4db847ec082d4f8bd23aef0f699b202c8861a807c2c28d0eea22ad025ddcdc3",
       "width": 607,
       "height": 276
     },
@@ -394,7 +394,7 @@
       "id": "soap-head-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/soap-head-stage-3-feedback.png",
-      "sha256": "b54533e60bba71a00e0b2889131e3878cc017b6e656c6d9a45ef90f22aa4475e",
+      "sha256": "79066f9140a36492673e2cf77a3a903b3fdaeac5d5fac6397a16019261e8fc2d",
       "width": 607,
       "height": 326
     },
@@ -402,9 +402,9 @@
       "id": "soap-head-complete",
       "kind": "practice-complete",
       "file": "screenshots/soap-head-complete.png",
-      "sha256": "8a788708fe8018e8fb9e8b76b4eedc28e5cb9297f61279db8f693d7525444659",
+      "sha256": "f862ae06576f288708464eb7590f9522ae11fa899f403421f30fd0374f1f2574",
       "width": 1324,
-      "height": 481
+      "height": 502
     },
     {
       "id": "layout-desktop-light",
@@ -426,7 +426,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "e6ec5dd7b24e0740223b305cc4259fe120b692c4aa1741c4a52ccd02becd9860",
+      "sha256": "377fded44794d036dcaff5cea204647f7a15d6598af6355974ca6b7ec4811b8a",
       "width": 375,
       "height": 2078
     }

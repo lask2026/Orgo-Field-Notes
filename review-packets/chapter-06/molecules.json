@@ -119,7 +119,7 @@
       },
       {
         "e": "O",
-        "x": 175,
+        "x": 165,
         "y": 45
       },
       {
@@ -129,7 +129,7 @@
       },
       {
         "e": "C",
-        "x": 230,
+        "x": 220,
         "y": 15
       }
     ],
@@ -189,12 +189,12 @@
       },
       {
         "e": "O",
-        "x": 76,
+        "x": 75,
         "y": 32
       },
       {
         "e": "O",
-        "x": 130,
+        "x": 129,
         "y": 32
       }
     ],
@@ -527,6 +527,53 @@
     "w": 320,
     "h": 200,
     "cond": "propanone",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "isopropanol": {
+    "name": "propan-2-ol",
+    "formula": "C3H8O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "propan-2-ol",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }

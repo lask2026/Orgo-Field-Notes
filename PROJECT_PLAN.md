@@ -58,3 +58,7 @@ GitHub Pages-compatible files are requested; no remote repository or deployment 
 - Adjudicated all eleven reported findings: docs/CHAPTER_04_REVIEW_ADJUDICATION.md. Five lessons/five workshops/15 stages retained; an alpha-hydrogen walkthrough and challenge were appended.
 - Added symbol-font fallback and unsupported-glyph failure, labeled acid-speciation species/range, clarified hypothetical equilibrium data and stereochemical transfer, aligned focus colors, and preserved valid graph/formula metadata.
 - Shared changes require refreshed app builds and all review packets. Earlier Chapter 1 audit, true Chapter 2 chair visualization and external expert sign-off remain open.
+
+## Chapters 5 and 6 candidate-review checkpoint
+
+Adjudication and source limitations are documented in docs/CHAPTER_05_REVIEW_ADJUDICATION.md and docs/CHAPTER_06_REVIEW_ADJUDICATION.md. Chapter 5 keeps all 12 original keys; Chapter 6 keeps 11 original tasks and replaces one unrelated task with an actual cyanohydrin bond selection under a new workshop ID. Added explicit aliases, stage product graphs, labeled completion formulas, traditional/broad acetal terminology, named reagents with conditions, physical-property/naming coverage, corrected focus/coordinates, readable active/disabled controls, and shared electron-flow clearance. No new learning mode or graph repository entries were added. Independent expert chemistry sign-off, earlier Chapter 1 audit and Chapter 2 chair rendering remain outstanding. Test and packet results are recorded in PROGRESS.md after execution.

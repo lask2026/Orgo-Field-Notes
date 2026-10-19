@@ -15,6 +15,8 @@
     "TLC eluent slider updates model Rf",
     "pH slider updates ionization model",
     "Chapter 4 speciation labels/extremes and accessible slider, alpha challenge, forward equation, no early numeric answer, 1e5/+1 parsing",
+    "Chapter 5 actual active-step and disabled-choice contrast >=4.5:1 in light/dark at mobile/desktop; aliases and product formula",
+    "Chapter 6 isopropyl alcohol alias, reduced product formula, new cyanohydrin atom-pair assessment and visible carbonyl flow",
     "Corrupt saved JSON recovers without crashing"
   ],
   "errors": [],

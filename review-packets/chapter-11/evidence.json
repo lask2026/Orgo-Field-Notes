@@ -1,7 +1,7 @@
 {
   "chapter": 11,
   "sourceSnapshot": {
-    "sha256": "d49cc1fae30b7ba3624726d48a5e1e4bd0b67aea1ea182945430252d29c1f396",
+    "sha256": "1f45de04732d703eeaf1d823b4ae4f9462006e204c8cade9a8c9c44847c0ea6a",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -178,7 +178,7 @@
       "id": "ir-read-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/ir-read-stage-2-feedback.png",
-      "sha256": "023c84a4b9770be15685ee3779197ea0154bf3be70e8fe0b15dc4799ef8b7a78",
+      "sha256": "2e914c4e22e27a6487d37bc552dfdf2b8273d6120251da87198849cb43bc9832",
       "width": 607,
       "height": 326
     },
@@ -202,7 +202,7 @@
       "id": "ir-read-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/ir-read-stage-3-feedback.png",
-      "sha256": "e52257cd9177d24ba416ddd68252d3fb6266e5d3d79b4aefc0ac15bcbca1ff56",
+      "sha256": "53deea0cd68d3b7d0a724e8a8dceccea36b4cdec9a486ad76845f7d14968860c",
       "width": 607,
       "height": 326
     },
@@ -210,9 +210,9 @@
       "id": "ir-read-complete",
       "kind": "practice-complete",
       "file": "screenshots/ir-read-complete.png",
-      "sha256": "ec0a2b8805f224ab41a7892b9342b58abe5b0495727dde85b30b1c082ffce5dd",
+      "sha256": "26951fabc7dbc6e9ab9ce6c4a91655239ecc32d069ddb9af57505caad6707400",
       "width": 1324,
-      "height": 913
+      "height": 934
     },
     {
       "id": "uv-energy-stage-1-molecule",
@@ -258,7 +258,7 @@
       "id": "uv-energy-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/uv-energy-stage-2-feedback.png",
-      "sha256": "019aec175684088127b3f144113814cd5cab17c0aaec85189117994affa198c1",
+      "sha256": "1e57830825e433c336ca9392c54adafd889adb800fb15d5528beffeef58a2f25",
       "width": 607,
       "height": 301
     },
@@ -290,9 +290,9 @@
       "id": "uv-energy-complete",
       "kind": "practice-complete",
       "file": "screenshots/uv-energy-complete.png",
-      "sha256": "db5ee0fd1954a825dcfd3458537a32da9158c7d6868a632af7f3f23b49fd68da",
+      "sha256": "f20dde5258a58f5c52b5da803250f2a40d28d6c2c04d9234b2773a1216680b6f",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "nmr-ethyl-stage-1-molecule",
@@ -370,7 +370,7 @@
       "id": "nmr-ethyl-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/nmr-ethyl-stage-3-feedback.png",
-      "sha256": "db61d6bc85ec605a65f0139cc991eb5530cf2f352d617e1eb6e72421c83d1728",
+      "sha256": "f63962a1c50e73379c5a563abe78f721c89502531eb74819ccec3602e223bde6",
       "width": 607,
       "height": 326
     },
@@ -378,9 +378,9 @@
       "id": "nmr-ethyl-complete",
       "kind": "practice-complete",
       "file": "screenshots/nmr-ethyl-complete.png",
-      "sha256": "060ec1b7dd964b9efd7e9fee6fbacdb99ecffe463666734d28971e0874fe3071",
+      "sha256": "c6d2f9ba62a13f1eb398de2e0ec4054a05b877f0511c63f95dca34b2a26ce44e",
       "width": 1324,
-      "height": 934
+      "height": 955
     },
     {
       "id": "combined-data-stage-1-molecule",
@@ -426,7 +426,7 @@
       "id": "combined-data-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/combined-data-stage-2-feedback.png",
-      "sha256": "76b501d9e05daa4d0ab4948bbb302f3b26eea7279ac2db52505dfcceea70c5ab",
+      "sha256": "a8b8cd111f5a130daf5f71474cca1bccd524f6c405999cf983ad5550df46e2ac",
       "width": 607,
       "height": 326
     },
@@ -458,9 +458,9 @@
       "id": "combined-data-complete",
       "kind": "practice-complete",
       "file": "screenshots/combined-data-complete.png",
-      "sha256": "2d45d88066691a30af829f811929980bf1f4f7a974bcee12f7ae7e2b520a2553",
+      "sha256": "68aca6e65d5d76368a0f426c4ca10691c29b8c659e631ef349ee3375a67fe89d",
       "width": 1324,
-      "height": 632
+      "height": 653
     },
     {
       "id": "layout-desktop-light",
@@ -482,7 +482,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "3b6d951d0b715c9a519ffe23164c832f2799dc5557e4d3b42c2c8618c21d7dd3",
+      "sha256": "5cbadacee11f2f4978d1c61bec752fe32f065fcc39422ab52944d83e45ef3b38",
       "width": 375,
       "height": 2399
     }

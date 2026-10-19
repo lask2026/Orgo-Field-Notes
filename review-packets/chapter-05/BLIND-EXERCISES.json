@@ -1,7 +1,7 @@
 {
   "chapter": 5,
   "sourceSnapshot": {
-    "sha256": "36f06166e4183517e515f1f8efec62b476b7ec61ff30c705bca7e6129aea658f",
+    "sha256": "d01f666e526283ab630e50bf89bdedebcb10b1575eb5959dcb49f2b232dd9aca",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -139,7 +139,48 @@
         {
           "id": "oxidize-secondary:stage-3",
           "type": "text",
-          "prompt": "Name the three-carbon product."
+          "prompt": "Name the three-carbon product.",
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ]
+          }
         }
       ]
     },
@@ -169,7 +210,7 @@
           },
           {
             "e": "O",
-            "x": 175,
+            "x": 165,
             "y": 45
           },
           {
@@ -179,7 +220,7 @@
           },
           {
             "e": "C",
-            "x": 230,
+            "x": 220,
             "y": 15
           }
         ],
@@ -235,12 +276,83 @@
         {
           "id": "protection:stage-3",
           "type": "choice",
-          "prompt": "Making an alkyl tosylate from ROH directly causes…",
+          "prompt": "Making an alkyl sulfonate from ROH (mesylate shown; tosylate analogous) directly causes…",
           "options": [
             "Retention of the C–O framework",
             "SN2 inversion at carbon in every case",
             "Cleavage of the carbon skeleton"
-          ]
+          ],
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 35,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 85,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 140,
+                "y": 130
+              },
+              {
+                "e": "S",
+                "x": 200,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 230,
+                "y": 40
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                3,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ]
+          }
         }
       ]
     },
@@ -351,8 +463,94 @@
         {
           "id": "quinone-redox:stage-3",
           "type": "number",
-          "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
-          "unit": "electrons"
+          "prompt": "The reduced product is shown. How many electrons are accepted per quinone in the full quinone → hydroquinone conversion?",
+          "unit": "electrons",
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 205
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                3,
+                7,
+                1
+              ]
+            ]
+          }
         }
       ]
     }

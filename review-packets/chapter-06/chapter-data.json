@@ -12,11 +12,23 @@
     {
       "label": "Supplied Kaplan curriculum: Chapter 6; section scope checked against local body and summary",
       "location": "organic_chemistry_kaplan/OEBPS/chapter06b.xhtml"
+    },
+    {
+      "label": "IUPAC Gold Book, acetals (search-index definition inspected; direct page fetch unavailable)",
+      "location": "https://goldbook.iupac.org/terms/view/A00062"
+    },
+    {
+      "label": "OpenStax 19.3, aldehyde oxidation",
+      "location": "https://openstax.org/books/organic-chemistry/pages/19-3-oxidation-of-aldehydes-and-ketones"
+    },
+    {
+      "label": "OpenStax 19.8, imines and enamines",
+      "location": "https://openstax.org/books/organic-chemistry/pages/19-8-nucleophilic-addition-of-amines-imine-and-enamine-formation"
     }
   ],
   "review": {
     "status": "author-reviewed",
-    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+    "note": "Chapter 6 candidate audit adjudicated; eleven original stage tasks retained, unrelated final cyanohydrin task replaced under a new workshop ID. Explicit aliases and stage product graphs added. Source-backed author review; independent expert verification pending."
   },
   "lessons": [
     {
@@ -27,8 +39,8 @@
       "tag": "Planar electrophile → tetrahedral addition product",
       "cards": {
         "rule": "<p>The carbonyl is polarized Cδ+–Oδ−. A nucleophile attacks carbon while the pi pair shifts to oxygen; protonation can then give an alcohol. Aldehydes are generally less crowded and less electron-rich than comparable ketones, so they often add nucleophiles more readily.</p>",
-        "cue": "<p>Attack C; move pi electrons to O; then handle proton transfers.</p>",
-        "trap": "<p>Neutral aldehydes and ketones can accept hydrogen bonds but lack an O–H donor. Do not draw five bonds to carbon when a nucleophile adds. A planar carbonyl can be attacked from either face.</p>",
+        "cue": "<p>Attack C; move pi electrons to O; then handle proton transfers. Aldehydes use -al, or -carbaldehyde when CHO is attached to a ring; ketones use -one. Use oxo- for a subordinate carbonyl. Methanal/formaldehyde, ethanal/acetaldehyde, propanal/propionaldehyde, butanal/butyraldehyde and pentanal/valeraldehyde are common name pairs; propanone is acetone.</p>",
+        "trap": "<p>Neutral aldehydes and ketones can accept hydrogen bonds but lack an O–H donor. Do not draw five bonds to carbon when a nucleophile adds. A planar carbonyl can be attacked from either face. At comparable mass and shape, boiling points often follow alkane &lt; aldehyde/ketone &lt; alcohol; this is a trend, not a universal ordering across unrelated molecules.</p>",
         "app": "<p>A chiral environment can favor one face; without such bias, addition that creates a single new stereocenter often yields a racemic mixture.</p>"
       },
       "steps": [
@@ -80,10 +92,10 @@
       "molecule": "hemiacetal",
       "tag": "Distinguish OH from OR on the same carbon",
       "cards": {
-        "rule": "<p>Hydration gives a geminal diol. Alcohol addition gives a hemiacetal (one OH and one OR at the former carbonyl carbon). Further acid-catalyzed reaction gives an acetal (two OR groups). These transformations are reversible and respond to water/alcohol activities.</p>",
+        "rule": "<p>A hydrate has two OH groups on one carbon. In traditional terminology, aldehyde-derived hemiacetals have OH, OR, H and R at the former carbonyl carbon; further acid-catalyzed reaction gives acetals with two OR groups, H and R. Ketone-derived counterparts have two carbon groups and are called hemiketals (OH + OR) and ketals (two OR). Broad IUPAC acetal/hemiacetal classes also include the ketone-derived compounds. Equilibria depend on water/alcohol activities.</p>",
         "cue": "<p>Two OH = hydrate; OH + OR = hemiacetal; two OR = acetal. Ketone-derived examples are also called hemiketals/ketals.</p>",
         "trap": "<p>Acetal formation requires acid catalysis; base alone does not turn OH− into a good leaving group. Cyclic sugar hemiacetals can be stable because intramolecular ring formation is favorable.</p>",
-        "app": "<p>Monosaccharides cyclize through hemiacetal or hemiketal formation. The new anomeric center can have two configurations.</p>"
+        "app": "<p>Monosaccharides cyclize through hemiacetal or hemiketal formation. The new anomeric center can have two configurations. Acetal/ketal protection can preserve a carbonyl during many basic or hydride reactions, including suitable LiAlH4 conditions. Aqueous acid restores the carbonyl; compatibility must be checked for the whole substrate.</p>"
       },
       "steps": [
         {
@@ -100,8 +112,8 @@
           "reveal": true
         },
         {
-          "label": "2. Compare an acetal",
-          "text": "<p>This ketone-derived acetal has two OCH3 groups on the central carbon and no OH there. Hydrolysis with aqueous acid returns a carbonyl.</p>",
+          "label": "2. Compare a ketal",
+          "text": "<p>This separate ketone-derived example is a ketal: two OCH3 groups and two carbon groups surround the central carbon. It is not the direct next product of the ethanal hemiacetal in step 1. Aqueous-acid hydrolysis regenerates a ketone.</p>",
           "molecule": "acetal",
           "highlights": {
             "prin": [
@@ -134,7 +146,7 @@
       "molecule": "imine",
       "tag": "Reagent identity changes the product",
       "cards": {
-        "rule": "<p>A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha H is available. Related nitrogen reagents form oximes (hydroxylamine), hydrazones (hydrazine derivatives), and semicarbazones (semicarbazide). Cyanide addition followed by protonation forms a cyanohydrin and creates a C–C bond.</p>",
+        "rule": "<p>A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha H is available. Related nitrogen reagents form oximes (hydroxylamine), hydrazones (hydrazine derivatives), and semicarbazones (semicarbazide). Cyanide addition followed by protonation forms a cyanohydrin and creates a C–C bond. Ammonia can also give an imine under suitable condensation conditions. An imine with an available alpha H can interconvert with an enamine tautomer by proton and double-bond relocation. Secondary-amine condensation proceeds through an iminium ion and alpha deprotonation; no N–H remains at that intermediate.</p>",
         "cue": "<p>Primary amine → C=N; secondary amine + alpha H → C=C–N. Cyanide adds its carbon.</p>",
         "trap": "<p>Too much acid protonates the amine and suppresses its nucleophilicity. Enamine formation needs an alpha hydrogen. Do not attach cyanide through nitrogen in a standard cyanohydrin product.</p>",
         "app": "<p>Schiff-base (imine) intermediates help enzymes reorganize electron density; nitrogen chemistry is a bridge to amino-acid metabolism.</p>"
@@ -154,7 +166,7 @@
         },
         {
           "label": "2. Enamine bond",
-          "text": "<p>An enamine has N attached to a C=C system. The nitrogen lone pair is conjugated with the double bond, giving nucleophilic carbon character.</p>",
+          "text": "<p>An enamine has N attached to a C=C system. The nitrogen lone pair is conjugated with the double bond, giving nucleophilic carbon character. The displayed imine and enamine are separate examples with different substituents and formulas, not a tautomeric pair.</p>",
           "molecule": "enamine",
           "highlights": {
             "path": [
@@ -193,9 +205,9 @@
       "molecule": "acetaldehyde",
       "tag": "Separate addition from net redox",
       "cards": {
-        "rule": "<p>Aldehydes can be oxidized to carboxylic acids; ordinary ketones resist analogous oxidation without C–C cleavage. NaBH4 and LiAlH4 reduce aldehydes to primary alcohols and ketones to secondary alcohols. Hydride adds first, then oxygen is protonated in workup or by the medium.</p>",
+        "rule": "<p>Aldehydes can be oxidized to carboxylic acids; ordinary ketones resist analogous oxidation without C–C cleavage. NaBH4 and LiAlH4 reduce aldehydes to primary alcohols and ketones to secondary alcohols. Hydride adds first, then oxygen is protonated in workup or by the medium. Suitable aqueous KMnO4 or Cr(VI) reagents (CrO3/acid or dichromate/acid) oxidize aldehydes. Tollens reagent is ammoniacal Ag(I), which is reduced to silver while an aldehyde becomes carboxylate in the basic medium; acid workup gives the acid. H2O2 can oxidize aldehydes under suitable conditions. Anhydrous PCC is commonly chosen to make aldehydes from primary alcohols while limiting overoxidation; it is not the only selective reagent.</p>",
         "cue": "<p>Aldehyde reduction → 1° alcohol; ketone reduction → 2° alcohol.</p>",
-        "trap": "<p>Do not predict an alkane from ordinary hydride reduction of C=O. The oxygen remains in the alcohol. A positive aldehyde oxidation test is contextual evidence, not a complete structural identification.</p>",
+        "trap": "<p>Do not predict an alkane from ordinary hydride reduction of C=O. The oxygen remains in the alcohol. A positive aldehyde oxidation test is contextual evidence, not a complete structural identification. Tollens reagent is not a general primary-alcohol oxidant. Water, pH, workup and other oxidizable groups affect selectivity.</p>",
         "app": "<p>Biological NADH-dependent carbonyl reductions transfer a hydride equivalent; the enzyme can control stereochemistry.</p>"
       },
       "steps": [
@@ -307,7 +319,8 @@
           "highlights": {}
         }
       ],
-      "summary": "Nucleophilic addition changes planar C=O into a tetrahedral center."
+      "summary": "Nucleophilic addition changes planar C=O into a tetrahedral center.",
+      "context": "The canvas retains the starting ethanal to trace one electron-flow step. The incoming nucleophile and tetrahedral product are not drawn."
     },
     {
       "id": "hemiacetal-identify",
@@ -374,7 +387,7 @@
       "summary": "Hemiacetal: OH + OR on the same carbon."
     },
     {
-      "id": "cyanohydrin-count",
+      "id": "cyanohydrin-bond",
       "lesson": "nitrogen-addition",
       "molecule": "cyanohydrin",
       "label": "Track the new carbon bond",
@@ -394,7 +407,9 @@
           ],
           "highlights": {
             "prin": [
-              4,
+              4
+            ],
+            "sub": [
               5
             ]
           }
@@ -414,24 +429,31 @@
           "highlights": {}
         },
         {
-          "type": "choice",
-          "prompt": "A secondary amine plus a ketone with alpha H typically forms…",
-          "skill": "Apply the rule",
-          "options": [
-            "An enamine",
-            "A primary amide directly",
-            "A cyanohydrin"
+          "type": "atoms",
+          "prompt": "Select both carbon endpoints of the new C–C bond formed by cyanide addition.",
+          "skill": "Trace the new bond",
+          "answer": [
+            1,
+            4
           ],
-          "answer": 0,
-          "explanation": "A secondary amine gives an enamine after condensation and alpha deprotonation.",
+          "explanation": "B is the former carbonyl carbon and E is the cyanide-derived carbon. The new sigma bond joins B and E.",
           "hints": [
-            "Distinguish primary and secondary amine reagents.",
-            "The product contains C=C–N."
+            "Trace the single bond from the nitrile carbon toward the OH-bearing center.",
+            "Select two carbon atoms; the nitrogen endpoint of C≡N is not part of the new C–C bond."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              1,
+              4
+            ],
+            "path": [
+              1,
+              4
+            ]
+          }
         }
       ],
-      "summary": "Cyanohydrin formation adds one carbon; secondary amines can form enamines."
+      "summary": "Cyanohydrin formation joins the cyanide carbon to the former carbonyl carbon, adding one carbon overall."
     },
     {
       "id": "hydride-product",
@@ -483,14 +505,16 @@
           "accepted": [
             "propan-2-ol",
             "2-propanol",
-            "isopropanol"
+            "isopropanol",
+            "isopropyl alcohol"
           ],
           "explanation": "Acetone reduces to propan-2-ol.",
           "hints": [
             "Retain the three-carbon chain.",
             "Place OH at the central carbon."
           ],
-          "highlights": {}
+          "highlights": {},
+          "molecule": "isopropanol"
         }
       ],
       "summary": "Propanone → propan-2-ol."

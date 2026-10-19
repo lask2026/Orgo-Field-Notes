@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "1c38145d9d8d70dea20c5a78064ef8d4b29bbf985362ba890c2d6995c0fd0640",
+    "sha256": "56c72c607def508feeb45925880fcb7fc6f6dc6f8f2f40dd323eedc800e19b18",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -138,7 +138,7 @@
       "id": "acid-extraction-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/acid-extraction-stage-2-feedback.png",
-      "sha256": "4b797a564f8c050bacff5e404186cc28bfda95bc7e58d27c27ac736b3495d481",
+      "sha256": "8dd7e4b93c07ed09681efc37a3ca44f4f20d2f69d34f42d113957e50a56969cf",
       "width": 607,
       "height": 276
     },
@@ -162,7 +162,7 @@
       "id": "acid-extraction-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/acid-extraction-stage-3-feedback.png",
-      "sha256": "7c26ca7e04bc34620d4010bb3d1378386837f7ec3a719363c1a0e1b9efe1fce9",
+      "sha256": "57ef00d02850664b051ae9dc520a4043e7833bbb1c62938cb671904dbc1ef63a",
       "width": 607,
       "height": 326
     },
@@ -170,9 +170,9 @@
       "id": "acid-extraction-complete",
       "kind": "practice-complete",
       "file": "screenshots/acid-extraction-complete.png",
-      "sha256": "596fe07b3080c878cebff6e3c6228e6f40ed761d7438d98943a91fb6ff50b8d0",
+      "sha256": "55c39f71b8c02157ba6ca77e8461109fa709200a03967c8bb0192819d483faf2",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "choose-distillation-stage-1-molecule",
@@ -194,7 +194,7 @@
       "id": "choose-distillation-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/choose-distillation-stage-1-feedback.png",
-      "sha256": "cc064485add51a7d09b281368070b3757ce13eef778f266338663975d2ff815c",
+      "sha256": "3c942ee52ae8ab3bed8683803197378b2c29d854f0ed5b5922930e7d3fce28f0",
       "width": 607,
       "height": 276
     },
@@ -218,7 +218,7 @@
       "id": "choose-distillation-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/choose-distillation-stage-2-feedback.png",
-      "sha256": "4798eff8ec42ae94574ebae37bd2f3ba98d399db29e9f4a7dc349e02ff4261bf",
+      "sha256": "0821952ea685830637dbabaa437265a43a3d55c9ba9203f4d6d9bfb1897a425f",
       "width": 607,
       "height": 348
     },
@@ -242,7 +242,7 @@
       "id": "choose-distillation-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/choose-distillation-stage-3-feedback.png",
-      "sha256": "0d1294edb3573c4c4430e267fbe2c8697c2bdb931fa85b5cb7fe0b79a05ac03d",
+      "sha256": "0f2fcb0d8fe2fc0409e36be7289663005f01101f4cc2cb5dc7474d28ac067fa7",
       "width": 607,
       "height": 348
     },
@@ -250,9 +250,9 @@
       "id": "choose-distillation-complete",
       "kind": "practice-complete",
       "file": "screenshots/choose-distillation-complete.png",
-      "sha256": "4c11fc46f00171b862233f550d887c496dd86a53de02194bb0ed4b9a1ed85ea2",
+      "sha256": "56ec82cc0944d90e6c09700731a19746917d4cec17757244f5310cb87dd46bdc",
       "width": 1324,
-      "height": 591
+      "height": 612
     },
     {
       "id": "rf-calculation-stage-1-molecule",
@@ -306,7 +306,7 @@
       "id": "rf-calculation-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/rf-calculation-stage-2-feedback.png",
-      "sha256": "d7454b72a03b8bea96f26867e48c23035fff622933574d647e8ece8b848d9c5c",
+      "sha256": "47345fc123e12646d26f47d34d4f6ccb3252843e5f7331f89cc2187c78f38ce8",
       "width": 607,
       "height": 276
     },
@@ -330,7 +330,7 @@
       "id": "rf-calculation-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/rf-calculation-stage-3-feedback.png",
-      "sha256": "25bcc5079758b4ba878afc2c5d9dc0f4e56cb1de200d2fc47b57ff1ae606d371",
+      "sha256": "e0eb5967859316703a05ffa0401dec20dd1a59ef4559f988ee1998ffdd55fa11",
       "width": 607,
       "height": 276
     },
@@ -338,9 +338,9 @@
       "id": "rf-calculation-complete",
       "kind": "practice-complete",
       "file": "screenshots/rf-calculation-complete.png",
-      "sha256": "41fa3844bea51abf8b25dac076aae72252436562cb93cad4ea8a13c3a8bfd2f9",
+      "sha256": "d9c8f2e528eb4ffdb2d0b3d4307b5375490a77bf6a95e51ea86c8ed1f7bdfb5f",
       "width": 1324,
-      "height": 1009
+      "height": 1030
     },
     {
       "id": "chromatography-match-stage-1-molecule",
@@ -362,7 +362,7 @@
       "id": "chromatography-match-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/chromatography-match-stage-1-feedback.png",
-      "sha256": "ebae24c8ff1c16e9ed977d2b47ebb884415e9af8639908f573c7fd9df961920e",
+      "sha256": "3ab226559ef202a9375378cd0dfe2dfffd05939f3c482069975947e128662f3f",
       "width": 607,
       "height": 276
     },
@@ -386,7 +386,7 @@
       "id": "chromatography-match-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/chromatography-match-stage-2-feedback.png",
-      "sha256": "a615c935d4eb5f9f37199011f25db09a35de37ea5df312ead97420e706bcf328",
+      "sha256": "a83731a021a6edf355153eb03bf1e919cfd24d401757d82146472038ddab5955",
       "width": 607,
       "height": 276
     },
@@ -410,7 +410,7 @@
       "id": "chromatography-match-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/chromatography-match-stage-3-feedback.png",
-      "sha256": "8b92d9c65391ba4238465ac25b14882db314a37cfe4145a163963e991d85ac44",
+      "sha256": "8e42ab37e7ed3767a1830404f7f8ec22bb8b90ef6ccce71239b75bf2c7f427e4",
       "width": 607,
       "height": 301
     },
@@ -418,9 +418,9 @@
       "id": "chromatography-match-complete",
       "kind": "practice-complete",
       "file": "screenshots/chromatography-match-complete.png",
-      "sha256": "5ea6e3a40ebc7451f02d130962bf25d35703acc9c3f800f557154e17283add8b",
+      "sha256": "e044b14331974e4d764aa28a3a280a87b9b3642fd9fb24e27809e7f1f9e480fd",
       "width": 1324,
-      "height": 574
+      "height": 595
     },
     {
       "id": "layout-desktop-light",
@@ -442,7 +442,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "be32ca0c2284d7730c1e84659b632c02accbfab6d6d7f109ed99f2583c4f47c9",
+      "sha256": "3079ce7438082536ea4a48deb2d85b323bad3b4233f6244b6a0551eb552df875",
       "width": 375,
       "height": 2206
     }

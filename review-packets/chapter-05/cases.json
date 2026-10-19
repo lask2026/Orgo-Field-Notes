@@ -3,7 +3,7 @@
   "chapter": 5,
   "title": "Alcohols",
   "sourceSnapshot": {
-    "sha256": "36f06166e4183517e515f1f8efec62b476b7ec61ff30c705bca7e6129aea658f",
+    "sha256": "d01f666e526283ab630e50bf89bdedebcb10b1575eb5959dcb49f2b232dd9aca",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -162,7 +162,48 @@
           {
             "id": "oxidize-secondary:stage-3",
             "type": "text",
-            "prompt": "Name the three-carbon product."
+            "prompt": "Name the three-carbon product.",
+            "molecule": {
+              "atoms": [
+                {
+                  "e": "C",
+                  "x": 50,
+                  "y": 115
+                },
+                {
+                  "e": "C",
+                  "x": 108,
+                  "y": 85
+                },
+                {
+                  "e": "C",
+                  "x": 166,
+                  "y": 115
+                },
+                {
+                  "e": "O",
+                  "x": 108,
+                  "y": 25
+                }
+              ],
+              "bonds": [
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  2
+                ]
+              ]
+            }
           }
         ]
       }
@@ -202,7 +243,7 @@
             },
             {
               "e": "O",
-              "x": 175,
+              "x": 165,
               "y": 45
             },
             {
@@ -212,7 +253,7 @@
             },
             {
               "e": "C",
-              "x": 230,
+              "x": 220,
               "y": 15
             }
           ],
@@ -268,12 +309,83 @@
           {
             "id": "protection:stage-3",
             "type": "choice",
-            "prompt": "Making an alkyl tosylate from ROH directly causes…",
+            "prompt": "Making an alkyl sulfonate from ROH (mesylate shown; tosylate analogous) directly causes…",
             "options": [
               "Retention of the C–O framework",
               "SN2 inversion at carbon in every case",
               "Cleavage of the carbon skeleton"
-            ]
+            ],
+            "molecule": {
+              "atoms": [
+                {
+                  "e": "C",
+                  "x": 35,
+                  "y": 130
+                },
+                {
+                  "e": "C",
+                  "x": 85,
+                  "y": 100
+                },
+                {
+                  "e": "O",
+                  "x": 140,
+                  "y": 130
+                },
+                {
+                  "e": "S",
+                  "x": 200,
+                  "y": 100
+                },
+                {
+                  "e": "C",
+                  "x": 255,
+                  "y": 130
+                },
+                {
+                  "e": "O",
+                  "x": 170,
+                  "y": 40
+                },
+                {
+                  "e": "O",
+                  "x": 230,
+                  "y": 40
+                }
+              ],
+              "bonds": [
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  4,
+                  1
+                ],
+                [
+                  3,
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  6,
+                  2
+                ]
+              ]
+            }
           }
         ]
       }
@@ -394,8 +506,94 @@
           {
             "id": "quinone-redox:stage-3",
             "type": "number",
-            "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
-            "unit": "electrons"
+            "prompt": "The reduced product is shown. How many electrons are accepted per quinone in the full quinone → hydroquinone conversion?",
+            "unit": "electrons",
+            "molecule": {
+              "atoms": [
+                {
+                  "e": "C",
+                  "x": 170,
+                  "y": 37
+                },
+                {
+                  "e": "C",
+                  "x": 228.88972745734185,
+                  "y": 71
+                },
+                {
+                  "e": "C",
+                  "x": 228.88972745734185,
+                  "y": 139
+                },
+                {
+                  "e": "C",
+                  "x": 170,
+                  "y": 173
+                },
+                {
+                  "e": "C",
+                  "x": 111.11027254265817,
+                  "y": 139
+                },
+                {
+                  "e": "C",
+                  "x": 111.11027254265818,
+                  "y": 71
+                },
+                {
+                  "e": "O",
+                  "x": 170,
+                  "y": 5
+                },
+                {
+                  "e": "O",
+                  "x": 170,
+                  "y": 205
+                }
+              ],
+              "bonds": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  5,
+                  2
+                ],
+                [
+                  5,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  6,
+                  1
+                ],
+                [
+                  3,
+                  7,
+                  1
+                ]
+              ]
+            }
           }
         ]
       }
@@ -457,7 +655,9 @@
               "accepted": [
                 "tertiary",
                 "3°",
-                "3"
+                "3",
+                "tertiary alcohol",
+                "3° alcohol"
               ],
               "explanation": "Three carbon neighbors make the alcohol tertiary.",
               "hints": [
@@ -590,14 +790,17 @@
               "accepted": [
                 "propanone",
                 "propan-2-one",
-                "acetone"
+                "acetone",
+                "2-propanone",
+                "dimethyl ketone"
               ],
               "explanation": "Propan-2-ol oxidizes to propanone, commonly called acetone.",
               "hints": [
                 "Retain all three carbons.",
                 "Replace the secondary alcohol with a ketone."
               ],
-              "highlights": {}
+              "highlights": {},
+              "molecule": "acetone"
             }
           ],
           "summary": "Propan-2-ol → propanone."
@@ -649,7 +852,55 @@
           "cond": "propan-2-ol",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         },
-        "stageMolecules": {}
+        "stageMolecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
       },
       "dependsOn": "ch05:blind:oxidize-secondary"
     },
@@ -677,7 +928,7 @@
               "answer": [
                 1
               ],
-              "explanation": "B is the acetal carbon.",
+              "explanation": "B is the ketal carbon (within the broad acetal class), bearing both OR groups.",
               "hints": [
                 "Find a carbon attached to two oxygens.",
                 "There is no C=O at that carbon."
@@ -700,16 +951,16 @@
                 "Base alone under ordinary conditions"
               ],
               "answer": 0,
-              "explanation": "Acetal hydrolysis is acid-catalyzed and uses water.",
+              "explanation": "Ketal/acetal hydrolysis is acid-catalyzed and uses water.",
               "hints": [
-                "Consider the reverse of acetal formation.",
+                "Consider the reverse of ketal/acetal formation.",
                 "Both catalyst and water are important."
               ],
               "highlights": {}
             },
             {
               "type": "choice",
-              "prompt": "Making an alkyl tosylate from ROH directly causes…",
+              "prompt": "Making an alkyl sulfonate from ROH (mesylate shown; tosylate analogous) directly causes…",
               "skill": "Apply the rule",
               "options": [
                 "Retention of the C–O framework",
@@ -722,7 +973,8 @@
                 "Distinguish activation from displacement.",
                 "The original C–O bond remains during activation."
               ],
-              "highlights": {}
+              "highlights": {},
+              "molecule": "mesylate"
             }
           ],
           "summary": "Acetals protect carbonyls; sulfonates activate alcohol-derived leaving groups."
@@ -753,7 +1005,7 @@
             },
             {
               "e": "O",
-              "x": 175,
+              "x": 165,
               "y": 45
             },
             {
@@ -763,7 +1015,7 @@
             },
             {
               "e": "C",
-              "x": 230,
+              "x": 220,
               "y": 15
             }
           ],
@@ -804,7 +1056,85 @@
           "cond": "2,2-dimethoxypropane",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         },
-        "stageMolecules": {}
+        "stageMolecules": {
+          "mesylate": {
+            "name": "ethyl methanesulfonate",
+            "formula": "C3H8O3S",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 35,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 85,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 140,
+                "y": 130
+              },
+              {
+                "e": "S",
+                "x": 200,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 230,
+                "y": 40
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                3,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl methanesulfonate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
       },
       "dependsOn": "ch05:blind:protection"
     },
@@ -864,17 +1194,18 @@
             },
             {
               "type": "number",
-              "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
+              "prompt": "The reduced product is shown. How many electrons are accepted per quinone in the full quinone → hydroquinone conversion?",
               "skill": "Calculate and interpret",
               "answer": 2,
               "unit": "electrons",
               "tolerance": 0,
               "explanation": "Two electrons and two protons give the hydroquinone form.",
               "hints": [
-                "There are two carbonyl oxygens converted to OH.",
-                "Each coupled reduction contributes one electron in the overall pair."
+                "Compare the hydrogen counts of quinone and the reduced product.",
+                "Balance hydrogen using H+, then balance total charge using electrons."
               ],
-              "highlights": {}
+              "highlights": {},
+              "molecule": "hydroquinone"
             }
           ],
           "summary": "Quinone + 2 H+ + 2 e− → hydroquinone."
@@ -971,7 +1302,100 @@
           "cond": "1,4-benzoquinone",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         },
-        "stageMolecules": {}
+        "stageMolecules": {
+          "hydroquinone": {
+            "name": "benzene-1,4-diol (hydroquinone)",
+            "formula": "C6H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 205
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                3,
+                7,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 235,
+            "cond": "benzene-1,4-diol (hydroquinone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
       },
       "dependsOn": "ch05:blind:quinone-redox"
     },
@@ -995,8 +1419,8 @@
           "molecule": "isopropanol",
           "tag": "Classify the carbon bearing OH",
           "cards": {
-            "rule": "<p>A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility.</p>",
-            "cue": "<p>Count C neighbors of C–OH; do not count the number of OH groups.</p>",
+            "rule": "<p>A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility. For comparable molecular sizes, additional OH groups strengthen hydrogen bonding; branching often lowers boiling point, but competing effects require actual data. In water, simple alkyl alcohol acidity generally decreases methanol > primary > secondary > tertiary: alkyl donation and poorer solvation destabilize alkoxide. Electron-withdrawing groups can lower pKa; solvent matters.</p>",
+            "cue": "<p>Count C neighbors of C–OH; do not count the number of OH groups. Name a principal alcohol with -ol (or -diol for two OH groups); use hydroxy- when OH is a prefix. On benzene, ortho, meta, para mean 1,2-, 1,3-, 1,4-.</p>",
             "trap": "<p>A secondary alcohol is not an alcohol with two hydroxyl groups. Phenol has OH directly attached to an aromatic ring and differs in acidity from an aliphatic alcohol.</p>",
             "app": "<p>An OH group can increase water affinity and supply a hydrogen-bond donor and acceptor in a binding site, but whole-molecule properties still matter.</p>"
           },
@@ -1168,7 +1592,7 @@
           "molecule": "isopropanol",
           "tag": "Alcohol class + oxidant + conditions",
           "cards": {
-            "rule": "<p>Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage.</p>",
+            "rule": "<p>Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage. PCC (pyridinium chlorochromate) under anhydrous conditions can stop primary-alcohol oxidation at an aldehyde. Jones reagent, CrO3 in aqueous sulfuric acid, or acidified dichromate commonly gives a carboxylic acid. Water allows aldehyde hydrate formation and further oxidation; reagent and conditions govern selectivity.</p>",
             "cue": "<p>1° → aldehyde → acid; 2° → ketone; 3° lacks the necessary C–H.</p>",
             "trap": "<p>PCC is not the only aldehyde-selective oxidant. Do not label every reagent containing oxygen “strong enough” or assume every tertiary alcohol is inert under all conditions.</p>",
             "app": "<p>Alcohol dehydrogenases catalyze related biological redox steps using cofactors; substrate and cofactor specificity control the result.</p>"
@@ -1368,8 +1792,8 @@
           "molecule": "mesylate",
           "tag": "Make leaving groups; mask carbonyls",
           "cards": {
-            "rule": "<p>Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions.</p>",
-            "cue": "<p>Activation changes what can leave. Protection temporarily changes what can react.</p>",
+            "rule": "<p>Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions. MsCl or TsCl with a suitable base converts ROH to ROMs or ROTs. Acetal/ketal formation masks a carbonyl; these groups tolerate many bases and hydride reagents, including LiAlH4 under suitable conditions. Sulfonates are activated leaving groups, not universally inert alcohol protecting groups.</p>",
+            "cue": "<p>Activation changes what can leave. Protection temporarily changes what can react. Traditionally, an aldehyde-derived acetal carbon has H and R; a ketone-derived ketal carbon has two carbon groups. Both bear two OR groups. The broad IUPAC class acetals includes ketals.</p>",
             "trap": "<p>Making a tosylate does not itself perform SN2 at carbon. Acetals are generally acid-labile; acid and water are needed for hydrolysis. Protection does not make a group universally inert.</p>",
             "app": "<p>A carbonyl can be protected while another group reacts, then regenerated. Choose protection and deprotection conditions compatible with the rest of the molecule.</p>"
           },
@@ -1382,6 +1806,7 @@
                 "prin": [
                   2,
                   3,
+                  4,
                   5,
                   6
                 ],
@@ -1393,8 +1818,8 @@
               "reveal": true
             },
             {
-              "label": "2. Acetal protection",
-              "text": "<p>The central carbon has two OR groups and no carbonyl pi bond. Acetals can be made from aldehydes or ketones with alcohol under acid catalysis; removing water favors formation.</p>",
+              "label": "2. Ketal protection",
+              "text": "<p>This ketal (a ketone-derived acetal) has two OR groups and two carbon groups at its central carbon. Acid-catalyzed reaction of a carbonyl with alcohol can form acetals or ketals; removing water favors formation.</p>",
               "molecule": "acetal",
               "highlights": {
                 "prin": [
@@ -1407,7 +1832,7 @@
             },
             {
               "label": "3. Restore the carbonyl",
-              "text": "<p>Aqueous acid hydrolyzes the acetal, regenerating the ketone and alcohol. The protection/deprotection sequence is reversible under appropriate conditions.</p>",
+              "text": "<p>Aqueous acid hydrolyzes this ketal, regenerating the ketone and alcohol. Protection and deprotection depend on the water/alcohol balance and compatible reaction conditions.</p>",
               "molecule": "acetone",
               "highlights": {
                 "prin": [
@@ -1451,13 +1876,13 @@
               },
               {
                 "e": "O",
-                "x": 200,
-                "y": 35
+                "x": 170,
+                "y": 40
               },
               {
                 "e": "O",
-                "x": 255,
-                "y": 60
+                "x": 230,
+                "y": 40
               }
             ],
             "bonds": [
@@ -1523,7 +1948,7 @@
               },
               {
                 "e": "O",
-                "x": 175,
+                "x": 165,
                 "y": 45
               },
               {
@@ -1533,7 +1958,7 @@
               },
               {
                 "e": "C",
-                "x": 230,
+                "x": 220,
                 "y": 15
               }
             ],
@@ -1647,8 +2072,8 @@
           "cards": {
             "rule": "<p>Phenol is more acidic than an ordinary aliphatic alcohol because phenoxide can delocalize negative charge into the ring. Electron-withdrawing substituents can increase acidity. Hydroquinone can be oxidized to a quinone; the reverse is reduction.</p>",
             "cue": "<p>Quinone + 2 H+ + 2 e− → hydroquinone. “Hydro” here tracks reduction, not merely adding OH groups.</p>",
-            "trap": "<p>Hydroquinone and hydroxyquinone are different terms. Hydroquinone is a reduced quinone form; a hydroxyquinone still has a quinone framework bearing an extra OH. Coenzyme Q accepts electrons upstream of complex III and delivers them to complex III.</p>",
-            "app": "<p>Ubiquinone/ubiquinol transports electrons within the mitochondrial inner membrane; proton-coupled redox chemistry links the organic structure to energy metabolism.</p>"
+            "trap": "<p>Hydroquinone and hydroxyquinone are different terms. Hydroquinone is a reduced quinone form; a hydroxyquinone still has a quinone framework bearing an extra OH. Coenzyme Q accepts electrons upstream of complex III and delivers them to complex III. Oxidative hydroxylation to a hydroxyquinone is condition-dependent; it is not a universal second oxidation step after quinone formation.</p>",
+            "app": "<p>Ubiquinone/ubiquinol transports electrons within the mitochondrial inner membrane; proton-coupled redox chemistry links the organic structure to energy metabolism. CoQ accepts electrons from complexes I and II and passes them to III. Its isoprenoid tail keeps it in the membrane. Vitamin K1 (phylloquinone) and K2 (menaquinones) are lipid-soluble quinones with hydrophobic side chains and roles in vitamin K-dependent carboxylation.</p>"
           },
           "steps": [
             {
@@ -2235,13 +2660,13 @@
             },
             {
               "e": "O",
-              "x": 200,
-              "y": 35
+              "x": 170,
+              "y": 40
             },
             {
               "e": "O",
-              "x": 255,
-              "y": 60
+              "x": 230,
+              "y": 40
             }
           ],
           "bonds": [
@@ -2318,7 +2743,7 @@
             },
             {
               "e": "O",
-              "x": 175,
+              "x": 165,
               "y": 45
             },
             {
@@ -2328,7 +2753,7 @@
             },
             {
               "e": "C",
-              "x": 230,
+              "x": 220,
               "y": 15
             }
           ],
@@ -2705,7 +3130,7 @@
             "id": "properties",
             "title": "Alcohol classes and physical properties",
             "tag": "Classify the carbon bearing OH",
-            "coreRule": "A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility.",
+            "coreRule": "A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility. For comparable molecular sizes, additional OH groups strengthen hydrogen bonding; branching often lowers boiling point, but competing effects require actual data. In water, simple alkyl alcohol acidity generally decreases methanol > primary > secondary > tertiary: alkyl donation and poorer solvation destabilize alkoxide. Electron-withdrawing groups can lower pKa; solvent matters.",
             "stepTopics": [
               "1. Secondary alcohol",
               "2. Tertiary alcohol"
@@ -2715,7 +3140,7 @@
             "id": "oxidation",
             "title": "Predict alcohol oxidation products",
             "tag": "Alcohol class + oxidant + conditions",
-            "coreRule": "Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage.",
+            "coreRule": "Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage. PCC (pyridinium chlorochromate) under anhydrous conditions can stop primary-alcohol oxidation at an aldehyde. Jones reagent, CrO3 in aqueous sulfuric acid, or acidified dichromate commonly gives a carboxylic acid. Water allows aldehyde hydrate formation and further oxidation; reagent and conditions govern selectivity.",
             "stepTopics": [
               "1. Locate the oxidized carbon",
               "2. Compare the product",
@@ -2726,10 +3151,10 @@
             "id": "activation",
             "title": "Activate and protect functional groups",
             "tag": "Make leaving groups; mask carbonyls",
-            "coreRule": "Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions.",
+            "coreRule": "Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions. MsCl or TsCl with a suitable base converts ROH to ROMs or ROTs. Acetal/ketal formation masks a carbonyl; these groups tolerate many bases and hydride reagents, including LiAlH4 under suitable conditions. Sulfonates are activated leaving groups, not universally inert alcohol protecting groups.",
             "stepTopics": [
               "1. Sulfonate ester",
-              "2. Acetal protection",
+              "2. Ketal protection",
               "3. Restore the carbonyl"
             ]
           },
@@ -2773,7 +3198,7 @@
             "stages": [
               "Select the carbon bearing both OR groups.",
               "Which conditions ordinarily regenerate the ketone?",
-              "Making an alkyl tosylate from ROH directly causes…"
+              "Making an alkyl sulfonate from ROH (mesylate shown; tosylate analogous) directly causes…"
             ]
           },
           {
@@ -2783,7 +3208,7 @@
             "stages": [
               "Select both carbonyl oxygen atoms.",
               "Quinone → hydroquinone is…",
-              "How many electrons are accepted in the full quinone/hydroquinone conversion?"
+              "The reduced product is shown. How many electrons are accepted per quinone in the full quinone → hydroquinone conversion?"
             ]
           }
         ],
@@ -2792,6 +3217,30 @@
           {
             "label": "Supplied Kaplan curriculum: Chapter 5; section scope checked against local body and summary",
             "location": "organic_chemistry_kaplan/OEBPS/chapter05b.xhtml"
+          },
+          {
+            "label": "IUPAC Gold Book, acetals (search-index definition inspected; direct page fetch unavailable)",
+            "location": "https://goldbook.iupac.org/terms/view/A00062"
+          },
+          {
+            "label": "OpenStax 17.2, alcohol properties",
+            "location": "https://openstax.org/books/organic-chemistry/pages/17-2-properties-of-alcohols-and-phenols"
+          },
+          {
+            "label": "OpenStax 17.6, alcohol reactions",
+            "location": "https://openstax.org/books/organic-chemistry/pages/17-6-reactions-of-alcohols"
+          },
+          {
+            "label": "OpenStax 17.7, alcohol oxidation",
+            "location": "https://openstax.org/books/organic-chemistry/pages/17-7-oxidation-of-alcohols"
+          },
+          {
+            "label": "NIH ODS, vitamin K",
+            "location": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+          },
+          {
+            "label": "PubChem BioCyc human ubiquinol-10 pathway, indexed description",
+            "location": "https://pubchem.ncbi.nlm.nih.gov/pathway/BioCyc%3AHUMAN_PWY-5872"
           }
         ],
         "referencePassages": []
