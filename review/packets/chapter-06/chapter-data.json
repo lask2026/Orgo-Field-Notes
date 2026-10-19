@@ -87,21 +87,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Planar electrophile → tetrahedral addition product",
+          "title": "Carbonyl Polarity, Bürgi-Dunitz Attack (~107°) & Aldehyde vs. Ketone Reactivity",
           "items": [
             {
-              "label": "Polarize C=O",
-              "text": "Carbon electron poor; oxygen electron rich"
+              "label": "Permanent C=O Dipole & Resonance",
+              "text": "Oxygen is more electronegative than carbon (R₂C=O ↔ R₂C⁺–O⁻), making the sp² carbonyl carbon strongly electrophilic (δ+) and the oxygen weakly basic/nucleophilic (δ−).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Nucleophile attacks",
-              "text": "Electron pair moves toward carbon"
+              "label": "Electronic Effect (Inductive Donation)",
+              "text": "Alkyl groups are electron-donating (EDG): a ketone has TWO alkyl groups donating electron density to reduce δ+ on carbon; an aldehyde has only ONE.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Track oxygen",
-              "text": "The pi pair shifts to O"
+              "label": "Steric Effect in the sp³ Tetrahedral Intermediate",
+              "text": "Nucleophilic addition compresses bond angles from 120° (sp² trigonal planar) to 109.5° (sp³ tetrahedral), crowding bulky ketone R groups.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "C=O = sp² Planar (120°)",
+            "δ+ Carbon / δ− Oxygen",
+            "Aldehyde > Ketone Reactivity",
+            "Tetrahedral sp³ Intermediate"
+          ],
+          "comparison": [
+            [
+              "Formaldehyde (H₂C=O)",
+              "Zero alkyl groups (least hindered)",
+              "Fastest nucleophilic addition"
+            ],
+            [
+              "Aldehyde (R–CHO)",
+              "1 alkyl group (less steric + less EDG)",
+              "More reactive than ketones"
+            ],
+            [
+              "Ketone (R–CO–R′)",
+              "2 alkyl groups (steric + 2 inductive EDGs)",
+              "Less electrophilic δ+ carbon"
+            ]
+          ],
+          "theme": "carbonyl-attack",
           "figure": {
             "type": "structures",
             "steps": [
@@ -112,43 +142,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Acid-Catalyzed vs. Base-Catalyzed Carbonyl Addition Order",
+          "prompt": "Are you running carbonyl nucleophilic addition in basic or acidic conditions?",
           "items": [
             {
-              "label": "Addition step",
-              "text": "Attack carbon; move the pi electrons to O; then handle proton transfers"
+              "label": "Basic / Strong Nucleophile (RMgBr, LiAlH₄, CN⁻, RO⁻)",
+              "outcome": "Step 1: Attack C=O → Step 2: Protonate Alkoxide (O⁻)",
+              "text": "Strong anionic nucleophiles attack the neutral C=O directly to form a tetrahedral alkoxide intermediate, then pick up H⁺ on workup."
             },
             {
-              "label": "Naming step",
-              "text": "Aldehyde -al/-carbaldehyde; ketone -one; subordinate carbonyl oxo-"
+              "label": "Acidic / Weak Nucleophile (ROH, H₂O + Catalytic H⁺)",
+              "outcome": "Step 1: Protonate C=O (C=OH⁺) → Step 2: Attack!",
+              "text": "Acid protonates the carbonyl oxygen FIRST, converting a moderate electrophile into a super-electrophilic oxocarbenium ion (R₂C=OH⁺) so weak ROH can attack."
+            },
+            {
+              "label": "Comparing Carbonyl Boiling Points",
+              "outcome": "Ketone/Aldehyde > Alkane/Ether, But < Alcohol",
+              "text": "Strong C=O dipole-dipole interactions raise BP above alkanes/ethers, but lack of O–H means no self-H-bonding (lower BP than alcohols)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Drawing a Pentavalent Carbon or Forming O⁻ in Strong Acid",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Drawing five bonds to carbon or treating a carbonyl as an O–H donor"
+              "label": "Common Trap",
+              "text": "Attacking C=O without breaking the π bond (5 bonds on C!), or drawing a strongly basic RO⁻ alkoxide intermediate in H₂SO₄."
             },
             {
-              "label": "Check",
-              "text": "Shift the pi pair to O; neutral aldehydes/ketones accept hydrogen bonds but lack an O–H donor"
+              "label": "Correct Reasoning",
+              "text": "Always push the C=O π electrons onto oxygen as the nucleophile attacks; keep intermediates cationic/neutral in acid and anionic/neutral in base!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Oxyanion Holes in Proteases & Lewis-Acid Metal Catalysis (Zn²⁺ / Mg²⁺)",
           "items": [
             {
-              "label": "Planar carbonyl",
-              "text": "Can be attacked from either face"
+              "label": "Serine Protease Oxyanion Hole",
+              "outcome": "Backbone N–H H-Bonds Stabilize Tetrahedral O⁻",
+              "text": "Two enzyme amide N–H bonds donate H-bonds to the developing negative charge on the tetrahedral intermediate oxygen, lowering ΔG‡."
             },
             {
-              "label": "Chiral environment",
-              "text": "Can favor one face; without bias, a new single stereocenter often gives a racemate"
+              "label": "Metalloenzyme Zn²⁺ Catalysis",
+              "outcome": "Zn²⁺ Acts as a Super-Proton on C=O",
+              "text": "Coordination of carbonyl oxygen to Zn²⁺ polarizes the C=O bond just like acid catalysis, accelerating nucleophilic attack at pH 7.4."
+            },
+            {
+              "label": "IR C=O Stretch (~1715 cm⁻¹)",
+              "outcome": "Large C=O Dipole Change → Intense Sharp Peak",
+              "text": "Because C=O has a huge permanent dipole moment, stretching it absorbs IR radiation strongly around 1700–1750 cm⁻¹."
             }
           ]
         }
@@ -209,22 +254,51 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Distinguish OH from OR on the same carbon",
+          "layout": "flow",
+          "title": "Hydrates, Hemiacetals/Hemiketals & Acid-Only Acetal Protecting Groups",
           "items": [
             {
-              "label": "Water addition",
-              "text": "Hydrate equilibrium"
+              "label": "Hemiacetal / Hemiketal Formation (1 Eq ROH)",
+              "text": "Acid- or base-catalyzed addition of 1 ROH across C=O yields a carbon bonded to ONE –OH and ONE –OR (unstable open-chain, but favored in 5/6-membered sugar rings!).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "OH plus OR",
-              "text": "Hemiacetal/hemiketal context"
+              "label": "Acetal / Ketal Formation Requires ACID (2 Eq ROH + H⁺, −H₂O)",
+              "text": "Protonation turns the hemiacetal –OH into –OH₂⁺, which leaves to form a resonance-stabilized oxocarbenium ion (R₂C=OR′⁺) attacked by a second ROH.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Two OR groups",
-              "text": "Acetal/ketal context"
+              "label": "Base Immunity & Acid Deprotection",
+              "text": "Because RO⁻ cannot leave in base, acetals are 100% stable to NaOH, LiAlH₄, NaBH₄, and Grignards; hydrolyze back to C=O + 2 ROH with aqueous acid (H₃O⁺).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "1 Eq ROH → Hemiacetal (RO–C–OH)",
+            "2 Eq ROH + H⁺ (-H₂O) → Acetal (RO–C–OR)",
+            "Acetals = Base-Stable Protecting Groups!"
+          ],
+          "comparison": [
+            [
+              "Hydrate (Gem-diol)",
+              "R₂C(OH)₂ (Two –OH on same C)",
+              "Reversible in H⁺ OR HO⁻; favors C=O"
+            ],
+            [
+              "Hemiacetal / Hemiketal",
+              "R₂C(OH)(OR′) (1 –OH + 1 –OR′)",
+              "Forms in acid OR base; cyclic sugars stable!"
+            ],
+            [
+              "Acetal / Ketal",
+              "R₂C(OR′)₂ (Two –OR′ on same C)",
+              "Forms ONLY in ACID; locked in base/RMgBr/LiAlH₄!"
+            ]
+          ],
+          "theme": "acetal-lock",
           "figure": {
             "type": "structures",
             "steps": [
@@ -237,47 +311,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Identify the Carbonyl Derivative by Counting Oxygen Attachments on the Same Carbon",
+          "prompt": "Inspect the sp³ carbon that holds two single bonds to oxygen:",
           "items": [
             {
-              "label": "OH and OR at the former carbonyl center",
-              "text": "Hemiacetal/hemiketal family"
+              "label": "Bonded to –OH and –OR (plus R/H)",
+              "outcome": "Hemiacetal (or Hemiketal if from Ketone)",
+              "text": "Examples: α/β-D-glucopyranose at anomeric C1! Equilibrates with the open-chain aldehyde in water (mutarotation, reducing sugar)."
             },
             {
-              "label": "OR and OR at that center",
-              "text": "Acetal/ketal family"
+              "label": "Bonded to –OR and –OR (Two Ether Links on 1 C)",
+              "outcome": "Acetal (or Ketal) — Base-Stable Lock!",
+              "text": "Examples: sucrose/starch glycosidic bonds or ethylene glycol dioxolane protecting group; NON-reducing and stable to base/LiAlH₄!"
             },
             {
-              "label": "H/R versus two carbon groups",
-              "text": "Traditional acetal versus ketal distinction"
+              "label": "Bonded to ONLY ONE –OR (C–O–C on Separate Carbons)",
+              "outcome": "Simple Ether (NOT an Acetal)",
+              "text": "Ordinary ethers do not hydrolyze in mild aqueous acid, whereas acetals rapidly revert to aldehydes/ketones in H₃O⁺."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Trying to Form or Hydrolyze an Acetal in Base (NaOH / RO⁻)",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Treating full acetal formation as simple basic addition"
+              "label": "Common Trap",
+              "text": "Writing RCHO + 2 CH₃OH + NaOH → Acetal, or cleaving a glycosidic acetal bond with aqueous NaOH."
             },
             {
-              "label": "Check",
-              "text": "Catalysis, water and equilibrium conditions"
+              "label": "Correct Reasoning",
+              "text": "Base catalysis STOPS at the hemiacetal (HO⁻ cannot leave to form an oxocarbenium ion)! Acetals form and hydrolyze ONLY in acid (H⁺)."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Carbohydrate Anomeric Carbon (Hemiacetal vs Glycoside Acetal) & Multi-Step Synthesis",
           "items": [
             {
-              "label": "Protection",
-              "text": "Masks carbonyl reactivity"
+              "label": "Reducing vs. Non-Reducing Sugars",
+              "outcome": "Free Anomeric Hemiacetal (–OH) = Reducing Sugar",
+              "text": "Maltose and lactose have one free hemiacetal C1–OH (mutarotates, Tollens +); sucrose locks both anomeric carbons as an acetal/ketal (non-reducing!)."
             },
             {
-              "label": "Carbohydrates",
-              "text": "Cyclic hemiacetal chemistry"
+              "label": "Ethylene Glycol Acetal Shield",
+              "outcome": "HOCH₂CH₂OH + Cat. TsOH Masks Aldehyde/Ketone",
+              "text": "Protects the more reactive aldehyde/ketone as a 5-membered cyclic acetal while LiAlH₄ reduces an ester elsewhere in the molecule."
+            },
+            {
+              "label": "Glycogen Phosphorylase / Glycosidases",
+              "outcome": "Oxocarbenium Ion-Like Transition State",
+              "text": "Enzymatic cleavage of glycosidic acetal bonds proceeds through a planar, resonance-stabilized oxocarbenium intermediate."
             }
           ]
         }
@@ -344,21 +429,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Reagent identity changes the product",
+          "title": "Imine and enamine formation: amine class, acid catalysis and competing protonation",
           "items": [
             {
-              "label": "Amine addition",
-              "text": "Carbonyl addition intermediate"
+              "label": "Primary Amine (RNH₂ / NH₂OH / NH₂NH₂) → Imine (C=N)",
+              "text": "Nucleophilic addition forms a carbinolamine; acid protonates –OH to –OH₂⁺, and the nitrogen lone pair pushes out water to form R₂C=NR′ (imine/oxime/hydrazone).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Condensation",
-              "text": "Water loss under appropriate conditions"
+              "label": "Secondary Amine (R₂NH) → Enamine (C=C–NR₂)",
+              "text": "After losing H₂O, the iminium ion (R₂C=NR′₂⁺) has NO proton left on nitrogen! Base removes an α-C–H proton instead to form a nucleophilic alkene-amine (enamine).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Product context",
-              "text": "Imine versus enamine pathway"
+              "label": "Cyanohydrin Formation (KCN / HCN)",
+              "text": "CN⁻ attacks the carbonyl to form a new C–C bond (R₂C(OH)CN); nitrile can then be reduced to a 1° amine or hydrolyzed to an α-hydroxy carboxylic acid!",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "1° Amine (RNH₂) → Imine (C=NR)",
+            "2° Amine (R₂NH) → Enamine (C=C–NR₂)",
+            "Mild Acid optimum pH depends on substrate",
+            "HCN/CN⁻ → Cyanohydrin"
+          ],
+          "comparison": [
+            [
+              "1° Amine (RNH₂)",
+              "Has 2 N–H protons",
+              "Loses H₂O → Imine (Schiff Base, R₂C=NR′)"
+            ],
+            [
+              "2° Amine (R₂NH)",
+              "Has only 1 N–H proton",
+              "Deprotonates α-C → Enamine (RCH=CR–NR′₂)"
+            ],
+            [
+              "Cyanide (CN⁻ / HCN)",
+              "Reversible C–C bond formation",
+              "Forms α-hydroxy nitrile (Cyanohydrin)"
+            ]
+          ],
+          "theme": "imine-enamine",
           "figure": {
             "type": "structures",
             "steps": [
@@ -370,43 +485,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Balance nucleophile availability with acid-catalyzed dehydration",
+          "prompt": "What happens if the pH is too high or too low during imine formation?",
           "items": [
             {
-              "label": "Suitable primary amine",
-              "text": "Imine formation pathway"
+              "label": "Too Basic (pH > 9): No H⁺ Available",
+              "outcome": "Carbinolamine –OH Cannot Leave as H₂O!",
+              "text": "Amine attacks C=O, but without acid to protonate –OH into –OH₂⁺, dehydration stalls completely."
             },
             {
-              "label": "Suitable secondary amine and available alpha H",
-              "text": "Enamine formation pathway"
+              "label": "Too Acidic (pH < 2): All RNH₂ Protonated to RNH₃⁺",
+              "outcome": "No Nucleophilic Lone Pair Left to Attack!",
+              "text": "Strong acid converts 100% of the amine into non-nucleophilic ammonium ions (RNH₃⁺), stopping Step 1."
+            },
+            {
+              "label": "Sweet Spot (substrate-dependent pH)",
+              "outcome": "Enough Free RNH₂ to Attack + Enough H⁺ to Dehydrate",
+              "text": "Produces the classic bell-shaped rate vs. pH profile tested on the MCAT!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Drawing a Charged Iminium or Enamine from the Wrong Amine Class",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Excess acid, an enamine without alpha H, or cyanide attached through N"
+              "label": "Common Trap",
+              "text": "Forming a neutral C=NR₂ imine from a secondary amine, or calling separate imine and enamine molecules from different amines \"tautomers\"."
             },
             {
-              "label": "Check",
-              "text": "Keep the amine nucleophilic; verify alpha H and carbon attachment of cyanide"
+              "label": "Correct Reasoning",
+              "text": "1° amines have 2 N–H protons → neutral Imine (C=NR); 2° amines have 1 N–H proton → neutral Enamine (C=C–NR₂). (Only an imine and enamine with the SAME formula interconvert as tautomers)."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "PLP Transamination Schiff Bases, Class I Aldolase & Strecker Amino Acid Synthesis",
           "items": [
             {
-              "label": "Schiff-base chemistry",
-              "text": "Reorganizes electron density"
+              "label": "Pyridoxal Phosphate (Vitamin B6)",
+              "outcome": "Lysine ε-NH₂ Forms Internal Schiff Base (Imine)",
+              "text": "PLP uses its aldehyde to form an imine with amino acid substrates, acting as an electron sink to stabilize carbanion intermediates."
             },
             {
-              "label": "Metabolism",
-              "text": "Connects nitrogen and amino-acid chemistry"
+              "label": "Wolff-Kishner Deoxygenation",
+              "outcome": "C=O + H₂NNH₂ → Hydrazone + KOH/Δ → CH₂ + N₂↑",
+              "text": "Converts an aldehyde or ketone into an alkane (C=O → CH₂) under basic conditions via a hydrazone intermediate."
+            },
+            {
+              "label": "Cyanohydrin Defense & Synthesis",
+              "outcome": "RCHO + HCN ⇌ RCH(OH)CN → α-Hydroxy Acid",
+              "text": "Acid hydrolysis of a cyanohydrin converts –CN into –COOH (e.g., ethanal → lactic acid)."
             }
           ]
         }
@@ -465,22 +595,51 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Separate addition from net redox",
+          "layout": "flow",
+          "title": "Diagnostic Aldehyde Oxidation (Tollens/Benedict) & Hydride Reduction (NaBH₄ vs. LiAlH₄)",
           "items": [
             {
-              "label": "Aldehyde reduction",
-              "text": "Primary alcohol"
+              "label": "Aldehyde-Specific Oxidation (Tollens, Fehling, Benedict)",
+              "text": "Aldehydes have a weak C–H bond on the carbonyl carbon and oxidize easily to carboxylates (Ag⁺ → Ag⁰ mirror; Cu²⁺ blue → Cu₂O brick-red precipitate); simple ketones do NOT react.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Ketone reduction",
-              "text": "Secondary alcohol"
+              "label": "Chemoselective Hydride Reduction (NaBH₄ vs. LiAlH₄)",
+              "text": "Al is less electronegative than B, making the Al–H bond far more polar and hydride-donating: LiAlH₄ reduces esters/acids/amides, while mild NaBH₄ reduces only aldehydes/ketones (and acid chlorides).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Workup",
-              "text": "Hydride adds before O is protonated"
+              "label": "Stereochemistry of Achiral Ketone Reduction",
+              "text": "Hydride attacks the planar sp² ketone equally from the top (Re) and bottom (Si) faces, yielding a 50:50 RACEMIC mixture if a new stereocenter forms.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Tollens [Ag(NH₃)₂]⁺ → Silver Mirror (Aldehyde Only!)",
+            "NaBH₄ = Mild (Ald/Ket Only)",
+            "LiAlH₄ = Fierce (All C=O)"
+          ],
+          "comparison": [
+            [
+              "Tollens / Benedict Test",
+              "Oxidizes Aldehydes (RCHO → RCOO⁻)",
+              "Ketones give NEGATIVE test (unless α-hydroxy tautomerizes)"
+            ],
+            [
+              "NaBH₄ (in MeOH/H₂O)",
+              "Reduces Aldehydes (→ 1° ROH) & Ketones (→ 2° ROH)",
+              "Leaves Esters, Carboxylic Acids & Amides UNTOUCHED"
+            ],
+            [
+              "LiAlH₄ (Anhydrous Et₂O)",
+              "Reduces Ald, Ket, Esters, Acids & Amides",
+              "Violently reacts with water; requires 2nd step H₃O⁺ workup"
+            ]
+          ],
+          "theme": "hydride-delivery",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -492,43 +651,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Carbonyl Redox Reagent & Stereochemical Outcome Selector",
+          "prompt": "What transformation or diagnostic test is being performed?",
           "items": [
             {
-              "label": "Aldehyde to acid",
-              "text": "Oxidation under suitable conditions"
+              "label": "Distinguish Aldehyde from Ketone in Lab",
+              "outcome": "Add Tollens Reagent ([Ag(NH₃)₂]⁺) → Silver Mirror",
+              "text": "Aldehyde is oxidized to RCOO⁻ while Ag⁺ is reduced to metallic Ag(s). (Note: α-hydroxy ketones in sugars give a positive test via enediol tautomerization!)."
             },
             {
-              "label": "Carbonyl to alcohol",
-              "text": "Reduction with a suitable reagent"
+              "label": "Reduce Ketone to 2° ROH Without Touching an Ester",
+              "outcome": "Use NaBH₄ in Ethanol",
+              "text": "Mild NaBH₄ selectively reduces the ketone C=O while the ester –COOR remains intact."
+            },
+            {
+              "label": "Track Where H Comes From in LiAlD₄ then H₂O",
+              "outcome": "Deuterium (D) Bonds to Carbon; H Bonds to Oxygen!",
+              "text": "Hydride/deuteride (D:⁻) attacks the electrophilic carbonyl CARBON; the aqueous workup protonates the alkoxide OXYGEN."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Mixing LiAlH₄ with Water/Alcohol in Step 1 or Putting Workup H⁺ on Carbon",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Predicting an alkane from ordinary hydride reduction"
+              "label": "Common Trap",
+              "text": "Writing \"LiAlH₄ in MeOH\" in a single step, or putting the H from H₃O⁺ onto the carbonyl carbon."
             },
             {
-              "label": "Check",
-              "text": "Oxygen remains in the alcohol; a test result is contextual evidence"
+              "label": "Correct Reasoning",
+              "text": "LiAlH₄ reacts explosively with protic solvents (H:⁻ + H₂O → H₂↑); always run Step 1 in anhydrous ether/THF and Step 2 H₃O⁺ workup (which protonates O⁻)."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Benedict Reducing-Sugar Test & Stereospecific Enzyme Reduction (LDH)",
           "items": [
             {
-              "label": "NADH-dependent reduction",
-              "text": "Hydride-equivalent transfer"
+              "label": "Benedict Test for Reducing Sugars",
+              "outcome": "Blue Cu²⁺ → Brick-Red Cu₂O(s) Precipitate",
+              "text": "Any sugar with a free hemiacetal (glucose, fructose via enediol, maltose, lactose) opens to an aldehyde and tests positive; sucrose tests negative!"
             },
             {
-              "label": "Enzyme selectivity",
-              "text": "Can control stereochemistry"
+              "label": "Lactate Dehydrogenase (LDH)",
+              "outcome": "Pyruvate + NADH + H⁺ → Pure L-(S)-Lactate",
+              "text": "Unlike achiral NaBH₄ (which gives racemic (±)-lactate), chiral NADH inside LDH delivers hydride exclusively to one face of pyruvate!"
+            },
+            {
+              "label": "Isotope Labeling with NaBD₄",
+              "outcome": "R₂C=O + NaBD₄, then H₂O → R₂CD(OH)",
+              "text": "Proves the mechanism: nucleophilic deuteride attacks C=O carbon first, while solvent protonates oxygen second."
             }
           ]
         }
