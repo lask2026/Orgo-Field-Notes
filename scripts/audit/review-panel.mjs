@@ -22,13 +22,14 @@ export function validateConfig(c){
   for(const [k,lo,hi] of [['contextTokens',4096,1000000],['maxOutputTokens',256,32768],['timeoutSeconds',1,3600]])if(!Number.isInteger(c[k])||c[k]<lo||c[k]>hi)throw Error('Invalid '+k);
   if(c.maxOutputTokens>=c.contextTokens)throw Error('Output must be smaller than context budget');
   const ids=new Set();for(const r of c.reviewers){
-    strictKeys(r,['id','provider','model','endpoint','apiKeyEnv'],'reviewer');
+    strictKeys(r,['id','provider','model','endpoint','apiKeyEnv','think'],'reviewer');
     if(!safeId.test(r.id)||ids.has(r.id))throw Error('Reviewer IDs must be unique safe names');ids.add(r.id);
     if(!['ollama','gemini'].includes(r.provider)||typeof r.model!=='string'||!r.model||r.model.length>150||!/^[\w.:-]+$/.test(r.model)||r.model.includes('CHOOSE'))throw Error('Choose an explicit valid model for '+r.id);
     if(r.provider==='ollama'){
       const u=new URL(r.endpoint||'http://127.0.0.1:11434');if(u.protocol!=='http:'||!['127.0.0.1','localhost','[::1]'].includes(u.hostname)||u.username||u.password||u.search||u.hash||u.pathname!=='/')throw Error('Ollama endpoint must be loopback HTTP origin');
       if(r.apiKeyEnv)throw Error('Ollama does not use an API key here');
-    }else if(r.endpoint||!/^[A-Z][A-Z0-9_]{1,80}$/.test(r.apiKeyEnv||''))throw Error('Gemini uses the fixed Google endpoint and a named environment variable');
+      if(r.think!==undefined&&typeof r.think!=='boolean')throw Error('Ollama think must be boolean when specified');
+    }else if(r.think!==undefined||r.endpoint||!/^[A-Z][A-Z0-9_]{1,80}$/.test(r.apiKeyEnv||''))throw Error('Gemini uses the fixed Google endpoint and a named environment variable; think is Ollama-only');
   }
   if(c.challengeReviewer&&!ids.has(c.challengeReviewer))throw Error('challengeReviewer must name a configured reviewer');
   if(c.referenceFile!==undefined&&typeof c.referenceFile!=='string')throw Error('Invalid referenceFile');return c;
@@ -70,15 +71,31 @@ export function requestSpec(r,config,prompt,env=process.env){
     const key=env[r.apiKeyEnv];if(!key)throw Error('Missing environment variable '+r.apiKeyEnv+'; never put a key in JSON or chat');
     return {url:`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(r.model)}:generateContent`,headers:{'Content-Type':'application/json','x-goog-api-key':key},body:{systemInstruction:{parts:[{text:panelSystem}]},contents:[{role:'user',parts:[{text:prompt}]}],generationConfig:{temperature:0,maxOutputTokens:config.maxOutputTokens,responseMimeType:'application/json',responseJsonSchema:reviewSchema}}};
   }
-  return {url:new URL(r.endpoint||'http://127.0.0.1:11434').origin+'/api/chat',headers:{'Content-Type':'application/json'},body:{model:r.model,messages:[{role:'system',content:panelSystem},{role:'user',content:prompt}],stream:false,format:reviewSchema,options:{temperature:0,num_ctx:config.contextTokens,num_predict:config.maxOutputTokens}}};
+  // Streaming supplies headers immediately instead of hitting fetch's default
+  // five-minute headers timeout during a slow local generation.
+  return {url:new URL(r.endpoint||'http://127.0.0.1:11434').origin+'/api/chat',headers:{'Content-Type':'application/json'},body:{model:r.model,messages:[{role:'system',content:panelSystem},{role:'user',content:prompt}],stream:true,...(r.think!==undefined?{think:r.think}:{}),format:reviewSchema,options:{temperature:0,num_ctx:config.contextTokens,num_predict:config.maxOutputTokens}}};
+}
+export function decodeProviderBody(provider,text){
+  try{return JSON.parse(text);}catch{}
+  if(provider!=='ollama')throw Error('Provider returned malformed JSON');
+  let frames;try{frames=text.split(/\r?\n/).filter(x=>x.trim()).map(x=>JSON.parse(x));}catch{throw Error('Provider returned malformed streaming JSON');}
+  if(!frames.length||frames.some(x=>!x||typeof x!=='object'||Array.isArray(x)||x.error))throw Error('Ollama stream failed');
+  if(frames.slice(0,-1).some(x=>x.done===true))throw Error('Ollama stream contains data after completion');
+  const last=frames.at(-1);
+  return {...last,message:{role:'assistant',content:frames.map(x=>x.message?.content||'').join(''),thinking:frames.map(x=>x.message?.thinking||'').join('')},streamFrames:frames};
 }
 export async function invokeReviewer(r,config,prompt,{fetchImpl=fetch,env=process.env}={}){
   const spec=requestSpec(r,config,prompt,env);
   let response;try{response=await fetchImpl(spec.url,{method:'POST',headers:spec.headers,body:JSON.stringify(spec.body),redirect:'error',signal:AbortSignal.timeout(config.timeoutSeconds*1000)});}catch{throw Error(`Transport/timeout failure for ${r.id}; no automatic retry`);}
   // Do not log provider error bodies: these may echo supplied credentials or data.
   if(!response.ok)throw Error(`Provider HTTP ${response.status} for ${r.id}; no automatic retry`);
-  const text=await response.text();if(text.length>8000000)throw Error('Provider response exceeds 8MB retention limit');
-  try{return JSON.parse(text);}catch{throw Error('Provider returned malformed JSON');}
+  let text='';const decoder=new TextDecoder();let size=0;
+  try{
+    if(response.body?.[Symbol.asyncIterator]){
+      for await(const chunk of response.body){size+=chunk.byteLength;if(size>8000000)throw Error('Provider response exceeds 8MB retention limit');text+=decoder.decode(chunk,{stream:true});}text+=decoder.decode();
+    }else{text=await response.text();if(Buffer.byteLength(text)>8000000)throw Error('Provider response exceeds 8MB retention limit');}
+  }catch(error){const failure=Error(error.message==='Provider response exceeds 8MB retention limit'?error.message:`Response stream/timeout failure for ${r.id}; no automatic retry`);if(r.provider==='ollama')failure.partialResponseText=text;throw failure;}
+  return decodeProviderBody(r.provider,text);
 }
 export function summarizeChapter(ch,cases,records,reviewers,references){
   const main=records.filter(r=>r.phase!=='challenge'),lookup=new Map(main.map(r=>[r.reviewer+':'+r.caseId,r])),queue=[];
@@ -133,7 +150,7 @@ export async function runPanel(args,{fetchImpl=fetch,env=process.env,projectRoot
       else try{
         requests++;const raw=await invokeReviewer(r,config,prompt,{fetchImpl,env});rec.rawResponse=raw;Object.assign(rec,checkModelResponse(r.provider,raw,c));rec.reportedModelVersion=raw.modelVersion||raw.model;rec.usage=raw.usageMetadata||{inputTokens:raw.prompt_eval_count,outputTokens:raw.eval_count};
         if(c.kind==='blind'&&rec.executionStatus==='completed')rec.keyComparisons=compareBlindAnswers(rec.review,ch.exercises.find(e=>e.id===c.payload.id));
-      }catch(e){rec.executionStatus='error';rec.error=e.message;stopped=true;}
+      }catch(e){rec.executionStatus='error';rec.error=e.message;if(typeof e.partialResponseText==='string')rec.partialResponseText=e.partialResponseText;stopped=true;}
       rec.finished=new Date().toISOString();if(fs.existsSync(file)){const previous=fs.readFileSync(file);writeJSON(file+'.history-'+hash(previous).slice(0,16)+'.json',JSON.parse(previous));}writeJSON(file,rec);records.push(rec);if(phase!=='challenge')ledger.set(ch.id+':'+r.id+':'+c.id,rec);console.log(`${r.id} ${phase} ${c.id}: ${rec.executionStatus}`);return rec;
     };
     // All reviewers independently solve blind cases before any keyed content is sent.

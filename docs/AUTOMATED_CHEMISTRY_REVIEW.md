@@ -43,6 +43,15 @@ To cover all chapters with one stable run identity, use `-Chapter all` consisten
 
 `-Phase blind`, `-Phase audit`, and `-Phase challenge` restrict **new** requests. With `-Resume`, matching completed records from earlier phases are loaded for context/coverage without requesting those phases again. Audit without an earlier successful blind attempt records `hasIndependentAttempt: false`. Each call uses an isolated conversation; all blind cases precede keyed requests for a chapter.
 
+For a matched Qwen/Llama local pilot, use `review-config/panel.qwen-llama.example.json` (Qwen3.5:9b and Llama3.1:8b, 16K context, 2K output budget, Qwen `think: false`). Four requests in blind phase select the first two exercises for both models. Both models must already be installed. Qwen's optional extended-thinking channel is disabled for this bounded pilot; answer explanations are still requested. This setting is not a benchmark of Qwen with extended reasoning enabled.
+
+```powershell
+Copy-Item .\review-config\panel.qwen-llama.example.json .\review-config\chapter01-qwen-llama-pilot.local.json
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run-chemistry-review.ps1 -Config review-config/chapter01-qwen-llama-pilot.local.json -Chapter 1 -Phase blind -Execute -MaxRequests 4
+```
+
+Ollama responses now stream to avoid the HTTP client's five-minute wait for non-streaming response headers. The runner retains the parsed stream frames and final aggregate, applies the same completion/schema checks, and saves received partial text if a response stream breaks. An explicit reviewer `think` boolean is Ollama-only; omit it for models without a thinking capability. The configured overall timeout still applies. Streaming and thinking settings are recorded through the runner/config signatures; older results remain in their own run directories.
+
 Exit codes: 0 means the selected primary coverage is complete with no requested challenge pass left partial; 2 means partial work, including bounded runs; 1 means a configuration/preflight/execution exception. Transport/provider failures are saved as partial results and stop further inference in that invocation. There are no automatic retries. A resume explicitly retries failed or invalid work. Exit 0 never means scientific approval.
 
 ## Optional Gemini API panel

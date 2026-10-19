@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "contextTokens": 16384,
+  "maxOutputTokens": 2048,
+  "timeoutSeconds": 900,
+  "reviewers": [
+    {
+      "id": "qwen9b",
+      "provider": "ollama",
+      "model": "qwen3.5:9b",
+      "endpoint": "http://127.0.0.1:11434",
+      "think": false
+    },
+    {
+      "id": "llama8b",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "endpoint": "http://127.0.0.1:11434"
+    }
+  ]
+}

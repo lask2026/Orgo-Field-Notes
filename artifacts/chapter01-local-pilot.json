@@ -1,0 +1,438 @@
+{
+  "date": "2026-10-19",
+  "pilotStatus": "four-request-sample-completed",
+  "chapterReviewStatus": "partial",
+  "scientificVerification": false,
+  "humanExpertSignoff": "pending",
+  "ollamaVersion": "0.40.6",
+  "runHash": "0357a25d656ce7fffc1dc1bae57738551f91ef5e8c89abd60a4fe73cb68e12df",
+  "identities": {
+    "qwen9b": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+    "llama8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e"
+  },
+  "settings": [
+    {
+      "id": "qwen9b",
+      "provider": "ollama",
+      "model": "qwen3.5:9b",
+      "endpoint": "http://127.0.0.1:11434",
+      "think": false
+    },
+    {
+      "id": "llama8b",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "endpoint": "http://127.0.0.1:11434"
+    }
+  ],
+  "contextTokens": 16384,
+  "maxOutputTokens": 2048,
+  "temperature": 0,
+  "timeoutSeconds": 900,
+  "sourceHashes": [
+    {
+      "chapter": 1,
+      "sha256": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737"
+    }
+  ],
+  "failedInitialAttempt": "review-results/panel/5e353b977d5b53d32bcb",
+  "totals": [
+    {
+      "reviewer": "qwen9b",
+      "model": "qwen3.5:9b",
+      "completedResponses": 2,
+      "stages": 6,
+      "matchesEncodedKey": 6,
+      "totalSeconds": 304.2518626,
+      "outputTokens": 2500
+    },
+    {
+      "reviewer": "llama8b",
+      "model": "llama3.1:8b",
+      "completedResponses": 2,
+      "stages": 6,
+      "matchesEncodedKey": 4,
+      "totalSeconds": 104.74726249999999,
+      "outputTokens": 621
+    }
+  ],
+  "records": [
+    {
+      "reviewer": "qwen9b",
+      "model": "qwen3.5:9b",
+      "caseId": "ch01:blind:gp1a",
+      "status": "completed",
+      "recordFile": "review-results/panel/0357a25d656ce7fffc1d/chapter-01/qwen9b/blind/ch01_blind_gp1a.json",
+      "recordSha256": "44e4593de35fe965857be2e0d37e7fc333836b25683b354c845faa01d72e6973",
+      "sourceSha": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737",
+      "signature": "786185ed7a31be4e0f4cee2af261bac5d26a41b6bc3fc4ebc8f84adf2490965e",
+      "started": "2026-10-19T13:22:18.560Z",
+      "finished": "2026-10-19T13:24:40.698Z",
+      "totalSeconds": 142.1309341,
+      "loadSeconds": 0.0070603,
+      "promptSeconds": 0.357267,
+      "outputTokens": 1246,
+      "generationTokensPerSecond": 8.791850194775467,
+      "keyComparisons": [
+        {
+          "itemId": "gp1a:stage-1",
+          "candidateAnswer": "[0,1,2,3,4,5]",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1a:stage-2",
+          "candidateAnswer": "Left-to-right (methyl at C3)",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1a:stage-3",
+          "candidateAnswer": "3-methylhexane",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        }
+      ],
+      "submittedReview": {
+        "caseId": "ch01:blind:gp1a",
+        "summary": "Analysis of a provided molecular graph representing a heptane derivative. The graph defines 7 carbon atoms and 6 bonds. Connectivity analysis reveals a main chain of 6 carbons with one methyl substituent. IUPAC nomenclature rules are applied to determine the correct numbering direction based on lowest locant rules.",
+        "coverage": [
+          {
+            "itemId": "gp1a:stage-1",
+            "status": "reviewed",
+            "note": "Identified the longest continuous carbon chain within the provided graph topology."
+          },
+          {
+            "itemId": "gp1a:stage-2",
+            "status": "reviewed",
+            "note": "Evaluated numbering directions based on substituent locants derived from the graph connectivity."
+          },
+          {
+            "itemId": "gp1a:stage-3",
+            "status": "reviewed",
+            "note": "Constructed the IUPAC name based on the determined parent chain and substituent position."
+          }
+        ],
+        "findings": [
+          {
+            "itemId": "gp1a:stage-1",
+            "severity": "minor",
+            "claim": "The prompt asks to click all 6 carbon atoms in the longest continuous parent chain.",
+            "reasoning": "The graph contains 7 atoms (indices 0-6). Bonds connect [0-1], [1-2], [2-3], [3-4], [4-5] forming a linear segment of 6 atoms (0 to 5). Atom 6 connects only to atom 2. The longest path is 0-1-2-3-4-5 (length 6). Atom 6 is a substituent on atom 2. Therefore, the 'longest continuous parent chain' consists of exactly 6 atoms.",
+            "evidenceKind": "derivation",
+            "evidence": "Graph connectivity: Path 0-1-2-3-4-5 has length 6. Path including atom 6 (e.g., 5-4-3-2-6) has length 5. Max path length is 6.",
+            "correction": "None",
+            "confidence": "high"
+          },
+          {
+            "itemId": "gp1a:stage-2",
+            "severity": "minor",
+            "claim": "The prompt asks which numbering direction gives the methyl branch its lowest locant.",
+            "reasoning": "Numbering Left-to-Right (0->5) places the substituent at atom 2 (locant 3 in IUPAC counting starting from one end? No, let's re-evaluate indices vs locants). If chain is 0-1-2-3-4-5. Substituent is at index 6 connected to index 2. If we number the chain 0->5 as C1->C6, substituent is on C3 (index 2). If we number 5->0 as C1->C6, substituent is on C5 (index 4). Locant 3 < Locant 4. Thus Left-to-Right gives the lower locant.",
+            "evidenceKind": "derivation",
+            "evidence": "Chain indices: 0,1,2,3,4,5. Substituent at index 6 connects to index 2. Numbering from 0 makes index 2 position 3. Numbering from 5 makes index 2 position 5. 3 < 5.",
+            "correction": "None",
+            "confidence": "high"
+          },
+          {
+            "itemId": "gp1a:stage-3",
+            "severity": "minor",
+            "claim": "The prompt asks for the complete IUPAC name.",
+            "reasoning": "Parent chain: Hexane (6 carbons). Substituent: Methyl. Position: Carbon 3. Name: 3-methylhexane.",
+            "evidenceKind": "derivation",
+            "evidence": "IUPAC rules: Longest chain hexane, substituent methyl at C3.",
+            "correction": "None",
+            "confidence": "high"
+          }
+        ],
+        "answers": [
+          {
+            "itemId": "gp1a:stage-1",
+            "answer": "[0,1,2,3,4,5]",
+            "reasoning": "The longest continuous chain comprises atoms with indices 0 through 5. Atom 6 is a branch attached to atom 2."
+          },
+          {
+            "itemId": "gp1a:stage-2",
+            "answer": "Left-to-right (methyl at C3)",
+            "reasoning": "Numbering from the left (atom 0) places the methyl group on carbon 3. Numbering from the right (atom 5) places it on carbon 5. The lowest locant rule favors the left-to-right direction."
+          },
+          {
+            "itemId": "gp1a:stage-3",
+            "answer": "3-methylhexane",
+            "reasoning": "The molecule is a six-carbon chain (hexane) with a methyl group at position 3."
+          }
+        ],
+        "limitations": [
+          "Cannot verify visual rendering of the diagram or exact pixel coordinates for 'click' actions beyond logical derivation.",
+          "Stereochemistry is unspecified in the graph data; assumed achiral for naming purposes unless spatial data provided."
+        ]
+      }
+    },
+    {
+      "reviewer": "qwen9b",
+      "model": "qwen3.5:9b",
+      "caseId": "ch01:blind:gp1b",
+      "status": "completed",
+      "recordFile": "review-results/panel/0357a25d656ce7fffc1d/chapter-01/qwen9b/blind/ch01_blind_gp1b.json",
+      "recordSha256": "a2894e37858b62fbebf41c11048fbf75fe2de8de8d33774f8ed81a87c9b9d4ce",
+      "sourceSha": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737",
+      "signature": "bdcd8f4ded74e1339c1777bc172e214e69ae1ea597aa40b562b0b36f01ac92b5",
+      "started": "2026-10-19T13:25:44.879Z",
+      "finished": "2026-10-19T13:28:27.005Z",
+      "totalSeconds": 162.1209285,
+      "loadSeconds": 0.019093,
+      "promptSeconds": 16.587956999,
+      "outputTokens": 1254,
+      "generationTokensPerSecond": 8.623477180061622,
+      "keyComparisons": [
+        {
+          "itemId": "gp1b:stage-1",
+          "candidateAnswer": "0",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1b:stage-2",
+          "candidateAnswer": "0",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1b:stage-3",
+          "candidateAnswer": "2,4-dimethylhexane",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        }
+      ],
+      "submittedReview": {
+        "caseId": "ch01:blind:gp1b",
+        "summary": "The input data describes a molecule with 8 carbon atoms arranged in a specific connectivity. The provided JSON defines the atom coordinates and bond connections. I have derived the molecular structure from the graph, determined the correct IUPAC name, and evaluated the validity of the distractors provided in the stages.",
+        "coverage": [
+          {
+            "itemId": "gp1b:stage-1",
+            "status": "reviewed",
+            "note": "Evaluated the validity of the name '2-ethyl-4-methylpentane' based on IUPAC longest chain rules."
+          },
+          {
+            "itemId": "gp1b:stage-2",
+            "status": "reviewed",
+            "note": "Compared locant sets for methyl substituents to determine the lower set according to IUPAC rules."
+          },
+          {
+            "itemId": "gp1b:stage-3",
+            "status": "reviewed",
+            "note": "Derived the correct IUPAC name based on the derived structure."
+          }
+        ],
+        "findings": [
+          {
+            "itemId": "gp1b:stage-1",
+            "severity": "minor",
+            "claim": "The prompt asks why '2-ethyl-4-methylpentane' is invalid.",
+            "reasoning": "Analysis of the provided graph: Atoms 0,1,2,3,4,5 form a chain. Atom 6 connects to atom 1. Atom 7 connects to atom 3. This creates a longest chain of 6 carbons (e.g., 6-1-2-3-4-5). The name 'pentane' implies a 5-carbon main chain, which is incorrect because a 6-carbon chain exists. Therefore, the parent is hexane. The option stating 'The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)' correctly identifies this error.",
+            "evidenceKind": "derivation",
+            "evidence": "Graph connectivity: 0-1-2-3-4-5 is a path of length 5 (6 atoms). Node 6 connects to 1. Path 6-1-2-3-4-5 has 6 carbons.",
+            "correction": "None",
+            "confidence": "high"
+          },
+          {
+            "itemId": "gp1b:stage-2",
+            "severity": "minor",
+            "claim": "The prompt asks which locant set is lower for the two methyl substituents.",
+            "reasoning": "Based on the derived structure (2,4-dimethylhexane), the methyl groups are attached to carbons 2 and 4 of the hexane chain. Numbering from left-to-right (atom 0 as C1) gives locants 2 and 4. Numbering from right-to-left (atom 5 as C1) would give locants 3 and 5. Comparing the sets term by term: 2 < 3, so (2,4) is lower than (3,5).",
+            "evidenceKind": "derivation",
+            "evidence": "Derived structure has methyls at positions corresponding to indices that yield locants 2 and 4 when numbered from the end closer to a substituent.",
+            "correction": "None",
+            "confidence": "high"
+          },
+          {
+            "itemId": "gp1b:stage-3",
+            "severity": "minor",
+            "claim": "The prompt asks for the true IUPAC name.",
+            "reasoning": "Structure derivation: Longest chain is 6 carbons (hexane). Substituents are methyl groups. Numbering from the end giving lower locants yields methyls at C2 and C4. Name: 2,4-dimethylhexane.",
+            "evidenceKind": "derivation",
+            "evidence": "Connectivity graph analysis confirms a hexane backbone with two methyl branches.",
+            "correction": "None",
+            "confidence": "high"
+          }
+        ],
+        "answers": [
+          {
+            "itemId": "gp1b:stage-1",
+            "answer": "0",
+            "reasoning": "Option 0 states 'The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)'. This is the correct chemical explanation for why 'pentane' is an invalid parent name. Option 1 claims 8 carbons in a straight chain, which is false as the graph shows branching."
+          },
+          {
+            "itemId": "gp1b:stage-2",
+            "answer": "0",
+            "reasoning": "Option 0 corresponds to 'Left-to-right: (2,4)'. As derived in stage 2 reasoning, the set (2,4) is lower than (3,5)."
+          },
+          {
+            "itemId": "gp1b:stage-3",
+            "answer": "2,4-dimethylhexane",
+            "reasoning": "The derived IUPAC name for the structure defined by the atom/bond list is 2,4-dimethylhexane."
+          }
+        ],
+        "limitations": [
+          "Stereochemistry cannot be determined from the flat graph provided; if chiral centers exist (C2 and C4 are chiral), their configuration (R/S) is unspecified.",
+          "No visual rendering check performed; coordinates are used for connectivity only."
+        ]
+      }
+    },
+    {
+      "reviewer": "llama8b",
+      "model": "llama3.1:8b",
+      "caseId": "ch01:blind:gp1a",
+      "status": "completed",
+      "recordFile": "review-results/panel/0357a25d656ce7fffc1d/chapter-01/llama8b/blind/ch01_blind_gp1a.json",
+      "recordSha256": "d194e5dd979fa076ba25b2f0e44c13a55c69f4ad6083df92368e924d5a541f98",
+      "sourceSha": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737",
+      "signature": "be177045d29a6d0693e96d75f214968381f2a6daf7559ee4bddcf2390caf89f1",
+      "started": "2026-10-19T13:24:40.701Z",
+      "finished": "2026-10-19T13:25:44.876Z",
+      "totalSeconds": 64.1703848,
+      "loadSeconds": 13.6686967,
+      "promptSeconds": 15.125731,
+      "outputTokens": 346,
+      "generationTokensPerSecond": 9.788648647348797,
+      "keyComparisons": [
+        {
+          "itemId": "gp1a:stage-1",
+          "candidateAnswer": "[0, 1, 2, 3, 4, 5]",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1a:stage-2",
+          "candidateAnswer": "Left-to-right (methyl at C3)",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1a:stage-3",
+          "candidateAnswer": "2-methylheptane",
+          "encodedKeyComparison": "differs-from-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        }
+      ],
+      "submittedReview": {
+        "caseId": "ch01:blind:gp1a",
+        "summary": "Review of GP1A",
+        "coverage": [
+          {
+            "itemId": "gp1a:stage-1",
+            "status": "reviewed",
+            "note": "6 carbon atoms selected"
+          },
+          {
+            "itemId": "gp1a:stage-2",
+            "status": "reviewed",
+            "note": "Correct numbering direction selected"
+          },
+          {
+            "itemId": "gp1a:stage-3",
+            "status": "reviewed",
+            "note": "Correct IUPAC name provided"
+          }
+        ],
+        "findings": [],
+        "answers": [
+          {
+            "itemId": "gp1a:stage-1",
+            "answer": "[0, 1, 2, 3, 4, 5]",
+            "reasoning": "The longest continuous parent chain consists of 6 carbon atoms, which are selected as follows: C0, C1, C2, C3, C4, and C5."
+          },
+          {
+            "itemId": "gp1a:stage-2",
+            "answer": "Left-to-right (methyl at C3)",
+            "reasoning": "To give the methyl branch its lowest locant, the numbering direction should be from left to right, which places the methyl group at C3."
+          },
+          {
+            "itemId": "gp1a:stage-3",
+            "answer": "2-methylheptane",
+            "reasoning": "The IUPAC name is derived from the longest continuous parent chain (heptane) with a methyl branch at C3, resulting in 2-methylheptane."
+          }
+        ],
+        "limitations": []
+      }
+    },
+    {
+      "reviewer": "llama8b",
+      "model": "llama3.1:8b",
+      "caseId": "ch01:blind:gp1b",
+      "status": "completed",
+      "recordFile": "review-results/panel/0357a25d656ce7fffc1d/chapter-01/llama8b/blind/ch01_blind_gp1b.json",
+      "recordSha256": "364fb21ecf0b24c19b71d10f218dfe177ac479dd6c006ee64b680b31e0b1bd0d",
+      "sourceSha": "3975c8fc34df286be321cf9b25972ab01e475b3ec54eedcafd319b62f5734737",
+      "signature": "89b3884e92b0c2b23a1d290bc9ccdb761b177380373b5f5167e592a992a85792",
+      "started": "2026-10-19T13:28:27.008Z",
+      "finished": "2026-10-19T13:29:07.589Z",
+      "totalSeconds": 40.5768777,
+      "loadSeconds": 0.0157782,
+      "promptSeconds": 9.683916,
+      "outputTokens": 275,
+      "generationTokensPerSecond": 8.921787394130828,
+      "keyComparisons": [
+        {
+          "itemId": "gp1b:stage-1",
+          "candidateAnswer": "0",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1b:stage-2",
+          "candidateAnswer": "0",
+          "encodedKeyComparison": "matches-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        },
+        {
+          "itemId": "gp1b:stage-3",
+          "candidateAnswer": "2-methyl-4-ethylpentane",
+          "encodedKeyComparison": "differs-from-encoded-key",
+          "note": "Comparison is against the app key, not independently verified chemistry. Disagreements require adjudication."
+        }
+      ],
+      "submittedReview": {
+        "caseId": "ch01:blind:gp1b",
+        "summary": "Review of MCAT organic chemistry question",
+        "coverage": [
+          {
+            "itemId": "gp1b:stage-1",
+            "status": "reviewed",
+            "note": ""
+          },
+          {
+            "itemId": "gp1b:stage-2",
+            "status": "reviewed",
+            "note": ""
+          },
+          {
+            "itemId": "gp1b:stage-3",
+            "status": "reviewed",
+            "note": ""
+          }
+        ],
+        "findings": [],
+        "answers": [
+          {
+            "itemId": "gp1b:stage-1",
+            "answer": "0",
+            "reasoning": "The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)"
+          },
+          {
+            "itemId": "gp1b:stage-2",
+            "answer": "0",
+            "reasoning": "Left-to-right: (2,4)"
+          },
+          {
+            "itemId": "gp1b:stage-3",
+            "answer": "2-methyl-4-ethylpentane",
+            "reasoning": "The longest continuous chain has 5 carbons, and the 2-carbon branch is at position 2, and the 1-carbon branch is at position 4"
+          }
+        ],
+        "limitations": []
+      }
+    }
+  ],
+  "note": "Key alignment is not chemistry verification. Qualitative author adjudication and limitations are in docs/CHAPTER_01_LOCAL_MODEL_PILOT.md."
+}

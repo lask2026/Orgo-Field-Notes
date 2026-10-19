@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import {readJSON,root,buildCases,sourceSnapshot} from '../scripts/audit/cases.mjs';
-import {parsePanelArgs,validateConfig,makePrompt,requestSpec,checkModelResponse,invokeReviewer,summarizeChapter,runPanel} from '../scripts/audit/review-panel.mjs';
+import {parsePanelArgs,validateConfig,makePrompt,requestSpec,checkModelResponse,invokeReviewer,decodeProviderBody,summarizeChapter,runPanel} from '../scripts/audit/review-panel.mjs';
 
 const config={version:1,contextTokens:32768,maxOutputTokens:4096,timeoutSeconds:2,reviewers:[{id:'local',provider:'ollama',model:'test:8b'}],challengeReviewer:'local'};
 const ch=readJSON(path.join(root,'chapters/chapter-01.json')),molecules=readJSON(path.join(root,'chapters/molecules.json')),cases=buildCases(ch,molecules).cases;
@@ -70,4 +70,16 @@ test('request budget cannot mark an unfinished challenge pass complete',async t=
 });
 test('context rejection makes no inference request and never truncates a case',async t=>{
  const dir=fixture(t);fs.writeFileSync(path.join(dir,'panel.json'),JSON.stringify({...config,contextTokens:4096,maxOutputTokens:4000}));const calls=[],r=await runPanel(['--config','panel.json','--execute'],{projectRoot:dir,fetchImpl:provider(calls)});assert.equal(calls.length,0);assert.equal(r.summary.status,'partial');assert.ok(r.summary.chapters[0].entries.every(e=>e.reviewers[0].status==='context-rejected'));
+});
+test('Ollama streaming retains fragments, terminal metadata and explicit thinking setting',async()=>{
+ const c=cases.find(c=>c.kind==='blind'),text=JSON.stringify({...response(c),summary:'Chemical glyphs: α, β, −, Δ'}),frames=[{model:'test:8b',done:false,message:{content:text.slice(0,20)}},{model:'test:8b',done:false,message:{content:text.slice(20)}},{model:'test:8b',done:true,done_reason:'stop',eval_count:123,message:{content:''}}],wire=frames.map(x=>JSON.stringify(x)).join('\n')+'\n';
+ const spec=requestSpec({...config.reviewers[0],think:false},config,'blind prompt');assert.equal(spec.body.stream,true);assert.equal(spec.body.think,false);
+ const decoded=decodeProviderBody('ollama',wire);assert.equal(decoded.message.content,text);assert.equal(decoded.eval_count,123);assert.equal(decoded.streamFrames.length,3);assert.equal(checkModelResponse('ollama',decoded,c).executionStatus,'completed');
+ assert.equal(checkModelResponse('ollama',decodeProviderBody('ollama',frames.slice(0,2).map(x=>JSON.stringify(x)).join('\n')),c).executionStatus,'incomplete');
+ assert.throws(()=>decodeProviderBody('ollama',wire+'{broken'),/malformed/);assert.throws(()=>decodeProviderBody('ollama',wire+JSON.stringify(frames[0])),/after completion/);
+ const data=new TextEncoder().encode(wire),split=Buffer.from(data).indexOf(Buffer.from('α'))+1;const result=await invokeReviewer(config.reviewers[0],config,'x',{fetchImpl:async()=>({ok:true,body:(async function*(){yield data.slice(0,split);yield data.slice(split);})()})});assert.equal(result.message.content,text);
+ assert.throws(()=>validateConfig({...config,reviewers:[{...config.reviewers[0],think:'false'}]}));
+});
+test('interrupted Ollama stream preserves partial text without certifying it',async()=>{
+ try{await invokeReviewer(config.reviewers[0],config,'x',{fetchImpl:async()=>({ok:true,body:(async function*(){yield new TextEncoder().encode('{"done":false}\n');throw Error('socket closed');})()})});assert.fail('must reject incomplete transport');}catch(error){assert.match(error.message,/stream\/timeout/);assert.equal(error.partialResponseText,'{"done":false}\n');}
 });
