@@ -1,7 +1,7 @@
 {
   "chapter": 7,
   "sourceSnapshot": {
-    "sha256": "a8926b6fa896c83345faf08377a82d042530aa0b5c1d09f325986109be4b3226",
+    "sha256": "4efc21bcbc1864e8b729934103e0994ba009cad125c84ef08d93e5d38f78390a",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -39,6 +39,14 @@
       "height": 359
     },
     {
+      "id": "alpha-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/alpha-visuals.png",
+      "sha256": "7fe6dce0ce59ef12b9a602cc20946f855ea41b7ce58155827bf15d6c9e37b72b",
+      "width": 607,
+      "height": 1772
+    },
+    {
       "id": "tautomers-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/tautomers-step-1.png",
@@ -61,6 +69,14 @@
       "sha256": "32954ca411797932b97b8772dd0c83c87aad666f57cf4227850e7efe50af9ceb",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "tautomers-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/tautomers-visuals.png",
+      "sha256": "a0ab07e65d5e5a669600498f2aa06ec11dda48a337bf5bde077a05053082f403",
+      "width": 607,
+      "height": 1738
     },
     {
       "id": "aldol-step-1",
@@ -87,6 +103,14 @@
       "height": 359
     },
     {
+      "id": "aldol-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/aldol-visuals.png",
+      "sha256": "bdc62c33040c579625b4d58802ca4f64e3cdb5909ef777f75b9f4a652aaea83f",
+      "width": 607,
+      "height": 1772
+    },
+    {
       "id": "conjugate-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/conjugate-step-1.png",
@@ -109,6 +133,14 @@
       "sha256": "cf8cd587bc605af8c1036ae079377866d97ff47251ad4e424f69494dec79d15d",
       "width": 699,
       "height": 647
+    },
+    {
+      "id": "conjugate-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/conjugate-visuals.png",
+      "sha256": "bfad94fa4074fdf2a0e5dbdadc79135ceccb1306d4ce1a6a6a0e0f6340469d41",
+      "width": 607,
+      "height": 1689
     },
     {
       "id": "alpha-map-stage-1-molecule",
@@ -434,23 +466,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "64109d5aa5971185c0eaf07fe8575748ec6f5e117ae53d26149490ccc6780d61",
+      "sha256": "5c3fc327c2f930476f90f9d4d575dbaa852bbfa821a70deff5ef7f0534b93e0b",
       "width": 1360,
-      "height": 1201
+      "height": 2156
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "03a5282a04a936574afc1c311147a61957bba5e181dcc0527fb39abc67189c84",
+      "sha256": "a06c31e8ae9a606c1dbee2feb1400415592c2e549a5e58a400bf40aab334a093",
       "width": 607,
-      "height": 1075
+      "height": 1107
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "53e44a3d50fba946152be07a95e019e8c6c28908ed74e35efb1c8ea8ee8730e6",
+      "sha256": "c236bf515ce91802592a0fded897e8e0a7b9caff0d6ebbb63a106463020a5fd1",
       "width": 1000,
       "height": 741
     },
@@ -458,17 +490,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "29575d496f6c3cb562756e416904aeec0c0397a17126574b92c455cbfe8ec336",
+      "sha256": "7648618ab4e3a0e7a75822778601fea9c1462af62bca83d037d3c9e6a3159359",
       "width": 375,
-      "height": 3540
+      "height": 3801
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "a0a806201dffb5bf63460d02018169b49e178143c696a93d60b19a6a57e58b06",
+      "sha256": "f1405f79675128e63a4cd7752dcdc692ae3aa075b84a5c6f3436dbd0536770b6",
       "width": 375,
-      "height": 2605
+      "height": 3801
     },
     {
       "id": "projection-mobile-dark",

@@ -106,7 +106,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "The conjugate base is resonance stabilized",
+          "items": [
+            {
+              "label": "Locate C=O",
+              "text": "Use carbonyl carbon as reference"
+            },
+            {
+              "label": "Adjacent carbon",
+              "text": "Alpha carbon"
+            },
+            {
+              "label": "Check for H",
+              "text": "Its loss can give an enolate"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "H on an alpha carbon",
+              "text": "Consider enolate stabilization"
+            },
+            {
+              "label": "Carbonyl carbon itself",
+              "text": "Not the alpha carbon"
+            },
+            {
+              "label": "No H at the site",
+              "text": "Cannot lose an H there"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Treating every C–H as equally acidic"
+            },
+            {
+              "label": "Check",
+              "text": "Position and conjugate-base stabilization"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Enolate-like intermediates",
+              "text": "Enable C–C bond changes"
+            },
+            {
+              "label": "Metabolism",
+              "text": "Track bonds next to carbonyls"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "tautomers",
@@ -167,7 +233,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Kinetic control vs. thermodynamic control",
+          "items": [
+            {
+              "label": "Keto/enol",
+              "text": "H and double-bond positions differ"
+            },
+            {
+              "label": "Enolate",
+              "text": "Deprotonated species, not a neutral tautomer"
+            },
+            {
+              "label": "Conditions",
+              "text": "Kinetic versus equilibrium outcome"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Only electrons move",
+              "text": "Resonance contributors"
+            },
+            {
+              "label": "H and pi-bond placement change",
+              "text": "Tautomerization"
+            },
+            {
+              "label": "A proton is removed",
+              "text": "Check the charged conjugate base"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "More substituted always wins"
+            },
+            {
+              "label": "Check",
+              "text": "Substrate, temperature, base and equilibration conditions"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Enolate selection",
+              "text": "Chooses the alpha reaction site"
+            },
+            {
+              "label": "Synthesis",
+              "text": "Controls where a new bond forms"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "aldol",
@@ -244,7 +376,73 @@
           },
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "New bond: donor alpha C to acceptor carbonyl C",
+          "items": [
+            {
+              "label": "New bond",
+              "text": "Donor alpha C to acceptor carbonyl C"
+            },
+            {
+              "label": "Addition",
+              "text": "Beta-hydroxy carbonyl"
+            },
+            {
+              "label": "Condensation",
+              "text": "Water loss gives an unsaturated carbonyl"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "OH retained",
+              "text": "Aldol addition"
+            },
+            {
+              "label": "Water eliminated",
+              "text": "Aldol condensation"
+            },
+            {
+              "label": "Alpha–beta bond cleaved",
+              "text": "Consider retro-aldol logic"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Every aldol product must be an aldehyde"
+            },
+            {
+              "label": "Check",
+              "text": "Ketone donors/acceptors are possible; mixed aldols need role control"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Aldolase",
+              "text": "Related carbon-skeleton logic"
+            },
+            {
+              "label": "Bond tracking",
+              "text": "Follow donor and acceptor atoms"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "conjugate",
@@ -301,7 +499,69 @@
             "explanation": "D is two carbon–carbon bonds from the carbonyl carbon B."
           }
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "An enone has more than one electrophilic site",
+          "items": [
+            {
+              "label": "Carbonyl carbon",
+              "text": "Possible direct 1,2-addition"
+            },
+            {
+              "label": "Beta carbon",
+              "text": "Possible conjugate 1,4-addition"
+            },
+            {
+              "label": "Reagent and conditions",
+              "text": "Control selectivity"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "New bond at carbonyl carbon",
+              "text": "Direct 1,2-addition"
+            },
+            {
+              "label": "New bond at beta carbon",
+              "text": "Conjugate 1,4-addition; follow protonation/tautomerization"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Every enone addition is Michael addition"
+            },
+            {
+              "label": "Check",
+              "text": "The atom attacked and complete pathway"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Biological nucleophiles",
+              "text": "Can react with conjugate acceptors"
+            },
+            {
+              "label": "Covalent inhibitors",
+              "text": "Reaction site matters"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
