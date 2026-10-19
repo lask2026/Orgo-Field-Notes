@@ -3,7 +3,7 @@
   "chapter": 11,
   "title": "Spectroscopy",
   "sourceSnapshot": {
-    "sha256": "ad94d1a9a7f2bf3fd0ca7e783ef2f68d0ca6f1bc8ff73c57c3bc7fb96e54b714",
+    "sha256": "e918feff760042998c11f30becdab9bc9cd32bf2a63a0c084db27b8874c0a241",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1144,7 +1144,14 @@
                   "label": "Corroborate",
                   "text": "IR seldom specifies complete connectivity"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0
+                ],
+                "caption": "Matched molecule and illustrative IR bands. Band shapes and heights are not experimental data."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1409,7 +1416,15 @@
                   "label": "Conjugation",
                   "text": "Comparable systems often shift to longer wavelength as conjugation extends"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Conjugated and isolated pi-system examples. No numerical wavelength or universal rate effect is inferred."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1717,7 +1732,14 @@
                   "label": "Splitting",
                   "text": "Coupling; n+1 only in simple first-order cases"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0
+                ],
+                "caption": "Matched molecule and illustrative NMR signals. Peak height is not integral; use the signal labels and complete pattern."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1735,7 +1757,14 @@
                   "label": "Neighbors",
                   "text": "Coupling pattern, with rule limitations"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  1
+                ],
+                "caption": "Illustrative integrated signal areas for the same graph; line height is not proton count."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -1922,7 +1951,15 @@
                   "label": "NMR",
                   "text": "Build a skeleton consistent with all clues"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  2
+                ],
+                "caption": "Same formula, different connectivity: compare the two carbonyl isomers."
+              }
             },
             "cue": {
               "layout": "decision",

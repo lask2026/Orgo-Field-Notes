@@ -167,7 +167,14 @@
               "label": "Corroborate",
               "text": "IR seldom specifies complete connectivity"
             }
-          ]
+          ],
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Matched molecule and illustrative IR bands. Band shapes and heights are not experimental data."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -274,7 +281,15 @@
               "label": "Conjugation",
               "text": "Comparable systems often shift to longer wavelength as conjugation extends"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Conjugated and isolated pi-system examples. No numerical wavelength or universal rate effect is inferred."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -490,7 +505,14 @@
               "label": "Splitting",
               "text": "Coupling; n+1 only in simple first-order cases"
             }
-          ]
+          ],
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Matched molecule and illustrative NMR signals. Peak height is not integral; use the signal labels and complete pattern."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -508,7 +530,14 @@
               "label": "Neighbors",
               "text": "Coupling pattern, with rule limitations"
             }
-          ]
+          ],
+          "figure": {
+            "type": "projection",
+            "steps": [
+              1
+            ],
+            "caption": "Illustrative integrated signal areas for the same graph; line height is not proton count."
+          }
         },
         "trap": {
           "layout": "contrast",
@@ -610,7 +639,15 @@
               "label": "NMR",
               "text": "Build a skeleton consistent with all clues"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              2
+            ],
+            "caption": "Same formula, different connectivity: compare the two carbonyl isomers."
+          }
         },
         "cue": {
           "layout": "decision",
