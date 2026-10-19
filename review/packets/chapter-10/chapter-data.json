@@ -91,21 +91,41 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Ionization depends on pH",
+          "title": "Amino Acid Zwitterions, Titration Curves & Isoelectric Point (pI) Formulas",
+          "formula": "Neutral R: pI = ½(pKa_COOH + pKa_NH3+)   |   Acidic (Asp/Glu): pI = ½(pKa_COOH + pKa_R)   |   Basic (Lys/Arg/His): pI = ½(pKa_R + pKa_NH3+)",
           "items": [
             {
-              "label": "Inventory",
-              "text": "Include all ionizable side-chain groups"
+              "label": "Why Never Average All 3 pKa Values!",
+              "text": "Always find the neutral Zwitterion species (net charge = 0) first, then average ONLY the two pKa steps that immediately create and destroy that 0-charge form!"
             },
             {
-              "label": "pH versus pKa",
-              "text": "Assign predominant group forms"
-            },
-            {
-              "label": "Sum",
-              "text": "Net zero does not mean no formal charges"
+              "label": "Key Side-Chain pKa Values to Memorize",
+              "text": "Asp (~3.7), Glu (~4.3), His (~6.0, near physiological pH!), Cys (~8.3), Tyr (~10.1), Lys (~10.5), Arg (~12.5)."
             }
           ],
+          "chips": [
+            "pKa(α-COOH) ~2.0 | pKa(α-NH₃⁺) ~9.5",
+            "Zwitterion at pH 7.4 (+1/−1 = 0 Net)",
+            "pI = Average of 2 Flanking pKas!"
+          ],
+          "comparison": [
+            [
+              "pH < 2 (Strong Acid)",
+              "Fully protonated (+1 or +2 if basic R)",
+              "+H₃N–CH(R)–COOH (moves to cathode −)"
+            ],
+            [
+              "pH = pI (Isoelectric Point)",
+              "Net charge = 0.0 (Zwitterion)",
+              "+H₃N–CH(R)–COO⁻ (minimum solubility; zero migration)"
+            ],
+            [
+              "pH > 10 (Strong Base)",
+              "Fully deprotonated (−1 or −2 if acidic R)",
+              "H₂N–CH(R)–COO⁻ (moves to anode +)"
+            ]
+          ],
+          "theme": "zwitterion-titration",
           "figure": {
             "type": "structures",
             "steps": [
@@ -117,47 +137,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Instant Amino Acid Charge & Isoelectric Point (pI) Calculator",
+          "prompt": "Which amino acid class are you calculating pI or charge for at pH 7.4?",
           "items": [
             {
-              "label": "No extra ionizable side chain",
-              "text": "Use the pKa pair bracketing the neutral species"
+              "label": "Nonpolar / Uncharged Polar (Gly, Ala, Val, Leu, Ile, Ser, Thr, Asn, Gln)",
+              "outcome": "pI ≈ ½(2.2 + 9.5) ≈ 5.8–6.0 | Net Charge at pH 7.4 = 0",
+              "text": "Only two ionizable groups exist: α-COO⁻ (−1) and α-NH₃⁺ (+1) cancel to zero net charge at pH 7.4."
             },
             {
-              "label": "Ionizable side chain",
-              "text": "Find the neutral species before choosing the pKa pair"
+              "label": "Acidic Side Chains: Aspartate (D) & Glutamate (E)",
+              "outcome": "pI = ½(pKa1_αCOOH + pKa2_R) ≈ 3.0 | Net Charge at pH 7.4 = −1",
+              "text": "Neutral zwitterion sits between the two acidic deprotonations (around pH 3); at pH 7.4 both carboxylates are −1 plus one +1 α-NH₃⁺ = −1 net."
+            },
+            {
+              "label": "Basic Side Chains: Lysine (K), Arginine (R) & Histidine (H)",
+              "outcome": "pI = ½(pKa2_R + pKa3_αNH3+) ≈ 9.7–10.8 (His ≈ 7.6) | Charge at pH 7.4: Lys/Arg = +1, His ≈ 0",
+              "text": "Neutral zwitterion requires deprotonating α-COOH (−1) AND one of the two ammonium groups (+1); average the two higher pKa values!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Drawing Uncharged H₂N–CH(R)–COOH in Water or Averaging All 3 pKa Values for pI",
           "items": [
             {
-              "label": "Avoid",
-              "text": "A zwitterion has no charges"
+              "label": "Common Trap",
+              "text": "Averaging (2.0 + 3.9 + 9.8)/3 for Aspartate’s pI, or drawing an amino acid with neutral –NH₂ and neutral –COOH in the same molecule."
             },
             {
-              "label": "Check",
-              "text": "Positive and negative formal charges can sum to zero"
+              "label": "Correct Reasoning",
+              "text": "Because –COOH (pKa ~2) is a billion times more acidic than –NH₃⁺ (pKa ~9.5), –COOH ALWAYS loses its proton long before –NH₃⁺ does (forming the dipolar zwitterion)! Average only the 2 pKas flanking the 0-charge species."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Gel Electrophoresis Migration, Ion-Exchange Chromatography & Histidine Buffering",
           "items": [
             {
-              "label": "Asp/Glu versus Lys/Arg",
-              "text": "Often opposite charge near neutral pH"
+              "label": "Native Gel Electrophoresis / Isoelectric Focusing",
+              "outcome": "pH > pI → Negative Charge (Moves to Anode +)",
+              "text": "If buffer pH > pI, the amino acid or protein is deprotonated (net negative); if pH < pI, it is protonated (net positive); at pH = pI, migration stops!"
             },
             {
-              "label": "Histidine",
-              "text": "Protonation strongly depends on pH"
+              "label": "Histidine Imidazole Ring (pKa ~6.0)",
+              "outcome": "General Acid–Base Catalyst at pH 7.4",
+              "text": "Because pKa ~6.0 is close to physiological pH 7.4, Histidine exists in both protonated (+1) and neutral (0) forms at room temperature—ideal for shuttling H⁺ in enzymes!"
             },
             {
-              "label": "Side chains",
-              "text": "Classify polar/nonpolar behavior"
+              "label": "Aromatic UV Absorbance at 280 nm",
+              "outcome": "Trp (W) > Tyr (Y) ≫ Phe (F)",
+              "text": "Conjugated indole (Trp) and phenol (Tyr) rings absorb UV light at 280 nm, enabling rapid protein concentration measurement (Beer-Lambert law A = εcl)."
             }
           ]
         }
@@ -219,21 +250,50 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "An amide links amino-acid residues",
+          "title": "Peptide Bond Resonance Planarity, N→C Convention & Protein Structure Levels (1°–4°)",
           "items": [
             {
-              "label": "Linkage",
-              "text": "Carbonyl C to next residue N"
+              "label": "Directional N-Terminus → C-Terminus Convention",
+              "text": "Amide resonance gives partial C–N double-bond character and a nearly planar peptide group. Trans is usually favored; cis populations depend on the residue and environment.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Peptide group",
-              "text": "Approximately planar; restricted C–N rotation"
+              "label": "Partial Double-Bond Character of the Peptide Bond",
+              "text": "Resonance (O=C–NH ↔ ⁻O–C=NH⁺) gives the C–N bond ~40% π character (1.32 Å vs 1.47 Å), locking all 6 peptide-plane atoms in a rigid TRANS planar conformation (except ~6% cis before Proline).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Sequence",
-              "text": "N-terminus to C-terminus"
+              "label": "Denaturation vs. Hydrolysis",
+              "text": "Urea, guanidinium HCl, heat, or pH extremes disrupt noncovalent 2°/3°/4° interactions (and β-mercaptoethanol/DTT reduces Cys–S–S–Cys disulfides), leaving the covalent 1° peptide sequence completely intact!",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Write N-Terminus (+H₃N) → C-Terminus (COO⁻)",
+            "Peptide Bond = sp² Planar (Trans)",
+            "1°=Sequence, 2°=α/β Backbone H-Bonds, 3°=Side Chains, 4°=Subunits"
+          ],
+          "comparison": [
+            [
+              "1° Structure (Primary)",
+              "Linear amino acid sequence (N → C)",
+              "Covalent peptide (amide) bonds; cleaved by 6M HCl/proteases"
+            ],
+            [
+              "2° Structure (Secondary)",
+              "α-Helix (i to i+4) & β-Sheet",
+              "Backbone C=O···H–N H-bonds ONLY (Proline = helix breaker!)"
+            ],
+            [
+              "3° / 4° Structure",
+              "3D fold (3°) & Multi-subunit complex (4°)",
+              "Hydrophobic core, salt bridges, H-bonds, Cys–S–S–Cys disulfides"
+            ]
+          ],
+          "theme": "peptide-disulfide",
           "figure": {
             "type": "structures",
             "steps": [
@@ -244,43 +304,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Protease Cleavage Specificity & Protein Structure Disrupter Guide",
+          "prompt": "Which reagent or enzyme is acting on the protein?",
           "items": [
             {
-              "label": "Peptide C–N",
-              "text": "Partial double-bond character restricts rotation"
+              "label": "Trypsin vs. Chymotrypsin vs. Cyanogen Bromide (CNBr)",
+              "outcome": "Trypsin = C-side of Lys/Arg; Chymotrypsin = C-side of Phe/Tyr/Trp; CNBr = C-side of Met",
+              "text": "Wait: Proline immediately after the target residue blocks trypsin/chymotrypsin cleavage! The final fragment with NO cleavage site at its C-end is the original C-terminus."
             },
             {
-              "label": "Adjacent backbone single bonds",
-              "text": "Supply much of the flexibility"
+              "label": "Urea / Heat vs. β-Mercaptoethanol (BME) / DTT",
+              "outcome": "Urea Breaks H-Bonds (2°/3°); BME Reduces Disulfide Bridges (Cys–S–S–Cys → 2 Cys–SH)",
+              "text": "In SDS-PAGE, non-reducing vs. reducing gels reveal whether subunits are linked by covalent disulfide bridges!"
+            },
+            {
+              "label": "Proline & Glycine in α-Helices",
+              "outcome": "Both Disrupt α-Helices (\"Helix Breakers\"), Found in β-Turns & Collagen!",
+              "text": "Proline is a secondary amine (lacks a backbone N–H H-bond donor and has a rigid ring); Glycine is too conformationally flexible (high ΔS cost to fold)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Thinking Denaturation Breaks Peptide Bonds or Saying Secondary Structure Uses Side-Chain H-Bonds",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Peptide bonds join two alpha carbons"
+              "label": "Common Trap",
+              "text": "Saying boiling an egg or adding 8M urea hydrolyzes peptide bonds, or saying α-helices are held together by R-group interactions."
             },
             {
-              "label": "Check",
-              "text": "Carbonyl C to N; formation requires activation"
+              "label": "Correct Reasoning",
+              "text": "Secondary structure (α-helix and β-sheet) is stabilized EXCLUSIVELY by BACKBONE amide C=O···H–N hydrogen bonds; side-chain R-group interactions define tertiary (3°) structure!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Insulin Disulfide Processing, Edman Degradation & SDS-PAGE Analysis",
           "items": [
             {
-              "label": "Helices and sheets",
-              "text": "Backbone hydrogen bonding"
+              "label": "Reducing vs. Non-Reducing SDS-PAGE",
+              "outcome": "100 kDa Band Alone vs. 50 kDa Band + BME",
+              "text": "If a 100 kDa protein drops to 50 kDa ONLY when β-mercaptoethanol is added, it is a homodimer linked by an interchain disulfide bond!"
             },
             {
-              "label": "Folding",
-              "text": "Side-chain interactions and hydrophobic effects"
+              "label": "α-Helix Geometry (3.6 Residues/Turn)",
+              "outcome": "C=O of Residue i H-Bonds to N–H of Residue (i + 4)",
+              "text": "All side chains point outward from the helix cylinder; transmembrane α-helices require ~20 hydrophobic amino acids to span a lipid bilayer."
+            },
+            {
+              "label": "Sanger / Edman N-Terminal Sequencing",
+              "outcome": "Labels & Cleaves the N-Terminal Residue (1° Structure)",
+              "text": "Identifies the exact N-terminal amino acid without hydrolyzing the rest of the peptide chain."
             }
           ]
         }
@@ -348,21 +423,49 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Track where the carboxyl carbon comes from",
+          "title": "Strecker & Amidomalonate / Gabriel Amino Acid Syntheses (Preventing Polyalkylation)",
           "items": [
             {
-              "label": "Strecker stage",
-              "text": "Aldehyde, ammonia and cyanide chemistry"
+              "label": "Why Direct Alkylation (NH₃ + RX) Fails for 1° Amines",
+              "text": "Once RNH₂ forms, its inductive alkyl group makes it MORE nucleophilic than NH₃, causing rapid over-alkylation to R₂NH, R₃N, and R₄N⁺X⁻.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Aminonitrile",
-              "text": "Follow the nitrile carbon"
+              "label": "Strecker Synthesis (Aldehyde + NH₃ + HCN, then H₃O⁺/Δ)",
+              "text": "Step 1: Aldehyde + NH₃ ⇌ Imine (RCH=NH). Step 2: CN⁻ attacks imine → α-aminonitrile (RCH(NH₂)CN). Step 3: Acid hydrolysis converts –CN to –COOH!",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Hydrolysis",
-              "text": "Nitrile carbon becomes carboxyl carbon"
+              "label": "Gabriel Phthalimide + Malonic Ester Synthesis",
+              "text": "Potassium phthalimide acts as a bulky, masked NH₂⁻ nucleophile that can only undergo ONE SN2 reaction on α-bromomalonic ester, followed by α-alkylation (R–X), ester/imide hydrolysis, and thermal decarboxylation (−CO₂).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Strecker: Aldehyde + NH₃ + HCN → α-Aminonitrile → (±)-Amino Acid",
+            "Gabriel: Phthalimide + Br-Malonate → SN2 + Hydrolysis + (−CO₂)"
+          ],
+          "comparison": [
+            [
+              "Direct NH₃ + R–Br",
+              "Uncontrolled polyalkylation!",
+              "Gives messy mixture of 1°, 2°, 3° amines + 4° ammonium salt"
+            ],
+            [
+              "Strecker Synthesis",
+              "1. RCHO + NH₃ + KCN → 2. H₃O⁺, Δ",
+              "Imine + CN⁻ → α-aminonitrile → hydrolyzed to racemic (±)-amino acid"
+            ],
+            [
+              "Gabriel + Malonic Ester",
+              "K⁺Phthalimide + diethyl α-bromomalonate",
+              "SN2 + alkylation + H₃O⁺/Δ (−CO₂) → clean 1° (±)-amino acid"
+            ]
+          ],
+          "theme": "strecker-gabriel",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -374,43 +477,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Tracing Every Atom in Strecker vs. Gabriel-Malonate Amino Acid Synthesis",
+          "prompt": "Where does each piece of the synthesized α-amino acid come from?",
           "items": [
             {
-              "label": "Strecker",
-              "text": "Cyanide carbon becomes carboxyl carbon"
+              "label": "Strecker Synthesis: Aldehyde R–CHO + NH₃ + KCN",
+              "outcome": "R–CH comes from Aldehyde; –NH₃⁺ from NH₃; –COOH from Cyanide (CN⁻)!",
+              "text": "Wait: The aldehyde carbonyl carbon becomes the α-CARBON (C2) of the amino acid, while the cyanide carbon becomes the C1 CARBOXYLIC ACID!"
             },
             {
-              "label": "Gabriel–malonate variant",
-              "text": "Alkylation builds the side chain; decarboxylation removes one carboxyl group"
+              "label": "Gabriel Malonic Ester Synthesis + R–Br",
+              "outcome": "Glycine Backbone from Bromomalonate; Side Chain R from R–Br!",
+              "text": "Deprotonating the α-carbon of N-phthalimidomalonic ester with NaOEt followed by SN2 with R–Br installs the side chain R, and H₃O⁺/Δ cleaves the esters + decarboxylates one –COOH."
+            },
+            {
+              "label": "What Is the Stereochemistry of Uncatalyzed Strecker or Gabriel Products?",
+              "outcome": "Achiral conditions: racemic chiral product; glycine is achiral",
+              "text": "Achiral starting materials produce a planar imine (Strecker) or planar enol during decarboxylation (Gabriel), giving 0% ee unless resolved!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Thinking the Aldehyde Carbon Becomes the –COOH Group in the Strecker Synthesis",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Every amino-acid product must be racemic"
+              "label": "Common Trap",
+              "text": "Assuming the C=O carbon of R–CHO becomes the carboxylic acid in a Strecker synthesis, or forgetting the +1 carbon added by CN⁻."
             },
             {
-              "label": "Check",
-              "text": "Glycine is achiral; substrate and chiral conditions matter"
+              "label": "Correct Reasoning",
+              "text": "In the Strecker synthesis, the aldehyde carbon becomes the α-carbon (CH–R), and the cyanide (–C≡N) carbon is hydrolyzed into the –COOH group (total carbons = Aldehyde C + 1)!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Prebiotic Amino Acid Origins, Azide Reduction & Reductive Amination of α-Keto Acids",
           "items": [
             {
-              "label": "Achiral lab routes",
-              "text": "Usually racemic chiral products"
+              "label": "Biological Transamination vs. Lab Strecker",
+              "outcome": "α-Keto Acid + Glu (PLP) → Pure L-Amino Acid",
+              "text": "Whereas Strecker makes racemic (±)-amino acids from an aldehyde + HCN, cells convert α-keto acids (pyruvate → L-alanine) stereospecifically via PLP transaminases!"
             },
             {
-              "label": "Enzyme control",
-              "text": "Can select product stereochemistry"
+              "label": "Hydrazine (NH₂NH₂) Phthalimide Cleavage",
+              "outcome": "Releases Free 1° Amine Under Mild Conditions",
+              "text": "Hydrazine attacks both imide carbonyls of the Gabriel adduct to form a stable cyclic phthalhydrazide byproduct plus the clean 1° amine."
+            },
+            {
+              "label": "Protecting Groups in Solid-Phase Peptide Synthesis",
+              "outcome": "Boc (Cleaved by TFA Acid) & Fmoc (Cleaved by Piperidine Base)",
+              "text": "Synthesizes peptides C → N on resin beads using N-protected amino acids + DCC/EDC coupling to prevent self-polymerization."
             }
           ]
         }
@@ -473,22 +591,56 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Phosphoesters differ from phosphoanhydrides",
+          "layout": "flow",
+          "title": "Phosphoric Acid Speciation (pKa 2.1, 7.2, 12.4), ATP Bioenergetics & Phosphodiester Stability",
           "items": [
             {
-              "label": "P–O–C",
-              "text": "Phosphate ester linkage"
+              "label": "Three Separate Buffering Zones of Phosphoric Acid (H₃PO₄)",
+              "text": "Phosphoric acid is triprotic with widely spaced pKa values (~2.1, ~7.2, ~12.4); it buffers ONLY within ±1 pH unit of each individual pKa (NOT uniformly across pH 2–12!). At pH 7.4, H₂PO₄⁻ and HPO₄²⁻ predominate.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Two ester links",
-              "text": "Phosphodiester context"
+              "label": "Why ATP Hydrolysis Is Highly Exergonic (ΔG°′ ≈ −30.5 kJ/mol)",
+              "text": "1) Relieves electrostatic repulsion among 4 clustered negative charges on α/β/γ phosphates; 2) Inorganic phosphate (P_i) and ADP have superior resonance stabilization (less competing oxygen sharing); 3) Greater solvation & entropy.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "P–O–P",
-              "text": "Phosphoanhydride linkage"
+              "label": "Kinetic Stability of DNA/RNA Phosphodiester Backbones",
+              "text": "At pH 7.4, every phosphodiester linkage carries a −1 charge (RO–PO₂⁻–OR′), which electrostatically repels nucleophilic attack by water/hydroxide (RNA hydrolyzes faster in base only because its 2′-OH acts as an internal nucleophile!).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "H₃PO₄: pKa1 ~2.1, pKa2 ~7.2, pKa3 ~12.4",
+            "pH 7.4 Buffer = H₂PO₄⁻ ⇌ HPO₄²⁻",
+            "ATP = 2 Phosphoanhydride + 1 Phosphoester"
+          ],
+          "comparison": [
+            [
+              "pKa1 (~2.1)",
+              "H₃PO₄ ⇌ H₂PO₄⁻ + H⁺",
+              "Fully deprotonated at pH 7.4"
+            ],
+            [
+              "pKa2 (~7.2)",
+              "H₂PO₄⁻ ⇌ HPO₄²⁻ + H⁺",
+              "Ideal physiological buffer at pH 7.4!"
+            ],
+            [
+              "pKa3 (~12.4)",
+              "HPO₄²⁻ ⇌ PO₄³⁻ + H⁺",
+              "Stays protonated at pH 7.4"
+            ],
+            [
+              "DNA Phosphodiester",
+              "RO–PO₂⁻–OR′ (−1 charge per link)",
+              "Negative charge repels OH⁻ hydrolysis & keeps DNA inside cell"
+            ]
+          ],
+          "theme": "atp-phosphoryl",
           "figure": {
             "type": "structures",
             "steps": [
@@ -500,47 +652,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "ATP α / β / γ Phosphate Attack & RNA vs. DNA Alkaline Stability",
+          "prompt": "What phosphoryl transfer or nucleic acid question is asked?",
           "items": [
             {
-              "label": "DNA/RNA backbone",
-              "text": "Phosphodiester"
+              "label": "Kinase Phosphoryl Transfer vs. Synthetase Adenylation",
+              "outcome": "Kinase Attacks γ-P (Releases ADP); Adenylation Attacks α-P (Releases PP_i → 2 P_i)!",
+              "text": "Attacking α-P releases pyrophosphate (PP_i), which inorganic pyrophosphatase immediately hydrolyzes to 2 P_i—providing a double thermodynamic boost!"
             },
             {
-              "label": "Between ATP phosphates",
-              "text": "Phosphoanhydride"
+              "label": "Why Does RNA Hydrolyze in Base (NaOH) While DNA Survives?",
+              "outcome": "RNA Has a 2′-OH Group (DNA Is 2′-Deoxy!)",
+              "text": "Base deprotonates the ribose 2′-OH into a 2′-alkoxide right next door, which attacks the phosphorus to form a 2′,3′-cyclic phosphate and cleave the RNA chain!"
             },
             {
-              "label": "Near-neutral phosphate buffer",
-              "text": "H₂PO₄⁻ / HPO₄²⁻; distinct pKa regions"
+              "label": "Pentavalent Trigonal Bipyramidal Transition State (SN2-Like at P)",
+              "outcome": "In-Line Attack by Nucleophile Opposite the Leaving Group (with Mg²⁺)",
+              "text": "Mg²⁺ chelates the negatively charged phosphate oxygens, neutralizing charge repulsion and polarizing P=O for nucleophilic attack."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Calling ATP Bonds \"High-Energy Because Breaking Bonds Releases Energy\"",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Breaking one ATP bond releases energy"
+              "label": "Common Trap",
+              "text": "Saying \"breaking the P–O bond in ATP releases energy\" or claiming phosphate buffers uniformly from pH 2 to pH 12."
             },
             {
-              "label": "Check",
-              "text": "Overall free-energy difference, including solvation and electrostatics"
+              "label": "Correct Reasoning",
+              "text": "Breaking ANY chemical bond is endothermic (requires energy)! ATP hydrolysis releases free energy because the products (ADP + P_i) form stronger bonds, have less charge repulsion, and enjoy greater resonance/solvation than ATP!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "DNA Polymerase 3′-OH Attack on α-Phosphate & Kinase Signaling Cascades",
           "items": [
             {
-              "label": "Phosphoryl transfer",
-              "text": "Can couple reactions"
+              "label": "DNA / RNA Polymerization Direction (5′ → 3′)",
+              "outcome": "Primer 3′-OH Attacks the α-Phosphate of Incoming dNTP",
+              "text": "Forms a new 3′→5′ phosphodiester bond and expels β,γ-pyrophosphate (PP_i), whose hydrolysis drives polymerization forward."
             },
             {
-              "label": "Polymerization",
-              "text": "Pyrophosphate release/hydrolysis can help favor the process"
+              "label": "Ser / Thr / Tyr Protein Kinases vs. Phosphatases",
+              "outcome": "Reversible Electrostatic Switch (+0 OH ⇌ −2 OPO₃²⁻)",
+              "text": "Adding a dianionic phosphate group at pH 7.4 creates new salt bridges with Arg/Lys residues, triggering conformational activation or inhibition."
+            },
+            {
+              "label": "Intracellular Phosphate Buffer System",
+              "outcome": "pKa2 = 7.2 Matches Cytosolic pH (~7.2)",
+              "text": "With pH ≈ pKa2, [HPO₄²⁻]/[H₂PO₄⁻] ≈ 1.6:1, providing maximum buffering capacity inside cells."
             }
           ]
         }

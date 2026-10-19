@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "10675b9e0d66423ee2793b5e0a7fdb57aac4de2f0142441efd34c64c185c15b1",
+    "sha256": "24794835489d402ee6a6d13247d03839e0514f1e95103787f9b8171508a3078a",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -42,9 +42,9 @@
       "id": "amino-acids-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/amino-acids-visuals.png",
-      "sha256": "bd94d2ba51c220fdc7b0ba948203bf512f02c513de8980878df52b3ce95ab8dc",
+      "sha256": "470f178ae2adf89ffc780c560c886a581453f0704bdae5a0e82d246ab418856d",
       "width": 607,
-      "height": 1817
+      "height": 2363
     },
     {
       "id": "peptides-step-1",
@@ -66,9 +66,9 @@
       "id": "peptides-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/peptides-visuals.png",
-      "sha256": "3aa46337af6b3a67f7d8b8ba296387e1e02fc979bb881abee6af25c04418104d",
+      "sha256": "30faac161e7dc2d0cd530617808af2aa4aade08c4271a9c8174bdad69dd7a8ea",
       "width": 607,
-      "height": 1781
+      "height": 2404
     },
     {
       "id": "synthesis-step-1",
@@ -98,9 +98,9 @@
       "id": "synthesis-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/synthesis-visuals.png",
-      "sha256": "811c366bb05e174a127f68d7a515fb5b2ba8cd50f97a8794d1723ed5e1492da0",
+      "sha256": "f8116126fec8d252aab5ac4328d18368ade9b5ce988ab63d2516e2c185865b66",
       "width": 607,
-      "height": 1778
+      "height": 2457
     },
     {
       "id": "phosphorus-step-1",
@@ -130,9 +130,9 @@
       "id": "phosphorus-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/phosphorus-visuals.png",
-      "sha256": "690958bb6d052be686a1305b54ccb1061d7feaf5129b80f0f90c6766a71ecf2e",
+      "sha256": "e1e005d2aa84091290e04261492d52e2ff724bafe078268ea430570e53f1759e",
       "width": 607,
-      "height": 1846
+      "height": 2503
     },
     {
       "id": "glycine-charge-stage-1-molecule",
@@ -538,23 +538,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "9cd6ab7370702e7d07c7b2241eb10f434d764bfaf42dbd3652f3ed3c87bb72f3",
+      "sha256": "dd520d56ac14e506f2f85e9156859bc10ad395553faa7ab13b7218f7598f96c2",
       "width": 1360,
-      "height": 2225
+      "height": 2771
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "1e91029955f7f5afa447e92b4e7b0b8d8f4049e25858b21b1ee1f6a896708275",
+      "sha256": "48fa58acc9cfd09550100a1b75fa8a86816f975baf1646800829c0236c0cb9ac",
       "width": 607,
-      "height": 1272
+      "height": 3006
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "a48a7491be19938606f5ea16ad29a2688535a044e4014955f78d4ff31e0c001d",
+      "sha256": "0da3539d07cde4d51439512ce3df680403b4d5d2c29aca5e1dacc094b8e7b638",
       "width": 1000,
       "height": 741
     },
@@ -562,17 +562,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "8290899f1ffab0d275e72d686ff5ceafe63fad2866d71ec0f1df4e0b48fa76c7",
+      "sha256": "a9b9e2e21510ca25fcbdeb35e5c4a340a0a82d8f513abfb1416307bc760190c9",
       "width": 375,
-      "height": 4162
+      "height": 5274
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "e38798289608a5c30ef2ba124b82a4a95c6e67f096e71bc38c2711d8a23c7b38",
+      "sha256": "6e66976fa1f2c1e77e21b2098b5dc2601683c07af2f0ec9281a6ae96d36034bc",
       "width": 375,
-      "height": 4162
+      "height": 5274
     },
     {
       "id": "projection-mobile-dark",
