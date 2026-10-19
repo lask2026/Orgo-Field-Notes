@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "4a4baac0c142982f00f36aa037b989cee9c0f33d387bbddf01ff6660c3c85923",
+    "sha256": "f7c53a054a3e64cf4906eea887de66adcae1abb76ae0433ec58f68af5fd4c127",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -39,6 +39,14 @@
       "height": 395
     },
     {
+      "id": "orbitals-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/orbitals-visuals.png",
+      "sha256": "ac854b8dfcdf43e9f27ecfa487408efa04b6ae1016c357e87b7b9e3de04c3e14",
+      "width": 607,
+      "height": 1757
+    },
+    {
       "id": "sigma-pi-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/sigma-pi-step-1.png",
@@ -53,6 +61,14 @@
       "sha256": "58e86de1b1a2ba88203841fb38bcac61c5a1b6692c304af669ea74edd101e0ad",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "sigma-pi-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/sigma-pi-visuals.png",
+      "sha256": "8ebddc8e5203872d5986f8468519e564738caadfbff564e285b6a015a57c018d",
+      "width": 607,
+      "height": 1708
     },
     {
       "id": "hybridization-step-1",
@@ -85,6 +101,14 @@
       "sha256": "65e85e057eb2aaca8b8c21ca765d569e325ac3f736e91d7ab0e6240d70a15942",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "hybridization-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/hybridization-visuals.png",
+      "sha256": "4f2220e307aca29e7d5a3c1b1232f39ad8dd909e2503d1ff8c4720ae5b646d2a",
+      "width": 607,
+      "height": 1757
     },
     {
       "id": "quantum-stage-1-molecule",
@@ -402,23 +426,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "c2fbdba2086f81e85212592c9007633b4b3479e3f3d3d784fb2b9443c13c0575",
+      "sha256": "e0166082a9365e05624fb7d63b46fad75a03c01e16667e9a79a3356368e84a82",
       "width": 1360,
-      "height": 1508
+      "height": 2094
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "cfdc12c92e9d689a207b6e3d86812c063b5e89433fbd318c96882c26d94a6840",
+      "sha256": "c0a975d145be5fb16aaf6dc0ba9873c96fc8c94a6ae576cdfe74133b49c1fdeb",
       "width": 607,
-      "height": 1177
+      "height": 1209
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "d6b02f047fb825adccfd2591039e934f9fa5449a1379b7c004a1bec7405a47a2",
+      "sha256": "61279c7e1b348e07d9bda1c1c8e9c0531aad0b72c9171f2e87f491ef99d32ccd",
       "width": 1000,
       "height": 741
     },
@@ -426,17 +450,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "00bf8dc3c0e78d6504a35f457d78ee295b35364f10acad92329dc1ae70d68ec5",
+      "sha256": "bcceed48eac87c684115e4932a73ab7bf1b7fd41fe63a435a3623338be480512",
       "width": 375,
-      "height": 3978
+      "height": 4126
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "34178b75166585f70da8c1334921a8eaf20341fbc7dbfec9dea3af05dda604aa",
+      "sha256": "113d75ad55c8da3c8f1e27d342059c06ccda3715cf9aca6b6dc38945e75217fc",
       "width": 375,
-      "height": 2993
+      "height": 4126
     },
     {
       "id": "projection-mobile-dark",

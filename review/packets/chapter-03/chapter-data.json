@@ -119,7 +119,73 @@
             ]
           }
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Orbitals describe probability, not paths",
+          "items": [
+            {
+              "label": "Shell n",
+              "text": "1, 2, …"
+            },
+            {
+              "label": "Subshell l",
+              "text": "0 through n−1"
+            },
+            {
+              "label": "Orbital and spin",
+              "text": "mₗ = −l … +l; mₛ = ±1/2"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "s / p / d / f subshell",
+              "text": "1 / 3 / 5 / 7 orbitals"
+            },
+            {
+              "label": "One orbital",
+              "text": "At most two electrons with opposite spins"
+            },
+            {
+              "label": "Hydrogen-like nodes",
+              "text": "Total n−1; angular l; radial n−l−1"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Reading orbital phase signs as electric charges"
+            },
+            {
+              "label": "Check",
+              "text": "A probability/wavefunction model, not planetary paths"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Carbon valence",
+              "text": "Second-shell orbitals"
+            },
+            {
+              "label": "Hybridization",
+              "text": "Bonding model, not new allowed quantum numbers"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "sigma-pi",
@@ -158,7 +224,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "End-on vs. side-on overlap",
+          "items": [
+            {
+              "label": "Sigma",
+              "text": "Density along the internuclear axis"
+            },
+            {
+              "label": "Pi",
+              "text": "Side-on p-orbital overlap"
+            },
+            {
+              "label": "Multiple bond",
+              "text": "Double: 1σ + 1π; triple: 1σ + 2π"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Simple MO bond order",
+              "text": "Half of bonding minus antibonding electrons"
+            },
+            {
+              "label": "Comparable atom pair",
+              "text": "Higher bond order usually gives shorter, stronger bonds"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Imagining a freely rotating double bond"
+            },
+            {
+              "label": "Check",
+              "text": "Twisting disrupts pi overlap and costs energy"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Carbonyl addition",
+              "text": "Redistributes pi electrons into sigma bonding"
+            },
+            {
+              "label": "Geometry",
+              "text": "Planar carbonyl can become tetrahedral"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "hybridization",
@@ -227,7 +355,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Count domains, then check conjugation",
+          "items": [
+            {
+              "label": "Four domains",
+              "text": "Typical carbon: sp³, about 109.5°"
+            },
+            {
+              "label": "Three domains",
+              "text": "Typical carbon: sp², about 120°"
+            },
+            {
+              "label": "Two domains",
+              "text": "Typical carbon: sp, 180°"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Ordinary carbon",
+              "text": "A multiple bond counts as one domain"
+            },
+            {
+              "label": "Conjugated lone pair",
+              "text": "Check whether the simple domain shortcut applies"
+            },
+            {
+              "label": "Amide nitrogen",
+              "text": "Approximately planar; lone pair conjugated with C=O"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Assigning amide nitrogen sp³ mechanically"
+            },
+            {
+              "label": "Check",
+              "text": "Conjugation and geometry, not just sigma-bond count"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Peptide bond",
+              "text": "Restricted C–N rotation"
+            },
+            {
+              "label": "Carboxylate",
+              "text": "Equivalent C–O bonds in the resonance hybrid"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
