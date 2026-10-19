@@ -3651,5 +3651,424 @@
     "h": 200,
     "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "glycine": {
+    "name": "glycine zwitterion",
+    "formula": "C2H5NO2",
+    "atoms": [
+      {
+        "e": "N",
+        "x": 45,
+        "y": 115,
+        "charge": 1
+      },
+      {
+        "e": "C",
+        "x": 105,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 165,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 165,
+        "y": 175
+      },
+      {
+        "e": "O",
+        "x": 225,
+        "y": 85,
+        "charge": -1
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 205,
+    "cond": "glycine zwitterion",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "alanine": {
+    "name": "alanine zwitterion (stereochemistry unspecified)",
+    "formula": "C3H7NO2",
+    "atoms": [
+      {
+        "e": "N",
+        "x": 45,
+        "y": 115,
+        "charge": 1
+      },
+      {
+        "e": "C",
+        "x": 105,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 165,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 165,
+        "y": 175
+      },
+      {
+        "e": "O",
+        "x": 225,
+        "y": 85,
+        "charge": -1
+      },
+      {
+        "e": "C",
+        "x": 105,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 205,
+    "cond": "alanine zwitterion (stereochemistry unspecified)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "glycylglycine": {
+    "name": "glycylglycine zwitterion",
+    "formula": "C4H8N2O3",
+    "atoms": [
+      {
+        "e": "N",
+        "x": 35,
+        "y": 110,
+        "charge": 1
+      },
+      {
+        "e": "C",
+        "x": 90,
+        "y": 80
+      },
+      {
+        "e": "C",
+        "x": 145,
+        "y": 110
+      },
+      {
+        "e": "O",
+        "x": 145,
+        "y": 170
+      },
+      {
+        "e": "N",
+        "x": 200,
+        "y": 80
+      },
+      {
+        "e": "C",
+        "x": 255,
+        "y": 110
+      },
+      {
+        "e": "C",
+        "x": 310,
+        "y": 80
+      },
+      {
+        "e": "O",
+        "x": 310,
+        "y": 20
+      },
+      {
+        "e": "O",
+        "x": 365,
+        "y": 110,
+        "charge": -1
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        5,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        2
+      ],
+      [
+        6,
+        8,
+        1
+      ]
+    ],
+    "w": 405,
+    "h": 200,
+    "cond": "glycylglycine zwitterion",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "aminonitrile": {
+    "name": "2-aminopropanenitrile (stereochemistry unspecified)",
+    "formula": "C3H6N2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 110,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 170,
+        "y": 120
+      },
+      {
+        "e": "N",
+        "x": 230,
+        "y": 155
+      },
+      {
+        "e": "N",
+        "x": 110,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        4,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "2-aminopropanenitrile (stereochemistry unspecified)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "phosphoricacid": {
+    "name": "phosphoric acid (formal Lewis representation)",
+    "formula": "H3O4P",
+    "atoms": [
+      {
+        "e": "P",
+        "x": 150,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 150,
+        "y": 30
+      },
+      {
+        "e": "O",
+        "x": 80,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 220,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 150,
+        "y": 170
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "phosphoric acid (formal Lewis representation)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "dimethylphosphate": {
+    "name": "dimethyl phosphate monoanion (formal Lewis representation)",
+    "formula": "C2H6O4P",
+    "atoms": [
+      {
+        "e": "P",
+        "x": 160,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 160,
+        "y": 30
+      },
+      {
+        "e": "O",
+        "x": 90,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 230,
+        "y": 100
+      },
+      {
+        "e": "O",
+        "x": 160,
+        "y": 170,
+        "charge": -1
+      },
+      {
+        "e": "C",
+        "x": 35,
+        "y": 140
+      },
+      {
+        "e": "C",
+        "x": 285,
+        "y": 140
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        3,
+        6,
+        1
+      ]
+    ],
+    "w": 325,
+    "h": 200,
+    "cond": "dimethyl phosphate monoanion (formal Lewis representation)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }

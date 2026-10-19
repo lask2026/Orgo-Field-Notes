@@ -41,3 +41,5 @@ Chapter 7 (Aldehydes and Ketones II: Enolates): original content aligned to supp
 Chapter 8 (Carboxylic Acids): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
 
 Chapter 9 (Carboxylic Acid Derivatives): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
+
+Chapter 10 (Nitrogen- and Phosphorus-Containing Compounds): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
