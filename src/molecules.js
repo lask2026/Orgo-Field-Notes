@@ -9,6 +9,14 @@ export function molecularFormula(m){
 export function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
 export function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 export function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
+export function electronFlowGeometry(m,flow){
+  const point=side=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
+  const a=point('from'),b=point('to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,nx=-dy/len,ny=dx/len;
+  const labeled=side=>flow[side+'Atom']!==undefined&&m.atoms[flow[side+'Atom']].e!=='C';
+  const startGap=labeled('from')?24:6;
+  // Approach visible labels from the curve's outer side, keeping the shaft and head off the glyph.
+  return {start:{x:a.x+nx*startGap,y:a.y+ny*startGap},control:{x:(a.x+b.x)/2+nx*45,y:(a.y+b.y)/2+ny*45},end:labeled('to')?{x:b.x+nx*24,y:b.y+ny*24}:{x:b.x-dx/len*12,y:b.y-dy/len*12}};
+}
 export function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
@@ -30,8 +38,7 @@ export function drawMolecule(m,opts={}){
   }
   if(opts.flow?.length){
     h+='<defs><marker id="electronArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#6d28d9" stroke-width="1.5"/></marker></defs>';
-    const point=(flow,side)=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
-    for(const flow of opts.flow){const a=point(flow,'from'),b=point(flow,'to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,tx=b.x-dx/len*16,ty=b.y-dy/len*16;h+=`<path class="anim-path" pathLength="100" d="M${a.x+8},${a.y} Q${(a.x+b.x)/2+45},${(a.y+b.y)/2-25} ${tx},${ty}" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#electronArrow)"/>`;}
+    for(const flow of opts.flow){const {start:a,control:c,end:b}=electronFlowGeometry(m,flow);h+=`<path class="anim-path" pathLength="100" d="M${a.x},${a.y} Q${c.x},${c.y} ${b.x},${b.y}" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#electronArrow)"/>`;}
   }
   m.atoms.forEach((a,i)=>{
     const l=label(a,i);
