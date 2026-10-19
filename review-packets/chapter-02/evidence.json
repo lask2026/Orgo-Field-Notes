@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "7ecf927d8185b7c2824fd80aa9464fc8b1017c72727c4336329c6800aeca371e",
+    "sha256": "bc3ce610f0b5d3dce478df2e62530f509c4a07c8e1e90180a5591819a7a3cb19",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -10,7 +10,7 @@
       "id": "connectivity-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/connectivity-step-1.png",
-      "sha256": "01b7dceab1c8032f4eac390f2e6a44411bcecc267a2c47a7e750d61b5c31faf6",
+      "sha256": "893a197daa398aa5f135f211ed79d1767d75a6f190ee0cd1bbd500babc9a86d8",
       "width": 661,
       "height": 359
     },
@@ -66,7 +66,7 @@
       "id": "chirality-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/chirality-step-1.png",
-      "sha256": "719f1002d21200fca14c1fe1d8545963008c222048d84faaaec274b887fecb1e",
+      "sha256": "bb1c016203e50295679acb06f0ea35f47d120f65821bacd96279134d7a42b0f9",
       "width": 661,
       "height": 359
     },
@@ -90,7 +90,7 @@
       "id": "configuration-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/configuration-step-1.png",
-      "sha256": "960f2face3ca69a7e5e19867913441c36518c875d08d8c9576011cd0ca652227",
+      "sha256": "4a4662e5b54a2f3da0cfd7cdc728f6fd7d4a0b2fdd842fc860505a5f4ba51fbf",
       "width": 661,
       "height": 359
     },
@@ -834,7 +834,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "ee5380c2bcd5ae02ecd17a1a9d527c7174c623a38b8dc645314f21493c240899",
+      "sha256": "2d6faea0a8792b272b87fbb27a3bda8a856dd89eb282c42b979247ba9ac57125",
       "width": 1360,
       "height": 1055
     },
@@ -842,7 +842,7 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "1ec9cdc5c74184567cad449a1f55d72b889d29ccc4eafc1577412caf5b466f20",
+      "sha256": "779b68f58a3327e9763893cf861e98548ad9919fc692fa4141c60d32de83372e",
       "width": 375,
       "height": 2157
     },
@@ -850,7 +850,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "7df492ffe77731371e2c2d33d083f6306b9456225a217b6eeceaaa3ab61c4cb9",
+      "sha256": "363233b49bc240f3660808a19ac65992e2fc0621f4e5939efecbffec95716920",
       "width": 375,
       "height": 2157
     }

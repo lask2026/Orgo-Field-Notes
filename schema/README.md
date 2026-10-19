@@ -17,3 +17,6 @@ Validation: `python scripts/validate_schema.py` checks schemas; `node --test tes
 
 Stage `molecule` optionally selects a different graph for transfer questions. Its highlights and atom answers refer to that graph; previous-graph highlights and the exercise-wide diagram are suppressed when switching. Audit blind cases include the replacement graph without author names, formulas or keys.
 Newman names and energy commentary are withheld in active Guided Practice; Learn & Explore retains them.
+
+The `orbitals` schematic uses `subshells`: one to three labeled rows, each with one to seven `electrons` occupancy values (0, 1 or 2) per orbital box. Arrows represent spin states; row spacing is not a quantitative energy axis. Authoring checks must confirm Pauli/Hund consistency for the intended atom. Do not attach a filled teaching diagram to an active quiz that it answers.
+Composition `formula` remains charge-free Hill notation. `formulaLabel` adds net charge summed from atoms wherever a formula is revealed; never write an ionic charge into the composition string. For two-carbon all-carbon graphs, the renderer writes terminal hydrogen groups without introducing H atom indices. Multi-character atom-group highlights use wider ellipses; letter controls stay offset from element labels.

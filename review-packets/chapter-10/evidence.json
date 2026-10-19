@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "98721eb07e6d89b59262db78bb4c82121dfda5df7f09f8dc2fbcf504817a7d45",
+    "sha256": "4d975bae2603f4ebd33ecb97980538e370fde47bf5493578198d17cd97c2e8af",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -10,7 +10,7 @@
       "id": "amino-acids-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/amino-acids-step-1.png",
-      "sha256": "47368172608c9accbea163ccc917cefbd0f414580a8ccae787479d90c6ecd09d",
+      "sha256": "2f1cfb27d25b0cb2c87b9eb2dff39a00e9c586661bb47188876d3228719d35ca",
       "width": 661,
       "height": 359
     },
@@ -18,7 +18,7 @@
       "id": "amino-acids-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/amino-acids-step-2.png",
-      "sha256": "bc57cbea8ac638734a86affa52b959c55dbcbeb22e7d597270bd4946f6cd5e9c",
+      "sha256": "8c57df8306766b7e4715e6c96eeae9284d391fd8e38436d4537bd04f89b09f85",
       "width": 661,
       "height": 359
     },
@@ -42,7 +42,7 @@
       "id": "peptides-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/peptides-step-1.png",
-      "sha256": "a865aa07338d1493df0f5c4ad74fb5ddc4e46659fb0b95fc78246e7c953e34d5",
+      "sha256": "54faf1a2e92d91a6e0dfaaddf1d72cffabe4bd3a6ce01ca552c2b09fef3556ec",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "peptides-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/peptides-step-2.png",
-      "sha256": "f8ba14dbce61fe317a1ed438b0c1b8c6b7e21b3fce131ea08db9f04f92d2ebe6",
+      "sha256": "896948b934f426c11e8e52f8f2ae5aae0cc57b5d603dee9d49b47ad4185e128e",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "synthesis-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/synthesis-step-1.png",
-      "sha256": "38269535af555aaca677b11bb9fd7b6cd38f0eb8540ddc1e10cc712a946e11ba",
+      "sha256": "5e206d84b837426efdf3730f9bf309716dc00af24a47d4ba4b27cd250f8705ab",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "synthesis-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/synthesis-step-3.png",
-      "sha256": "52f86d23347fd9cca7ebfd1c36d7dedb5880c989a8d4d1bf3c695adcf52499b9",
+      "sha256": "1689e3366f18194af542f6fc05d4585d7fc5e128b9dd926ac77fc29e70b2334b",
       "width": 661,
       "height": 359
     },
@@ -82,7 +82,7 @@
       "id": "phosphorus-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/phosphorus-step-1.png",
-      "sha256": "061d6a5b43c0b26bb5a60d292ecfd1e32513b662f4f1f619fe8c6da29758c807",
+      "sha256": "c3e20ac06f44e38351268e67d016d125bf563580590aa26ce10456960f29767c",
       "width": 661,
       "height": 359
     },
@@ -90,7 +90,7 @@
       "id": "phosphorus-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/phosphorus-step-2.png",
-      "sha256": "9df6370a106e651379536bd016f976d39603f3cddd174d3257b0b4173e362c91",
+      "sha256": "835c8687e311683fc821bf14a860caf863424a0fd711e7a6784c3c965748f7fc",
       "width": 661,
       "height": 359
     },
@@ -210,7 +210,7 @@
       "id": "peptide-link-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/peptide-link-stage-2-molecule.png",
-      "sha256": "c5416970709b0c8cf365b750139ca9fcd599d272c617de0e7ec8060c5c4dc24b",
+      "sha256": "60dfd57bfbebe13d0fd039984cdf178b7523023825227c8a317a25b9b2a29d88",
       "width": 661,
       "height": 359
     },
@@ -418,7 +418,7 @@
       "id": "phosphate-links-complete",
       "kind": "practice-complete",
       "file": "screenshots/phosphate-links-complete.png",
-      "sha256": "444cfe1349c9d99e0d1682a840a0adef1feff3186508fa643252bd6abd944b9f",
+      "sha256": "f82c9e3712c86e34a9b2a6fb0c6fdb5a7b9caf8f32464339f5549daf582cecb0",
       "width": 1324,
       "height": 574
     },
@@ -426,7 +426,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "4ba9db4557e334bd02a8c3e98cb0634f259090994392958a780a8e4cadb2d739",
+      "sha256": "95235116d5dae543afeb0e1963bd7c0f5450120492b4e6f7013f976b47a53b8c",
       "width": 1360,
       "height": 1008
     },
@@ -434,7 +434,7 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "0a6caf9c3992a26c2ff0e370514f00a8dbd9911cd0253851828aaf7df3588b7d",
+      "sha256": "a3ec19129f77830bdde83e53db9ddd8f7433dda178ef0f1226b8369572b643fb",
       "width": 375,
       "height": 2220
     },
@@ -442,7 +442,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "16f0d4bd2e8f05332389cd02288433c223e3cee4af0c048f53fac599b544abd1",
+      "sha256": "24b1c9d9448eb135433edcc9dfcf202c1e9aab0ab0e5920ffd82fcb4599bd619",
       "width": 375,
       "height": 2220
     }

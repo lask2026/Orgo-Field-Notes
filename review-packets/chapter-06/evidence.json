@@ -1,7 +1,7 @@
 {
   "chapter": 6,
   "sourceSnapshot": {
-    "sha256": "9753d9af98eeba71e4832842ba3fe2740217e0310e4959123b817776406426e2",
+    "sha256": "76f567041d1ed1dec8baa3737522c8ff70cce10c6829cb4ba44c96ea6686f6cc",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,7 +34,7 @@
       "id": "oxygen-addition-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/oxygen-addition-step-1.png",
-      "sha256": "e5d406064a63adeec6e38909a824eac7efa4f7edbcd258068100260737c24bea",
+      "sha256": "4882af52012e969dcabb51b2331ed8fa896af807fbf03583af52ab42e0f931d2",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "oxygen-addition-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/oxygen-addition-step-3.png",
-      "sha256": "087b81c9ecb3f6dc81b61a34c078f6fb2bcfd7970f75124f09270d5cb9be2e62",
+      "sha256": "eafdb1b184a27a327edb471eb2afd6bb220c063bea4fca7970fe1bcedab48a4e",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "nitrogen-addition-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/nitrogen-addition-step-3.png",
-      "sha256": "ca5a6209bfe35a439298db3713f2db786edd043647652549561a5c66f20fb237",
+      "sha256": "66f09fc65a6bc52dbc936dee12c1811005cb9cd5b309833bd8e285a1f2cdbde4",
       "width": 661,
       "height": 359
     },
@@ -90,7 +90,7 @@
       "id": "carbonyl-redox-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-redox-step-2.png",
-      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "sha256": "57afa52c1d5a420b25c193e80a23be4125ad6fd6b3af25c6a06b52bc356e87f2",
       "width": 661,
       "height": 359
     },
@@ -98,7 +98,7 @@
       "id": "carbonyl-redox-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-redox-step-3.png",
-      "sha256": "5ebc9c36404624cdb8f6d8a5d3c159b1e267caad0fb68fe924eba55f62da8171",
+      "sha256": "ecd5c1075dd8b7ff1668c0ad888330b19cde684cd06d8987bdef2c76df39f669",
       "width": 661,
       "height": 359
     },
@@ -210,7 +210,7 @@
       "id": "hemiacetal-identify-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/hemiacetal-identify-stage-2-molecule.png",
-      "sha256": "e5d406064a63adeec6e38909a824eac7efa4f7edbcd258068100260737c24bea",
+      "sha256": "4882af52012e969dcabb51b2331ed8fa896af807fbf03583af52ab42e0f931d2",
       "width": 661,
       "height": 359
     },

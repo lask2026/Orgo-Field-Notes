@@ -61,18 +61,20 @@ function molecularFormula(m){
   const order=['C','H',...Object.keys(counts).filter(k=>k!=='C'&&k!=='H').sort()];
   return order.filter(e=>counts[e]).map(e=>e+(counts[e]===1?'':counts[e])).join('');
 }
+function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
+function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
 function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
-    if(a.e==='C')return '';
+    if(a.e==='C'&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
     const count=hydrogens(m,i),h=count?'H'+(count>1?String(count).replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[n]):''):'';
     const bond=m.bonds.find(([u,v])=>u===i||v===i),neighbor=bond?m.atoms[bond[0]===i?bond[1]:bond[0]]:null;
     return (h&&neighbor?.x>a.x+14?h+a.e:a.e+h)+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
   };
   let h=`<svg class="mol" viewBox="-24 -28 ${m.w+48} ${m.h+56}" xmlns="http://www.w3.org/2000/svg" role="${opts.click?'group':'img'}" aria-label="Molecular structure; atoms labeled A onward">`;
   for(const [a,b] of m.bonds)if(path.includes(a)&&path.includes(b)){const p=m.atoms[a],q=m.atoms[b];h+=`<line class="anim-path" pathLength="100" x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="#bfdbfe" stroke-width="17" stroke-linecap="round"/>`;}
-  for(const [arr,color,fill] of [[prin,'#059669','#d1fae5'],[sub,'#d97706','#fef3c7'],[opts.alpha||[],'#e11d48','#ffe4e6']])for(const i of arr){const a=m.atoms[i];h+=`<circle class="anim-halo" cx="${a.x}" cy="${a.y}" r="19" fill="${fill}" stroke="${color}" stroke-width="2"/>`;}
+  for(const [arr,color,fill] of [[prin,'#059669','#d1fae5'],[sub,'#d97706','#fef3c7'],[opts.alpha||[],'#e11d48','#ffe4e6']])for(const i of arr){const a=m.atoms[i],rx=Math.max(19,label(a,i).length*5+10);h+=`<ellipse class="anim-halo" cx="${a.x}" cy="${a.y}" rx="${rx}" ry="19" fill="${fill}" stroke="${color}" stroke-width="2"/>`;}
   for(const [bi,[a,b,n]] of m.bonds.entries()){
     const p=m.atoms[a],q=m.atoms[b],dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len;
     const ca=label(p,a)?16:0,cb=label(q,b)?16:0,col=path.includes(a)&&path.includes(b)?'#1d4ed8':'#0f172a';
@@ -91,14 +93,14 @@ function drawMolecule(m,opts={}){
     if(l)h+=`<text x="${a.x}" y="${a.y+6}" text-anchor="middle" style="font-size:16px;fill:${a.e==='O'?'#047857':a.e==='N'?'#1d4ed8':'#0f172a'}">${esc(l)}</text>`;
     if(opts.click){
       const y=l?a.y+26:a.y;
-      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}"><circle cx="${a.x}" cy="${y}" r="16"/><text x="${a.x}" y="${y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
+      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${a.x}" cy="${y}" r="16"/><text x="${a.x}" y="${y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
     }
     if(opts.num?.includes(i)){const ix=opts.num.indexOf(i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${a.x}" cy="${a.y-22}" r="10" fill="#2563eb"/><text x="${a.x}" y="${a.y-18}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
   });
   return h+'</svg>'+(opts.click?`<div class="atom-controls" aria-label="Atom selection buttons">${m.atoms.map((a,i)=>`<button class="atom-key" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Select atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${atomLabel(i)} <small>${a.e}</small></button>`).join('')}</div>`:'')+`<details class="graph-text"><summary>Accessible atom and bond description</summary><p>${esc(graphDescription(m))}</p></details>`;
 }
 
-return {valences,hydrogens,molecularFormula,graphDescription,drawMolecule};})();
+return {valences,hydrogens,molecularFormula,netCharge,formulaLabel,graphDescription,drawMolecule};})();
 const diagrams=(()=>{
 const {escapeHTML:esc}=validation;
 function drawDiagram(d,value,{concealAnswers=false}={}){
@@ -106,6 +108,13 @@ function drawDiagram(d,value,{concealAnswers=false}={}){
   let svg='',controls='';
   if(d.type==='fischer'){
     svg=`<line x1="180" y1="35" x2="180" y2="165"/><line x1="80" y1="100" x2="280" y2="100"/>`+[[180,25,d.top],[180,190,d.bottom],[50,105,d.left],[315,105,d.right]].map(([x,y,t])=>`<text x="${x}" y="${y}">${esc(t)}</text>`).join('');
+  }else if(d.type==='orbitals'){
+    const arrow=(x,y,down)=>{const start=y+(down?-11:11),end=y+(down?11:-11),wing=end+(down?-5:5);return `<path d="M${x} ${start} V${end} M${x-4} ${wing} L${x} ${end} L${x+4} ${wing}" stroke="#1d4ed8"/>`;};
+    for(const [i,row]of d.subshells.entries()){
+      const y=48+i*63;svg+=`<text x="45" y="${y+5}">${esc(row.label)}</text>`;
+      for(const [j,count]of row.electrons.entries()){const x=95+j*33;svg+=`<rect x="${x}" y="${y-18}" width="29" height="36"/>`;if(count)svg+=arrow(x+10,y,false);if(count===2)svg+=arrow(x+20,y,true);}
+    }
+    controls='<p>Each box is one orbital; arrows denote electron spin states, not motion. Row spacing is schematic, not an energy scale.</p><details><summary>Accessible orbital occupancy</summary><p>'+d.subshells.map(row=>`${esc(row.label)}: ${row.electrons.map(n=>n+' electron'+(n===1?'':'s')).join(', ')}`).join('; ')+'.</p></details>';
   }else if(d.type==='newman'){
     const angle=value??180;
     svg='<circle cx="180" cy="105" r="32" fill="white"/>';
@@ -136,7 +145,7 @@ function drawDiagram(d,value,{concealAnswers=false}={}){
 return {drawDiagram};})();
 const learn=(()=>{
 const {escapeHTML:esc,validateAnswer}=validation;
-const {drawMolecule}=molecules;
+const {drawMolecule,formulaLabel}=molecules;
 const {drawDiagram}=diagrams;
 function anatomy(parts,name){return `<div class="abar">${(parts||[]).map(([c,t,s],i)=>`<span class="npill ${esc(c)}" style="--i:${i}">${esc(t)}<small>${esc(s)}</small></span>`).join('')}<span class="final-merged">${esc(name)}</span></div>`;}
 function renderLearn(ch,molecules,state,ui){
@@ -146,14 +155,14 @@ function renderLearn(ch,molecules,state,ui){
   const good=challenge&&ui.checked&&validateAnswer({type:'atoms',answer:s.challenge.answer},ui.selected);
   const opts=challenge?{click:true,sel:ui.selected}:s.highlights;
   return `<div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(l.title)}</h1><span class="c-tag">${esc(l.tag)}</span></div><div class="stage">${drawMolecule(m,opts)}</div>${drawDiagram(s.diagram,ui.diagramValue)}
-  ${challenge?`<p>${esc(s.challenge.prompt)}</p><button class="btn pri" data-act="checkTry">Check selection</button> <button class="btn" data-act="try">Back to walkthrough</button>${ui.checked?`<div role="status" class="fbox ${good?'ok':'err'}">${good?esc(s.challenge.explanation):'Not yet. Select exactly the requested atoms; use the walkthrough for a hint.'}</div>`:''}`:`<div class="sbar"><button class="sbtn" data-act="prev" ${state.step===0?'disabled':''}>← Previous</button>${l.steps.map((t,i)=>`<button class="sbtn" data-act="step" data-idx="${i}" aria-pressed="${i===state.step}">${esc(t.label)}</button>`).join('')}<button class="sbtn" data-act="next" ${state.step===l.steps.length-1?'disabled':''}>Next →</button></div><div class="sexp" role="status">${s.text}</div>${revealed?anatomy(s.anatomy,m.name)+`<p class="formula">Formula: ${esc(m.formula)}</p>`:'<div class="abar">Structure name concealed until its explanation. <button class="btn" data-act="revealLearn">Reveal name</button></div>'}${s.challenge?'<button class="btn try-btn" data-act="try">🖐 Try It Yourself</button>':''}`}</section>
+  ${challenge?`<p>${esc(s.challenge.prompt)}</p><button class="btn pri" data-act="checkTry">Check selection</button> <button class="btn" data-act="try">Back to walkthrough</button>${ui.checked?`<div role="status" class="fbox ${good?'ok':'err'}">${good?esc(s.challenge.explanation):'Not yet. Select exactly the requested atoms; use the walkthrough for a hint.'}</div>`:''}`:`<div class="sbar"><button class="sbtn" data-act="prev" ${state.step===0?'disabled':''}>← Previous</button>${l.steps.map((t,i)=>`<button class="sbtn" data-act="step" data-idx="${i}" aria-pressed="${i===state.step}">${esc(t.label)}</button>`).join('')}<button class="sbtn" data-act="next" ${state.step===l.steps.length-1?'disabled':''}>Next →</button></div><div class="sexp" role="status">${s.text}</div>${revealed?anatomy(s.anatomy,m.name)+`<p class="formula">Formula: ${esc(formulaLabel(m))}</p>`:'<div class="abar">Structure name concealed until its explanation. <button class="btn" data-act="revealLearn">Reveal name</button></div>'}${s.challenge?'<button class="btn try-btn" data-act="try">🖐 Try It Yourself</button>':''}`}</section>
   <aside class="tstack">${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c} ${s.focus===k?'focus':''}" ${k===(s.focus||'rule')?'open':''}><summary><h2>${t}</h2></summary>${l.cards[k]}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
 }
 
 return {anatomy,renderLearn};})();
 const practice=(()=>{
 const {escapeHTML:esc,atomLabel}=validation;
-const {drawMolecule}=molecules;
+const {drawMolecule,formulaLabel}=molecules;
 const {drawDiagram}=diagrams;
 const {getProgress}=progress;
 const {anatomy}=learn;
@@ -164,7 +173,7 @@ function renderPractice(ch,molecules,state,ui){
   const switched=molecule!==(ex.stages[p.stage-1]?.molecule||ex.molecule);
   const opts=done?(ex.stages.at(-1).highlights||{}):{...(switched?{}:(ex.stages[p.stage-1]?.highlights||{})),...(s.type==='atoms'?{click:true,sel:ui.selected}:{})};
   return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div><div class="stage">${drawMolecule(molecules[molecule],opts)}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
-  ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Formula: ${esc(molecules[molecule].formula)}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
+  ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Formula: ${esc(formulaLabel(molecules[molecule]))}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
   ${done?ex.stages.map((st,i)=>`<div class="scard"><h2 class="shead">${i+1}. ${esc(st.prompt)}</h2><p><strong>${esc(solutionText(st))}</strong></p><div class="sexp">${esc(st.explanation)}</div></div>`).join(''):`${p.stage?`<p class="muted">${p.stage} earlier decision${p.stage>1?'s':''} completed.</p>`:''}<div class="scard"><h2 class="shead" tabindex="-1" id="stageTitle">${esc(s.prompt)}</h2><span class="stag">${esc(s.skill)}</span>${s.type==='choice'?`<div class="clist">${s.options.map((o,i)=>`<button class="copt" data-act="choice" data-idx="${i}" ${ui.correct?'disabled':''}><span class="clet">${atomLabel(i)}</span>${esc(o)}</button>`).join('')}</div>`:s.type==='atoms'?`<p>Select atoms on the structure using click or Tab and Enter. Selected: <strong>${ui.selected.map(atomLabel).join(', ')||'None'}</strong></p><button class="btn pri" data-act="checkAnswer" ${ui.correct?'disabled':''}>Check selection</button>`:`<form id="answerForm"><label for="answer">${s.type==='number'?`Numeric answer${s.unit?' ('+esc(s.unit)+')':''}`:'Your answer'}</label><input id="answer" class="tinp" autocomplete="off" spellcheck="false" ${s.type==='number'?'inputmode="decimal"':''} value="${esc(ui.value)}" ${ui.correct?'disabled':''}><button class="btn pri" type="submit" ${ui.correct?'disabled':''}>Check answer</button></form>`}
   ${ui.feedback?`<div class="fbox ${ui.correct?'ok':'err'}" role="status">${esc(ui.feedback)}</div>`:''}
   ${ui.correct?'<button class="btn suc" data-act="continue">Continue →</button>':`<button class="btn hint" data-act="hint" ${p.hints>=s.hints.length?'disabled':''}>${p.hints>=s.hints.length?'All hints shown':'Show next hint'}</button>${s.hints.slice(0,p.hints).map(h=>`<p class="sexp">${esc(h)}</p>`).join('')}`}</div><p class="locked">${ex.stages.length-p.stage-1} later stage(s) concealed until you continue.</p>`}</section></div>`;

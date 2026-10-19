@@ -4,7 +4,7 @@
     "chapters": 12,
     "lessons": 51,
     "workshops": 59,
-    "stages": 175,
+    "stages": 178,
     "molecules": 68
   },
   "schema": {
@@ -13,12 +13,13 @@
     "validator": "jsonschema 4.26.0; Draft 2020-12"
   },
   "unit": {
-    "groups": 20,
+    "groups": 26,
     "status": "passed",
     "runner": "Node.js built-in test runner",
     "files": [
       "tests/unit.test.mjs",
-      "tests/chapter02-review.test.mjs"
+      "tests/chapter02-review.test.mjs",
+      "tests/chapter03-review.test.mjs"
     ]
   },
   "auditInfrastructure": {
@@ -47,7 +48,7 @@
         "id": 3,
         "lessons": 3,
         "exercises": 3,
-        "stages": 9,
+        "stages": 12,
         "status": "passed"
       },
       {
@@ -140,6 +141,7 @@
       "Large-molecule atom controls have 44px touch targets",
       "Interactive Newman angle changes interpretation; Fischer diagram rendered",
       "Guided Newman captions withhold answers at changed angles; chair transfer switches graph; optical unit text and cards render",
+      "Chapter 3 mobile orbital occupancy, expanded cards and sources, quiz concealment, pointer/keyboard N selection, and explicit acetate charge",
       "TLC eluent slider updates model Rf",
       "pH slider updates ionization model",
       "Corrupt saved JSON recovers without crashing"

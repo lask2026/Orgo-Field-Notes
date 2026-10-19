@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "6adaab58d2ab9952457d9fe2d9a446aa1c3660cd16105c2bcc3f278bc11f538e",
+    "sha256": "32257f6257777bafe187575e285db0d132a5693386c1e8b896994ed1920da9de",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -28,6 +28,7 @@
           ]
         ]
       },
+      "context": "The ethene drawing is a companion bonding example only. These questions concern atomic orbitals and subshells, not the total electrons or molecular orbitals of C2H4. No atomic filling diagram is supplied during this workshop.",
       "stages": [
         {
           "id": "quantum:stage-1",
@@ -50,6 +51,28 @@
           "type": "number",
           "prompt": "How many electrons can a filled p subshell hold?",
           "unit": "electrons"
+        },
+        {
+          "id": "quantum:stage-4",
+          "type": "number",
+          "prompt": "For a hydrogen-like 3p orbital, how many radial nodes are present?",
+          "unit": "radial nodes"
+        },
+        {
+          "id": "quantum:stage-5",
+          "type": "number",
+          "prompt": "How many angular nodes does that 3p orbital have?",
+          "unit": "angular nodes"
+        },
+        {
+          "id": "quantum:stage-6",
+          "type": "choice",
+          "prompt": "In the usual multielectron-atom model, which listed n=3 subshell is lowest in energy?",
+          "options": [
+            "3s",
+            "3p",
+            "3d"
+          ]
         }
       ]
     },
@@ -158,7 +181,7 @@
         {
           "id": "amide-resonance:stage-3",
           "type": "choice",
-          "prompt": "For acetate, resonance contributors differ in…",
+          "prompt": "For acetamide, resonance contributors differ in…",
           "options": [
             "Positions of atoms",
             "Electron placement only",

@@ -1,6 +1,6 @@
 # Orgo Field Notes
 
-A reusable MCAT organic chemistry studio with **12 chapters, 51 lessons, 59 guided workshops, 175 stages, and 68 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
+A reusable MCAT organic chemistry studio with **12 chapters, 51 lessons, 59 guided workshops, 178 stages, and 68 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
 
 ## Open the application
 
@@ -20,7 +20,7 @@ npx playwright install chromium
 python -m pip install -r requirements-dev.txt
 node scripts/build.mjs
 python scripts/validate_schema.py
-node --test tests/unit.test.mjs
+npm test
 node tests/browser.mjs
 node tests/regression.mjs
 ```

@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "47542a7f6e5e7bb798d44a1c1beecc9f0022d7c2f57c44bce94638dc2b979e93",
+    "sha256": "b110e3ffcfaef84531c8362c82724b7a92b06be3793af1ea4e86ce4fed0d16a8",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -10,7 +10,7 @@
       "id": "acid-properties-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/acid-properties-step-1.png",
-      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "sha256": "57afa52c1d5a420b25c193e80a23be4125ad6fd6b3af25c6a06b52bc356e87f2",
       "width": 661,
       "height": 359
     },
@@ -18,7 +18,7 @@
       "id": "acid-properties-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/acid-properties-step-2.png",
-      "sha256": "b0acfa699107fec11d2d3f8560fbc026b4d5247b3b6062e7da34a00f5958005f",
+      "sha256": "f8add678e74a9898b8a7e1507ef2c8718181640f3e0a06537136ac00c56ef028",
       "width": 661,
       "height": 359
     },
@@ -34,7 +34,7 @@
       "id": "acid-reactions-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/acid-reactions-step-1.png",
-      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "sha256": "57afa52c1d5a420b25c193e80a23be4125ad6fd6b3af25c6a06b52bc356e87f2",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "acid-reactions-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/acid-reactions-step-3.png",
-      "sha256": "5fccc75301c8e3fcdb5226fb10cf3cf429b6a810235618e1e1f4803d1950a9c7",
+      "sha256": "4284c5b82787b1608af84a1958bb812169453306a7b1ab9cac19b45291c58379",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "reduction-decarboxylation-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/reduction-decarboxylation-step-1.png",
-      "sha256": "e55bf6e04f9e2039ee51833dd2e80b84265cf0af204cb39f1310f8ca164bbaa0",
+      "sha256": "9f7704b8e70ae3f06a47800bf1d716ec094357f71f4dc7550eec49ab7ee393e5",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "soap-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/soap-step-1.png",
-      "sha256": "3c7cf7fc6d11bdfe5e2e0af6d55a328ec4ed4be6d29c825f72961eb0899c3743",
+      "sha256": "0b05e065922b42ffa16d3cbee2cf5f04c4aee220cbc9dae3a3173c2c81b8d761",
       "width": 661,
       "height": 266
     },
@@ -82,7 +82,7 @@
       "id": "soap-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/soap-step-2.png",
-      "sha256": "7efc9a81e53c2d9afde52214d95fae002e70be2e7bc1fed166d2a8463ce2b6ad",
+      "sha256": "717bdb4711fe05a8a61a16e434b14252722eaaf9024b12f32b944bfc5524b955",
       "width": 661,
       "height": 266
     },
@@ -114,7 +114,7 @@
       "id": "acid-ratio-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/acid-ratio-stage-2-molecule.png",
-      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "sha256": "57afa52c1d5a420b25c193e80a23be4125ad6fd6b3af25c6a06b52bc356e87f2",
       "width": 661,
       "height": 359
     },
@@ -274,7 +274,7 @@
       "id": "lose-co2-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/lose-co2-stage-2-molecule.png",
-      "sha256": "cf2e941cc85b60b4fc60d5c38f85a6b99c139b5e6b8fb8445ed8c850d730c767",
+      "sha256": "cabbb4be19fcf42ca7a8ba4231039886069cfbd4cca2f85e6d633e111d06c6b2",
       "width": 661,
       "height": 359
     },
@@ -354,7 +354,7 @@
       "id": "soap-head-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/soap-head-stage-2-molecule.png",
-      "sha256": "d89fff878d90a1670db33ff77c9ef2ed8b5b2cfd3055fe387a4510eb4d0ba329",
+      "sha256": "bb8b9acd96c27a44a2c13f5db04b3115317c4f467a6e91e25d00ee0a7369e8a7",
       "width": 661,
       "height": 266
     },
@@ -402,7 +402,7 @@
       "id": "soap-head-complete",
       "kind": "practice-complete",
       "file": "screenshots/soap-head-complete.png",
-      "sha256": "03793f00d0ade2efd44690170e14dde97c22bcef7e1014b33760bcb22809a180",
+      "sha256": "8a788708fe8018e8fb9e8b76b4eedc28e5cb9297f61279db8f693d7525444659",
       "width": 1324,
       "height": 481
     },
@@ -410,7 +410,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "3142f994b533ca80a419dc92b7b6a83be52fad33dff196265c090d5c72d45a3d",
+      "sha256": "d33345d47beb98b33884d651d0b959d9742bb133c367f7955a349b55565092a6",
       "width": 1360,
       "height": 1008
     },
@@ -418,7 +418,7 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "af2123e5beb85ffacadb309e42c96fec99c7961d9f9bc774bdc0df48f6be3aa2",
+      "sha256": "b5043a491854f1bcb39065701faca4b1ff6cbd5758cd53c91bed89057add34bf",
       "width": 375,
       "height": 2078
     },
@@ -426,7 +426,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "120b23b92867a1fff7f3498eb158f6980cc86629889a933a30a1aee63e55ab8d",
+      "sha256": "e6ec5dd7b24e0740223b305cc4259fe120b692c4aa1741c4a52ccd02becd9860",
       "width": 375,
       "height": 2078
     }

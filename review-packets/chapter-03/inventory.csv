@@ -1,8 +1,8 @@
 caseId,kind,coverageItems
-ch03:blind:quantum,blind,3
+ch03:blind:quantum,blind,6
 ch03:blind:bond-count,blind,3
 ch03:blind:amide-resonance,blind,3
-ch03:exercise:quantum,exercise,3
+ch03:exercise:quantum,exercise,6
 ch03:exercise:bond-count,exercise,3
 ch03:exercise:amide-resonance,exercise,3
 ch03:lesson:orbitals,lesson,6

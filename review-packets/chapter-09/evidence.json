@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "b23b95564e8db1a0df158b2a1b9180a541f753f579eaa761297b0f9fd9884e9e",
+    "sha256": "3070ce84f12e3b643ebca6b649241ce127ee16e531b05d586bcdc36424202dd4",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -18,7 +18,7 @@
       "id": "families-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/families-step-2.png",
-      "sha256": "972bf9a6bdf9b79c725818479054f5bf8fdbc05d47a8ceff97c696935e48f9e5",
+      "sha256": "6f401bbf673682d3b7998f3b7857fc4a36563557f4bccc81b2814d4f4a59b31e",
       "width": 661,
       "height": 359
     },
@@ -42,7 +42,7 @@
       "id": "acyl-mechanism-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-2.png",
-      "sha256": "8fd9f7228a9cdd851eca282e57e8c0e19fe3cec80d073f12a0819074e86ee479",
+      "sha256": "68df59859341464b29cbc909740f4921ead0d411fcd6182dd535450f9c5398f7",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "acyl-mechanism-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-3.png",
-      "sha256": "dd6b35aa998177dd6893bf2c566e95d97091967969506d69b4c1e5e0c7ecd4fb",
+      "sha256": "4583b413c75c0686d6fbcb8d4f5256b6a2c103856a1f7036f09f2bf3e8867c5f",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "derivative-reactions-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/derivative-reactions-step-3.png",
-      "sha256": "5fccc75301c8e3fcdb5226fb10cf3cf429b6a810235618e1e1f4803d1950a9c7",
+      "sha256": "4284c5b82787b1608af84a1958bb812169453306a7b1ab9cac19b45291c58379",
       "width": 661,
       "height": 359
     },
@@ -106,7 +106,7 @@
       "id": "cyclic-derivative-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/cyclic-derivative-stage-2-molecule.png",
-      "sha256": "5d92d15bfe2fea611be96894f46fadcc0cb58b004be66ac7e6c8104ff891c756",
+      "sha256": "c47b4f3aa2df41a994aedf411dc20d5091ffeb1797ff83a8e085c1efd3c0ca15",
       "width": 661,
       "height": 359
     },

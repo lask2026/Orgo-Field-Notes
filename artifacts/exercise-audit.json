@@ -282,11 +282,14 @@
     "id": "quantum",
     "lesson": "orbitals",
     "molecule": "ethene",
-    "stages": 3,
+    "stages": 6,
     "types": [
       "choice",
       "number",
-      "number"
+      "number",
+      "number",
+      "number",
+      "choice"
     ],
     "browserStatus": "passed",
     "scientificReview": "Author reviewed; not independently expert verified"

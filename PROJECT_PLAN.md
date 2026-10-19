@@ -45,3 +45,10 @@ GitHub Pages-compatible files are requested; no remote repository or deployment 
 - Added reusable stage molecule overrides and Guided Practice Newman answer concealment; refreshed the common PDF font.
 - Outstanding visual teaching improvement: real chair/axial/equatorial drawings for the cyclohexane walkthrough.
 - The earlier Chapter 1 candidate audit remains pending adjudication; do not treat its geometry concerns as resolved by the Chapter 2 changes.
+
+## Chapter 3 review checkpoint
+
+- Implemented all accepted corrections and documented qualified/rejected interpretations in docs/CHAPTER_03_REVIEW_ADJUDICATION.md.
+- Added reusable atomic-filling schematics, revealed formula net-charge labels, clear two-carbon groups, and wider group highlights. Graph indices and composition metadata remain stable.
+- Extended quantum practice to six stages; current app total is 178 stages. Prior three-stage completion is no longer counted as completion of the expanded workshop.
+- Shared renderer changes require refreshed review packets for all chapters. Chapter 1 audit adjudication and a true Chapter 2 chair diagram remain outstanding.

@@ -265,7 +265,8 @@
             "newman",
             "spectrum",
             "tlc",
-            "acid"
+            "acid",
+            "orbitals"
           ]
         },
         "caption": {
@@ -327,6 +328,36 @@
             "additionalProperties": false
           },
           "minItems": 1
+        },
+        "subshells": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 12
+              },
+              "electrons": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 7,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 2
+                }
+              }
+            },
+            "required": [
+              "label",
+              "electrons"
+            ],
+            "additionalProperties": false
+          }
         }
       },
       "required": [
@@ -380,6 +411,20 @@
               "max",
               "unit",
               "peaks"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "orbitals"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "subshells"
             ]
           }
         }

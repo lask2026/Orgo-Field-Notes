@@ -89,3 +89,7 @@ Chapter 2 external-review follow-up: adjudicated six findings from the user's pa
 ## Chapter 2 second candidate review and local Llama results
 
 See docs/CHAPTER_02_FOLLOWUP_REVIEW.md for adjudication of seven new findings and all 11 disagreements in the eight completed local blind cases. The 13 matching keys out of 24 do not measure scientific accuracy: some matching answers have false reasoning. No answer key was changed to follow Llama. Confirmed wording and answer spoilers were repaired, explicit parenthesized aliases added, the chair-transfer graph corrected, and PDF glyph support repaired. The actual chair/axial/equatorial visualization remains open; the lessons disclose that their hexagons show connectivity only. External expert chemistry review remains pending.
+
+## Chapter 3 candidate review
+
+Adjudication: docs/CHAPTER_03_REVIEW_ADJUDICATION.md. Re-derived all nine original keys; none changed. Fixed the acetamide/acetate prompt mismatch, made revealed ionic charge explicit without changing charge-free composition metadata, improved two-carbon hydrogen labels and multi-character highlights, and added a carbon orbital-filling diagram. Expanded node/energy/bond-strength coverage with hydrogen-like versus multielectron qualifications and three original practice stages. The offset letter badge remains a separate control rather than a chemical bond endpoint. The candidate report is not expert verification.

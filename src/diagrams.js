@@ -4,6 +4,13 @@ export function drawDiagram(d,value,{concealAnswers=false}={}){
   let svg='',controls='';
   if(d.type==='fischer'){
     svg=`<line x1="180" y1="35" x2="180" y2="165"/><line x1="80" y1="100" x2="280" y2="100"/>`+[[180,25,d.top],[180,190,d.bottom],[50,105,d.left],[315,105,d.right]].map(([x,y,t])=>`<text x="${x}" y="${y}">${esc(t)}</text>`).join('');
+  }else if(d.type==='orbitals'){
+    const arrow=(x,y,down)=>{const start=y+(down?-11:11),end=y+(down?11:-11),wing=end+(down?-5:5);return `<path d="M${x} ${start} V${end} M${x-4} ${wing} L${x} ${end} L${x+4} ${wing}" stroke="#1d4ed8"/>`;};
+    for(const [i,row]of d.subshells.entries()){
+      const y=48+i*63;svg+=`<text x="45" y="${y+5}">${esc(row.label)}</text>`;
+      for(const [j,count]of row.electrons.entries()){const x=95+j*33;svg+=`<rect x="${x}" y="${y-18}" width="29" height="36"/>`;if(count)svg+=arrow(x+10,y,false);if(count===2)svg+=arrow(x+20,y,true);}
+    }
+    controls='<p>Each box is one orbital; arrows denote electron spin states, not motion. Row spacing is schematic, not an energy scale.</p><details><summary>Accessible orbital occupancy</summary><p>'+d.subshells.map(row=>`${esc(row.label)}: ${row.electrons.map(n=>n+' electron'+(n===1?'':'s')).join(', ')}`).join('; ')+'.</p></details>';
   }else if(d.type==='newman'){
     const angle=value??180;
     svg='<circle cx="180" cy="105" r="32" fill="white"/>';

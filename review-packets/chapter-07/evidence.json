@@ -1,7 +1,7 @@
 {
   "chapter": 7,
   "sourceSnapshot": {
-    "sha256": "f0e7a5fa4a7c7b895b9681105ec04dc49a003ecbf478dcc37c73e39328931816",
+    "sha256": "5ad4da5b200cd1091ad777f20a2ea08e73cf8dbd8bfc8da95f6ad074aa965d58",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -26,7 +26,7 @@
       "id": "alpha-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/alpha-step-2.png",
-      "sha256": "97911220d661583fa2369fa70096045b1df1c7709ebd060ed15f2970f87dbe9f",
+      "sha256": "b7b3c73748b6d8d9523a97fd1ac9553986826e88e450ff0abca2de146c7e63dc",
       "width": 661,
       "height": 359
     },
@@ -34,7 +34,7 @@
       "id": "tautomers-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/tautomers-step-1.png",
-      "sha256": "36b807e924f65066397e63ac29de71c7e2a2a6f304e97e4a39ece2538ddaff1b",
+      "sha256": "f8de990517661efbd4f20c30ef389309b15c10020ec3219c62d4512cfa2c333a",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "aldol-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/aldol-step-1.png",
-      "sha256": "33192d2f1746263b3d26f703dce5f23e33de8c977228bf5ad9f3373cdf7b930f",
+      "sha256": "3fd6aa7dcd0ad1ca30c43e0ab823e721f5b844d3d48876ee7350b18437506fb5",
       "width": 661,
       "height": 359
     },
@@ -74,7 +74,7 @@
       "id": "aldol-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/aldol-step-3.png",
-      "sha256": "8218f160f3a10b019baf72296ad3e3e8f9da3a18b3f41d9391d291fe621f2173",
+      "sha256": "670d74b2809ac7aa917fa02b3f5a52897fb52a93efdb4a78e0490fc7125a4c5d",
       "width": 661,
       "height": 359
     },
@@ -290,7 +290,7 @@
       "id": "aldol-map-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/aldol-map-stage-2-molecule.png",
-      "sha256": "574ad7df6c3cfba2cd7686301a822209e1c1703273981312b95c09912f859748",
+      "sha256": "c9268159ef023ef645e81ab78aafe4b49d50714a6304460b920aac6334b6b4b1",
       "width": 661,
       "height": 359
     },
@@ -442,7 +442,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "a3ab67285882e4d37f40a120e2a8a0bb9fb45cee4decdf41acbe18de2470ca7b",
+      "sha256": "290c05320eda5d22feb34b1e060ce6116786b45ec227023f547380931db3b60a",
       "width": 375,
       "height": 2116
     }

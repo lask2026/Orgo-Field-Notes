@@ -1,7 +1,7 @@
 {
   "chapter": 11,
   "sourceSnapshot": {
-    "sha256": "04e08efba01519905ba464cd2d92c0f4ce2445bf3ed9d01f14c1feb89813a482",
+    "sha256": "a3cf72bf7daba7d76cb851eaad5e894d929974d40d2ea1bb0feaf8649082f2fe",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -26,7 +26,7 @@
       "id": "ir-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/ir-step-2.png",
-      "sha256": "d84a57afba74a8fad7ed666aa971659a24e4c6f1d5cc3fe22a841190c962d7f2",
+      "sha256": "fd3feb494dc2ec32255a8a245ca54877abebb3632bd67f3582f6e91a5ce4e97b",
       "width": 661,
       "height": 359
     },
@@ -34,7 +34,7 @@
       "id": "ir-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/ir-step-3.png",
-      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "sha256": "57afa52c1d5a420b25c193e80a23be4125ad6fd6b3af25c6a06b52bc356e87f2",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "uv-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/uv-step-2.png",
-      "sha256": "3e007634678e3e93ea2b4369ad30cefaffe6865d0cf5cbc5923b603fde6da398",
+      "sha256": "abd9187b27145697084ca96ce0328c08e2f3d299250cb7e78ac055c9ba8fc7c6",
       "width": 661,
       "height": 359
     },
