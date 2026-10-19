@@ -3,7 +3,7 @@
   "chapter": 8,
   "title": "Carboxylic Acids",
   "sourceSnapshot": {
-    "sha256": "81b10e2290a0cb2e61f2e819143dbcf4a378e4b61e1aed4738d03600a37c4819",
+    "sha256": "1a683d2b84234d2d686caa9dc0651b55fd211ada11f402c068a812d3b5989dc5",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1273,26 +1273,14 @@
       "chapter": 8,
       "kind": "lesson",
       "itemIds": [
-        "acid-properties:rule",
-        "acid-properties:cue",
-        "acid-properties:trap",
-        "acid-properties:app",
         "acid-properties:step-1",
         "acid-properties:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "acid-properties",
-          "label": "Carboxylic acid structure and acidity",
           "title": "Carboxylic acid structure and acidity",
           "molecule": "aceticacid",
-          "tag": "Two oxygens stabilize the conjugate base",
-          "cards": {
-            "rule": "<p>A carboxyl group has C=O and OH bonded to the same carbon. Carboxylic acids hydrogen bond and can dimerize, especially in nonpolar media. Their carboxylates are resonance stabilized. Electron-withdrawing substituents generally increase acidity, with inductive effects weakening over distance.</p>",
-            "cue": "<p>pH above pKa → more carboxylate. pH below pKa → more neutral acid.</p>",
-            "trap": "<p>The OH of COOH is not an ordinary alcohol group. When a carbon ring bears a COOH substituent, the carboxyl carbon is outside the ring, attached to a ring carbon. A lactone can have an endocyclic acyl carbon, but its group is a cyclic ester, not free COOH. Larger hydrocarbon regions can still limit aqueous solubility.</p>",
-            "app": "<p>Ionization controls how fatty acids, drug acids, and amino-acid side chains partition between environments.</p>"
-          },
           "steps": [
             {
               "label": "1. Recognize COOH",
@@ -1325,78 +1313,588 @@
                 "caption": "Acid/carboxylate speciation model; approximate dilute-solution treatment."
               }
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Two oxygens stabilize the conjugate base",
-              "items": [
-                {
-                  "label": "Carboxyl group",
-                  "text": "C=O and OH on the same carbon"
-                },
-                {
-                  "label": "Carboxylate",
-                  "text": "Resonance-stabilized conjugate base"
-                },
-                {
-                  "label": "Environment",
-                  "text": "Hydrogen bonding and ionization"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Neutral acid versus carboxylate. The complete graphs retain all formal charges."
+          ]
+        },
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "pH above pKa",
-                  "text": "More carboxylate"
-                },
-                {
-                  "label": "pH below pKa",
-                  "text": "More neutral acid"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "COOH contains an ordinary alcohol OH"
-                },
-                {
-                  "label": "Check",
-                  "text": "The complete group; a ring-attached COOH carbon is outside the ring"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-properties:rule",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-properties:rule"
+      ],
+      "payload": {
+        "lessonId": "acid-properties",
+        "title": "Carboxylic acid structure and acidity",
+        "fullNote": "<p>A carboxyl group has C=O and OH bonded to the same carbon. Carboxylic acids hydrogen bond and can dimerize, especially in nonpolar media. Their carboxylates are resonance stabilized. Electron-withdrawing substituents generally increase acidity, with inductive effects weakening over distance.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Carboxylic Acid Centrosymmetric Dimers, Resonance Acidity & Inductive Distance Decay",
+          "formula": "RCOOH + NaHCO₃  →  RCOO⁻ Na⁺ + H₂O + CO₂(g)↑     (Diagnostic Fizzing Test for pKa < 6)",
+          "items": [
+            {
+              "label": "Dimeric Hydrogen Bonding",
+              "text": "Pairs of carboxylic acids form cyclic 8-membered rings with TWO O–H···O=C hydrogen bonds, giving higher boiling points than alcohols of the same MW."
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Drug/fatty acids",
-                  "text": "Ionization changes partitioning"
-                },
-                {
-                  "label": "Amino-acid side chains",
-                  "text": "Charge depends on environment"
-                }
-              ]
+            {
+              "label": "Inductive Substituent Effects",
+              "text": "Electron-withdrawing groups stabilize RCOO⁻ and lower pKa: CF₃COOH (pKa 0.2) < CCl₃COOH (0.7) < ClCH₂COOH (2.9) < CH₃COOH (4.76). Effect decays rapidly with distance (α > β > γ)!"
             }
+          ],
+          "chips": [
+            "Carboxylic Acid pKa ~4–5",
+            "8-Membered H-Bond Dimer → ↑↑ BP",
+            "EWG (CF₃, Cl, NO₂) → ↓ pKa",
+            "Dicarboxylic: pKa1 < pKa2"
+          ],
+          "comparison": [
+            [
+              "Alcohol (ROH, pKa ~16)",
+              "Negative charge localized on 1 O",
+              "Insoluble in NaHCO₃ and NaOH"
+            ],
+            [
+              "Phenol (ArOH, pKa ~10)",
+              "Delocalized over 1 O + 3 ring C atoms",
+              "Soluble in NaOH, insoluble in NaHCO₃"
+            ],
+            [
+              "Carboxylic Acid (pKa ~4.8)",
+              "Delocalized equally over TWO O atoms",
+              "Soluble in weak NaHCO₃ (evolves CO₂↑ gas!)"
+            ]
+          ],
+          "theme": "carboxylic-dimer",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Neutral acid versus carboxylate. The complete graphs retain all formal charges."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Recognize COOH",
+            "text": "<p>The acid functional group includes both oxygens and their shared carbon. Its carbon has no room for another carbon substituent beyond the existing skeleton.</p>",
+            "molecule": "aceticacid",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Change pH",
+            "text": "<p>Adjust pH around a model pKa of 4.8. At pH=pKa, [A−]=[HA]; two units above pKa gives a 100:1 ratio, about 99% A−.</p>",
+            "molecule": "acetate",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": true,
+            "diagram": {
+              "type": "acid",
+              "pKa": 4.8,
+              "caption": "Acid/carboxylate speciation model; approximate dilute-solution treatment."
+            }
+          }
+        ],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-properties:cue",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-properties:cue"
+      ],
+      "payload": {
+        "lessonId": "acid-properties",
+        "title": "Carboxylic acid structure and acidity",
+        "fullNote": "<p>pH above pKa → more carboxylate. pH below pKa → more neutral acid.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Ranking Carboxylic Acid Acidity (pKa) on the MCAT",
+          "prompt": "What differs between the carboxylic acids you are ranking?",
+          "items": [
+            {
+              "label": "Halogen Electronegativity & Count",
+              "outcome": "More Halogens & Higher EN → Lower pKa (Stronger Acid)",
+              "text": "FCH₂COOH (pKa 2.6) is stronger than ClCH₂COOH (2.9) > BrCH₂COOH (2.9); Cl₃CCOOH (0.7) is much stronger than ClCH₂COOH (2.9)."
+            },
+            {
+              "label": "Distance from –COOH (α vs. β vs. γ)",
+              "outcome": "Closer to –COOH → Stronger Inductive Pull (α > β > γ)",
+              "text": "2-chlorobutanoic acid (pKa 2.8) > 3-chlorobutanoic acid (4.0) > 4-chlorobutanoic acid (4.5) > butanoic acid (4.8)."
+            },
+            {
+              "label": "Dicarboxylic Acids (HOOC–(CH₂)_n–COOH)",
+              "outcome": "pKa1 Is Lower Than 4.8; pKa2 Is Higher Than 4.8!",
+              "text": "The neutral second –COOH acts as an inductive EWG to lower pKa1; once the first –COO⁻ forms, its −1 charge repels loss of the second H⁺ (raising pKa2)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-properties:trap",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-properties:trap"
+      ],
+      "payload": {
+        "lessonId": "acid-properties",
+        "title": "Carboxylic acid structure and acidity",
+        "fullNote": "<p>The OH of COOH is not an ordinary alcohol group. When a carbon ring bears a COOH substituent, the carboxyl carbon is outside the ring, attached to a ring carbon. A lactone can have an endocyclic acyl carbon, but its group is a cyclic ester, not free COOH. Larger hydrocarbon regions can still limit aqueous solubility.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Drawing Carboxylate Resonance by Breaking the C–C Single Bond or Using Periodic Column Size for Inductive Effect",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying I–CH₂COOH is stronger than F–CH₂COOH because iodine is larger."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "In inductive effects (H is NOT attached to the halogen!), ONLY electronegativity matters: F > Cl > Br > I (size only dominates when the acidic H is bonded directly to X, as in HI vs HF)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-properties:app",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-properties:app"
+      ],
+      "payload": {
+        "lessonId": "acid-properties",
+        "title": "Carboxylic acid structure and acidity",
+        "fullNote": "<p>Ionization controls how fatty acids, drug acids, and amino-acid side chains partition between environments.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Amino Acid α-COOH pKa (~2.2) & Bicarbonate Extraction Separations",
+          "items": [
+            {
+              "label": "Why Amino Acid α-COOH Has pKa ~2.2 (Not 4.8)",
+              "outcome": "Adjacent Protonated –NH₃⁺ Is a Powerful Inductive EWG!",
+              "text": "The positively charged α-ammonium group pulls electron density away from the carboxylate, stabilizing –COO⁻ by >2.5 pKa units."
+            },
+            {
+              "label": "IR Broad \"Hairy Beard\" (2500–3300 cm⁻¹) + C=O (1710 cm⁻¹)",
+              "outcome": "Unmistakable Carboxylic Acid IR Signature",
+              "text": "Dimer O–H stretching creates a massive, ultra-broad trough from 2500 to 3300 cm⁻¹ overlapping the sp³ C–H peaks."
+            },
+            {
+              "label": "Citric Acid Cycle Intermediates",
+              "outcome": "Citrate, Succinate, Malate Exist as Poly-Carboxylates at pH 7.4",
+              "text": "All carboxylic acid groups (pKa 3–5) are >99% ionized at physiological pH 7.4."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "aceticacid": {
             "name": "ethanoic acid",
@@ -1501,10 +1999,6 @@
       "chapter": 8,
       "kind": "lesson",
       "itemIds": [
-        "acid-reactions:rule",
-        "acid-reactions:cue",
-        "acid-reactions:trap",
-        "acid-reactions:app",
         "acid-reactions:step-1",
         "acid-reactions:step-2",
         "acid-reactions:step-3"
@@ -1512,16 +2006,8 @@
       "payload": {
         "lesson": {
           "id": "acid-reactions",
-          "label": "Formation and acyl substitution",
           "title": "Formation and acyl substitution",
           "molecule": "aceticacid",
-          "tag": "Activate the acid or use appropriate catalysis",
-          "cards": {
-            "rule": "<p>Primary alcohols and aldehydes can be oxidized to acids. Fischer esterification combines acid and alcohol under acid catalysis; removing water or using excess alcohol drives the reversible reaction. Direct acid plus amine usually first gives an ammonium carboxylate salt; efficient amide synthesis generally requires activation or dehydrating conditions.</p>",
-            "cue": "<p>Proton transfer is often faster than acyl substitution. Check it before drawing a new amide bond.</p>",
-            "trap": "<p>OH− is a poor leaving group. Acid catalysis can enable water loss; coupling reagents or reactive acid derivatives can enable amide formation. Do not draw spontaneous amide synthesis just by mixing acid and amine in water.</p>",
-            "app": "<p>Peptide synthesis uses activated carboxyl groups; enzyme-catalyzed biosynthesis likewise supplies activation and organization.</p>"
-          },
           "steps": [
             {
               "label": "1. Acid substrate",
@@ -1571,78 +2057,904 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Activate the acid or use appropriate catalysis",
-              "items": [
-                {
-                  "label": "Acid/base first",
-                  "text": "Acid plus amine often gives a salt"
-                },
-                {
-                  "label": "Activation/catalysis",
-                  "text": "Enable the desired acyl reaction"
-                },
-                {
-                  "label": "Equilibrium",
-                  "text": "Water removal or excess alcohol affects Fischer esterification"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Separate acid and ester examples; different carbon skeletons, not an esterification pair."
+          ]
+        },
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Acid plus amine in water",
-                  "text": "Consider proton transfer first"
-                },
-                {
-                  "label": "Activated acyl partner",
-                  "text": "Appropriate activation can enable amide formation"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Spontaneous amide from simply mixing acid and amine"
-                },
-                {
-                  "label": "Check",
-                  "text": "A viable catalyzed or activated pathway"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Peptide synthesis",
-                  "text": "Activated carboxyl groups"
-                },
-                {
-                  "label": "Biosynthesis",
-                  "text": "Activation and organization"
-                }
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-reactions:rule",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-reactions:rule"
+      ],
+      "payload": {
+        "lessonId": "acid-reactions",
+        "title": "Formation and acyl substitution",
+        "fullNote": "<p>Primary alcohols and aldehydes can be oxidized to acids. Fischer esterification combines acid and alcohol under acid catalysis; removing water or using excess alcohol drives the reversible reaction. Direct acid plus amine usually first gives an ammonium carboxylate salt; efficient amide synthesis generally requires activation or dehydrating conditions.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Carboxylic Acid Activation (SOCl₂, DCC/EDC), Fischer Esterification & Acyl Substitution",
+          "items": [
+            {
+              "label": "Addition–Elimination (Nucleophilic Acyl Substitution)",
+              "text": "Unlike aldehydes/ketones (which lack a leaving group), carboxylic acids and derivatives undergo nucleophilic addition to a tetrahedral intermediate followed by ELIMINATION of the leaving group to restore C=O.",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Converting –OH Into a Top-Tier Chloride (SOCl₂ or PCl₅)",
+              "text": "Unactivated –OH is a poor leaving group; thionyl chloride (SOCl₂) converts RCOOH into highly reactive acid chloride RCOCl (driven by irreversible SO₂↑ + HCl↑ gas evolution).",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Direct Amide Coupling Trap (Acid + Amine)",
+              "text": "Mixing RCOOH + R′NH₂ immediately transfers a proton to give an unreactive salt (RCOO⁻ R′NH₃⁺); forming an amide at room temp requires activating –COOH first with SOCl₂ or carbodiimides (DCC/EDC)!",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "SOCl₂ → Acid Chloride (RCOCl)",
+            "RCOOH + ROH + H⁺ ⇌ Ester (Fischer)",
+            "RCOOH + R′NH₂ + Δ → Amide (Need EDC/DCC at RT!)"
+          ],
+          "comparison": [
+            [
+              "Acid + Amine (Room Temp)",
+              "Acid–base reaction ONLY!",
+              "Forms unreactive carboxylate ammonium salt (RCOO⁻ R′NH₃⁺)"
+            ],
+            [
+              "DCC / EDC Coupling Agent",
+              "Activates –OH into good leaving group",
+              "Forms amide bond at room temperature without heat"
+            ],
+            [
+              "Fischer Esterification",
+              "RCOOH + R′OH + Cat. H₂SO₄ ⇌ Ester + H₂O",
+              "Acyl C–O cleaves; alcohol O* ends up in ester!"
+            ]
+          ],
+          "theme": "acyl-substitution",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Separate acid and ester examples; different carbon skeletons, not an esterification pair."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Acid substrate",
+            "text": "<p>The electrophilic acyl carbon is the carbonyl carbon. Protonating carbonyl oxygen increases electrophilicity in acid-catalyzed esterification.</p>",
+            "molecule": "aceticacid",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": false
+          },
+          {
+            "label": "2. Ester product pattern",
+            "text": "<p>An ester has an OR group where the acid had OH. This example is ethyl propanoate: the O-ethyl and three-carbon acyl portions have different origins.</p>",
+            "molecule": "ester",
+            "highlights": {
+              "path": [
+                2,
+                1,
+                0
+              ],
+              "prin": [
+                2,
+                3,
+                4
+              ],
+              "sub": [
+                5,
+                6
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-reactions:cue",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-reactions:cue"
+      ],
+      "payload": {
+        "lessonId": "acid-reactions",
+        "title": "Formation and acyl substitution",
+        "fullNote": "<p>Proton transfer is often faster than acyl substitution. Check it before drawing a new amide bond.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Isotope Tracking (¹⁸O) & Equilibrium Control in Fischer Esterification",
+          "prompt": "What question is asked about Fischer esterification (RCOOH + R′¹⁸OH ⇌ RCO¹⁸OR′ + H₂O)?",
+          "items": [
+            {
+              "label": "Where Does the ¹⁸O Label on the Alcohol Go?",
+              "outcome": "100% into the Ester (R–CO–¹⁸OR′); Water Gets Unlabeled H₂O!",
+              "text": "The alcohol oxygen attacks the carbonyl carbon; the carboxylic acid –OH is protonated twice to leave as unlabeled H₂O."
+            },
+            {
+              "label": "How Do You Drive Reversible Fischer Esterification (K_eq ~ 1–4) to 100%?",
+              "outcome": "Add Excess Alcohol OR Remove H₂O (Dean-Stark / Molecular Sieves)",
+              "text": "By Le Chatelier’s principle, removing water or using the alcohol as solvent shifts equilibrium toward the ester."
+            },
+            {
+              "label": "Why Does tert-Butanol Fail in Standard Acid Fischer Esterification?",
+              "outcome": "t-BuOH Forms a 3° Carbocation in Acid → Eliminates to Isobutylene!",
+              "text": "Make tert-butyl esters by reacting t-BuOH with an acid chloride + pyridine (or reacting RCOOH with isobutylene)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-reactions:trap",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-reactions:trap"
+      ],
+      "payload": {
+        "lessonId": "acid-reactions",
+        "title": "Formation and acyl substitution",
+        "fullNote": "<p>OH− is a poor leaving group. Acid catalysis can enable water loss; coupling reagents or reactive acid derivatives can enable amide formation. Do not draw spontaneous amide synthesis just by mixing acid and amine in water.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Assuming RCOOH + RNH₂ Forms an Amide Directly at Room Temperature",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Drawing a peptide/amide bond directly from RCOOH + R′NH₂ in water at 25 °C without a coupling reagent."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Amines (pKaH ~10) simply deprotonate carboxylic acids (pKa ~5) to form a stable carboxylate-ammonium salt; use EDC/DCC, SOCl₂, or biological ATP/aminoacyl-tRNA activation!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:acid-reactions:app",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "acid-reactions:app"
+      ],
+      "payload": {
+        "lessonId": "acid-reactions",
+        "title": "Formation and acyl substitution",
+        "fullNote": "<p>Peptide synthesis uses activated carboxyl groups; enzyme-catalyzed biosynthesis likewise supplies activation and organization.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Aminoacyl-tRNA Synthetase ATP Activation & Acyl-CoA Thioesters",
+          "items": [
+            {
+              "label": "Biological Carboxylic Acid Activation",
+              "outcome": "RCOO⁻ + ATP → Acyl-AMP (Mixed Anhydride) + PP_i",
+              "text": "Cells never heat carboxylic acids withSOCl₂; instead, ATP adenylates the carboxylate into a reactive acyl-AMP intermediate before forming acyl-CoA or aminoacyl-tRNA."
+            },
+            {
+              "label": "EDC / NHS Crosslinking in Bioconjugation",
+              "outcome": "Water-Soluble Carbodiimide for Protein Labeling",
+              "text": "Links Asp/Glu carboxylates to Lys primary amines by converting –COO⁻ into an activated O-acylisourea ester."
+            },
+            {
+              "label": "Cyclic Esters (Lactones) & Amides (Lactams)",
+              "outcome": "Intramolecular Fischer Esterification of γ/δ-Hydroxy Acids",
+              "text": "4-hydroxybutanoic acid or 5-hydroxypentanoic acid spontaneously cyclizes in acid to form stable 5-membered (γ) or 6-membered (δ) lactones."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "aceticacid": {
             "name": "ethanoic acid",
@@ -1823,26 +3135,14 @@
       "chapter": 8,
       "kind": "lesson",
       "itemIds": [
-        "reduction-decarboxylation:rule",
-        "reduction-decarboxylation:cue",
-        "reduction-decarboxylation:trap",
-        "reduction-decarboxylation:app",
         "reduction-decarboxylation:step-1",
         "reduction-decarboxylation:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "reduction-decarboxylation",
-          "label": "Reduction and beta-keto-acid decarboxylation",
           "title": "Reduction and beta-keto-acid decarboxylation",
           "molecule": "acetoaceticacid",
-          "tag": "Track carbon atoms, not just functional groups",
-          "cards": {
-            "rule": "<p>LiAlH4 followed by appropriate aqueous workup reduces a carboxylic acid to a primary alcohol. Ordinary NaBH4 conditions generally do not. Heating a beta-keto acid can release CO2 through a favorable cyclic transition state, initially giving an enol that tautomerizes to a carbonyl.</p>",
-            "cue": "<p>Reduction retains the acid carbon. Decarboxylation loses it as CO2.</p>",
-            "trap": "<p>A beta-keto acid has a ketone at the beta position relative to the acid carbon. Not every carboxylic acid readily decarboxylates on heating. The six-membered arrangement is a transition state, not a stable ring intermediate.</p>",
-            "app": "<p>Decarboxylation changes carbon count, a useful check when following metabolic or synthetic pathways.</p>"
-          },
           "steps": [
             {
               "label": "1. Number the beta-keto acid",
@@ -1884,78 +3184,721 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Track carbon atoms, not just functional groups",
-              "items": [
-                {
-                  "label": "Reduction",
-                  "text": "Retains the acid carbon"
-                },
-                {
-                  "label": "Decarboxylation",
-                  "text": "Loses the carboxyl carbon as CO2"
-                },
-                {
-                  "label": "Carbon audit",
-                  "text": "Recount before accepting the product"
-                }
-              ],
-              "figure": {
-                "type": "reaction",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Heating a suitable beta-keto acid can release CO2, followed by tautomerization; schematic net pathway."
+          ]
+        },
+        "molecules": {
+          "acetoaceticacid": {
+            "name": "3-oxobutanoic acid (acetoacetic acid)",
+            "formula": "C4H6O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "LiAlH4, then suitable workup",
-                  "text": "Acid to primary alcohol"
-                },
-                {
-                  "label": "Heated suitable beta-keto acid",
-                  "text": "CO2 loss, initial enol and tautomerization"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                4,
+                2
+              ],
+              [
+                0,
+                5,
+                1
+              ],
+              [
+                2,
+                6,
+                2
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Every acid readily decarboxylates on heating"
-                },
-                {
-                  "label": "Check",
-                  "text": "Substrate; the cyclic arrangement is a transition state"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "3-oxobutanoic acid (acetoacetic acid)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:reduction-decarboxylation:rule",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "reduction-decarboxylation:rule"
+      ],
+      "payload": {
+        "lessonId": "reduction-decarboxylation",
+        "title": "Reduction and beta-keto-acid decarboxylation",
+        "fullNote": "<p>LiAlH4 followed by appropriate aqueous workup reduces a carboxylic acid to a primary alcohol. Ordinary NaBH4 conditions generally do not. Heating a beta-keto acid can release CO2 through a favorable cyclic transition state, initially giving an enol that tautomerizes to a carbonyl.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Carboxylic Acid Reduction (LiAlH₄ / BH₃) & Thermal β-Keto Acid Decarboxylation",
+          "items": [
+            {
+              "label": "Complete Reduction to 1° Alcohol (LiAlH₄ or BH₃·THF)",
+              "text": "LiAlH₄ reduces RCOOH all the way to RCH₂OH; BH₃ (borane) selectively reduces carboxylic acids even in the presence of ketones or nitro groups!",
+              "step": "1",
+              "color": "green"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Synthesis",
-                  "text": "Track retained and lost carbon"
-                },
-                {
-                  "label": "Metabolism",
-                  "text": "Recount after decarboxylation"
-                }
-              ]
+            {
+              "label": "Requirement for Thermal Decarboxylation (C=O at the β-Position!)",
+              "text": "A carboxylic acid loses CO₂ upon gentle heating ONLY when a carbonyl (ketone, aldehyde, or second –COOH) sits at the β-carbon (3-oxocarboxylic acid / 1,3-dicarbonyl).",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "6-Membered Cyclic Transition State → Enol → Ketone",
+              "text": "Intramolecular H-bond between the –COOH proton and the β-C=O oxygen enables a concerted 6-electron pericyclic ring shift, releasing CO₂ gas and an enol that tautomerizes to a ketone.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "RCOOH + LiAlH₄ (or BH₃) → 1° Alcohol",
+            "NaBH₄ = NO Reaction with RCOOH",
+            "β-Keto Acid + Δ → Ketone + CO₂↑"
+          ],
+          "comparison": [
+            [
+              "Simple RCOOH + Heat",
+              "Stable up to >200 °C",
+              "Does NOT decarboxylate (would form unstable R⁻ carbanion)"
+            ],
+            [
+              "β-Keto Acid / Malonic Acid + Δ",
+              "Loses CO₂↑ at mild heat (50–100 °C)",
+              "Cyclic 6-membered TS → Enol ⇌ Methyl Ketone"
+            ],
+            [
+              "RCOOH + LiAlH₄ (then H₃O⁺)",
+              "Reduces all the way to 1° Alcohol (RCH₂OH)",
+              "Aldehyde intermediate is more reactive than acid (cannot stop!)"
+            ]
+          ],
+          "theme": "decarboxylation-ring",
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Heating a suitable beta-keto acid can release CO2, followed by tautomerization; schematic net pathway."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Number the beta-keto acid",
+            "text": "<p>C1 is the carboxyl carbon, C2 is alpha, and C3 is the ketone-bearing beta carbon.</p>",
+            "molecule": "acetoaceticacid",
+            "highlights": {
+              "num": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "prin": [
+                0,
+                4,
+                5
+              ],
+              "sub": [
+                2,
+                6
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Lose the acid carbon",
+            "text": "<p>The carboxyl carbon leaves as CO2. The remaining three-carbon fragment initially forms an enol, then becomes acetone by tautomerization.</p>",
+            "molecule": "acetone",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2
+              ],
+              "prin": [
+                1,
+                3
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "acetoaceticacid": {
+            "name": "3-oxobutanoic acid (acetoacetic acid)",
+            "formula": "C4H6O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                4,
+                2
+              ],
+              [
+                0,
+                5,
+                1
+              ],
+              [
+                2,
+                6,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "3-oxobutanoic acid (acetoacetic acid)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:reduction-decarboxylation:cue",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "reduction-decarboxylation:cue"
+      ],
+      "payload": {
+        "lessonId": "reduction-decarboxylation",
+        "title": "Reduction and beta-keto-acid decarboxylation",
+        "fullNote": "<p>Reduction retains the acid carbon. Decarboxylation loses it as CO2.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Will This Carboxylic Acid Decarboxylate Upon Heating?",
+          "prompt": "Count from the carboxylic acid carbon (C1) to the other carbonyl:",
+          "items": [
+            {
+              "label": "Carbonyl at C3 (β-Keto Acid or Malonic Acid, 1,3-Relationship)",
+              "outcome": "YES! Loses CO₂↑ Easily Upon Heating",
+              "text": "Replace the entire –COOH group with –H! (Example: acetoacetic acid → acetone + CO₂↑; malonic acid → acetic acid + CO₂↑)."
+            },
+            {
+              "label": "Carbonyl at C2 (α-Keto Acid) or C4 (γ-Keto Acid)",
+              "outcome": "NO Thermal Decarboxylation Without an Enzyme",
+              "text": "Cannot form the 6-membered cyclic transition state or stabilize the resulting α-enol/enolate; α-keto acids require TPP cofactor in biology."
+            },
+            {
+              "label": "Bridgehead Bicyclic β-Keto Acid (Bredt’s Rule Trap!)",
+              "outcome": "NO Decarboxylation! (Bridgehead Cannot Form Planar Enol C=C)",
+              "text": "Decarboxylation requires forming a Cα=Cβ enol double bond; if Cα is a rigid bicyclic bridgehead, Bredt’s rule forbids a bridgehead alkene!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "acetoaceticacid": {
+            "name": "3-oxobutanoic acid (acetoacetic acid)",
+            "formula": "C4H6O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                4,
+                2
+              ],
+              [
+                0,
+                5,
+                1
+              ],
+              [
+                2,
+                6,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "3-oxobutanoic acid (acetoacetic acid)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:reduction-decarboxylation:trap",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "reduction-decarboxylation:trap"
+      ],
+      "payload": {
+        "lessonId": "reduction-decarboxylation",
+        "title": "Reduction and beta-keto-acid decarboxylation",
+        "fullNote": "<p>A beta-keto acid has a ketone at the beta position relative to the acid carbon. Not every carboxylic acid readily decarboxylates on heating. The six-membered arrangement is a transition state, not a stable ring intermediate.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Decarboxylating Any Random Carboxylic Acid or Stopping LiAlH₄ at the Aldehyde",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Removing CO₂ from hexanoic acid or 4-oxopentanoic acid just because \"Δ\" is written over the arrow."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Only β-keto acids (3-oxo acids) and malonic acids (1,3-diacids) undergo spontaneous thermal decarboxylation via the 6-membered cyclic enol pathway!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "acetoaceticacid": {
+            "name": "3-oxobutanoic acid (acetoacetic acid)",
+            "formula": "C4H6O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                4,
+                2
+              ],
+              [
+                0,
+                5,
+                1
+              ],
+              [
+                2,
+                6,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "3-oxobutanoic acid (acetoacetic acid)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:reduction-decarboxylation:app",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "reduction-decarboxylation:app"
+      ],
+      "payload": {
+        "lessonId": "reduction-decarboxylation",
+        "title": "Reduction and beta-keto-acid decarboxylation",
+        "fullNote": "<p>Decarboxylation changes carbon count, a useful check when following metabolic or synthetic pathways.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Ketone Body Breath Acetone, Acetoacetic/Malonic Ester Synthesis & Citric Acid Cycle",
+          "items": [
+            {
+              "label": "Diabetic Ketoacidosis (Acetone Breath)",
+              "outcome": "Acetoacetate (3-Oxobutanoate) → Acetone + CO₂↑",
+              "text": "Acetoacetic acid is a β-keto acid that spontaneously decarboxylates in the blood and lungs, producing the fruity odor of acetone on the breath."
+            },
+            {
+              "label": "Isocitrate Dehydrogenase (TCA Cycle)",
+              "outcome": "Oxalosuccinate (β-Keto Acid) → α-Ketoglutarate + CO₂↑",
+              "text": "NAD⁺ first oxidizes the β-alcohol of isocitrate into a β-keto acid, setting up facile β-decarboxylation!"
+            },
+            {
+              "label": "Malonic & Acetoacetic Ester Syntheses",
+              "outcome": "1. Base (NaOEt) → 2. R–X (SN2) → 3. H₃O⁺, Δ (−CO₂)",
+              "text": "Temporarily uses an ester to acidify the α-CH₂ (pKa ~11) for clean alkylation, then hydrolyzes and decarboxylates off the extra carboxyl group."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "acetoaceticacid": {
             "name": "3-oxobutanoic acid (acetoacetic acid)",
@@ -2089,26 +4032,14 @@
       "chapter": 8,
       "kind": "lesson",
       "itemIds": [
-        "soap:rule",
-        "soap:cue",
-        "soap:trap",
-        "soap:app",
         "soap:step-1",
         "soap:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "soap",
-          "label": "Saponification and amphiphiles",
           "title": "Saponification and amphiphiles",
           "molecule": "laurate",
-          "tag": "Hydrolysis produces carboxylate salts",
-          "cards": {
-            "rule": "<p>Saponification is base-promoted ester hydrolysis, including hydrolysis of triacylglycerols to glycerol and fatty-acid salts. A fatty-acid carboxylate has a polar ionic head and a nonpolar hydrocarbon tail, allowing micelle formation under suitable conditions.</p>",
-            "cue": "<p>Head interacts with water; tails gather away from water.</p>",
-            "trap": "<p>Neutralizing a free fatty acid makes its salt, but that acid–base reaction is not ester hydrolysis. A micelle has hydrophobic material inside; it is not the same structure as a lipid bilayer.</p>",
-            "app": "<p>Soap can disperse nonpolar material into water through aggregates. Aggregation depends on concentration, ionic conditions, and tail structure.</p>"
-          },
           "steps": [
             {
               "label": "1. Find the head group",
@@ -2149,80 +4080,777 @@
               },
               "reveal": false
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Hydrolysis produces carboxylate salts",
-              "items": [
-                {
-                  "label": "Ester hydrolysis",
-                  "text": "Base-promoted saponification"
-                },
-                {
-                  "label": "Products",
-                  "text": "Carboxylate salts and alcohol-derived fragments"
-                },
-                {
-                  "label": "Aggregation",
-                  "text": "Polar heads and nonpolar tails can assemble"
-                }
-              ],
-              "figure": {
-                "type": "micelle",
-                "steps": [],
-                "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
+          ]
+        },
+        "molecules": {
+          "laurate": {
+            "name": "dodecanoate (laurate)",
+            "formula": "C12H23O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 282,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 340,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 398,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 456,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 514,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 572,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 630,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 688,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115,
+                "charge": -1
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Ester cleavage by base",
-                  "text": "Saponification"
-                },
-                {
-                  "label": "Free-acid neutralization",
-                  "text": "Acid/base chemistry, not ester hydrolysis"
-                }
-              ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "A micelle is the same as a bilayer"
-                },
-                {
-                  "label": "Check",
-                  "text": "Aggregate architecture and head/tail orientation"
-                }
-              ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Soap aggregates",
-                  "text": "Can disperse nonpolar material"
-                },
-                {
-                  "label": "Assembly",
-                  "text": "Depends on concentration, ions and tail structure"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
               ],
-              "figure": {
-                "type": "micelle",
-                "steps": [],
-                "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
-              }
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                7,
+                8,
+                1
+              ],
+              [
+                8,
+                9,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                0,
+                12,
+                2
+              ],
+              [
+                0,
+                13,
+                1
+              ]
+            ],
+            "w": 728,
+            "h": 200,
+            "cond": "dodecanoate (laurate)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:soap:rule",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "soap:rule"
+      ],
+      "payload": {
+        "lessonId": "soap",
+        "title": "Saponification and amphiphiles",
+        "fullNote": "<p>Saponification is base-promoted ester hydrolysis, including hydrolysis of triacylglycerols to glycerol and fatty-acid salts. A fatty-acid carboxylate has a polar ionic head and a nonpolar hydrocarbon tail, allowing micelle formation under suitable conditions.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Saponification of Triacylglycerols, Irreversible Acid–Base Driving Force & Micelles",
+          "items": [
+            {
+              "label": "Step 1–2: Nucleophilic Addition of HO⁻ & Alkoxide Expulsion",
+              "text": "Hydroxide attacks the ester carbonyl to form a tetrahedral intermediate, which collapses by expelling the alkoxide (RO⁻) to form a carboxylic acid (RCOOH) andRO⁻.",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Step 3: The Irreversible Acid–Base Driving Force!",
+              "text": "Alkoxide (RO⁻, conjugate acid pKa ~16) immediately deprotonates the carboxylic acid (RCOOH, pKa ~5) to form a resonance-stabilized carboxylate (RCOO⁻, ΔpKa > 11 → K_eq > 10¹¹)!",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Amphiphilic Self-Assembly (Micelles vs. Bilayers)",
+              "text": "Single-tailed fatty acid salts (cone-shaped) pack into spherical MICELLES above the critical micelle concentration (CMC); double-tailed phospholipids (cylindrical) form planar BILAYERS.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Triacylglycerol + 3 NaOH → Glycerol + 3 RCOO⁻Na⁺ (Soap)",
+            "Micelle: Hydrophobic Tails In, –COO⁻ Heads Out"
+          ],
+          "comparison": [
+            [
+              "Saponification (Ester + NaOH)",
+              "Irreversible in base!",
+              "Step 1: HO⁻ attacks C=O → Step 2: RO⁻ leaves → Step 3: RO⁻ deprotonates RCOOH"
+            ],
+            [
+              "Soap Micelle in Water",
+              "Amphiphilic fatty acid salt (C₁₂–C₁₈)",
+              "Nonpolar tails dissolve grease inside core; ionic –COO⁻ heads face H₂O"
+            ],
+            [
+              "Hard Water (Ca²⁺ / Mg²⁺)",
+              "Forms insoluble (RCOO)₂Ca↓ scum",
+              "Sulfonate detergents (R–SO₃⁻Na⁺) stay soluble in hard water"
+            ]
+          ],
+          "theme": "micelle-saponification",
+          "figure": {
+            "type": "micelle",
+            "steps": [],
+            "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
           }
         },
+        "figureSteps": [],
+        "molecules": {
+          "laurate": {
+            "name": "dodecanoate (laurate)",
+            "formula": "C12H23O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 282,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 340,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 398,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 456,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 514,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 572,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 630,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 688,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                7,
+                8,
+                1
+              ],
+              [
+                8,
+                9,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                0,
+                12,
+                2
+              ],
+              [
+                0,
+                13,
+                1
+              ]
+            ],
+            "w": 728,
+            "h": 200,
+            "cond": "dodecanoate (laurate)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:soap:cue",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "soap:cue"
+      ],
+      "payload": {
+        "lessonId": "soap",
+        "title": "Saponification and amphiphiles",
+        "fullNote": "<p>Head interacts with water; tails gather away from water.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Why Saponification Is Irreversible & How Micelles Solubilize Oils",
+          "prompt": "What aspect of ester hydrolysis or lipid assembly is tested?",
+          "items": [
+            {
+              "label": "Why Is Base-Promoted Ester Hydrolysis Irreversible?",
+              "outcome": "Final Deprotonation (RCOOH + RO⁻ → RCOO⁻ + ROH) Locks the Product!",
+              "text": "Once the negatively charged carboxylate (RCOO⁻) forms, nucleophilic attack by ROH is electrostatically impossible; NaOH is a stoichiometric reagent, not a catalyst!"
+            },
+            {
+              "label": "Single-Chain Soap vs. Double-Chain Phospholipid",
+              "outcome": "1 Chain (Cone) = Spherical Micelle; 2 Chains (Cylinder) = Bilayer",
+              "text": "Steric packing geometry dictates whether an amphiphile forms a single-layer micelle core or a two-leaflet cell membrane."
+            },
+            {
+              "label": "What Drives Micelle Formation Thermodynamically?",
+              "outcome": "Hydrophobic Effect: ↑ Entropy (ΔS > 0) of Released Bulk Water Molecules!",
+              "text": "Burying nonpolar hydrocarbon tails releases ordered \"clathrate cage\" water molecules back into bulk water, increasing solvent entropy."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "laurate": {
+            "name": "dodecanoate (laurate)",
+            "formula": "C12H23O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 282,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 340,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 398,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 456,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 514,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 572,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 630,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 688,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                7,
+                8,
+                1
+              ],
+              [
+                8,
+                9,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                0,
+                12,
+                2
+              ],
+              [
+                0,
+                13,
+                1
+              ]
+            ],
+            "w": 728,
+            "h": 200,
+            "cond": "dodecanoate (laurate)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:soap:trap",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "soap:trap"
+      ],
+      "payload": {
+        "lessonId": "soap",
+        "title": "Saponification and amphiphiles",
+        "fullNote": "<p>Neutralizing a free fatty acid makes its salt, but that acid–base reaction is not ester hydrolysis. A micelle has hydrophobic material inside; it is not the same structure as a lipid bilayer.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Saying Hydrophobic Tails \"Attract Each Other Strongly\" as the Primary Driver of Micelles",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Claiming micelles form primarily because nonpolar tails have stronger attractions than water-water H-bonds."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "The hydrophobic effect is ENTROPY-driven (ΔS_water > 0): water molecules maximize their hydrogen-bonding freedom by excluding nonpolar chains into a shared core!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "laurate": {
+            "name": "dodecanoate (laurate)",
+            "formula": "C12H23O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 282,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 340,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 398,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 456,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 514,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 572,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 630,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 688,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 50,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 0,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                7,
+                8,
+                1
+              ],
+              [
+                8,
+                9,
+                1
+              ],
+              [
+                9,
+                10,
+                1
+              ],
+              [
+                10,
+                11,
+                1
+              ],
+              [
+                0,
+                12,
+                2
+              ],
+              [
+                0,
+                13,
+                1
+              ]
+            ],
+            "w": 728,
+            "h": 200,
+            "cond": "dodecanoate (laurate)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch08:lesson:soap:app",
+      "chapter": 8,
+      "kind": "lesson",
+      "itemIds": [
+        "soap:app"
+      ],
+      "payload": {
+        "lessonId": "soap",
+        "title": "Saponification and amphiphiles",
+        "fullNote": "<p>Soap can disperse nonpolar material into water through aggregates. Aggregation depends on concentration, ionic conditions, and tail structure.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Bile Salt Emulsification, Pancreatic Lipase & Fatty Acid Melting Points",
+          "items": [
+            {
+              "label": "Bile Salts (Cholate / Chenodeoxycholate)",
+              "outcome": "Facial Amphiphiles Emulsify Dietary Triacylglycerols",
+              "text": "Break large fat globules into tiny mixed micelles in the duodenum, vastly increasing surface area for pancreatic lipase."
+            },
+            {
+              "label": "Saturated vs. Cis-Unsaturated Fatty Acids",
+              "outcome": "More Carbons → ↑ MP; More Cis (Z) Double Bonds → ↓↓ MP",
+              "text": "Stearic acid (18:0) is a waxy solid at 37 °C; oleic acid (18:1 cis-Δ⁹) and arachidonic acid (20:4) are liquids because cis kinks disrupt van der Waals packing."
+            },
+            {
+              "label": "Acid Workup After Saponification",
+              "outcome": "RCOO⁻Na⁺ (Water-Soluble) + HCl → RCOOH (Organic-Soluble)",
+              "text": "Adding strong acid protonates the soap carboxylate back into a neutral, water-insoluble free fatty acid."
+            }
+          ],
+          "figure": {
+            "type": "micelle",
+            "steps": [],
+            "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
+          }
+        },
+        "figureSteps": [],
         "molecules": {
           "laurate": {
             "name": "dodecanoate (laurate)",

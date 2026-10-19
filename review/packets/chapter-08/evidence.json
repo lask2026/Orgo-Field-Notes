@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "81b10e2290a0cb2e61f2e819143dbcf4a378e4b61e1aed4738d03600a37c4819",
+    "sha256": "1a683d2b84234d2d686caa9dc0651b55fd211ada11f402c068a812d3b5989dc5",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,9 +34,9 @@
       "id": "acid-properties-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/acid-properties-visuals.png",
-      "sha256": "3c37f51be030b7d87f2b035db2bde9e6713014cdfe28836c4158d5e546ccf4d5",
+      "sha256": "2505e131f49645d0492913c1a4ade1ed79eaafc639600676247aeb2cbe526a6e",
       "width": 607,
-      "height": 1759
+      "height": 2271
     },
     {
       "id": "acid-reactions-step-1",
@@ -66,9 +66,9 @@
       "id": "acid-reactions-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/acid-reactions-visuals.png",
-      "sha256": "949d00c5ddf327bee4b35206593b869f3d472bd661bbdde3b412f2f5ff6a2862",
+      "sha256": "d4f0d3f5432ecbed10ae1a028afd8b3f78966f1f3f02e85c084540401a086a78",
       "width": 607,
-      "height": 1742
+      "height": 2385
     },
     {
       "id": "reduction-decarboxylation-step-1",
@@ -90,9 +90,9 @@
       "id": "reduction-decarboxylation-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/reduction-decarboxylation-visuals.png",
-      "sha256": "fb024583a08ed093bbd60828949e521ed0985fd55facf83efe74c5c582c09090",
+      "sha256": "f677a57e5f235bf0eb8ace91aa00fa1cdfe23bb085b082e81d659a73f1c79a2b",
       "width": 607,
-      "height": 1778
+      "height": 2364
     },
     {
       "id": "soap-step-1",
@@ -114,9 +114,9 @@
       "id": "soap-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/soap-visuals.png",
-      "sha256": "46f8d29680675661b59a3b1ba5765ac66c58b35f2fd439e9d5caa2545a07be9f",
+      "sha256": "3ce9336107bec3f399cf26e6f71a6ffd3e65c3be291fb5e503e7b143b096289e",
       "width": 607,
-      "height": 1949
+      "height": 2422
     },
     {
       "id": "acid-ratio-stage-1-molecule",
@@ -442,23 +442,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "1eee0d79d6cc2a38ded58323d5e23cd73a2e22886d47726d5db1e40c7efa1857",
+      "sha256": "74fbafeb4a95f5a0bf9cef4462d6298645b724b84177bdd8b1225ada78864bd8",
       "width": 1360,
-      "height": 2143
+      "height": 2655
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "44bf9ae9de735fa2d4bcbef5d57b74beaa4d48ac8014ba742fd60faaffbdfba7",
+      "sha256": "50906be0343494319575ffe25a27e0844090c568e20b8a14c7e76a5d70ed9e2e",
       "width": 607,
-      "height": 1035
+      "height": 2681
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "1ce5582ffc2c4d6f426a630a2935c0b018382b16571762008d10fb82fbf8cb65",
+      "sha256": "90f9545c8c97f0fd1923eb744ca55757b7e66c7b577a5083c4e74c02233b9803",
       "width": 1000,
       "height": 741
     },
@@ -466,17 +466,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "ff0a40b2ad5bf4e28633b046b22a66d08688720c77d031aab5571d91ba79adf1",
+      "sha256": "a2c088ff4a6a1d8ff97a1a72520f04bbddf6b8e10bafb409c0abdae7a4a58ec8",
       "width": 375,
-      "height": 3954
+      "height": 5120
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "25ea7894bad3cae3e0f1116fe74a4dcebb1e6342502854b3aae3f3d5bf7dc838",
+      "sha256": "67c11f6b73dfb0975b028b810fa4434690d7507bdd290275e9d13b8f4c86eb84",
       "width": 375,
-      "height": 3954
+      "height": 5120
     },
     {
       "id": "projection-mobile-dark",
