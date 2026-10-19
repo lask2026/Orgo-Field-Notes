@@ -116,6 +116,7 @@ def build(directory):
     for key,label in [('rule','Core Rules'),('cue','Memory Cues'),('trap','Common Mistakes / MCAT Traps'),('app','MCAT Applications')]:
      add(story,f"{lesson['id']}:{key} | {label}",'Heading2');add(story,lesson['cards'][key])
      visual=lesson['visualCards'][key];add(story,'Schematic summary: '+escape(visual['title']));
+     if visual.get('figure'):add(story,'Chemistry diagram: '+escape(visual['figure']['caption']))
      for item in visual['items']:add(story,escape(item['label']+' — '+item['text']))
     picture(story,directory,shots,lesson['id']+'-visuals',600)
     for i,s in enumerate(lesson['steps']):

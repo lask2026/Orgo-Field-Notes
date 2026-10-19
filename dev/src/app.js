@@ -23,7 +23,7 @@ export function startApp(data){
   function syncCards(){document.querySelectorAll('.tstack details[data-section]').forEach(d=>{ui.openSections[d.dataset.section]=d.open;});}
   function renderCardsOnly(focus){
     const stack=document.querySelector('.tstack');if(!stack||state.mode!=='learn')return;
-    const ch=chapter(),l=ch.lessons[state.lesson];stack.innerHTML=renderLearnCards(ch,l,l.steps[state.step],ui);if(focus)stack.querySelector(focus)?.focus();
+    const ch=chapter(),l=ch.lessons[state.lesson];stack.innerHTML=renderLearnCards(ch,l,l.steps[state.step],ui,molecules,Boolean(l.steps[state.step].reveal||ui.revealLearn));if(focus)stack.querySelector(focus)?.focus();
   }
   function render(focus){
     syncCards();

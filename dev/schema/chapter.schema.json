@@ -959,6 +959,44 @@
             ],
             "additionalProperties": false
           }
+        },
+        "figure": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "enum": [
+                "structures",
+                "reaction",
+                "resonance",
+                "projection",
+                "overlap",
+                "polarimeter",
+                "micelle",
+                "extraction",
+                "distillation",
+                "column"
+              ]
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "maxItems": 3,
+              "uniqueItems": true
+            },
+            "caption": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "type",
+            "steps",
+            "caption"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [

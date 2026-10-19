@@ -3,7 +3,7 @@ process.chdir(projectRoot);
 import fs from 'node:fs';
 const chapters=fs.readdirSync('dev/chapters').filter(f=>/^chapter-\d\d.json$/.test(f)).sort().map(f=>JSON.parse(fs.readFileSync('dev/chapters/'+f)));
 const data={chapters,molecules:JSON.parse(fs.readFileSync('dev/chapters/molecules.json'))};
-const files=['validation','progress','animations','molecules','diagrams','visuals','viewer3d','learn','practice','app'];
+const files=['validation','progress','animations','molecules','diagrams','cardchemistry','visuals','viewer3d','learn','practice','app'];
 // Namespaces avoid collisions while retaining separately testable ES modules.
 let code='';
 for(const name of files){

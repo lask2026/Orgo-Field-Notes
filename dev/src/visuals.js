@@ -1,3 +1,4 @@
+import {renderChemicalFigure} from './cardchemistry.js';
 import {escapeHTML as esc} from './validation.js';
 export function cardKey(ch,lesson,kind){return `${ch.id}:${lesson.id}:${kind}`;}
 export function renderVisualSummary(spec,key,selected=0){
@@ -8,7 +9,8 @@ export function renderVisualSummary(spec,key,selected=0){
  }
  return `<div class="visual-diagram visual-${esc(spec.layout)}" role="group" aria-label="${esc(spec.layout)} schematic"><div class="visual-root">${esc(spec.title)}</div><${spec.layout==='flow'?'ol':'ul'} class="visual-nodes">${nodes}</${spec.layout==='flow'?'ol':'ul'}></div>`;
 }
-export function renderVisualCardBody(lesson,kind,ui={},key=lesson.id+':'+kind){
+export function renderVisualCardBody(lesson,kind,ui={},key=lesson.id+':'+kind,chemistry={}){
  const full=Boolean(ui.fullNotes?.[key]),spec=lesson.visualCards[kind],id='note-'+key.replace(/[^a-zA-Z0-9_-]/g,'-');
- return `<div class="visual-card-body" data-card="${esc(key)}"><div class="visual-card-strip"><span>Schematic summary</span><button type="button" class="btn" data-act="cardNote" data-card="${esc(key)}" aria-expanded="${full}" aria-controls="${id}">${full?'Compact card':'Full note'}</button></div><div class="visual-card-compact" ${full?'hidden':''}>${renderVisualSummary(spec,key,ui.cueBranches?.[key])}<p class="visual-scope">Summary only; open the full note for scope and conditions.</p></div><div class="visual-card-note" id="${id}" ${full?'':'hidden'}>${lesson.cards[kind]}</div></div>`;
+ const figure=renderChemicalFigure(spec.figure,lesson,chemistry,key),summary=renderVisualSummary(spec,key,ui.cueBranches?.[key]);
+ return `<div class="visual-card-body" data-card="${esc(key)}"><div class="visual-card-strip"><span>Schematic summary</span><button type="button" class="btn" data-act="cardNote" data-card="${esc(key)}" aria-expanded="${full}" aria-controls="${id}">${full?'Compact card':'Full note'}</button></div><div class="visual-card-compact" ${full?'hidden':''}>${figure}${figure&&kind!=='cue'?`<details class="visual-key"><summary>Read visual key</summary>${summary}</details>`:summary}<p class="visual-scope">Summary only; open the full note for scope and conditions.</p></div><div class="visual-card-note" id="${id}" ${full?'':'hidden'}>${lesson.cards[kind]}</div></div>`;
 }

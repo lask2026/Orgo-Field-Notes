@@ -8,7 +8,7 @@ Completed 2026-10-19. All 12 chapters are implemented; there are no placeholder 
 - Reusable rendering, animation, learning, practice, validation, progress, and schematic-diagram modules.
 - Twelve chapter JSON files, shared molecule repository, documented JSON Schemas, and automated tests.
 - GitHub Pages-compatible build in `dist/` and a Pages workflow.
-- Standalone `Orgo-Field-Notes-offline.html` (380 KiB), with no runtime network dependency.
+- Standalone `Orgo-Field-Notes-offline.html` (400 KiB), with no runtime network dependency.
 - A meaningful Git checkpoint after every chapter. Original reference files are preserved; textbook sources are excluded from Git/builds.
 
 Both principal modes are preserved: Learn & Explore and Guided Practice. V5 styles, color roles, dark mode, step highlighting, animations, and name-assembly patterns are retained. No Exam Mode or Mistake Review was added.
@@ -35,7 +35,7 @@ Both principal modes are preserved: Learn & Explore and Guided Practice. V5 styl
 - Draft 2020-12 validation: 12 chapter documents plus the molecule repository passed.
 - Unit/integration: 60 application test groups passed, including graph/formula consistency, references, answer semantics, storage bounds, challenge concealment, revised stereochemical aliases, Fischer consistency, polarimetry arithmetic, atomic occupancy/node models, two-carbon labels, explicit ionic charge and prior-completion invalidation. Eight additional audit-infrastructure, fourteen model-panel and four project-layout groups passed (86 Node groups total).
 - Full Playwright run: every lesson step and embedded atom challenge, every guided stage with rejection and success paths, keyboard atom selection, dark mode, reduced motion, mobile navigation, and offline navigation passed.
-- Final regression: 26 groups passed, including stage persistence, export/import/reset, strict naming punctuation, assisted progress, both website-to-offline and offline-to-offline downloads, and answer checking with networking disabled.
+- Final regression: 28 groups passed, including stage persistence, export/import/reset, strict naming punctuation, assisted progress, both website-to-offline and offline-to-offline downloads, and answer checking with networking disabled.
 - All 51 concepts checked at 320, 375, and 768 px without page overflow. Large-molecule alternative atom buttons have 44 px touch targets. Targeted contrast corrections were applied. Desktop, mobile, Fischer, and Newman screenshots were visually reviewed.
 - No JavaScript page errors were recorded in the passing final suites.
 
@@ -69,7 +69,7 @@ Migration verification preserved the canonical source and historical review/pack
 
 ## Visual notes and illustrative inspection
 
-Canonical schematic summaries provide rule flows/comparisons, selectable cue branches, trap contrasts and application maps, with distinct expandable full notes. Inline and fullscreen graph projections work offline and preserve atom identities. Active Guided Practice and learn atom challenges retain the 2D answer canvas. Names, formulas and author notes remain concealed until revealed. The projection uses arbitrary display depth, not physical conformer geometry; no PubChem verification or independent chemistry sign-off is claimed. Added interface tests and the full browser/regression suites check these software behaviors.
+Diagram-first chemistry cards include canonical molecular drawings, schematic reactions/resonance, projections, matched spectra and apparatus cartoons, with text keys and distinct expandable full notes. Inline and fullscreen graph projections work offline and preserve atom identities. Active Guided Practice and learn atom challenges retain the 2D answer canvas. Names, formulas and author notes remain concealed until revealed. The projection uses arbitrary display depth, not physical conformer geometry; no PubChem verification or independent chemistry sign-off is claimed. Added interface tests and the full browser/regression suites check these software behaviors.
 
 ## Start reviewing
 

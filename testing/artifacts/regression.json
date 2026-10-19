@@ -1,6 +1,7 @@
 {
   "date": "2026-10-19",
   "checks": [
+    "Chemistry structure is visible before text key; canonical molecular drawing loads in compact card",
     "Visual/full views differ; individual and bulk toggles preserve state through theme and step changes; cue branches update their outcome",
     "Canonical visual notes expand/compact; inline projection keyboard rotation; concealed modal identity; Escape cleanup and focus restoration",
     "Correct stage progress persists across reload",
@@ -17,6 +18,7 @@
     "TLC eluent slider updates model Rf",
     "pH slider updates ionization model",
     "Chapter 4 speciation labels/extremes and accessible slider, alpha challenge, forward equation, no early numeric answer, 1e5/+1 parsing",
+    "Chemistry diagram metadata contrast >=4.5:1 in both themes and viewports",
     "Chapter 5 actual active-step and disabled-choice contrast >=4.5:1 in light/dark at mobile/desktop; aliases and product formula",
     "Chapter 6 isopropyl alcohol alias, reduced product formula, new cyanohydrin atom-pair assessment and visible carbonyl flow",
     "Current-stage flow appears only after correct submission in both themes at mobile width; intentional empty next highlights clear it",

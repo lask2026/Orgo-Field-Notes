@@ -71,6 +71,6 @@ export function buildCases(ch,molecules){
 export function sourceSnapshot(ch,molecules){
  // Logical source IDs stay stable across a physical folder move. Every byte is
  // still hashed; the manifest resolves the current physical source directory.
- const files=['app.js','learn.js','practice.js','molecules.js','diagrams.js','visuals.js','viewer3d.js','validation.js','styles.css','additions.css','shell.html'];
+ const files=['app.js','learn.js','practice.js','molecules.js','diagrams.js','cardchemistry.js','visuals.js','viewer3d.js','validation.js','styles.css','additions.css','shell.html'];
  const source={chapter:ch,molecules,engine:Object.fromEntries(files.map(f=>['src/'+f,hash(fs.readFileSync(projectPath('source',f)))]))};return {sha256:hash(source),note:'Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes.'};
 }
