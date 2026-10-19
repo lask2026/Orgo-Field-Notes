@@ -9,3 +9,6 @@ artifacts/downloaded-offline*.html
 review-results/llama/
 review-results/ai-studio/
 tmp/pdfs/
+review-results/panel/
+review-results/expert/
+review-config/*.local.json

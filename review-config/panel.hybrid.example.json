@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "contextTokens": 32768,
+  "maxOutputTokens": 8192,
+  "timeoutSeconds": 600,
+  "reviewers": [
+    {"id": "local", "provider": "ollama", "model": "llama3.1:8b", "endpoint": "http://127.0.0.1:11434"},
+    {"id": "gemini", "provider": "gemini", "model": "CHOOSE_MODEL_ID_FROM_AI_STUDIO", "apiKeyEnv": "GEMINI_API_KEY"}
+  ],
+  "challengeReviewer": "gemini"
+}

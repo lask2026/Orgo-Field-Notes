@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "contextTokens": 16384,
+  "maxOutputTokens": 4096,
+  "timeoutSeconds": 600,
+  "reviewers": [
+    {"id": "local", "provider": "ollama", "model": "llama3.1:8b", "endpoint": "http://127.0.0.1:11434"}
+  ],
+  "challengeReviewer": "local"
+}
