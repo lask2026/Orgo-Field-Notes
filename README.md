@@ -25,7 +25,7 @@ node tests/browser.mjs
 node tests/regression.mjs
 ```
 
-If Playwright is supplied by a shared runtime, set `NODE_PATH` to that runtime's `node_modules` directory instead of installing it. The test runner also recognizes standard Windows Chrome/Edge installations. Test scripts start and stop their own server on port 4173; do not run them concurrently or while the development server is using that port. `CHAPTER=6` limits the browser suite to Chapter 6; in PowerShell use `$env:CHAPTER='6'`.
+The test runners first use a project-installed Playwright (or one already available through `NODE_PATH`). On this machine they can also automatically use the installed Codex runtime under your user home directory, without setting environment variables. On another machine, use the installation commands above. If no installation is available, the tests print setup instructions. The test runner also recognizes standard Windows Chrome/Edge installations. Test scripts start and stop their own server on port 4173; do not run them concurrently or while the development server is using that port. `CHAPTER=6` limits the browser suite to Chapter 6; in PowerShell use `$env:CHAPTER='6'`.
 
 `node scripts/check-chapter.mjs 6` runs schema, unit/integration, build, and chapter browser checks in sequence, stops on failure, then appends the passed checkpoint to the logs. Git commits are separate explicit checkpoints.
 

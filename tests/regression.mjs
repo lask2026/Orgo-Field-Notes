@@ -1,6 +1,6 @@
 // Final product-level checks that span chapters and exported files.
-import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';
-const {chromium}=createRequire(import.meta.url)('playwright');
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';import {pathToFileURL} from 'node:url';
+import {chromium} from './playwright-runtime.mjs';
 const data=fs.readdirSync('chapters').filter(x=>/^chapter-/.test(x)).sort().map(x=>JSON.parse(fs.readFileSync('chapters/'+x)));
 const server=spawn(process.execPath,['scripts/serve.mjs'],{stdio:'pipe',windowsHide:true});await new Promise((r,j)=>{server.stdout.once('data',r);server.once('error',j);});
 let browser;const report={date:'2026-10-19',checks:[],errors:[]};

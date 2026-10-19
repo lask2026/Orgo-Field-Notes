@@ -1,5 +1,5 @@
-import fs from 'node:fs';import path from 'node:path';import {createRequire} from 'node:module';import {spawn} from 'node:child_process';import assert from 'node:assert/strict';import {pathToFileURL} from 'node:url';
-const require=createRequire(import.meta.url);const {chromium}=require('playwright');
+import fs from 'node:fs';import path from 'node:path';import {spawn} from 'node:child_process';import assert from 'node:assert/strict';import {pathToFileURL} from 'node:url';
+import {chromium} from './playwright-runtime.mjs';
 const chapters=fs.readdirSync('chapters').filter(f=>/^chapter-\d\d.json$/.test(f)).sort().map(f=>JSON.parse(fs.readFileSync('chapters/'+f)));const only=Number(process.env.CHAPTER||0);const run=only?chapters.filter(c=>c.id===only):chapters;
 const server=spawn(process.execPath,['scripts/serve.mjs'],{stdio:'pipe',windowsHide:true});await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.once('error',reject);});
 let browser;const report={date:'2026-10-19',chapters:[],checks:[],errors:[]};
