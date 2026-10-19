@@ -1,0 +1,784 @@
+[
+  {
+    "chapter": 1,
+    "id": "gp1a",
+    "lesson": "naming",
+    "molecule": "branch",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp1b",
+    "lesson": "naming",
+    "molecule": "fake_pent",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp2a",
+    "lesson": "alcohols",
+    "molecule": "enol",
+    "stages": 3,
+    "types": [
+      "choice",
+      "atoms",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp2b",
+    "lesson": "alcohols",
+    "molecule": "ynol5",
+    "stages": 3,
+    "types": [
+      "choice",
+      "atoms",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp3a",
+    "lesson": "rings",
+    "molecule": "cyhex",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp3b",
+    "lesson": "rings",
+    "molecule": "cyol",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp4a",
+    "lesson": "diols",
+    "molecule": "vicinal",
+    "stages": 2,
+    "types": [
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp4b",
+    "lesson": "diols",
+    "molecule": "geminal",
+    "stages": 2,
+    "types": [
+      "atoms",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp5a",
+    "lesson": "carbonyls",
+    "molecule": "ketone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp5b",
+    "lesson": "carbonyls",
+    "molecule": "hyald",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp6a",
+    "lesson": "derivatives",
+    "molecule": "namide",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 1,
+    "id": "gp6b",
+    "lesson": "derivatives",
+    "molecule": "hyoxo",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "isomer-pair",
+    "lesson": "connectivity",
+    "molecule": "ether",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "butane-rotation",
+    "lesson": "conformations",
+    "molecule": "butane",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "stereocenters",
+    "lesson": "chirality",
+    "molecule": "butanediol",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "fischer-cip",
+    "lesson": "configuration",
+    "molecule": "butanol2",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "ez-ee",
+    "lesson": "alkene",
+    "molecule": "z-butene",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "text",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 3,
+    "id": "quantum",
+    "lesson": "orbitals",
+    "molecule": "ethene",
+    "stages": 3,
+    "types": [
+      "choice",
+      "number",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 3,
+    "id": "bond-count",
+    "lesson": "sigma-pi",
+    "molecule": "ethyne",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 3,
+    "id": "amide-resonance",
+    "lesson": "hybridization",
+    "molecule": "acetamide",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 4,
+    "id": "pka-equilibrium",
+    "lesson": "acids",
+    "molecule": "aceticacid",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 4,
+    "id": "identify-partners",
+    "lesson": "partners",
+    "molecule": "bromoethane",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 4,
+    "id": "sn2-rate",
+    "lesson": "substitution",
+    "molecule": "bromoethane",
+    "stages": 3,
+    "types": [
+      "choice",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 4,
+    "id": "carbon-redox",
+    "lesson": "redox",
+    "molecule": "acetaldehyde",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 4,
+    "id": "selective-reduction",
+    "lesson": "selectivity",
+    "molecule": "ketoester",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "atoms",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 5,
+    "id": "classify-alcohol",
+    "lesson": "properties",
+    "molecule": "tbutanol",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 5,
+    "id": "oxidize-secondary",
+    "lesson": "oxidation",
+    "molecule": "isopropanol",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 5,
+    "id": "protection",
+    "lesson": "activation",
+    "molecule": "acetal",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 5,
+    "id": "quinone-redox",
+    "lesson": "phenols",
+    "molecule": "quinone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 6,
+    "id": "addition-site",
+    "lesson": "carbonyl",
+    "molecule": "acetaldehyde",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 6,
+    "id": "hemiacetal-identify",
+    "lesson": "oxygen-addition",
+    "molecule": "hemiacetal",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 6,
+    "id": "cyanohydrin-count",
+    "lesson": "nitrogen-addition",
+    "molecule": "cyanohydrin",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 6,
+    "id": "hydride-product",
+    "lesson": "carbonyl-redox",
+    "molecule": "acetone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 7,
+    "id": "alpha-map",
+    "lesson": "alpha",
+    "molecule": "ketone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 7,
+    "id": "enolate-control",
+    "lesson": "tautomers",
+    "molecule": "ketone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 7,
+    "id": "aldol-map",
+    "lesson": "aldol",
+    "molecule": "aldol",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "atoms"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 7,
+    "id": "michael-site",
+    "lesson": "conjugate",
+    "molecule": "methylvinylketone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "atoms",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 8,
+    "id": "acid-ratio",
+    "lesson": "acid-properties",
+    "molecule": "aceticacid",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 8,
+    "id": "make-ester",
+    "lesson": "acid-reactions",
+    "molecule": "ester",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 8,
+    "id": "lose-co2",
+    "lesson": "reduction-decarboxylation",
+    "molecule": "acetoaceticacid",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 8,
+    "id": "soap-head",
+    "lesson": "soap",
+    "molecule": "laurate",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 9,
+    "id": "cyclic-derivative",
+    "lesson": "families",
+    "molecule": "betalactam",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 9,
+    "id": "acyl-order",
+    "lesson": "acyl-mechanism",
+    "molecule": "methylacetate",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 9,
+    "id": "hydrolysis-products",
+    "lesson": "derivative-reactions",
+    "molecule": "methylacetate",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 10,
+    "id": "glycine-charge",
+    "lesson": "amino-acids",
+    "molecule": "glycine",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 10,
+    "id": "peptide-link",
+    "lesson": "peptides",
+    "molecule": "glycylglycine",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 10,
+    "id": "strecker-map",
+    "lesson": "synthesis",
+    "molecule": "aminonitrile",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 10,
+    "id": "phosphate-links",
+    "lesson": "phosphorus",
+    "molecule": "dimethylphosphate",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 11,
+    "id": "ir-read",
+    "lesson": "ir",
+    "molecule": "acetone",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 11,
+    "id": "uv-energy",
+    "lesson": "uv",
+    "molecule": "butadiene",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 11,
+    "id": "nmr-ethyl",
+    "lesson": "nmr",
+    "molecule": "ethylacetate",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "number",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 11,
+    "id": "combined-data",
+    "lesson": "combine",
+    "molecule": "acetone",
+    "stages": 3,
+    "types": [
+      "number",
+      "choice",
+      "text"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 12,
+    "id": "acid-extraction",
+    "lesson": "solubility",
+    "molecule": "benzoicacid",
+    "stages": 3,
+    "types": [
+      "atoms",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 12,
+    "id": "choose-distillation",
+    "lesson": "distillation",
+    "molecule": "toluene",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 12,
+    "id": "rf-calculation",
+    "lesson": "tlc",
+    "molecule": "benzoicacid",
+    "stages": 3,
+    "types": [
+      "number",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 12,
+    "id": "chromatography-match",
+    "lesson": "specialized",
+    "molecule": "glycylglycine",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  }
+]

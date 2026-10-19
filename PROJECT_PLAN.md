@@ -31,7 +31,7 @@ GitHub Pages-compatible files are requested; no remote repository or deployment 
 - Chapters 2–12 authoring and chapter checks: complete.
 - Twelve meaningful chapter commits: complete.
 - Both local builds and GitHub Pages deployment workflow: complete.
-- Final all-chapter regression, accessibility spot checks, and report: completing final audit.
+- Final all-chapter regression, accessibility spot checks, chemistry review log, and completion report: complete.
 
 ## Remaining external work
 

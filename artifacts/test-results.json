@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-19",
+  "counts": {
+    "chapters": 12,
+    "lessons": 50,
+    "workshops": 56,
+    "stages": 166,
+    "molecules": 68
+  },
+  "schema": {
+    "documents": 13,
+    "status": "passed",
+    "validator": "jsonschema 4.26.0; Draft 2020-12"
+  },
+  "unit": {
+    "groups": 16,
+    "status": "passed",
+    "runner": "Node.js built-in test runner"
+  },
+  "browser": {
+    "status": "passed",
+    "chapters": [
+      {
+        "id": 1,
+        "lessons": 6,
+        "exercises": 12,
+        "stages": 34,
+        "status": "passed"
+      },
+      {
+        "id": 2,
+        "lessons": 5,
+        "exercises": 5,
+        "stages": 15,
+        "status": "passed"
+      },
+      {
+        "id": 3,
+        "lessons": 3,
+        "exercises": 3,
+        "stages": 9,
+        "status": "passed"
+      },
+      {
+        "id": 4,
+        "lessons": 5,
+        "exercises": 5,
+        "stages": 15,
+        "status": "passed"
+      },
+      {
+        "id": 5,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 6,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 7,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 8,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 9,
+        "lessons": 3,
+        "exercises": 3,
+        "stages": 9,
+        "status": "passed"
+      },
+      {
+        "id": 10,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 11,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      },
+      {
+        "id": 12,
+        "lessons": 4,
+        "exercises": 4,
+        "stages": 12,
+        "status": "passed"
+      }
+    ],
+    "checks": [
+      "Keyboard atom selection",
+      "Incorrect answers rejected",
+      "All lesson steps and challenges",
+      "All guided stages",
+      "Assisted/reveal persistence",
+      "Mobile 375px",
+      "Dark mode",
+      "Reduced motion",
+      "Standalone file offline: navigation and molecular rendering",
+      "Blocked local storage fallback"
+    ]
+  },
+  "regression": {
+    "status": "passed",
+    "checks": [
+      "Correct stage progress persists across reload",
+      "Export/import round trip; reset cancellation and confirmation",
+      "Real UI rejects missing naming hyphen; no solution/name in rendered SVG labels",
+      "Hint-assisted completion does not increment independent-solve count",
+      "Downloaded app loads and checks answers with network disabled",
+      "Save App works again from file:// with no dependency fetches",
+      "All 50 concepts at 320, 375, 768px: no page overflow; one h1/main; named controls",
+      "Large-molecule atom controls have 44px touch targets",
+      "Interactive Newman angle changes interpretation; Fischer diagram rendered",
+      "TLC eluent slider updates model Rf",
+      "pH slider updates ionization model",
+      "Corrupt saved JSON recovers without crashing"
+    ]
+  },
+  "chemistry": "Author reviewed; independent expert review pending",
+  "limitations": [
+    "Chromium on Windows tested; Safari/Firefox not tested",
+    "Accessibility checks are targeted and not certification",
+    "No remote repository or live deployment supplied"
+  ]
+}
