@@ -3,7 +3,7 @@
   "chapter": 10,
   "title": "Nitrogen- and Phosphorus-Containing Compounds",
   "sourceSnapshot": {
-    "sha256": "75ebfabac926e1afaa25b3101f0cd673bcb4324e5f7d651ce92509e05cf663ea",
+    "sha256": "163a79182f0b65a9a66a5220c65c0d92571f7d4b1d0adb7991e63147fce8aace",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1477,7 +1477,73 @@
                 "caption": "L-alanine Fischer projection; the horizontal bonds point toward you."
               }
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Ionization depends on pH",
+              "items": [
+                {
+                  "label": "Inventory",
+                  "text": "Include all ionizable side-chain groups"
+                },
+                {
+                  "label": "pH versus pKa",
+                  "text": "Assign predominant group forms"
+                },
+                {
+                  "label": "Sum",
+                  "text": "Net zero does not mean no formal charges"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "No extra ionizable side chain",
+                  "text": "Use the pKa pair bracketing the neutral species"
+                },
+                {
+                  "label": "Ionizable side chain",
+                  "text": "Find the neutral species before choosing the pKa pair"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "A zwitterion has no charges"
+                },
+                {
+                  "label": "Check",
+                  "text": "Positive and negative formal charges can sum to zero"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Asp/Glu versus Lys/Arg",
+                  "text": "Often opposite charge near neutral pH"
+                },
+                {
+                  "label": "Histidine",
+                  "text": "Protonation strongly depends on pH"
+                },
+                {
+                  "label": "Side chains",
+                  "text": "Classify polar/nonpolar behavior"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "alanine": {
@@ -1676,7 +1742,69 @@
               },
               "reveal": false
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "An amide links amino-acid residues",
+              "items": [
+                {
+                  "label": "Linkage",
+                  "text": "Carbonyl C to next residue N"
+                },
+                {
+                  "label": "Peptide group",
+                  "text": "Approximately planar; restricted C–N rotation"
+                },
+                {
+                  "label": "Sequence",
+                  "text": "N-terminus to C-terminus"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Peptide C–N",
+                  "text": "Partial double-bond character restricts rotation"
+                },
+                {
+                  "label": "Adjacent backbone single bonds",
+                  "text": "Supply much of the flexibility"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Peptide bonds join two alpha carbons"
+                },
+                {
+                  "label": "Check",
+                  "text": "Carbonyl C to N; formation requires activation"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Helices and sheets",
+                  "text": "Backbone hydrogen bonding"
+                },
+                {
+                  "label": "Folding",
+                  "text": "Side-chain interactions and hydrophobic effects"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "glycylglycine": {
@@ -1853,7 +1981,69 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Track where the carboxyl carbon comes from",
+              "items": [
+                {
+                  "label": "Strecker stage",
+                  "text": "Aldehyde, ammonia and cyanide chemistry"
+                },
+                {
+                  "label": "Aminonitrile",
+                  "text": "Follow the nitrile carbon"
+                },
+                {
+                  "label": "Hydrolysis",
+                  "text": "Nitrile carbon becomes carboxyl carbon"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Strecker",
+                  "text": "Cyanide carbon becomes carboxyl carbon"
+                },
+                {
+                  "label": "Gabriel–malonate variant",
+                  "text": "Alkylation builds the side chain; decarboxylation removes one carboxyl group"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Every amino-acid product must be racemic"
+                },
+                {
+                  "label": "Check",
+                  "text": "Glycine is achiral; substrate and chiral conditions matter"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Achiral lab routes",
+                  "text": "Usually racemic chiral products"
+                },
+                {
+                  "label": "Enzyme control",
+                  "text": "Can select product stereochemistry"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "aminonitrile": {
@@ -2181,7 +2371,73 @@
                 "explanation": "A is P, the central atom in the phosphate group."
               }
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "compare",
+              "title": "Phosphoesters differ from phosphoanhydrides",
+              "items": [
+                {
+                  "label": "P–O–C",
+                  "text": "Phosphate ester linkage"
+                },
+                {
+                  "label": "Two ester links",
+                  "text": "Phosphodiester context"
+                },
+                {
+                  "label": "P–O–P",
+                  "text": "Phosphoanhydride linkage"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "DNA/RNA backbone",
+                  "text": "Phosphodiester"
+                },
+                {
+                  "label": "Between ATP phosphates",
+                  "text": "Phosphoanhydride"
+                },
+                {
+                  "label": "Near-neutral phosphate buffer",
+                  "text": "H₂PO₄⁻ / HPO₄²⁻; distinct pKa regions"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Breaking one ATP bond releases energy"
+                },
+                {
+                  "label": "Check",
+                  "text": "Overall free-energy difference, including solvation and electrostatics"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Phosphoryl transfer",
+                  "text": "Can couple reactions"
+                },
+                {
+                  "label": "Polymerization",
+                  "text": "Pyrophosphate release/hydrolysis can help favor the process"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "dimethylphosphate": {

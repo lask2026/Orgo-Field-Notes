@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "75ebfabac926e1afaa25b3101f0cd673bcb4324e5f7d651ce92509e05cf663ea",
+    "sha256": "163a79182f0b65a9a66a5220c65c0d92571f7d4b1d0adb7991e63147fce8aace",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -39,6 +39,14 @@
       "height": 300
     },
     {
+      "id": "amino-acids-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/amino-acids-visuals.png",
+      "sha256": "e6004e540a51c3fdac4f7b5b4da1a296c3dd16f6200bbd5cedfb13778b6230a6",
+      "width": 607,
+      "height": 1805
+    },
+    {
       "id": "peptides-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/peptides-step-1.png",
@@ -53,6 +61,14 @@
       "sha256": "1b96c2877352a42d6e8b0fc62086f970b1a40251ba2f20b73f10cec7a35f9e8e",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "peptides-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/peptides-visuals.png",
+      "sha256": "80f06c35435b277a31519289c7fb63a1ff8df096d2e96d7eec88435a91ab6be6",
+      "width": 607,
+      "height": 1742
     },
     {
       "id": "synthesis-step-1",
@@ -79,6 +95,14 @@
       "height": 359
     },
     {
+      "id": "synthesis-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/synthesis-visuals.png",
+      "sha256": "4d77b8c50d1ee848795dc0c60ffce1278c89b531c1b7e355383ee578a7e4d0ca",
+      "width": 607,
+      "height": 1723
+    },
+    {
       "id": "phosphorus-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/phosphorus-step-1.png",
@@ -101,6 +125,14 @@
       "sha256": "2612847130a511c3a5d65e04095d904c91fc86d06b5ffb68b7a8048705ebfc24",
       "width": 699,
       "height": 647
+    },
+    {
+      "id": "phosphorus-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/phosphorus-visuals.png",
+      "sha256": "08d391476f7db61d885158491d8baac0fef8829c35c076fdac55409e52e49442",
+      "width": 607,
+      "height": 1757
     },
     {
       "id": "glycine-charge-stage-1-molecule",
@@ -506,23 +538,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "82eea17274071adbd1dd7dd08a87e716b1aee6821b762ad2b5e91e579ecab4a1",
+      "sha256": "3934669dfb2016f5342f2baff049dd5b2365c16317241b55f1e83346b1d94fc4",
       "width": 1360,
-      "height": 1103
+      "height": 2189
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "4aad65caf882d67df49d90ab684179af127dd3da4761274da44e34038f7f1140",
+      "sha256": "1e91029955f7f5afa447e92b4e7b0b8d8f4049e25858b21b1ee1f6a896708275",
       "width": 607,
-      "height": 1240
+      "height": 1272
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "e2507d7b439d1cd739389a42c98065f5ad033fbe1ce85da174b4c5bbdaddad61",
+      "sha256": "545386451f6f2ec3f62a13127d3b24c4d2ecd245fc55e3429cca3bb34e3ebd6a",
       "width": 1000,
       "height": 741
     },
@@ -530,17 +562,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "d3dfa6f938c8245b33fca7889b5909e55e06dcbf654a3ca47d43035bc9bb241a",
+      "sha256": "3fecc6e995ee535be591694baf2d83d18467a05ef5c0d208b5b1d65bd422aa94",
       "width": 375,
-      "height": 3923
+      "height": 3853
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "07eb3ff1d3014a4917b4d07b9ebe7bc390fa629defee6c29a727c61bdae30c15",
+      "sha256": "f702bdefa5c65bc7a058ce6b362bb6952ad166be747426d1484081031dfb252f",
       "width": 375,
-      "height": 2664
+      "height": 3853
     },
     {
       "id": "projection-mobile-dark",
