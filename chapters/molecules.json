@@ -3345,5 +3345,311 @@
     "h": 200,
     "cond": "dodecanoate (laurate)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "acetylchloride": {
+    "name": "ethanoyl chloride",
+    "formula": "C2H3ClO",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      },
+      {
+        "e": "Cl",
+        "x": 166,
+        "y": 115
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanoyl chloride",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "betalactam": {
+    "name": "azetidin-2-one (beta-lactam)",
+    "formula": "C3H5NO",
+    "atoms": [
+      {
+        "e": "N",
+        "x": 100,
+        "y": 60
+      },
+      {
+        "e": "C",
+        "x": 185,
+        "y": 60
+      },
+      {
+        "e": "C",
+        "x": 185,
+        "y": 145
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 145
+      },
+      {
+        "e": "O",
+        "x": 240,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "azetidin-2-one (beta-lactam)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "lactone": {
+    "name": "oxolan-2-one (gamma-butyrolactone)",
+    "formula": "C4H6O2",
+    "atoms": [
+      {
+        "e": "O",
+        "x": 135,
+        "y": 35
+      },
+      {
+        "e": "C",
+        "x": 205,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 180,
+        "y": 165
+      },
+      {
+        "e": "C",
+        "x": 90,
+        "y": 165
+      },
+      {
+        "e": "C",
+        "x": 65,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 265,
+        "y": 55
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "oxolan-2-one (gamma-butyrolactone)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "methylacetate": {
+    "name": "methyl ethanoate",
+    "formula": "C3H6O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 115,
+        "y": 25
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 235,
+        "y": 85
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "methyl ethanoate",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ester-intermediate": {
+    "name": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+    "formula": "C3H7O3",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 115,
+        "y": 25,
+        "charge": -1
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 235,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 55,
+        "y": 35
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }
