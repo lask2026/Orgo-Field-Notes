@@ -122,22 +122,43 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Orbitals describe probability, not paths",
+          "layout": "flow",
+          "title": "Quantum Numbers (n, l, m_l, m_s), Nodal Planes & Ground-State Electron Configurations",
+          "formula": "Total Nodes = n − 1     |     Angular Nodes = l     |     Radial Nodes = n − l − 1",
           "items": [
             {
-              "label": "Shell n",
-              "text": "1, 2, …"
+              "label": "Aufbau, Pauli & Hund Rules",
+              "text": "Fill lowest energy first (n+l rule); max 2 e⁻ per orbital with opposite spins; fill degenerate orbitals singly with parallel spins."
             },
             {
-              "label": "Subshell l",
-              "text": "0 through n−1"
-            },
-            {
-              "label": "Orbital and spin",
-              "text": "mₗ = −l … +l; mₛ = ±1/2"
+              "label": "Cation Formation & d-Block Exceptions",
+              "text": "Remove electrons from HIGHEST n shell first (4s before 3d in Fe²⁺); remember Cr ([Ar] 4s¹3d⁵) and Cu ([Ar] 4s¹3d¹⁰)."
             }
           ],
+          "chips": [
+            "Total Nodes = n − 1",
+            "Angular Nodes = l",
+            "Radial Nodes = n − l − 1",
+            "Cr (4s¹3d⁵) & Cu (4s¹3d¹⁰)"
+          ],
+          "comparison": [
+            [
+              "s Orbital (l = 0)",
+              "Spherical (0 angular nodes)",
+              "1 orbital → max 2 e⁻"
+            ],
+            [
+              "p Orbital (l = 1)",
+              "Dumbbell (1 nodal plane)",
+              "3 orbitals → max 6 e⁻"
+            ],
+            [
+              "d Orbital (l = 2)",
+              "Cloverleaf (2 nodal planes)",
+              "5 orbitals → max 10 e⁻"
+            ]
+          ],
+          "theme": "orbital-nodes",
           "figure": {
             "type": "projection",
             "steps": [
@@ -148,47 +169,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Quantum Number & Ion Electron Configuration Checklist",
+          "prompt": "Which atomic orbital rule are you applying?",
           "items": [
             {
-              "label": "s / p / d / f subshell",
-              "text": "1 / 3 / 5 / 7 orbitals"
+              "label": "Counting Nodes in Any Orbital (e.g., 3p)",
+              "outcome": "Total = n−1 (2); Angular = l (1); Radial = n−l−1 (1)",
+              "text": "l = 0 (s), 1 (p), 2 (d), 3 (f). Angular nodes are flat planes/cones; radial nodes are spherical shells."
             },
             {
-              "label": "One orbital",
-              "text": "At most two electrons with opposite spins"
+              "label": "Forming a Transition-Metal Cation (e.g., Fe²⁺)",
+              "outcome": "Empty 4s BEFORE 3d!",
+              "text": "Neutral Fe is [Ar] 4s²3d⁶, so Fe²⁺ loses its two 4s electrons first → [Ar] 3d⁶ (4 unpaired electrons, paramagnetic)."
             },
             {
-              "label": "Hydrogen-like nodes",
-              "text": "Total n−1; angular l; radial n−l−1"
+              "label": "Checking Pauli vs. Hund Violation",
+              "outcome": "Same 4 Quantum Numbers = Pauli; Paired Too Early = Hund",
+              "text": "Two arrows ↑↑ in the same box violates Pauli Exclusion; pairing ↑↓ in px while py is empty is an excited state (Hund)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Removing 3d Electrons Before 4s in Transition Metal Ions",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Reading orbital phase signs as electric charges"
+              "label": "Common Trap",
+              "text": "Writing Fe²⁺ as [Ar] 4s²3d⁴ by subtracting from 3d instead of the outermost n=4 shell."
             },
             {
-              "label": "Check",
-              "text": "A probability/wavefunction model, not planetary paths"
+              "label": "Correct Reasoning",
+              "text": "Once 3d orbitals are occupied, 4s is higher in energy and furthest from the nucleus: always ionize 4s electrons first!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Paramagnetic MRI Contrast Agents (Gd³⁺) & Hemoglobin Iron Spin States",
           "items": [
             {
-              "label": "Carbon valence",
-              "text": "Second-shell orbitals"
+              "label": "Paramagnetic vs Diamagnetic",
+              "outcome": "Unpaired e⁻ = Attracted to B-Field",
+              "text": "Any atom/ion with ≥1 unpaired electron (↑) is paramagnetic; all-paired (↑↓) is diamagnetic."
             },
             {
-              "label": "Hybridization",
-              "text": "Bonding model, not new allowed quantum numbers"
+              "label": "Hemoglobin Fe²⁺ Coordination",
+              "outcome": "d-Orbital Ligand Field Splitting",
+              "text": "O₂ binding to heme Fe²⁺ shifts the iron spin state and pulls Fe²⁺ into the porphyrin plane."
+            },
+            {
+              "label": "Spectroscopy Selection Rules",
+              "outcome": "ΔE = hν = hc/λ",
+              "text": "For many first-row transition-metal cations, 4s electrons are removed before 3d. Orbital energies depend on occupancy and ionization; this is not a universal radial-distance rule."
             }
           ]
         }
@@ -234,22 +266,43 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "End-on vs. side-on overlap",
+          "layout": "flow",
+          "title": "Sigma (σ) vs. Pi (π) Overlap, Bond Order & Molecular Orbital (MO) Theory",
+          "formula": "Bond Order = ½ (Bonding e⁻ − Antibonding e⁻*)     |     Double Bond = 1σ + 1π     |     Triple Bond = 1σ + 2π",
           "items": [
             {
-              "label": "Sigma",
-              "text": "Density along the internuclear axis"
+              "label": "Head-On (σ) vs. Side-by-Side (π)",
+              "text": "Head-on σ overlap concentrates electron density directly between nuclei (stronger individual bond) and permits 360° rotation."
             },
             {
-              "label": "Pi",
-              "text": "Side-on p-orbital overlap"
-            },
-            {
-              "label": "Multiple bond",
-              "text": "Double: 1σ + 1π; triple: 1σ + 2π"
+              "label": "Antibonding Orbitals (σ*, π*)",
+              "text": "Populating an antibonding orbital creates a nodal plane between the nuclei, lowering bond order and lengthening the bond."
             }
           ],
+          "chips": [
+            "Single = 1σ",
+            "Double = 1σ + 1π",
+            "Triple = 1σ + 2π",
+            "Bond Order = ½(e_b − e_a*)"
+          ],
+          "comparison": [
+            [
+              "σ Bond (Head-on)",
+              "Cylindrical symmetry along axis",
+              "Stronger overlap; free rotation"
+            ],
+            [
+              "π Bond (Side-by-side)",
+              "Electron density above/below nodal plane",
+              "Locks rotation; nucleophilic site"
+            ],
+            [
+              "π* Antibonding MO",
+              "Destructive out-of-phase overlap",
+              "Adds node between nuclei; weakens bond"
+            ]
+          ],
+          "theme": "sigma-pi-mo",
           "figure": {
             "type": "overlap",
             "steps": [
@@ -260,43 +313,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Fast Sigma & Pi Bond Counting Formula for Any Graph",
+          "prompt": "What bond property are you comparing?",
           "items": [
             {
-              "label": "Simple MO bond order",
-              "text": "Half of bonding minus antibonding electrons"
+              "label": "Counting Total σ and π Bonds",
+              "outcome": "Every Atom-Atom Link = 1σ; Extra Lines = π",
+              "text": "Remember to count implicit C–H σ bonds! A double bond adds +1π; a triple bond adds +2π."
             },
             {
-              "label": "Comparable atom pair",
-              "text": "Higher bond order usually gives shorter, stronger bonds"
+              "label": "Individual σ vs. π Bond Strength",
+              "outcome": "1 σ Bond > 1 π Bond (Head-On > Parallel)",
+              "text": "The π bond is weaker and higher in energy (HOMO), making alkenes nucleophilic in addition reactions."
+            },
+            {
+              "label": "Total Bond Energy & Bond Length",
+              "outcome": "C≡C > C=C > C–C Strength; C≡C < C=C < C–C Length",
+              "text": "Higher bond order (3 > 2 > 1) pulls nuclei closer together and requires more total energy to cleave completely."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Forgetting Implicit C–H Bonds When Counting Total σ Bonds",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Imagining a freely rotating double bond"
+              "label": "Common Trap",
+              "text": "Counting only the visible C–C skeleton lines in skeletal structures and missing all the C–H σ bonds."
             },
             {
-              "label": "Check",
-              "text": "Twisting disrupts pi overlap and costs energy"
+              "label": "Correct Reasoning",
+              "text": "Expand every carbon to 4 total bonds first (or use Total σ = Total Atoms − 1 + Rings) so every C–H σ bond is included."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "HOMO–LUMO Transitions in Conjugated Polyenes & Electrophilic Addition",
           "items": [
             {
-              "label": "Carbonyl addition",
-              "text": "Redistributes pi electrons into sigma bonding"
+              "label": "Alkene Nucleophilicity",
+              "outcome": "π-Bond Is the HOMO Electron Source",
+              "text": "Because π electrons sit further from the nuclei than σ electrons, HBr or Br₂ attacks the exposed π cloud while the σ frame stays intact."
             },
             {
-              "label": "Geometry",
-              "text": "Planar carbonyl can become tetrahedral"
+              "label": "Sn2 Backside Attack Angle",
+              "outcome": "Nucleophile Enters C–LG σ* LUMO",
+              "text": "Attack occurs at 180° opposite the leaving group because that is where the large lobe of the C–LG σ* antibonding orbital points!"
+            },
+            {
+              "label": "Conjugation & UV-Vis Shift",
+              "outcome": "↑ Conjugation → ↓ HOMO–LUMO ΔE → ↑ λ_max",
+              "text": "Adding conjugated π bonds narrows the HOMO–LUMO energy gap, shifting absorption toward longer, visible wavelengths."
             }
           ]
         }
@@ -372,22 +440,52 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Count domains, then check conjugation",
+          "layout": "flow",
+          "title": "Hybridization, % s-Character, Bond Lengths & Resonance Delocalization Rules",
           "items": [
             {
-              "label": "Four domains",
-              "text": "Typical carbon: sp³, about 109.5°"
+              "label": "Count Steric Number (σ Bonds + Localized Lone Pairs)",
+              "text": "4 domains = sp³ (109.5° tetrahedral); 3 domains = sp² (120° trigonal planar); 2 domains = sp (180° linear).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Three domains",
-              "text": "Typical carbon: sp², about 120°"
+              "label": "Resonance Hybridization Override",
+              "text": "A lone pair adjacent to a π bond (amides, esters, aniline, pyrrole) rehybridizes from sp³ → sp² to sit in an unhybridized p orbital!",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Two domains",
-              "text": "Typical carbon: sp, 180°"
+              "label": "Percent s-Character Trend",
+              "text": "sp (50% s) > sp² (33% s) > sp³ (25% s): higher s-character holds electrons closer to the nucleus → shorter bonds & stronger acidity.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "sp³ (25% s, 109.5°)",
+            "sp² (33% s, 120°)",
+            "sp (50% s, 180°)",
+            "Amide/Aniline N = sp² Planar!"
+          ],
+          "comparison": [
+            [
+              "sp³ (4 domains)",
+              "25% s-character · 109.5°",
+              "Longest C–H; pKa ~50 (least acidic)"
+            ],
+            [
+              "sp² (3 domains)",
+              "33% s-character · 120°",
+              "Planar + 1 unhybridized p; pKa ~44"
+            ],
+            [
+              "sp (2 domains)",
+              "50% s-character · 180°",
+              "Shortest/strongest C–H; pKa ~25 (acidic!)"
+            ]
+          ],
+          "theme": "s-character-gauge",
           "figure": {
             "type": "structures",
             "steps": [
@@ -399,47 +497,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Resonance & Lone-Pair Hybridization Detector",
+          "prompt": "Does the heteroatom lone pair participate in resonance?",
           "items": [
             {
-              "label": "Ordinary carbon",
-              "text": "A multiple bond counts as one domain"
+              "label": "Next to a π Bond (Amide, Aniline, Ester)",
+              "outcome": "Rehybridizes to sp² (Lone Pair in p Orbital!)",
+              "text": "Delocalizing the lone pair into the adjacent π system lowers energy, making amide C–N bonds planar and non-basic."
             },
             {
-              "label": "Conjugated lone pair",
-              "text": "Check whether the simple domain shortcut applies"
+              "label": "Atom ALREADY Has a π Bond (Pyridine N)",
+              "outcome": "Lone Pair Stays in sp² Hybrid Orbital!",
+              "text": "Because pyridine nitrogen already uses its p orbital for the aromatic ring π bond, its lone pair sits orthogonal in an sp² orbital (basic!)."
             },
             {
-              "label": "Amide nitrogen",
-              "text": "Approximately planar; lone pair conjugated with C=O"
+              "label": "No Adjacent π System (Alkyl Amine RNH₂)",
+              "outcome": "Standard sp³ (Trigonal Pyramidal ~107°)",
+              "text": "Localized lone pair occupies an sp³ hybrid orbital and is freely available to accept a proton."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Calling Amide Nitrogen sp³ or Moving Atoms Between Resonance Structures",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Assigning amide nitrogen sp³ mechanically"
+              "label": "Common Trap",
+              "text": "Counting 3 σ bonds + 1 lone pair on an amide nitrogen and calling it sp³ trigonal pyramidal."
             },
             {
-              "label": "Check",
-              "text": "Conjugation and geometry, not just sigma-bond count"
+              "label": "Correct Reasoning",
+              "text": "Amide, ester, and aniline heteroatoms are sp² trigonal planar because their lone pair delocalizes into the adjacent π system!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Peptide Bond Planarity, Terminal Alkyne Acidity & Carboxylate Equivalence",
           "items": [
             {
-              "label": "Peptide bond",
-              "text": "Restricted C–N rotation"
+              "label": "Peptide Backbone Rigidity",
+              "outcome": "Amide C–N Has Partial Double-Bond Character",
+              "text": "Resonance locks all 6 atoms of the peptide link in a rigid plane, governing α-helix and β-sheet folding."
             },
             {
-              "label": "Carboxylate",
-              "text": "Equivalent C–O bonds in the resonance hybrid"
+              "label": "Terminal Alkyne Deprotonation",
+              "outcome": "sp C–H (50% s-character, pKa ~25)",
+              "text": "NaNH₂ cleanly deprotonates RC≡CH to form an acetylide nucleophile because 50% s-character stabilizes the carbanion."
+            },
+            {
+              "label": "Carboxylate Resonance Hybrid",
+              "outcome": "Two Identical C–O Bonds (Bond Order 1.5)",
+              "text": "Deprotonating RCOOH spreads −1 charge equally over two electronegative oxygens, lowering pKa to ~4.8."
             }
           ]
         }

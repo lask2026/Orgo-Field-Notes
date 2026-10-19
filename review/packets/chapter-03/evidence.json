@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "6ce68664a9ea6d9381b821aead16f2684803b051b853969185651fe6aa18b0b1",
+    "sha256": "cd2a2d8d9b891a176ebd4ab753e3ca67cab25853ab8c6be586355672d171bdcf",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -42,9 +42,9 @@
       "id": "orbitals-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/orbitals-visuals.png",
-      "sha256": "fccfaa86e566e0fca3a59c5777b0139055525e75fe022e39ac8036f99acbaf59",
+      "sha256": "6a74f548afbca5b8233c246a2d30b5d085d7eb3b8bdc321a2bd592fc409f4656",
       "width": 607,
-      "height": 1926
+      "height": 1947
     },
     {
       "id": "sigma-pi-step-1",
@@ -66,9 +66,9 @@
       "id": "sigma-pi-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/sigma-pi-visuals.png",
-      "sha256": "6c2353e26062881b389409d86b7f2f4c21c147da6b81914457e685a60922b35f",
+      "sha256": "2ff1b18752e76115065ba4d02cfb89aa3d97aac9af73185d86a8f95e50da1b9f",
       "width": 607,
-      "height": 2040
+      "height": 1901
     },
     {
       "id": "hybridization-step-1",
@@ -106,9 +106,9 @@
       "id": "hybridization-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/hybridization-visuals.png",
-      "sha256": "cb35b43d0324af17ebdede6b457a2dac6248bb39001753232d213b24931db1b8",
+      "sha256": "635c5d6295b37741de646c5ddc053fd0248a1bea90a176eb58692f03f7975835",
       "width": 607,
-      "height": 1827
+      "height": 2069
     },
     {
       "id": "quantum-stage-1-molecule",
@@ -426,23 +426,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "d0360b700901210999a96535ee64d5c635d78281559978cbe936e18456cd029e",
+      "sha256": "6588e45fd0051fd23e89fa79b03ee72874ee52bdad9f88b5f36bbdc991479c43",
       "width": 1360,
-      "height": 2263
+      "height": 2284
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "c0a975d145be5fb16aaf6dc0ba9873c96fc8c94a6ae576cdfe74133b49c1fdeb",
+      "sha256": "f3865d2c2d64b1e2413517e3c17584c7fc779f3f13bf6a7e944238ad38bb5c9b",
       "width": 607,
-      "height": 1209
+      "height": 2488
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "1dd40e46c7e29706283a7ae7dabca6ee39a610f6b5766bee98df753ea680f627",
+      "sha256": "ea2d43f9ec2e1b0ff8b9c5b6f546a5d7de0dfc72a2d0b7b8f62fbd07e5927dad",
       "width": 1000,
       "height": 741
     },
@@ -450,17 +450,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "90bac4976ff00dd3eeffe28aa348fc3a6e3aab8a523a26a86fe0f8bd45becf6b",
+      "sha256": "655517b63329ad892ba4add1152d5b33d8dbda8e160534770af0492770df130d",
       "width": 375,
-      "height": 4258
+      "height": 4615
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "730b1e1a90ee0de0ee6d06998257cf76a83089556d2a5494381915efe0939a95",
+      "sha256": "fe4ecf2257ab995613b3b99271750a0e587e7ed58d407cd8bbc7e3b8d90f9954",
       "width": 375,
-      "height": 4258
+      "height": 4615
     },
     {
       "id": "projection-mobile-dark",
