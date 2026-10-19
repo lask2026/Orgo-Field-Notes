@@ -3,7 +3,7 @@
   "chapter": 2,
   "title": "Isomers",
   "sourceSnapshot": {
-    "sha256": "9c4ff63c4f092cf19afe6bb2fedefb5b79ab3198072552c72d49a826d540ad22",
+    "sha256": "22b996e8be8e705c37407c92ba9f1d04c2b2e61066f7e3bf0bbd650678d6ab96",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1952,7 +1952,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Same formula is only the first test",
+              "items": [
+                {
+                  "label": "Formula",
+                  "text": "Compare elemental composition"
+                },
+                {
+                  "label": "Connectivity",
+                  "text": "Compare the bonded atom pairs"
+                },
+                {
+                  "label": "Space",
+                  "text": "Compare spatial arrangement"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Same formula, different connectivity",
+                  "text": "Constitutional isomers"
+                },
+                {
+                  "label": "Same connectivity, different configuration",
+                  "text": "Stereoisomers"
+                },
+                {
+                  "label": "Only drawing orientation changes",
+                  "text": "Not evidence of a different isomer"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Calling every rotated drawing a new isomer"
+                },
+                {
+                  "label": "Check",
+                  "text": "Connectivity and configuration, not the page orientation"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Alcohol versus ether",
+                  "text": "Same formula can hide different connectivity"
+                },
+                {
+                  "label": "Properties",
+                  "text": "Hydrogen-bond donation and reactivity can differ"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "ethanol": {
@@ -2155,7 +2221,73 @@
               "reveal": true,
               "focus": "app"
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "compare",
+              "title": "Rotation changes energy, not identity",
+              "items": [
+                {
+                  "label": "Angle strain",
+                  "text": "Deviation from preferred angles"
+                },
+                {
+                  "label": "Torsional strain",
+                  "text": "Eclipsing interactions"
+                },
+                {
+                  "label": "Steric strain",
+                  "text": "Crowding of nonbonded atoms"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Butane at 180°",
+                  "text": "Anti, staggered"
+                },
+                {
+                  "label": "Butane at 60°",
+                  "text": "Gauche, staggered"
+                },
+                {
+                  "label": "Butane at 120° / 0°",
+                  "text": "Eclipsed / fully eclipsed"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Equating axial with up"
+                },
+                {
+                  "label": "Check",
+                  "text": "Chair flip swaps axial/equatorial but retains up/down and cis/trans"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Binding",
+                  "text": "Conformational preferences affect fit"
+                },
+                {
+                  "label": "Cyclohexane",
+                  "text": "Chair, boat and twist-boat differ"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "butane": {
@@ -2342,7 +2474,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Mirror image ≠ always a different molecule",
+              "items": [
+                {
+                  "label": "Four different groups",
+                  "text": "Common tetrahedral stereogenic-center test"
+                },
+                {
+                  "label": "Mirror image",
+                  "text": "Check superimposability"
+                },
+                {
+                  "label": "Whole molecule",
+                  "text": "Compare every center and internal symmetry"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Nonsuperimposable mirror images",
+                  "text": "Enantiomers"
+                },
+                {
+                  "label": "Stereoisomers, not mirror images",
+                  "text": "Diastereomers"
+                },
+                {
+                  "label": "Internal symmetry",
+                  "text": "Check for a meso compound"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Treating 2ⁿ as a guaranteed stereoisomer count"
+                },
+                {
+                  "label": "Check",
+                  "text": "It is a maximum; symmetry can reduce the count"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Achiral environments",
+                  "text": "Matched ordinary properties for enantiomers"
+                },
+                {
+                  "label": "Chiral receptors",
+                  "text": "Can distinguish enantiomers"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "butanol2": {
@@ -2560,7 +2758,73 @@
                 "caption": "Mirror Fischer projection with C1 at the top; the horizontal groups are exchanged."
               }
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Assign priority before tracing direction",
+              "items": [
+                {
+                  "label": "Rank atoms",
+                  "text": "Atomic number; isotope mass for isotopes"
+                },
+                {
+                  "label": "Resolve ties",
+                  "text": "Sorted lists, one sphere at a time"
+                },
+                {
+                  "label": "Group 4 away",
+                  "text": "Clockwise is R; counterclockwise is S"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Fischer group 4 vertical",
+                  "text": "Points back: use the apparent direction"
+                },
+                {
+                  "label": "Fischer group 4 horizontal",
+                  "text": "Points forward: reverse the apparent direction"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Rotating a Fischer drawing by 90°"
+                },
+                {
+                  "label": "Check",
+                  "text": "A 180° whole-drawing rotation preserves configuration"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Most proteinogenic L amino acids",
+                  "text": "S configuration"
+                },
+                {
+                  "label": "L-Cysteine",
+                  "text": "R because sulfur changes CIP ranking"
+                },
+                {
+                  "label": "Glycine",
+                  "text": "No stereogenic alpha carbon"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "butanol2": {
@@ -2681,7 +2945,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Rank each end separately",
+              "items": [
+                {
+                  "label": "Eligibility",
+                  "text": "Two different groups on each alkene carbon"
+                },
+                {
+                  "label": "Rank each end",
+                  "text": "Apply CIP separately"
+                },
+                {
+                  "label": "Compare the winners",
+                  "text": "Same side Z; opposite sides E"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Higher-priority groups together",
+                  "text": "Z"
+                },
+                {
+                  "label": "Higher-priority groups opposite",
+                  "text": "E"
+                },
+                {
+                  "label": "Identical groups at either end",
+                  "text": "E/Z is undefined"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Assuming zero rotation proves a racemate"
+                },
+                {
+                  "label": "Check",
+                  "text": "An achiral molecule can also give zero rotation"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Z-But-2-ene",
+                  "text": "Achiral"
+                },
+                {
+                  "label": "Racemate",
+                  "text": "Equal proportions of two distinct enantiomers"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "e-butene": {
@@ -2840,7 +3170,73 @@
               "reveal": false,
               "focus": "app"
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Measure rotation; normalize units; keep configuration labels separate",
+              "items": [
+                {
+                  "label": "Measure",
+                  "text": "Record wavelength, temperature and solvent"
+                },
+                {
+                  "label": "Convert",
+                  "text": "Path in dm; concentration in g/mL here"
+                },
+                {
+                  "label": "Normalize",
+                  "text": "[α] = αobs / (l × c)"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Path in cm",
+                  "text": "Divide by 10 to obtain dm"
+                },
+                {
+                  "label": "Concentration in g per 100 mL",
+                  "text": "Divide by 100 to obtain g/mL"
+                },
+                {
+                  "label": "R/S label",
+                  "text": "Does not predict +/− rotation"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Using cm directly in a dm convention"
+                },
+                {
+                  "label": "Check",
+                  "text": "Units and measurement conditions before calculating"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Ideal two-enantiomer mixture",
+                  "text": "ee is the absolute percentage difference"
+                },
+                {
+                  "label": "Matched conditions",
+                  "text": "Rotation can report signed enantiomer excess"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "butanol2": {
