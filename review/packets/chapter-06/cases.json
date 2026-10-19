@@ -3,7 +3,7 @@
   "chapter": 6,
   "title": "Aldehydes and Ketones I",
   "sourceSnapshot": {
-    "sha256": "adaad01da2348b9871c3bca25e1b127019fbadf55afab14802cfa566b69a8e38",
+    "sha256": "e8896789c2c697a66bb1772aa53ce3bde4e56ed724f76fa94b3929d5b0801c79",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1043,7 +1043,14 @@
                   "label": "Track oxygen",
                   "text": "The pi pair shifts to O"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1
+                ],
+                "caption": "Carbonyl addition: encoded electron-flow arrows start at electrons and end at the accepting site."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1214,7 +1221,16 @@
                   "label": "Two OR groups",
                   "text": "Acetal/ketal context"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1,
+                  2
+                ],
+                "caption": "Compare hemiacetal, ketal and hydrate connectivity. These are separate illustrative examples."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1548,7 +1564,15 @@
                   "label": "Product context",
                   "text": "Imine versus enamine pathway"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Separate imine and enamine examples: different skeletons, not a displayed tautomer pair."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1851,7 +1875,15 @@
                   "label": "Workup",
                   "text": "Hydride adds before O is protonated"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  2
+                ],
+                "caption": "Aldehyde reduction to primary alcohol with a suitable hydride reagent, then protonation; schematic, not balanced."
+              }
             },
             "cue": {
               "layout": "decision",
