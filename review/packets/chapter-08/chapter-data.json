@@ -63,7 +63,69 @@
             "caption": "Acid/carboxylate speciation model; approximate dilute-solution treatment."
           }
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Two oxygens stabilize the conjugate base",
+          "items": [
+            {
+              "label": "Carboxyl group",
+              "text": "C=O and OH on the same carbon"
+            },
+            {
+              "label": "Carboxylate",
+              "text": "Resonance-stabilized conjugate base"
+            },
+            {
+              "label": "Environment",
+              "text": "Hydrogen bonding and ionization"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "pH above pKa",
+              "text": "More carboxylate"
+            },
+            {
+              "label": "pH below pKa",
+              "text": "More neutral acid"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "COOH contains an ordinary alcohol OH"
+            },
+            {
+              "label": "Check",
+              "text": "The complete group; a ring-attached COOH carbon is outside the ring"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Drug/fatty acids",
+              "text": "Ionization changes partitioning"
+            },
+            {
+              "label": "Amino-acid side chains",
+              "text": "Charge depends on environment"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "acid-reactions",
@@ -126,7 +188,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Activate the acid or use appropriate catalysis",
+          "items": [
+            {
+              "label": "Acid/base first",
+              "text": "Acid plus amine often gives a salt"
+            },
+            {
+              "label": "Activation/catalysis",
+              "text": "Enable the desired acyl reaction"
+            },
+            {
+              "label": "Equilibrium",
+              "text": "Water removal or excess alcohol affects Fischer esterification"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Acid plus amine in water",
+              "text": "Consider proton transfer first"
+            },
+            {
+              "label": "Activated acyl partner",
+              "text": "Appropriate activation can enable amide formation"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Spontaneous amide from simply mixing acid and amine"
+            },
+            {
+              "label": "Check",
+              "text": "A viable catalyzed or activated pathway"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Peptide synthesis",
+              "text": "Activated carboxyl groups"
+            },
+            {
+              "label": "Biosynthesis",
+              "text": "Activation and organization"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "reduction-decarboxylation",
@@ -181,7 +305,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Track carbon atoms, not just functional groups",
+          "items": [
+            {
+              "label": "Reduction",
+              "text": "Retains the acid carbon"
+            },
+            {
+              "label": "Decarboxylation",
+              "text": "Loses the carboxyl carbon as CO2"
+            },
+            {
+              "label": "Carbon audit",
+              "text": "Recount before accepting the product"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "LiAlH4, then suitable workup",
+              "text": "Acid to primary alcohol"
+            },
+            {
+              "label": "Heated suitable beta-keto acid",
+              "text": "CO2 loss, initial enol and tautomerization"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Every acid readily decarboxylates on heating"
+            },
+            {
+              "label": "Check",
+              "text": "Substrate; the cyclic arrangement is a transition state"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Synthesis",
+              "text": "Track retained and lost carbon"
+            },
+            {
+              "label": "Metabolism",
+              "text": "Recount after decarboxylation"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "soap",
@@ -235,7 +421,69 @@
           },
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Hydrolysis produces carboxylate salts",
+          "items": [
+            {
+              "label": "Ester hydrolysis",
+              "text": "Base-promoted saponification"
+            },
+            {
+              "label": "Products",
+              "text": "Carboxylate salts and alcohol-derived fragments"
+            },
+            {
+              "label": "Aggregation",
+              "text": "Polar heads and nonpolar tails can assemble"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Ester cleavage by base",
+              "text": "Saponification"
+            },
+            {
+              "label": "Free-acid neutralization",
+              "text": "Acid/base chemistry, not ester hydrolysis"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "A micelle is the same as a bilayer"
+            },
+            {
+              "label": "Check",
+              "text": "Aggregate architecture and head/tail orientation"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Soap aggregates",
+              "text": "Can disperse nonpolar material"
+            },
+            {
+              "label": "Assembly",
+              "text": "Depends on concentration, ions and tail structure"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [

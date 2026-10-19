@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "00a706172680c26c7b0fd1678afcc32f81914535ca1a3147e8dc00ce81bdb466",
+    "sha256": "7323c9b5deedec814224a0358b17c3b5998de643c1eb2fb80995bd1cdfe13068",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -31,6 +31,14 @@
       "height": 451
     },
     {
+      "id": "acid-properties-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/acid-properties-visuals.png",
+      "sha256": "5f1b58994594a2ac1964f58629f640f5a6b6c170ecbee441683571bd846bd61f",
+      "width": 607,
+      "height": 1723
+    },
+    {
       "id": "acid-reactions-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/acid-reactions-step-1.png",
@@ -55,6 +63,14 @@
       "height": 359
     },
     {
+      "id": "acid-reactions-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/acid-reactions-visuals.png",
+      "sha256": "8d778e68b7b4742050414653c5bb4cfc072ea0d4603df03c93190a6c6467d726",
+      "width": 607,
+      "height": 1723
+    },
+    {
       "id": "reduction-decarboxylation-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/reduction-decarboxylation-step-1.png",
@@ -71,6 +87,14 @@
       "height": 359
     },
     {
+      "id": "reduction-decarboxylation-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/reduction-decarboxylation-visuals.png",
+      "sha256": "50b5908ca71ca0b9c65090c65a099ad1373cf6e5bae75533dbf5dbfbcefa9504",
+      "width": 607,
+      "height": 1689
+    },
+    {
       "id": "soap-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/soap-step-1.png",
@@ -85,6 +109,14 @@
       "sha256": "a16d0135c18930e1fd963b3d02726e8f052cd58617f5b047cf9040156da57521",
       "width": 661,
       "height": 266
+    },
+    {
+      "id": "soap-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/soap-visuals.png",
+      "sha256": "94946e645d21495af2b5f25353dcf22ed6f788fd1609fd3b356195522f9d18e3",
+      "width": 607,
+      "height": 1742
     },
     {
       "id": "acid-ratio-stage-1-molecule",
@@ -410,23 +442,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "6f42d80703cd0749e8caa84b87c1753601414173ff5b0a2a5affa4f236cc9961",
+      "sha256": "7755838ab60f7ce22dbcd907eba84191b096cc63a25bac87b6c5fe8af9a4d173",
       "width": 1360,
-      "height": 1103
+      "height": 2107
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "8798bfc03f90bc0eddd64069b231c83ed7b9589e03057c8a210eff8bb1aa6a97",
+      "sha256": "44bf9ae9de735fa2d4bcbef5d57b74beaa4d48ac8014ba742fd60faaffbdfba7",
       "width": 607,
-      "height": 1003
+      "height": 1035
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "89e713f13bc5a9349525d89bb9865487e6e6b751f743b2a1e9c3b2ab435bb4da",
+      "sha256": "821f9e648a3424d3388084f1b999be9e7998a35bae1ea7aaab4b5840bbcfe11d",
       "width": 1000,
       "height": 741
     },
@@ -434,17 +466,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "9cde7d39be332039a35228a27223a74d72e8b9e935cb39f3ee966e85308a7620",
+      "sha256": "ef783fc5b37d33273c4cd748234a93091d5926a714eaf695fcc34c6c319e8c39",
       "width": 375,
-      "height": 3169
+      "height": 3649
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "480a56c801f0a018f5e56337979b83005c7d179045d4cc440e364fec073aed3d",
+      "sha256": "7521298ef259777da582018059ea855eee23c66ec4902e4edc822973ab4c20d0",
       "width": 375,
-      "height": 2384
+      "height": 3649
     },
     {
       "id": "projection-mobile-dark",
