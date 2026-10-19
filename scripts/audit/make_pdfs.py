@@ -75,7 +75,7 @@ def picture(story,directory,shots,sid,maximum=300):
  story.append(KeepTogether([para('Screenshot: '+sid,'SmallAudit'),Image(str(p),width=w*scale,height=h*scale),Spacer(1,8)]))
 
 def graph(story,m,blind=False):
- if not blind:add(story,f"Author claims: {m['name']} | formula {m['formula']} | net charge {sum(a.get('charge',0) for a in m['atoms']):+d}")
+ if not blind:add(story,f"Author claims: {m['name']} | formula {m.get('displayFormula',m['formula'])} | canonical composition {m['formula']} | net charge {sum(a.get('charge',0) for a in m['atoms']):+d}")
  add(story,'Graph uses zero-based indices; A=0, B=1, etc. Coordinates are drawing positions, not 3D coordinates.','SmallAudit')
  for i,a in enumerate(m['atoms']):
   add(story,f"{i} ({chr(65+i)}): {a['e']}; x={a['x']:.2f}, y={a['y']:.2f}; charge={a.get('charge',0)}; explicit H override={a.get('h','none')}",'SmallAudit')
@@ -128,10 +128,10 @@ def build(directory):
    if ex.get('context'):add(story,ex['context'])
    picture(story,directory,shots,ex['id']+'-stage-1-molecule',230);picture(story,directory,shots,ex['id']+'-diagram',230)
    if ex.get('diagram'):json_text(story,{'diagramSpecification':ex['diagram']})
-   if blind:graph(story,molecules[ex['molecule']],True)
+   if blind and not ex.get('concealStructure'):graph(story,molecules[ex['molecule']],True)
    for i,s in enumerate(ex['stages']):
     sid=f"{ex['id']}-stage-{i+1}";group=[]
-    if s.get('molecule'):
+    if s.get('molecule') and not (blind and ex.get('concealStructure')):
      add(story,'This stage uses a different molecule (connectivity shown).','SmallAudit')
      if blind:
       picture(story,directory,shots,sid+'-molecule',190);graph(story,molecules[s['molecule']],True)

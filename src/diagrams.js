@@ -23,13 +23,23 @@ export function drawDiagram(d,value,{concealAnswers=false}={}){
   }else if(d.type==='spectrum'){
     svg='<path d="M35 25 V165 H335"/>';
     const peaks=d.peaks;
-    for(const [i,p] of peaks.entries()){const x=35+300*(d.max-p.x)/(d.max-d.min),y=165-p.height*110;svg+=`<line x1="${x}" y1="165" x2="${x}" y2="${y}" stroke="#2563eb" stroke-width="4"/><text x="${x}" y="${y-8}">${esc(p.label)}</text>`;}
+    for(const [i,p] of peaks.entries()){const x=35+300*(d.max-p.x)/(d.max-d.min),y=165-p.height*110;
+      if(p.shape==='broad'){
+        const points=Array.from({length:151},(_,i)=>{const px=35+2*i,v=d.max-i*(d.max-d.min)/150,py=165-p.height*110*Math.exp(-4*Math.log(2)*((v-p.x)/p.width)**2);return `${i?'L':'M'}${px},${py}`;}).join(' ');
+        svg+=`<path class="spectral-band" d="${points}" stroke="#2563eb"/>`;
+      }else{
+        const n=p.lines||1,weights=Array.from({length:n},(_,k)=>{let r=1;for(let j=1;j<=k;j++)r=r*(n-j)/j;return r;}),maxWeight=Math.max(...weights);
+        for(let k=0;k<n;k++){const xx=x+(k-(n-1)/2)*(p.spacing||.05)*300/(d.max-d.min),yy=165-p.height*110*weights[k]/maxWeight;svg+=`<line class="spectral-line" x1="${xx}" y1="165" x2="${xx}" y2="${yy}" stroke="#2563eb" stroke-width="${n>1?2:4}"/>`;}
+      }
+      svg+=`<text x="${x}" y="${y-8-(peaks.some((q,j)=>j<i&&Math.abs(q.x-p.x)*300/(d.max-d.min)<60)?20:0)}">${esc(p.label)}</text>`;
+    }
     svg+=`<text x="40" y="190">${d.max}</text><text x="320" y="190">${d.min}</text><text x="180" y="215">${esc(d.unit)}</text>`;
-    controls='<p>Illustrative peak positions only; heights and line shapes are schematic.</p>';
+    controls='<p>Illustrative spectrum, not experimental data. Band widths, line spacing and heights are schematic; signal integration is not peak height.</p>';
   }else if(d.type==='tlc'){
     const strength=value??30,rf=Math.min(.9,.15+strength*.006);
-    svg=`<rect x="85" y="20" width="190" height="170" fill="#fff"/><path d="M85 170 H275 M85 40 H275" stroke-dasharray="5 4"/><circle cx="150" cy="${170-130*rf}" r="7" fill="#2563eb"/><circle cx="215" cy="${170-130*Math.min(.95,rf+.2)}" r="7" fill="#059669"/><text x="180" y="215">Baseline below • solvent front above</text>`;
-    controls=`<label>Relative eluent strength <output>${strength}</output><input data-control="diagram" type="range" min="0" max="100" value="${strength}" aria-label="Eluent strength"></label><p>Model spot A Rf = ${rf.toFixed(2)}. On polar silica, a stronger eluent usually increases Rf. This trend model does not predict experimental values.</p>`;
+    const rfB=Math.min(.95,rf+.2);
+    svg=`<rect x="85" y="20" width="190" height="170" fill="#fff"/><path d="M85 170 H275 M85 40 H275" stroke-dasharray="5 4"/><circle cx="150" cy="${170-130*rf}" r="7" fill="#2563eb"/><text x="130" y="${174-130*rf}">A</text><circle cx="215" cy="${170-130*rfB}" r="7" fill="#059669"/><text x="235" y="${174-130*rfB}">B</text><text x="180" y="215">Baseline below • solvent front above</text>`;
+    controls=`<label>Relative eluent strength <output>${strength}</output><input data-control="diagram" type="range" min="0" max="100" value="${strength}" aria-label="Eluent strength" aria-valuetext="Strength ${strength}; spot A Rf ${rf.toFixed(2)}; spot B Rf ${rfB.toFixed(2)}"></label><p>Model spot A (blue, left) Rf = ${rf.toFixed(2)}; spot B (green, right) Rf = ${rfB.toFixed(2)}. On polar silica, a stronger eluent usually increases Rf. This independent trend model does not predict experimental values or the separate worked-distance calculation.</p>`;
   }else if(d.type==='acid'){
     const ph=value??d.pKa,f=1/(1+10**(d.pKa-ph));
     svg=`<rect x="40" y="70" width="280" height="45" fill="#dbeafe"/><rect x="40" y="70" width="${280*f}" height="45" fill="#059669"/><text x="180" y="145">${(100*f).toFixed(1)}% deprotonated</text>`;

@@ -318,6 +318,25 @@
               "label": {
                 "type": "string",
                 "minLength": 1
+              },
+              "lines": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 7
+              },
+              "spacing": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "shape": {
+                "enum": [
+                  "stick",
+                  "broad"
+                ]
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
               }
             },
             "required": [
@@ -325,7 +344,43 @@
               "height",
               "label"
             ],
-            "additionalProperties": false
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "shape": {
+                      "const": "broad"
+                    }
+                  },
+                  "required": [
+                    "shape"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "width"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "lines": {
+                      "minimum": 2
+                    }
+                  },
+                  "required": [
+                    "lines"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "spacing"
+                  ]
+                }
+              }
+            ]
           },
           "minItems": 1
         },
@@ -657,6 +712,10 @@
             "$ref": "#/$defs/stage"
           },
           "minItems": 2
+        },
+        "concealStructure": {
+          "type": "boolean",
+          "description": "Withhold the candidate graph until workshop completion, including blind audit inputs."
         }
       },
       "required": [
