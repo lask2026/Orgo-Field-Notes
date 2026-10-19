@@ -25,8 +25,16 @@
 
 GitHub Pages-compatible files are requested; no remote repository or deployment destination was supplied. Deliver local builds and deployment instructions. Textbook assets stay excluded from builds and Git. Chemistry review is source-backed author review plus automated structural consistency; a separate expert review remains a distinct activity.
 
-## Outstanding work
+## Completion status
 
-- Engine extraction and Chapter 1 migration.
-- Chapters 2–12 authoring and validation.
-- Final browser and chemistry audit; final completion report.
+- Engine extraction and Chapter 1 migration: complete.
+- Chapters 2–12 authoring and chapter checks: complete.
+- Twelve meaningful chapter commits: complete.
+- Both local builds and GitHub Pages deployment workflow: complete.
+- Final all-chapter regression, accessibility spot checks, and report: completing final audit.
+
+## Remaining external work
+
+- Independent chemistry expert sign-off has not been performed.
+- GitHub Pages deployment requires a destination repository and Pages activation; no remote was supplied.
+- Browser tests cover Chromium on this Windows host; Safari/Firefox and assistive-technology user testing are outside the completed validation.

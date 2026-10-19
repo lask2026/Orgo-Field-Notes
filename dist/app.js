@@ -64,7 +64,12 @@ function molecularFormula(m){
 function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
 function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
-  const label=(a,i)=>a.e==='C'?'':a.e+(hydrogens(m,i)?'H'+(hydrogens(m,i)>1?hydrogens(m,i):''):'')+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
+  const label=(a,i)=>{
+    if(a.e==='C')return '';
+    const count=hydrogens(m,i),h=count?'H'+(count>1?String(count).replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[n]):''):'';
+    const bond=m.bonds.find(([u,v])=>u===i||v===i),neighbor=bond?m.atoms[bond[0]===i?bond[1]:bond[0]]:null;
+    return (h&&neighbor?.x>a.x+14?h+a.e:a.e+h)+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
+  };
   let h=`<svg class="mol" viewBox="-24 -28 ${m.w+48} ${m.h+56}" xmlns="http://www.w3.org/2000/svg" role="${opts.click?'group':'img'}" aria-label="Molecular structure; atoms labeled A onward">`;
   for(const [a,b] of m.bonds)if(path.includes(a)&&path.includes(b)){const p=m.atoms[a],q=m.atoms[b];h+=`<line class="anim-path" pathLength="100" x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="#bfdbfe" stroke-width="17" stroke-linecap="round"/>`;}
   for(const [arr,color,fill] of [[prin,'#059669','#d1fae5'],[sub,'#d97706','#fef3c7'],[opts.alpha||[],'#e11d48','#ffe4e6']])for(const i of arr){const a=m.atoms[i];h+=`<circle class="anim-halo" cx="${a.x}" cy="${a.y}" r="19" fill="${fill}" stroke="${color}" stroke-width="2"/>`;}
@@ -90,7 +95,7 @@ function drawMolecule(m,opts={}){
     }
     if(opts.num?.includes(i)){const ix=opts.num.indexOf(i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${a.x}" cy="${a.y-22}" r="10" fill="#2563eb"/><text x="${a.x}" y="${a.y-18}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
   });
-  return h+'</svg>'+`<details class="graph-text"><summary>Accessible atom and bond description</summary><p>${esc(graphDescription(m))}</p></details>`;
+  return h+'</svg>'+(opts.click?`<div class="atom-controls" aria-label="Atom selection buttons">${m.atoms.map((a,i)=>`<button class="atom-key" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Select atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${atomLabel(i)} <small>${a.e}</small></button>`).join('')}</div>`:'')+`<details class="graph-text"><summary>Accessible atom and bond description</summary><p>${esc(graphDescription(m))}</p></details>`;
 }
 
 return {valences,hydrogens,molecularFormula,graphDescription,drawMolecule};})();
@@ -142,7 +147,7 @@ function renderLearn(ch,molecules,state,ui){
   const opts=challenge?{click:true,sel:ui.selected}:s.highlights;
   return `<div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(l.title)}</h1><span class="c-tag">${esc(l.tag)}</span></div><div class="stage">${drawMolecule(m,opts)}</div>${drawDiagram(s.diagram,ui.diagramValue)}
   ${challenge?`<p>${esc(s.challenge.prompt)}</p><button class="btn pri" data-act="checkTry">Check selection</button> <button class="btn" data-act="try">Back to walkthrough</button>${ui.checked?`<div role="status" class="fbox ${good?'ok':'err'}">${good?esc(s.challenge.explanation):'Not yet. Select exactly the requested atoms; use the walkthrough for a hint.'}</div>`:''}`:`<div class="sbar"><button class="sbtn" data-act="prev" ${state.step===0?'disabled':''}>← Previous</button>${l.steps.map((t,i)=>`<button class="sbtn" data-act="step" data-idx="${i}" aria-pressed="${i===state.step}">${esc(t.label)}</button>`).join('')}<button class="sbtn" data-act="next" ${state.step===l.steps.length-1?'disabled':''}>Next →</button></div><div class="sexp" role="status">${s.text}</div>${revealed?anatomy(s.anatomy,m.name)+`<p class="formula">Formula: ${esc(m.formula)}</p>`:'<div class="abar">Structure name concealed until its explanation. <button class="btn" data-act="revealLearn">Reveal name</button></div>'}${s.challenge?'<button class="btn try-btn" data-act="try">🖐 Try It Yourself</button>':''}`}</section>
-  <aside class="tstack">${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c}" ${k==='rule'?'open':''}><summary><h2>${t}</h2></summary>${l.cards[k]}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
+  <aside class="tstack">${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c} ${s.focus===k?'focus':''}" ${k===(s.focus||'rule')?'open':''}><summary><h2>${t}</h2></summary>${l.cards[k]}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
 }
 
 return {anatomy,renderLearn};})();
@@ -175,6 +180,8 @@ function startApp(data){
   let storage;try{storage=localStorage;}catch{storage={getItem(){throw Error('unavailable');}};}
   const loaded=readProgress(storage,chapters);let state=loaded.state;
   let ui={},storageError=loaded.error;
+  let toastTimer;
+  function showToast(message){clearTimeout(toastTimer);document.getElementById('toast').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('toast').textContent='';},4500);}
   const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined};};resetUI();
   const chapter=()=>chapters.find(c=>c.id===state.chapter)||chapters[0];
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
@@ -215,7 +222,7 @@ function startApp(data){
     else if(act==='revealLearn'){ui.revealLearn=true;}
     else if(act==='try'){ui.tryMode=!ui.tryMode;ui.selected=[];ui.checked=false;}
     else if(act==='checkTry'){ui.checked=true;}
-    else if(act==='selectAtom'){if(ui.correct)return;ui.selected=ui.selected.includes(i)?ui.selected.filter(n=>n!==i):[...ui.selected,i];ui.checked=false;focus=`.ahit[data-idx="${i}"]`;}
+    else if(act==='selectAtom'){if(ui.correct)return;ui.selected=ui.selected.includes(i)?ui.selected.filter(n=>n!==i):[...ui.selected,i];ui.checked=false;focus=`.${b.classList.contains('atom-key')?'atom-key':'ahit'}[data-idx="${i}"]`;}
     else if(act==='practiceConcept'){state.mode='guided';state.exercise=0;resetUI();}
     else if(act==='exercise'){state.exercise=i;resetUI();}
     else if(act==='choice'){check(i);return;}
@@ -230,14 +237,14 @@ function startApp(data){
     else if(act==='confirmReset'){state.practice={};document.getElementById('resetDialog').close();resetUI();}
     else if(act==='exportProgress'){download('orgo-progress.json',JSON.stringify(state,null,2),'application/json');return;}
     else if(act==='importProgress'){document.getElementById('importFile').click();return;}
-    else if(act==='saveApp'){if(location.protocol==='file:'){const clone=document.documentElement.cloneNode(true);clone.querySelector('#view').innerHTML='';download('Orgo-Field-Notes-offline.html','<!doctype html>\n'+clone.outerHTML,'text/html');}else{try{const r=await fetch('Orgo-Field-Notes-offline.html');if(!r.ok)throw Error();download('Orgo-Field-Notes-offline.html',await r.text(),'text/html');}catch{document.getElementById('toast').textContent='Download unavailable. Use the standalone HTML included with this build.';}}return;}
+    else if(act==='saveApp'){if(location.protocol==='file:'){const clone=document.documentElement.cloneNode(true);clone.querySelector('#view').innerHTML='';download('Orgo-Field-Notes-offline.html','<!doctype html>\n'+clone.outerHTML,'text/html');}else{try{const r=await fetch('Orgo-Field-Notes-offline.html');if(!r.ok)throw Error();download('Orgo-Field-Notes-offline.html',await r.text(),'text/html');}catch{showToast('Download unavailable. Use the standalone HTML included with this build.');}}return;}
     else if(act==='print'){window.print();return;}
     else return;
     save();render(focus);
   });
   document.getElementById('importFile').addEventListener('change',async e=>{
     const file=e.target.files[0];if(!file)return;
-    try{if(file.size>1000000)throw Error();const raw=JSON.parse(await file.text());if(raw.version!==1)throw Error();const temp={getItem:()=>JSON.stringify(raw)};state=readProgress(temp,chapters).state;resetUI();save();render();document.getElementById('toast').textContent='Progress imported.';}catch{document.getElementById('toast').textContent='Could not import a valid version 1 progress file.';}e.target.value='';
+    try{if(file.size>1000000)throw Error();const raw=JSON.parse(await file.text());if(raw.version!==1)throw Error();const temp={getItem:()=>JSON.stringify(raw)};state=readProgress(temp,chapters).state;resetUI();save();render();showToast('Progress imported.');}catch{showToast('Could not import a valid version 1 progress file.');}e.target.value='';
   });
   function download(name,text,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>applyPreferences(state));

@@ -29,7 +29,7 @@
         "rule": "<p>An alpha amino acid has amino and carboxyl groups attached to the same alpha carbon. At many near-neutral pH conditions, simple amino acids predominantly form zwitterions. Side chains add nonpolar, aromatic, polar, acidic, or basic behavior. Glycine has no stereocenter; most proteinogenic L amino acids are S, with cysteine the familiar R exception.</p>",
         "cue": "<p>Low pH adds protons; high pH removes them. Net charge is the sum of all ionized groups.</p>",
         "trap": "<p>A zwitterion has formal charges despite net zero charge. The pI is the pH of average net zero charge; for ionizable side chains, average the two pKa values bracketing the neutral species, not automatically the terminal pKa pair.</p>",
-        "app": "<p>At a pH below its pI, an amino acid/protein tends to have positive net charge; above pI, negative net charge. This guides separations.</p>"
+        "app": "<p>Aliphatic side chains such as Ala, Val, Leu, and Ile are nonpolar; Ser and Thr have polar OH groups; Asn and Gln have polar amides. Asp/Glu are usually negatively charged near neutral pH; Lys/Arg usually positive. Histidine protonation is strongly pH- and environment-dependent. Aromatic does not always mean purely nonpolar: Tyr has a phenolic OH. At pH below pI a protein tends positive; above pI it tends negative.</p>"
       },
       "steps": [
         {
@@ -207,7 +207,7 @@
       "tag": "Phosphoesters differ from phosphoanhydrides",
       "cards": {
         "rule": "<p>A phosphate ester contains P–O–C; a phosphodiester has two such ester links. A phosphoanhydride contains P–O–P. Phosphoric acid has successive dissociations, so charge depends on pH. Formal P=O Lewis drawings are bookkeeping models of delocalized bonding.</p>",
-        "cue": "<p>DNA/RNA backbone: phosphodiester. Between ATP phosphate groups: phosphoanhydride.</p>",
+        "cue": "<p>DNA/RNA backbone: phosphodiester. Between ATP phosphate groups: phosphoanhydride. Approximate aqueous phosphoric-acid pKa values are 2.1, 7.2, and 12.3, so the H2PO4−/HPO4²− pair can buffer near neutral pH; temperature and ionic conditions shift these values.</p>",
         "trap": "<p>Breaking a bond requires energy. Favorable ATP hydrolysis reflects the overall free-energy difference between reactants and solvated products, including resonance, electrostatics, and solvation; energy is not released simply by breaking one bond.</p>",
         "app": "<p>Phosphoryl transfer can couple reactions. Nucleic-acid synthesis releases pyrophosphate, whose subsequent hydrolysis can help favor polymerization.</p>"
       },

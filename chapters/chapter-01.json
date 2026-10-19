@@ -70,7 +70,8 @@
               6
             ],
             "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "2. Parent Chain",
@@ -116,7 +117,8 @@
               6
             ],
             "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "3. Number Carbons",
@@ -171,7 +173,8 @@
               6
             ],
             "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
-          }
+          },
+          "focus": "trap"
         },
         {
           "label": "4. Assemble Name",
@@ -232,7 +235,8 @@
               6
             ],
             "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
-          }
+          },
+          "focus": "cue"
         }
       ]
     },
@@ -278,7 +282,8 @@
               3
             ],
             "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "2. Principal Group",
@@ -313,7 +318,8 @@
               3
             ],
             "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "3. Parent Chain",
@@ -354,7 +360,8 @@
               3
             ],
             "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
-          }
+          },
+          "focus": "cue"
         },
         {
           "label": "4. Number & Name",
@@ -401,7 +408,8 @@
               3
             ],
             "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
-          }
+          },
+          "focus": "trap"
         }
       ]
     },
@@ -447,7 +455,8 @@
               4
             ],
             "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "2. Lock C1–C2 on C=C",
@@ -491,7 +500,8 @@
               4
             ],
             "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "3. Number & Name",
@@ -544,7 +554,8 @@
               4
             ],
             "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
-          }
+          },
+          "focus": "trap"
         }
       ]
     },
@@ -604,7 +615,8 @@
               1
             ],
             "explanation": "Correct! Both adjacent carbons (C1 and C2) carry hydroxyl groups in ethane-1,2-diol."
-          }
+          },
+          "focus": "cue"
         },
         {
           "label": "2. Geminal Diol (1,1)",
@@ -650,7 +662,8 @@
               1
             ],
             "explanation": "Spot on! Carbon B (C2) carries both hydroxyl groups in propane-2,2-diol."
-          }
+          },
+          "focus": "trap"
         }
       ]
     },
@@ -661,7 +674,7 @@
       "tag": "Aldehyde (Terminal C1) Outranks Ketone (Internal)",
       "molecule": "ketone",
       "cards": {
-        "rule": "<p><strong>Aldehydes (R–CHO)</strong> are terminal (C1) and use suffix <code>–al</code>. <strong>Ketones (R–CO–R′)</strong> are internal, require a locant, and use suffix <code>–one</code>. When subordinate, both use prefix <strong>oxo–</strong> (ketones also use <strong>keto–</strong>).</p>",
+        "rule": "<p>Aldehydes have a carbonyl carbon bonded to at least one H; ketones have two carbon substituents. The simple acyclic examples here use –al and –one. A formyl group attached to a ring may instead require a –carbaldehyde name. Subordinate carbonyl naming depends on whether its carbon belongs to the selected parent; oxo– and formyl– are not universally interchangeable.</p>",
         "cue": "<p><strong>Common Names (1C–3C):</strong><br>• 1C: <strong>Formaldehyde</strong> (methanal)<br>• 2C: <strong>Acetaldehyde</strong> (ethanal)<br>• 3C: <strong>Propionaldehyde</strong> (propanal) &amp; <strong>Acetone</strong> (propanone)</p>",
         "trap": "<p><strong>Acetone Carbon-Count Trap:</strong><br>Although <code>acet–</code> usually means 2 carbons, <strong>acetone (propanone) has 3 carbons</strong> because a ketone requires a carbon on both sides of C=O!</p>",
         "app": "<p><strong>Aldoses, Ketoses &amp; Enolates:</strong><br>Carbohydrates are aldoses or ketoses; acidic α-hydrogens on α-carbons form nucleophilic enolates in aldol reactions.</p>"
@@ -701,7 +714,8 @@
               2
             ],
             "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "2. Number Ketone",
@@ -751,7 +765,8 @@
               2
             ],
             "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "3. α-Carbons & Name",
@@ -805,7 +820,8 @@
               2
             ],
             "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
-          }
+          },
+          "focus": "app"
         },
         {
           "label": "4. Aldehyde Priority",
@@ -856,7 +872,8 @@
               3
             ],
             "explanation": "Correct! Carbon D (the aldehyde carbon on the right) outranks the alcohol and is automatically C1."
-          }
+          },
+          "focus": "trap"
         }
       ]
     },
@@ -930,7 +947,8 @@
               4
             ],
             "explanation": "Spot on! Carbon E (the carboxylic acid carbon) is C1, placing oxo at C2 and hydroxy at C4."
-          }
+          },
+          "focus": "rule"
         },
         {
           "label": "2. Ester (alkyl –oate)",
@@ -980,7 +998,8 @@
               2
             ],
             "explanation": "Correct! Carbon C is the ester carbonyl carbon (C1 of the 3-carbon propanoate parent)."
-          }
+          },
+          "focus": "cue"
         },
         {
           "label": "3. N-Amide (N– prefix)",
@@ -1031,7 +1050,8 @@
               2
             ],
             "explanation": "Correct! Carbon C is the amide carbonyl carbon (C1 of the 3-carbon propanamide parent)."
-          }
+          },
+          "focus": "cue"
         },
         {
           "label": "4. Anhydrides",
@@ -1064,7 +1084,8 @@
               3
             ],
             "explanation": "Correct! Carbons B and D are the two acyl carbonyl carbons flanking the central bridging oxygen."
-          }
+          },
+          "focus": "trap"
         }
       ]
     }

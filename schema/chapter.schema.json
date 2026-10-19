@@ -460,6 +460,14 @@
             "explanation"
           ],
           "additionalProperties": false
+        },
+        "focus": {
+          "enum": [
+            "rule",
+            "cue",
+            "trap",
+            "app"
+          ]
         }
       },
       "required": [

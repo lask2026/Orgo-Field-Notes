@@ -8,6 +8,8 @@ export function startApp(data){
   let storage;try{storage=localStorage;}catch{storage={getItem(){throw Error('unavailable');}};}
   const loaded=readProgress(storage,chapters);let state=loaded.state;
   let ui={},storageError=loaded.error;
+  let toastTimer;
+  function showToast(message){clearTimeout(toastTimer);document.getElementById('toast').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('toast').textContent='';},4500);}
   const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined};};resetUI();
   const chapter=()=>chapters.find(c=>c.id===state.chapter)||chapters[0];
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
@@ -48,7 +50,7 @@ export function startApp(data){
     else if(act==='revealLearn'){ui.revealLearn=true;}
     else if(act==='try'){ui.tryMode=!ui.tryMode;ui.selected=[];ui.checked=false;}
     else if(act==='checkTry'){ui.checked=true;}
-    else if(act==='selectAtom'){if(ui.correct)return;ui.selected=ui.selected.includes(i)?ui.selected.filter(n=>n!==i):[...ui.selected,i];ui.checked=false;focus=`.ahit[data-idx="${i}"]`;}
+    else if(act==='selectAtom'){if(ui.correct)return;ui.selected=ui.selected.includes(i)?ui.selected.filter(n=>n!==i):[...ui.selected,i];ui.checked=false;focus=`.${b.classList.contains('atom-key')?'atom-key':'ahit'}[data-idx="${i}"]`;}
     else if(act==='practiceConcept'){state.mode='guided';state.exercise=0;resetUI();}
     else if(act==='exercise'){state.exercise=i;resetUI();}
     else if(act==='choice'){check(i);return;}
@@ -63,14 +65,14 @@ export function startApp(data){
     else if(act==='confirmReset'){state.practice={};document.getElementById('resetDialog').close();resetUI();}
     else if(act==='exportProgress'){download('orgo-progress.json',JSON.stringify(state,null,2),'application/json');return;}
     else if(act==='importProgress'){document.getElementById('importFile').click();return;}
-    else if(act==='saveApp'){if(location.protocol==='file:'){const clone=document.documentElement.cloneNode(true);clone.querySelector('#view').innerHTML='';download('Orgo-Field-Notes-offline.html','<!doctype html>\n'+clone.outerHTML,'text/html');}else{try{const r=await fetch('Orgo-Field-Notes-offline.html');if(!r.ok)throw Error();download('Orgo-Field-Notes-offline.html',await r.text(),'text/html');}catch{document.getElementById('toast').textContent='Download unavailable. Use the standalone HTML included with this build.';}}return;}
+    else if(act==='saveApp'){if(location.protocol==='file:'){const clone=document.documentElement.cloneNode(true);clone.querySelector('#view').innerHTML='';download('Orgo-Field-Notes-offline.html','<!doctype html>\n'+clone.outerHTML,'text/html');}else{try{const r=await fetch('Orgo-Field-Notes-offline.html');if(!r.ok)throw Error();download('Orgo-Field-Notes-offline.html',await r.text(),'text/html');}catch{showToast('Download unavailable. Use the standalone HTML included with this build.');}}return;}
     else if(act==='print'){window.print();return;}
     else return;
     save();render(focus);
   });
   document.getElementById('importFile').addEventListener('change',async e=>{
     const file=e.target.files[0];if(!file)return;
-    try{if(file.size>1000000)throw Error();const raw=JSON.parse(await file.text());if(raw.version!==1)throw Error();const temp={getItem:()=>JSON.stringify(raw)};state=readProgress(temp,chapters).state;resetUI();save();render();document.getElementById('toast').textContent='Progress imported.';}catch{document.getElementById('toast').textContent='Could not import a valid version 1 progress file.';}e.target.value='';
+    try{if(file.size>1000000)throw Error();const raw=JSON.parse(await file.text());if(raw.version!==1)throw Error();const temp={getItem:()=>JSON.stringify(raw)};state=readProgress(temp,chapters).state;resetUI();save();render();showToast('Progress imported.');}catch{showToast('Could not import a valid version 1 progress file.');}e.target.value='';
   });
   function download(name,text,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>applyPreferences(state));

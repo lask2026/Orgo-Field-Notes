@@ -30,6 +30,3 @@ for(const [id,m] of Object.entries(old.M)){
  m.review='Migrated graph; valence/formula checked separately from chemical naming author review.';
 }
 fs.writeFileSync('chapters/molecules.json',JSON.stringify(old.M,null,2)+'\n');
-// Keep the established rendering primitives, with accessibility/charge upgrades in src/molecules.js.
-const draw=script.slice(script.indexOf('function drawMol('),script.indexOf('function renderAnatomy('));
-fs.writeFileSync('src/molecules-legacy.txt',draw);

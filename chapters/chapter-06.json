@@ -134,7 +134,7 @@
       "molecule": "imine",
       "tag": "Reagent identity changes the product",
       "cards": {
-        "rule": "<p>A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha hydrogen is available. Cyanide addition followed by protonation forms a cyanohydrin and creates a new C–C bond.</p>",
+        "rule": "<p>A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha H is available. Related nitrogen reagents form oximes (hydroxylamine), hydrazones (hydrazine derivatives), and semicarbazones (semicarbazide). Cyanide addition followed by protonation forms a cyanohydrin and creates a C–C bond.</p>",
         "cue": "<p>Primary amine → C=N; secondary amine + alpha H → C=C–N. Cyanide adds its carbon.</p>",
         "trap": "<p>Too much acid protonates the amine and suppresses its nucleophilicity. Enamine formation needs an alpha hydrogen. Do not attach cyanide through nitrogen in a standard cyanohydrin product.</p>",
         "app": "<p>Schiff-base (imine) intermediates help enzymes reorganize electron density; nitrogen chemistry is a bridge to amino-acid metabolism.</p>"
