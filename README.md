@@ -1,6 +1,8 @@
 # Orgo Field Notes
 
-A reusable MCAT organic chemistry studio with **12 chapters, 51 lessons, 59 guided workshops, 178 stages, and 68 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
+A reusable MCAT organic chemistry studio with **12 chapters, 51 lessons, 60 guided workshops, 181 stages, and 71 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
+
+For applying the development/review process to biology, physics and other subjects, see [the reusable multi-subject plan](docs/MULTI_SUBJECT_REVIEW_PLAN.md) and the prompts/rubrics in [review-templates/](review-templates/). These are a workflow and templates; the existing application and automated runner still use Orgo-specific data.
 
 ## Open the application
 

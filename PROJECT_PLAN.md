@@ -2,6 +2,8 @@
 
 ## Architecture
 
+For future biology, physics and other educational apps, use docs/MULTI_SUBJECT_REVIEW_PLAN.md and review-templates/. They define reusable review procedures and prompts; they do not make the current Orgo engine/runner subject-neutral. Preserve this project's curriculum and tests while future subject adapters are designed and piloted.
+
 - src/molecules.js: reusable accessible SVG molecular graph renderer.
 - src/animations.js: animation preference and reduced-motion handling.
 - src/learn.js and src/practice.js: data-driven learning modes.
