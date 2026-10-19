@@ -1,0 +1,357 @@
+CHAPTER 2
+ISOMERS
+In This Chapter
+Introduction
+2.1 Structural Isomers
+MCAT CONCEPT CHECK 2.1:
+2.2 Stereoisomers 
+Conformational Isomers
+Straight-Chain Conformations
+Cyclic Conformations
+Configurational Isomers
+Chirality
+Enantiomers
+Diastereomers
+Cis–Trans Isomers
+Meso Compounds
+MCAT CONCEPT CHECK 2.2:
+2.3 Relative and Absolute Configurations
+(E) and (Z) Forms
+(R) and (S) Forms
+Step 1: Assign Priority
+Step 2 (Classic Version): Arrange in Space
+Step 2 (Modified Version): Invert the Stereochemistry
+Step 3: Draw a Circle
+Step 4: Write the Name
+Fischer Projections
+Option 1: Make 0 Switches
+Option 2: Make 1 Switch
+Option 3: Make 2 Switches
+MCAT CONCEPT CHECK 2.3:
+Conclusion
+CONCEPT SUMMARY
+Structural Isomers
+Stereoisomers
+Relative and Absolute Configurations
+ANSWERS TO CONCEPT CHECKS
+2.1
+2.2
+2.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+EQUATIONS TO REMEMBER
+SHARED CONCEPTS
+CHAPTER 3
+BONDING
+In This Chapter
+Introduction
+3.1 Atomic Orbitals and Quantum Numbers
+MCAT CONCEPT CHECK 3.1:
+3.2 Molecular Orbitals
+σ and π Bonds
+MCAT CONCEPT CHECK 3.2:
+3.3 Hybridization
+sp3
+sp2
+sp
+Resonance
+MCAT CONCEPT CHECK 3.3:
+Conclusion
+CONCEPT SUMMARY
+Atomic Orbitals and Quantum Numbers
+Molecular Orbitals
+Hybridization
+ANSWERS TO CONCEPT CHECKS
+3.1
+3.2
+3.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 4
+ANALYZING ORGANIC REACTIONS
+In This Chapter
+Introduction
+4.1 Acids and Bases
+Definitions
+Acid and Base Strength
+Common Functional Groups
+MCAT CONCEPT CHECK 4.1:
+4.2 Nucleophiles, Electrophiles, and Leaving Groups
+Nucleophiles
+Solvent Effects
+Electrophiles
+Leaving Groups
+Nucleophilic Substitution Reactions
+SN1 Reactions
+SN2 Reactions
+MCAT CONCEPT CHECK 4.2:
+4.3 Oxidation–Reduction Reactions
+Oxidizing Agents and Reactions
+Reducing Agents and Reactions
+MCAT CONCEPT CHECK 4.3:
+4.4 Chemoselectivity
+Reactive Locations
+Steric Protection
+MCAT CONCEPT CHECK 4.4:
+4.5 Steps to Problem Solving 
+Step 1: Know Your Nomenclature
+Step 2: Identify the Functional Groups
+Step 3: Identify the Other Reagents
+Step 4: Identify the Most Reactive Functional Group(s)
+Step 5: Identify the First Step of the Reaction
+Step 6: Consider Stereospecificity/ Stereoselectivity
+Example Reactions
+Reaction 1
+Reaction 2
+Reaction 3
+MCAT CONCEPT CHECK 4.5:
+Conclusion
+CONCEPT SUMMARY
+Acids and Bases
+Nucleophiles, Electrophiles, and Leaving Groups
+Oxidation–Reduction Reactions
+Chemoselectivity
+Steps to Problem Solving
+ANSWERS TO CONCEPT CHECKS
+4.1
+4.2
+4.3
+4.4
+4.5
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+EQUATIONS TO REMEMBER
+SHARED CONCEPTS
+CHAPTER 5
+ALCOHOLS
+In This Chapter
+Introduction
+5.1 Description and Properties
+Nomenclature
+Physical Properties
+MCAT CONCEPT CHECK 5.1:
+5.2 Reactions of Alcohols
+Oxidation Reactions
+Mesylates and Tosylates
+Protecting Groups
+MCAT CONCEPT CHECK 5.2:
+5.3 Reactions of Phenols 
+Quinones and Hydroxyquinones
+Ubiquinone
+MCAT CONCEPT CHECK 5.3:
+Conclusion
+CONCEPT SUMMARY
+Description and Properties
+Reactions of Alcohols
+Reactions of Phenols
+ANSWERS TO CONCEPT CHECKS
+5.1
+5.2
+5.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 6
+ALDEHYDES AND KETONES I: ELECTROPHILICITY AND OXIDATION–REDUCTION
+In This Chapter
+Introduction
+6.1 Description and Properties
+Nomenclature
+Physical Properties
+Formation
+MCAT CONCEPT CHECK 6.1:
+6.2 Nucleophilic Addition Reactions
+Hydration
+Acetals and Hemiacetals
+Imines and Enamines
+Cyanohydrins
+MCAT CONCEPT CHECK 6.2:
+6.3 Oxidation–Reduction Reactions
+Oxidation of Aldehydes
+Reduction by Hydride Reagents
+MCAT CONCEPT CHECK 6.3:
+Conclusion
+CONCEPT SUMMARY
+Description and Properties
+Nucleophilic Addition Reactions
+Oxidation–Reduction Reactions
+ANSWERS TO CONCEPT CHECKS
+6.1
+6.2
+6.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 7
+ALDEHYDES AND KETONES II: ENOLATES
+In This Chapter
+Introduction
+7.1 General Principles
+Acidity of α-Hydrogens
+Steric Hindrance
+MCAT CONCEPT CHECK 7.1:
+7.2 Enolate Chemistry
+Keto–Enol Tautomerization
+Kinetic and Thermodynamic Enolates
+Enamines
+MCAT CONCEPT CHECK 7.2:
+7.3 Aldol Condensation
+The Retro-Aldol Reaction
+MCAT CONCEPT CHECK 7.3:
+Conclusion
+CONCEPT SUMMARY
+General Principles
+Enolate Chemistry
+Aldol Condensation
+ANSWERS TO CONCEPT CHECKS
+7.1
+7.2
+7.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 8
+CARBOXYLIC ACIDS
+In This Chapter
+Introduction
+8.1 Description and Properties
+Nomenclature
+Physical Properties
+Hydrogen Bonding
+Acidity
+MCAT CONCEPT CHECK 8.1:
+8.2 Reactions of Carboxylic Acids 
+Synthesis of Carboxylic Acids
+Nucleophilic Acyl Substitution
+Amides
+Esters
+Anhydrides
+Reduction
+Decarboxylation
+Saponification
+MCAT CONCEPT CHECK 8.2:
+Conclusion
+CONCEPT SUMMARY
+Description and Properties
+Reactions of Carboxylic Acids
+ANSWERS TO CONCEPT CHECKS
+8.1
+8.2
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 9
+CARBOXYLIC ACID DERIVATIVES
+In This Chapter
+Introduction
+9.1 Amides, Esters, and Anhydrides
+Descriptions
+Amides
+Esters
+Anhydrides
+MCAT CONCEPT CHECK 9.1:
+9.2 Reactivity Principles
+Relative Reactivity of Derivatives
+Steric Effects
+Electronic Effects
+Strain in Cyclic Derivatives
+MCAT CONCEPT CHECK 9.2:
+9.3 Nucleophilic Acyl Substitution Reactions 
+Anhydride Cleavage
+Transesterification
+Hydrolysis of Amides
+MCAT CONCEPT CHECK 9.3:
+Conclusion
+CONCEPT SUMMARY
+Amides, Esters, and Anhydrides
+Reactivity Principles
+Nucleophilic Acyl Substitution Reactions
+ANSWERS TO CONCEPT CHECKS
+9.1
+9.2
+9.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 10
+NITROGEN- AND PHOSPHORUS-CONTAINING COMPOUNDS
+In This Chapter
+Introduction
+10.1 Amino Acids, Peptides, and Proteins
+Description
+Properties
+MCAT CONCEPT CHECK 10.1:
+10.2 Synthesis of α-Amino Acids
+Strecker Synthesis
+Gabriel Synthesis
+MCAT CONCEPT CHECK 10.2:
+10.3 Phosphorus-Containing Compounds
+Description
+Properties
+MCAT CONCEPT CHECK 10.3:
+Conclusion
+CONCEPT SUMMARY
+Amino Acids, Peptides, and Proteins
+Synthesis of α-Amino Acids
+Phosphorus-Containing Compounds
+ANSWERS TO CONCEPT CHECKS
+10.1
+10.2
+10.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 11
+SPECTROSCOPY
+In This Chapter
+Introduction
+11.1 Infrared Spectroscopy
+Intramolecular Vibrations and Rotations
+Characteristic Absorptions
+MCAT CONCEPT CHECK 11.1:
+11.2 Ultraviolet Spectroscopy
+Electron Transitions
+Conjugated Systems
+MCAT CONCEPT CHECK 11.2:
+11.3 Nuclear Magnetic Resonance Spectroscopy
+Proton NMR (1H–NMR)
+MCAT CONCEPT CHECK 11.3:
+Conclusion
+CONCEPT SUMMARY
+Infrared Spectroscopy
+Ultraviolet Spectroscopy
+Nuclear Magnetic Resonance Spectroscopy
+ANSWERS TO CONCEPT CHECKS
+11.1
+11.2
+11.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+SHARED CONCEPTS
+CHAPTER 12
+SEPARATIONS AND PURIFICATIONS
+In This Chapter
+Introduction
+12.1 Solubility-Based Methods
+Extraction
+Other Methods
+Filtration
+Recrystallization
+MCAT CONCEPT CHECK 12.1:
+12.2 Distillation
+Simple Distillation
+Vacuum Distillation
+Fractional Distillation
+MCAT CONCEPT CHECK 12.2:
+12.3 Chromatography 
+Thin-Layer and Paper Chromatography
+Column Chromatography
+Ion-Exchange Chromatography
+Size-Exclusion Chromatography
+Affinity Chromatography
+Gas Chromatography
+High-Performance Liquid Chromatography
+MCAT CONCEPT CHECK 12.3:
+Conclusion
+CONCEPT SUMMARY
+Solubility-Based Methods
+Distillation
+Chromatography
+ANSWERS TO CONCEPT CHECKS
+12.1
+12.2
+12.3
+SCIENCE MASTERY ASSESSMENT EXPLANATIONS
+EQUATIONS TO REMEMBER
+SHARED CONCEPTS

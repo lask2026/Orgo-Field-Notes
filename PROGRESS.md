@@ -1,3 +1,6 @@
 # Progress
 
 2026-10-19: Inspected both reference apps and supplied EPUB table of contents. Initialized repository. Architecture in progress. No chapter is yet marked complete.
+
+- Chapter 1 complete: 6 lessons, 12 guided workshops, 34 stages. Schema, graph/formula/reference checks and Playwright desktop/mobile/offline checks passed. Corrected reference inaccuracies; independent expert review remains pending.
+- Engine, strict answer validation, versioned persistence, progress backup, accessible graphs, Pages build and offline build implemented.

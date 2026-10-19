@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orgo Field Notes · Chapter 1: Nomenclature</title>
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--sub:#eef2f6;--ink:#0f172a;--sec:#334155;--muted:#64748b;--bd:#cbd5e1;--green:#059669;--green-bg:#ecfdf5;--green-bd:#6ee7b7;--blue:#2563eb;--blue-bg:#eff6ff;--blue-bd:#93c5fd;--orange:#d97706;--orange-bg:#fffbeb;--orange-bd:#fcd34d;--red:#e11d48;--red-bg:#fff1f2;--red-bd:#fda4af;--teal:#0d9488;--teal-bg:#f0fdfa;--teal-bd:#5eead4;--purple:#6d28d9;--purple-bg:#f5f3ff;--purple-bd:#c4b5fd}
+*{box-sizing:border-box;margin:0;padding:0}html,body{max-width:100%}body{font:16px/1.56 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}button,input,select{font:inherit;max-width:100%}button,select{cursor:pointer}button:disabled{cursor:default;opacity:.5}button:focus-visible,input:focus-visible,select:focus-visible,[role=button]:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.hdr{background:#0f172a;color:#fff;position:sticky;top:0;z-index:40;box-shadow:0 2px 8px #0002}.hdr-in{max-width:1360px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 190px}.logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--blue),var(--green));display:grid;place-items:center;font-size:18px;flex-shrink:0}.b-title{font-size:1.02rem;font-weight:800;line-height:1.2}.b-title span{color:#93c5fd}.b-sub{font-size:.72rem;color:#94a3b8;line-height:1.25}.hdr-ctrl{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0;max-width:100%}.ch-sel{background:#1e293b;color:#fff;border:1px solid #475569;border-radius:7px;padding:5px 8px;font-size:.8rem;font-weight:700;min-width:0;max-width:100%;text-overflow:ellipsis}.ubtn{padding:5px 9px;border-radius:7px;border:1px solid #475569;background:#1e293b;color:#fff;font-size:.75rem;font-weight:700;white-space:nowrap}.ubtn:hover{background:#334155}.ubtn.on{background:#1e3a8a;border-color:#60a5fa}
+.mbar-w{background:#fff;border-bottom:1px solid var(--bd)}.mbar{max-width:1360px;margin:0 auto;padding:0 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.mtabs{display:flex;gap:6px;flex-wrap:wrap;padding:7px 0}.mtab{padding:7px 12px;border-radius:8px;border:1.5px solid transparent;background:none;color:var(--sec);font-size:.86rem;font-weight:750;display:flex;align-items:center;gap:6px}.mtab:hover{background:var(--sub)}.mtab[aria-current=page]{background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)}.bdg{font-size:.7rem;padding:1px 7px;border-radius:99px;font-weight:800;background:var(--green);color:#fff}
+.leg{display:flex;flex-wrap:wrap;gap:10px;font-size:.74rem;font-weight:700;color:var(--sec);padding:4px 0}.leg i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:middle}
+.wrap{max-width:1360px;width:100%;margin:0 auto;padding:16px 16px 45px;flex:1}
+.warn-banner{background:#fef3c7;border:1.5px solid #f59e0b;color:#92400e;padding:10px 14px;border-radius:9px;margin-bottom:14px;font-size:.86rem;font-weight:700;display:none}.warn-banner.show{display:block}
+.cnav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}.cbtn{padding:7px 11px;border-radius:9px;border:1.5px solid var(--bd);background:#fff;color:var(--sec);font-size:.84rem;font-weight:750;display:flex;align-items:center;gap:6px;transition:all .15s}.cbtn:hover{border-color:var(--blue)}.cbtn[aria-pressed=true]{background:var(--blue);color:#fff;border-color:var(--blue)}.cbtn span{font:700 .72rem Consolas,monospace;padding:1px 5px;border-radius:4px;background:#0001}.cbtn[aria-pressed=true] span{background:#fff3}
+.sub-nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:#fff;border:1px solid var(--bd);border-radius:10px;padding:9px 14px;margin-bottom:14px}
+.grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;align-items:start}@media(max-width:960px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:13px;padding:16px;box-shadow:0 2px 6px #0f172a0a;min-width:0;margin-bottom:14px;overflow-wrap:anywhere}.c-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px;flex-wrap:wrap}.c-title{font-size:1.1rem;font-weight:800;line-height:1.3}.c-tag{font-size:.72rem;font-weight:800;padding:3px 9px;border-radius:99px;background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd);max-width:100%}.c-tag.replay{background:var(--orange-bg);color:#92400e;border-color:var(--orange-bd)}
+.stage{background:#fff;border:1.5px solid #e2e8f0;border-radius:11px;padding:10px;margin:8px 0;position:relative;overflow:hidden}.mol{display:block;width:100%;height:auto;max-height:245px;overflow:visible}.mol text{font-family:system-ui,sans-serif;font-weight:750;fill:var(--ink)}
+.ahit{cursor:pointer}.ahit circle{fill:#f8fafc;stroke:#94a3b8;stroke-width:1.8;transition:all .15s}.ahit:hover circle,.ahit:focus circle{stroke:var(--orange);stroke-width:3.2}.ahit.sel circle{fill:#dbeafe;stroke:var(--blue);stroke-width:3.2}.ahit.ok circle{fill:#d1fae5;stroke:var(--green);stroke-width:3.2}.ahit.err circle{fill:#ffe4e6;stroke:var(--red);stroke-width:3.2}.ahit text{font-size:11px;pointer-events:none}
+
+@keyframes drawPath{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes popIn{0%{opacity:0;transform:scale(.55)}100%{opacity:1;transform:scale(1)}}
+@keyframes slidePart{0%{opacity:0;transform:translateY(6px)}100%{opacity:1;transform:translateY(0)}}
+body:not(.no-anim) .anim-path{stroke-dasharray:100;stroke-dashoffset:100;animation:drawPath .42s ease-out forwards}
+body:not(.no-anim) .anim-halo{transform-origin:center;transform-box:fill-box;animation:popIn .28s ease-out forwards}
+body:not(.no-anim) .anim-loc{transform-origin:center;transform-box:fill-box;opacity:0;animation:popIn .26s ease-out forwards;animation-delay:calc(var(--i,0)*95ms)}
+body:not(.no-anim) .anim-alt{transform-origin:center;transform-box:fill-box;opacity:0;animation:popIn .26s ease-out forwards;animation-delay:calc(var(--i,0)*85ms)}
+body:not(.no-anim) .npill{opacity:0;animation:slidePart .28s ease-out forwards;animation-delay:calc(var(--i,0)*90ms)}
+body:not(.no-anim) .final-merged{opacity:0;animation:slidePart .32s ease-out forwards;animation-delay:calc(var(--i,0)*90ms)}
+@media(prefers-reduced-motion:reduce){.anim-path,.anim-halo,.anim-loc,.anim-alt,.npill,.final-merged{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+
+.sbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;justify-content:center;align-items:center}.sbtn{padding:6px 10px;border-radius:7px;border:1.5px solid var(--bd);background:var(--sub);color:var(--sec);font-size:.8rem;font-weight:750}.sbtn:hover{border-color:var(--ink)}.sbtn[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}.sbtn.try{background:var(--orange-bg);color:#92400e;border-color:var(--orange-bd)}.sbtn.try[aria-pressed=true]{background:var(--orange);color:#fff;border-color:var(--orange)}.sexp{background:var(--sub);border-left:4px solid var(--blue);padding:10px 13px;border-radius:7px;font-size:.9rem;margin-top:8px}
+.abar{display:flex;flex-wrap:wrap;align-items:center;gap:5px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:8px 11px;margin-top:9px}.albl{font-size:.7rem;font-weight:800;text-transform:uppercase;color:var(--muted);margin-right:4px}.npill{display:inline-flex;flex-direction:column;padding:3px 8px;border-radius:6px;font:800 .84rem/1.2 Consolas,monospace;border:1.5px solid}.npill small{font:700 .64rem system-ui,sans-serif;margin-top:2px}.np-sub{background:var(--orange-bg);color:#92400e;border-color:var(--orange-bd)}.np-root{background:var(--blue-bg);color:#1e40af;border-color:var(--blue-bd)}.np-inf{background:var(--purple-bg);color:#5b21b6;border-color:var(--purple-bd)}.np-suf{background:var(--green-bg);color:#065f46;border-color:var(--green-bd)}.final-merged{font:800 .88rem Consolas,monospace;background:#0f172a;color:#fff;padding:4px 9px;border-radius:6px;overflow-wrap:anywhere}
+.tstack{display:flex;flex-direction:column;gap:10px;min-width:0}.tcard{border-radius:10px;padding:12px 15px;border-left:5px solid;transition:all .18s;overflow-wrap:anywhere}.tcard.focus{box-shadow:0 0 0 2px var(--ink),0 4px 12px #0001}.tcard h3{font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px}.tcard p{font-size:.9rem;color:var(--sec)}.tc-rule{background:var(--blue-bg);border-left-color:var(--blue)}.tc-rule h3{color:#1e40af}.tc-cue{background:var(--orange-bg);border-left-color:var(--orange)}.tc-cue h3{color:#92400e}.tc-trap{background:var(--red-bg);border-left-color:var(--red)}.tc-trap h3{color:#9f1239}.tc-app{background:var(--teal-bg);border-left-color:var(--teal)}.tc-app h3{color:#115e59}
+details.drw{background:#fff;border:1px solid var(--bd);border-radius:9px;padding:9px 13px;margin-top:6px;min-width:0}details.drw summary{font-weight:800;font-size:.85rem;cursor:pointer}.drw-b{margin-top:8px;padding-top:8px;border-top:1px solid #e2e8f0;font-size:.83rem;overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.8rem;text-align:left}th{background:var(--sub);font-size:.68rem;text-transform:uppercase;padding:6px 7px}td{padding:6px 7px;border-bottom:1px solid #e2e8f0}
+.scard{background:#fff;border:1.5px solid var(--bd);border-radius:10px;padding:13px 15px;margin-bottom:10px;transition:all .2s;min-width:0;overflow-wrap:anywhere}.scard.lock{opacity:.45;pointer-events:none;background:#f8fafc}.shead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;font-size:.9rem;font-weight:800;margin-bottom:7px}.stag{font-size:.68rem;text-transform:uppercase;padding:2px 7px;border-radius:99px;background:var(--sub);color:var(--muted)}.clist{display:grid;gap:6px}.copt{padding:9px 11px;border-radius:8px;border:1.5px solid var(--bd);background:#fff;text-align:left;font-size:.88rem;font-weight:600;display:flex;align-items:center;gap:8px;width:100%}.copt:hover{border-color:var(--blue);background:#f8fafc}.copt.ok{background:var(--green-bg);border-color:var(--green);color:#065f46;font-weight:750}.copt.err{background:var(--red-bg);border-color:var(--red);color:#9f1239}.clet{min-width:22px;height:22px;border-radius:5px;border:1px solid var(--bd);display:grid;place-items:center;font-size:.72rem;font-weight:800;flex-shrink:0}.fbox{margin-top:8px;padding:9px 12px;border-radius:8px;font-size:.86rem;font-weight:600;border-left:4px solid;overflow-wrap:anywhere}.fbox.ok{background:var(--green-bg);border-left-color:var(--green);color:#065f46}.fbox.err{background:var(--red-bg);border-left-color:var(--red);color:#9f1239}.tinp{width:100%;padding:8px 11px;border-radius:7px;border:1.5px solid #94a3b8;font-size:.94rem;margin:6px 0}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid var(--bd);background:#fff;color:var(--ink);font-size:.84rem;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.btn:hover{background:var(--sub)}.btn.pri{background:var(--blue);color:#fff;border-color:var(--blue)}.btn.suc{background:var(--green);color:#fff;border-color:var(--green)}.gal5{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:7px;margin-top:6px}.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;padding:9px 16px;border-radius:8px;font-size:.85rem;font-weight:600;z-index:90;max-width:92vw}.toast:empty{display:none}dialog{border:1px solid var(--bd);border-radius:12px;max-width:420px;width:92vw;padding:18px;margin:auto}dialog::backdrop{background:#0f172a88}.ftr{max-width:1360px;margin:0 auto;padding:12px 16px;border-top:1px solid var(--bd);font-size:.75rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;width:100%}
+@media(max-width:600px){
+  .hdr-in{padding:8px 10px;gap:8px}
+  .hdr-ctrl{width:100%;display:grid;grid-template-columns:1fr auto auto;gap:5px}
+  .ch-sel{width:100%;font-size:.74rem;padding:5px 6px}
+  .ubtn{font-size:.71rem;padding:5px 7px}
+  .mbar,.wrap{padding-left:10px;padding-right:10px}
+  .card,.scard{padding:12px}
+  .cbtn,.mtab{padding:6px 9px;font-size:.78rem}
+  .sub-nav{padding:8px 10px}
+}
+@media print{.hdr,.mbar-w,.sbar,.btn,.toast{display:none!important}.grid2{grid-template-columns:1fr}.card{box-shadow:none;border:1px solid #999;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <div class="brand">
+      <div class="logo">🧪</div>
+      <div>
+        <div class="b-title">ORGO <span>FIELD NOTES</span></div>
+        <div class="b-sub">Interactive MCAT Organic Chemistry Concept &amp; Guided Studio</div>
+      </div>
+    </div>
+    <div class="hdr-ctrl">
+      <select id="chSel" class="ch-sel" aria-label="Select Chapter">
+        <option value="ch1" selected>Ch 01 · Nomenclature (Active)</option>
+        <option disabled>Ch 02 · Isomers (Queued)</option>
+        <option disabled>Ch 03 · Bonding (Queued)</option>
+        <option disabled>Ch 04–12 · Queued</option>
+      </select>
+      <button class="ubtn on" id="animBtn" data-act="toggleAnim" title="Toggle educational animations">⚡ Anim: ON</button>
+      <button class="ubtn" data-act="saveHtml" title="Download standalone offline HTML app">💾 Save HTML</button>
+    </div>
+  </div>
+</header>
+
+<div class="mbar-w">
+  <div class="mbar">
+    <nav class="mtabs" id="modeNav" aria-label="Study Modes"></nav>
+    <div class="leg">
+      <span><i style="background:var(--green)"></i>Principal Group</span>
+      <span><i style="background:var(--blue)"></i>Parent Chain</span>
+      <span><i style="background:var(--orange)"></i>Substituents</span>
+      <span><i style="background:var(--red)"></i>Counter-Example / Trap</span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main" tabindex="-1">
+  <div id="storageWarn" class="warn-banner" role="alert">⚠️ Local browser storage is unavailable or restricted in this tab. Your work works normally during this session but will not persist after closing the tab.</div>
+  <div id="view"></div>
+</main>
+
+<footer class="ftr">
+  <div><strong>Orgo Field Notes (App 1: Concept &amp; Guided Studio)</strong> · Aligned with Kaplan MCAT Organic Chemistry Review Ch. 1 &amp; IUPAC Blue Book conventions.</div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap">
+    <button class="btn" style="padding:3px 8px;font-size:.74rem" data-act="runTests">🧪 Run Self-Test</button>
+    <button class="btn" style="padding:3px 8px;font-size:.74rem" data-act="confirmReset">↺ Reset Solved Labs</button>
+    <button class="btn" style="padding:3px 8px;font-size:.74rem" data-act="print">🖨️ Print</button>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="confirmDialog" aria-labelledby="dlgTitle">
+  <h2 id="dlgTitle" style="font-size:1.05rem;margin-bottom:6px">Reset Guided Practice Progress?</h2>
+  <p style="font-size:.88rem;color:var(--sec);margin-bottom:14px">This will clear your solved status and in-progress stages for all 12 Guided Practice workshops in this browser.</p>
+  <div style="display:flex;justify-content:flex-end;gap:8px">
+    <button class="btn" id="dlgCancel">Cancel</button>
+    <button class="btn pri" style="background:var(--red);border-color:var(--red)" id="dlgConfirm">Reset All Labs</button>
+  </div>
+</dialog>
+
+<script>
+(function(){
+'use strict';
+const C=(x,y)=>({e:'C',x,y}), A=(e,x,y)=>({e,x,y});
+function chain(n){return {atoms:Array.from({length:n},(_,i)=>C(48+i*54,115-(i%2)*30)),bonds:Array.from({length:n-1},(_,i)=>[i,i+1,1]),w:Math.max(310,95+(n-1)*54),h:200};}
+function add(m,e,x,y,to,ord=1){m.atoms.push(A(e,x,y));m.bonds.push([to,m.atoms.length-1,ord]);return m.atoms.length-1;}
+const M={};
+function put(id,m,name,form,cond){M[id]={...m,name,form,cond};}
+
+// 20 Verified Molecular Structures
+let m=chain(6);add(m,'C',156,36,2);put('branch',m,'3-methylhexane','C₇H₁₆','CH₃–CH₂–CH(CH₃)–CH₂–CH₂–CH₃');
+m=chain(7);add(m,'C',210,32,3);add(m,'C',256,12,7);add(m,'C',264,146,4);add(m,'C',318,32,5);put('fig15',m,'4-ethyl-2,3-dimethylheptane','C₁₁H₂₄','CH₃–CH₂–CH₂–CH(CH₂CH₃)–CH(CH₃)–CH(CH₃)–CH₃');
+m=chain(6);add(m,'C',102,32,1);add(m,'C',210,32,3);put('fake_pent',m,'2,4-dimethylhexane','C₈H₁₈','CH₃–CH(CH₃)–CH₂–CH(CH₃)–CH₂–CH₃');
+m=chain(4);m.bonds[0][2]=2;add(m,'O',156,166,2);put('enol',m,'but-3-en-2-ol','C₄H₈O','CH₂=CH–CH(OH)–CH₃');
+m=chain(5);m.bonds[0][2]=3;add(m,'O',210,32,3);put('ynol5',m,'pent-4-yn-2-ol','C₅H₈O','HC≡C–CH₂–CH(OH)–CH₃');
+m=chain(2);add(m,'O',48,52,0);add(m,'O',102,30,1);put('vicinal',m,'ethane-1,2-diol','C₂H₆O₂','HO–CH₂–CH₂–OH');
+m=chain(3);add(m,'O',76,32,1);add(m,'O',130,32,1);put('geminal',m,'propane-2,2-diol','C₃H₈O₂','CH₃–C(OH)₂–CH₃');
+m={atoms:[C(155,42),C(208,74),C(208,136),C(155,168),C(102,136),C(102,74),C(258,48),C(302,74),C(50,168)],bonds:[[0,1,1],[1,2,1],[2,3,1],[3,4,1],[4,5,2],[5,0,1],[1,6,1],[6,7,1],[4,8,1]],w:345,h:205};put('cyhex',m,'4-ethyl-1-methylcyclohex-1-ene','C₉H₁₆','Cyclohexene with methyl at C1 and ethyl at C4');
+m={atoms:[C(155,42),C(208,74),C(208,136),C(155,168),C(102,136),C(102,74),A('O',155,10),C(260,136)],bonds:[[0,1,1],[1,2,1],[2,3,1],[3,4,1],[4,5,1],[5,0,1],[0,6,1],[2,7,1]],w:320,h:205};put('cyol',m,'3-methylcyclohexan-1-ol','C₇H₁₄O','Cyclohexane with –OH at C1 and methyl at C3');
+m=chain(5);add(m,'O',102,30,1,2);put('ketone',m,'pentan-2-one','C₅H₁₀O','CH₃–C(=O)–CH₂–CH₂–CH₃');
+m=chain(4);add(m,'O',210,30,3,2);add(m,'H',260,115,3);add(m,'O',48,168,0);put('hyald',m,'4-hydroxybutanal','C₄H₈O₂','HO–CH₂–CH₂–CH₂–CHO');
+m=chain(5);add(m,'O',102,30,1);add(m,'O',210,30,3,2);add(m,'O',264,52,4,2);add(m,'O',316,142,4);m.w=360;put('hyoxo',m,'4-hydroxy-2-oxopentanoic acid','C₅H₈O₄','CH₃–CH(OH)–CH₂–C(=O)–COOH');
+m=chain(3);add(m,'O',156,52,2,2);let o=add(m,'O',208,142,2),c=add(m,'C',258,112,o);add(m,'C',308,142,c);m.w=360;put('ester',m,'ethyl propanoate','C₅H₁₀O₂','CH₃–CH₂–C(=O)–O–CH₂CH₃');
+m=chain(3);add(m,'O',156,52,2,2);let n=add(m,'N',208,142,2);add(m,'C',208,190,n);c=add(m,'C',258,112,n);add(m,'C',308,142,c);m.w=360;m.h=225;put('namide',m,'N-ethyl-N-methylpropanamide','C₆H₁₃NO','CH₃–CH₂–C(=O)–N(CH₃)–CH₂CH₃');
+m={atoms:[C(45,130),C(100,96),A('O',155,130),C(210,96),C(265,130),A('O',100,40),A('O',210,40)],bonds:[[0,1,1],[1,2,1],[2,3,1],[3,4,1],[1,5,2],[3,6,2]],w:315,h:195};put('anhyd',m,'ethanoic anhydride','C₄H₆O₃','CH₃–C(=O)–O–C(=O)–CH₃');
+m={atoms:[C(35,36),C(76,68),C(35,100),A('R~',128,68)],bonds:[[0,1,1],[1,2,1],[1,3,1]],w:170,h:135};put('s_iso',m,'isopropyl','(1-methylethyl)','Count I');
+m={atoms:[C(22,98),C(60,62),C(98,88),C(98,32),A('R~',145,88)],bonds:[[0,1,1],[1,2,1],[2,3,1],[2,4,1]],w:180,h:135};put('s_sec',m,'sec-butyl','(1-methylpropyl)','Ignore sec-, count B');
+m={atoms:[C(28,36),C(65,68),C(28,100),C(104,48),A('R~',148,48)],bonds:[[0,1,1],[1,2,1],[1,3,1],[3,4,1]],w:180,h:135};put('s_isob',m,'isobutyl','(2-methylpropyl)','Count I');
+m={atoms:[C(76,68),C(76,22),C(35,44),C(35,96),A('R~',130,68)],bonds:[[0,1,1],[0,2,1],[0,3,1],[0,4,1]],w:170,h:135};put('s_tert',m,'tert-butyl','(1,1-dimethylethyl)','Ignore tert-, count B');
+m={atoms:[C(60,68),C(60,22),C(60,115),C(18,68),C(102,48),A('R~',148,48)],bonds:[[0,1,1],[0,2,1],[0,3,1],[0,4,1],[4,5,1]],w:180,h:135};put('s_neo',m,'neopentyl','(2,2-dimethylpropyl)','Count N');
+
+// Centralized Molecule-Keyed Name Anatomy & Try-It-Yourself Specs (Guarantees 100% Match on Every Step)
+const ANAT={
+  fig15:[['np-sub','4-ethyl-','C4 branch (E 1st)'],['np-sub','2,3-dimethyl','C2 & C3 (ignore di-)'],['np-root','hept','7C parent'],['np-suf','ane','alkane']],
+  branch:[['np-sub','3-methyl','C3 branch'],['np-root','hex','6C parent'],['np-suf','ane','alkane']],
+  fake_pent:[['np-sub','2,4-dimethyl','two methyls'],['np-root','hex','true 6C parent'],['np-suf','ane','alkane']],
+  enol:[['np-root','but','4C parent'],['np-inf','-3-en-','C3 alkene infix'],['np-suf','-2-ol','C2 alcohol']],
+  ynol5:[['np-root','pent','5C parent'],['np-inf','-4-yn-','C4 alkyne'],['np-suf','-2-ol','C2 alcohol']],
+  cyhex:[['np-sub','4-ethyl-1-methyl','alphabetized prefixes (1,4)'],['np-root','cyclohex','6C ring'],['np-suf','-1-ene','C1=C2 ring alkene']],
+  cyol:[['np-sub','3-methyl','C3 branch'],['np-root','cyclohexan','6C ring'],['np-suf','-1-ol','C1 alcohol']],
+  vicinal:[['np-root','ethane','retain final -e!'],['np-inf','-1,2-di','adjacent C1 & C2'],['np-suf','ol','diol suffix']],
+  geminal:[['np-root','propane','3C parent (keep -e)'],['np-inf','-2,2-di','paired on SAME carbon'],['np-suf','ol','geminal diol (hydrate)']],
+  ketone:[['np-root','pent','5C parent'],['np-inf','an','saturated chain'],['np-suf','-2-one','C2 ketone']],
+  hyald:[['np-sub','4-hydroxy','subordinate C4 alcohol'],['np-root','butan','4C parent chain'],['np-suf','al','terminal C1 aldehyde']],
+  hyoxo:[['np-sub','4-hydroxy-','C4 alcohol (H 1st)'],['np-sub','2-oxo','C2 ketone (O 2nd)'],['np-root','pentan','5C parent'],['np-suf','oic acid','C1 acid suffix']],
+  ester:[['np-sub','ethyl ','O-attached alkyl (1st word)'],['np-root','propan','3C acyl chain'],['np-suf','oate','ester suffix']],
+  namide:[['np-sub','N-ethyl-N-methyl','N-alkyl groups (alphabetical)'],['np-root','propan','3C acyl parent'],['np-suf','amide','amide suffix']],
+  anhyd:[['np-root','ethanoic ','2C acid root (symmetric)'],['np-suf','anhydride','replaces "acid"']]
+};
+
+const TRIES={
+  fig15:{p:'🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this structure!',a:[6],ok:'Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6).',err:'Red counter-example shown: Starting on the left puts the first branch at C4 (locants 4,5,6), whereas starting at Carbon G on the right gives (2,3,4)!',alt:[0,1,2,3,4,5,6]},
+  enol:{p:'🖐️ Try It Yourself: Click the carbon atom that must be Carbon #1 in this unsaturated alcohol!',a:[3],ok:'Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3.',err:'Red counter-example shown: Numbering from the left gives the alkene C1 but puts the higher-priority –OH group at C3 instead of C2!',alt:[0,1,2,3]},
+  cyhex:{p:'🖐️ Try It Yourself: Click the ring carbon that must be assigned Carbon #1!',a:[4],ok:'Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!',err:'Red counter-example shown: Starting at F (C1) and numbering counter-clockwise through E (C2) gives substituent locants (2,5), which loses to (1,4) at the first point of difference!',alt:[5,4,3,2,1,0]},
+  vicinal:{p:'🖐️ Try It Yourself: Click both carbon atoms bearing hydroxyl groups in this vicinal diol!',a:[0,1],ok:'Correct! Both adjacent carbons (C1 and C2) carry hydroxyl groups in ethane-1,2-diol.',err:'Click both Carbon A and Carbon B to select the vicinal diol carbons.'},
+  geminal:{p:'🖐️ Try It Yourself: Click the single carbon atom bearing BOTH hydroxyl groups in this geminal diol!',a:[1],ok:'Spot on! Carbon B (C2) carries both hydroxyl groups in propane-2,2-diol.',err:'Click only the central carbon (Carbon B) bonded to both –OH groups.'},
+  ketone:{p:'🖐️ Try It Yourself: Click BOTH α-carbons in pentan-2-one! (Do not click the C=O carbon).',a:[0,2],ok:'Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!',err:'An α-carbon is any carbon directly bonded (one C–C bond away) to the carbonyl carbon (Carbons A and C).'},
+  hyald:{p:'🖐️ Try It Yourself: Click the carbon atom that must be assigned Carbon #1 in this hydroxy aldehyde!',a:[3],ok:'Correct! Carbon D (the aldehyde carbon on the right) outranks the alcohol and is automatically C1.',err:'Red counter-example shown: Aldehydes outrank alcohols, so C1 must be the aldehyde carbon (D) on the right, not the alcohol carbon (A)!',alt:[0,1,2,3]},
+  hyoxo:{p:'🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this multifunctional acid!',a:[4],ok:'Spot on! Carbon E (the carboxylic acid carbon) is C1, placing oxo at C2 and hydroxy at C4.',err:'Red counter-example shown: Numbering from the left puts the carboxylic acid at C5 instead of C1!',alt:[0,1,2,3,4]},
+  ester:{p:'🖐️ Try It Yourself: Click Carbon #1 of the acyl parent chain (propanoate) in this ester!',a:[2],ok:'Correct! Carbon C is the ester carbonyl carbon (C1 of the 3-carbon propanoate parent).',err:'Click Carbon C (the carbonyl carbon bonded to =O and –O–CH₂CH₃).'},
+  namide:{p:'🖐️ Try It Yourself: Click Carbon #1 of the acyl parent chain (propanamide) in this amide!',a:[2],ok:'Correct! Carbon C is the amide carbonyl carbon (C1 of the 3-carbon propanamide parent).',err:'Click Carbon C (the carbonyl carbon bonded to =O and –N).'},
+  anhyd:{p:'🖐️ Try It Yourself: Click BOTH carbonyl carbon atoms in ethanoic anhydride!',a:[1,3],ok:'Correct! Carbons B and D are the two acyl carbonyl carbons flanking the central bridging oxygen.',err:'Select both Carbon B and Carbon D (the two carbons double-bonded to oxygen).'}
+};
+
+const LEARN=[
+  {id:'naming',num:'1.1',lbl:'Parent Chains',title:'1.1 Parent Chains, Locant Tiebreakers & Alphabetization',tag:'Principal Group → Longest Chain → Lowest Locants',mol:'fig15',
+   steps:[
+     {b:'1. Inspect',f:'rule',o:{},e:'<strong>Step 1 (Inspect):</strong> Unnumbered hydrocarbon with 11 total carbons. Trace every continuous path before choosing the parent chain.'},
+     {b:'2. Parent Chain',f:'rule',o:{path:[0,1,2,3,4,5,6]},e:'<strong>Step 2 (Longest Continuous Chain):</strong> Tracing through the top 2-carbon ethyl branch gives only 6 carbons, whereas the horizontal path gives the longest continuous chain of <strong>7 carbons (heptane)</strong>.'},
+     {b:'3. Number Carbons',f:'trap',o:{path:[0,1,2,3,4,5,6],num:[6,5,4,3,2,1,0]},e:'<strong>Step 3 (Animated Carbon Numbering):</strong> Numbering right-to-left gives <strong>(2,3,4)</strong>; left-to-right gives (4,5,6). Compare at the first point of difference: <code>2 &lt; 4</code>.'},
+     {b:'4. Assemble Name',f:'cue',showName:true,o:{path:[0,1,2,3,4,5,6],num:[6,5,4,3,2,1,0],sub:[7,8,9,10]},e:'<strong>Step 4 (IUPAC Name Assembly):</strong> Alphabetize <code>4-ethyl</code> before <code>2,3-dimethyl</code> (ignore <em>di-</em>) → <strong>4-ethyl-2,3-dimethylheptane</strong>.'}
+   ],
+   rule:'<p><strong>1.</strong> Find the longest continuous carbon chain containing the principal group.<br><strong>2.</strong> <em>Equal-Length Tiebreaker:</em> When two different chains tie for maximum length (e.g., in <em>4-isopropylheptane</em>), choose the chain carrying <strong>more substituents</strong>.<br><strong>3.</strong> Number to give the lowest locants at the first point of difference.</p>',
+   cue:'<p><strong>Alphabetization Rule:</strong><br>• <strong>IGNORE:</strong> Multipliers (<code>di-, tri-, tetra-</code>) and hyphenated prefixes (<code>n-, sec-, tert-</code>).<br>• <strong>INCLUDE:</strong> Non-hyphenated roots (<code>iso-, neo-, cyclo-</code>).</p>',
+   trap:'<p><strong>The "Fake Parent Chain" Trap ("2,3-diethylpentane"):</strong><br>An ethyl group at C2 of a pentane chain extends the longest chain to 6 carbons (<strong>3-ethyl-4-methylhexane</strong>). Always draw out suspect names!</p>',
+   app:'<p><strong>Branched Amino Acids (Val, Leu, Ile):</strong><br>Recognizing <strong>isopropyl</strong> (Valine), <strong>isobutyl</strong> (Leucine), and <strong>sec-butyl</strong> (Isoleucine) lets you classify hydrophobic side chains on sight.</p>'},
+  {id:'alcohols',num:'1.2',lbl:'Alcohols & Alkenes',title:'1.2 Hydrocarbons, Unsaturation & Alcohol Suffix Priority',tag:'Alcohol (–ol) Outranks Alkene (–en–) & Alkyne (–yn–)',mol:'enol',
+   steps:[
+     {b:'1. Inspect',f:'rule',o:{},e:'<strong>Step 1 (Inspect):</strong> Unnumbered skeletal structure. Identify the alcohol (–OH) and the double bond (C=C).'},
+     {b:'2. Principal Group',f:'rule',o:{prin:[4]},e:'<strong>Step 2 (Identify Principal Group):</strong> By IUPAC seniority, <strong>alcohols (–OH) outrank alkenes and alkynes</strong> and supply the suffix <code>–ol</code>.'},
+     {b:'3. Parent Chain',f:'cue',o:{path:[0,1,2,3],prin:[4]},e:'<strong>Step 3 (Parent Chain &amp; Infix):</strong> Both the –OH carbon and C=C bond lie in the 4-carbon chain, so C=C becomes the infix <code>–en–</code>.'},
+     {b:'4. Number & Name',f:'trap',showName:true,o:{path:[0,1,2,3],num:[3,2,1,0],prin:[4]},e:'<strong>Step 4 (Number &amp; Assemble):</strong> Right-to-left gives <code>–OH</code> locant <strong>2</strong> (rather than 3). The double bond starts at C3 → <strong>but-3-en-2-ol</strong>.'}
+   ],
+   rule:'<p>An <strong>alcohol (–OH)</strong> has higher IUPAC naming seniority than carbon–carbon double or triple bonds. Replace the final <code>–e</code> with <code>–ol</code> and number the chain to give the <code>–OH</code> carbon the lowest possible locant.</p>',
+   cue:'<p><strong>Infix + Suffix Pattern (<code>Root + en/yn + ol</code>):</strong><br>Unsaturation inside the parent chain stays in the stem as <code>–en–</code> or <code>–yn–</code> (e.g., <strong>but-3-en-2-ol</strong>).</p>',
+   trap:'<p><strong>Alkene vs. Alkyne Equal Priority:</strong><br>IUPAC ranks alkenes and alkynes <strong>equally</strong> for chain selection and numbering (lowest multiple-bond locant set wins). Only when C=C and C≡C tie head-to-head (e.g., 1,5 vs 1,5) does the <strong>double bond (–en–) get C1</strong> (<code>hex-1-en-5-yne</code>).</p>',
+   app:'<p><strong>Common Alcohol Names:</strong><br><strong>Ethanol</strong> = <em>ethyl alcohol</em>; <strong>propan-2-ol (2-propanol)</strong> = <em>isopropyl alcohol</em>. Subordinate –OH is named <strong>hydroxy–</strong>.</p>'},
+  {id:'rings',num:'1.3',lbl:'Ring Numbering',title:'1.3 Cyclic Hydrocarbons & Ring Numbering Hierarchy',tag:'Principal Group (C1) → Ring C=C (C1–C2) → Locant Set',mol:'cyhex',
+   steps:[
+     {b:'1. Inspect Ring',f:'rule',o:{},e:'<strong>Step 1 (Inspect):</strong> A 6-membered ring with a double bond, a methyl group on one alkene carbon, and an ethyl group across the ring.'},
+     {b:'2. Lock C1–C2 on C=C',f:'rule',o:{path:[0,1,2,3,4,5],prin:[4,5]},e:'<strong>Step 2 (Cycloalkene Rule):</strong> Unsaturation outranks alkyl substituents, so the two carbons of the double bond <strong>must be C1 and C2</strong>.'},
+     {b:'3. Number & Name',f:'trap',showName:true,o:{path:[0,1,2,3,4,5],num:[4,5,0,1,2,3],sub:[6,7,8]},e:'<strong>Step 3 (Compare Locant Sets):</strong> Clockwise from the methylated alkene carbon (<code>E=C1 → F=C2 → A=C3 → B=C4</code>) gives substituent locants <strong>(1,4)</strong>, beating counter-clockwise <code>(2,5)</code> → <strong>4-ethyl-1-methylcyclohex-1-ene</strong>.'}
+   ],
+   rule:'<p>Ring numbering follows 3 tiers:<br>1. <strong>Principal suffix group</strong> (e.g., <code>–OH</code>) gets <strong>C1</strong>.<br>2. <strong>Ring multiple bonds</strong> must be numbered <strong>C1 through C2</strong>.<br>3. Minimize substituent locants at the <strong>first point of difference</strong>; alphabetical order breaks ties.</p>',
+   cue:'<p><strong>"Never Jump Across a Ring Double Bond!"</strong><br>If you assign one alkene carbon C1, C2 <em>must</em> be the other carbon of that double bond.</p>',
+   trap:'<p><strong>Why "Most Substituted Carbon First" Fails:</strong><br>In <em>4-propylcyclohexene</em>, the alkene takes C1–C2 priority over the propyl substituent. Only use substitution when priority tiers tie (<code>1,1,2-trimethylcyclobutane</code> beats <code>1,2,2-</code>).</p>',
+   app:'<p><strong>Retinal &amp; Steroid Rings:</strong><br>Vitamin A (retinal) and steroid hormones contain cyclohexene rings numbered by these exact IUPAC rules.</p>'},
+  {id:'diols',num:'1.4',lbl:'Diols & Hydrates',title:'1.4 Geminal vs. Vicinal Diols & Reversible Hydration',tag:'Vicinal = 1,2-Diol (Adjacent) · Geminal = 1,1-Diol (Same C)',mol:'vicinal',
+   steps:[
+     {b:'1. Vicinal Diol (1,2)',f:'cue',showName:true,o:{path:[0,1],prin:[2,3],num:[0,1]},e:'<strong>Vicinal Diol (Glycol):</strong> Two <code>–OH</code> groups on <strong>adjacent carbons</strong>: <strong>ethane-1,2-diol</strong> (<em>ethylene glycol</em>).'},
+     {b:'2. Geminal Diol (1,1)',f:'trap',showName:true,mol:'geminal',o:{path:[0,1,2],prin:[3,4],num:[0,1,2]},e:'<strong>Geminal Diol (Hydrate):</strong> Two <code>–OH</code> groups on the <strong>same carbon</strong> (<strong>propane-2,2-diol</strong>), in reversible equilibrium with a carbonyl + H<sub>2</sub>O.'}
+   ],
+   rule:'<p>Alcohols with two hydroxyl groups are named <strong>alkane-x,y-diols</strong> (preserving the <code>–e</code> of the parent alkane before "d"). Every hydroxyl gets a locant number.</p>',
+   cue:'<p><strong>Kaplan Mnemonic:</strong><br>• <strong><u>Vicin</u>al</strong> = in the <strong><u>vicin</u>ity</strong> (adjacent carbons, 1,2).<br>• <strong><u>Gemin</u>al</strong> = <strong><u>Gemin</u>i twins</strong> (same carbon, 1,1).</p>',
+   trap:'<p><strong>Reversible Hydration Equilibrium:</strong><br><code>C=O + H<sub>2</sub>O &rightleftharpoons; Geminal Diol</code>. Acetone favors the keto form in water (<i>K</i><sub>eq</sub> &approx; 10<sup>&minus;3</sup>), ethanal is balanced (<i>K</i><sub>eq</sub> &approx; 1), and formaldehyde strongly favors its geminal diol hydrate (<i>K</i><sub>eq</sub> &approx; 2 &times; 10<sup>3</sup>).</p>',
+   app:'<p><strong>Aldehyde Oxidation Mechanism:</strong><br>Chromic acid (H<sub>2</sub>CrO<sub>4</sub>) oxidizes aldehydes to carboxylic acids by attacking the <strong>geminal diol hydrate</strong> in aqueous solution.</p>'},
+  {id:'carbonyls',num:'1.5',lbl:'Aldehydes & Ketones',title:'1.5 Carbonyls: Aldehydes (–al), Ketones (–one) & α-Carbons',tag:'Aldehyde (Terminal C1) Outranks Ketone (Internal)',mol:'ketone',
+   steps:[
+     {b:'1. Inspect Carbonyl',f:'rule',o:{prin:[5]},e:'<strong>Step 1 (Classify):</strong> C=O bonded to two carbons is an internal <strong>ketone (–one)</strong>; terminal C=O bonded to H is an <strong>aldehyde (–al)</strong>.'},
+     {b:'2. Number Ketone',f:'rule',o:{path:[0,1,2,3,4],num:[0,1,2,3,4],prin:[5]},e:'<strong>Step 2 (Numbering):</strong> Left-to-right gives C=O <strong>C2</strong> (rather than C4).'},
+     {b:'3. α-Carbons & Name',f:'app',showName:true,o:{path:[0,1,2,3,4],num:[0,1,2,3,4],alpha:[0,2],prin:[5]},e:'<strong>Step 3 (Greek Letters &amp; Name):</strong> Carbons directly adjacent to C=O are <strong>α-carbons</strong> (C1 and C3), followed by β (C4) and γ (C5) → <strong>pentan-2-one</strong>.'},
+     {b:'4. Aldehyde Priority',f:'trap',showName:true,mol:'hyald',o:{path:[0,1,2,3],num:[3,2,1,0],prin:[4,5],sub:[6]},e:'<strong>Step 4 (4-hydroxybutanal):</strong> Terminal aldehyde outranks alcohol, taking <strong>C1 (–al)</strong> while the C4 alcohol becomes <code>4-hydroxy–</code>.'}
+   ],
+   rule:'<p><strong>Aldehydes (R–CHO)</strong> are terminal (C1) and use suffix <code>–al</code>. <strong>Ketones (R–CO–R′)</strong> are internal, require a locant, and use suffix <code>–one</code>. When subordinate, both use prefix <strong>oxo–</strong> (ketones also use <strong>keto–</strong>).</p>',
+   cue:'<p><strong>Common Names (1C–3C):</strong><br>• 1C: <strong>Formaldehyde</strong> (methanal)<br>• 2C: <strong>Acetaldehyde</strong> (ethanal)<br>• 3C: <strong>Propionaldehyde</strong> (propanal) &amp; <strong>Acetone</strong> (propanone)</p>',
+   trap:'<p><strong>Acetone Carbon-Count Trap:</strong><br>Although <code>acet–</code> usually means 2 carbons, <strong>acetone (propanone) has 3 carbons</strong> because a ketone requires a carbon on both sides of C=O!</p>',
+   app:'<p><strong>Aldoses, Ketoses &amp; Enolates:</strong><br>Carbohydrates are aldoses or ketoses; acidic α-hydrogens on α-carbons form nucleophilic enolates in aldol reactions.</p>'},
+  {id:'derivatives',num:'1.6',lbl:'Acids & Priority',title:'1.6 Carboxylic Acids, Derivatives & Selected High-Yield Priority',tag:'Acid > Anhydride > Ester > Acid Halide > Amide > Nitrile > Aldehyde > Ketone > Alcohol > Amine',mol:'hyoxo',
+   steps:[
+     {b:'1. Multifunctional Acid',f:'rule',showName:true,o:{path:[0,1,2,3,4],num:[4,3,2,1,0],prin:[7,8],sub:[5,6]},e:'<strong>Priority Winner:</strong> Carboxylic acid takes C1 and <code>–oic acid</code>. Alphabetize <code>4-hydroxy–</code> before <code>2-oxo–</code> → <strong>4-hydroxy-2-oxopentanoic acid</strong>.'},
+     {b:'2. Ester (alkyl –oate)',f:'cue',showName:true,mol:'ester',o:{path:[2,1,0],num:[2,1,0],prin:[3,4],sub:[5,6]},e:'<strong>Ester Naming:</strong> O-attached alkyl group first (<code>ethyl</code>) + 3C acid parent (<code>propanoate</code>) → <strong>ethyl propanoate</strong>.'},
+     {b:'3. N-Amide (N– prefix)',f:'cue',showName:true,mol:'namide',o:{path:[2,1,0],num:[2,1,0],prin:[3,4],sub:[5,6,7]},e:'<strong>Amide Naming:</strong> Nitrogen groups use capital <strong>N–</strong> and are alphabetized → <strong>N-ethyl-N-methylpropanamide</strong>.'},
+     {b:'4. Anhydrides',f:'trap',showName:true,mol:'anhyd',o:{prin:[2,5,6]},e:'<strong>Anhydride Naming:</strong> Two acyl groups bridged by O (<strong>ethanoic anhydride</strong> = acetic anhydride).'}
+   ],
+   rule:'<p><strong>Selected High-Yield Seniority Order (MCAT Scope):</strong><br><code>Carboxylic acid &gt; Anhydride &gt; Ester &gt; Acid halide &gt; Amide &gt; Nitrile &gt; Aldehyde &gt; Ketone &gt; Alcohol &gt; Amine &gt; Alkene = Alkyne &gt; Alkane</code>.<br>Because all acid derivatives share a +3 acyl carbon oxidation state, rely on this explicit IUPAC seniority order.</p>',
+   cue:'<p><strong>Common Acid Roots:</strong><br>• 1C: <strong>Formic acid</strong> (methanoic) → <em>methyl formate</em><br>• 2C: <strong>Acetic acid</strong> (ethanoic) → <em>acetic anhydride</em><br>• 3C: <strong>Propionic acid</strong> (propanoic)</p>',
+   trap:'<p><strong>High-Yield Distinctions:</strong><br>• <strong>Ester vs. Ether:</strong> Esters have C=O next to O; ethers (R–O–R′) do not.<br>• <strong>NADH Trap:</strong> NADH contains an <strong>amide</strong> (nicotinamide) and <strong>phosphoanhydride</strong> (P–O–P), NOT a carboxylic anhydride!</p>',
+   app:'<p><strong>Pyruvic &amp; Tartaric Acid (Kaplan Q7 &amp; Q13):</strong><br>• <strong>Pyruvic acid</strong> (<em>acetylformic acid</em>) = <code>2-oxopropanoic acid</code>.<br>• <strong>Tartaric acid</strong> = <code>2,3-dihydroxybutanedioic acid</code>.</p>'}
+];
+
+/* ================= MODE 2: 12 GUIDED PRACTICE WORKSHOPS ================= */
+const GUIDED=[
+  {id:'gp1a',cIdx:0,subLbl:'Molecule A: Branched Alkane',title:'1.1A · Parent Chain & Numbering Direction',mol:'branch',final:'3-methylhexane',
+   stages:[
+     {sk:'Parent-chain selection',p:'Stage 1/3: Click all 6 carbon atoms in the longest continuous parent chain.',t:'atomN',ans:[0,1,2,3,4,5],ok:'Correct! Carbons A–F form the 6-carbon hexane chain; G is a methyl branch.',err:'Select all 6 carbons along the continuous path (A–F) and exclude the upper methyl branch (G).',after:{path:[0,1,2,3,4,5]}},
+     {sk:'Numbering direction',p:'Stage 2/3: Which numbering direction gives the methyl branch its lowest locant?',t:'choice',opts:[['Left-to-right (methyl at C3)',1,'Correct! Left-to-right gives C3 instead of C4.'],['Right-to-left (methyl at C4)',0,'Red counter-example shown: Right-to-left puts the methyl group at C4 instead of C3!',{altNum:[5,4,3,2,1,0]}]],after:{path:[0,1,2,3,4,5],num:[0,1,2,3,4,5],sub:[6]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete IUPAC name.',t:'text',acc:['3-methylhexane'],ok:'Spot on! 3-methylhexane.',hints:['Hint 1 (Rule): Format as [locant]-[substituent][parent root][suffix] with a hyphen between the number and letter.','Hint 2 (Structure): Methyl group at C3 on a 6-carbon alkane parent (hexane).','Worked Solution: 3-methyl + hexane → 3-methylhexane.']}
+   ]},
+  {id:'gp1b',cIdx:0,subLbl:'Molecule B: "2-ethyl-4-methylpentane" Trap',title:'1.1B · Diagnosing a Hidden Parent Chain',mol:'fake_pent',final:'2,4-dimethylhexane',
+   stages:[
+     {sk:'Parent-chain selection',p:'Stage 1/3: Why is "2-ethyl-4-methylpentane" an invalid name for this structure?',t:'choice',opts:[['The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)',1,'Correct! An "ethyl" group at C2 extends the parent chain to 6 carbons.'],['It has 8 carbons in a straight chain',0,'There are 8 total carbons, but a continuous chain cannot fork (longest path = 6 carbons).']],after:{path:[0,1,2,3,4,5]}},
+     {sk:'Numbering direction',p:'Stage 2/3: Which locant set is lower for the two methyl substituents?',t:'choice',opts:[['Left-to-right: (2,4)',1,'Correct! At the first point of difference, 2 < 3.'],['Right-to-left: (3,5)',0,'Red counter-example shown: Right-to-left gives locants (3,5), which loses to (2,4) at the first point of difference!',{altNum:[5,4,3,2,1,0]}]],after:{path:[0,1,2,3,4,5],num:[0,1,2,3,4,5],sub:[6,7]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the true IUPAC name.',t:'text',acc:['2,4-dimethylhexane'],ok:'Correct! 2,4-dimethylhexane.',hints:['Hint 1 (Rule): Two identical substituents require two locants separated by a comma and the multiplier prefix di–.','Hint 2 (Structure): Two methyl groups sit at C2 and C4 on a 6-carbon hexane chain.','Worked Solution: 2,4-dimethyl + hexane → 2,4-dimethylhexane.']}
+   ]},
+  {id:'gp2a',cIdx:1,subLbl:'Molecule A: Unsaturated Alcohol (Alkene)',title:'1.2A · Alcohol vs. Alkene Priority',mol:'enol',final:'but-3-en-2-ol',
+   stages:[
+     {sk:'Suffix priority',p:'Stage 1/3: Which group has highest priority and supplies the principal suffix?',t:'choice',opts:[['Double bond (–ene)',0,'Priority Error: Alcohols have higher IUPAC seniority than alkenes.'],['Hydroxyl group (–ol; alkene kept as –en–)',1,'Correct! Alcohol supplies –ol and alkene stays in the stem as –en–.']],after:{prin:[4]}},
+     {sk:'Numbering direction',p:'Stage 2/3: Click the carbon atom on the diagram that must be assigned Carbon #1.',t:'atom1',ans:[3],ok:'Correct! Carbon D (right end) gives –OH locant 2 instead of 3.',err:'Red counter-example shown: Starting at Carbon A gives the alkene C1 but puts the principal –OH group at C3 instead of C2!',errOpts:{altNum:[0,1,2,3]},after:{path:[0,1,2,3],num:[3,2,1,0],prin:[4]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete systematic IUPAC name.',t:'text',acc:['but-3-en-2-ol','3-buten-2-ol'],ok:'Excellent! but-3-en-2-ol.',hints:['Hint 1 (Rule): Combine the carbon root, the unsaturation locant + infix (–en–), and the principal alcohol locant + suffix (–ol).','Hint 2 (Structure): 4-carbon root (but), double bond starting at C3, and alcohol at C2.','Worked Solution: but + -3-en- + -2-ol → but-3-en-2-ol.']}
+   ]},
+  {id:'gp2b',cIdx:1,subLbl:'Molecule B: Unsaturated Alcohol (Alkyne)',title:'1.2B · Alcohol vs. Alkyne Priority',mol:'ynol5',final:'pent-4-yn-2-ol',
+   stages:[
+     {sk:'Suffix priority',p:'Stage 1/3: Which group determines the principal suffix in this 5-carbon structure?',t:'choice',opts:[['The alcohol (–ol; triple bond becomes –yn– infix)',1,'Correct! Alcohols outrank alkynes.'],['The alkyne (–yne; alcohol becomes hydroxy–)',0,'Priority Error: Alcohols outrank both alkenes and alkynes.']],after:{prin:[5]}},
+     {sk:'Numbering direction',p:'Stage 2/3: Click the carbon atom that must be assigned Carbon #1.',t:'atom1',ans:[4],ok:'Correct! Carbon E (right end) gives the principal alcohol C2 instead of C4.',err:'Red counter-example shown: Numbering left-to-right gives the triple bond C1 but puts –OH at C4!',errOpts:{altNum:[0,1,2,3,4]},after:{path:[0,1,2,3,4],num:[4,3,2,1,0],prin:[5]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the systematic IUPAC name.',t:'text',acc:['pent-4-yn-2-ol','4-pentyn-2-ol'],ok:'Bravo! pent-4-yn-2-ol.',hints:['Hint 1 (Rule): Use the triple-bond infix –yn– before the principal alcohol suffix –ol.','Hint 2 (Structure): 5-carbon chain (pent), triple bond at C4, and alcohol at C2.','Worked Solution: pent + -4-yn- + -2-ol → pent-4-yn-2-ol.']}
+   ]},
+  {id:'gp3a',cIdx:2,subLbl:'Molecule A: Substituted Cycloalkene',title:'1.3A · Cycloalkene Numbering Rules',mol:'cyhex',final:'4-ethyl-1-methylcyclohex-1-ene',
+   stages:[
+     {sk:'Ring numbering',p:'Stage 1/3: Click the ring carbon that must be assigned Carbon #1.',t:'atom1',ans:[4],ok:'Correct! Carbon E is C1 because numbering clockwise through C1=C2 (E → F → A → B) gives substituent locants (1,4) instead of (2,5).',err:'Red counter-example shown: Starting at F (C1) and going counter-clockwise through E (C2) gives substituent locants (2,5) instead of (1,4)!',errOpts:{altNum:[5,4,3,2,1,0]},after:{path:[0,1,2,3,4,5],num:[4,5,0,1,2,3]}},
+     {sk:'Substituent locants',p:'Stage 2/3: With C1 at the methylated alkene carbon and C2 at the other alkene carbon, what is the ethyl locant?',t:'choice',opts:[['C4 (giving 4-ethyl-1-methyl)',1,'Correct! Continuing clockwise from C1 through C2 places the ethyl group at C4; alphabetize 4-ethyl before 1-methyl.'],['C5 (giving 5-ethyl-2-methyl)',0,'(1,4) beats (2,5) at the first point of difference!']],after:{path:[0,1,2,3,4,5],num:[4,5,0,1,2,3],sub:[6,7,8]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete IUPAC name.',t:'text',acc:['4-ethyl-1-methylcyclohex-1-ene','4-ethyl-1-methylcyclohexene'],ok:'Spot on! 4-ethyl-1-methylcyclohex-1-ene.',hints:['Hint 1 (Rule): Alphabetize the substituents (ethyl before methyl), followed by the cycloalkene parent name.','Hint 2 (Structure): Ethyl is at C4 and methyl is at C1 on cyclohex-1-ene (or cyclohexene).','Worked Solution: 4-ethyl-1-methyl + cyclohex-1-ene → 4-ethyl-1-methylcyclohex-1-ene.']}
+   ]},
+  {id:'gp3b',cIdx:2,subLbl:'Molecule B: Cyclic Alcohol',title:'1.3B · Cyclic Alcohol Priority & Numbering',mol:'cyol',final:'3-methylcyclohexan-1-ol',
+   stages:[
+     {sk:'Ring priority',p:'Stage 1/3: Click the ring carbon that must be assigned Carbon #1.',t:'atom1',ans:[0],ok:'Correct! Carbon A bears the principal –OH group and is automatically C1.',err:'The principal functional group (–OH on Carbon A) outranks alkyl substituents and must be C1!',after:{path:[0,1,2,3,4,5],prin:[6]}},
+     {sk:'Numbering direction',p:'Stage 2/3: From C1 (at –OH), which direction gives the methyl group its lowest locant?',t:'choice',opts:[['Clockwise (methyl at C3)',1,'Correct! Clockwise gives C3 instead of counter-clockwise C5.'],['Counter-clockwise (methyl at C5)',0,'Red counter-example shown: Counter-clockwise puts methyl at C5 instead of C3!',{altNum:[0,5,4,3,2,1]}]],after:{path:[0,1,2,3,4,5],num:[0,1,2,3,4,5],prin:[6],sub:[7]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the systematic IUPAC name.',t:'text',acc:['3-methylcyclohexan-1-ol','3-methylcyclohexanol'],ok:'Excellent! 3-methylcyclohexan-1-ol.',hints:['Hint 1 (Rule): Prefix the methyl substituent and its locant before the cyclic alcohol parent name.','Hint 2 (Structure): Methyl at C3 on a cyclohexan-1-ol (or cyclohexanol) ring.','Worked Solution: 3-methyl + cyclohexan-1-ol → 3-methylcyclohexan-1-ol.']}
+   ]},
+  {id:'gp4a',cIdx:3,subLbl:'Molecule A: Vicinal Diol (1,2)',title:'1.4A · Vicinal Diol (Glycol) Nomenclature',mol:'vicinal',final:'ethane-1,2-diol',
+   stages:[
+     {sk:'Diol classification',p:'Stage 1/2: How are the two hydroxyl groups positioned in this molecule?',t:'choice',opts:[['Vicinal (on adjacent carbons C1 and C2)',1,'Correct! Vicinal diols (glycols) have –OH on adjacent carbons.'],['Geminal (paired on the same carbon)',0,'Geminal diols have both –OH groups on the same carbon.']],after:{path:[0,1],num:[0,1],prin:[2,3]}},
+     {sk:'Name assembly',p:'Stage 2/2: Type the systematic IUPAC name (common name: ethylene glycol).',t:'text',acc:['ethane-1,2-diol','1,2-ethanediol'],ok:'Correct! ethane-1,2-diol.',hints:['Hint 1 (Rule): Preserve the full alkane name (including –e) before adding the locants and –diol suffix.','Hint 2 (Structure): 2-carbon alkane (ethane) with hydroxyls at C1 and C2.','Worked Solution: ethane + -1,2-diol → ethane-1,2-diol.']}
+   ]},
+  {id:'gp4b',cIdx:3,subLbl:'Molecule B: Geminal Diol (1,1)',title:'1.4B · Geminal Diol (Hydrate) Nomenclature',mol:'geminal',final:'propane-2,2-diol',
+   stages:[
+     {sk:'Diol classification',p:'Stage 1/2: Click the carbon atom bearing both hydroxyl groups in this geminal diol.',t:'atom1',ans:[1],ok:'Correct! Carbon B (C2) carries both –OH groups.',err:'Click the central carbon (Carbon B) bonded to both –OH groups.',after:{path:[0,1,2],num:[0,1,2],prin:[3,4]}},
+     {sk:'Name assembly',p:'Stage 2/2: Type the systematic IUPAC name (every group needs a locant!).',t:'text',acc:['propane-2,2-diol','2,2-propanediol'],ok:'Spot on! propane-2,2-diol.',hints:['Hint 1 (Rule): Even when both –OH groups sit on the same carbon, repeat the locant number before –diol.','Hint 2 (Structure): 3-carbon alkane (propane) with both hydroxyls at C2.','Worked Solution: propane + -2,2-diol → propane-2,2-diol.']}
+   ]},
+  {id:'gp5a',cIdx:4,subLbl:'Molecule A: Internal Ketone',title:'1.5A · Ketone Numbering & Alpha Carbons',mol:'ketone',final:'pentan-2-one',
+   stages:[
+     {sk:'Alpha carbons',p:'Stage 1/3: Click BOTH α-carbons on the diagram (do not click the C=O carbon).',t:'atomN',ans:[0,2],ok:'Correct! Carbons A and C flank the C=O carbon and are both α-carbons.',err:'Select only Carbons A and C (directly adjacent to the C=O carbon B).',after:{alpha:[0,2],prin:[5]}},
+     {sk:'Numbering direction',p:'Stage 2/3: Which direction gives the ketone carbonyl its lower locant?',t:'choice',opts:[['Left-to-right (C2)',1,'Correct! C2 < C4.'],['Right-to-left (C4)',0,'Red counter-example shown: Right-to-left gives the ketone C4 instead of C2!',{altNum:[4,3,2,1,0]}]],after:{path:[0,1,2,3,4],num:[0,1,2,3,4],alpha:[0,2],prin:[5]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the systematic IUPAC name.',t:'text',acc:['pentan-2-one','2-pentanone'],ok:'Spot on! pentan-2-one.',hints:['Hint 1 (Rule): Replace the final –e of the alkane with the ketone locant and suffix –one.','Hint 2 (Structure): 5-carbon alkane (pentan-) with a ketone at C2.','Worked Solution: pentan + -2-one → pentan-2-one.']}
+   ]},
+  {id:'gp5b',cIdx:4,subLbl:'Molecule B: Hydroxy Aldehyde',title:'1.5B · Aldehyde vs. Alcohol Priority',mol:'hyald',final:'4-hydroxybutanal',
+   stages:[
+     {sk:'Priority',p:'Stage 1/3: Click the carbon atom that must be assigned Carbon #1.',t:'atom1',ans:[3],ok:'Correct! Carbon D is the terminal aldehyde carbon and is automatically C1.',err:'Red counter-example shown: Aldehydes outrank alcohols, so C1 must be the aldehyde carbon (D) on the right!',errOpts:{altNum:[0,1,2,3]},after:{path:[0,1,2,3],num:[3,2,1,0],prin:[4,5]}},
+     {sk:'Subordinate prefix',p:'Stage 2/3: When an alcohol is subordinate to an aldehyde, how is the C4 –OH named?',t:'choice',opts:[['4-hydroxy–',1,'Correct! Subordinate alcohols use the prefix hydroxy–.'],['4-oxo–',0,'oxo– is for subordinate carbonyls, not alcohols.']],after:{path:[0,1,2,3],num:[3,2,1,0],prin:[4,5],sub:[6]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete IUPAC name.',t:'text',acc:['4-hydroxybutanal'],ok:'Bravo! 4-hydroxybutanal.',hints:['Hint 1 (Rule): Terminal aldehydes are assumed to be C1 and take the suffix –al without a number.','Hint 2 (Structure): 4-hydroxy prefix + 4-carbon aldehyde parent (butanal).','Worked Solution: 4-hydroxy + butanal → 4-hydroxybutanal.']}
+   ]},
+  {id:'gp6a',cIdx:5,subLbl:'Molecule A: N-Substituted Amide',title:'1.6A · N-Substituted Amide Construction',mol:'namide',final:'N-ethyl-N-methylpropanamide',
+   stages:[
+     {sk:'Acyl parent',p:'Stage 1/3: Click the carbonyl carbon (Carbon #1 of the amide parent chain).',t:'atom1',ans:[2],ok:'Correct! Carbon C is C1 of the 3-carbon propanamide parent.',err:'Click Carbon C (bonded to =O and –N).',after:{path:[2,1,0],num:[2,1,0],prin:[3,4]}},
+     {sk:'N-substituents',p:'Stage 2/3: How are the ethyl and methyl groups on nitrogen written?',t:'choice',opts:[['N-ethyl-N-methyl- (alphabetical)',1,'Correct! Each N-group gets N– in alphabetical order.'],['N-methyl-N-ethyl-',0,'Alphabetize ethyl before methyl.']],after:{path:[2,1,0],num:[2,1,0],sub:[5,6,7],prin:[3,4]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete IUPAC name.',t:'text',acc:['n-ethyl-n-methylpropanamide'],ok:'Excellent! N-ethyl-N-methylpropanamide.',hints:['Hint 1 (Rule): List the alphabetized N-alkyl prefixes directly before the acyl parent amide name.','Hint 2 (Structure): N-ethyl-N-methyl + 3-carbon amide parent (propanamide).','Worked Solution: N-ethyl-N-methyl + propanamide → N-ethyl-N-methylpropanamide.']}
+   ]},
+  {id:'gp6b',cIdx:5,subLbl:'Molecule B: Multifunctional Acid',title:'1.6B · Multifunctional Priority Ladder',mol:'hyoxo',final:'4-hydroxy-2-oxopentanoic acid',
+   stages:[
+     {sk:'Priority',p:'Stage 1/3: Which group has highest priority and determines the suffix?',t:'choice',opts:[['Carboxylic acid (–oic acid)',1,'Correct! Acid outranks ketone and alcohol.'],['Ketone (–one)',0,'Carboxylic acid outranks ketone.']],after:{path:[0,1,2,3,4],prin:[7,8]}},
+     {sk:'Prefixes',p:'Stage 2/3: With C1 at the acid, what are the prefixes for the C2 ketone and C4 alcohol?',t:'choice',opts:[['2-oxo– and 4-hydroxy–',1,'Correct! Alphabetized as 4-hydroxy-2-oxo–.'],['4-oxo– and 2-hydroxy–',0,'Red counter-example shown: C1 is the acid on the right, so the ketone is C2 and the alcohol is C4!',{altNum:[0,1,2,3,4]}]],after:{path:[0,1,2,3,4],num:[4,3,2,1,0],prin:[7,8],sub:[5,6]}},
+     {sk:'Name assembly',p:'Stage 3/3: Type the complete IUPAC name.',t:'text',acc:['4-hydroxy-2-oxopentanoic acid'],ok:'Bravo! 4-hydroxy-2-oxopentanoic acid.',hints:['Hint 1 (Rule): Alphabetize the prefixes ("h" in hydroxy before "o" in oxo) before the parent acid name.','Hint 2 (Structure): 4-hydroxy-2-oxo + 5-carbon carboxylic acid (pentanoic acid).','Worked Solution: 4-hydroxy-2-oxo + pentanoic acid → 4-hydroxy-2-oxopentanoic acid.']}
+   ]}
+];
+
+const KEY='orgo-field-notes-app1-v9', $=(id)=>document.getElementById(id);
+const esc=(s)=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=(s)=>String(s||'').toLowerCase().trim().replace(/[‐‑‒–—−]/g,'-').replace(/[\s,()\-]/g,'');
+
+let state={mode:'learn',cIdx:0,lStep:0,gpVariant:0,solved:{},gpState:{},anim:true};
+let tryMode=false, trySel=[], learnReveal=false, gpFb=null, gpAltNum=null, toastT=null;
+
+function showStorageWarning(){const w=$('storageWarn');if(w)w.classList.add('show');}
+try{
+  const tk='__orgo_t__';localStorage.setItem(tk,'1');localStorage.removeItem(tk);
+  const saved=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem('orgo-field-notes-app1-v8')||'null');
+  if(saved)state={...state,...saved,gpState:saved.gpState||{},solved:saved.solved||{}};
+}catch(e){showStorageWarning();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){showStorageWarning();}}
+function toast(msg){clearTimeout(toastT);$('toast').textContent=msg;toastT=setTimeout(()=>$('toast').textContent='',4000);}
+
+function curGp(){return GUIDED.filter(g=>g.cIdx===state.cIdx)[state.gpVariant]||GUIDED[0];}
+function getGpProg(id){if(!state.gpState[id])state.gpState[id]={stage:0,sel:[],val:'',tries:0};return state.gpState[id];}
+
+function syncAnimClass(){
+  document.body.classList.toggle('no-anim',!state.anim);
+  const btn=$('animBtn');
+  if(btn){btn.textContent=state.anim?'⚡ Anim: ON':'⚡ Anim: Instant';btn.classList.toggle('on',state.anim);}
+}
+
+function drawMol(id,opts={}){
+  const m=M[id];if(!m)return '';
+  const path=opts.path||[], prin=opts.prin||[], sub=opts.sub||[], sel=opts.sel||[], okA=opts.okA||[], errA=opts.errA||[], altNum=opts.altNum||null;
+  const val=m.atoms.map((_,i)=>m.bonds.reduce((s,[a,b,n])=>s+((a===i||b===i)?n:0),0));
+  const lbl=(a,i)=>{
+    if(a.e==='C')return '';if(a.e==='R~')return 'parent';
+    if(a.e==='O'&&val[i]===1){const ed=m.bonds.find(([u,v])=>u===i||v===i),nb=m.atoms[ed[0]===i?ed[1]:ed[0]];return (nb&&nb.x>a.x+14)?'HO':'OH';}
+    if(a.e==='O')return 'O';if(a.e==='N')return val[i]===1?'NH₂':val[i]===2?'NH':'N';return a.e;
+  };
+  let h=`<svg class="mol" viewBox="-16 -22 ${m.w+32} ${m.h+44}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(m.cond)}">`;
+  for(const [a,b] of m.bonds){if(path.includes(a)&&path.includes(b)){const p=m.atoms[a],q=m.atoms[b];h+=`<line class="anim-path" pathLength="100" x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="#dbeafe" stroke-width="17" stroke-linecap="round"/>`;}}
+  prin.forEach(i=>{const a=m.atoms[i];if(a)h+=`<circle class="anim-halo" cx="${a.x}" cy="${a.y}" r="17" fill="#d1fae5" stroke="#059669" stroke-width="2"/>`;});
+  sub.forEach(i=>{const a=m.atoms[i];if(a)h+=`<circle class="anim-halo" cx="${a.x}" cy="${a.y}" r="15" fill="#fef3c7" stroke="#d97706" stroke-width="1.8" stroke-dasharray="3,2"/>`;});
+  for(const [a,b,n] of m.bonds){
+    const p=m.atoms[a],q=m.atoms[b],dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len;
+    const ca=lbl(p,a)?15:0, cb=lbl(q,b)?15:0, offs=n===1?[0]:n===2?[-3,3]:[-5.5,0,5.5];
+    const col=(prin.includes(a)&&prin.includes(b))?'#059669':(path.includes(a)&&path.includes(b))?'#1d4ed8':(q.e==='R~'||p.e==='R~')?'#e11d48':'#0f172a';
+    for(const z of offs)h+=`<line x1="${p.x+ux*ca-uy*z}" y1="${p.y+uy*ca+ux*z}" x2="${q.x-ux*cb-uy*z}" y2="${q.y-uy*cb+ux*z}" stroke="${col}" stroke-width="2.7" stroke-linecap="round" ${q.e==='R~'||p.e==='R~'?'stroke-dasharray="4,3"':''}/>`;
+  }
+  m.atoms.forEach((a,i)=>{
+    const l=lbl(a,i);
+    if(l)h+=`<text x="${a.x}" y="${a.y+6}" text-anchor="middle" style="font-size:${a.e==='R~'?'11px':'16px'};fill:${a.e==='O'?'#059669':a.e==='N'?'#2563eb':a.e==='R~'?'#e11d48':'#0f172a'}">${l}</text>`;
+    if(opts.click&&a.e==='C'){
+      const cls=okA.includes(i)?'ok':errA.includes(i)?'err':sel.includes(i)?'sel':'';
+      h+=`<g class="ahit ${cls}" role="button" tabindex="0" data-act="${opts.act||'atomClick'}" data-idx="${i}" aria-label="Carbon ${String.fromCharCode(65+i)}" aria-pressed="${sel.includes(i)}"><circle cx="${a.x}" cy="${a.y}" r="14"/><text x="${a.x}" y="${a.y+4}" text-anchor="middle">${String.fromCharCode(65+i)}</text></g>`;
+    }
+    if(opts.num&&opts.num.includes(i)){
+      const orderIdx=opts.num.indexOf(i);
+      h+=`<g class="anim-loc" style="--i:${orderIdx}"><circle cx="${a.x}" cy="${a.y-19}" r="9.5" fill="#2563eb"/><text x="${a.x}" y="${a.y-15}" text-anchor="middle" style="font-size:10.5px;fill:#fff">${orderIdx+1}</text></g>`;
+    }
+    if(altNum&&altNum.includes(i)){
+      const altIdx=altNum.indexOf(i);
+      h+=`<g class="anim-alt" style="--i:${altIdx}"><circle cx="${a.x}" cy="${a.y+21}" r="9.5" fill="#e11d48"/><text x="${a.x}" y="${a.y+25}" text-anchor="middle" style="font-size:10.5px;fill:#fff">${altIdx+1}</text></g>`;
+    }
+    if(opts.alpha&&opts.alpha.includes(i))h+=`<text class="anim-halo" x="${a.x}" y="${a.y+25}" text-anchor="middle" style="font-size:15px;fill:#e11d48">α</text>`;
+  });
+  return h+'</svg>';
+}
+
+function renderAnatomy(parts,finalName,revealed=true){
+  if(!revealed){
+    return `<div class="abar" style="justify-content:space-between"><span class="albl">IUPAC Name Discovery:</span><span style="font-size:.82rem;color:var(--sec)">Complete the walkthrough or Try It Yourself to assemble the name</span><button class="btn" style="padding:3px 9px;font-size:.75rem" data-act="revealLearnName">👁️ Reveal Name</button></div>`;
+  }
+  return `<div class="abar"><span class="albl">IUPAC Name Assembly:</span>${parts.map(([c,t,s],idx)=>`<span class="npill ${c}" style="--i:${idx}">${t}<small>${s}</small></span>`).join('')}${finalName?`<span class="final-merged" style="--i:${parts.length}">→ ${finalName}</span>`:''}</div>`;
+}
+
+function render(){
+  syncAnimClass();
+  const solvedCnt=Object.keys(state.solved||{}).length;
+  $('modeNav').innerHTML=[
+    ['learn','📖 1. Learn & Explore'],
+    ['guided',`✍️ 2. Guided Practice — Solve First <span class="bdg">${solvedCnt}/${GUIDED.length}</span>`]
+  ].map(([id,lbl])=>`<button class="mtab" data-act="mode" data-id="${id}" ${state.mode===id?'aria-current="page"':''}>${lbl}</button>`).join('');
+  if(state.mode==='learn')renderLearn();
+  else renderGuided();
+}
+
+function renderLearn(){
+  const mod=LEARN[state.cIdx], maxStep=mod.steps.length-1;
+  if(state.lStep>maxStep)state.lStep=0;
+  const stp=mod.steps[state.lStep];
+  const molId=stp.mol||mod.mol, mObj=M[molId];
+  const activeAnat=ANAT[molId], activeTry=TRIES[molId];
+
+  let drawOpts=stp.o, tryFb='', trySolved=false;
+  if(tryMode){
+    const allOk=activeTry.a.every(x=>trySel.includes(x))&&trySel.every(x=>activeTry.a.includes(x));
+    const hasErr=trySel.some(x=>!activeTry.a.includes(x));
+    trySolved=allOk;
+    drawOpts={click:true,act:'tryAtom',sel:trySel,okA:trySel.filter(x=>activeTry.a.includes(x)),errA:trySel.filter(x=>!activeTry.a.includes(x)),altNum:hasErr?activeTry.alt:null};
+    if(trySel.length){
+      tryFb=`<div class="fbox ${allOk?'ok':'err'}">${allOk?'✅ '+activeTry.ok:'❌ '+activeTry.err} <button class="btn" style="padding:2px 8px;font-size:.76rem;margin-left:6px" data-act="revealTry">Reveal Numbered Solution</button></div>`;
+    }
+  }
+  const showNameNow=tryMode?(trySolved||learnReveal):Boolean(stp.showName||learnReveal);
+
+  $('view').innerHTML=`
+    <nav class="cnav" aria-label="Chapter 1 Concept Lessons">
+      ${LEARN.map((m,i)=>`<button class="cbtn" data-act="selConcept" data-idx="${i}" aria-pressed="${i===state.cIdx}"><span>${m.num}</span>${m.lbl}</button>`).join('')}
+    </nav>
+    <div class="grid2">
+      <div class="card">
+        <div class="c-head">
+          <div><h1 class="c-title">${mod.title}</h1><p style="font-size:.82rem;color:var(--muted)">Step ${state.lStep+1} of ${mod.steps.length} · Formula: <strong>${mObj.form}</strong> · <code>${esc(mObj.cond)}</code></p></div>
+          <span class="c-tag">${mod.tag}</span>
+        </div>
+        <div class="stage">
+          ${drawMol(molId,drawOpts)}
+          <div class="sbar">
+            <button class="sbtn" data-act="prevStep" ${!tryMode&&state.lStep===0?'disabled':''}>← Back</button>
+            ${mod.steps.map((s,i)=>`<button class="sbtn" data-act="setStep" data-idx="${i}" aria-pressed="${!tryMode&&i===state.lStep}">${s.b}</button>`).join('')}
+            <button class="sbtn" data-act="nextStep" ${!tryMode&&state.lStep===maxStep?'disabled':''}>Next step →</button>
+            <button class="sbtn try" data-act="toggleTry" aria-pressed="${tryMode}">🖐️ Try It Yourself</button>
+          </div>
+        </div>
+        ${tryMode?`<div class="sexp" style="border-left-color:var(--orange)"><strong>${activeTry.p}</strong></div>${tryFb}`:`<div class="sexp">${stp.e}</div>`}
+        ${renderAnatomy(activeAnat,mObj.name,showNameNow)}
+      </div>
+
+      <div class="tstack">
+        <div class="tcard tc-rule ${!tryMode&&stp.f==='rule'?'focus':''}"><h3><span>📘 Core IUPAC Rule</span><span>Seniority &amp; Logic</span></h3>${mod.rule}</div>
+        <div class="tcard tc-cue ${!tryMode&&stp.f==='cue'?'focus':''}"><h3><span>💡 Memory Cue</span><span>Fast Recall</span></h3>${mod.cue}</div>
+        <div class="tcard tc-trap ${!tryMode&&stp.f==='trap'?'focus':''}"><h3><span>🚨 Common Mistake / MCAT Trap</span><span>Watch Out</span></h3>${mod.trap}</div>
+        <div class="tcard tc-app ${!tryMode&&stp.f==='app'?'focus':''}"><h3><span>🧬 MCAT Application</span><span>Biological Context</span></h3>${mod.app}</div>
+
+        <details class="drw"><summary>📊 Reference 1: Selected High-Yield Functional Group Hierarchy (MCAT Scope)</summary><div class="drw-b"><p style="font-size:.78rem;color:var(--muted);margin-bottom:6px">Selected high-yield hierarchy for MCAT organic nomenclature (not an exhaustive IUPAC Blue Book table):</p><table><thead><tr><th>Rank</th><th>Group</th><th>Prefix (Subordinate)</th><th>Suffix (Principal)</th></tr></thead><tbody><tr><td>1</td><td>Carboxylic acid</td><td>carboxy–</td><td>–oic acid</td></tr><tr><td>2</td><td>Anhydride</td><td>alkanoyloxycarbonyl–</td><td>–oic anhydride</td></tr><tr><td>3</td><td>Ester</td><td>alkoxycarbonyl–</td><td>alkyl … –oate</td></tr><tr><td>4</td><td>Acid halide</td><td>halocarbonyl–</td><td>–oyl halide</td></tr><tr><td>5</td><td>Amide</td><td>carbamoyl– / amido–</td><td>–amide</td></tr><tr><td>6</td><td>Nitrile</td><td>cyano–</td><td>–nitrile</td></tr><tr><td>7</td><td>Aldehyde</td><td>oxo– (or formyl–)</td><td>–al</td></tr><tr><td>8</td><td>Ketone</td><td>oxo– / keto–</td><td>–one</td></tr><tr><td>9</td><td>Alcohol</td><td>hydroxy–</td><td>–ol</td></tr><tr><td>10</td><td>Amine</td><td>amino–</td><td>–amine</td></tr><tr><td>11 (Equal)</td><td>Alkene = Alkyne</td><td>alkenyl– / alkynyl–</td><td>–ene / –yne (equal priority; –ene wins exact ties)</td></tr><tr><td>12</td><td>Alkane / Ether / Halide</td><td>alkyl– / alkoxy– / halo–</td><td>–ane (ethers &amp; halides are prefixes only)</td></tr></tbody></table></div></details>
+        <details class="drw"><summary>🌿 Reference 2: Branched Alkyl Substituents Gallery (Kaplan Fig. 1.4)</summary><div class="drw-b"><div class="gal5">${['s_iso','s_sec','s_isob','s_tert','s_neo'].map(k=>`<div style="border:1px solid #e2e8f0;border-radius:7px;padding:5px;text-align:center">${drawMol(k)}<b style="font-size:.78rem">${M[k].name}</b><div style="font-size:.7rem;color:var(--muted)">${M[k].form}<br>${M[k].cond}</div></div>`).join('')}</div></div></details>
+
+        <button class="btn pri" style="width:100%;padding:12px;margin-top:4px" data-act="goGuidedConcept">✍️ Practice This Concept in Guided Practice (2 Molecules) →</button>
+      </div>
+    </div>`;
+}
+
+function renderGuided(){
+  const conceptLabs=GUIDED.filter(g=>g.cIdx===state.cIdx);
+  const gp=conceptLabs[state.gpVariant]||conceptLabs[0];
+  const prog=getGpProg(gp.id);
+  const gpStage=prog.stage, gpSel=prog.sel||[];
+  const cur=gp.stages[gpStage], done=gpStage>=gp.stages.length;
+  const wasSolved=Boolean(state.solved[gp.id]);
+  const isReplaying=wasSolved&&!done;
+
+  const baseOpts=done?{path:gp.stages[gp.stages.length-1].after?.path||gp.stages[gp.stages.length-2]?.after?.path||[0,1,2,3],num:gp.stages[gp.stages.length-1].after?.num||gp.stages[gp.stages.length-2]?.after?.num}:(gpStage>0?{...gp.stages[gpStage-1].after}:{})||{};
+  const drawOpts={...baseOpts,altNum:gpAltNum};
+  if(!done&&(cur.t==='atom1'||cur.t==='atomN')){drawOpts.click=true;drawOpts.act='gpAtom';drawOpts.sel=gpSel;}
+  const statusTag=done?'✓ Workshop Complete':isReplaying?`↺ Replay in Progress (Stage ${gpStage+1}/${gp.stages.length} · Previously Solved ✓)`:`Stage ${gpStage+1} of ${gp.stages.length}`;
+
+  $('view').innerHTML=`
+    <nav class="cnav" aria-label="Select Concept for Guided Practice">
+      ${LEARN.map((m,i)=>`<button class="cbtn" data-act="selConcept" data-idx="${i}" aria-pressed="${i===state.cIdx}"><span>${m.num}</span>${m.lbl}</button>`).join('')}
+    </nav>
+    <div class="sub-nav">
+      <div style="font-weight:800;font-size:.88rem">Select Workshop Molecule for Concept ${LEARN[state.cIdx].num}:</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        ${conceptLabs.map((g,vIdx)=>{
+          const p=getGpProg(g.id), sDone=p.stage>=g.stages.length, sPrev=Boolean(state.solved[g.id]);
+          const badge=sDone?'✓ Completed':sPrev?`↺ Replay (${p.stage+1}/${g.stages.length})`:p.stage>0?`In Progress (${p.stage+1}/${g.stages.length})`:'';
+          return `<button class="btn ${vIdx===state.gpVariant?'pri':''}" data-act="selVariant" data-v="${vIdx}">${g.subLbl}${badge?` · ${badge}`:''}</button>`;
+        }).join('')}
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <div class="c-head"><h1 class="c-title">${gp.title}</h1><span class="c-tag ${isReplaying?'replay':''}">${statusTag}</span></div>
+        <div class="stage">${drawMol(gp.mol,drawOpts)}</div>
+        ${done?`
+          <div class="fbox ok">🎉 <strong>Complete IUPAC Name: ${gp.final}</strong></div>
+          ${renderAnatomy(ANAT[gp.mol],gp.final,true)}
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn suc" data-act="otherVariant">${state.gpVariant===0?'Try Molecule B on This Concept →':'Next Concept Workshop →'}</button>
+            <button class="btn" data-act="resetGp">↺ Replay This Molecule</button>
+          </div>
+        `:`
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-top:6px">
+            <span style="font-size:.8rem;color:var(--muted)">Work through each decision on the right. Wrong numbering directions display in red on the structure.</span>
+            <button class="btn" style="padding:3px 9px;font-size:.75rem" data-act="revealGp">Reveal Solution</button>
+          </div>
+        `}
+      </div>
+
+      <div>
+        ${gp.stages.map((st,sIdx)=>{
+          const isCur=sIdx===gpStage, isPast=sIdx<gpStage, isLock=sIdx>gpStage;
+          let b='';
+          if(isPast)b=`<div style="color:var(--green);font-weight:750;font-size:.86rem">✓ Decision Verified</div>`;
+          else if(isCur){
+            if(st.t==='choice')b=`<div class="clist">${st.opts.map((o,oIdx)=>`<button class="copt" data-act="gpChoice" data-idx="${oIdx}"><span class="clet">${String.fromCharCode(65+oIdx)}</span><span>${o[0]}</span></button>`).join('')}</div>`;
+            else if(st.t==='atom1'||st.t==='atomN')b=`<p style="font-size:.86rem;margin-bottom:8px">Click the lettered carbon atom(s) on the molecular diagram (or use Tab + Enter). Selected: <strong>${gpSel.map(i=>String.fromCharCode(65+i)).join(', ')||'None'}</strong></p><button class="btn pri" data-act="gpCheckAtom">Verify Carbon Selection</button>`;
+            else if(st.t==='text')b=`<label for="gpIn" style="position:absolute;left:-9999px">Systematic IUPAC Name</label><input id="gpIn" class="tinp" value="${esc(prog.val||'')}" placeholder="Type systematic IUPAC name..." autocomplete="off" spellcheck="false"><button class="btn pri" data-act="gpCheckText">Assemble &amp; Check Name</button>`;
+            if(gpFb)b+=`<div class="fbox ${gpFb.ok?'ok':'err'}">${gpFb.msg}</div>`;
+          }
+          return `<div class="scard ${isLock?'lock':''}"><div class="shead"><span>${st.p}</span><span class="stag">${st.sk}</span></div>${b}</div>`;
+        }).join('')}
+      </div>
+    </div>`;
+}
+
+window.runOrgoRegressionTests=function(){
+  const errors=[];
+  for(const [id,m] of Object.entries(M)){
+    if(!m.atoms?.length||!m.bonds?.length)errors.push(`Mol ${id} empty`);
+    m.bonds.forEach(([u,v])=>{if(!m.atoms[u]||!m.atoms[v])errors.push(`Mol ${id} bad bond`);});
+  }
+  let stepCount=0;
+  LEARN.forEach(mod=>{
+    mod.steps.forEach((stp,sIdx)=>{
+      stepCount++;
+      const molId=stp.mol||mod.mol, mObj=M[molId], tr=TRIES[molId], an=ANAT[molId];
+      if(!mObj||!tr||!an)errors.push(`Learn ${mod.num} step ${sIdx+1} missing mol/try/anat for ${molId}`);
+      tr?.a.forEach(aIdx=>{if(!mObj.atoms[aIdx]||mObj.atoms[aIdx].e!=='C')errors.push(`Learn ${mod.num} step ${sIdx+1} tryA ${aIdx} invalid on ${molId}`);});
+      [stp.e,mod.rule,mod.cue,mod.trap,mod.app].forEach(t=>{if(/\$|\\text|\t/.test(t))errors.push(`LaTeX/tab in ${mod.num}`);});
+    });
+  });
+  GUIDED.forEach(gp=>{
+    const mObj=M[gp.mol];
+    if(!mObj||!ANAT[gp.mol])errors.push(`Guided ${gp.id} missing mol/anat`);
+    gp.stages.forEach((st,sIdx)=>{
+      if((st.t==='atom1'||st.t==='atomN')&&st.ans.some(a=>!mObj.atoms[a]||mObj.atoms[a].e!=='C'))errors.push(`Guided ${gp.id} stage ${sIdx+1} bad atom`);
+      if(st.t==='text'&&(!st.acc?.length||!st.hints?.length))errors.push(`Guided ${gp.id} missing hints`);
+    });
+  });
+  if(document.documentElement.scrollWidth>document.documentElement.clientWidth+2)errors.push('Horizontal overflow');
+  const msg=errors.length?`❌ Self-Test Failed: ${errors[0]}`:`✅ Self-Test Passed: 6 Concepts, ${stepCount} Walkthrough Steps, ${stepCount} Step-Matched Try-It-Yourself Checks, 12 Workshops, 0 Overflow!`;
+  toast(msg);
+  return {passed:!errors.length,stepCount,workshopCount:GUIDED.length,errors};
+};
+
+$('dlgCancel').onclick=()=>$('confirmDialog').close();
+$('dlgConfirm').onclick=()=>{
+  $('confirmDialog').close();
+  state.solved={};state.gpState={};gpFb=null;gpAltNum=null;save();render();toast('All Guided Practice progress reset.');
+};
+
+document.addEventListener('input',e=>{if(e.target.id==='gpIn'){const p=getGpProg(curGp().id);p.val=e.target.value;save();}});
+document.addEventListener('keydown',e=>{
+  const hit=e.target.closest?.('.ahit');
+  if(hit&&(e.key==='Enter'||e.key===' ')){
+    e.preventDefault();
+    const act=hit.dataset.act, idx=hit.dataset.idx;
+    hit.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+    requestAnimationFrame(()=>{document.querySelector(`.ahit[data-act="${act}"][data-idx="${idx}"]`)?.focus();});
+    return;
+  }
+  if(e.key==='Enter'&&e.target.id==='gpIn'){e.preventDefault();document.querySelector('[data-act="gpCheckText"]')?.click();}
+});
+
+document.addEventListener('click',e=>{
+  const el=e.target.closest('[data-act]');if(!el)return;
+  const act=el.dataset.act;
+  if(act==='toggleAnim'){state.anim=!state.anim;save();render();}
+  if(act==='mode'){state.mode=el.dataset.id;gpFb=null;gpAltNum=null;save();render();}
+  if(act==='selConcept'){state.cIdx=Number(el.dataset.idx);state.lStep=0;state.gpVariant=0;tryMode=false;trySel=[];learnReveal=false;gpFb=null;gpAltNum=null;save();render();}
+  if(act==='setStep'){state.lStep=Number(el.dataset.idx);tryMode=false;trySel=[];learnReveal=false;save();render();}
+  if(act==='prevStep'){if(state.lStep>0){state.lStep--;tryMode=false;learnReveal=false;save();render();}}
+  if(act==='nextStep'){const max=LEARN[state.cIdx].steps.length-1;if(state.lStep<max){state.lStep++;tryMode=false;learnReveal=false;save();render();}}
+  if(act==='revealLearnName'){learnReveal=true;render();}
+  if(act==='toggleTry'){tryMode=!tryMode;trySel=[];learnReveal=false;render();}
+  if(act==='tryAtom'){const i=Number(el.dataset.idx);trySel=trySel.includes(i)?trySel.filter(x=>x!==i):[...trySel,i];render();}
+  if(act==='revealTry'){tryMode=false;learnReveal=true;save();render();}
+  if(act==='goGuidedConcept'){state.mode='guided';state.gpVariant=0;gpFb=null;gpAltNum=null;save();render();}
+  if(act==='selVariant'){state.gpVariant=Number(el.dataset.v);gpFb=null;gpAltNum=null;save();render();}
+  if(act==='otherVariant'){
+    if(state.gpVariant===0)state.gpVariant=1;
+    else{state.cIdx=(state.cIdx+1)%LEARN.length;state.gpVariant=0;}
+    gpFb=null;gpAltNum=null;save();render();
+  }
+  if(act==='resetGp'){const gp=curGp();state.gpState[gp.id]={stage:0,sel:[],val:'',tries:0};gpFb=null;gpAltNum=null;save();render();}
+  if(act==='revealGp'){const gp=curGp(),p=getGpProg(gp.id);p.stage=gp.stages.length;gpFb=null;gpAltNum=null;save();render();}
+  if(act==='gpAtom'){
+    const i=Number(el.dataset.idx),gp=curGp(),p=getGpProg(gp.id),st=gp.stages[p.stage];
+    gpAltNum=null;
+    p.sel=st.t==='atom1'?[i]:(p.sel.includes(i)?p.sel.filter(x=>x!==i):[...p.sel,i]);
+    save();render();
+  }
+  if(act==='gpChoice'){
+    const gp=curGp(),p=getGpProg(gp.id),st=gp.stages[p.stage],o=st.opts[Number(el.dataset.idx)];
+    if(o[1]){gpFb=null;gpAltNum=null;p.stage++;p.sel=[];p.tries=0;if(p.stage>=gp.stages.length)state.solved[gp.id]=true;save();}
+    else{gpFb={ok:false,msg:'❌ '+o[2]};gpAltNum=o[3]?.altNum||null;}
+    render();
+  }
+  if(act==='gpCheckAtom'){
+    const gp=curGp(),p=getGpProg(gp.id),st=gp.stages[p.stage];
+    const ok=st.ans.length===p.sel.length&&st.ans.every(x=>p.sel.includes(x));
+    if(ok){gpFb=null;gpAltNum=null;p.stage++;p.sel=[];p.tries=0;if(p.stage>=gp.stages.length)state.solved[gp.id]=true;save();}
+    else{gpFb={ok:false,msg:'❌ '+st.err};gpAltNum=st.errOpts?.altNum||null;}
+    render();
+  }
+  if(act==='gpCheckText'){
+    const gp=curGp(),p=getGpProg(gp.id),st=gp.stages[p.stage],val=$('gpIn')?.value||'';
+    p.val=val;
+    const ok=st.acc.some(a=>norm(a)===norm(val));
+    if(ok){gpFb=null;gpAltNum=null;p.stage++;p.sel=[];p.tries=0;state.solved[gp.id]=true;save();render();}
+    else{
+      p.tries=(p.tries||0)+1;
+      const hIdx=Math.min(p.tries-1,(st.hints||[]).length-1);
+      gpFb={ok:false,msg:`❌ Attempt ${p.tries}: ${st.hints?.[hIdx]||'Check your formatting.'}`};
+      save();render();if($('gpIn'))$('gpIn').focus();
+    }
+  }
+  if(act==='runTests')window.runOrgoRegressionTests();
+  if(act==='confirmReset')$('confirmDialog').showModal();
+  if(act==='print')window.print();
+  if(act==='saveHtml'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['<!DOCTYPE html>\n'+document.documentElement.outerHTML],{type:'text/html'}));a.download='Orgo-Field-Notes.html';a.click();toast('Saved Orgo-Field-Notes.html');}
+});
+render();
+})();
+</script>
+</body>
+</html>

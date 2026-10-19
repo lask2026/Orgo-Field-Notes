@@ -23,3 +23,5 @@ Software checks validate schema, graph references, valence/formula consistency, 
 ## Open review questions
 
 External expert review has not yet been performed. Any remaining scientific ambiguities will be recorded here before delivery.
+
+Chapter 1: corrections implemented and graph/formula checks passed. Per-step atom challenges now follow the displayed molecule. Names and formulas are concealed in practice until completion/reveal; SVG accessibility descriptions expose connectivity without leaking names.

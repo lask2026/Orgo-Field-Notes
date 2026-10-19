@@ -1,0 +1,1187 @@
+{
+  "branch": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 318,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 36
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        2,
+        6,
+        1
+      ]
+    ],
+    "w": 365,
+    "h": 200,
+    "name": "3-methylhexane",
+    "cond": "CH₃–CH₂–CH(CH₃)–CH₂–CH₂–CH₃",
+    "formula": "C7H16",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "fig15": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 318,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 372,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 32
+      },
+      {
+        "e": "C",
+        "x": 256,
+        "y": 12
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 146
+      },
+      {
+        "e": "C",
+        "x": 318,
+        "y": 32
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        5,
+        6,
+        1
+      ],
+      [
+        3,
+        7,
+        1
+      ],
+      [
+        7,
+        8,
+        1
+      ],
+      [
+        4,
+        9,
+        1
+      ],
+      [
+        5,
+        10,
+        1
+      ]
+    ],
+    "w": 419,
+    "h": 200,
+    "name": "4-ethyl-2,3-dimethylheptane",
+    "cond": "CH₃–CH₂–CH₂–CH(CH₂CH₃)–CH(CH₃)–CH(CH₃)–CH₃",
+    "formula": "C11H24",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "fake_pent": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 318,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 32
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 32
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        3,
+        7,
+        1
+      ]
+    ],
+    "w": 365,
+    "h": 200,
+    "name": "2,4-dimethylhexane",
+    "cond": "CH₃–CH(CH₃)–CH₂–CH(CH₃)–CH₂–CH₃",
+    "formula": "C8H18",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "enol": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 156,
+        "y": 166
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        4,
+        1
+      ]
+    ],
+    "w": 310,
+    "h": 200,
+    "name": "but-3-en-2-ol",
+    "cond": "CH₂=CH–CH(OH)–CH₃",
+    "formula": "C4H8O",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "ynol5": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 210,
+        "y": 32
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        5,
+        1
+      ]
+    ],
+    "w": 311,
+    "h": 200,
+    "name": "pent-4-yn-2-ol",
+    "cond": "HC≡C–CH₂–CH(OH)–CH₃",
+    "formula": "C5H8O",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "vicinal": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 48,
+        "y": 52
+      },
+      {
+        "e": "O",
+        "x": 102,
+        "y": 30
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 310,
+    "h": 200,
+    "name": "ethane-1,2-diol",
+    "cond": "HO–CH₂–CH₂–OH",
+    "formula": "C2H6O2",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "geminal": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 76,
+        "y": 32
+      },
+      {
+        "e": "O",
+        "x": 130,
+        "y": 32
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ]
+    ],
+    "w": 310,
+    "h": 200,
+    "name": "propane-2,2-diol",
+    "cond": "CH₃–C(OH)₂–CH₃",
+    "formula": "C3H8O2",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "cyhex": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 155,
+        "y": 42
+      },
+      {
+        "e": "C",
+        "x": 208,
+        "y": 74
+      },
+      {
+        "e": "C",
+        "x": 208,
+        "y": 136
+      },
+      {
+        "e": "C",
+        "x": 155,
+        "y": 168
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 136
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 74
+      },
+      {
+        "e": "C",
+        "x": 258,
+        "y": 48
+      },
+      {
+        "e": "C",
+        "x": 302,
+        "y": 74
+      },
+      {
+        "e": "C",
+        "x": 50,
+        "y": 168
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        1
+      ],
+      [
+        4,
+        8,
+        1
+      ]
+    ],
+    "w": 345,
+    "h": 205,
+    "name": "4-ethyl-1-methylcyclohex-1-ene",
+    "cond": "Cyclohexene with methyl at C1 and ethyl at C4",
+    "formula": "C9H16",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "cyol": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 155,
+        "y": 42
+      },
+      {
+        "e": "C",
+        "x": 208,
+        "y": 74
+      },
+      {
+        "e": "C",
+        "x": 208,
+        "y": 136
+      },
+      {
+        "e": "C",
+        "x": 155,
+        "y": 168
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 136
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 74
+      },
+      {
+        "e": "O",
+        "x": 155,
+        "y": 10
+      },
+      {
+        "e": "C",
+        "x": 260,
+        "y": 136
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        2,
+        7,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 205,
+    "name": "3-methylcyclohexan-1-ol",
+    "cond": "Cyclohexane with –OH at C1 and methyl at C3",
+    "formula": "C7H14O",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "ketone": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 102,
+        "y": 30
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ]
+    ],
+    "w": 311,
+    "h": 200,
+    "name": "pentan-2-one",
+    "cond": "CH₃–C(=O)–CH₂–CH₂–CH₃",
+    "formula": "C5H10O",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "hyald": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 210,
+        "y": 30
+      },
+      {
+        "e": "H",
+        "x": 260,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 48,
+        "y": 168
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        3,
+        5,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ]
+    ],
+    "w": 310,
+    "h": 200,
+    "name": "4-hydroxybutanal",
+    "cond": "HO–CH₂–CH₂–CH₂–CHO",
+    "formula": "C4H8O2",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "hyoxo": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 102,
+        "y": 30
+      },
+      {
+        "e": "O",
+        "x": 210,
+        "y": 30
+      },
+      {
+        "e": "O",
+        "x": 264,
+        "y": 52
+      },
+      {
+        "e": "O",
+        "x": 316,
+        "y": 142
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        3,
+        6,
+        2
+      ],
+      [
+        4,
+        7,
+        2
+      ],
+      [
+        4,
+        8,
+        1
+      ]
+    ],
+    "w": 360,
+    "h": 200,
+    "name": "4-hydroxy-2-oxopentanoic acid",
+    "cond": "CH₃–CH(OH)–CH₂–C(=O)–COOH",
+    "formula": "C5H8O4",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "ester": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 156,
+        "y": 52
+      },
+      {
+        "e": "O",
+        "x": 208,
+        "y": 142
+      },
+      {
+        "e": "C",
+        "x": 258,
+        "y": 112
+      },
+      {
+        "e": "C",
+        "x": 308,
+        "y": 142
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        5,
+        6,
+        1
+      ]
+    ],
+    "w": 360,
+    "h": 200,
+    "name": "ethyl propanoate",
+    "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+    "formula": "C5H10O2",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "namide": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 156,
+        "y": 52
+      },
+      {
+        "e": "N",
+        "x": 208,
+        "y": 142
+      },
+      {
+        "e": "C",
+        "x": 208,
+        "y": 190
+      },
+      {
+        "e": "C",
+        "x": 258,
+        "y": 112
+      },
+      {
+        "e": "C",
+        "x": 308,
+        "y": 142
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        1
+      ]
+    ],
+    "w": 360,
+    "h": 225,
+    "name": "N-ethyl-N-methylpropanamide",
+    "cond": "CH₃–CH₂–C(=O)–N(CH₃)–CH₂CH₃",
+    "formula": "C6H13NO",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "anhyd": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 45,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 96
+      },
+      {
+        "e": "O",
+        "x": 155,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 96
+      },
+      {
+        "e": "C",
+        "x": 265,
+        "y": 130
+      },
+      {
+        "e": "O",
+        "x": 100,
+        "y": 40
+      },
+      {
+        "e": "O",
+        "x": 210,
+        "y": 40
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ],
+      [
+        3,
+        6,
+        2
+      ]
+    ],
+    "w": 315,
+    "h": 195,
+    "name": "ethanoic anhydride",
+    "cond": "CH₃–C(=O)–O–C(=O)–CH₃",
+    "formula": "C4H6O3",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  }
+}

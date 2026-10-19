@@ -4,3 +4,4 @@ artifacts/screenshots/
 artifacts/*.log
 .DS_Store
 __pycache__/
+artifacts/source-*.txt
