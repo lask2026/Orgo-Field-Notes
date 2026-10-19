@@ -124,7 +124,15 @@
               "label": "Check for H",
               "text": "Its loss can give an enolate"
             }
-          ]
+          ],
+          "figure": {
+            "type": "resonance",
+            "steps": [
+              1,
+              2
+            ],
+            "caption": "Resonance contributors of one enolate, not distinct species or tautomers. Only electron placement differs."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -251,7 +259,14 @@
               "label": "Conditions",
               "text": "Kinetic versus equilibrium outcome"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0
+            ],
+            "caption": "Illustrative enol structure. Tautomerization changes H and pi-bond placement; resonance does not move atoms."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -394,7 +409,15 @@
               "label": "Condensation",
               "text": "Water loss gives an unsaturated carbonyl"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Suitable dehydration removes water from a beta-hydroxy carbonyl to give an unsaturated carbonyl; schematic net pathway."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -517,7 +540,15 @@
               "label": "Reagent and conditions",
               "text": "Control selectivity"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Carbonyl-carbon and beta-carbon focus on the same enone: possible 1,2 versus 1,4 sites, not reaction products."
+          }
         },
         "cue": {
           "layout": "decision",

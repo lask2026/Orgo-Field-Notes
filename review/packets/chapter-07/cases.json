@@ -3,7 +3,7 @@
   "chapter": 7,
   "title": "Aldehydes and Ketones II: Enolates",
   "sourceSnapshot": {
-    "sha256": "4efc21bcbc1864e8b729934103e0994ba009cad125c84ef08d93e5d38f78390a",
+    "sha256": "94e888bd4ce5b818207df08be5ed0a6be0e4dfa1ba2711c0ce179813bdd0802e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1088,7 +1088,15 @@
                   "label": "Check for H",
                   "text": "Its loss can give an enolate"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "resonance",
+                "steps": [
+                  1,
+                  2
+                ],
+                "caption": "Resonance contributors of one enolate, not distinct species or tautomers. Only electron placement differs."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1377,7 +1385,14 @@
                   "label": "Conditions",
                   "text": "Kinetic versus equilibrium outcome"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0
+                ],
+                "caption": "Illustrative enol structure. Tautomerization changes H and pi-bond placement; resonance does not move atoms."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1642,7 +1657,15 @@
                   "label": "Condensation",
                   "text": "Water loss gives an unsaturated carbonyl"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Suitable dehydration removes water from a beta-hydroxy carbonyl to give an unsaturated carbonyl; schematic net pathway."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1906,7 +1929,15 @@
                   "label": "Reagent and conditions",
                   "text": "Control selectivity"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Carbonyl-carbon and beta-carbon focus on the same enone: possible 1,2 versus 1,4 sites, not reaction products."
+              }
             },
             "cue": {
               "layout": "decision",
