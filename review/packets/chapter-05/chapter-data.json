@@ -95,22 +95,52 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Classify the carbon bearing OH",
+          "layout": "flow",
+          "title": "Alcohol Physical Properties: Intermolecular Hydrogen Bonding, Boiling Point & Acidity",
           "items": [
             {
-              "label": "OH-bearing carbon",
-              "text": "Count its carbon neighbors"
+              "label": "Boiling Point Hierarchy (Same MW)",
+              "text": "Carboxylic Acid (dimer H-bonds) > Alcohol (O–H H-bonds) > Ketone/Aldehyde (strong dipole) > Ether > Alkane (dispersion only).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Alcohol class",
-              "text": "One, two or three: primary, secondary or tertiary"
+              "label": "Chain Length & Branching Effects",
+              "text": "Longer chains ↑ BP (more van der Waals surface) and ↓ water solubility; branching makes molecules spherical → ↓ surface area → ↓ BP.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Whole molecule",
-              "text": "Hydrogen bonding and hydrocarbon size both matter"
+              "label": "Alcohol Acidity in Solution (pKa 15.5–18)",
+              "text": "In water, 1° ROH (pKa ~16) is more acidic than 3° ROH (pKa ~18) because bulky alkyl groups block solvent H-bonding around the RO⁻ alkoxide!",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "O–H···O H-Bonding → ↑↑ BP",
+            "Chain ≤ 3–4 C = Water Miscible",
+            "Branching → ↓ BP (Less Surface)",
+            "Acidity: 1° > 2° > 3° ROH (Gas vs Solv)"
+          ],
+          "comparison": [
+            [
+              "Alcohol (ROH)",
+              "H-bond DONOR + ACCEPTOR",
+              "Highest BP vs ether/alkane of same MW"
+            ],
+            [
+              "Ether / Ketone",
+              "H-bond ACCEPTOR only (Dipole)",
+              "Moderate BP; soluble in water only if small"
+            ],
+            [
+              "Alkane (R–H)",
+              "London dispersion forces only",
+              "Lowest BP; insoluble in water"
+            ]
+          ],
+          "theme": "hbond-network",
           "figure": {
             "type": "structures",
             "steps": [
@@ -122,43 +152,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Boiling Point & Solubility Predictor",
+          "prompt": "Which physical property comparison is on the exam?",
           "items": [
             {
-              "label": "Count C neighbors of C–OH",
-              "text": "Determines alcohol class"
+              "label": "Butan-1-ol vs. Diethyl Ether (Both C₄H₁₀O)",
+              "outcome": "Butan-1-ol Boils ~83 °C Higher (118 °C vs 35 °C)",
+              "text": "Alcohols have an O–H bond that both donates and accepts intermolecular H-bonds; ethers lack O–H bonds and cannot H-bond to themselves."
             },
             {
-              "label": "Count OH groups",
-              "text": "A different classification: monoalcohol, diol, etc."
+              "label": "Butan-1-ol vs. tert-Butanol (Chain vs Branched)",
+              "outcome": "Linear Butan-1-ol Has Higher BP; t-BuOH Has Higher MP",
+              "text": "Linear chains pack more surface area for dispersion in liquids (↑ BP), while spherical symmetry packs tightly into crystals (↑ MP)."
+            },
+            {
+              "label": "Choosing a Base to Deprotonate ROH (pKa ~16)",
+              "outcome": "Use NaH, Na/K Metal, or LDA (NOT NaOH Residual 100%)",
+              "text": "NaOH (H₂O pKa 15.7) gives only an equilibrium mixture; NaH (H₂ pKa 35, evolves gas) drives alkoxide formation to 100%."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Thinking Ethers Can Hydrogen-Bond to Themselves",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Secondary means two OH groups"
+              "label": "Common Trap",
+              "text": "Ranking diethyl ether near butan-1-ol in boiling point because \"both have an oxygen atom that hydrogen-bonds\"."
             },
             {
-              "label": "Check",
-              "text": "It means two carbon substituents on the OH-bearing carbon"
+              "label": "Correct Reasoning",
+              "text": "Pure ethers have NO O–H, N–H, or F–H bonds: they can accept H-bonds from water, but pure liquid ether has only weak dipole-dipole forces."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "TLC Silica Elution Order & Membrane Permeability of Hydroxylated Drugs",
           "items": [
             {
-              "label": "OH group",
-              "text": "Can donate and accept hydrogen bonds"
+              "label": "Silica Gel TLC (Polar SiO₂)",
+              "outcome": "Diols < Alcohols < Ketones < Ethers < Alkanes (Rf)",
+              "text": "More –OH groups form stronger H-bonds to polar silica gel, giving a LOWER Rf value and slower column elution."
             },
             {
-              "label": "Water affinity",
-              "text": "Also depends on the rest of the molecule"
+              "label": "Phase I Hepatic Metabolism",
+              "outcome": "Cytochrome P450 Hydroxylation (R–H → R–OH)",
+              "text": "Adding polar –OH groups increases aqueous solubility for renal excretion."
+            },
+            {
+              "label": "Polyol Cryoprotectants",
+              "outcome": "Glycerol (Propane-1,2,3-triol)",
+              "text": "Three –OH groups create a dense 3D H-bond network, giving high viscosity and full water miscibility."
             }
           ]
         }
@@ -217,21 +262,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Alcohol class + oxidant + conditions",
+          "title": "Chemoselective Alcohol Oxidation: PCC / Swern / DMP vs. Jones / KMnO₄",
           "items": [
             {
-              "label": "Classify alcohol",
-              "text": "Inspect the OH-bearing carbon"
+              "label": "Count α-Hydrogens on the Carbinol Carbon (C–OH)",
+              "text": "Each oxidation step to a C=O π bond removes ONE H from oxygen and ONE H from the attached carbon (1° has 2 H; 2° has 1 H; 3° has 0 H).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Read conditions",
-              "text": "Oxidant, solvent and water"
+              "label": "Stop at Aldehyde (Anhydrous Oxidants)",
+              "text": "PCC (pyridinium chlorochromate in CH₂Cl₂), Dess-Martin periodinane (DMP), or Swern (DMSO/(COCl)₂/Et₃N) stop cleanly at the aldehyde.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Track product",
-              "text": "Aldehyde, ketone or acid"
+              "label": "Over-Oxidation to Carboxylic Acid (Aqueous Strong Oxidants)",
+              "text": "Jones reagent (CrO₃/H₂SO₄/H₂O), Na₂Cr₂O₇/H₂SO₄, or hot KMnO₄ oxidize 1° alcohols all the way to carboxylic acids via the aldehyde hydrate.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "1° + PCC → Aldehyde",
+            "1° + CrO₃/H₂O → Carboxylic Acid",
+            "2° + Any Cr(VI) → Ketone",
+            "3° → No Reaction"
+          ],
+          "comparison": [
+            [
+              "PCC / DMP (Anhydrous)",
+              "1° ROH → Aldehyde (RCHO)",
+              "2° ROH → Ketone; 3° ROH → N.R."
+            ],
+            [
+              "Jones (CrO₃/H₂SO₄/H₂O)",
+              "1° ROH → Carboxylic Acid (RCOOH)",
+              "2° ROH → Ketone; Orange Cr⁶⁺ → Green Cr³⁺"
+            ],
+            [
+              "NaIO₄ (Periodate)",
+              "Vicinal 1,2-Diol → 2 Carbonyls",
+              "Cleaves C–C bond between adjacent –OH groups"
+            ]
+          ],
+          "theme": "chromate-oxidation",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -243,47 +318,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Instant Alcohol Oxidation Outcome Selector",
+          "prompt": "What alcohol class and reagent are paired in the reaction?",
           "items": [
             {
-              "label": "Primary, suitable mild anhydrous oxidation",
-              "text": "Aldehyde"
+              "label": "Primary (1°) Alcohol + PCC / CH₂Cl₂",
+              "outcome": "Aldehyde (RCHO) — Stops Cleanly!",
+              "text": "Anhydrous conditions prevent hydrate formation, preserving the aldehyde without over-oxidation."
             },
             {
-              "label": "Primary, suitable aqueous strong oxidation",
-              "text": "Carboxylic acid"
+              "label": "Primary (1°) Alcohol + CrO₃ / H₂SO₄ / H₂O",
+              "outcome": "Carboxylic Acid (RCOOH) + Green Cr³⁺",
+              "text": "Water hydrates the intermediate aldehyde to RCH(OH)₂, which is immediately oxidized a second time to RCOOH."
             },
             {
-              "label": "Secondary",
-              "text": "Ketone; tertiary lacks the carbinol C–H for this pathway"
+              "label": "Secondary (2°) vs. Tertiary (3°) Alcohol",
+              "outcome": "2° → Ketone (With PCC OR Jones); 3° → No Reaction",
+              "text": "Secondary alcohols have exactly 1 carbinol H (always yield a ketone); tertiary alcohols lack a carbinol H and fail the chromate color test."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Using Aqueous Dichromate to Make an Aldehyde or Oxidizing a Tertiary Alcohol",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Assuming every tertiary alcohol is inert under all conditions"
+              "label": "Common Trap",
+              "text": "Reacting butan-1-ol with Na₂Cr₂O₇/H₂SO₄/H₂O expecting butanal, or oxidizing 2-methylpropan-2-ol to a ketone."
             },
             {
-              "label": "Check",
-              "text": "The specific pathway; PCC is one of several aldehyde-selective options"
+              "label": "Correct Reasoning",
+              "text": "Ordinary alcohol oxidation gives a ketone from a secondary alcohol. Primary-alcohol products depend on reagent and water; tertiary alcohols lack a carbinol H for this pathway, although harsher oxidative cleavage is possible."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Breathalyzer Chromate Color Change & Hepatic Ethanol Metabolism",
           "items": [
             {
-              "label": "Alcohol dehydrogenases",
-              "text": "Biological redox steps"
+              "label": "Classic Breathalyzer Test",
+              "outcome": "Orange Cr₂O₇²⁻ (Cr⁶⁺) → Green Cr³⁺",
+              "text": "Ethanol (1° alcohol) reduces orange Cr(VI) to green Cr(III) while being oxidized to acetic acid."
             },
             {
-              "label": "Specificity",
-              "text": "Substrate and cofactor control the outcome"
+              "label": "Ethanol → Acetaldehyde → Acetate",
+              "outcome": "ADH (NAD⁺) then ALDH (NAD⁺)",
+              "text": "Alcohol dehydrogenase stops at acetaldehyde (like PCC); aldehyde dehydrogenase oxidizes it to acetate (like Jones)."
+            },
+            {
+              "label": "Methanol / Ethylene Glycol Toxicity",
+              "outcome": "Fomepizole Inhibits Alcohol Dehydrogenase",
+              "text": "Blocking oxidation prevents conversion of methanol to toxic formaldehyde/formate."
             }
           ]
         }
@@ -350,21 +436,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Make leaving groups; mask carbonyls",
+          "title": "Alcohol Activation (Tosylates, Mesylates, SOCl₂, PBr₃) & Silyl/Acetal Protecting Groups",
           "items": [
             {
-              "label": "Activate ROH",
-              "text": "Form a mesylate or tosylate"
+              "label": "Sulfonate Ester Formation (TsCl or MsCl + Pyridine)",
+              "text": "Converts poor –OH into an excellent –OTs or –OMs leaving group with 100% RETENTION of configuration because the C–O bond stays intact.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Sulfonate formation",
-              "text": "C–O remains intact"
+              "label": "Halide Conversion Without Rearrangement (SOCl₂ or PBr₃)",
+              "text": "Converts 1°/2° alcohols into R–Cl or R–Br with clean SN2 INVERSION—avoids the carbocation rearrangements seen with HCl/HBr!",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Later SN2 at carbon",
-              "text": "Inverts its geometry"
+              "label": "Alcohol Protection (TMSCl / TBDMSCl or Dihydropyran)",
+              "text": "Masks acidic/nucleophilic –OH as a silyl ether (R–OSiR₃) during Grignard/LiAlH₄ steps; deprotect selectively with fluoride (TBAF).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "TsCl/Pyr → Retention (1 Step)",
+            "TsO⁻ + Nu⁻ → Inversion",
+            "SOCl₂ / PBr₃ → Inversion",
+            "TBDMS / Acetal = Protecting Group"
+          ],
+          "comparison": [
+            [
+              "TsCl, pyridine",
+              "ROH → ROTs (RETENTION of R/S)",
+              "Oxygen attacks S; C–O bond never breaks!"
+            ],
+            [
+              "ROTs + Nu⁻ (SN2)",
+              "ROTs → R–Nu (INVERSION of R/S)",
+              "Overall 2-step sequence = net inversion"
+            ],
+            [
+              "SOCl₂ or PBr₃",
+              "ROH → R–Cl or R–Br (INVERSION)",
+              "Direct SN2 without carbocation rearrangement!"
+            ]
+          ],
+          "theme": "tosylate-inversion",
           "figure": {
             "type": "structures",
             "steps": [
@@ -376,47 +492,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Stereochemical Control: Retention vs. Inversion from a Chiral Alcohol",
+          "prompt": "How do you control the stereochemistry when replacing a chiral 2° –OH?",
           "items": [
             {
-              "label": "Improve leaving-group ability",
-              "text": "Activation"
+              "label": "Need Net INVERSION from (R)-ROH",
+              "outcome": "Route A: 1. TsCl/pyr (Retain) → 2. Nu⁻ (Invert) | Route B: PBr₃ (Invert)",
+              "text": "One SN2 displacement at carbon gives net inversion: (R)-ROH → (R)-ROTs → (S)-R–Nu."
             },
             {
-              "label": "Temporarily suppress reactivity",
-              "text": "Protection"
+              "label": "Need Net RETENTION from (R)-ROH",
+              "outcome": "Double Inversion: 1. PBr₃ (Invert to S-RBr) → 2. Nu⁻ (Invert back to R-RNu)",
+              "text": "Two sequential SN2 displacements at the chiral carbon invert twice (R → S → R) for net retention!"
             },
             {
-              "label": "Acetal/ketal terminology",
-              "text": "Retain the traditional distinction alongside inclusive acetal usage"
+              "label": "Grignard or Organolithium Fails on Halo-Alcohol",
+              "outcome": "Protect –OH as R–OTBDMS First → Form RMgBr → Deprotect (F⁻)",
+              "text": "Unprotected –OH (pKa ~16) instantly protonates and destroys RMgBr (conjugate acid pKa ~50)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Inverting the Stereocenter During Tosylation (ROH + TsCl)",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Tosylation itself inverts carbon"
+              "label": "Common Trap",
+              "text": "Flipping the wedge to a dash when converting (R)-butan-2-ol to its tosylate ester with TsCl/pyridine."
             },
             {
-              "label": "Check",
-              "text": "Inversion occurs in a later SN2 displacement at carbon"
+              "label": "Correct Reasoning",
+              "text": "Tosylation happens at the OXYGEN atom (O attacks S of TsCl); the chiral C–O bond never breaks during tosylation, so configuration is RETAINED!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Biological Sulfonation, Kinase Phosphorylation & Solid-Phase Synthesis",
           "items": [
             {
-              "label": "Carbonyl protection",
-              "text": "Acetal formation changes reactivity"
+              "label": "ATP Phosphorylation of –OH",
+              "outcome": "Biochemical Equivalent of Tosylation",
+              "text": "Converting R–OH to R–OPO₃²⁻ turns a terrible leaving group (HO⁻) into a weak-base phosphate leaving group (HOPO₃²⁻)."
             },
             {
-              "label": "Deprotection",
-              "text": "Appropriate aqueous acid restores the carbonyl"
+              "label": "Fluoride Deprotection (TBAF)",
+              "outcome": "Si–F Bond Is Exceptionally Strong",
+              "text": "Fluoride (F⁻) selectively cleaves silyl ethers (R–OTBDMS) without touching carbon-oxygen ether or ester bonds."
+            },
+            {
+              "label": "HX vs PBr₃ on Neopentyl-like 2° ROH",
+              "outcome": "HBr Gives Rearranged 3° RBr; PBr₃ Gives Clean 2° RBr",
+              "text": "Use PBr₃ or TsCl/Br⁻ whenever you must prevent a 1,2-hydride or methyl shift."
             }
           ]
         }
@@ -479,21 +606,42 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Acidity and biological electron transfer",
+          "title": "Phenol Acidity (pKa ~10), Substituent Resonance Effects & Hydroquinone ⇌ Quinone Redox",
+          "formula": "Hydroquinone (Aromatic 1,4-Benzenediol)  ⇌  p-Benzoquinone (Conjugated Diketone, NOT Aromatic) + 2 H⁺ + 2 e⁻",
           "items": [
             {
-              "label": "Phenol",
-              "text": "OH directly on an aromatic ring"
+              "label": "Why Phenol (pKa ~10) Is 10⁶× More Acidic Than Cyclohexanol (pKa ~16)",
+              "text": "Deprotonating phenol delocalizes the negative charge across oxygen AND the ortho/para ring carbons (4 resonance contributors)."
             },
             {
-              "label": "Conjugate base",
-              "text": "Phenoxide is resonance stabilized"
-            },
-            {
-              "label": "Substituents",
-              "text": "Electronic effects can alter acidity"
+              "label": "Why Phenol Is Less Acidic Than Carboxylic Acids (pKa ~5)",
+              "text": "Carboxylate spreads −1 charge over TWO electronegative oxygens; phenoxide spreads charge onto less electronegative carbon atoms."
             }
           ],
+          "chips": [
+            "Phenol pKa ~10 (vs ROH ~16)",
+            "Phenoxide Resonance = 4 Contributors",
+            "EWG (p-NO₂) → ↓ pKa (~7.1)",
+            "Hydroquinone ⇌ Quinone + 2H⁺ + 2e⁻"
+          ],
+          "comparison": [
+            [
+              "Cyclohexanol (pKa 16)",
+              "Localized sp³ alkoxide",
+              "Insoluble in aqueous NaOH"
+            ],
+            [
+              "Phenol (pKa 10.0)",
+              "Resonance-delocalized phenoxide",
+              "Dissolves in 1M NaOH (NOT in NaHCO₃!)"
+            ],
+            [
+              "p-Nitrophenol (pKa 7.1)",
+              "Ortho/para EWG stabilizes O⁻",
+              "Stronger acid by ~3 pKa units"
+            ]
+          ],
+          "theme": "phenol-quinone-redox",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -505,47 +653,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Phenol Substituent Effects & Quinone Redox Recognition",
+          "prompt": "What phenol or quinone property is being tested?",
           "items": [
             {
-              "label": "Quinone gains 2 H+ and 2 e−",
-              "text": "Hydroquinone: the reduced form"
+              "label": "Nitro (–NO₂) or Cyano (–CN) on Phenol Ring",
+              "outcome": "↓↓ pKa (Stronger Acid — Especially Ortho/Para!)",
+              "text": "Ortho and para EWGs accept the phenoxide lone pair directly by resonance + induction (2,4,6-trinitrophenol = picric acid, pKa ~0.4!)."
             },
             {
-              "label": "Hydroquinone loses 2 H+ and 2 e−",
-              "text": "Quinone: the oxidized form"
+              "label": "Methoxy (–OCH₃) or Alkyl (–CH₃) on Phenol Ring",
+              "outcome": "↑ pKa (Weaker Acid)",
+              "text": "Electron-donating groups push electron density into the ring, destabilizing the negatively charged phenoxide conjugate base."
+            },
+            {
+              "label": "Hydroquinone / Catechol + Oxidant ([O])",
+              "outcome": "Oxidizes to Conjugated Quinone (1,4 or 1,2-Dione)",
+              "text": "Quinones are cyclic α,β-unsaturated diketones (NOT aromatic!), whereas hydroquinones ARE fully aromatic 6π benzene diols."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Calling Quinones \"Aromatic\" or Extracting Phenol with NaHCO₃",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Equating hydroquinone with hydroxyquinone"
+              "label": "Common Trap",
+              "text": "Assuming ubiquinone (CoQ) is aromatic because it has a 6-membered ring, or saying NaHCO₃ deprotonates unsubstituted phenol."
             },
             {
-              "label": "Check",
-              "text": "Hydroquinone is reduced; hydroxyquinone retains a quinone framework with an extra OH"
+              "label": "Correct Reasoning",
+              "text": "Benzoquinone has two sp² C=O carbons interrupting cyclic delocalization (non-aromatic conjugated diene-dione); phenol (pKa 10) needs NaOH (H₂O pKa 15.7), not NaHCO₃ (pKa 6.4)!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Ubiquinone (Coenzyme Q10), Vitamin K & Tyrosine Side-Chain Chemistry",
           "items": [
             {
-              "label": "Coenzyme Q",
-              "text": "Accepts electrons from complexes I/II; passes them to III"
+              "label": "Coenzyme Q (Ubiquinone → Ubiquinol)",
+              "outcome": "Q + 2H⁺ + 2e⁻ ⇌ QH₂ in Electron Transport Chain",
+              "text": "Complexes I and II reduce ubiquinone to aromatic ubiquinol (hydroquinone), shuttling electrons to Complex III."
             },
             {
-              "label": "Hydrophobic tail",
-              "text": "Keeps CoQ in the inner membrane"
+              "label": "Tyrosine Side Chain (pKa ~10.1)",
+              "outcome": "Phenol Nucleophile in Kinase Substrates",
+              "text": "Deprotonated at high pH to form a nucleophile or oxidized to dopaquinone in melanin synthesis."
             },
             {
-              "label": "Vitamin K quinones",
-              "text": "Lipid-soluble cofactors in vitamin K-dependent carboxylation"
+              "label": "Vitamin E (α-Tocopherol)",
+              "outcome": "Phenolic Radical-Trapping Antioxidant",
+              "text": "Donates a phenolic H• atom to lipid peroxyl radicals, forming a resonance-stabilized phenoxyl radical."
             }
           ]
         }
