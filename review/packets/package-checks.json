@@ -3,252 +3,252 @@
   "chapters": [
     {
       "chapter": 1,
-      "cases": 46,
+      "cases": 70,
       "screenshots": 168,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 13,
-          "bytes": 214184,
-          "sha256": "6e549058867faf28f1055e8194a66bef4495f9b338c38845e7bbde9a012dfdd3",
+          "bytes": 214182,
+          "sha256": "0d8d8416532ceaad3cc6cb4183ae87b3e745437f7e6a0f67f96cef1d780f1a1c",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 112,
-          "bytes": 3703854,
-          "sha256": "0472647e9075806d59c48f048da17a78c93ff7d58f918db1f9dda6f8b35a62db",
+          "pages": 117,
+          "bytes": 4096464,
+          "sha256": "27a1987d491225cc88a536ddff74693765825960e5c3d34d8d782e8ddad24bef",
           "blind": false
         }
       ]
     },
     {
       "chapter": 2,
-      "cases": 32,
+      "cases": 56,
       "screenshots": 115,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 12,
-          "bytes": 145785,
-          "sha256": "ec2fe38bffdbd94d3f63f0a2b608bed489ab287294fc22cfbb879f5c6488a8a2",
+          "bytes": 145784,
+          "sha256": "e12e147f1ceb09a8481e8f8560761c39433ce9335dd094874ba38fe8500be6f7",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 77,
-          "bytes": 2390381,
-          "sha256": "81a4ab358c93d7010f36a4c6b6b121795d35abc9bc5467a9ec1c6daaee7ff160",
+          "pages": 84,
+          "bytes": 2875232,
+          "sha256": "d8745d45c3d77870b27d78f4765696adc1dfd0c54f1dd75801e4457f5fc03b3f",
           "blind": false
         }
       ]
     },
     {
       "chapter": 3,
-      "cases": 15,
+      "cases": 27,
       "screenshots": 58,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 5,
-          "bytes": 76496,
-          "sha256": "735c4fc7d0e41ecbf37600f0edef0a9df6f3ee6055bd8c2477d2f411aa7b9b43",
+          "bytes": 76495,
+          "sha256": "c1d35dc0ea912a85a7634faee8c8cfb26d1ce457b6d7b2ca66747c443c8a022a",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 40,
-          "bytes": 1437521,
-          "sha256": "355ea4b64303f7914f88cd8640091dbbe87237d71c4aa9db72cb02adeecc2211",
+          "pages": 43,
+          "bytes": 1779390,
+          "sha256": "839438161150b29f529f622222c7f441db01e26227bc08dfbee830461f4b94da",
           "blind": false
         }
       ]
     },
     {
       "chapter": 4,
-      "cases": 24,
+      "cases": 44,
       "screenshots": 77,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 6,
-          "bytes": 130733,
-          "sha256": "a6f10db7f0e21a798f2cc20aaf78cf558308c6321769e04c58e753c3400e165f",
+          "bytes": 130734,
+          "sha256": "9fcb593b2e77ab38503f688d65657cfa9d8718035c8876fdc440c2643c70c103",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 55,
-          "bytes": 2000623,
-          "sha256": "d6ae3761c9a23b8041a0f8f5734ce906516c7ed230e3b53ece3a8509d1b5e590",
+          "pages": 61,
+          "bytes": 2498086,
+          "sha256": "75aa028db4e3f74b337daf7ff683c429cb79d4daed1f3adaff02e2c1848db792",
           "blind": false
         }
       ]
     },
     {
       "chapter": 5,
-      "cases": 22,
+      "cases": 38,
       "screenshots": 62,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 8,
-          "bytes": 135167,
-          "sha256": "c35800f7eb0e763037608e5d673a743b8f6d420d53fa169f14cadc6e960b2030",
+          "bytes": 135166,
+          "sha256": "8784ba15016c3339b44a8a2ba8ad31752ed0b5547f3fd4fbc3149aaddde6cae5",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 47,
-          "bytes": 1599728,
-          "sha256": "32a7d2f484830e57ece7be2973d0941a8b5f2f96e40b81aeaaae6f9473d17a11",
+          "pages": 52,
+          "bytes": 2171976,
+          "sha256": "b7f925ef3e07866eba68218583bdeb37726558e03b47f07875c1b94704b3cbeb",
           "blind": false
         }
       ]
     },
     {
       "chapter": 6,
-      "cases": 24,
+      "cases": 40,
       "screenshots": 62,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 6,
-          "bytes": 109967,
-          "sha256": "68e37800eea2f1b04bab557ae8bb024ee54cdace6bc18ba3ab4364539f3cf9f4",
+          "bytes": 109964,
+          "sha256": "719374abc7c7f67e3ea70e63077bff7e1f6edebd8fdecb18c5b86f1255062965",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 47,
-          "bytes": 1573237,
-          "sha256": "cf09ed411ddf803b9790a54aa646bc0f0647d9887d0003f9e88543fa437b7ce3",
+          "pages": 52,
+          "bytes": 2176273,
+          "sha256": "c74a32a47f290df78e6620f997cc9b55151fa2f7008dd49b0aa9684338cfb03f",
           "blind": false
         }
       ]
     },
     {
       "chapter": 7,
-      "cases": 20,
+      "cases": 36,
       "screenshots": 63,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 5,
-          "bytes": 94529,
-          "sha256": "3a05a5f40b392f752da468a5e20409d49693ebb00e509b76a1346523880ee7ee",
+          "bytes": 94531,
+          "sha256": "2aa148a20e2733cfe194fc9019936d0bffd0a0c5562813d0f236bcf7e2744e63",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 46,
-          "bytes": 1686518,
-          "sha256": "3414544216e57860bf7106e666d7c9a73a726c126796cf0d93fd6040427708cb",
+          "pages": 51,
+          "bytes": 2331710,
+          "sha256": "9dfcc12183cdf2cc2e7c272c5bc8208ce97db1bea212322012cb406f94685594",
           "blind": false
         }
       ]
     },
     {
       "chapter": 8,
-      "cases": 20,
+      "cases": 36,
       "screenshots": 60,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 8,
-          "bytes": 127208,
-          "sha256": "75fc0d7179d5e715e67b61955f1383bf0e6e6aac6741e71fe7d17b6178aabbd8",
+          "bytes": 127210,
+          "sha256": "e089b456b01b64ed3d6f91bd11bf9cae5c4d33eb60c93910a05703656eee1ff2",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 44,
-          "bytes": 1602116,
-          "sha256": "241aa085fde7a91e263d1429dd8c9bdf0876abfe97b3ce3494ca74e7890b32c8",
+          "pages": 49,
+          "bytes": 2214198,
+          "sha256": "78cc4adeb7546ba4001f32d6be1d6cea2ae205b7732912fd82855748a10c2c5b",
           "blind": false
         }
       ]
     },
     {
       "chapter": 9,
-      "cases": 17,
+      "cases": 29,
       "screenshots": 48,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 4,
           "bytes": 77186,
-          "sha256": "74f1e3d32638c1485e50f27f3dd5f93f057a4b20f0b85abb9b66bf8033ad7565",
+          "sha256": "8e7d5e34595fd93c32ae2fa4e6d30288d14e9de09f5a8c973d3442eb0c3a7693",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 37,
-          "bytes": 1400770,
-          "sha256": "cc7eb73758af9e1d3db54e8007eaac295563027b188b84afe218434bc4011cb4",
+          "pages": 40,
+          "bytes": 2031277,
+          "sha256": "24ed0db8e7e11573c386382e6826c9b75102c11f73dc044b1ad47908e40bbeff",
           "blind": false
         }
       ]
     },
     {
       "chapter": 10,
-      "cases": 22,
+      "cases": 38,
       "screenshots": 72,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 7,
-          "bytes": 135991,
-          "sha256": "7825e784462c2b180061ebbfcca34ea8f8af185091b899be602aef8ec633cc69",
+          "bytes": 135989,
+          "sha256": "c3c3e5c11396da700cd3ba9bcb12e69cd33a24bca701f3b8da21923720aff419",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 51,
-          "bytes": 1938816,
-          "sha256": "2a817ca6868639bf2e9c20120e7c3c1810fb1923e9eb1e099997ac54b410cf18",
+          "pages": 56,
+          "bytes": 2600754,
+          "sha256": "324d1166f2b8fac833d1fb146ba3b729128ed9eca8bfdfb1bf256e60435feeed",
           "blind": false
         }
       ]
     },
     {
       "chapter": 11,
-      "cases": 20,
+      "cases": 36,
       "screenshots": 69,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 7,
           "bytes": 132274,
-          "sha256": "579644a21dcf1d67233c25d44cea1955bc025a096fece7f0165b283c5aed616b",
+          "sha256": "39691f0fd3dcd6403d3782447fa573651e2263d74ce0e2f56632e386a7a658ad",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 49,
-          "bytes": 1686485,
-          "sha256": "d5d59c7bd23b9e17651d869d8b2743c97dbd948d77baf9b86b44b65db3dc4b70",
+          "pages": 54,
+          "bytes": 2300207,
+          "sha256": "4216a993f2bd669abeb626bf9981b49f9c928b9fea62c8b3abc6a7ee428808b8",
           "blind": false
         }
       ]
     },
     {
       "chapter": 12,
-      "cases": 17,
+      "cases": 33,
       "screenshots": 60,
       "pdfs": [
         {
           "file": "01-BLIND-EXERCISES.pdf",
           "pages": 8,
           "bytes": 92463,
-          "sha256": "82e61a778ecf345d5894304c4100b59e6fc28b91cabc8e710fd64c80a93c92fb",
+          "sha256": "accb94398484bed5b1f1d426e49fcd75b4b5835ca9f475426271f2adc03c6c63",
           "blind": true
         },
         {
           "file": "02-CHAPTER-REVIEW.pdf",
-          "pages": 44,
-          "bytes": 1595103,
-          "sha256": "e8c6e00e86a58fb6a083009a3a1735c06429d35a8d1ba2a252f23d886472039d",
+          "pages": 48,
+          "bytes": 2163663,
+          "sha256": "59efcfb6d5f8322054f77fd3cc760ee82648775215dda19c3acdbff097357e17",
           "blind": false
         }
       ]

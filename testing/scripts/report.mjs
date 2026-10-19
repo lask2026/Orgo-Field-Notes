@@ -62,11 +62,11 @@ The Pages build and workflow are ready, but no GitHub remote was supplied and no
 
 Development now lives under dev/, automated tests/evidence under testing/, and scientific review tools/packets/results under review/. See docs/PROJECT_STRUCTURE.md and review/RELOCATION-MAP.json. The repository root and private books were retained. A reusable new-subject initializer defaults to preview and refuses existing book/project directories; biology/physics applications have not been created by this migration.
 
-Migration verification preserved the canonical source and historical review/packet bytes; current packet checks cover 279 cases, 827 screenshots and 24 PDFs. Source and runtime behavior were not redesigned. PDF font checks passed separately. These are software/provenance checks, not independent chemistry certification.
+Migration verification preserved the canonical source and historical review/packet bytes; current packet checks cover 483 cases, 914 screenshots and 24 PDFs. Source and runtime behavior were not redesigned. PDF font checks passed separately. These are software/provenance checks, not independent chemistry certification.
 
 ## Visual notes and illustrative inspection
 
-Diagram-first chemistry cards include canonical molecular drawings, schematic reactions/resonance, projections, matched spectra and apparatus cartoons, with text keys and distinct expandable full notes. Inline and fullscreen graph projections work offline and preserve atom identities. Active Guided Practice and learn atom challenges retain the 2D answer canvas. Names, formulas and author notes remain concealed until revealed. The projection uses arbitrary display depth, not physical conformer geometry; no PubChem verification or independent chemistry sign-off is claimed. Added interface tests and the full browser/regression suites check these software behaviors.
+The supplied remix card layouts include chips, colored rule ladders, comparison tables, interactive memory branches, paired traps and passage connections. Full notes expand beneath persistent visuals. Molecular drawings use canonical graphs; applicable original SVG schematics remain. Inline and fullscreen graph projections work offline and preserve atom identities. Active Guided Practice and learn atom challenges retain the 2D answer canvas. Names, formulas and author notes remain concealed until revealed. The projection uses arbitrary display depth, not physical conformer geometry; no PubChem verification or independent chemistry sign-off is claimed. Added interface tests and the full browser/regression suites check these software behaviors.
 
 ## Start reviewing
 

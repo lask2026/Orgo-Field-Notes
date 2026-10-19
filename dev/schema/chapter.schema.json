@@ -939,8 +939,6 @@
         },
         "items": {
           "type": "array",
-          "minItems": 2,
-          "maxItems": 5,
           "items": {
             "type": "object",
             "properties": {
@@ -951,6 +949,18 @@
               "text": {
                 "type": "string",
                 "minLength": 1
+              },
+              "step": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "minLength": 1
+              },
+              "outcome": {
+                "type": "string",
+                "minLength": 1
               }
             },
             "required": [
@@ -958,7 +968,42 @@
               "text"
             ],
             "additionalProperties": false
-          }
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "formula": {
+          "type": "string",
+          "minLength": 1
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "theme": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chips": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "comparison": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "minItems": 0
         },
         "figure": {
           "type": "object",

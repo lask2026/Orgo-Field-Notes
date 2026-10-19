@@ -228,3 +228,7 @@ Names/formulas/review notes follow the walkthrough reveal; carbon charges and ex
 
 
 Validation checkpoint: 68 chemistry figure specifications cover all 51 lessons. Schema validation passed 13 documents; all 97 npm tests, the full 12-chapter browser suite and all 28 regression groups passed. Drawing-panel metadata meets measured 4.5:1 contrast in both themes at mobile/desktop sizes. Packet checks passed 279 cases, 914 screenshots and 24 PDFs; chemistry-font tests and PDF QA passed, with 93 sampled PDF pages rendered. Representative numbered skeleton, redox, enolate, atomic, spectral and apparatus cards were visually inspected. Existing molecular graphs, assessment data and historical review results were preserved. These are software/layout/provenance checks, not independent chemistry sign-off.
+
+## 2026-10-19 — Remix visual design restoration
+
+Restored the supplied remix's four distinct card layouts and interactions in canonical chapter JSON and reusable source. Full notes expand beneath persistent visuals. Removed repeated generic summary labeling. Graph-backed molecular figures and practice safeguards remain. Review exports include chips, equations, comparison rows and branch outcomes; 483 bounded review cases preserve full content. Validation and packet regeneration recorded in the current testing artifacts; independent chemistry sign-off remains outstanding.

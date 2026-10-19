@@ -84,3 +84,106 @@ details.tcard>summary{list-style:none;cursor:pointer;display:flex;justify-conten
 .tcard .chem-paper p,.tcard .chem-paper summary,.tcard .chem-paper .chem-example{color:#334155}.tcard .chem-paper p{font-size:.73rem;line-height:1.45}
 
 .chem-multiple .card-mol{height:160px}@media(min-width:601px){.chem-relation{align-self:flex-start;margin-top:75px}}
+
+/* Visual Study Cards: Summary Strip, Priority Ladder, Decision Tree, Wrong vs Right Trap, Application Grid */
+.tcard-content{display:flex;flex-direction:column;gap:10px}
+.vcard-strip{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:7px 10px;border-radius:8px;background:rgba(255,255,255,0.82);border:1px solid var(--bd);font-size:.8rem;line-height:1.4}
+[data-theme=dark] .vcard-strip{background:rgba(15,23,42,0.72);border-color:var(--bd)}
+.vstrip-badge{font-size:.7rem;font-weight:850;text-transform:uppercase;letter-spacing:.03em;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.vstrip-blue .vstrip-badge{background:var(--blue-bg);color:#1e40af;border:1px solid var(--blue-bd)}
+.vstrip-orange .vstrip-badge{background:var(--orange-bg);color:#92400e;border:1px solid var(--orange-bd)}
+.vstrip-red .vstrip-badge{background:var(--red-bg);color:#9f1239;border:1px solid var(--red-bd)}
+.vstrip-teal .vstrip-badge{background:var(--teal-bg);color:#115e59;border:1px solid var(--teal-bd)}
+[data-theme=dark] .vstrip-blue .vstrip-badge{color:#93c5fd}
+[data-theme=dark] .vstrip-orange .vstrip-badge{color:#fcd34d}
+[data-theme=dark] .vstrip-red .vstrip-badge{color:#fda4af}
+[data-theme=dark] .vstrip-teal .vstrip-badge{color:#5eead4}
+.vstrip-text{font-weight:700;color:var(--ink);flex:1;min-width:180px}
+
+.vcard-schema{background:rgba(255,255,255,0.88);border:1px solid var(--bd);border-radius:9px;padding:10px 12px}
+[data-theme=dark] .vcard-schema{background:rgba(15,23,42,0.68);border-color:var(--bd)}
+.vschema-head{font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--sec);margin-bottom:8px}
+.vladder-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.vladder-item{display:flex;align-items:flex-start;gap:9px;padding:6px 9px;border-radius:7px;background:var(--card);border:1px solid var(--bd)}
+.vl-step{min-width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font:800 .74rem Consolas,monospace;color:#fff;flex-shrink:0;margin-top:1px}
+.vl-green .vl-step{background:var(--green)}
+.vl-blue .vl-step{background:var(--blue)}
+.vl-orange .vl-step{background:var(--orange)}
+.vl-purple .vl-step{background:var(--purple)}
+.vl-red .vl-step{background:var(--red)}
+.vl-body{display:flex;flex-direction:column;gap:1px;font-size:.8rem;line-height:1.38}
+.vl-body strong{color:var(--ink);font-weight:800}
+.vl-body span{color:var(--sec)}
+
+.vformula-box{font:800 .86rem Consolas,monospace;background:var(--sub);color:var(--ink);border:1px solid var(--bd);border-radius:7px;padding:8px 10px;text-align:center;margin-bottom:8px;font-variant-numeric:tabular-nums}
+.vformula-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px}
+.vf-note{padding:6px 8px;border-radius:7px;background:var(--card);border:1px solid var(--bd);font-size:.78rem;display:flex;flex-direction:column;gap:2px}
+.vf-note strong{font-weight:800;color:var(--ink)}
+.vf-note span{color:var(--sec)}
+
+.vtree-prompt{font-size:.82rem;font-weight:750;color:var(--ink);margin-bottom:8px}
+.vtree-q{color:var(--orange);font-weight:850;text-transform:uppercase;font-size:.72rem;margin-right:4px}
+[data-theme=dark] .vtree-q{color:#fcd34d}
+.vtree-tabs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.vtree-btn{min-height:34px;padding:5px 9px;border-radius:7px;border:1px solid var(--bd);background:var(--card);color:var(--sec);font-size:.76rem;font-weight:750;display:inline-flex;align-items:center;gap:6px;text-align:left}
+.vtree-btn:hover{border-color:var(--orange)}
+.vtree-btn.active{background:var(--orange-bg);color:#92400e;border-color:var(--orange);font-weight:800}
+[data-theme=dark] .vtree-btn.active{background:#78350f;color:#fef3c7;border-color:#f59e0b}
+.vtree-num{width:18px;height:18px;border-radius:4px;background:var(--sub);display: inline-grid;place-items:center;font:800 .68rem Consolas,monospace}
+.vtree-outcome{background:var(--card);border:1px solid var(--orange-bd);border-radius:7px;padding:8px 10px;display:flex;flex-direction:column;gap:4px}
+.vtree-outcome-tag{align-self:flex-start;font:800 .68rem Consolas,monospace;text-transform:uppercase;padding:1px 6px;border-radius:4px;background:var(--orange-bg);color:#92400e;border:1px solid var(--orange-bd)}
+[data-theme=dark] .vtree-outcome-tag{color:#fcd34d}
+.vtree-outcome-text{font-size:.82rem;font-weight:650;color:var(--ink);margin:0}
+
+.vschema-trap{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:8px}
+.vtrap-col{padding:8px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--card);font-size:.8rem;line-height:1.4}
+.vtrap-wrong{border-color:var(--red-bd);background:var(--red-bg)}
+.vtrap-right{border-color:var(--green-bd);background:var(--green-bg)}
+.vtrap-title{font-weight:850;font-size:.78rem;margin-bottom:4px}
+.vtrap-wrong .vtrap-title{color:#9f1239}
+.vtrap-right .vtrap-title{color:#065f46}
+[data-theme=dark] .vtrap-wrong .vtrap-title{color:#fda4af}
+[data-theme=dark] .vtrap-right .vtrap-title{color:#6ee7b7}
+.vtrap-col p{font-size:.8rem;color:var(--ink);margin:0}
+
+.vapp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px}
+.vapp-node{padding:8px 9px;border-radius:7px;background:var(--card);border:1px solid var(--bd);display:flex;flex-direction:column;gap:3px}
+.vapp-top{display:flex;align-items:center;gap:5px;font-size:.78rem}
+.vapp-idx{font:800 .68rem Consolas,monospace;color:var(--teal)}
+[data-theme=dark] .vapp-idx{color:#5eead4}
+.vapp-code{font:750 .74rem Consolas,monospace;color:var(--blue);background:var(--sub);padding:2px 5px;border-radius:4px;align-self:flex-start;font-variant-numeric:tabular-nums}
+[data-theme=dark] .vapp-code{color:#93c5fd}
+.vapp-desc{font-size:.75rem;color:var(--sec);line-height:1.35}
+.tstack-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 10px;border-radius:9px;background:var(--sub);border:1px solid var(--bd)}
+.tstack-lbl{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--sec)}
+.vnote-all-btn,.vnote-toggle{min-height:28px;padding:3px 9px;border-radius:6px;border:1px solid var(--bd);background:var(--card);color:var(--ink);font-size:.72rem;font-weight:750;cursor:pointer;white-space:nowrap}
+.vnote-all-btn:hover,.vnote-toggle:hover{border-color:var(--blue);color:var(--blue)}
+[data-theme=dark] .vnote-all-btn:hover,[data-theme=dark] .vnote-toggle:hover{border-color:#60a5fa;color:#93c5fd}
+.vcard-visual-wrap{display:flex;flex-direction:column;gap:8px}
+.vcard-chips{display:flex;flex-wrap:wrap;gap:5px}
+.vchip{font:750 .72rem Consolas,monospace;padding:3px 8px;border-radius:6px;border:1px solid var(--bd);background:var(--sub);color:var(--ink);font-variant-numeric:tabular-nums}
+.vchip-0{background:var(--blue-bg);color:#1e40af;border-color:var(--blue-bd)}
+.vchip-1{background:var(--green-bg);color:#065f46;border-color:var(--green-bd)}
+.vchip-2{background:var(--orange-bg);color:#92400e;border-color:var(--orange-bd)}
+.vchip-3{background:var(--teal-bg);color:#115e59;border-color:var(--teal-bd)}
+[data-theme=dark] .vchip-0{color:#93c5fd}
+[data-theme=dark] .vchip-1{color:#6ee7b7}
+[data-theme=dark] .vchip-2{color:#fcd34d}
+[data-theme=dark] .vchip-3{color:#5eead4}
+.vcard-svg-box{background:#ffffff;border:1px solid var(--bd);border-radius:8px;padding:4px 6px;overflow:hidden}
+[data-theme=dark] .vcard-svg-box{background:#f8fafc;border-color:#334155}
+.vcard-svg{display:block;width:100%;height:auto;max-height:78px}
+.vcomp-wrap{margin-top:8px;overflow-x:auto;border:1px solid var(--bd);border-radius:7px;background:var(--card)}
+.vcomp-table{width:100%;border-collapse:collapse;font-size:.75rem;line-height:1.35;font-variant-numeric:tabular-nums}
+.vcomp-table th{text-align:left;padding:5px 8px;background:var(--sub);color:var(--sec);font-weight:800;font-size:.69rem;text-transform:uppercase;letter-spacing:.02em;border-bottom:1px solid var(--bd)}
+.vcomp-table td{padding:5px 8px;border-bottom:1px solid var(--bd);color:var(--ink);vertical-align:top}
+.vcomp-table tr:last-child td{border-bottom:none}
+.vcomp-pill{display:inline-block;font:800 .71rem Consolas,monospace;padding:1px 6px;border-radius:4px;background:var(--sub);border:1px solid var(--bd);color:var(--ink)}
+.vcomp-out{font-weight:750;color:var(--blue)}
+[data-theme=dark] .vcomp-out{color:#93c5fd}
+.vcard-prose{padding-top:8px;border-top:1px dashed var(--bd);font-size:.86rem;color:var(--ink);line-height:1.5}
+.vcard-prose.is-collapsed{display:none}
+.vcard-prose.is-open{display:block}
+
+
+.vcard-visual-wrap .chem-figure{margin:0;padding:0;border:0;background:transparent}.vcard-visual-wrap .chem-structure{padding:4px}.vcard-visual-wrap .card-mol{min-height:100px;max-height:170px}.vcard-visual-wrap .chem-figure>figcaption{font-size:.72rem}.vcard-visual-wrap .chem-review{font-size:.7rem}.vcard-visual-wrap .visual-card-compact{display:contents}.vcard-visual-wrap [hidden]{display:none}

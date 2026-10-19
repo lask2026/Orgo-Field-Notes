@@ -115,9 +115,13 @@ def build(directory):
     add(story,lesson['id']+' | '+lesson['title'],'Heading1');add(story,lesson['tag'])
     for key,label in [('rule','Core Rules'),('cue','Memory Cues'),('trap','Common Mistakes / MCAT Traps'),('app','MCAT Applications')]:
      add(story,f"{lesson['id']}:{key} | {label}",'Heading2');add(story,lesson['cards'][key])
-     visual=lesson['visualCards'][key];add(story,'Schematic summary: '+escape(visual['title']));
+     visual=lesson['visualCards'][key];add(story,'Visual card: '+escape(visual['title']));
      if visual.get('figure'):add(story,'Chemistry diagram: '+escape(visual['figure']['caption']))
-     for item in visual['items']:add(story,escape(item['label']+' — '+item['text']))
+     if visual.get('formula'):add(story,escape(visual['formula']))
+     if visual.get('prompt'):add(story,escape(visual['prompt']))
+     for chip in visual.get('chips',[]):add(story,escape(chip))
+     for row in visual.get('comparison',[]):add(story,escape(' | '.join(row)))
+     for item in visual['items']:add(story,escape(item['label']+' — '+item.get('outcome','')+' — '+item['text']))
     picture(story,directory,shots,lesson['id']+'-visuals',600)
     for i,s in enumerate(lesson['steps']):
      sid=f"{lesson['id']}-step-{i+1}";add(story,f"{lesson['id']}:step-{i+1} | {s['label']}",'Heading2');add(story,s['text'])

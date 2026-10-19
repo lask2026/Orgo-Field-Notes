@@ -23,7 +23,7 @@ test('project paths stay inside their declared dev/testing/review folders',()=>{
 });
 test('review CLI resolves relocated packets from a different working directory without inference',()=>{
   const result=spawnSync(process.execPath,[projectPath('reviewTools','review-panel.mjs'),'--config',projectPath('reviewConfig','panel.ollama.example.json'),'--chapter','all'],{cwd:os.tmpdir(),encoding:'utf8',windowsHide:true});
-  assert.equal(result.status,0,result.stderr);const plan=JSON.parse(result.stdout);assert.equal(plan.dryRun,true);assert.equal(plan.primaryRequestsForFullCoverage,279);assert.equal(plan.scientificVerification,false);
+  assert.equal(result.status,0,result.stderr);const plan=JSON.parse(result.stdout);assert.equal(plan.dryRun,true);assert.equal(plan.primaryRequestsForFullCoverage,483);assert.equal(plan.scientificVerification,false);
 });
 test('subject scaffold preview writes nothing and refuses existing book folders or path traversal',t=>{
   const parent=fs.mkdtempSync(path.join(os.tmpdir(),'subject-preview-'));t.after(()=>removeFixture(parent));

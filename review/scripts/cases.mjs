@@ -62,7 +62,12 @@ export function buildCases(ch,molecules){
  // Blind cases come first and include no lessons, names, formulas, hints, keys or answer overlays.
  for(const ex of ch.exercises){const payload=blindExercise({...ex,graph:molecules[ex.molecule],stages:ex.stages.map(s=>({...s,...(s.molecule?{graph:molecules[s.molecule]}:{})}))});add('blind',`blind:${ex.id}`,payload.stages.map(s=>s.id),payload);}
  for(const ex of ch.exercises)add('exercise',`exercise:${ex.id}`,ex.stages.map((_,i)=>`${ex.id}:stage-${i+1}`),{exercise:ex,molecule:molecules[ex.molecule],stageMolecules:Object.fromEntries(ex.stages.filter(s=>s.molecule).map(s=>[s.molecule,molecules[s.molecule]]))},`blind:${ex.id}`);
- for(const l of ch.lessons){const ids=[`${l.id}:rule`,`${l.id}:cue`,`${l.id}:trap`,`${l.id}:app`,...l.steps.map((_,i)=>`${l.id}:step-${i+1}`)];const used=[...new Set([l.molecule,...l.steps.map(s=>s.molecule).filter(Boolean)])];add('lesson',`lesson:${l.id}`,ids,{lesson:l,molecules:Object.fromEntries(used.map(id=>[id,molecules[id]]))});}
+ for(const l of ch.lessons){
+  const used=[...new Set([l.molecule,...l.steps.map(s=>s.molecule).filter(Boolean)])],graphs=Object.fromEntries(used.map(id=>[id,molecules[id]]));
+  add('lesson',`lesson:${l.id}`,l.steps.map((_,i)=>`${l.id}:step-${i+1}`),{lesson:{id:l.id,title:l.title,molecule:l.molecule,steps:l.steps},molecules:graphs});
+  for(const kind of ['rule','cue','trap','app'])add('lesson',`lesson:${l.id}:${kind}`,[`${l.id}:${kind}`],{lessonId:l.id,title:l.title,fullNote:l.cards[kind],visualCard:l.visualCards[kind],figureSteps:(l.visualCards[kind].figure?.steps||[]).map(i=>l.steps[i]),molecules:graphs});
+ }
+
  const used=[...new Set([...ch.lessons.flatMap(l=>[l.molecule,...l.steps.map(s=>s.molecule).filter(Boolean)]),...ch.exercises.flatMap(e=>[e.molecule,...e.stages.map(s=>s.molecule).filter(Boolean)])])];
  for(const id of used)add('molecule',`molecule:${id}`,[id],{id,authorClaims:molecules[id]});
  add('curriculum','curriculum',chapterSections(ch.id).map((_,i)=>`scope-${i+1}`),{title:ch.title,sections:chapterSections(ch.id).map((title,i)=>({itemId:`scope-${i+1}`,title})),objectives:ch.objectives,lessonInventory:ch.lessons.map(l=>({id:l.id,title:l.title,tag:l.tag,coreRule:plain(l.cards.rule),stepTopics:l.steps.map(s=>s.label)})),exercises:ch.exercises.map(e=>({id:e.id,title:e.title,lesson:e.lesson,stages:e.stages.map(s=>s.prompt)})),scopeNote:'This is a scope inventory; full claim accuracy is reviewed in the separate lesson and exercise cases.',sourceLabels:ch.sources,referencePassages:[]});

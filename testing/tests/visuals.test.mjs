@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {renderVisualCardBody,renderVisualSummary} from '../../dev/src/visuals.js';
+import {renderVisualCardBody} from '../../dev/src/visuals.js';
 import {formulaLabel} from '../../dev/src/molecules.js';
 import {renderChemicalFigure} from '../../dev/src/cardchemistry.js';
 import {projectGraph,renderProjection} from '../../dev/src/viewer3d.js';
@@ -10,18 +10,19 @@ import {renderPractice} from '../../dev/src/practice.js';
 import {freshState} from '../../dev/src/progress.js';
 const molecules=JSON.parse(fs.readFileSync('dev/chapters/molecules.json'));
 const chapters=Array.from({length:12},(_,i)=>JSON.parse(fs.readFileSync(`dev/chapters/chapter-${String(i+1).padStart(2,'0')}.json`)));
-test('visual cards retain full canonical notes alongside distinct canonical schematic summaries',()=>{
+test('visual cards retain full canonical notes alongside the remix layouts',()=>{
  for(const ch of chapters)for(const l of ch.lessons)for(const k of ['rule','cue','trap','app'])assert.ok(renderVisualCardBody(l,k).includes(l.cards[k]));
 });
-test('all 204 visual summaries have distinct diagram content, valid branches and escaped labels',()=>{
+test('all 204 visual summaries have distinct remix content, valid branches and escaped labels',()=>{
  let count=0;for(const ch of chapters)for(const l of ch.lessons)for(const k of ['rule','cue','trap','app']){
   const spec=l.visualCards[k],key=`${ch.id}:${l.id}:${k}`,compact=renderVisualCardBody(l,k,{},key),full=renderVisualCardBody(l,k,{fullNotes:{[key]:true}},key);
   assert.ok(compact.includes('visual-diagram'));assert.ok(compact.includes('aria-expanded="false"'));assert.ok(full.includes('aria-expanded="true"'));
-  assert.ok(spec.items.length>=2);assert.notEqual(spec.items.map(i=>i.text).join(' '),l.cards[k]);
-  if(k==='cue'){assert.ok(renderVisualSummary(spec,key,1).includes(spec.items[1].text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')));}
+  assert.ok(spec.items.length>=1);assert.notEqual(spec.items.map(i=>i.text).join(' '),l.cards[k]);
+  if(k==='cue'){assert.ok(renderVisualCardBody(l,k,{cueBranches:{[key]:1}},key).includes(spec.items[1].text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')));}
   count++;
  }assert.equal(count,204);
- const x=renderVisualSummary({layout:'map',title:'A < B',items:[{label:'<script>',text:'<img onerror=bad>'}]},'safe');assert.ok(!x.includes('<script>'));assert.ok(x.includes('&lt;script&gt;'));
+ const x=renderVisualCardBody({id:'safe',title:'Safe',cards:{rule:'Original'},visualCards:Object.fromEntries(['rule','cue','trap','app'].map(k=>[k,{title:'A < B',items:[{label:'<script>',text:'<img onerror=bad>'},{label:'B',text:'Safe'}]}]))},'rule');assert.ok(!x.includes('<script>'));assert.ok(x.includes('&lt;script&gt;'));
+
 });
 test('projections retain zero-based graph identity, bond order and explicit carbon charge',()=>{
  for(const m of Object.values(molecules)){

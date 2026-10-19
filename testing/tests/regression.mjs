@@ -7,15 +7,15 @@ let browser;const report={date:'2026-10-19',checks:[],errors:[]};
 try{
  const executablePath=[chromium.executablePath(),'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'].find(fs.existsSync);
  browser=await chromium.launch({headless:true,executablePath});const context=await browser.newContext({acceptDownloads:true}),page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));await page.goto('http://127.0.0.1:4173');
- assert.ok(await page.locator('.tcard').first().locator('.card-mol line').count()>0);assert.equal(await page.locator('.tcard').first().locator('.visual-key').evaluate(e=>e.open),false);
+ assert.ok(await page.locator('.tcard').first().locator('.card-mol line').count()>0);assert.ok(await page.locator('.vcomp-table').count()>0);assert.ok(await page.locator('.vladder-item').count()>0);
  report.checks.push('Chemistry structure is visible before text key; canonical molecular drawing loads in compact card');
  // Visual cards and projection controls must work with keyboard, offline and concealed names.
  await page.locator('[data-act="expandCards"]').click();assert.equal(await page.locator('.visual-card-note:not([hidden])').count(),4);
  await page.locator('[data-act="expandCards"]').click();assert.equal(await page.locator('.visual-card-note:not([hidden])').count(),0);
- const summary=await page.locator('.tcard').first().locator('.visual-card-compact').innerText();await page.locator('[data-act="cardNote"]').first().click();assert.notEqual(await page.locator('.tcard').first().locator('.visual-card-note').innerText(),summary);assert.equal(await page.locator('.tcard').first().locator('.visual-card-compact').isVisible(),false);
+ const summary=await page.locator('.tcard').first().locator('.visual-card-compact').innerText();await page.locator('[data-act="cardNote"]').first().click();assert.notEqual(await page.locator('.tcard').first().locator('.visual-card-note').innerText(),summary);assert.equal(await page.locator('.tcard').first().locator('.visual-card-compact').isVisible(),true);
  await page.locator('#themeBtn').click();assert.equal(await page.locator('.tcard').first().locator('[data-act="cardNote"]').getAttribute('aria-expanded'),'true');await page.locator('#themeBtn').click();
  await page.locator('[data-act="step"][data-idx="1"]').click();assert.equal(await page.locator('.tcard').first().locator('[data-act="cardNote"]').getAttribute('aria-expanded'),'true');
- await page.locator('[data-act="cardNote"]').first().click();const branch=page.locator('[data-act="cueBranch"][data-idx="1"]');await branch.click();assert.ok((await page.locator('.visual-outcome').innerText()).includes('Ignore n-, sec-, tert-'));await page.locator('[data-act="step"][data-idx="0"]').click();assert.equal(await page.locator('[data-act="cueBranch"][data-idx="1"]').getAttribute('aria-pressed'),'true');
+ await page.locator('[data-act="cardNote"]').first().click();const branch=page.locator('[data-act="cueBranch"][data-idx="1"]');await branch.click();assert.ok((await page.locator('.visual-outcome').innerText()).includes('sec-'));await page.locator('[data-act="step"][data-idx="0"]').click();assert.equal(await page.locator('[data-act="cueBranch"][data-idx="1"]').getAttribute('aria-pressed'),'true');
  report.checks.push('Visual/full views differ; individual and bulk toggles preserve state through theme and step changes; cue branches update their outcome');
 
  await page.locator('[data-act="stageView"]').click();assert.equal(await page.locator('#inlineProjectionViewport svg').count(),1);
