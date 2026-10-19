@@ -5,6 +5,8 @@ const obj=(properties,required=Object.keys(properties))=>({type:'object',propert
 const ref=x=>({$ref:'#/$defs/'+x});
 const indices={...array(integer),uniqueItems:true};
 const highlights=obj(Object.fromEntries(['path','prin','sub','num','alpha','altNum','okA','errA'].map(k=>[k,indices])),[]);
+highlights.properties.flow=array(obj({fromAtom:integer,fromBond:integer,toAtom:integer,toBond:integer},[]));
+highlights.properties.flow.items.allOf=[{oneOf:[{required:['fromAtom'],not:{required:['fromBond']}},{required:['fromBond'],not:{required:['fromAtom']}}]},{oneOf:[{required:['toAtom'],not:{required:['toBond']}},{required:['toBond'],not:{required:['toAtom']}}]}];
 const diagram=obj({type:{enum:['fischer','newman','spectrum','tlc','acid']},caption:str,top:str,bottom:str,left:str,right:str,pKa:num,min:num,max:num,unit:str,peaks:array(obj({x:num,height:{type:'number',minimum:0,maximum:1},label:str}),1)},['type','caption']);
 diagram.allOf=[{if:{properties:{type:{const:'fischer'}}},then:{required:['top','bottom','left','right']}},{if:{properties:{type:{const:'acid'}}},then:{required:['pKa']}},{if:{properties:{type:{const:'spectrum'}}},then:{required:['min','max','unit','peaks']}}];
 const anatomy=array({type:'array',prefixItems:[str,str,str],items:false,minItems:3,maxItems:3});

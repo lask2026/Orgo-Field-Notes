@@ -21,6 +21,11 @@ export function drawMolecule(m,opts={}){
     if(stereo?.type==='dash'){for(let t=.15;t<1;t+=.13)h+=`<line x1="${p.x+dx*t-uy*7*t}" y1="${p.y+dy*t+ux*7*t}" x2="${p.x+dx*t+uy*7*t}" y2="${p.y+dy*t-ux*7*t}" stroke="${col}" stroke-width="2"/>`;continue;}
     for(const off of n===1?[0]:n===2?[-3,3]:[-5.5,0,5.5])h+=`<line x1="${p.x+ux*ca-uy*off}" y1="${p.y+uy*ca+ux*off}" x2="${q.x-ux*cb-uy*off}" y2="${q.y-uy*cb+ux*off}" stroke="${col}" stroke-width="2.7" stroke-linecap="round"/>`;
   }
+  if(opts.flow?.length){
+    h+='<defs><marker id="electronArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#6d28d9" stroke-width="1.5"/></marker></defs>';
+    const point=(flow,side)=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
+    for(const flow of opts.flow){const a=point(flow,'from'),b=point(flow,'to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,tx=b.x-dx/len*16,ty=b.y-dy/len*16;h+=`<path class="anim-path" pathLength="100" d="M${a.x+8},${a.y} Q${(a.x+b.x)/2+45},${(a.y+b.y)/2-25} ${tx},${ty}" fill="none" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#electronArrow)"/>`;}
+  }
   m.atoms.forEach((a,i)=>{
     const l=label(a,i);
     if(l)h+=`<text x="${a.x}" y="${a.y+6}" text-anchor="middle" style="font-size:16px;fill:${a.e==='O'?'#047857':a.e==='N'?'#1d4ed8':'#0f172a'}">${esc(l)}</text>`;

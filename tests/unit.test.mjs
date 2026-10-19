@@ -25,7 +25,7 @@ test('molecule graph integrity, valence, formula, connectivity and geometry boun
   for(const st of m.stereo||[])assert.ok(m.bonds[st.bond]?.[2]===1,id+' stereo');
  }
 });
-function checkHighlights(h,m,where){for(const [key,indices] of Object.entries(h||{})){assert.equal(new Set(indices).size,indices.length,where);for(const i of indices)assert.ok(m.atoms[i],where+' atom '+i);if(key==='path')for(let j=1;j<indices.length;j++)assert.ok(m.bonds.some(([a,b])=>(a===indices[j-1]&&b===indices[j])||(b===indices[j-1]&&a===indices[j])),where+' path');}}
+function checkHighlights(h,m,where){for(const [key,indices] of Object.entries(h||{})){if(key==='flow'){for(const flow of indices)for(const [kind,i]of Object.entries(flow))assert.ok(kind.endsWith('Atom')?m.atoms[i]:m.bonds[i],where+' electron flow');continue;}assert.equal(new Set(indices).size,indices.length,where);for(const i of indices)assert.ok(m.atoms[i],where+' atom '+i);if(key==='path')for(let j=1;j<indices.length;j++)assert.ok(m.bonds.some(([a,b])=>(a===indices[j-1]&&b===indices[j])||(b===indices[j-1]&&a===indices[j])),where+' path');}}
 for(const ch of chapters)test(`Chapter ${ch.id}: references, keys, lessons, concealment, stage answers`,()=>{
  const ids=new Set(ch.lessons.map(l=>l.id));assert.equal(ids.size,ch.lessons.length);assert.equal(new Set(ch.exercises.map(e=>e.id)).size,ch.exercises.length);
  for(const l of ch.lessons){assert.ok(molecules[l.molecule]);assert.ok(ch.exercises.some(e=>e.lesson===l.id),l.id+' needs practice');

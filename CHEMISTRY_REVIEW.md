@@ -33,3 +33,5 @@ Chapter 3 (Bonding): original content aligned to supplied section headings and s
 Chapter 4 (Analyzing Organic Reactions): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
 
 Chapter 5 (Alcohols): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
+
+Chapter 6 (Aldehydes and Ketones I): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
