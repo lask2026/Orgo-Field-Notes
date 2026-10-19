@@ -9,10 +9,18 @@ export function molecularFormula(m){
 export function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
 export function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 export function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
+export function numberBadgePosition(m,i){
+  const a=m.atoms[i];
+  const distance=(p,u,v)=>{const dx=v.x-u.x,dy=v.y-u.y,t=Math.max(0,Math.min(1,((p.x-u.x)*dx+(p.y-u.y)*dy)/(dx*dx+dy*dy||1)));return Math.hypot(p.x-u.x-t*dx,p.y-u.y-t*dy);};
+  // Search around the vertex instead of placing every number on an upward carbonyl bond.
+  const candidates=Array.from({length:16},(_,j)=>{const angle=-Math.PI/2+j*Math.PI/8;return{x:a.x+28*Math.cos(angle),y:a.y+28*Math.sin(angle)};});
+  const score=p=>Math.min(...m.bonds.map(([u,v])=>distance(p,m.atoms[u],m.atoms[v])),...m.atoms.filter((b,j)=>j!==i&&b.e!=='C').map(b=>Math.hypot(p.x-b.x,p.y-b.y)-16));
+  return candidates.reduce((best,p)=>score(p)>score(best)+.01?p:best,candidates[0]);
+}
 export function electronFlowGeometry(m,flow){
   const point=side=>flow[side+'Atom']!==undefined?m.atoms[flow[side+'Atom']]:(()=>{const [a,b]=m.bonds[flow[side+'Bond']];return{x:(m.atoms[a].x+m.atoms[b].x)/2,y:(m.atoms[a].y+m.atoms[b].y)/2};})();
   const a=point('from'),b=point('to'),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,nx=-dy/len,ny=dx/len;
-  const labeled=side=>flow[side+'Atom']!==undefined&&m.atoms[flow[side+'Atom']].e!=='C';
+  const labeled=side=>flow[side+'Atom']!==undefined&&(m.atoms[flow[side+'Atom']].e!=='C'||m.atoms[flow[side+'Atom']].charge);
   const startGap=labeled('from')?24:6;
   // Approach visible labels from the curve's outer side, keeping the shaft and head off the glyph.
   return {start:{x:a.x+nx*startGap,y:a.y+ny*startGap},control:{x:(a.x+b.x)/2+nx*45,y:(a.y+b.y)/2+ny*45},end:labeled('to')?{x:b.x+nx*24,y:b.y+ny*24}:{x:b.x-dx/len*12,y:b.y-dy/len*12}};
@@ -20,7 +28,7 @@ export function electronFlowGeometry(m,flow){
 export function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
-    if(a.e==='C'&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
+    if(a.e==='C'&&!a.charge&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
     const count=hydrogens(m,i),h=count?'H'+(count>1?String(count).replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[n]):''):'';
     const bond=m.bonds.find(([u,v])=>u===i||v===i),neighbor=bond?m.atoms[bond[0]===i?bond[1]:bond[0]]:null;
     return (h&&neighbor?.x>a.x+14?h+a.e:a.e+h)+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
@@ -47,7 +55,7 @@ export function drawMolecule(m,opts={}){
       const y=l?a.y+26:a.y;
       h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${a.x}" cy="${y}" r="16"/><text x="${a.x}" y="${y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
     }
-    if(opts.num?.includes(i)){const ix=opts.num.indexOf(i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${a.x}" cy="${a.y-22}" r="10" fill="#2563eb"/><text x="${a.x}" y="${a.y-18}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
+    if(opts.num?.includes(i)){const ix=opts.num.indexOf(i),p=numberBadgePosition(m,i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${p.x}" cy="${p.y}" r="10" fill="#2563eb"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
   });
   return h+'</svg>'+(opts.click?`<div class="atom-controls" aria-label="Atom selection buttons">${m.atoms.map((a,i)=>`<button class="atom-key" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Select atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${atomLabel(i)} <small>${a.e}</small></button>`).join('')}</div>`:'')+`<details class="graph-text"><summary>Accessible atom and bond description</summary><p>${esc(graphDescription(m))}</p></details>`;
 }

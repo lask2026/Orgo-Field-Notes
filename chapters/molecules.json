@@ -2947,32 +2947,32 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 166,
         "y": 115
       },
       {
         "e": "C",
-        "x": 224,
+        "x": 166,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       },
       {
         "e": "O",
         "x": 166,
-        "y": 175
+        "y": 25
       }
     ],
     "bonds": [
@@ -3014,27 +3014,27 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 166,
         "y": 115
       },
       {
         "e": "C",
-        "x": 224,
+        "x": 166,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       }
     ],
     "bonds": [
@@ -3128,37 +3128,37 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 166,
         "y": 115
       },
       {
         "e": "C",
-        "x": 224,
+        "x": 166,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       },
       {
         "e": "O",
-        "x": 10,
-        "y": 155
+        "x": 0,
+        "y": 115
       },
       {
         "e": "O",
         "x": 166,
-        "y": 45
+        "y": 25
       }
     ],
     "bonds": [
@@ -3205,72 +3205,72 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
+        "y": 115
       },
       {
         "e": "C",
         "x": 166,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 224,
-        "y": 85
+        "y": 115
       },
       {
         "e": "C",
         "x": 282,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 340,
-        "y": 85
+        "y": 115
       },
       {
         "e": "C",
         "x": 398,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 456,
-        "y": 85
+        "y": 115
       },
       {
         "e": "C",
         "x": 514,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 572,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 630,
         "y": 115
       },
       {
         "e": "C",
-        "x": 688,
+        "x": 630,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 688,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       },
       {
         "e": "O",
-        "x": 10,
-        "y": 160,
+        "x": 0,
+        "y": 115,
         "charge": -1
       }
     ],
@@ -3591,7 +3591,7 @@
       {
         "e": "C",
         "x": 55,
-        "y": 120
+        "y": 145
       },
       {
         "e": "C",
@@ -3600,24 +3600,24 @@
       },
       {
         "e": "O",
-        "x": 115,
+        "x": 175,
         "y": 25,
         "charge": -1
       },
       {
         "e": "O",
         "x": 175,
-        "y": 120
+        "y": 145
       },
       {
         "e": "C",
         "x": 235,
-        "y": 85
+        "y": 110
       },
       {
         "e": "O",
         "x": 55,
-        "y": 35
+        "y": 25
       }
     ],
     "bonds": [
@@ -3650,7 +3650,7 @@
     "w": 320,
     "h": 200,
     "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
-    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
   },
   "glycine": {
     "name": "glycine zwitterion",
@@ -4471,5 +4471,44 @@
     "h": 203,
     "cond": "methylbenzene (toluene)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ethanal-enolate-carbon": {
+    "name": "ethanal enolate (carbon-charged contributor)",
+    "formula": "C2H3O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 120,
+        "charge": -1,
+        "h": 2
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 120
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanal enolate (carbon-charged contributor)",
+    "review": "Original resonance contributor: same nuclei, connectivity, C2H3O composition and net -1 charge as the oxygen-charged contributor; the alpha carbon has two H and a lone pair. Author review, independent expert verification pending."
   }
 }

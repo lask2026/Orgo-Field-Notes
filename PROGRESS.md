@@ -111,3 +111,11 @@
 - Updated AI Studio upload files: Chapter 5 has 8 blind/36 full-review pages; Chapter 6 has 6 blind/37 full-review pages. Raw submitted audits preserved locally; no model inference or uploads performed. Existing untracked expert review files remain untouched. Earlier Chapter 1 adjudication, Chapter 2 chair teaching and independent expert sign-off remain outstanding.
 
 - Visual PDF inspection caught literal less-than comparators being swallowed as HTML in the new Chapter 6 boiling-point trend. Escaped them in canonical content, added a regression assertion and rebuilt/rechecked the affected packet; this demonstrates why code/schema passes alone are insufficient.
+
+## Chapter 7 candidate-review checkpoint
+
+- Adjudicated all six findings in docs/CHAPTER_07_REVIEW_ADJUDICATION.md. All twelve original keys retained. Fixed aldol/but-2-enal carbonyl layout, added bond-aware number placement, replaced invisible letter references and clarified Michael carbonyl/beta focus; its prompt remains self-contained without color overlays in blind inputs.
+- Added the carbon-charged ethanal enolate contributor, explicitly preserving hydrogen count, composition and net charge, and made charged carbon labels visible. App now has 69 graphs; 51 lessons, 59 workshops and 178 stages remain unchanged.
+- Added qualified induction/acidity/addition, alpha-racemization/epimerization and imine/enamine teaching. Rechecked source numerical examples instead of treating model agreement as verification. Prior shared arrow clearance retained.
+- Four targeted Chapter 7 groups passed within 57 Node groups; 13 schema documents, full twelve-chapter browser suite and all 20 final regression groups passed. The final blind-compatible wording also passed the affected Chapter 7 browser rerun. The first new regression attempt exposed an invalid SVG innerText test accessor; corrected to textContent and reran the suite successfully. No app failure was attributed to that test-harness error.
+- Both app builds and all chapter review packets refreshed; final PDF/package results follow with the Chapter 9 checkpoint. Independent expert chemistry verification remains pending.
