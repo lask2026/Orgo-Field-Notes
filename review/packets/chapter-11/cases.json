@@ -3,7 +3,7 @@
   "chapter": 11,
   "title": "Spectroscopy",
   "sourceSnapshot": {
-    "sha256": "bd077e2122b86b13d968661aba92c085b7c260d29ba1367394b77a7914e2b687",
+    "sha256": "ad94d1a9a7f2bf3fd0ca7e783ef2f68d0ca6f1bc8ff73c57c3bc7fb96e54b714",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1126,7 +1126,73 @@
                 ]
               }
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Vibrations must change dipole moment",
+              "items": [
+                {
+                  "label": "Vibration",
+                  "text": "Must change dipole moment to absorb"
+                },
+                {
+                  "label": "Pattern",
+                  "text": "Use multiple approximate band regions"
+                },
+                {
+                  "label": "Corroborate",
+                  "text": "IR seldom specifies complete connectivity"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "O–H pattern",
+                  "text": "Alcohol and acid have different typical breadth/ranges"
+                },
+                {
+                  "label": "C=O region",
+                  "text": "About 1650–1800 cm⁻¹; context shifts bands"
+                },
+                {
+                  "label": "Fingerprint region",
+                  "text": "Below about 1500 cm⁻¹ helps comparison"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "One magic wavenumber identifies the molecule"
+                },
+                {
+                  "label": "Check",
+                  "text": "Functional group, environment and independent evidence"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Carbonyl reduction",
+                  "text": "Follow C=O loss and OH appearance"
+                },
+                {
+                  "label": "Interpretation",
+                  "text": "Use sample context and other evidence"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "acetone": {
@@ -1325,7 +1391,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Longer wavelength means lower photon energy",
+              "items": [
+                {
+                  "label": "Transition",
+                  "text": "Photon promotes an electronic transition"
+                },
+                {
+                  "label": "Energy",
+                  "text": "E = hc/λ"
+                },
+                {
+                  "label": "Conjugation",
+                  "text": "Comparable systems often shift to longer wavelength as conjugation extends"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Wavelength doubles",
+                  "text": "Photon energy halves"
+                },
+                {
+                  "label": "Transition energy decreases",
+                  "text": "Wavelength increases"
+                },
+                {
+                  "label": "Concentration from absorbance",
+                  "text": "Check Beer–Lambert units and range"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "A universal conjugation trend for all molecules"
+                },
+                {
+                  "label": "Check",
+                  "text": "Appropriate related systems; UV alone is not unique identification"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Retinal",
+                  "text": "Conjugated chromophore"
+                },
+                {
+                  "label": "Biological assays",
+                  "text": "Absorbance can monitor suitable chromophores"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "butadiene": {
@@ -1567,7 +1699,77 @@
                 ]
               }
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "compare",
+              "title": "Three independent kinds of evidence",
+              "items": [
+                {
+                  "label": "Shift",
+                  "text": "Chemical environment"
+                },
+                {
+                  "label": "Integration",
+                  "text": "Relative proton count from area"
+                },
+                {
+                  "label": "Splitting",
+                  "text": "Coupling; n+1 only in simple first-order cases"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Neighborhood",
+                  "text": "Chemical shift"
+                },
+                {
+                  "label": "Population",
+                  "text": "Integrated area, not peak height"
+                },
+                {
+                  "label": "Neighbors",
+                  "text": "Coupling pattern, with rule limitations"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Tallest line means most protons"
+                },
+                {
+                  "label": "Check",
+                  "text": "Integrated area and the full pattern; equivalence and exchange matter"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Alkyl",
+                  "text": "Roughly 0–3 ppm"
+                },
+                {
+                  "label": "Aromatic",
+                  "text": "Roughly 6–8.5 ppm"
+                },
+                {
+                  "label": "Aldehydic",
+                  "text": "Roughly 9–10 ppm; use the complete pattern"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "ethylacetate": {
@@ -1702,7 +1904,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Independent clues should agree",
+              "items": [
+                {
+                  "label": "Formula and DBE",
+                  "text": "Constrain unsaturation"
+                },
+                {
+                  "label": "IR",
+                  "text": "Functional-group evidence"
+                },
+                {
+                  "label": "NMR",
+                  "text": "Build a skeleton consistent with all clues"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Amount of unsaturation",
+                  "text": "Ring/double bond counts one; triple counts two"
+                },
+                {
+                  "label": "Location of unsaturation",
+                  "text": "DBE alone does not locate it"
+                },
+                {
+                  "label": "Unusual-valence formula",
+                  "text": "Check whether the simple equation applies"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "One signal must represent only one group"
+                },
+                {
+                  "label": "Check",
+                  "text": "Symmetry/equivalence and agreement among independent clues"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Passage identification",
+                  "text": "Eliminate incompatible candidates"
+                },
+                {
+                  "label": "Evidence check",
+                  "text": "Do not force a favorite structure to fit one clue"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "acetone": {
