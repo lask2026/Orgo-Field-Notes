@@ -3,7 +3,7 @@
   "chapter": 12,
   "title": "Separations and Purifications",
   "sourceSnapshot": {
-    "sha256": "b94770f451153af12a6f8cbc8f6fbf1cb44c24d3dafd102797f67e42d01ba88b",
+    "sha256": "f7f53079c90d90383bcbf758609d2ba3f179a43fec802e2a83f22d2553e60602",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1308,7 +1308,12 @@
                   "label": "Recovery",
                   "text": "Track the target layer"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "extraction",
+                "steps": [],
+                "caption": "Separation apparatus schematic. Top/bottom phase identities depend on density, not on the word organic."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1322,7 +1327,15 @@
                   "label": "Recover the neutral acid",
                   "text": "Acidify its aqueous fraction"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Acid and conjugate-base graphs used in extraction; not resonance contributors."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -1633,7 +1646,12 @@
                   "label": "Thermal stability",
                   "text": "Reduced pressure can lower boiling temperature"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "distillation",
+                "steps": [],
+                "caption": "Apparatus schematic: vapor passes a thermometer at the takeoff, cools in the condenser and collects as distillate."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1843,7 +1861,14 @@
                   "label": "Solvent-front distance",
                   "text": "Rf denominator; ratio has no units"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0
+                ],
+                "caption": "Illustrative TLC retention model with distinct spot labels; not experimental measurements or a purity guarantee."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2073,7 +2098,12 @@
                   "label": "Specific interaction",
                   "text": "Affinity"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "column",
+                "steps": [],
+                "caption": "Size-exclusion cartoon: larger analyte tokens bypass pores and generally elute first. Tokens are not molecular structures."
+              }
             },
             "cue": {
               "layout": "decision",
