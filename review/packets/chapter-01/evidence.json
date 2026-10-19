@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "sourceSnapshot": {
-    "sha256": "42d83a6177ccbbbd04c60c595e30172dd4d45b28a69e518658557693be440796",
+    "sha256": "f5c68f166ab49b67d8a63fa296f0c334bb2cac4d9715811c8cb0ad7ccb9f8f40",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -74,9 +74,9 @@
       "id": "naming-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/naming-visuals.png",
-      "sha256": "bedfd9b64783f3aa4fa4012ce18f9364391ac44df4cb02d6d9309456cd0c5498",
+      "sha256": "7823b2dec86e0534f2d1b97e75b6ddd69dae008b770f60f1b3d8f9b269e4d050",
       "width": 607,
-      "height": 1854
+      "height": 2487
     },
     {
       "id": "alcohols-step-1",
@@ -146,9 +146,9 @@
       "id": "alcohols-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/alcohols-visuals.png",
-      "sha256": "d7439bfc0214b358a44ce9a2de3baa0c9ab7a131271a4fb936526ac649b9beba",
+      "sha256": "81710f4fb58101b4dd75693f6dcca95a881d509aaae827c33e1e807f639b1e76",
       "width": 607,
-      "height": 1723
+      "height": 2356
     },
     {
       "id": "rings-step-1",
@@ -202,9 +202,9 @@
       "id": "rings-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/rings-visuals.png",
-      "sha256": "fd1f41d96044094e3ae9804181ca01c3cff0ff80d49f7d5e83148d49bcc8bf71",
+      "sha256": "c0bc853709afdccb49eea94f80f034f0214ea29e5b09407cd41706b706297859",
       "width": 607,
-      "height": 1723
+      "height": 1995
     },
     {
       "id": "diols-step-1",
@@ -242,9 +242,9 @@
       "id": "diols-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/diols-visuals.png",
-      "sha256": "dfc262366086b3146dc4e2ab80f4f0c06f21e7902df979310e8b7eceff5a6d50",
+      "sha256": "419880ab95b5090da35a4eee71a21b36c590e36231e6adc3605fe3a583a5f5d4",
       "width": 607,
-      "height": 1742
+      "height": 2350
     },
     {
       "id": "carbonyls-step-1",
@@ -314,9 +314,9 @@
       "id": "carbonyls-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/carbonyls-visuals.png",
-      "sha256": "d06971d0ec6d2855e8789c56e6a16918cba167ec7d5d5ad170d9aa1f7b41f10a",
+      "sha256": "8acce29fd595453ab97ec245e78a4c6c913f802e409a44833a661973be7d6933",
       "width": 607,
-      "height": 1738
+      "height": 2266
     },
     {
       "id": "derivatives-step-1",
@@ -386,9 +386,9 @@
       "id": "derivatives-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/derivatives-visuals.png",
-      "sha256": "cc0962ed9b5b8009cc9c9ca3eb7091611eade2d1cbafe08070d2d8506af307eb",
+      "sha256": "d23da982fe083183b9359abd12fedd48dc24260ed159f9d195c15d94ed860187",
       "width": 607,
-      "height": 1813
+      "height": 2355
     },
     {
       "id": "gp1a-stage-1-molecule",
@@ -1306,9 +1306,9 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "8d768f3e4235603a1aafd786b2cd7948d35ec6fe5ea0fccd2776a8a1a82acbb4",
+      "sha256": "169b9b87d054e6f0fd351749a681a85f0b48e7fb095531b0a55867ba3af77e1e",
       "width": 1360,
-      "height": 2191
+      "height": 2753
     },
     {
       "id": "visual-notes-expanded",
@@ -1322,7 +1322,7 @@
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "6032a5556a8963bafc4dffe1998fbb7c9d7d2c8944392885ae9f94173cbe05f8",
+      "sha256": "deafe439b32acd291a29704e46eb12a8d82a90de18fc34095ffb2be9228a9a2b",
       "width": 1000,
       "height": 741
     },
@@ -1330,17 +1330,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "6944dd47b1884f859935b2a7572c738a9ae77d08bf9373cb9bd0d29ca57b9f8d",
+      "sha256": "7b407967b273971bc4a24798cdbe8f0d1166b0481150bb35634a2d8b10df3af9",
       "width": 375,
-      "height": 4047
+      "height": 4447
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "aaa509f2f651beb34a8974a01d0357180b05ca944370e687d8f969073493cf23",
+      "sha256": "b023e5bff61e440ee88cc0156901bbb5db8c9070019db0c20f5f5cdfffe2d41f",
       "width": 375,
-      "height": 4047
+      "height": 4447
     },
     {
       "id": "projection-mobile-dark",

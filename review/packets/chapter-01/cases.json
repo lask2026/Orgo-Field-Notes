@@ -3,7 +3,7 @@
   "chapter": 1,
   "title": "Nomenclature",
   "sourceSnapshot": {
-    "sha256": "42d83a6177ccbbbd04c60c595e30172dd4d45b28a69e518658557693be440796",
+    "sha256": "f5c68f166ab49b67d8a63fa296f0c334bb2cac4d9715811c8cb0ad7ccb9f8f40",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -3815,7 +3815,14 @@
                   "label": "Locants",
                   "text": "First point of difference"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Parent-chain path and locants on an illustrative branched skeleton."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -3833,7 +3840,14 @@
                   "label": "Compound substituent",
                   "text": "Alphabetize its complete name"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  3
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -3847,7 +3861,14 @@
                   "label": "Check",
                   "text": "A branch may extend the longest continuous chain"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
@@ -4194,7 +4215,14 @@
                   "label": "Build the name",
                   "text": "Retain en/yn in the stem; add ol"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1
+                ],
+                "caption": "Principal OH and unsaturation on the same molecular graph."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -4208,7 +4236,14 @@
                   "label": "Subordinate OH",
                   "text": "Use the prefix hydroxy-"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -4222,7 +4257,14 @@
                   "label": "Check",
                   "text": "If enyne locant sets tie, the double bond gets the lower locant"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  3
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
@@ -4477,7 +4519,14 @@
                   "label": "Substituents",
                   "text": "Minimize locants, then resolve genuine ties"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1
+                ],
+                "caption": "Trace the ring across its double bond before resolving substituent locants."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -4505,7 +4554,14 @@
                   "label": "Check",
                   "text": "Suffix, multiple bonds, then substituent locants"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
@@ -4766,7 +4822,15 @@
                   "label": "Arrangement",
                   "text": "Same carbon versus adjacent carbons"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Compare adjacent-carbon and same-carbon OH groups; distinct illustrative structures."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -4780,7 +4844,14 @@
                   "label": "Same carbon",
                   "text": "Geminal: 1,1-diol"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -4794,7 +4865,14 @@
                   "label": "Check",
                   "text": "Substrate and conditions control the hydration equilibrium"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
@@ -5161,7 +5239,15 @@
                   "label": "Naming context",
                   "text": "Simple acyclic -al/-one; ring attachment may use -carbaldehyde"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  3
+                ],
+                "caption": "Separate ketone and hydroxy-aldehyde examples; this is not a reaction pair."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -5193,7 +5279,14 @@
                   "label": "Check",
                   "text": "Count its complete three-carbon skeleton"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  3
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
@@ -5207,7 +5300,14 @@
                   "label": "Alpha carbon",
                   "text": "Enolate and aldol chemistry"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             }
           }
         },
@@ -5602,7 +5702,15 @@
                   "label": "Separate questions",
                   "text": "Naming seniority is not oxidation-state ranking"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  2
+                ],
+                "caption": "Compare a multifunctional acid and an N-substituted amide; no reaction is implied."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -5620,7 +5728,15 @@
                   "label": "Propionic acid",
                   "text": "Propanoic: three carbons"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1,
+                  2
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "trap": {
               "layout": "contrast",
@@ -5634,7 +5750,14 @@
                   "label": "Check",
                   "text": "An ester has an adjacent carbonyl; distinguish P–O–P from carboxylic anhydrides"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  3
+                ],
+                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              }
             },
             "app": {
               "layout": "map",
