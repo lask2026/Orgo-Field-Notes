@@ -3,7 +3,7 @@
   "chapter": 12,
   "title": "Separations and Purifications",
   "sourceSnapshot": {
-    "sha256": "f7f53079c90d90383bcbf758609d2ba3f179a43fec802e2a83f22d2553e60602",
+    "sha256": "33a5800915e64c27d3484261ff203e1d62548d8f62250496ec6f30fd68e4fe6d",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1221,10 +1221,6 @@
       "chapter": 12,
       "kind": "lesson",
       "itemIds": [
-        "solubility:rule",
-        "solubility:cue",
-        "solubility:trap",
-        "solubility:app",
         "solubility:step-1",
         "solubility:step-2",
         "solubility:step-3"
@@ -1232,16 +1228,8 @@
       "payload": {
         "lesson": {
           "id": "solubility",
-          "label": "Extraction, filtration, and recrystallization",
           "title": "Extraction, filtration, and recrystallization",
           "molecule": "benzoicacid",
-          "tag": "Change solubility to move a compound",
-          "cards": {
-            "rule": "<p>Liquid–liquid extraction partitions solutes between immiscible phases. Acid/base chemistry can turn a neutral acid or base into a more water-soluble ion. Recrystallization exploits high hot-solvent and low cold-solvent solubility of the desired compound. Hot gravity filtration removes insoluble material; vacuum filtration collects crystals.</p>",
-            "cue": "<p>For an acid: deprotonate to move toward water, then acidify to recover the neutral form.</p>",
-            "trap": "<p>The organic layer is not always on top; density determines position. Keep track of which layer contains the target. Several smaller extractions can outperform one using the same total solvent volume. A wash removes impurities while retaining the target in its phase.</p>",
-            "app": "<p>Acid/base extraction separates acidic, basic, and neutral drug-like compounds by controlling their charge and partitioning.</p>"
-          },
           "steps": [
             {
               "label": "1. Neutral aromatic acid",
@@ -1290,83 +1278,1044 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Change solubility to move a compound",
-              "items": [
-                {
-                  "label": "Phases",
-                  "text": "Choose immiscible solvents"
-                },
-                {
-                  "label": "Charge",
-                  "text": "Acid/base chemistry can favor water solubility"
-                },
-                {
-                  "label": "Recovery",
-                  "text": "Track the target layer"
-                }
-              ],
-              "figure": {
-                "type": "extraction",
-                "steps": [],
-                "caption": "Separation apparatus schematic. Top/bottom phase identities depend on density, not on the word organic."
+          ]
+        },
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Move an acid toward water",
-                  "text": "Deprotonate to carboxylate"
-                },
-                {
-                  "label": "Recover the neutral acid",
-                  "text": "Acidify its aqueous fraction"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
               ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Acid and conjugate-base graphs used in extraction; not resonance contributors."
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "benzoate": {
+            "name": "benzoate",
+            "formula": "C7H5O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5,
+                "charge": -1
               }
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Organic layer is always on top"
-                },
-                {
-                  "label": "Check",
-                  "text": "Density and the target location"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:solubility:rule",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "solubility:rule"
+      ],
+      "payload": {
+        "lessonId": "solubility",
+        "title": "Extraction, filtration, and recrystallization",
+        "fullNote": "<p>Liquid–liquid extraction partitions solutes between immiscible phases. Acid/base chemistry can turn a neutral acid or base into a more water-soluble ion. Recrystallization exploits high hot-solvent and low cold-solvent solubility of the desired compound. Hot gravity filtration removes insoluble material; vacuum filtration collects crystals.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Liquid–Liquid Acid/Base Extraction, Separatory Funnel Density & Recrystallization",
+          "items": [
+            {
+              "label": "Charge Controls Layer Partitioning (Ionized = Aqueous; Neutral = Organic)",
+              "text": "Converting a neutral organic acid or base into an ionic salt (RCOO⁻Na⁺, ArO⁻Na⁺, or RNH₃⁺Cl⁻) makes it water-soluble so it moves into the aqueous layer.",
+              "step": "1",
+              "color": "green"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Extraction",
-                  "text": "Separate acidic/basic/neutral compounds"
-                },
-                {
-                  "label": "Recrystallization",
-                  "text": "Use suitable hot/cold solubility differences"
-                }
-              ]
+            {
+              "label": "Selective Base Extraction: Weak Base NaHCO₃ (pKaH 6.4) vs. Strong Base NaOH (pKaH 15.7)",
+              "text": "NaHCO₃ is strong enough to deprotonate carboxylic acids (pKa ~5), but TOO WEAK to deprotonate phenols (pKa ~10)! Always extract with NaHCO₃ first, then NaOH second.",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Which Layer Is on the Bottom? Check Density (d), NOT \"Organic vs. Aqueous\"!",
+              "text": "Water has d = 1.00 g/mL. Non-chlorinated solvents (Et₂O d=0.71, hexanes d=0.66, EtOAc d=0.90) float on TOP; chlorinated solvents (CH₂Cl₂ d=1.33, CHCl₃ d=1.49) sink to the BOTTOM!",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Carboxylic Acid (pKa 5) → Extracted by NaHCO₃",
+            "Phenol (pKa 10) → Extracted by NaOH",
+            "Amine (pKaH 10) → Extracted by HCl"
+          ],
+          "comparison": [
+            [
+              "1. Wash with 5% HCl (Acid)",
+              "Protonates Amine: RNH₂ → RNH₃⁺Cl⁻",
+              "Amine moves into AQUEOUS layer (acid/phenol/neutral stay organic)"
+            ],
+            [
+              "2. Wash with 5% NaHCO₃ (Weak Base)",
+              "Deprotonates Carboxylic Acid ONLY: RCOOH → RCOO⁻Na⁺",
+              "Carboxylic acid moves to AQUEOUS layer (phenol pKa 10 stays organic!)"
+            ],
+            [
+              "3. Wash with 5% NaOH (Strong Base)",
+              "Deprotonates Phenol: ArOH → ArO⁻Na⁺",
+              "Phenol moves to AQUEOUS layer; Neutral stays in ORGANIC layer!"
+            ]
+          ],
+          "theme": "sep-funnel",
+          "figure": {
+            "type": "extraction",
+            "steps": [],
+            "caption": "Separation apparatus schematic. Top/bottom phase identities depend on density, not on the word organic."
           }
         },
+        "figureSteps": [],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "benzoate": {
+            "name": "benzoate",
+            "formula": "C7H5O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:solubility:cue",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "solubility:cue"
+      ],
+      "payload": {
+        "lessonId": "solubility",
+        "title": "Extraction, filtration, and recrystallization",
+        "fullNote": "<p>For an acid: deprotonate to move toward water, then acidify to recover the neutral form.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "3-Step Extraction & Recovery Flowchart",
+          "prompt": "Which component are you isolating or where is your compound located?",
+          "items": [
+            {
+              "label": "Separate Benzoic Acid (pKa 4.2) from Phenol (pKa 10.0)",
+              "outcome": "Add Aq. NaHCO₃! Benzoic Acid → Aqueous; Phenol Stays Organic!",
+              "text": "If you added NaOH first, BOTH benzoic acid and phenol would deprotonate into the same aqueous layer and fail to separate!"
+            },
+            {
+              "label": "Recover the Neutral Solid Back from an Aqueous Extract",
+              "outcome": "Acidify Basic Extract (Add HCl to RCOO⁻/ArO⁻) OR Basify Acidic Extract (Add NaOH to RNH₃⁺)",
+              "text": "Neutralizing the ionic salt restores the uncharged organic molecule, which precipitates (vacuum filter via Büchner funnel) or re-extracts into ether."
+            },
+            {
+              "label": "Purify an Impure Solid by Recrystallization",
+              "outcome": "Choose a Solvent Where Compound Is Insoluble COLD, Soluble HOT!",
+              "text": "Dissolve in minimum boiling solvent, cool slowly so pure crystals form while impurities stay dissolved in the mother liquor, then vacuum filter."
+            }
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Acid and conjugate-base graphs used in extraction; not resonance contributors."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "1. Neutral aromatic acid",
+            "text": "<p>Benzoic acid combines a nonpolar aromatic region with a polar acid group. Its partitioning depends on both molecular structure and ionization.</p>",
+            "molecule": "benzoicacid",
+            "highlights": {
+              "prin": [
+                6,
+                7,
+                8
+              ],
+              "path": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Ionize the acid",
+            "text": "<p>At sufficiently high pH, benzoate predominates and is generally more water soluble than neutral benzoic acid. Acidifying can regenerate neutral acid for recovery when solubility conditions permit.</p>",
+            "molecule": "benzoate",
+            "highlights": {
+              "prin": [
+                6,
+                7,
+                8
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "benzoate": {
+            "name": "benzoate",
+            "formula": "C7H5O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:solubility:trap",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "solubility:trap"
+      ],
+      "payload": {
+        "lessonId": "solubility",
+        "title": "Extraction, filtration, and recrystallization",
+        "fullNote": "<p>The organic layer is not always on top; density determines position. Keep track of which layer contains the target. Several smaller extractions can outperform one using the same total solvent volume. A wash removes impurities while retaining the target in its phase.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Assuming the Organic Layer Is Always on Top or Using NaOH Before NaHCO₃",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Draining the bottom layer of a dichloromethane (CH₂Cl₂) / water extraction thinking it is the aqueous layer."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Dichloromethane (CH₂Cl₂, d = 1.33 g/mL) and chloroform (CHCl₃, d = 1.49 g/mL) are denser than water and form the BOTTOM layer!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "benzoate": {
+            "name": "benzoate",
+            "formula": "C7H5O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:solubility:app",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "solubility:app"
+      ],
+      "payload": {
+        "lessonId": "solubility",
+        "title": "Extraction, filtration, and recrystallization",
+        "fullNote": "<p>Acid/base extraction separates acidic, basic, and neutral drug-like compounds by controlling their charge and partitioning.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Alkaloid Drug Extraction, Gravity vs. Vacuum Filtration & Drying Agents",
+          "items": [
+            {
+              "label": "Gravity vs. Vacuum (Büchner) Filtration",
+              "outcome": "Gravity = Keep Filtrate Liquid (Hot Filtration); Vacuum = Keep Solid Crystals!",
+              "text": "Use fluted filter paper + gravity when removing insoluble charcoal/drying agent (prevents premature crystallization); use a Büchner funnel + vacuum when isolating purified crystals."
+            },
+            {
+              "label": "Anhydrous Drying Agents (MgSO₄ / Na₂SO₄)",
+              "outcome": "Remove Trace Dissolved Water Before Rotary Evaporation",
+              "text": "Before evaporating the organic solvent, swirl with anhydrous MgSO₄ until clumps stop forming, then filter off the hydrated salt."
+            },
+            {
+              "label": "pH Partitioning of Drugs in the GI Tract",
+              "outcome": "Aspirin (pKa 3.5) Is Neutral in Stomach (pH 1.5) → Absorbed Across Lipid Membrane",
+              "text": "Basic drugs (morphine, lidocaine, pKaH ~8–9) are ionized (+1) in the stomach and absorbed primarily in the more alkaline small intestine."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "benzoicacid": {
             "name": "benzoic acid",
@@ -1581,26 +2530,14 @@
       "chapter": 12,
       "kind": "lesson",
       "itemIds": [
-        "distillation:rule",
-        "distillation:cue",
-        "distillation:trap",
-        "distillation:app",
         "distillation:step-1",
         "distillation:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "distillation",
-          "label": "Distillation and volatility",
           "title": "Distillation and volatility",
           "molecule": "toluene",
-          "tag": "Vapor is enriched in the more volatile component",
-          "cards": {
-            "rule": "<p>Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids. Superheating means a liquid is above its boiling temperature without sustained boiling. Nucleation sites from appropriate boiling aids or stirring can support smooth boiling; chips are not added to an already hot superheated liquid.</p>",
-            "cue": "<p>Fractionating column = repeated equilibrium stages. Vacuum = lower boiling temperature.</p>",
-            "trap": "<p>Boiling-point cutoffs are heuristics, not universal rules. Azeotropes can limit ordinary distillation. Distillation does not guarantee a pure first fraction merely because one component has a lower boiling point. The supplied curriculum suggests simple distillation for boiling points roughly 25 °C or more apart and below about 150 °C, fractionation for closer boiling points, and considering vacuum for high normal boiling temperatures (around or above 150 °C) or heat-sensitive materials. These are selection heuristics, not guarantees; pressure, relative volatility, composition, apparatus and decomposition behavior matter.</p>",
-            "app": "<p>Choose a method based on volatility, thermal stability, pressure, and mixture behavior; record boiling temperatures with pressure.</p>"
-          },
           "steps": [
             {
               "label": "1. A molecular property",
@@ -1628,79 +2565,501 @@
               "highlights": {},
               "reveal": false
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Vapor is enriched in the more volatile component",
-              "items": [
-                {
-                  "label": "Volatility",
-                  "text": "Select separation conditions"
-                },
-                {
-                  "label": "Close volatilities",
-                  "text": "Fractionation adds equilibrium stages"
-                },
-                {
-                  "label": "Thermal stability",
-                  "text": "Reduced pressure can lower boiling temperature"
-                }
-              ],
-              "figure": {
-                "type": "distillation",
-                "steps": [],
-                "caption": "Apparatus schematic: vapor passes a thermometer at the takeoff, cools in the condenser and collects as distillate."
+          ]
+        },
+        "molecules": {
+          "toluene": {
+            "name": "methylbenzene (toluene)",
+            "formula": "C7H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 93
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 229
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Closer volatilities",
-                  "text": "Consider fractional distillation"
-                },
-                {
-                  "label": "Decomposition risk",
-                  "text": "Consider reduced pressure"
-                },
-                {
-                  "label": "Azeotrope",
-                  "text": "Ordinary distillation can be limited"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 260,
+            "cond": "methylbenzene (toluene)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:distillation:rule",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "distillation:rule"
+      ],
+      "payload": {
+        "lessonId": "distillation",
+        "title": "Distillation and volatility",
+        "fullNote": "<p>Distillation separates liquids by volatility. Simple distillation suits sufficiently different volatilities; fractional distillation adds repeated vaporization/condensation for closer boiling mixtures. Lower pressure lowers boiling temperature, so vacuum distillation can help with high-boiling or heat-sensitive liquids. Superheating means a liquid is above its boiling temperature without sustained boiling. Nucleation sites from appropriate boiling aids or stirring can support smooth boiling; chips are not added to an already hot superheated liquid.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Simple, Fractional, Vacuum & Steam Distillation: Raoult’s Law & Theoretical Plates",
+          "formula": "P_total = P°_A · X_A + P°_B · X_B   (Raoult’s Law)     |     Liquid Boils When P_vapor = P_external",
+          "items": [
+            {
+              "label": "Which Compound Distills First?",
+              "text": " always the MORE VOLATILE component (HIGHER vapor pressure P° = LOWER boiling point = WEAKER intermolecular forces)!"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "One fixed boiling-point gap always decides"
-                },
-                {
-                  "label": "Check",
-                  "text": "Curriculum cutoffs are heuristics; use mixture behavior and pressure"
-                }
-              ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Method choice",
-                  "text": "Volatility and thermal stability"
-                },
-                {
-                  "label": "Report",
-                  "text": "Temperature together with pressure"
-                }
-              ]
+            {
+              "label": "Curriculum Heuristic Cutoffs (Not Rigid Physical Laws)",
+              "text": "Use Simple Distillation when boiling points differ widely (>25–30 °C); use Fractional Distillation when boiling points are close (<25–30 °C); use Vacuum Distillation for high-boiling (>150 °C) heat-sensitive compounds."
             }
+          ],
+          "chips": [
+            "Simple: ΔBP > ~25–30 °C",
+            "Fractional: ΔBP < ~25 °C (Multiple Plates)",
+            "Vacuum: BP > 150 °C (↓ P → ↓ BP)",
+            "Steam: Immiscible Oils"
+          ],
+          "comparison": [
+            [
+              "Simple Distillation",
+              "ΔBP > 25–30 °C (or non-volatile impurity)",
+              "1 vaporization–condensation cycle"
+            ],
+            [
+              "Fractional Distillation",
+              "ΔBP < 25–30 °C (close boiling points)",
+              "Packed fractionating column = many theoretical plates"
+            ],
+            [
+              "Vacuum Distillation",
+              "BP > 150 °C (prevents thermal decomposition)",
+              "Reduced pressure lowers atmospheric P so liquid boils at lower T"
+            ]
+          ],
+          "theme": "distillation-apparatus",
+          "figure": {
+            "type": "distillation",
+            "steps": [],
+            "caption": "Apparatus schematic: vapor passes a thermometer at the takeoff, cools in the condenser and collects as distillate."
           }
         },
+        "figureSteps": [],
+        "molecules": {
+          "toluene": {
+            "name": "methylbenzene (toluene)",
+            "formula": "C7H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 93
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 229
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 260,
+            "cond": "methylbenzene (toluene)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:distillation:cue",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "distillation:cue"
+      ],
+      "payload": {
+        "lessonId": "distillation",
+        "title": "Distillation and volatility",
+        "fullNote": "<p>Fractionating column = repeated equilibrium stages. Vacuum = lower boiling temperature.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Select the Right Distillation Apparatus for Any Mixture",
+          "prompt": "Examine the boiling points and thermal stability of the liquids:",
+          "items": [
+            {
+              "label": "Close Boiling Points: Hexane (69 °C) + Ethyl Acetate (77 °C) (ΔBP = 8 °C)",
+              "outcome": "Fractional Distillation (Fractionating Column Between Pot and Condenser)",
+              "text": "Glass beads or Vigreux indentations provide large surface area for repeated vaporization-condensation cycles (theoretical plates), enriching the vapor in the lower-boiling component."
+            },
+            {
+              "label": "High-Boiling Compound That Decomposes at 195 °C (BP = 220 °C at 1 atm)",
+              "outcome": "Vacuum (Reduced-Pressure) Distillation",
+              "text": "Connecting a vacuum pump lowers P_external; because a liquid boils as soon as P_vapor equals P_external, it distills safely at a much lower temperature!"
+            },
+            {
+              "label": "Azeotrope Mixture (e.g., 95.6% Ethanol / 4.4% Water)",
+              "outcome": "Boils at a Constant Temperature Without Changing Composition!",
+              "text": "Non-ideal H-bonding deviations from Raoult’s law create a minimum- or maximum-boiling azeotrope that cannot be separated past the azeotropic ratio by ordinary distillation alone."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "toluene": {
+            "name": "methylbenzene (toluene)",
+            "formula": "C7H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 93
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 229
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 260,
+            "cond": "methylbenzene (toluene)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:distillation:trap",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "distillation:trap"
+      ],
+      "payload": {
+        "lessonId": "distillation",
+        "title": "Distillation and volatility",
+        "fullNote": "<p>Boiling-point cutoffs are heuristics, not universal rules. Azeotropes can limit ordinary distillation. Distillation does not guarantee a pure first fraction merely because one component has a lower boiling point. The supplied curriculum suggests simple distillation for boiling points roughly 25 °C or more apart and below about 150 °C, fractionation for closer boiling points, and considering vacuum for high normal boiling temperatures (around or above 150 °C) or heat-sensitive materials. These are selection heuristics, not guarantees; pressure, relative volatility, composition, apparatus and decomposition behavior matter.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Saying Higher Boiling Point Means Higher Vapor Pressure or Distilling Past an Azeotrope",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying the compound with the higher boiling point has a higher vapor pressure and distills first."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Boiling point and vapor pressure are INVERSELY related: stronger IMFs = LOWER vapor pressure = HIGHER boiling point (stays behind in the distilling pot while the lower-BP liquid distills first)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "toluene": {
+            "name": "methylbenzene (toluene)",
+            "formula": "C7H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 93
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 229
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 195
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 127
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 260,
+            "cond": "methylbenzene (toluene)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:distillation:app",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "distillation:app"
+      ],
+      "payload": {
+        "lessonId": "distillation",
+        "title": "Distillation and volatility",
+        "fullNote": "<p>Choose a method based on volatility, thermal stability, pressure, and mixture behavior; record boiling temperatures with pressure.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Gas Chromatography (GC) Volatility Order & Essential Oil Steam Distillation",
+          "items": [
+            {
+              "label": "Gas–Liquid Chromatography (GC) Elution Order",
+              "outcome": "Lower Boiling Point (More Volatile / Lower MW) Elutes FIRST!",
+              "text": "In a nonpolar GC column, retention time mirrors fractional distillation: small, low-boiling, nonpolar molecules spend more time in the helium gas mobile phase and exit first."
+            },
+            {
+              "label": "Thermometer Bulb Placement",
+              "outcome": "Must Sit Exactly Opposite the Side-Arm Takeoff to the Condenser",
+              "text": "Measures the true condensing vapor temperature (boiling point of the distillate) rather than the superheated pot temperature."
+            },
+            {
+              "label": "Steam Distillation of Plant Terpenes",
+              "outcome": "P_total = P_water + P_oil = P_atm → Boils Below 100 °C!",
+              "text": "Immiscible essential oils contribute their own vapor pressure independently of water, allowing co-distillation below 100 °C without charring plant tissue."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "toluene": {
             "name": "methylbenzene (toluene)",
@@ -1792,26 +3151,14 @@
       "chapter": 12,
       "kind": "lesson",
       "itemIds": [
-        "tlc:rule",
-        "tlc:cue",
-        "tlc:trap",
-        "tlc:app",
         "tlc:step-1",
         "tlc:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "tlc",
-          "label": "TLC and normal-phase columns",
           "title": "TLC and normal-phase columns",
           "molecule": "benzoicacid",
-          "tag": "Retention competes with the mobile phase",
-          "cards": {
-            "rule": "<p>In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica. Paper chromatography uses polar cellulose and often an associated water layer; partitioning and adsorption depend on the solvent system. Invisible TLC spots can be visualized by UV or suitable iodine, vanillin or phosphomolybdic-acid stains; detection depends on the analyte.</p>",
-            "cue": "<p>Stronger stationary-phase binding → slower travel. Rf has no units.</p>",
-            "trap": "<p>Rf depends on plate, solvent, and conditions; it is not a permanent molecular constant. Equal Rf is supporting evidence, not definitive identification. In reversed-phase systems the stationary phase is nonpolar, so polarity trends differ.</p>",
-            "app": "<p>TLC can follow reaction progress by comparing starting-material and product spots under the same conditions; a single spot is not proof of absolute purity. Preparative TLC can isolate material from bands; flash column chromatography uses pressure to drive mobile phase through a packed stationary phase. The analytical TLC trend is not an experimental Rf prediction.</p>"
-          },
           "steps": [
             {
               "label": "1. Identify polar interactions",
@@ -1843,81 +3190,601 @@
               },
               "reveal": false
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Retention competes with the mobile phase",
-              "items": [
-                {
-                  "label": "Baseline",
-                  "text": "Common origin for measurements"
-                },
-                {
-                  "label": "Spot-center distance",
-                  "text": "Rf numerator"
-                },
-                {
-                  "label": "Solvent-front distance",
-                  "text": "Rf denominator; ratio has no units"
-                }
-              ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  0
-                ],
-                "caption": "Illustrative TLC retention model with distinct spot labels; not experimental measurements or a purity guarantee."
+          ]
+        },
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Normal-phase silica",
-                  "text": "Stronger silica binding generally lowers Rf"
-                },
-                {
-                  "label": "Reversed phase",
-                  "text": "Nonpolar stationary phase changes polarity trends"
-                },
-                {
-                  "label": "Comparing Rf",
-                  "text": "Use matching plate and solvent conditions"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:tlc:rule",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "tlc:rule"
+      ],
+      "payload": {
+        "lessonId": "tlc",
+        "title": "TLC and normal-phase columns",
+        "fullNote": "<p>In normal-phase TLC, polar silica is stationary and solvent moves upward by capillary action. Stronger attraction to silica generally lowers Rf. Rf = distance traveled by spot center / distance traveled by solvent front, both measured from the baseline. A stronger eluent usually raises Rf on silica. Paper chromatography uses polar cellulose and often an associated water layer; partitioning and adsorption depend on the solvent system. Invisible TLC spots can be visualized by UV or suitable iodine, vanillin or phosphomolybdic-acid stains; detection depends on the analyte.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Thin-Layer Chromatography (TLC) & Column Chromatography: Normal Phase vs. Reverse Phase",
+          "formula": "Rf = (Distance Traveled by Spot from Baseline) / (Distance Traveled by Solvent Front from Baseline)     (Always 0 ≤ Rf ≤ 1)",
+          "items": [
+            {
+              "label": "Normal-Phase Rule (\"Like Binds Like\" on Polar Silica Gel SiO₂)",
+              "text": "Polar compounds (carboxylic acids, diols, alcohols) H-bond tightly to polar Si–OH groups → LOW Rf & SLOW column elution. Nonpolar compounds (alkanes, alkenes, ethers) barely stick → HIGH Rf & FIRST out of the column!"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Equal Rf proves identity or absolute purity"
-                },
-                {
-                  "label": "Check",
-                  "text": "Supporting evidence, not a permanent molecular constant"
-                }
-              ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Monitoring",
-                  "text": "Compare starting-material/product spots"
-                },
-                {
-                  "label": "Separation",
-                  "text": "Related retention principles guide TLC and columns"
-                }
-              ]
+            {
+              "label": "Polarity Ladder (Lowest Rf → Highest Rf on Silica)",
+              "text": "Carboxylic Acid / Amino Acid < Diol < Alcohol < Amine < Amide < Ketone/Aldehyde < Ester < Ether < Alkene < Alkane."
             }
+          ],
+          "chips": [
+            "Normal Phase: Polar Silica (SiO₂) + Nonpolar Eluent",
+            "Rf = d_spot / d_solvent",
+            "↑ Polarity → ↓ Rf (Elutes LAST)",
+            "Reverse Phase = Opposite!"
+          ],
+          "comparison": [
+            [
+              "Normal-Phase TLC / Column",
+              "Stationary = Polar Silica (SiO₂) / Alumina",
+              "Nonpolar moves FASTEST (↑ Rf, elutes 1st); Polar sticks (↓ Rf, elutes last)"
+            ],
+            [
+              "Reverse-Phase HPLC (C18)",
+              "Stationary = Nonpolar C₁₈ alkyl chains",
+              "Polar moves FASTEST (elutes 1st in H₂O/MeCN); Nonpolar sticks (elutes last)"
+            ],
+            [
+              "More Polar Mobile Phase",
+              "Adding EtOAc/MeOH to hexanes on silica",
+              "Displaces compounds from silica → usually increases Rf on normal-phase silica"
+            ]
+          ],
+          "theme": "tlc-column",
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Illustrative TLC retention model with distinct spot labels; not experimental measurements or a purity guarantee."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Identify polar interactions",
+            "text": "<p>The carboxyl group can interact strongly with silica. Actual retention depends on the eluent, ionization, and other experimental details.</p>",
+            "molecule": "benzoicacid",
+            "highlights": {
+              "prin": [
+                6,
+                7,
+                8
+              ]
+            },
+            "reveal": true,
+            "diagram": {
+              "type": "tlc",
+              "caption": "Normal-phase TLC trend model: increasing relative eluent strength moves both model spots upward."
+            }
+          }
+        ],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:tlc:cue",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "tlc:cue"
+      ],
+      "payload": {
+        "lessonId": "tlc",
+        "title": "TLC and normal-phase columns",
+        "fullNote": "<p>Stronger stationary-phase binding → slower travel. Rf has no units.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "TLC Rf & Column Elution Order Predictor",
+          "prompt": "What chromatographic condition is specified in the passage?",
+          "items": [
+            {
+              "label": "Normal-Phase Silica Gel TLC / Column (Standard Unless Stated Otherwise)",
+              "outcome": "Nonpolar = HIGH Rf & Elutes FIRST; Polar = LOW Rf & Elutes LAST",
+              "text": "Think: \"Polar sticks to Polar Silica!\" A spot with Rf = 0.82 is much LESS polar than a spot with Rf = 0.24."
+            },
+            {
+              "label": "Reverse-Phase Chromatography (C18 / RP-HPLC)",
+              "outcome": "EXACT OPPOSITE! Polar Elutes FIRST; Nonpolar Sticks to C18 Tails & Elutes LAST!",
+              "text": "In Reverse Phase, the stationary phase is greasy C₁₈ hydrocarbon chains and the mobile phase is polar water/acetonitrile."
+            },
+            {
+              "label": "Switching Mobile Phase from 10% EtOAc/Hexanes to 50% EtOAc/Hexanes on Silica",
+              "outcome": "Usually increases Rf on normal-phase silica; selectivity can change",
+              "text": "Polar ethyl acetate competes for silica binding sites, sweeping all analytes faster with the solvent front."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:tlc:trap",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "tlc:trap"
+      ],
+      "payload": {
+        "lessonId": "tlc",
+        "title": "TLC and normal-phase columns",
+        "fullNote": "<p>Rf depends on plate, solvent, and conditions; it is not a permanent molecular constant. Equal Rf is supporting evidence, not definitive identification. In reversed-phase systems the stationary phase is nonpolar, so polarity trends differ.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Confusing High Rf with High Retention Time or Measuring Rf from the Bottom Edge of the Plate",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying the compound with the highest TLC Rf has the longest column retention time, or dividing by the total length of the glass plate."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "High Rf = travels fast with the mobile phase = SHORTEST column retention time (elutes FIRST)! Always measure both distances from the penciled BASELINE origin to the solvent front."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "benzoicacid": {
+            "name": "benzoic acid",
+            "formula": "C7H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 160,
+                "y": 95
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 220,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 235
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 200
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 160,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 225,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 95,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 265,
+            "cond": "benzoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:tlc:app",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "tlc:app"
+      ],
+      "payload": {
+        "lessonId": "tlc",
+        "title": "TLC and normal-phase columns",
+        "fullNote": "<p>TLC can follow reaction progress by comparing starting-material and product spots under the same conditions; a single spot is not proof of absolute purity. Preparative TLC can isolate material from bands; flash column chromatography uses pressure to drive mobile phase through a packed stationary phase. The analytical TLC trend is not an experimental Rf prediction.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Monitoring Reaction Completion by TLC & Flash Column Gradient Elution",
+          "items": [
+            {
+              "label": "Co-Spot TLC Reaction Monitoring",
+              "outcome": "3 Lanes: Starting Material (SM) | Co-Spot (SM + Rxn) | Reaction Mixture",
+              "text": "Reducing acetophenone (ketone, higher Rf) to 1-phenylethanol (alcohol, lower Rf) is complete when the higher-Rf ketone spot disappears!"
+            },
+            {
+              "label": "Why Baseline Is Drawn in Pencil (Graphite), Never Ink",
+              "outcome": "Ink Dyes Are Polar Organic Molecules That Elute Up the Plate!",
+              "text": "Also make sure the developing solvent pool in the chamber sits BELOW the baseline pencil line so spots don’t dissolve into the reservoir."
+            },
+            {
+              "label": "Pyridine / Et₃N Additive for Basic Amines on Silica",
+              "outcome": "Prevents Amine \"Streaking / Tailing\" on Weakly Acidic Si–OH",
+              "text": "Adding 1% triethylamine keeps basic amines deprotonated so they migrate as tight, round spots."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "benzoicacid": {
             "name": "benzoic acid",
@@ -2029,26 +3896,14 @@
       "chapter": 12,
       "kind": "lesson",
       "itemIds": [
-        "specialized:rule",
-        "specialized:cue",
-        "specialized:trap",
-        "specialized:app",
         "specialized:step-1",
         "specialized:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "specialized",
-          "label": "Choose a chromatography method",
           "title": "Choose a chromatography method",
           "molecule": "glycylglycine",
-          "tag": "Match the separation to a molecular property",
-          "cards": {
-            "rule": "<p>Ion exchange separates by charge: a positively charged anion exchanger binds anions; a negatively charged cation exchanger binds cations. Size exclusion separates by access to pores, with larger species generally eluting first. Affinity chromatography uses specific binding. GC requires adequate volatility and thermal stability; HPLC uses a liquid mobile phase under pressure and can handle many nonvolatile analytes.</p>",
-            "cue": "<p>Ion exchange: charge. Size exclusion: pore access. Affinity: specific interaction.</p>",
-            "trap": "<p>Small molecules enter more pore volume and usually elute later in size exclusion. “Anion exchanger” names the species it binds, not the resin’s own charge. Reversed-phase HPLC usually retains hydrophobic analytes more strongly than polar ones under comparable conditions.</p>",
-            "app": "<p>Protein purification often combines orthogonal methods: charge, size, and affinity. Choose based on protein stability as well as separation power. GC–MS couples separation of suitably volatile analytes with ionization and mass-to-charge analysis. Fragmentation depends on ionization mode; molecular-ion and fragment patterns can support identification, but not every peak is the intact molecular mass.</p>"
-          },
           "steps": [
             {
               "label": "1. Charge depends on conditions",
@@ -2080,79 +3935,583 @@
               },
               "reveal": false
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Match the separation to a molecular property",
-              "items": [
-                {
-                  "label": "Charge",
-                  "text": "Ion exchange"
-                },
-                {
-                  "label": "Pore access",
-                  "text": "Size exclusion"
-                },
-                {
-                  "label": "Specific interaction",
-                  "text": "Affinity"
-                }
-              ],
-              "figure": {
-                "type": "column",
-                "steps": [],
-                "caption": "Size-exclusion cartoon: larger analyte tokens bypass pores and generally elute first. Tokens are not molecular structures."
+          ]
+        },
+        "molecules": {
+          "glycylglycine": {
+            "name": "glycylglycine zwitterion",
+            "formula": "C4H8N2O3",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 35,
+                "y": 110,
+                "charge": 1
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 145,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 145,
+                "y": 170
+              },
+              {
+                "e": "N",
+                "x": 200,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 110
+              },
+              {
+                "e": "C",
+                "x": 310,
+                "y": 80
+              },
+              {
+                "e": "O",
+                "x": 310,
+                "y": 20
+              },
+              {
+                "e": "O",
+                "x": 365,
+                "y": 110,
+                "charge": -1
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Anions",
-                  "text": "Bind a positively charged anion exchanger"
-                },
-                {
-                  "label": "Cations",
-                  "text": "Bind a negatively charged cation exchanger"
-                },
-                {
-                  "label": "Size exclusion",
-                  "text": "Larger species generally elute first"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
               ]
+            ],
+            "w": 405,
+            "h": 200,
+            "cond": "glycylglycine zwitterion",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:specialized:rule",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "specialized:rule"
+      ],
+      "payload": {
+        "lessonId": "specialized",
+        "title": "Choose a chromatography method",
+        "fullNote": "<p>Ion exchange separates by charge: a positively charged anion exchanger binds anions; a negatively charged cation exchanger binds cations. Size exclusion separates by access to pores, with larger species generally eluting first. Affinity chromatography uses specific binding. GC requires adequate volatility and thermal stability; HPLC uses a liquid mobile phase under pressure and can handle many nonvolatile analytes.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Biochemical Separations: Size-Exclusion (SEC), Ion-Exchange, Affinity & Gas Chromatography",
+          "items": [
+            {
+              "label": "Size-Exclusion (Gel Filtration) Chromatography",
+              "text": "Porous beads act as a molecular maze: LARGE proteins cannot enter the tiny pores and elute FIRST in the void volume; SMALL molecules enter every pore, travel a longer path, and elute LAST!",
+              "step": "1",
+              "color": "green"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Anion exchanger must be negative"
-                },
-                {
-                  "label": "Check",
-                  "text": "The name refers to the ions it binds"
-                }
-              ]
+            {
+              "label": "Ion-Exchange Chromatography (Named for the Ion the Column BINDS!)",
+              "text": "CATION-exchange resin has NEGATIVE beads (–SO₃⁻) that trap POSITIVE proteins (where pH < pI). ANION-exchange resin has POSITIVE beads (–NR₃⁺) that trap NEGATIVE proteins (where pH > pI).",
+              "step": "2",
+              "color": "blue"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Protein purification",
-                  "text": "Combine charge, size and affinity methods"
-                },
-                {
-                  "label": "GC–MS",
-                  "text": "Volatile-analyte separation plus mass-to-charge analysis"
-                }
-              ]
+            {
+              "label": "Affinity & Chiral Chromatography",
+              "text": "Affinity columns bind one specific target (His₆-tag on Ni²⁺-NTA; antibody on antigen; biotin on avidin). Chiral stationary phases separate enantiomers without prior derivatization.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "SEC (Size Exclusion): BIG Elutes First!",
+            "Cation Exchange (− Bead): Positives Stick",
+            "Anion Exchange (+ Bead): Negatives Stick",
+            "Affinity = Specific Ligand"
+          ],
+          "comparison": [
+            [
+              "Size-Exclusion (SEC / Gel Filtration)",
+              "Porous beads (no chemical binding)",
+              "LARGE proteins elute FIRST (bypass pores); small enter pores & elute last"
+            ],
+            [
+              "Cation-Exchange (Negatively Charged Bead)",
+              "Binds positively charged cations (pH < pI)",
+              "Anions (pH > pI) wash straight through; elute bound cations with ↑ [NaCl] or ↑ pH"
+            ],
+            [
+              "Anion-Exchange (Positively Charged Bead)",
+              "Binds negatively charged anions (pH > pI)",
+              "Cations (pH < pI) wash through; elute bound anions with ↑ [NaCl] or ↓ pH"
+            ],
+            [
+              "Affinity Chromatography",
+              "Immobilized ligand / Ni²⁺ / antibody",
+              "Highest specificity; elute with free ligand or imidazole (His-tag)"
+            ]
+          ],
+          "theme": "bio-chromatography",
+          "figure": {
+            "type": "column",
+            "steps": [],
+            "caption": "Size-exclusion cartoon: larger analyte tokens bypass pores and generally elute first. Tokens are not molecular structures."
           }
         },
+        "figureSteps": [],
+        "molecules": {
+          "glycylglycine": {
+            "name": "glycylglycine zwitterion",
+            "formula": "C4H8N2O3",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 35,
+                "y": 110,
+                "charge": 1
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 145,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 145,
+                "y": 170
+              },
+              {
+                "e": "N",
+                "x": 200,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 110
+              },
+              {
+                "e": "C",
+                "x": 310,
+                "y": 80
+              },
+              {
+                "e": "O",
+                "x": 310,
+                "y": 20
+              },
+              {
+                "e": "O",
+                "x": 365,
+                "y": 110,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 405,
+            "h": 200,
+            "cond": "glycylglycine zwitterion",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:specialized:cue",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "specialized:cue"
+      ],
+      "payload": {
+        "lessonId": "specialized",
+        "title": "Choose a chromatography method",
+        "fullNote": "<p>Ion exchange: charge. Size exclusion: pore access. Affinity: specific interaction.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Which Biochemical Column Separates Your Protein Mixture?",
+          "prompt": "What protein property or column type is described in the passage?",
+          "items": [
+            {
+              "label": "Size-Exclusion (SEC) vs. SDS-PAGE Gel Electrophoresis",
+              "outcome": "SEC: Largest Elutes FIRST! | SDS-PAGE: Smallest Migrates FASTEST!",
+              "text": "Do not mix them up! In SEC, big molecules bypass bead pores (fast); in polyacrylamide gels, all proteins are forced THROUGH the mesh so small ones win."
+            },
+            {
+              "label": "Protein with pI = 8.5 in pH 7.0 Buffer: Cation vs. Anion Exchange?",
+              "outcome": "At pH 7.0 < pI 8.5, Protein Is POSITIVE (+): Binds CATION-Exchange (Negative Beads)!",
+              "text": "Rule: pH < pI = Protonated (+) = Binds Cation Exchanger; pH > pI = Deprotonated (−) = Binds Anion Exchanger!"
+            },
+            {
+              "label": "How to Elute a Protein Bound to an Affinity or Ion-Exchange Column?",
+              "outcome": "Ion-Exchange: Add High Salt (1M NaCl) or Shift pH | Affinity: Add Free Competitive Ligand!",
+              "text": "For a His₆-tagged protein bound to a Ni²⁺-NTA column, wash away contaminants and elute with free IMIDAZOLE (which mimics the histidine side chain)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "glycylglycine": {
+            "name": "glycylglycine zwitterion",
+            "formula": "C4H8N2O3",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 35,
+                "y": 110,
+                "charge": 1
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 145,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 145,
+                "y": 170
+              },
+              {
+                "e": "N",
+                "x": 200,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 110
+              },
+              {
+                "e": "C",
+                "x": 310,
+                "y": 80
+              },
+              {
+                "e": "O",
+                "x": 310,
+                "y": 20
+              },
+              {
+                "e": "O",
+                "x": 365,
+                "y": 110,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 405,
+            "h": 200,
+            "cond": "glycylglycine zwitterion",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:specialized:trap",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "specialized:trap"
+      ],
+      "payload": {
+        "lessonId": "specialized",
+        "title": "Choose a chromatography method",
+        "fullNote": "<p>Small molecules enter more pore volume and usually elute later in size exclusion. “Anion exchanger” names the species it binds, not the resin’s own charge. Reversed-phase HPLC usually retains hydrophobic analytes more strongly than polar ones under comparable conditions.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Thinking Small Molecules Elute First in Size-Exclusion or Confusing Cation/Anion Exchanger Bead Charge",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying a 15 kDa protein elutes before a 150 kDa protein in size-exclusion chromatography, or saying a cation-exchange bead is positively charged."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "In Size-Exclusion (SEC), LARGE molecules skip the pores and elute FIRST! A CATION exchanger exchanges (binds) positive cations, so the stationary bead itself is NEGATIVELY charged!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "glycylglycine": {
+            "name": "glycylglycine zwitterion",
+            "formula": "C4H8N2O3",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 35,
+                "y": 110,
+                "charge": 1
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 145,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 145,
+                "y": 170
+              },
+              {
+                "e": "N",
+                "x": 200,
+                "y": 80
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 110
+              },
+              {
+                "e": "C",
+                "x": 310,
+                "y": 80
+              },
+              {
+                "e": "O",
+                "x": 310,
+                "y": 20
+              },
+              {
+                "e": "O",
+                "x": 365,
+                "y": 110,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                2
+              ],
+              [
+                6,
+                8,
+                1
+              ]
+            ],
+            "w": 405,
+            "h": 200,
+            "cond": "glycylglycine zwitterion",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch12:lesson:specialized:app",
+      "chapter": 12,
+      "kind": "lesson",
+      "itemIds": [
+        "specialized:app"
+      ],
+      "payload": {
+        "lessonId": "specialized",
+        "title": "Choose a chromatography method",
+        "fullNote": "<p>Protein purification often combines orthogonal methods: charge, size, and affinity. Choose based on protein stability as well as separation power. GC–MS couples separation of suitably volatile analytes with ionization and mass-to-charge analysis. Fragmentation depends on ionization mode; molecular-ion and fragment patterns can support identification, but not every peak is the intact molecular mass.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Multi-Step Protein Purification Tables, Specific Activity & His-Tag Ni-NTA",
+          "items": [
+            {
+              "label": "Affinity Chromatography Yield & Purity Jump",
+              "outcome": "Largest Increase in Specific Activity (Units / mg Total Protein)",
+              "text": "Because affinity chromatography captures only the target enzyme via biological recognition, total unwanted protein drops dramatically in a single step."
+            },
+            {
+              "label": "SEC of Disulfide-Linked Multimers",
+              "outcome": "Intact 120 kDa Tetramer Elutes Early in Native SEC",
+              "text": "Because SEC runs under native non-denaturing conditions, quaternary complexes stay assembled and elute according to their total holoenzyme mass."
+            },
+            {
+              "label": "Gas Chromatography–Mass Spectrometry (GC–MS)",
+              "outcome": "GC Separates Volatile Mixture in Time → MS Identifies Each Peak by m/z",
+              "text": "Gold-standard forensic and metabolic profiling tool for volatile or silylated small molecules."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "glycylglycine": {
             "name": "glycylglycine zwitterion",

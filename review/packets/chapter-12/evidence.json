@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "f7f53079c90d90383bcbf758609d2ba3f179a43fec802e2a83f22d2553e60602",
+    "sha256": "33a5800915e64c27d3484261ff203e1d62548d8f62250496ec6f30fd68e4fe6d",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,9 +34,9 @@
       "id": "solubility-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/solubility-visuals.png",
-      "sha256": "8f313703ee5f71d87af221a0bdd926f7a06af0b045ced75d4b5ef22aa96b061a",
+      "sha256": "210f6a5e12975168c78e120c9ef6923eeb1d0b23878839a8628f503ae1d183dd",
       "width": 607,
-      "height": 2061
+      "height": 2243
     },
     {
       "id": "distillation-step-1",
@@ -58,9 +58,9 @@
       "id": "distillation-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/distillation-visuals.png",
-      "sha256": "5108ee06f6bfb0d09eb25b742bb6520486665cfdf68a57a3f35105a8559be72b",
+      "sha256": "2b657bdab8914faf4b4b521e3e40105f81063e17b3d63f8428ff2c40524f8245",
       "width": 607,
-      "height": 1793
+      "height": 2214
     },
     {
       "id": "tlc-step-1",
@@ -90,9 +90,9 @@
       "id": "tlc-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/tlc-visuals.png",
-      "sha256": "afa2ef3e28d386ee400f3d8aa4577433047287c5626f22dfa57bffcca413bd04",
+      "sha256": "055ef183f5c3336b5f93f738b51eeb74a6b8a7974bd9a618266fe6be55bee65c",
       "width": 607,
-      "height": 2131
+      "height": 2162
     },
     {
       "id": "specialized-step-1",
@@ -114,9 +114,9 @@
       "id": "specialized-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/specialized-visuals.png",
-      "sha256": "1ac5e3c7f82c156e55b684026f8e2161282fdffbad317711c65fc69911e7e217",
+      "sha256": "ccbba0e9a8fb8ad239fc002ec3336e7b25ba28d583fdaba545f99014bdb9b261",
       "width": 607,
-      "height": 1793
+      "height": 2316
     },
     {
       "id": "acid-extraction-stage-1-molecule",
@@ -442,23 +442,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "a360a8652595a4da40c73bd7f1965ffceede2fd2c401f0c81888c5c1062b43fe",
+      "sha256": "cf1f532e494fb4947527e4e9ab9d6bdcd7dfdd758cd403e1cb43d33a345a4832",
       "width": 1360,
-      "height": 2398
+      "height": 2580
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "78c36a56e85473440da97e1fcb2d4a794fcdf6a3c1f5dd446881058af157beec",
+      "sha256": "89dda8af1b78fe6ec97b21df0c27c9b215764d1f0f5034157ef28d7ad2177d07",
       "width": 607,
-      "height": 1059
+      "height": 2658
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "05ebc19360468781a7bdd85704b37a4644a048bdd8b53c27d7ea7bbddb04a3b2",
+      "sha256": "63501310c528f234e44cb3fba848bfe728b100f88a24e5627599d5829c47a469",
       "width": 1000,
       "height": 741
     },
@@ -466,17 +466,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "4951580f13f4751dff6051b9a1db90713d2690c9dc36ee52d622f44b353a7c3d",
+      "sha256": "3736434f4813e63b57add30286b83b305bbda1632913dded950bb97bd5ae79e5",
       "width": 375,
-      "height": 4280
+      "height": 4974
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "363962f2cb989f4fb29d64894d68b1ba71c3ecd21f49e269ac67d8650212bf3b",
+      "sha256": "62b028bb97d58d73cb0e6de7241460bbdfe814f1822bc3fea1a87064060ffa17",
       "width": 375,
-      "height": 4280
+      "height": 4974
     },
     {
       "id": "projection-mobile-dark",
