@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "chapters": [
+    {
+      "id": 2,
+      "lessons": 5,
+      "exercises": 5,
+      "stages": 15,
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    "Keyboard atom selection",
+    "Incorrect answers rejected",
+    "All lesson steps and challenges",
+    "All guided stages",
+    "Assisted/reveal persistence",
+    "Mobile 375px",
+    "Dark mode",
+    "Reduced motion",
+    "Standalone file offline: navigation and molecular rendering",
+    "Blocked local storage fallback"
+  ],
+  "errors": [],
+  "status": "passed"
+}

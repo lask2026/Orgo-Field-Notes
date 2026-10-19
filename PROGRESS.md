@@ -4,3 +4,5 @@
 
 - Chapter 1 complete: 6 lessons, 12 guided workshops, 34 stages. Schema, graph/formula/reference checks and Playwright desktop/mobile/offline checks passed. Corrected reference inaccuracies; independent expert review remains pending.
 - Engine, strict answer validation, versioned persistence, progress backup, accessible graphs, Pages build and offline build implemented.
+
+- Chapter 2 complete: 5 lessons, 5 workshops, 15 stages. Schema, graph/formula, unit/integration and Playwright desktop/mobile/offline checks passed.

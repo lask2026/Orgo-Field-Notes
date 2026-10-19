@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "id": 2,
+  "title": "Isomers",
+  "description": "Compare connectivity, conformation, and configuration without confusing their labels.",
+  "objectives": [
+    "Classify isomer relationships",
+    "Assign CIP and E/Z descriptors",
+    "Analyze conformations, symmetry, and optical mixtures"
+  ],
+  "sources": [
+    {
+      "label": "Supplied Kaplan curriculum: Chapter 2; section scope checked against local body and summary",
+      "location": "organic_chemistry_kaplan/OEBPS/chapter02b.xhtml"
+    }
+  ],
+  "review": {
+    "status": "author-reviewed",
+    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+  },
+  "lessons": [
+    {
+      "id": "connectivity",
+      "label": "Connectivity vs. spatial arrangement",
+      "title": "Connectivity vs. spatial arrangement",
+      "molecule": "ethanol",
+      "tag": "Same formula is only the first test",
+      "cards": {
+        "rule": "<p>Constitutional isomers share a molecular formula but differ in connectivity. Stereoisomers have the same connectivity and differ in spatial arrangement. Conformers interconvert by rotations about single bonds.</p>",
+        "cue": "<p>Formula → connections → space. Compare in that order.</p>",
+        "trap": "<p>A different drawing orientation does not prove isomerism. Rotating the whole molecule changes neither connectivity nor configuration.</p>",
+        "app": "<p>An alcohol and an ether can share a formula but differ in hydrogen-bond donation, boiling point, and reactivity.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Alcohol connectivity",
+          "text": "<p>Count two carbons, six hydrogens, and one oxygen. The oxygen bears H and can donate a hydrogen bond.</p>",
+          "molecule": "ethanol",
+          "highlights": {
+            "prin": [
+              2
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Ether connectivity",
+          "text": "<p>The same formula now has oxygen between two carbons. No O–H bond is present. This is a constitutional isomer, not a different conformation.</p>",
+          "molecule": "ether",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2
+            ],
+            "prin": [
+              1
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Branched framework",
+          "text": "<p>Butane and 2-methylpropane are another constitutional-isomer pair: identical formula, different carbon skeletons.</p>",
+          "molecule": "isobutane",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2
+            ],
+            "sub": [
+              3
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "conformations",
+      "label": "Conformations and ring strain",
+      "title": "Conformations and ring strain",
+      "molecule": "butane",
+      "tag": "Rotation changes energy, not identity",
+      "cards": {
+        "rule": "<p>In butane, anti and gauche are staggered conformations; eclipsed conformations have greater torsional strain. Cyclohexane chairs reduce angle and torsional strain. A ring flip exchanges axial and equatorial positions while retaining up/down orientation.</p>",
+        "cue": "<p>Anti = 180° between the methyl groups. Gauche = 60°. In a chair, bulky groups usually prefer equatorial sites.</p>",
+        "trap": "<p>Axial is not synonymous with up: axial directions alternate around the ring. A chair flip preserves cis/trans relationships.</p>",
+        "app": "<p>Conformational preferences affect how a flexible drug fits a binding site; a more populated conformer need not be the bound conformer.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Rotate a single bond",
+          "text": "<p>Look down the middle C–C bond of butane. Adjust the angle to compare torsional and methyl–methyl interactions.</p>",
+          "molecule": "butane",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          },
+          "reveal": true,
+          "diagram": {
+            "type": "newman",
+            "caption": "Butane viewed along C2–C3: blue front bonds and green rear bonds."
+          }
+        },
+        {
+          "label": "2. Ring constraints",
+          "text": "<p>This hexagon shows connectivity only, not a flat equilibrium geometry. Cyclohexane normally adopts a chair. An axial substituent interacts with axial groups at C3 and C5; an equatorial position avoids much of this crowding.</p>",
+          "molecule": "cyclohexane",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "chirality",
+      "label": "Chirality, enantiomers, and meso compounds",
+      "title": "Chirality, enantiomers, and meso compounds",
+      "molecule": "butanol2",
+      "tag": "Mirror image ≠ always a different molecule",
+      "cards": {
+        "rule": "<p>A tetrahedral carbon with four different substituents is a common stereogenic center. Enantiomers are nonsuperimposable mirror images. Diastereomers are stereoisomers that are not mirror images; E/Z pairs qualify too.</p>",
+        "cue": "<p>One inverted center in a one-center molecule gives its enantiomer. With several centers, compare the entire molecule.</p>",
+        "trap": "<p>2ⁿ is a maximum number of stereoisomers, not a guarantee. Internal symmetry can make a molecule with stereocenters achiral (meso). R/S does not predict the sign of optical rotation.</p>",
+        "app": "<p>Enantiomers have equal properties in achiral environments except opposite optical rotations; chiral receptors can distinguish them.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Identify four groups",
+          "text": "<p>The alcohol-bearing carbon is bonded to OH, H, methyl, and ethyl: four different groups. The flat connectivity drawing alone does not assign R or S.</p>",
+          "molecule": "butanol2",
+          "highlights": {
+            "prin": [
+              1
+            ],
+            "sub": [
+              0,
+              2,
+              4
+            ]
+          },
+          "reveal": false,
+          "challenge": {
+            "prompt": "Select the stereogenic carbon.",
+            "answer": [
+              1
+            ],
+            "explanation": "Atom B has four different substituents."
+          }
+        },
+        {
+          "label": "2. Count with symmetry",
+          "text": "<p>Butane-2,3-diol has two potential stereocenters. Its (2R,3S) and (2S,3R) descriptions refer to the same meso compound because of symmetry; the RR and SS forms are an enantiomeric pair. Total: three stereoisomers.</p>",
+          "molecule": "butanediol",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "configuration",
+      "label": "CIP priorities and Fischer projections",
+      "title": "CIP priorities and Fischer projections",
+      "molecule": "butanol2",
+      "tag": "Assign priority before tracing direction",
+      "cards": {
+        "rule": "<p>Rank directly attached atoms by atomic number; isotopes by mass. Resolve ties one sphere at a time using sorted atom lists. Treat multiple bonds with duplicate-atom bookkeeping. With priority 4 away, clockwise 1→2→3 is R and counterclockwise is S.</p>",
+        "cue": "<p>Fischer: horizontal comes forward; vertical goes back. If group 4 is horizontal, reverse the apparent result.</p>",
+        "trap": "<p>A 180° in-plane Fischer rotation preserves configuration; a 90° rotation does not. D/L is a relative-configuration convention, not a synonym for R/S or +/−.</p>",
+        "app": "<p>Most proteinogenic L amino acids are S; L cysteine is R because sulfur changes CIP ranking. Glycine has no stereogenic alpha carbon.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Rank the substituents",
+          "text": "<p>OH ranks first because O outranks C. Ethyl outranks methyl by the next sphere: [C,H,H] beats [H,H,H]. H is fourth.</p>",
+          "molecule": "butanol2",
+          "highlights": {
+            "prin": [
+              4
+            ],
+            "sub": [
+              2,
+              0
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "fischer",
+            "top": "CH₂CH₃",
+            "bottom": "CH₃",
+            "left": "OH",
+            "right": "H",
+            "caption": "Fischer projection of butan-2-ol. Horizontal bonds point toward you; vertical bonds point away."
+          }
+        },
+        {
+          "label": "2. Orient then assign",
+          "text": "<p>In this Fischer projection, 1→2→3 appears clockwise, but H is horizontal and points toward you. Reverse the apparent sense: the projection is S.</p>",
+          "molecule": "butanol2",
+          "highlights": {
+            "prin": [
+              1
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "fischer",
+            "top": "CH₂CH₃",
+            "bottom": "CH₃",
+            "left": "OH",
+            "right": "H",
+            "caption": "Fischer projection of butan-2-ol. Horizontal bonds point toward you; vertical bonds point away."
+          }
+        },
+        {
+          "label": "3. Mirror the projection",
+          "text": "<p>Interchanging H and OH inverts this single center. The mirrored projection is R and represents the enantiomer.</p>",
+          "molecule": "butanol2",
+          "highlights": {
+            "prin": [
+              1
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "fischer",
+            "top": "CH₂CH₃",
+            "bottom": "CH₃",
+            "left": "H",
+            "right": "OH",
+            "caption": "Mirror Fischer projection: exchange the two horizontal groups."
+          }
+        }
+      ]
+    },
+    {
+      "id": "alkene",
+      "label": "E/Z configuration and optical mixtures",
+      "title": "E/Z configuration and optical mixtures",
+      "molecule": "e-butene",
+      "tag": "Rank each end separately",
+      "cards": {
+        "rule": "<p>E/Z is defined only when each double-bond carbon has two different substituents. Rank each end by CIP: Z places the higher-priority groups on the same side; E on opposite sides. A racemate has equal amounts of two enantiomers and zero net rotation under ordinary conditions.</p>",
+        "cue": "<p>Z: together. E: opposite. Enantiomeric excess is the absolute difference in enantiomer percentages.</p>",
+        "trap": "<p>Cis/trans cannot replace E/Z in every alkene. Zero optical rotation can mean a racemate or an achiral compound; it does not identify which.</p>",
+        "app": "<p>If a pure enantiomer rotates +20° under the same conditions, a 75:25 mixture of it and its enantiomer gives +10° (50% ee).</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Compare the two ends",
+          "text": "<p>Each alkene carbon bears methyl and H. Methyl outranks H, and the methyl groups lie on opposite sides: E.</p>",
+          "molecule": "e-butene",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ],
+            "sub": [
+              0,
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Same side",
+          "text": "<p>Both higher-priority methyl groups now lie on the same side: Z. Rotation about C=C would disrupt pi overlap, so these are configurational isomers.</p>",
+          "molecule": "z-butene",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ],
+            "sub": [
+              0,
+              3
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "isomer-pair",
+      "lesson": "connectivity",
+      "molecule": "ether",
+      "label": "Classify an isomer pair",
+      "title": "Classify an isomer pair",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the oxygen atom.",
+          "skill": "Read the structure",
+          "answer": [
+            1
+          ],
+          "explanation": "B is oxygen; it is bonded to two carbons.",
+          "hints": [
+            "Read the element label.",
+            "The oxygen is between the carbon endpoints."
+          ],
+          "highlights": {
+            "prin": [
+              1
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Compared with ethanol (C2H6O), this compound is a…",
+          "skill": "Apply the rule",
+          "options": [
+            "Constitutional isomer",
+            "Conformer",
+            "Enantiomer"
+          ],
+          "answer": 0,
+          "explanation": "The oxygen connectivity differs, although the molecular formula matches.",
+          "hints": [
+            "Compare bonds before spatial arrangements.",
+            "Ethanol contains an O–H bond."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Which can donate an O–H hydrogen bond?",
+          "skill": "Apply the rule",
+          "options": [
+            "Both",
+            "Ethanol only",
+            "This ether only"
+          ],
+          "answer": 1,
+          "explanation": "Ethanol has O–H; the ether can accept, but cannot donate an O–H hydrogen bond.",
+          "hints": [
+            "Donation requires H bonded to an electronegative atom.",
+            "Look for an O–H bond."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Connectivity determines functional-group behavior."
+    },
+    {
+      "id": "butane-rotation",
+      "lesson": "conformations",
+      "molecule": "butane",
+      "label": "Reason about conformational energy",
+      "title": "Reason about conformational energy",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the two carbons forming the central bond.",
+          "skill": "Read the structure",
+          "answer": [
+            1,
+            2
+          ],
+          "explanation": "B–C is the bond viewed in the Newman projection.",
+          "hints": [
+            "Find the four-carbon chain.",
+            "Choose the two internal atoms."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "At a 180° methyl–methyl dihedral, the conformation is…",
+          "skill": "Apply the rule",
+          "options": [
+            "Anti",
+            "Gauche",
+            "Fully eclipsed"
+          ],
+          "answer": 0,
+          "explanation": "Anti butane is staggered with methyl groups opposite each other.",
+          "hints": [
+            "Distinguish staggered from eclipsed.",
+            "Opposite groups are separated by half a turn."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "A cyclohexane chair flip changes…",
+          "skill": "Apply the rule",
+          "options": [
+            "Up into down",
+            "Axial into equatorial, preserving up/down",
+            "Cis into trans"
+          ],
+          "answer": 1,
+          "explanation": "A chair flip exchanges axial/equatorial positions without changing configuration.",
+          "hints": [
+            "Track the bond orientation relative to the ring.",
+            "Up/down and axial/equatorial are different labels."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Conformations interconvert without changing configuration.",
+      "diagram": {
+        "type": "newman",
+        "caption": "Rotate butane and compare its conformations."
+      }
+    },
+    {
+      "id": "stereocenters",
+      "lesson": "chirality",
+      "molecule": "butanediol",
+      "label": "Count stereoisomers with symmetry",
+      "title": "Count stereoisomers with symmetry",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select both potentially stereogenic carbons.",
+          "skill": "Read the structure",
+          "answer": [
+            1,
+            2
+          ],
+          "explanation": "Each middle carbon bears H, OH, CH3, and a substituted-carbon chain.",
+          "hints": [
+            "Look for tetrahedral atoms with four different groups.",
+            "The OH-bearing carbons are the candidates."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "type": "number",
+          "prompt": "What is the maximum 2ⁿ count before symmetry is considered?",
+          "skill": "Calculate and interpret",
+          "answer": 4,
+          "unit": "isomers",
+          "tolerance": 0,
+          "explanation": "Two centers give 2² = 4 as an upper bound.",
+          "hints": [
+            "n is the number of independent stereocenters.",
+            "Raise two to the power of two."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "After accounting for the meso form, how many distinct stereoisomers exist?",
+          "skill": "Calculate and interpret",
+          "answer": 3,
+          "unit": "isomers",
+          "tolerance": 0,
+          "explanation": "RR and SS are a pair; RS and SR describe one meso compound.",
+          "hints": [
+            "Check whether exchanging the equivalent ends duplicates a structure.",
+            "There is one achiral meso form plus one mirror-image pair."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Two centers; three distinct stereoisomers."
+    },
+    {
+      "id": "fischer-cip",
+      "lesson": "configuration",
+      "molecule": "butanol2",
+      "label": "Assign a Fischer configuration",
+      "title": "Assign a Fischer configuration",
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Which substituent has highest CIP priority?",
+          "skill": "Apply the rule",
+          "options": [
+            "OH",
+            "Ethyl",
+            "Methyl",
+            "H"
+          ],
+          "answer": 0,
+          "explanation": "The directly attached oxygen has the largest atomic number.",
+          "hints": [
+            "Start at directly attached atoms.",
+            "O has atomic number 8; C is 6."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "In this projection, the lowest-priority H points…",
+          "skill": "Apply the rule",
+          "options": [
+            "Away",
+            "Toward you",
+            "In the paper plane"
+          ],
+          "answer": 1,
+          "explanation": "Horizontal Fischer bonds project toward the observer.",
+          "hints": [
+            "Use the Fischer convention.",
+            "Vertical and horizontal bonds have opposite depth directions."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "text",
+          "prompt": "Assign the configuration: R or S.",
+          "skill": "State your conclusion",
+          "accepted": [
+            "S",
+            "(S)"
+          ],
+          "explanation": "The apparent clockwise sequence is reversed because priority 4 points toward you.",
+          "hints": [
+            "Rank OH > ethyl > methyl > H.",
+            "Trace 1→2→3, then reverse because H is horizontal."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "This Fischer projection is (S)-butan-2-ol.",
+      "diagram": {
+        "type": "fischer",
+        "top": "CH₂CH₃",
+        "bottom": "CH₃",
+        "left": "OH",
+        "right": "H",
+        "caption": "Fischer projection of butan-2-ol. Horizontal bonds point toward you; vertical bonds point away."
+      }
+    },
+    {
+      "id": "ez-ee",
+      "lesson": "alkene",
+      "molecule": "z-butene",
+      "label": "Separate geometry from optical activity",
+      "title": "Separate geometry from optical activity",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select both alkene carbon atoms.",
+          "skill": "Read the structure",
+          "answer": [
+            1,
+            2
+          ],
+          "explanation": "B and C form the double bond.",
+          "hints": [
+            "Look for two parallel bond lines.",
+            "Choose both endpoints of that bond."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Assign E or Z.",
+          "skill": "State your conclusion",
+          "accepted": [
+            "Z",
+            "(Z)"
+          ],
+          "explanation": "The two higher-priority methyl groups are on the same side.",
+          "hints": [
+            "Rank methyl versus H on each end.",
+            "Same-side higher-priority groups determine the descriptor."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "Separately, what is the ee of a 75:25 enantiomer mixture?",
+          "skill": "Calculate and interpret",
+          "answer": 50,
+          "unit": "%",
+          "tolerance": 0,
+          "explanation": "Enantiomeric excess is |75 − 25| = 50%.",
+          "hints": [
+            "Subtract the smaller percentage from the larger.",
+            "Do not divide the percentages."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Z geometry is independent of enantiomeric excess."
+    }
+  ]
+}
