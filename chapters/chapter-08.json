@@ -16,7 +16,7 @@
   ],
   "review": {
     "status": "author-reviewed",
-    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+    "note": "Chapter 8 candidate audit adjudicated. All twelve original keys retained; valid aliases expanded, product canvas and acid/head-tail wording repaired. Source-backed author review; independent expert verification pending."
   },
   "lessons": [
     {
@@ -28,7 +28,7 @@
       "cards": {
         "rule": "<p>A carboxyl group has C=O and OH bonded to the same carbon. Carboxylic acids hydrogen bond and can dimerize, especially in nonpolar media. Their carboxylates are resonance stabilized. Electron-withdrawing substituents generally increase acidity, with inductive effects weakening over distance.</p>",
         "cue": "<p>pH above pKa → more carboxylate. pH below pKa → more neutral acid.</p>",
-        "trap": "<p>The OH of a carboxyl group is not classified as an ordinary alcohol group. A ring can carry COOH; its carboxyl carbon need not belong to the ring. Larger hydrocarbon regions can still limit aqueous solubility.</p>",
+        "trap": "<p>The OH of COOH is not an ordinary alcohol group. When a carbon ring bears a COOH substituent, the carboxyl carbon is outside the ring, attached to a ring carbon. A lactone can have an endocyclic acyl carbon, but its group is a cyclic ester, not free COOH. Larger hydrocarbon regions can still limit aqueous solubility.</p>",
         "app": "<p>Ionization controls how fatty acids, drug acids, and amino-acid side chains partition between environments.</p>"
       },
       "steps": [
@@ -215,7 +215,6 @@
           "molecule": "laurate",
           "highlights": {
             "path": [
-              0,
               1,
               2,
               3,
@@ -229,6 +228,7 @@
               11
             ],
             "prin": [
+              0,
               12,
               13
             ]
@@ -280,7 +280,13 @@
             "Use Henderson–Hasselbalch.",
             "The pH exceeds pKa by two."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              1,
+              2,
+              3
+            ]
+          }
         },
         {
           "type": "choice",
@@ -296,7 +302,13 @@
             "Use the calculated ratio.",
             "Higher pH favors deprotonation."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              1,
+              2,
+              3
+            ]
+          }
         }
       ],
       "summary": "Two pH units above pKa gives a 100:1 carboxylate/acid ratio."
@@ -343,7 +355,13 @@
             "Write acid + alcohol ⇌ ester + water.",
             "Apply Le Châtelier’s principle."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              2,
+              3,
+              4
+            ]
+          }
         },
         {
           "type": "choice",
@@ -363,7 +381,8 @@
           "highlights": {}
         }
       ],
-      "summary": "Esterification is reversible; amide formation generally needs activation."
+      "summary": "Esterification is reversible; amide formation generally needs activation.",
+      "context": "The ester canvas illustrates the functional-group pattern. The later acid/amine question is a separate transfer question, not a transformation of this ester."
     },
     {
       "id": "lose-co2",
@@ -404,7 +423,13 @@
             "Subtract the departing carboxyl carbon.",
             "4 − 1 = ?"
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              0,
+              4,
+              5
+            ]
+          }
         },
         {
           "type": "text",
@@ -413,14 +438,22 @@
           "accepted": [
             "acetone",
             "propanone",
-            "propan-2-one"
+            "propan-2-one",
+            "2-propanone",
+            "dimethyl ketone"
           ],
           "explanation": "Acetoacetic acid decarboxylates to acetone and CO2 overall.",
           "hints": [
             "The remaining chain has three carbons.",
             "The carbonyl becomes the middle carbon of that chain."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "molecule": "acetone"
         }
       ],
       "summary": "Acetoacetic acid → acetone + CO2."
@@ -466,7 +499,13 @@
             "Distinguish polar and nonpolar regions.",
             "Ionic heads remain exposed to water."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              0,
+              12,
+              13
+            ]
+          }
         },
         {
           "type": "choice",
@@ -483,7 +522,13 @@
             "Hydrolyze all three ester links.",
             "Under basic conditions the acids are deprotonated."
           ],
-          "highlights": {}
+          "highlights": {
+            "prin": [
+              0,
+              12,
+              13
+            ]
+          }
         }
       ],
       "summary": "Amphiphilic carboxylates can form micelles."

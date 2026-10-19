@@ -119,3 +119,10 @@
 - Added qualified induction/acidity/addition, alpha-racemization/epimerization and imine/enamine teaching. Rechecked source numerical examples instead of treating model agreement as verification. Prior shared arrow clearance retained.
 - Four targeted Chapter 7 groups passed within 57 Node groups; 13 schema documents, full twelve-chapter browser suite and all 20 final regression groups passed. The final blind-compatible wording also passed the affected Chapter 7 browser rerun. The first new regression attempt exposed an invalid SVG innerText test accessor; corrected to textContent and reran the suite successfully. No app failure was attributed to that test-harness error.
 - Both app builds and all chapter review packets refreshed; final PDF/package results follow with the Chapter 9 checkpoint. Independent expert chemistry verification remains pending.
+
+## Chapter 8 candidate-review checkpoint
+
+- Adjudicated all six findings in docs/CHAPTER_08_REVIEW_ADJUDICATION.md. Retained all twelve original keys and added exact 2-propanone/dimethyl ketone aliases.
+- Corrected beta-keto acid/laurate drawing geometry, exocyclic COOH wording and disjoint complete-head/hydrocarbon-tail focus. Carried useful context focus without making every empty highlight sticky. Added explicit transfer-question context for acid/amine reasoning beside an illustrative ester.
+- Decarboxylation naming/completion now displays acetone and C3H6O instead of retaining the starting beta-keto acid. Strict rejections and concealed formulas remain intact. Three targeted Chapter 8 groups passed within 57 Node tests; all 13 schema documents, the full twelve-chapter browser suite and 20 regression groups passed. Prior shared dark-active-step repair remains covered by measured contrast checks.
+- App builds refreshed. Final packet provenance and sampled PDF visual checks are recorded with the Chapter 9 checkpoint. Source-backed author review is not independent expert sign-off.
