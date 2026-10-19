@@ -1641,5 +1641,191 @@
     "h": 200,
     "cond": "butane-2,3-diol (stereochemistry unspecified)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ethene": {
+    "name": "ethene",
+    "formula": "C2H4",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethene",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ethyne": {
+    "name": "ethyne",
+    "formula": "C2H2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethyne",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "acetaldehyde": {
+    "name": "ethanal",
+    "formula": "C2H4O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanal",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "acetate": {
+    "name": "acetate (one resonance contributor)",
+    "formula": "C2H3O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 115,
+        "y": 25
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 115,
+        "charge": -1
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "acetate (one resonance contributor)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "acetamide": {
+    "name": "ethanamide",
+    "formula": "C2H5NO",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 115,
+        "y": 25
+      },
+      {
+        "e": "N",
+        "x": 175,
+        "y": 115
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanamide",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }
