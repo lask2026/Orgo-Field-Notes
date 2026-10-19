@@ -104,7 +104,73 @@
             "explanation": "A is the methyl carbon adjacent to the C=O group; its C–H hydrogens are alpha hydrogens."
           }
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Equilibrium favors the weaker acid/base pair",
+          "items": [
+            {
+              "label": "Identify roles",
+              "text": "Brønsted H+ transfer or Lewis electron-pair transfer"
+            },
+            {
+              "label": "Compare conjugate pairs",
+              "text": "Use compatible conditions"
+            },
+            {
+              "label": "Equilibrium",
+              "text": "Favors the weaker acid/base pair"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Lower pKa",
+              "text": "Stronger acid"
+            },
+            {
+              "label": "More stable conjugate base",
+              "text": "Generally stronger acid"
+            },
+            {
+              "label": "Periodic trend",
+              "text": "Compare like structures and account for solvent"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Equating basicity and nucleophilicity"
+            },
+            {
+              "label": "Check",
+              "text": "Equilibrium strength versus reaction-rate behavior"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "pKa 4.8 at pH 7.4",
+              "text": "Mostly carboxylate"
+            },
+            {
+              "label": "Partitioning",
+              "text": "Ionization changes water affinity"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "partners",
@@ -152,7 +218,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Electron pairs move from donor to acceptor",
+          "items": [
+            {
+              "label": "Donor",
+              "text": "Nucleophile supplies an electron pair"
+            },
+            {
+              "label": "Acceptor",
+              "text": "Electrophile receives the pair"
+            },
+            {
+              "label": "Leaving group",
+              "text": "Takes the bonding pair on departure"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Lone pair or bond",
+              "text": "A curved arrow can start at these electrons"
+            },
+            {
+              "label": "Positive charge alone",
+              "text": "Not an electron source"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Requiring a formal positive charge for electrophilicity"
+            },
+            {
+              "label": "Check",
+              "text": "Carbonyl carbon is electron poor without a formal positive charge"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Active sites",
+              "text": "Position donor and acceptor"
+            },
+            {
+              "label": "Catalysis",
+              "text": "Stabilizes charge along a pathway"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "substitution",
@@ -197,7 +325,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Mechanism depends on substrate and conditions",
+          "items": [
+            {
+              "label": "Substrate",
+              "text": "Steric access and carbocation stabilization"
+            },
+            {
+              "label": "Conditions",
+              "text": "Nucleophile, base and solvent"
+            },
+            {
+              "label": "Mechanism",
+              "text": "Concerted attack versus stepwise ionization"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Ideal SN2",
+              "text": "Rate includes substrate and nucleophile"
+            },
+            {
+              "label": "Ideal SN1",
+              "text": "Rate includes substrate; slow ionization precedes attack"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Assuming inversion always flips an R/S label"
+            },
+            {
+              "label": "Check",
+              "text": "CIP priorities; SN1 ion pairing can also prevent exact 50:50 products"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Double nucleophile concentration",
+              "text": "Ideal SN2 rate doubles"
+            },
+            {
+              "label": "Same change for ideal SN1",
+              "text": "Rate does not change"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "redox",
@@ -248,7 +438,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Track bonds to H and electronegative atoms",
+          "items": [
+            {
+              "label": "Count carbon bonds",
+              "text": "C–C contributes zero to carbon oxidation state"
+            },
+            {
+              "label": "Oxidation",
+              "text": "Usually more bonds to electronegative atoms or fewer C–H bonds"
+            },
+            {
+              "label": "Reduction",
+              "text": "Usually the reverse change"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Ordinary NaBH4",
+              "text": "Commonly reduces aldehydes and ketones"
+            },
+            {
+              "label": "LiAlH4 with separate workup",
+              "text": "Also acids/esters to alcohols; amides to amines"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Using naming seniority as a redox ranking"
+            },
+            {
+              "label": "Check",
+              "text": "Actual bonds, reagent identity and conditions"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "NAD+/NADH",
+              "text": "Biological hydride transfer"
+            },
+            {
+              "label": "Analogy limit",
+              "text": "Not every lab reagent has a biological counterpart"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "selectivity",
@@ -299,7 +551,69 @@
             "explanation": "D is the ketone carbonyl carbon; A belongs to the ester."
           }
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Choose by reactivity, not naming seniority",
+          "items": [
+            {
+              "label": "Inventory",
+              "text": "List functional groups and reactive sites"
+            },
+            {
+              "label": "Reagent",
+              "text": "Include solvent and acid–base steps"
+            },
+            {
+              "label": "Product check",
+              "text": "Track bonds and stereochemistry"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Naming seniority",
+              "text": "Chooses a name"
+            },
+            {
+              "label": "Reaction analysis",
+              "text": "Uses substrate, reagent and conditions"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Senior in naming therefore more reactive"
+            },
+            {
+              "label": "Check",
+              "text": "Mechanism, resonance and reagent scope"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Acetal protection",
+              "text": "Changes carbonyl reactivity"
+            },
+            {
+              "label": "Aqueous acid",
+              "text": "Can restore the carbonyl"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
