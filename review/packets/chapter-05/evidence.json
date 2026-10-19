@@ -1,7 +1,7 @@
 {
   "chapter": 5,
   "sourceSnapshot": {
-    "sha256": "1caed4e3251c559a9e2b38001c7dfc3840e98e6d1641436a81f30293cf08e969",
+    "sha256": "ebac3f31e8b4070f9bee3d48014b22349843dcb2e8db66cab54edc903704cf05",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -31,6 +31,14 @@
       "height": 359
     },
     {
+      "id": "properties-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/properties-visuals.png",
+      "sha256": "f7e345490b9a5dde80f2f8e14c1dc1aa6a2f260a2132d33f052dcbf7e3a43b8f",
+      "width": 607,
+      "height": 1708
+    },
+    {
       "id": "oxidation-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/oxidation-step-1.png",
@@ -53,6 +61,14 @@
       "sha256": "30df2a81da48a82a4c0b21af0fb523da263b0860fcaa90d2bae54f4beef6b28f",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "oxidation-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/oxidation-visuals.png",
+      "sha256": "e679c64ef5cac5c6f8cd003102f05b64e829aad684372753437721c30b0850d2",
+      "width": 607,
+      "height": 1791
     },
     {
       "id": "activation-step-1",
@@ -79,6 +95,14 @@
       "height": 359
     },
     {
+      "id": "activation-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/activation-visuals.png",
+      "sha256": "60b8ce6fbc48da3681c9f7b3dd7f6c50ebdda89db87471c116805a7c08e28281",
+      "width": 607,
+      "height": 1791
+    },
+    {
       "id": "phenols-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/phenols-step-1.png",
@@ -101,6 +125,14 @@
       "sha256": "50612d885558df1face30e3fb8f83cafbfbbad79ffb5d2ec8840e8f643b33296",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "phenols-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/phenols-visuals.png",
+      "sha256": "89a786c8718908e47f7da473fc02fbbea57c7ed04af7db5b0852ef3e3e9c601e",
+      "width": 607,
+      "height": 1862
     },
     {
       "id": "classify-alcohol-stage-1-molecule",
@@ -426,23 +458,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "2af812dc571001193e484bbb8117d0cfddd625a4d63cf1fad9af63d7486ee826",
+      "sha256": "f48cbfaa37e4cd23e8e2faf75b8492c55c6d5baf2816f225bf6b3e6b76b7f9bd",
       "width": 1360,
-      "height": 1131
+      "height": 2092
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "298057bcec124769c7362af872641bba23f940569f0a7801760b97f55a0032de",
+      "sha256": "a9e1162545c9f229950e066644acf171fc7240d4a237e633e450aa76a1b48721",
       "width": 607,
-      "height": 1122
+      "height": 1154
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "27dd9a561a8006043ef96598459537176b39891b851e59ebc546f12cc43c2e7b",
+      "sha256": "b1a37b19e0e81aeb19b712d6aca6d64f63de80ca1285a26dc281f0eab36b1d7f",
       "width": 1000,
       "height": 741
     },
@@ -450,17 +482,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "d50e6497486ef3076cd7f0f3ddb60ac0fa6aad623a1837f344498048c484b3c3",
+      "sha256": "c228b71110afd163e6eeca051a07d74b92a382f91a4b527f758d86be949f718c",
       "width": 375,
-      "height": 3511
+      "height": 3673
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "933e31433ecdbe75312ca6f60fe28c2289926de95ac8c4ebd4a91bd4ee6033db",
+      "sha256": "37c31e7c4dab3c227e63a61fe41ee7d0df559fd53cf651db970bb2e7935ff348",
       "width": 375,
-      "height": 2726
+      "height": 3673
     },
     {
       "id": "projection-mobile-dark",

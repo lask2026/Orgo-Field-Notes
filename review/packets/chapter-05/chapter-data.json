@@ -92,7 +92,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Classify the carbon bearing OH",
+          "items": [
+            {
+              "label": "OH-bearing carbon",
+              "text": "Count its carbon neighbors"
+            },
+            {
+              "label": "Alcohol class",
+              "text": "One, two or three: primary, secondary or tertiary"
+            },
+            {
+              "label": "Whole molecule",
+              "text": "Hydrogen bonding and hydrocarbon size both matter"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Count C neighbors of C–OH",
+              "text": "Determines alcohol class"
+            },
+            {
+              "label": "Count OH groups",
+              "text": "A different classification: monoalcohol, diol, etc."
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Secondary means two OH groups"
+            },
+            {
+              "label": "Check",
+              "text": "It means two carbon substituents on the OH-bearing carbon"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "OH group",
+              "text": "Can donate and accept hydrogen bonds"
+            },
+            {
+              "label": "Water affinity",
+              "text": "Also depends on the rest of the molecule"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "oxidation",
@@ -143,7 +205,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Alcohol class + oxidant + conditions",
+          "items": [
+            {
+              "label": "Classify alcohol",
+              "text": "Inspect the OH-bearing carbon"
+            },
+            {
+              "label": "Read conditions",
+              "text": "Oxidant, solvent and water"
+            },
+            {
+              "label": "Track product",
+              "text": "Aldehyde, ketone or acid"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Primary, suitable mild anhydrous oxidation",
+              "text": "Aldehyde"
+            },
+            {
+              "label": "Primary, suitable aqueous strong oxidation",
+              "text": "Carboxylic acid"
+            },
+            {
+              "label": "Secondary",
+              "text": "Ketone; tertiary lacks the carbinol C–H for this pathway"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Assuming every tertiary alcohol is inert under all conditions"
+            },
+            {
+              "label": "Check",
+              "text": "The specific pathway; PCC is one of several aldehyde-selective options"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Alcohol dehydrogenases",
+              "text": "Biological redox steps"
+            },
+            {
+              "label": "Specificity",
+              "text": "Substrate and cofactor control the outcome"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "activation",
@@ -202,7 +330,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Make leaving groups; mask carbonyls",
+          "items": [
+            {
+              "label": "Activate ROH",
+              "text": "Form a mesylate or tosylate"
+            },
+            {
+              "label": "Sulfonate formation",
+              "text": "C–O remains intact"
+            },
+            {
+              "label": "Later SN2 at carbon",
+              "text": "Inverts its geometry"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Improve leaving-group ability",
+              "text": "Activation"
+            },
+            {
+              "label": "Temporarily suppress reactivity",
+              "text": "Protection"
+            },
+            {
+              "label": "Acetal/ketal terminology",
+              "text": "Retain the traditional distinction alongside inclusive acetal usage"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Tosylation itself inverts carbon"
+            },
+            {
+              "label": "Check",
+              "text": "Inversion occurs in a later SN2 displacement at carbon"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Carbonyl protection",
+              "text": "Acetal formation changes reactivity"
+            },
+            {
+              "label": "Deprotection",
+              "text": "Appropriate aqueous acid restores the carbonyl"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "phenols",
@@ -257,7 +451,73 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Acidity and biological electron transfer",
+          "items": [
+            {
+              "label": "Phenol",
+              "text": "OH directly on an aromatic ring"
+            },
+            {
+              "label": "Conjugate base",
+              "text": "Phenoxide is resonance stabilized"
+            },
+            {
+              "label": "Substituents",
+              "text": "Electronic effects can alter acidity"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Quinone gains 2 H+ and 2 e−",
+              "text": "Hydroquinone: the reduced form"
+            },
+            {
+              "label": "Hydroquinone loses 2 H+ and 2 e−",
+              "text": "Quinone: the oxidized form"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Equating hydroquinone with hydroxyquinone"
+            },
+            {
+              "label": "Check",
+              "text": "Hydroquinone is reduced; hydroxyquinone retains a quinone framework with an extra OH"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Coenzyme Q",
+              "text": "Accepts electrons from complexes I/II; passes them to III"
+            },
+            {
+              "label": "Hydrophobic tail",
+              "text": "Keeps CoQ in the inner membrane"
+            },
+            {
+              "label": "Vitamin K quinones",
+              "text": "Lipid-soluble cofactors in vitamin K-dependent carboxylation"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
