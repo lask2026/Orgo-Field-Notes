@@ -29,3 +29,5 @@ Chapter 1: corrections implemented and graph/formula checks passed. Per-step ato
 Chapter 2: author-reviewed CIP ranking, E/Z graphs, Fischer (S) assignment, meso count, and butane conformations. Flat connectivity diagrams explicitly do not claim stereochemistry or chair geometry. Independent expert review pending.
 
 Chapter 3 (Bonding): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
+
+Chapter 4 (Analyzing Organic Reactions): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
