@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "0c458327c8375113550b2a16f0258cfb2bfa77ac8344c014265283021f025214",
+    "sha256": "c668d330fe86eea695e9629dc062661d89175aa14834ad3f8eed5edf2a4ddf25",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -34,9 +34,9 @@
       "id": "families-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/families-visuals.png",
-      "sha256": "0975dd0b0f58e7a5b4ca9e516e3ae8f699bfd18c393f7a69e85c1c8b1ee6a949",
+      "sha256": "90fffbbfd92d0c7144b2fa2f8c3606c7a177b4743e5b033b0eeb3324a0f00aea",
       "width": 607,
-      "height": 1820
+      "height": 1890
     },
     {
       "id": "acyl-mechanism-step-1",
@@ -66,9 +66,9 @@
       "id": "acyl-mechanism-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/acyl-mechanism-visuals.png",
-      "sha256": "52d751f3dfc9f04223eca8fa6a13f79a1b87d9c440599defbcddeefe49a9c90c",
+      "sha256": "8d55bffe1542d2f33175520dbc124b2c0895f9e32fca528d8eed2ba0418bbfb0",
       "width": 607,
-      "height": 1742
+      "height": 1773
     },
     {
       "id": "derivative-reactions-step-1",
@@ -98,9 +98,9 @@
       "id": "derivative-reactions-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/derivative-reactions-visuals.png",
-      "sha256": "b1f2db3fdd922c144d1879fd983bead72e4b57ad1e606145d4adaea350912071",
+      "sha256": "23e7de74806b55968a1e3dcf04c53f5accf76df2c6a61995649b54efcaea84ca",
       "width": 607,
-      "height": 1761
+      "height": 1780
     },
     {
       "id": "cyclic-derivative-stage-1-molecule",
@@ -346,9 +346,9 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "6d31707e1434d62ae423a07c138bda341711b8db18344f6d1dce6266b0ac8bb8",
+      "sha256": "0d698708235a28d87654c3ef33a3f1d90c8ace1abbc4bd16d3787a2e0b61261c",
       "width": 1360,
-      "height": 2157
+      "height": 2228
     },
     {
       "id": "visual-notes-expanded",
@@ -362,7 +362,7 @@
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "96be75502885ab06d67c09208ccc8e9b736ed5f54c966c8474465e68c0b16754",
+      "sha256": "1622c37ef8270eefd6d56c730ad8b9415c732b64414490823c989ed2bb2ccef7",
       "width": 1000,
       "height": 741
     },
@@ -370,17 +370,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "d8e0a19367f8c9c69362b0e4b23285dcb90ba4e6acb5ef54fcfc8fd35f411fa6",
+      "sha256": "c8b86b92b0fdb1168a2ad102c6213a0840a24f5974971af9bbab5101efa92d58",
       "width": 375,
-      "height": 3672
+      "height": 3994
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "28efd67ac1a16db2db8d520c00a39fbc051af413a8e756587f0801880e7ebac5",
+      "sha256": "f74a06cefb507c30d587506e459377dba4019561e31f1ec373581e23d7c1f88a",
       "width": 375,
-      "height": 3672
+      "height": 3994
     },
     {
       "id": "projection-mobile-dark",

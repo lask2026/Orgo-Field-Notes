@@ -118,7 +118,15 @@
               "label": "Ring context",
               "text": "Lactone = cyclic ester; lactam = cyclic amide"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              1,
+              2
+            ],
+            "caption": "Cyclic amide versus cyclic ester. Count heteroatoms when counting ring members."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -261,7 +269,15 @@
               "label": "Elimination",
               "text": "C=O reforms as leaving group departs"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Hydroxide addition gives a tetrahedral intermediate; subsequent collapse is a separate step. Schematic, not balanced."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -388,7 +404,15 @@
               "label": "Workup",
               "text": "Sets final protonation state"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              2
+            ],
+            "caption": "Separate anhydride and amide examples, not a reactant/product pair."
+          }
         },
         "cue": {
           "layout": "decision",

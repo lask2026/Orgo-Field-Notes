@@ -3,7 +3,7 @@
   "chapter": 9,
   "title": "Carboxylic Acid Derivatives",
   "sourceSnapshot": {
-    "sha256": "0c458327c8375113550b2a16f0258cfb2bfa77ac8344c014265283021f025214",
+    "sha256": "c668d330fe86eea695e9629dc062661d89175aa14834ad3f8eed5edf2a4ddf25",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -791,7 +791,15 @@
                   "label": "Ring context",
                   "text": "Lactone = cyclic ester; lactam = cyclic amide"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1,
+                  2
+                ],
+                "caption": "Cyclic amide versus cyclic ester. Count heteroatoms when counting ring members."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1163,7 +1171,15 @@
                   "label": "Elimination",
                   "text": "C=O reforms as leaving group departs"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Hydroxide addition gives a tetrahedral intermediate; subsequent collapse is a separate step. Schematic, not balanced."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1433,7 +1449,15 @@
                   "label": "Workup",
                   "text": "Sets final protonation state"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  2
+                ],
+                "caption": "Separate anhydride and amide examples, not a reactant/product pair."
+              }
             },
             "cue": {
               "layout": "decision",
