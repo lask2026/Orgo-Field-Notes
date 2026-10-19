@@ -308,5 +308,10 @@
       "sha256": "bc1986908a231bca738baf4e58c7d4b7b8e9614768a93d934215a8791ff4abc4"
     }
   ],
-  "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification."
+  "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
+  "visualInspection": {
+    "status": "sampled-pages-inspected",
+    "samplePages": 90,
+    "note": "Contact sheets for all 24 PDFs and representative full-size pages inspected. Stage prompt/options grouping and final-page pagination repaired. This is sampled layout QA, not complete chemistry review."
+  }
 }
