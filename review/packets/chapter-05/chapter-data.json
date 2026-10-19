@@ -110,7 +110,15 @@
               "label": "Whole molecule",
               "text": "Hydrogen bonding and hydrocarbon size both matter"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Compare the carbon neighbors of the OH-bearing carbon. These are different illustrative alcohols."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -223,7 +231,15 @@
               "label": "Track product",
               "text": "Aldehyde, ketone or acid"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Secondary alcohol to ketone with a suitable oxidant; schematic, not a balanced equation."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -348,7 +364,15 @@
               "label": "Later SN2 at carbon",
               "text": "Inverts its geometry"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Separate leaving-group activation and carbonyl-protection examples; these are not a reaction pair."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -469,7 +493,15 @@
               "label": "Substituents",
               "text": "Electronic effects can alter acidity"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              1,
+              2
+            ],
+            "caption": "Oxidation removes 2 H+ and 2 electrons; reverse reduction adds them. Schematic redox pair."
+          }
         },
         "cue": {
           "layout": "decision",

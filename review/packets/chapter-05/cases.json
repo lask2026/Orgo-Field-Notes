@@ -3,7 +3,7 @@
   "chapter": 5,
   "title": "Alcohols",
   "sourceSnapshot": {
-    "sha256": "ebac3f31e8b4070f9bee3d48014b22349843dcb2e8db66cab54edc903704cf05",
+    "sha256": "77412a4523417c598f620ea5e489e6bded443d853b29734b3469399639cd338c",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1479,7 +1479,15 @@
                   "label": "Whole molecule",
                   "text": "Hydrogen bonding and hydrocarbon size both matter"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Compare the carbon neighbors of the OH-bearing carbon. These are different illustrative alcohols."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1714,7 +1722,15 @@
                   "label": "Track product",
                   "text": "Aldehyde, ketone or acid"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Secondary alcohol to ketone with a suitable oxidant; schematic, not a balanced equation."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1988,7 +2004,15 @@
                   "label": "Later SN2 at carbon",
                   "text": "Inverts its geometry"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Separate leaving-group activation and carbonyl-protection examples; these are not a reaction pair."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2328,7 +2352,15 @@
                   "label": "Substituents",
                   "text": "Electronic effects can alter acidity"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  1,
+                  2
+                ],
+                "caption": "Oxidation removes 2 H+ and 2 electrons; reverse reduction adds them. Schematic redox pair."
+              }
             },
             "cue": {
               "layout": "decision",
