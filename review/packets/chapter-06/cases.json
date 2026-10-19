@@ -3,7 +3,7 @@
   "chapter": 6,
   "title": "Aldehydes and Ketones I",
   "sourceSnapshot": {
-    "sha256": "78a84ed39319352c38d2b4333197d617eec4594e7d4ad5761c5aa4e137195f91",
+    "sha256": "adaad01da2348b9871c3bca25e1b127019fbadf55afab14802cfa566b69a8e38",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1025,7 +1025,69 @@
               },
               "reveal": false
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Planar electrophile → tetrahedral addition product",
+              "items": [
+                {
+                  "label": "Polarize C=O",
+                  "text": "Carbon electron poor; oxygen electron rich"
+                },
+                {
+                  "label": "Nucleophile attacks",
+                  "text": "Electron pair moves toward carbon"
+                },
+                {
+                  "label": "Track oxygen",
+                  "text": "The pi pair shifts to O"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Addition step",
+                  "text": "Attack carbon; move the pi electrons to O; then handle proton transfers"
+                },
+                {
+                  "label": "Naming step",
+                  "text": "Aldehyde -al/-carbaldehyde; ketone -one; subordinate carbonyl oxo-"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Drawing five bonds to carbon or treating a carbonyl as an O–H donor"
+                },
+                {
+                  "label": "Check",
+                  "text": "Shift the pi pair to O; neutral aldehydes/ketones accept hydrogen bonds but lack an O–H donor"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Planar carbonyl",
+                  "text": "Can be attacked from either face"
+                },
+                {
+                  "label": "Chiral environment",
+                  "text": "Can favor one face; without bias, a new single stereocenter often gives a racemate"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "acetaldehyde": {
@@ -1134,7 +1196,73 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "compare",
+              "title": "Distinguish OH from OR on the same carbon",
+              "items": [
+                {
+                  "label": "Water addition",
+                  "text": "Hydrate equilibrium"
+                },
+                {
+                  "label": "OH plus OR",
+                  "text": "Hemiacetal/hemiketal context"
+                },
+                {
+                  "label": "Two OR groups",
+                  "text": "Acetal/ketal context"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "OH and OR at the former carbonyl center",
+                  "text": "Hemiacetal/hemiketal family"
+                },
+                {
+                  "label": "OR and OR at that center",
+                  "text": "Acetal/ketal family"
+                },
+                {
+                  "label": "H/R versus two carbon groups",
+                  "text": "Traditional acetal versus ketal distinction"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Treating full acetal formation as simple basic addition"
+                },
+                {
+                  "label": "Check",
+                  "text": "Catalysis, water and equilibrium conditions"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Protection",
+                  "text": "Masks carbonyl reactivity"
+                },
+                {
+                  "label": "Carbohydrates",
+                  "text": "Cyclic hemiacetal chemistry"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "hemiacetal": {
@@ -1402,7 +1530,69 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "flow",
+              "title": "Reagent identity changes the product",
+              "items": [
+                {
+                  "label": "Amine addition",
+                  "text": "Carbonyl addition intermediate"
+                },
+                {
+                  "label": "Condensation",
+                  "text": "Water loss under appropriate conditions"
+                },
+                {
+                  "label": "Product context",
+                  "text": "Imine versus enamine pathway"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Suitable primary amine",
+                  "text": "Imine formation pathway"
+                },
+                {
+                  "label": "Suitable secondary amine and available alpha H",
+                  "text": "Enamine formation pathway"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Excess acid, an enamine without alpha H, or cyanide attached through N"
+                },
+                {
+                  "label": "Check",
+                  "text": "Keep the amine nucleophilic; verify alpha H and carbon attachment of cyanide"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "Schiff-base chemistry",
+                  "text": "Reorganizes electron density"
+                },
+                {
+                  "label": "Metabolism",
+                  "text": "Connects nitrogen and amino-acid chemistry"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "imine": {
@@ -1643,7 +1833,69 @@
               },
               "reveal": true
             }
-          ]
+          ],
+          "visualCards": {
+            "rule": {
+              "layout": "compare",
+              "title": "Separate addition from net redox",
+              "items": [
+                {
+                  "label": "Aldehyde reduction",
+                  "text": "Primary alcohol"
+                },
+                {
+                  "label": "Ketone reduction",
+                  "text": "Secondary alcohol"
+                },
+                {
+                  "label": "Workup",
+                  "text": "Hydride adds before O is protonated"
+                }
+              ]
+            },
+            "cue": {
+              "layout": "decision",
+              "title": "Choose the case that applies",
+              "items": [
+                {
+                  "label": "Aldehyde to acid",
+                  "text": "Oxidation under suitable conditions"
+                },
+                {
+                  "label": "Carbonyl to alcohol",
+                  "text": "Reduction with a suitable reagent"
+                }
+              ]
+            },
+            "trap": {
+              "layout": "contrast",
+              "title": "Shortcut versus a better check",
+              "items": [
+                {
+                  "label": "Avoid",
+                  "text": "Predicting an alkane from ordinary hydride reduction"
+                },
+                {
+                  "label": "Check",
+                  "text": "Oxygen remains in the alcohol; a test result is contextual evidence"
+                }
+              ]
+            },
+            "app": {
+              "layout": "map",
+              "title": "Connect the concept",
+              "items": [
+                {
+                  "label": "NADH-dependent reduction",
+                  "text": "Hydride-equivalent transfer"
+                },
+                {
+                  "label": "Enzyme selectivity",
+                  "text": "Can control stereochemistry"
+                }
+              ]
+            }
+          }
         },
         "molecules": {
           "acetaldehyde": {

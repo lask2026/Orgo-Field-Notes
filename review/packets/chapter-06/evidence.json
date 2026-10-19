@@ -1,7 +1,7 @@
 {
   "chapter": 6,
   "sourceSnapshot": {
-    "sha256": "78a84ed39319352c38d2b4333197d617eec4594e7d4ad5761c5aa4e137195f91",
+    "sha256": "adaad01da2348b9871c3bca25e1b127019fbadf55afab14802cfa566b69a8e38",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -31,6 +31,14 @@
       "height": 359
     },
     {
+      "id": "carbonyl-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/carbonyl-visuals.png",
+      "sha256": "d859e670c62cf4592f47161fc90c4166028e6b3f78a66f72826f5b409a4735df",
+      "width": 607,
+      "height": 1780
+    },
+    {
       "id": "oxygen-addition-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/oxygen-addition-step-1.png",
@@ -53,6 +61,14 @@
       "sha256": "95c26d238b1ca3b02015ba987a2befd13c6fcb93f6bc6b54acc02e19184ae57b",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "oxygen-addition-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/oxygen-addition-visuals.png",
+      "sha256": "898aed0262c336b12fbec4744bb1c656e40a408d995db13fdb33ab2ecafb8ca6",
+      "width": 607,
+      "height": 1738
     },
     {
       "id": "nitrogen-addition-step-1",
@@ -79,6 +95,14 @@
       "height": 359
     },
     {
+      "id": "nitrogen-addition-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/nitrogen-addition-visuals.png",
+      "sha256": "ae60739cdbc7799e99fe014a91b94657537a06f202a7de745a2abf8ded327cf1",
+      "width": 607,
+      "height": 1761
+    },
+    {
       "id": "carbonyl-redox-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyl-redox-step-1.png",
@@ -101,6 +125,14 @@
       "sha256": "ecd5c1075dd8b7ff1668c0ad888330b19cde684cd06d8987bdef2c76df39f669",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "carbonyl-redox-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/carbonyl-redox-visuals.png",
+      "sha256": "c170c284dfd72ae8c10d9092aff90ad39d032df02de5e9b164e5cf0095df7fb7",
+      "width": 607,
+      "height": 1689
     },
     {
       "id": "addition-site-stage-1-molecule",
@@ -426,23 +458,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "46703ac9daf7aef8971ee9c98959d5d3740d43c169dc7b4a6c10c5d4c09e0ce5",
+      "sha256": "4c4ffb7a375bbd120417f4b62010574e55ba24eb6aff71064f63541b056f6c97",
       "width": 1360,
-      "height": 1062
+      "height": 2117
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "10b4f3572e19cff22e8f932e30c68ee18e749b9bca93523fc532321b1afa3c2e",
+      "sha256": "09d54767c860eb0d70c7ce84b2c3e15fbbd18269d9e8c6994480c297c5098cad",
       "width": 607,
-      "height": 1098
+      "height": 1130
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "8fe957fbb163f9882e33ebd8946142676375b6f9871a9d55ac99813a7039daed",
+      "sha256": "a664d4603b2e5d1058120a937c5f2b87b8b955c9dc89aa64cf3404d5607499ab",
       "width": 1000,
       "height": 741
     },
@@ -450,17 +482,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "26f2f84d576f365e6b1bf7459e76f6e65c4966b2f538c8eb984d92facc4468a9",
+      "sha256": "e52afd1dfabbaf7cfc6b8fa467a45a7730c5a3a2b0ceed602509f44d71babfd0",
       "width": 375,
-      "height": 3498
+      "height": 3775
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "4b7b2e33a1d282a276439468dc4128261f75dd72cdd7dc5803c9f4d114755c1c",
+      "sha256": "f0f888e8eed10928742511afe2510b8f737fdb9194d4e59f3252dc08cf5ca5ac",
       "width": 375,
-      "height": 2389
+      "height": 3775
     },
     {
       "id": "projection-mobile-dark",
