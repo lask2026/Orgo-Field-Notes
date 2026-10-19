@@ -43,3 +43,5 @@ Chapter 8 (Carboxylic Acids): original content aligned to supplied section headi
 Chapter 9 (Carboxylic Acid Derivatives): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
 
 Chapter 10 (Nitrogen- and Phosphorus-Containing Compounds): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
+
+Chapter 11 (Spectroscopy): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.

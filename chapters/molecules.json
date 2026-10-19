@@ -4070,5 +4070,119 @@
     "h": 200,
     "cond": "dimethyl phosphate monoanion (formal Lewis representation)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "butadiene": {
+    "name": "buta-1,3-diene",
+    "formula": "C4H6",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "buta-1,3-diene",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ethylacetate": {
+    "name": "ethyl ethanoate",
+    "formula": "C4H8O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 45,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 100,
+        "y": 25
+      },
+      {
+        "e": "O",
+        "x": 155,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 265,
+        "y": 120
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethyl ethanoate",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }

@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "id": 11,
+  "title": "Spectroscopy",
+  "description": "Read IR, UV–visible, and proton NMR evidence together.",
+  "objectives": [
+    "Recognize approximate IR regions",
+    "Relate conjugation, photon energy, and absorbance",
+    "Interpret NMR shifts, integrals, and splitting"
+  ],
+  "sources": [
+    {
+      "label": "Supplied Kaplan curriculum: Chapter 11; section scope checked against local body and summary",
+      "location": "organic_chemistry_kaplan/OEBPS/chapter11b.xhtml"
+    },
+    {
+      "label": "IR functional-group regions: OpenStax 12.8",
+      "location": "https://openstax.org/books/organic-chemistry/pages/12-8-infrared-spectra-of-some-common-functional-groups"
+    },
+    {
+      "label": "First-order proton splitting: OpenStax 13.6",
+      "location": "https://openstax.org/books/organic-chemistry/pages/13-6-spin-spin-splitting-in-1h-nmr-spectra"
+    },
+    {
+      "label": "Conjugation and UV absorption: OpenStax 14.8",
+      "location": "https://openstax.org/books/organic-chemistry/pages/14-8-interpreting-ultraviolet-spectra-the-effect-of-conjugation"
+    }
+  ],
+  "review": {
+    "status": "author-reviewed",
+    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+  },
+  "lessons": [
+    {
+      "id": "ir",
+      "label": "IR: recognize functional groups",
+      "title": "IR: recognize functional groups",
+      "molecule": "acetone",
+      "tag": "Vibrations must change dipole moment",
+      "cards": {
+        "rule": "<p>IR probes molecular vibrations. A vibration absorbs IR when it changes the molecular dipole moment. Useful approximate regions: alcohol O–H 3200–3600 cm⁻¹ (often broad); acid O–H 2500–3300 (very broad); C=O about 1650–1800; nitrile about 2210–2260. N–H is often near 3300, generally less broad than hydrogen-bonded OH.</p>",
+        "cue": "<p>Use a band pattern, not one magic number. The fingerprint region below about 1500 cm⁻¹ helps comparison.</p>",
+        "trap": "<p>Carbonyl positions vary with functional group, conjugation, ring strain, and environment. Absence of an OH band may support a structure, but sample conditions matter. IR alone seldom gives complete connectivity.</p>",
+        "app": "<p>Follow loss of a carbonyl band and appearance of OH when monitoring a carbonyl reduction, together with other evidence.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Carbonyl signature",
+          "text": "<p>A simple saturated acyclic ketone often absorbs near 1715 cm⁻¹. The illustrative plot marks a band position, not an experimentally measured spectrum.</p>",
+          "molecule": "acetone",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "reveal": true,
+          "diagram": {
+            "type": "spectrum",
+            "min": 400,
+            "max": 4000,
+            "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+            "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+            "peaks": [
+              {
+                "x": 1715,
+                "height": 0.95,
+                "label": "C=O"
+              },
+              {
+                "x": 2950,
+                "height": 0.45,
+                "label": "C–H"
+              }
+            ]
+          }
+        },
+        {
+          "label": "2. Compare OH",
+          "text": "<p>An alcohol has an O–H vibration often broadened by hydrogen bonding. Converting acetone to propan-2-ol changes both the C=O and O–H evidence.</p>",
+          "molecule": "isopropanol",
+          "highlights": {
+            "prin": [
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Acid pattern",
+          "text": "<p>A carboxylic acid can show both a carbonyl band and a very broad OH band extending across roughly 2500–3300 cm⁻¹. Interpret them together.</p>",
+          "molecule": "aceticacid",
+          "highlights": {
+            "prin": [
+              1,
+              2,
+              3
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "uv",
+      "label": "UV–visible: conjugation and energy",
+      "title": "UV–visible: conjugation and energy",
+      "molecule": "butadiene",
+      "tag": "Longer wavelength means lower photon energy",
+      "cards": {
+        "rule": "<p>UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime.</p>",
+        "cue": "<p>More extended conjugation often gives a red shift. Doubling wavelength halves photon energy.</p>",
+        "trap": "<p>Conjugation trends compare appropriate related systems, not every possible molecule. UV absorption does not uniquely identify a structure. Beer–Lambert requires compatible units and an appropriate concentration range.</p>",
+        "app": "<p>Conjugated chromophores underlie retinal photochemistry and many biological absorbance measurements.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Follow conjugation",
+          "text": "<p>Alternating C=C–C=C bonds create a connected p-orbital system. Adjacent p orbitals must remain sufficiently aligned for conjugation.</p>",
+          "molecule": "butadiene",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Connect wavelength to energy",
+          "text": "<p>Relative to an isolated comparable alkene, conjugation often reduces the pi-to-pi-star transition energy. Use E=hc/λ to translate that smaller gap into longer wavelength.</p>",
+          "molecule": "ethene",
+          "highlights": {
+            "prin": [
+              0,
+              1
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "nmr",
+      "label": "Proton NMR: shift, integration, splitting",
+      "title": "Proton NMR: shift, integration, splitting",
+      "molecule": "ethylacetate",
+      "tag": "Three independent kinds of evidence",
+      "cards": {
+        "rule": "<p>Chemical shift reports environment; integration reports relative proton count; splitting reports coupling. In simple first-order cases, coupling to n equivalent neighboring protons produces n+1 lines. Equivalent protons do not split one another. Deshielded protons appear downfield at higher ppm.</p>",
+        "cue": "<p>Shift = neighborhood; area = population; splitting = neighbors.</p>",
+        "trap": "<p>n+1 is a limited first-order rule, not universal. Nonequivalent neighbors can give more complex patterns; exchangeable OH/NH protons often do not show the expected simple coupling. Chemical equivalence depends on symmetry and timescale.</p>",
+        "app": "<p>Typical rough proton regions: alkyl 0–3 ppm; C next to O often 3–4.5; vinylic about 4.5–6.5; aromatic 6–8.5; aldehydic 9–10; acid OH often 10–13. Use the full pattern.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Three proton sets",
+          "text": "<p>Ethyl ethanoate has acyl methyl, OCH2, and terminal ethyl methyl proton sets. Their integrals are 3:2:3. The carbonyl carbon has no H.</p>",
+          "molecule": "ethylacetate",
+          "highlights": {
+            "sub": [
+              0,
+              4,
+              5
+            ],
+            "prin": [
+              1,
+              2,
+              3
+            ]
+          },
+          "reveal": true,
+          "diagram": {
+            "type": "spectrum",
+            "min": 0,
+            "max": 5,
+            "unit": "Chemical shift δ / ppm",
+            "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+            "peaks": [
+              {
+                "x": 4.1,
+                "height": 0.65,
+                "label": "A"
+              },
+              {
+                "x": 2,
+                "height": 0.85,
+                "label": "B"
+              },
+              {
+                "x": 1.2,
+                "height": 0.85,
+                "label": "C"
+              }
+            ]
+          }
+        },
+        {
+          "label": "2. Ethyl splitting",
+          "text": "<p>OCH2 couples to three neighboring methyl H atoms, giving a quartet in a simple first-order picture. The terminal CH3 couples to two methylene H atoms, giving a triplet.</p>",
+          "molecule": "ethylacetate",
+          "highlights": {
+            "path": [
+              3,
+              4,
+              5
+            ],
+            "prin": [
+              4
+            ],
+            "sub": [
+              5
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "spectrum",
+            "min": 0,
+            "max": 5,
+            "unit": "Chemical shift δ / ppm",
+            "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+            "peaks": [
+              {
+                "x": 4.1,
+                "height": 0.65,
+                "label": "A"
+              },
+              {
+                "x": 2,
+                "height": 0.85,
+                "label": "B"
+              },
+              {
+                "x": 1.2,
+                "height": 0.85,
+                "label": "C"
+              }
+            ]
+          }
+        },
+        {
+          "label": "3. Acyl methyl",
+          "text": "<p>The acyl methyl has no H-bearing carbon immediately across the carbonyl bond, so it is approximately a singlet in this example. Do not apply n+1 by counting every H anywhere in the molecule.</p>",
+          "molecule": "ethylacetate",
+          "highlights": {
+            "prin": [
+              0
+            ],
+            "sub": [
+              1
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "spectrum",
+            "min": 0,
+            "max": 5,
+            "unit": "Chemical shift δ / ppm",
+            "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+            "peaks": [
+              {
+                "x": 4.1,
+                "height": 0.65,
+                "label": "A"
+              },
+              {
+                "x": 2,
+                "height": 0.85,
+                "label": "B"
+              },
+              {
+                "x": 1.2,
+                "height": 0.85,
+                "label": "C"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "combine",
+      "label": "Combine formula, IR, and NMR",
+      "title": "Combine formula, IR, and NMR",
+      "molecule": "acetone",
+      "tag": "Independent clues should agree",
+      "cards": {
+        "rule": "<p>For ordinary neutral closed-shell organic formulas, degree of unsaturation (DBE) = (2C+2+N−H−X)/2; O and divalent S do not enter. A ring or double bond contributes one DBE; a triple bond contributes two. Then combine IR group evidence with NMR environments and integrations.</p>",
+        "cue": "<p>Formula constrains possibilities; IR finds groups; NMR organizes the skeleton.</p>",
+        "trap": "<p>A single NMR signal can represent several equivalent groups. DBE says how much unsaturation exists, not where it is. Do not force phosphorus-rich or unusual-valence formulas into this simple equation.</p>",
+        "app": "<p>Passage-based structure identification rewards eliminating structures inconsistent with even one reliable observation.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Formula constraint",
+          "text": "<p>C3H6O has DBE=(2×3+2−6)/2=1. A carbonyl can account for that entire unit of unsaturation.</p>",
+          "molecule": "acetone",
+          "highlights": {},
+          "reveal": false
+        },
+        {
+          "label": "2. Add two measurements",
+          "text": "<p>Suppose IR shows a ketone-like C=O band and proton NMR shows a single 6H singlet near 2 ppm. Two symmetry-equivalent methyl groups adjacent to C=O fit those data.</p>",
+          "molecule": "acetone",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ],
+            "sub": [
+              0,
+              2
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Challenge an alternative",
+          "text": "<p>Ethanal has only two carbons and an aldehydic H; it cannot fit C3H6O or the supplied 6H singlet. Test each candidate against every observation.</p>",
+          "molecule": "acetaldehyde",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ir-read",
+      "lesson": "ir",
+      "molecule": "acetone",
+      "label": "Interpret functional-group evidence",
+      "title": "Interpret functional-group evidence",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the bond endpoints responsible for the prominent carbonyl band.",
+          "skill": "Read the structure",
+          "answer": [
+            1,
+            3
+          ],
+          "explanation": "B and D form C=O.",
+          "hints": [
+            "Find the double bond to O.",
+            "Select both carbon and oxygen."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "An IR-active vibration must change…",
+          "skill": "Apply the rule",
+          "options": [
+            "Dipole moment",
+            "Molecular formula",
+            "The number of carbon atoms"
+          ],
+          "answer": 0,
+          "explanation": "IR couples to vibrations that change the dipole moment.",
+          "hints": [
+            "Think about interaction with oscillating electric fields.",
+            "Not every possible vibration absorbs IR."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "A broad 3200–3600 cm⁻¹ band appearing after reduction supports…",
+          "skill": "Apply the rule",
+          "options": [
+            "An alcohol OH",
+            "Only a new alkane",
+            "A nitrile as the sole explanation"
+          ],
+          "answer": 0,
+          "explanation": "An alcohol OH stretch commonly appears in that region.",
+          "hints": [
+            "Reduction retains oxygen.",
+            "C=O becomes C–OH."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "IR supports functional groups, with positions interpreted as ranges.",
+      "diagram": {
+        "type": "spectrum",
+        "min": 400,
+        "max": 4000,
+        "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+        "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+        "peaks": [
+          {
+            "x": 1715,
+            "height": 0.95,
+            "label": "C=O"
+          },
+          {
+            "x": 2950,
+            "height": 0.45,
+            "label": "C–H"
+          }
+        ]
+      }
+    },
+    {
+      "id": "uv-energy",
+      "lesson": "uv",
+      "molecule": "butadiene",
+      "label": "Connect conjugation and absorbance",
+      "title": "Connect conjugation and absorbance",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select all carbons participating in the conjugated diene.",
+          "skill": "Read the structure",
+          "answer": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "explanation": "All four carbons have p orbitals in the conjugated system.",
+          "hints": [
+            "Follow the alternating double–single–double pattern.",
+            "Include the carbons of both double bonds."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "For comparable pi systems, increased conjugation often shifts absorption to…",
+          "skill": "Apply the rule",
+          "options": [
+            "Longer wavelength",
+            "Shorter wavelength in every case"
+          ],
+          "answer": 0,
+          "explanation": "A smaller transition energy corresponds to longer wavelength.",
+          "hints": [
+            "Use E=hc/λ.",
+            "Lower energy and longer wavelength are inversely related."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "If ε=10000 L mol⁻¹ cm⁻¹, l=1 cm, and c=0.000020 mol L⁻¹, what is A?",
+          "skill": "Calculate and interpret",
+          "answer": 0.2,
+          "unit": "dimensionless",
+          "tolerance": 0.001,
+          "explanation": "A=εlc=10000×1×0.000020=0.20.",
+          "hints": [
+            "Multiply the three quantities.",
+            "The specified units cancel."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Conjugation often lowers transition energy; A=εlc."
+    },
+    {
+      "id": "nmr-ethyl",
+      "lesson": "nmr",
+      "molecule": "ethylacetate",
+      "label": "Assign an ethyl-group pattern",
+      "title": "Assign an ethyl-group pattern",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the OCH2 carbon.",
+          "skill": "Read the structure",
+          "answer": [
+            4
+          ],
+          "explanation": "E is the methylene directly attached to the ester oxygen.",
+          "hints": [
+            "Find O–CH2–CH3.",
+            "Choose the carbon nearest O on the ethyl side."
+          ],
+          "highlights": {
+            "prin": [
+              4
+            ],
+            "sub": [
+              5
+            ]
+          }
+        },
+        {
+          "type": "number",
+          "prompt": "How many lines does its signal have in the simple n+1 model?",
+          "skill": "Calculate and interpret",
+          "answer": 4,
+          "unit": "lines",
+          "tolerance": 0,
+          "explanation": "Three equivalent neighboring CH3 hydrogens give 3+1=4 lines.",
+          "hints": [
+            "Count hydrogens on the adjacent methyl.",
+            "Do not count the two H on the observed carbon itself."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "The terminal ethyl CH3 gives an approximate…",
+          "skill": "Apply the rule",
+          "options": [
+            "Triplet, integrating to 3H",
+            "Quartet, integrating to 2H",
+            "Singlet, integrating to 1H"
+          ],
+          "answer": 0,
+          "explanation": "Two methylene neighbors produce a triplet; the methyl has three H.",
+          "hints": [
+            "Splitting and integration are separate measurements.",
+            "Use n=2 for the neighbors."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "An ethyl group often gives a 2H quartet and 3H triplet.",
+      "diagram": {
+        "type": "spectrum",
+        "min": 0,
+        "max": 5,
+        "unit": "Chemical shift δ / ppm",
+        "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+        "peaks": [
+          {
+            "x": 4.1,
+            "height": 0.65,
+            "label": "A"
+          },
+          {
+            "x": 2,
+            "height": 0.85,
+            "label": "B"
+          },
+          {
+            "x": 1.2,
+            "height": 0.85,
+            "label": "C"
+          }
+        ]
+      }
+    },
+    {
+      "id": "combined-data",
+      "lesson": "combine",
+      "molecule": "acetone",
+      "label": "Test a structure against combined data",
+      "title": "Test a structure against combined data",
+      "stages": [
+        {
+          "type": "number",
+          "prompt": "For formula C3H6O, calculate DBE.",
+          "skill": "Calculate and interpret",
+          "answer": 1,
+          "unit": "DBE",
+          "tolerance": 0,
+          "explanation": "(2×3+2−6)/2=1.",
+          "hints": [
+            "Ignore O in this standard formula.",
+            "Compare with the saturated acyclic C3H8 formula."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "A single 6H singlet near 2 ppm suggests…",
+          "skill": "Apply the rule",
+          "options": [
+            "Two equivalent methyl groups with no adjacent H-bearing carbon",
+            "Six nonequivalent one-H environments",
+            "An aldehydic proton at 2 ppm"
+          ],
+          "answer": 0,
+          "explanation": "Symmetry-equivalent methyl groups can contribute to one six-proton signal.",
+          "hints": [
+            "Integration counts all protons in the environment.",
+            "An aldehyde H would usually be much farther downfield."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "text",
+          "prompt": "With a ketone-like IR band, name the consistent C3H6O structure.",
+          "skill": "State your conclusion",
+          "accepted": [
+            "acetone",
+            "propanone",
+            "propan-2-one"
+          ],
+          "explanation": "Acetone has one DBE, a ketone, and two equivalent methyl groups.",
+          "hints": [
+            "Place C=O between two methyl groups.",
+            "Check all three observations together."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Formula + IR + NMR consistently identify acetone.",
+      "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm."
+    }
+  ]
+}
