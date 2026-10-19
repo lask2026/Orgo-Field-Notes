@@ -1,0 +1,6 @@
+organic_chemistry_kaplan/
+node_modules/
+artifacts/screenshots/
+artifacts/*.log
+.DS_Store
+__pycache__/
