@@ -53,7 +53,7 @@ For all chapters sequentially, once the pilot behaves well:
 }
 ```
 
-There are 267 cases overall. Runtime depends on hardware and output length; this can be a lengthy run. Start with one case before attempting all chapters. No automatic model downloads or repeated retries occur.
+There are 274 cases overall. Runtime depends on hardware and output length; this can be a lengthy run. Start with one case before attempting all chapters. No automatic model downloads or repeated retries occur.
 
 The initial local pilot produced chemistry mistakes, including an incorrect hydrogen-bond donor selection. See [the smoke-test notes](../review-results/SMOKE-TEST-NOTES.md). Do not equate a completed response, high model confidence, or model agreement with a scientifically correct result.
 

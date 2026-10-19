@@ -7,7 +7,7 @@ const moleculeAudit=Object.entries(molecules).map(([id,m])=>({id,name:m.name,for
 const exerciseAudit=chapters.flatMap(c=>c.exercises.map(e=>({chapter:c.id,id:e.id,lesson:e.lesson,molecule:e.molecule,stages:e.stages.length,types:e.stages.map(s=>s.type),browserStatus:'passed',scientificReview:'Author reviewed; not independently expert verified'})));
 fs.writeFileSync('artifacts/molecule-audit.json',JSON.stringify(moleculeAudit,null,2)+'\n');fs.writeFileSync('artifacts/exercise-audit.json',JSON.stringify(exerciseAudit,null,2)+'\n');
 const counts={chapters:chapters.length,lessons:chapters.reduce((n,c)=>n+c.lessons.length,0),workshops:exerciseAudit.length,stages:exerciseAudit.reduce((n,e)=>n+e.stages,0),molecules:moleculeAudit.length};
-const report={date:'2026-10-19',counts,schema:{documents:13,status:'passed',validator:'jsonschema 4.26.0; Draft 2020-12'},unit:{groups:16,status:'passed',runner:'Node.js built-in test runner'},browser:{status:browser.status,chapters:browser.chapters,checks:browser.checks},regression:{status:regression.status,checks:regression.checks},chemistry:'Author reviewed; independent expert review pending',limitations:['Chromium on Windows tested; Safari/Firefox not tested','Accessibility checks are targeted and not certification','No remote repository or live deployment supplied']};
+const report={date:'2026-10-19',counts,schema:{documents:13,status:'passed',validator:'jsonschema 4.26.0; Draft 2020-12'},unit:{groups:20,status:'passed',runner:'Node.js built-in test runner',files:['tests/unit.test.mjs','tests/chapter02-review.test.mjs']},auditInfrastructure:{groups:8,status:'passed',file:'tests/audit.test.mjs'},browser:{status:browser.status,chapters:browser.chapters,checks:browser.checks},regression:{status:regression.status,checks:regression.checks},chemistry:'Author reviewed; independent expert review pending',limitations:['Chromium on Windows tested; Safari/Firefox not tested','Accessibility checks are targeted and not certification','No remote repository or live deployment supplied']};
 fs.writeFileSync('artifacts/test-results.json',JSON.stringify(report,null,2)+'\n');
 const rows=chapters.map(c=>`| ${c.id} | ${c.title} | ${c.lessons.length} | ${c.exercises.length} | ${c.exercises.reduce((n,e)=>n+e.stages.length,0)} | Passed |`).join('\n');
 fs.writeFileSync('FINAL_REPORT.md',`# Orgo Field Notes — completion report
@@ -34,10 +34,10 @@ ${rows}
 ## Verification
 
 - Draft 2020-12 validation: 12 chapter documents plus the molecule repository passed.
-- Unit/integration: 16 test groups passed, including graph/formula consistency, references, answer semantics, storage bounds, and concealment.
+- Unit/integration: 20 application test groups passed, including graph/formula consistency, references, answer semantics, storage bounds, challenge concealment, revised stereochemical aliases, Fischer consistency and polarimetry arithmetic. Eight additional audit-infrastructure groups passed.
 - Full Playwright run: every lesson step and embedded atom challenge, every guided stage with rejection and success paths, keyboard atom selection, dark mode, reduced motion, mobile navigation, and offline navigation passed.
 - Final regression: ${regression.checks.length} groups passed, including stage persistence, export/import/reset, strict naming punctuation, assisted progress, both website-to-offline and offline-to-offline downloads, and answer checking with networking disabled.
-- All 50 concepts checked at 320, 375, and 768 px without page overflow. Large-molecule alternative atom buttons have 44 px touch targets. Targeted contrast corrections were applied. Desktop, mobile, Fischer, and Newman screenshots were visually reviewed.
+- All ${counts.lessons} concepts checked at 320, 375, and 768 px without page overflow. Large-molecule alternative atom buttons have 44 px touch targets. Targeted contrast corrections were applied. Desktop, mobile, Fischer, and Newman screenshots were visually reviewed.
 - No JavaScript page errors were recorded in the passing final suites.
 
 Detailed evidence: \`artifacts/test-results.json\`, \`artifacts/browser.json\`, \`artifacts/regression.json\`, and per-chapter browser reports. Inventories: \`artifacts/molecule-audit.json\` and \`artifacts/exercise-audit.json\`.

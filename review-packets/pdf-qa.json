@@ -28,32 +28,6 @@
       "sha256": "c2dba411b3338c44571639ffd3b913b3042b47e59af8260990e760bcd9ec522e"
     },
     {
-      "chapter": 2,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 8,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        4,
-        8
-      ],
-      "sha256": "95822bcc18a2f741f330b110076ff0cac6109f017089a3137aeaf3575613ab79"
-    },
-    {
-      "chapter": 2,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 46,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        23,
-        46
-      ],
-      "sha256": "060f2aac946b1541b654c298dcb8b85b84ff822412d4639e446822aa0db2aa35"
-    },
-    {
       "chapter": 3,
       "file": "01-BLIND-EXERCISES.pdf",
       "pages": 4,
@@ -306,12 +280,37 @@
         37
       ],
       "sha256": "bc1986908a231bca738baf4e58c7d4b7b8e9614768a93d934215a8791ff4abc4"
+    },
+    {
+      "chapter": 2,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 12,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "sha256": "e012e39321a4a698d72facd5c8750239b5b5df5daad45525cd3bdf06170dca3f"
+    },
+    {
+      "chapter": 2,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 65,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        32,
+        65
+      ],
+      "sha256": "bf03f526271ff3801949933bd4cbec0d24101f86441731ff59eab2e50be892f8"
     }
   ],
   "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
   "visualInspection": {
     "status": "sampled-pages-inspected",
-    "samplePages": 90,
-    "note": "Contact sheets for all 24 PDFs and representative full-size pages inspected. Stage prompt/options grouping and final-page pagination repaired. This is sampled layout QA, not complete chemistry review."
+    "note": "Previously inspected samples retained for unchanged chapters. Revised Chapter 2: eight sampled pages plus full-size Fischer and optical exercise pages rendered and visually inspected."
   }
 }

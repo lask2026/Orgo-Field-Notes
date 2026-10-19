@@ -53,3 +53,13 @@
 - Validation: 8 audit infrastructure tests and 16 existing unit/integration tests passed; 13 schema documents passed; all 12 packet integrity checks passed. All 24 PDFs passed extracted-text coverage checks; 90 sample pages rendered through Poppler, with contact sheets and representative pages visually inspected. Pagination was repaired to keep stage prompts/options together.
 - Real Ollama pilot: one blind case and one keyed case completed. The model made chemistry mistakes, recorded in review-results/SMOKE-TEST-NOTES.md; no chapter is marked independently verified. The full 267-case AI review has not been run and no files have been uploaded to AI Studio.
 - Start with review-packets/START-HERE.md and review-packets/INDEX.md.
+
+## Chapter 2 external-review revisions
+
+- Adjudicated all six findings from the user's pasted audit against local chapter source and renderer behavior; decisions are in docs/CHAPTER_02_REVIEW_ADJUDICATION.md. No wrong key was established among the original 15 stages.
+- Added specific/observed optical rotation with dimensionally explicit units and cm-to-dm conversion, enantiomeric-mixture calculations with new numbers, chiral resolution, strain/conformational detail, and relative/absolute-configuration caveats.
+- Expanded explicit correct stereochemical aliases while retaining rejection of opposite descriptors and malformed names. Added the second-sphere ethyl carbon to highlights. Rotated Fischer drawings by 180 degrees to put C1 at the top, preserving S; active challenges were already unhighlighted and are now explicitly tested.
+- Replaced the achiral-butene ee question with a structure-linked achirality question under new workshop ID ez-chirality, so old progress does not silently certify the changed workshop.
+- Current totals: 51 lessons, 59 workshops, 175 stages; Chapter 2 has 6 lessons, 8 workshops and 24 stages. Regenerated both app builds and Chapter 2 PDFs/data/screenshots. Review packages now contain 274 model cases and 803 current screenshot records.
+- Passed: 28 test groups across application, Chapter 2 revision and audit tests; 13 schema documents; full 12-chapter Playwright run; all 12 regression groups; packet integrity checks for all chapters. Revised PDF text and sampled visual rendering checked, including Fischer and optical exercises.
+- Chapter 2 external report remains model evidence, not expert certification. Full independent chemistry review remains pending.

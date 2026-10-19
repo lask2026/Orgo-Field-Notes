@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "3790c3072a422920a2793636cc0e671c8e2a766731209b66b68c3e110873ccb4",
+    "sha256": "afe988d3371a2c61a9c471ef9fb0934bf2b06d6670508568ed7a3ec49866dcc9",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -55,10 +55,18 @@
       "height": 359
     },
     {
+      "id": "conformations-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/conformations-step-3.png",
+      "sha256": "fdb8aadd16107647eaccccc4a660a6810dbff7f3ac00b1ebacf0d638f14e3f40",
+      "width": 661,
+      "height": 359
+    },
+    {
       "id": "chirality-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/chirality-step-1.png",
-      "sha256": "ffeaeb8a3787232e4c5e4e5a50f3aede5002e80b48ff818364a71ef52609fb41",
+      "sha256": "719f1002d21200fca14c1fe1d8545963008c222048d84faaaec274b887fecb1e",
       "width": 661,
       "height": 359
     },
@@ -82,7 +90,7 @@
       "id": "configuration-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/configuration-step-1.png",
-      "sha256": "b984bf4635ae12e7cd53fa442aae9b735f0edcb81fbc6f02c9b8753be9ced873",
+      "sha256": "960f2face3ca69a7e5e19867913441c36518c875d08d8c9576011cd0ca652227",
       "width": 661,
       "height": 359
     },
@@ -90,9 +98,9 @@
       "id": "configuration-step-1-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/configuration-step-1-diagram.png",
-      "sha256": "917815754d776d38b8eba1e94842e4e8f10a2358f1359741903f36ddd3fb6503",
+      "sha256": "0f0b4622ccd6b59a05bd948670cb9d400101d8c2c4898d15aaa5020f6067d65d",
       "width": 661,
-      "height": 300
+      "height": 321
     },
     {
       "id": "configuration-step-2",
@@ -106,9 +114,9 @@
       "id": "configuration-step-2-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/configuration-step-2-diagram.png",
-      "sha256": "917815754d776d38b8eba1e94842e4e8f10a2358f1359741903f36ddd3fb6503",
+      "sha256": "0f0b4622ccd6b59a05bd948670cb9d400101d8c2c4898d15aaa5020f6067d65d",
       "width": 661,
-      "height": 300
+      "height": 321
     },
     {
       "id": "configuration-step-3",
@@ -122,7 +130,7 @@
       "id": "configuration-step-3-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/configuration-step-3-diagram.png",
-      "sha256": "64068b5d227cc9116646ff0495d55648f06d28107e0c8c9c92ed991f353ab25d",
+      "sha256": "fcccb54007007e23372599c79a8c8c7cd1f58439d09523f3490a2fdb8011cf2e",
       "width": 661,
       "height": 300
     },
@@ -139,6 +147,30 @@
       "kind": "learn-molecule",
       "file": "screenshots/alkene-step-2.png",
       "sha256": "d36027a64752982b76e8bc8729d53f6619cd121229c60d51681d95640a602041",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/optical-step-1.png",
+      "sha256": "f372476e4d88226b0db585f8a616361ef028486ea23b0455edd3b4de691e3cec",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/optical-step-2.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/optical-step-3.png",
+      "sha256": "f372476e4d88226b0db585f8a616361ef028486ea23b0455edd3b4de691e3cec",
       "width": 661,
       "height": 359
     },
@@ -266,7 +298,7 @@
       "id": "butane-rotation-stage-2-question",
       "kind": "practice-question",
       "file": "screenshots/butane-rotation-stage-2-question.png",
-      "sha256": "8c2dcdbccdd9ed1249986c56a0ebe0e62787dd5ded830665d5e9f9fea12f76eb",
+      "sha256": "3fb85751777cfb8fb9c6507424f724096933f4b041ed5e8b1589d37760b3fb43",
       "width": 607,
       "height": 291
     },
@@ -274,7 +306,7 @@
       "id": "butane-rotation-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/butane-rotation-stage-2-feedback.png",
-      "sha256": "bf1e1f3157d7f310d1c88f954fb750bc5672924e87f77d64514028e9ecf87a51",
+      "sha256": "a18fed17b235913aca48ad1b3447f7ea03e7cc5cbc33fcff0aa59bd790c32520",
       "width": 607,
       "height": 326
     },
@@ -410,9 +442,9 @@
       "id": "fischer-cip-diagram",
       "kind": "practice-diagram",
       "file": "screenshots/fischer-cip-diagram.png",
-      "sha256": "2afa82b3e8a81381d254bee7e733ab919c494bc30a04c29ce9be4eab56338523",
+      "sha256": "cb5651f8dc122d8f2f1f6137c31c265d6b81199103261714e749896ff9a2da9a",
       "width": 661,
-      "height": 300
+      "height": 321
     },
     {
       "id": "fischer-cip-stage-1-feedback",
@@ -474,95 +506,335 @@
       "id": "fischer-cip-complete",
       "kind": "practice-complete",
       "file": "screenshots/fischer-cip-complete.png",
-      "sha256": "04de144c9f52a46a239d058b041cfa0be2eaa0ff6ca54f50e883d3b26fbbfbb2",
+      "sha256": "513145dbd54b89cd03f2cd66c76c893911d61a35df46ff6c783b32703c70a461",
       "width": 1324,
-      "height": 885
+      "height": 907
     },
     {
-      "id": "ez-ee-stage-1-molecule",
+      "id": "ez-chirality-stage-1-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/ez-ee-stage-1-molecule.png",
+      "file": "screenshots/ez-chirality-stage-1-molecule.png",
       "sha256": "ffd882aa4413bb5bdc5ac88662e865c494be3f024c39467aafd5d81b8105dce5",
       "width": 661,
       "height": 419
     },
     {
-      "id": "ez-ee-stage-1-question",
+      "id": "ez-chirality-stage-1-question",
       "kind": "practice-question",
-      "file": "screenshots/ez-ee-stage-1-question.png",
+      "file": "screenshots/ez-chirality-stage-1-question.png",
       "sha256": "e46d9f6332d858a448113c05bb110dab2c364308b7610c21dd2d6c1cf435eac3",
       "width": 607,
       "height": 162
     },
     {
-      "id": "ez-ee-stage-1-feedback",
+      "id": "ez-chirality-stage-1-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/ez-ee-stage-1-feedback.png",
+      "file": "screenshots/ez-chirality-stage-1-feedback.png",
       "sha256": "dc4cca9a60e6e1ae8b315a7550e1545a072b8a2f0715be1ad31a435bfba44d26",
       "width": 607,
       "height": 237
     },
     {
-      "id": "ez-ee-stage-2-molecule",
+      "id": "ez-chirality-stage-2-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/ez-ee-stage-2-molecule.png",
+      "file": "screenshots/ez-chirality-stage-2-molecule.png",
       "sha256": "ef1d8f39441cf3e46cc1d9d951f26194f85fb01d1713ebab6f740fea109e3553",
       "width": 661,
       "height": 359
     },
     {
-      "id": "ez-ee-stage-2-question",
+      "id": "ez-chirality-stage-2-question",
       "kind": "practice-question",
-      "file": "screenshots/ez-ee-stage-2-question.png",
+      "file": "screenshots/ez-chirality-stage-2-question.png",
       "sha256": "6d00da5fbbf01deb1a0f9be41d00c72097c10d3e81f0627c69e1e0297abb2fc9",
       "width": 607,
       "height": 255
     },
     {
-      "id": "ez-ee-stage-2-feedback",
+      "id": "ez-chirality-stage-2-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/ez-ee-stage-2-feedback.png",
+      "file": "screenshots/ez-chirality-stage-2-feedback.png",
       "sha256": "c32cbc46379cb37d8ab2cf4085520388bebc98ce35c1ba3b190fdf1d4a24f781",
       "width": 607,
       "height": 291
     },
     {
-      "id": "ez-ee-stage-3-molecule",
+      "id": "ez-chirality-stage-3-molecule",
       "kind": "practice-molecule",
-      "file": "screenshots/ez-ee-stage-3-molecule.png",
+      "file": "screenshots/ez-chirality-stage-3-molecule.png",
       "sha256": "34498a8234997edca0fcb73b4b2d4a81a12f004820281e146682d3103b13fd89",
       "width": 661,
       "height": 359
     },
     {
-      "id": "ez-ee-stage-3-question",
+      "id": "ez-chirality-stage-3-question",
       "kind": "practice-question",
-      "file": "screenshots/ez-ee-stage-3-question.png",
-      "sha256": "99ce2097d815578a7ebf11258fac7f8beb045039196903dc9a43344aa090b205",
+      "file": "screenshots/ez-chirality-stage-3-question.png",
+      "sha256": "eba91b5c26269c900df30a5e0c2028cd18ffd23d2d1e6238764a0546f298e320",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "ez-chirality-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/ez-chirality-stage-3-feedback.png",
+      "sha256": "b6405a5aa298f5238736fb1a21e9db8a111417d6bde7b3c050b8168a4ad67afe",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "ez-chirality-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/ez-chirality-complete.png",
+      "sha256": "55b3aa76e1e5bb3cb536eeafcd1fa87824d97496e1af558e0e534181d1e0109f",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "specific-rotation-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/specific-rotation-stage-1-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "specific-rotation-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/specific-rotation-stage-1-question.png",
+      "sha256": "ffacf82371f5ed7f7069946b8b977d640f5a6d535cf7599bcaba4f5162ba0f1b",
       "width": 607,
       "height": 255
     },
     {
-      "id": "ez-ee-stage-3-feedback",
+      "id": "specific-rotation-stage-1-feedback",
       "kind": "practice-feedback",
-      "file": "screenshots/ez-ee-stage-3-feedback.png",
-      "sha256": "1b07829f8e5501bcf1cd3dd8dab0076c42a1ac41de561c244d6065237864a54c",
+      "file": "screenshots/specific-rotation-stage-1-feedback.png",
+      "sha256": "e286bea8f4e7590e15573b8fba0edeab6b05a78dc9bf8c690ca78bf8d40868b6",
       "width": 607,
       "height": 291
     },
     {
-      "id": "ez-ee-complete",
+      "id": "specific-rotation-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/specific-rotation-stage-2-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "specific-rotation-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/specific-rotation-stage-2-question.png",
+      "sha256": "201f463715516bd3d7a608412cb2d556f0956a292eb1bc66df70f43d3055007d",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "specific-rotation-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/specific-rotation-stage-2-feedback.png",
+      "sha256": "72a1e9706fbb2c1d176152c935839a71ced1c07455a89a39b5c49e56ea32007c",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "specific-rotation-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/specific-rotation-stage-3-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "specific-rotation-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/specific-rotation-stage-3-question.png",
+      "sha256": "fbc6502aaad3a0b4c58a248a5d72cccdaa6e9f7141770a29f4fb83288a3b9aa7",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "specific-rotation-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/specific-rotation-stage-3-feedback.png",
+      "sha256": "79a69b4d11b068462463e3738d7e830ac428f7a32a05b811604c5d8bce58d6ae",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "specific-rotation-complete",
       "kind": "practice-complete",
-      "file": "screenshots/ez-ee-complete.png",
-      "sha256": "a0e97f84980d6ce97d73854833527353d12c7df178714e21ab206c6ded6a7fd4",
+      "file": "screenshots/specific-rotation-complete.png",
+      "sha256": "c9211c65702bef6afd6c0ce99d4dc42e2d02ea5d90298bd056e1522c16639add",
       "width": 1324,
-      "height": 574
+      "height": 657
+    },
+    {
+      "id": "optical-mixture-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/optical-mixture-stage-1-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-mixture-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/optical-mixture-stage-1-question.png",
+      "sha256": "7a3e0af8181eb2a3a2aa8d642b6fb931ceeb0008f68b0a099203767df325b7aa",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "optical-mixture-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/optical-mixture-stage-1-feedback.png",
+      "sha256": "29171089b09be4f12b5e42945863f6600ce5dce0f16bf8ea6466c81b65ea1219",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "optical-mixture-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/optical-mixture-stage-2-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-mixture-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/optical-mixture-stage-2-question.png",
+      "sha256": "16726b3eea6c7be5c3660d4a423c90cf45ac48f11822eb4c68a3661fb36c3972",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "optical-mixture-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/optical-mixture-stage-2-feedback.png",
+      "sha256": "012070dc499fabfad4558fd18a652a031482fabe195e3627fc0f176c0174c6e0",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "optical-mixture-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/optical-mixture-stage-3-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "optical-mixture-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/optical-mixture-stage-3-question.png",
+      "sha256": "b7943bf3c553ee75b951129cea9e4daf329f151ec0d2a904743054e8cf210b06",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "optical-mixture-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/optical-mixture-stage-3-feedback.png",
+      "sha256": "b9e6429da93d9c928a4088a4fac7010ee30392286bb1b7e51bc4ebd40d0eadb6",
+      "width": 607,
+      "height": 337
+    },
+    {
+      "id": "optical-mixture-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/optical-mixture-complete.png",
+      "sha256": "ce4bcecd0569ca39642f0d51d1af686db5d40aaf14a4a71b844c7e01dc94bea8",
+      "width": 1324,
+      "height": 657
+    },
+    {
+      "id": "chiral-resolution-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chiral-resolution-stage-1-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chiral-resolution-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/chiral-resolution-stage-1-question.png",
+      "sha256": "9f0fee52faffbf83cb590d19effdc1db4dec0410918ffb37836e6749c5f0dd22",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "chiral-resolution-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chiral-resolution-stage-1-feedback.png",
+      "sha256": "36942994983724fd1752aea92a20588797f7fd5e028b1aba2137a4a3d69493ff",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "chiral-resolution-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chiral-resolution-stage-2-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chiral-resolution-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/chiral-resolution-stage-2-question.png",
+      "sha256": "5d4aded7f3ecdfc5eb7b63d39e8795d2c32a661f2d2378057fc6699ec56fb399",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "chiral-resolution-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chiral-resolution-stage-2-feedback.png",
+      "sha256": "22cedead26840528a2c81eaf29f0325473d222a5c2bed255bf351f2e9fb5424a",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "chiral-resolution-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chiral-resolution-stage-3-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chiral-resolution-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/chiral-resolution-stage-3-question.png",
+      "sha256": "6f5575bf7a09ed09fd92b6bf2950a36c6e552d12109dd8bc8868394c8f78eb24",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "chiral-resolution-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chiral-resolution-stage-3-feedback.png",
+      "sha256": "e4d3dd5e8642ba501dbca2f532b9f670e96973bc9b04d70dbca7fa748f9fcfbd",
+      "width": 607,
+      "height": 373
+    },
+    {
+      "id": "chiral-resolution-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/chiral-resolution-complete.png",
+      "sha256": "98fe16b75c33df0fdc6fb25235add5d8f7f38bd90537601176f547f761b51655",
+      "width": 1324,
+      "height": 591
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "c98a7def2b08f9045868ad2cbd0d337668e695ef213a929ce35d7e741f1c26d3",
+      "sha256": "ee5380c2bcd5ae02ecd17a1a9d527c7174c623a38b8dc645314f21493c240899",
       "width": 1360,
       "height": 1055
     },
@@ -570,17 +842,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "06b2932353fcaa927bef5dc61c5347c07a38ee4a07de3622c26d7a662a33402d",
+      "sha256": "1ec9cdc5c74184567cad449a1f55d72b889d29ccc4eafc1577412caf5b466f20",
       "width": 375,
-      "height": 2107
+      "height": 2157
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "8d874d282a1000f07de922482761a43c8369f64f6b1c7bf9970b7badbb74586e",
+      "sha256": "7df492ffe77731371e2c2d33d083f6306b9456225a217b6eeceaaa3ab61c4cb9",
       "width": 375,
-      "height": 2107
+      "height": 2157
     }
   ],
   "interactions": [
@@ -637,15 +909,51 @@
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "ez-ee-stage-1",
+      "id": "ez-chirality-stage-1",
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "ez-ee-stage-2",
+      "id": "ez-chirality-stage-2",
       "result": "incorrect rejected; encoded key accepted; continued"
     },
     {
-      "id": "ez-ee-stage-3",
+      "id": "ez-chirality-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "specific-rotation-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "specific-rotation-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "specific-rotation-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "optical-mixture-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "optical-mixture-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "optical-mixture-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chiral-resolution-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chiral-resolution-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chiral-resolution-stage-3",
       "result": "incorrect rejected; encoded key accepted; continued"
     }
   ],

@@ -1,6 +1,6 @@
 # Orgo Field Notes
 
-A reusable MCAT organic chemistry studio with **12 chapters, 50 lessons, 56 guided workshops, 166 stages, and 68 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
+A reusable MCAT organic chemistry studio with **12 chapters, 51 lessons, 59 guided workshops, 175 stages, and 68 molecular graphs**. The only study modes are **Learn & Explore** and **Guided Practice**.
 
 ## Open the application
 
@@ -44,6 +44,8 @@ See [review-packets/START-HERE.md](review-packets/START-HERE.md) for chapter-by-
 - `FINAL_REPORT.md`, `CHEMISTRY_REVIEW.md`, `PROGRESS.md`: completion, review limits, and checkpoints.
 
 The `scripts/author-NN.mjs` files preserve the original authoring process. JSON is the canonical editable content; rerunning an author script replaces its chapter with that draft. `scripts/finalize-content.mjs` records later content refinements. The reference migration script is one-time scaffolding and should not be rerun during routine development.
+
+The subsequent Chapter 2 review and corrections are documented in `docs/CHAPTER_02_REVIEW_ADJUDICATION.md`; `scripts/revise-chapter-02-review.mjs` records that one-time revision. The current chapter JSON and regenerated review PDFs contain the updated material.
 
 ## Review limits
 

@@ -77,6 +77,8 @@ No separate historical bug list was supplied; fixes were based on inspection of 
 
 ## Modeling assumptions
 
+Chapter 2 external-review follow-up: adjudicated six findings from the user's pasted model report. Added optical-rotation coverage, strain/resolution detail and original exercises; improved explicit aliases and highlights; preserved correct Fischer stereochemistry under a 180-degree redraw. Active challenge highlighting was already concealed and is now regression-tested. See docs/CHAPTER_02_REVIEW_ADJUDICATION.md for the finding-by-finding decisions, source checks, and limitations. The report is not treated as expert sign-off or verification of every molecular graph.
+
 - Skeletal structures omit ordinary implicit H atoms; ions omit counterions. Formulas count atoms without a charge suffix; formal charges appear on atoms.
 - Flat connectivity drawings do not assign tetrahedral stereochemistry or represent equilibrium chair geometry. Fischer and E/Z diagrams specify spatial conventions separately.
 - Curved arrows illustrate particular electron-pair movements. Partial mechanisms are described as partial; the renderer is not a mechanistic simulator.

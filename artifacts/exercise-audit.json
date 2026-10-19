@@ -223,14 +223,56 @@
   },
   {
     "chapter": 2,
-    "id": "ez-ee",
+    "id": "ez-chirality",
     "lesson": "alkene",
     "molecule": "z-butene",
     "stages": 3,
     "types": [
       "atoms",
       "text",
+      "choice"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "specific-rotation",
+    "lesson": "optical",
+    "molecule": "butanol2",
+    "stages": 3,
+    "types": [
+      "number",
+      "number",
       "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "optical-mixture",
+    "lesson": "optical",
+    "molecule": "butanol2",
+    "stages": 3,
+    "types": [
+      "choice",
+      "number",
+      "number"
+    ],
+    "browserStatus": "passed",
+    "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "chapter": 2,
+    "id": "chiral-resolution",
+    "lesson": "chirality",
+    "molecule": "butanol2",
+    "stages": 3,
+    "types": [
+      "choice",
+      "choice",
+      "choice"
     ],
     "browserStatus": "passed",
     "scientificReview": "Author reviewed; not independently expert verified"

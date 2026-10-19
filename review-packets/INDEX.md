@@ -5,7 +5,7 @@ Read [START-HERE.md](START-HERE.md) for the AI Studio and PowerShell Llama workf
 | Chapter | Independent solving | Content/rendering audit | Instructions |
 |---|---|---|---|
 | 01 · Nomenclature | [Blind exercises](chapter-01/01-BLIND-EXERCISES.pdf) (13 pages, 238 KiB) | [Full review](chapter-01/02-CHAPTER-REVIEW.pdf) (101 pages, 2741 KiB) | [Prompt](chapter-01/AI-STUDIO-PROMPT.txt) |
-| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (8 pages, 158 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (46 pages, 1185 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
+| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (12 pages, 166 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (65 pages, 1674 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
 | 03 · Bonding | [Blind exercises](chapter-03/01-BLIND-EXERCISES.pdf) (4 pages, 103 KiB) | [Full review](chapter-03/02-CHAPTER-REVIEW.pdf) (28 pages, 759 KiB) | [Prompt](chapter-03/AI-STUDIO-PROMPT.txt) |
 | 04 · Analyzing Organic Reactions | [Blind exercises](chapter-04/01-BLIND-EXERCISES.pdf) (6 pages, 138 KiB) | [Full review](chapter-04/02-CHAPTER-REVIEW.pdf) (42 pages, 1203 KiB) | [Prompt](chapter-04/AI-STUDIO-PROMPT.txt) |
 | 05 · Alcohols | [Blind exercises](chapter-05/01-BLIND-EXERCISES.pdf) (5 pages, 139 KiB) | [Full review](chapter-05/02-CHAPTER-REVIEW.pdf) (36 pages, 1008 KiB) | [Prompt](chapter-05/AI-STUDIO-PROMPT.txt) |

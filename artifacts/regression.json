@@ -7,7 +7,7 @@
     "Hint-assisted completion does not increment independent-solve count",
     "Downloaded app loads and checks answers with network disabled",
     "Save App works again from file:// with no dependency fetches",
-    "All 50 concepts at 320, 375, 768px: no page overflow; one h1/main; named controls",
+    "All 51 concepts at 320, 375, 768px: no page overflow; one h1/main; named controls",
     "Large-molecule atom controls have 44px touch targets",
     "Interactive Newman angle changes interpretation; Fischer diagram rendered",
     "TLC eluent slider updates model Rf",

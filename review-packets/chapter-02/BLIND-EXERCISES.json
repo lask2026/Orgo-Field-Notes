@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "3790c3072a422920a2793636cc0e671c8e2a766731209b66b68c3e110873ccb4",
+    "sha256": "afe988d3371a2c61a9c471ef9fb0934bf2b06d6670508568ed7a3ec49866dcc9",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -126,7 +126,7 @@
           "options": [
             "Anti",
             "Gauche",
-            "Fully eclipsed"
+            "Totally (fully) eclipsed"
           ]
         },
         {
@@ -279,11 +279,11 @@
       },
       "diagram": {
         "type": "fischer",
-        "top": "CH₂CH₃",
-        "bottom": "CH₃",
-        "left": "OH",
-        "right": "H",
-        "caption": "Fischer projection of butan-2-ol. Horizontal bonds point toward you; vertical bonds point away."
+        "top": "CH₃",
+        "bottom": "CH₂CH₃",
+        "left": "H",
+        "right": "OH",
+        "caption": "Fischer projection of butan-2-ol with C1 at the top. Horizontal bonds point toward you; vertical bonds point away."
       },
       "stages": [
         {
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "id": "ez-ee",
+      "id": "ez-chirality",
       "molecule": {
         "atoms": [
           {
@@ -359,20 +359,264 @@
       },
       "stages": [
         {
-          "id": "ez-ee:stage-1",
+          "id": "ez-chirality:stage-1",
           "type": "atoms",
           "prompt": "Select both alkene carbon atoms."
         },
         {
-          "id": "ez-ee:stage-2",
+          "id": "ez-chirality:stage-2",
           "type": "text",
           "prompt": "Assign E or Z."
         },
         {
-          "id": "ez-ee:stage-3",
+          "id": "ez-chirality:stage-3",
+          "type": "choice",
+          "prompt": "Why does a pure sample of this Z-but-2-ene show no ordinary optical rotation?",
+          "options": [
+            "It is achiral",
+            "It is necessarily a 50:50 enantiomer mixture",
+            "Every Z alkene is chiral"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "specific-rotation",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "context": "Hypothetical polarimetry data for an enantiomerically pure chiral sample with the illustrated connectivity: αobs = +2.4°, c = 0.080 g/mL, path length = 5.0 cm. These are practice data, not literature measurements for butan-2-ol. Do not infer the sign from the flat molecular drawing.",
+      "stages": [
+        {
+          "id": "specific-rotation:stage-1",
           "type": "number",
-          "prompt": "Separately, what is the ee of a 75:25 enantiomer mixture?",
+          "prompt": "Convert the 5.0 cm sample path length to dm.",
+          "unit": "dm"
+        },
+        {
+          "id": "specific-rotation:stage-2",
+          "type": "number",
+          "prompt": "For αobs = +2.4°, c = 0.080 g/mL and l = 0.50 dm, calculate [α].",
+          "unit": "°·mL·g⁻¹·dm⁻¹"
+        },
+        {
+          "id": "specific-rotation:stage-3",
+          "type": "number",
+          "prompt": "At the same wavelength, temperature and solvent, predict αobs when c = 0.040 g/mL and l = 2.0 dm.",
+          "unit": "degrees"
+        }
+      ]
+    },
+    {
+      "id": "optical-mixture",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "context": "The illustrated chiral connectivity represents a pair of enantiomers. The 85:15 composition and +40° reference rotation are hypothetical practice data; no (+)/(−) assignment is made from the drawing.",
+      "stages": [
+        {
+          "id": "optical-mixture:stage-1",
+          "type": "choice",
+          "prompt": "The major enantiomer is dextrorotatory. Which sign describes its observed rotation?",
+          "options": [
+            "Positive (+)",
+            "Negative (−)",
+            "The sign follows R/S without measurement"
+          ]
+        },
+        {
+          "id": "optical-mixture:stage-2",
+          "type": "number",
+          "prompt": "A mixture contains 85% of that enantiomer and 15% of its mirror image. What is ee?",
           "unit": "%"
+        },
+        {
+          "id": "optical-mixture:stage-3",
+          "type": "number",
+          "prompt": "The pure major enantiomer gives +40° at the same total concentration, path length and other conditions. Predict the mixture rotation.",
+          "unit": "degrees"
+        }
+      ]
+    },
+    {
+      "id": "chiral-resolution",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "chiral-resolution:stage-1",
+          "type": "choice",
+          "prompt": "Why does ordinary achiral distillation generally fail to resolve two enantiomers?",
+          "options": [
+            "They have the same boiling point under achiral conditions",
+            "They always have different molecular formulas",
+            "They are constitutional isomers"
+          ]
+        },
+        {
+          "id": "chiral-resolution:stage-2",
+          "type": "choice",
+          "prompt": "For a suitable substrate, reaction with one enantiomer of a resolving agent can create…",
+          "options": [
+            "Separable diastereomeric derivatives or salts",
+            "Two identical achiral molecules in every case",
+            "A change in molecular formula that proves R configuration"
+          ]
+        },
+        {
+          "id": "chiral-resolution:stage-3",
+          "type": "choice",
+          "prompt": "A remote substituent change retains the local arrangement at a tetrahedral stereocenter but changes its CIP priorities. Its R/S label…",
+          "options": [
+            "May change without physical inversion",
+            "Must stay the same whenever geometry is retained",
+            "Determines whether optical rotation is positive"
+          ]
         }
       ]
     }

@@ -137,7 +137,7 @@ def build(directory):
   reader=PdfReader(dest);text='\n'.join(p.extract_text() or '' for p in reader.pages)
   if len(text)<500:raise ValueError('PDF text extraction failed')
   out.append({'file':filename,'pages':len(reader.pages),'bytes':dest.stat().st_size,'sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'blind':blind})
- (directory/'pdf-manifest.json').write_text(json.dumps({'chapter':ch['id'],'sourceSnapshot':packet['sourceSnapshot'],'files':out},indent=2)+'\n',encoding='utf-8')
+ (directory/'pdf-manifest.json').write_text(json.dumps({'chapter':ch['id'],'sourceSnapshot':packet['sourceSnapshot'],'files':out},indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f"PDF chapter {ch['id']}: "+', '.join(f"{p['pages']} pages / {p['bytes']//1024} KiB" for p in out),flush=True)
 
 if __name__=='__main__':
