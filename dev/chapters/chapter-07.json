@@ -110,21 +110,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "The conjugate base is resonance stabilized",
+          "title": "α-Carbon Acidity (pKa 9–25), Enolate Resonance Hybrid & α-Halogenation / Haloform",
           "items": [
             {
-              "label": "Locate C=O",
-              "text": "Use carbonyl carbon as reference"
+              "label": "Why α-Hydrogens Are Exceptionally Acidic (pKa ~19–20 vs Alkane ~50)",
+              "text": "Deprotonating the α-carbon creates a resonance-stabilized enolate ion (R–CO–CH₂⁻ ↔ R–C(O⁻)=CH₂) that places negative charge on electronegative oxygen.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Adjacent carbon",
-              "text": "Alpha carbon"
+              "label": "Active Methylene (β-Dicarbonyls, pKa ~9–11)",
+              "text": "A CH₂ flanked by TWO carbonyls delocalizes negative charge over BOTH oxygens, making it acidic enough for complete deprotonation by NaOEt or NaOH.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Check for H",
-              "text": "Its loss can give an enolate"
+              "label": "Ambident Enolate Reactivity",
+              "text": "Although oxygen holds more negative charge in the hybrid, carbon-electrophiles (R–X, C=O) react predominantly at the α-CARBON to preserve the strong C=O π bond!",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Ald/Ket α-H pKa ~19–20",
+            "β-Dicarbonyl α-H pKa ~9–11",
+            "Enolate: O⁻ (Major) ↔ C⁻ (Attacks C!)",
+            "α-Halogenation: Acid=1× vs Base=Haloform"
+          ],
+          "comparison": [
+            [
+              "Simple Ketone / Aldehyde",
+              "pKa ~19–20 (1 C=O resonance sink)",
+              "Needs LDA for 100% enolate (RO⁻ gives equilibrium)"
+            ],
+            [
+              "Ester / Amide α-H",
+              "pKa ~25–30 (O/N donates into C=O)",
+              "Less acidic α-H than ketone/aldehyde"
+            ],
+            [
+              "β-Diketone / β-Keto Ester",
+              "pKa ~9–11 (2 C=O resonance sinks!)",
+              "100% deprotonated by mild EtO⁻ / HO⁻"
+            ]
+          ],
+          "theme": "alpha-enolate",
           "figure": {
             "type": "resonance",
             "steps": [
@@ -136,47 +166,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Acid-Catalyzed vs. Base-Promoted α-Halogenation & Haloform Test",
+          "prompt": "Are you halogenating a ketone in ACID or BASE?",
           "items": [
             {
-              "label": "H on an alpha carbon",
-              "text": "Consider enolate stabilization"
+              "label": "Acid + Br₂ (CH₃COOH / H⁺)",
+              "outcome": "Stops Cleanly at MONO-α-Bromo Ketone!",
+              "text": "Proceeds via the enol: adding the first inductive Br atom makes the carbonyl oxygen LESS basic, slowing down the second enolization."
             },
             {
-              "label": "Carbonyl carbon itself",
-              "text": "Not the alpha carbon"
+              "label": "Base + Excess Br₂/I₂ on Methyl Ketone (R–CO–CH₃)",
+              "outcome": "Polyhalogenation → Haloform Cleavage (CHX₃↓ + RCOO⁻)",
+              "text": "Each inductive X makes the remaining α-protons MORE acidic! All 3 α-H atoms are replaced (–CX₃), and HO⁻ cleaves it into carboxylate + yellow CHI₃ precipitate."
             },
             {
-              "label": "No H at the site",
-              "text": "Cannot lose an H there"
+              "label": "Chiral α-Carbon in Acid or Base",
+              "outcome": "Equilibrates to Racemic Mixture via Planar Enol/Enolate!",
+              "text": "Only stereocenters AT the α-carbon with at least one α-H can racemize; β/γ stereocenters never racemize via enolization."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Using Base + Br₂ for Monobromination or Racemizing Non-α Stereocenters",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Treating every C–H as equally acidic"
+              "label": "Common Trap",
+              "text": "Using NaOH + 1 eq Br₂ expecting clean monobromination, or claiming a β-chiral carbon racemizes in base."
             },
             {
-              "label": "Check",
-              "text": "Position and conjugate-base stabilization"
+              "label": "Correct Reasoning",
+              "text": "Base-promoted halogenation accelerates after the first halogen is added (giving polyhalogenation); only α-stereocenters bearing an α-H can racemize via planar enols/enolates."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Iodoform Test for Methyl Ketones & Thioester Acidity in Acetyl-CoA",
           "items": [
             {
-              "label": "Enolate-like intermediates",
-              "text": "Enable C–C bond changes"
+              "label": "Thioester α-Acidity (Acetyl-CoA)",
+              "outcome": "Thioester α-H Is as Acidic as a Ketone (pKa ~21)",
+              "text": "Sulfur (3p) has poor orbital overlap with carbon (2p), so –SR doesn’t compete with α-carbanion delocalization into C=O!"
             },
             {
-              "label": "Metabolism",
-              "text": "Track bonds next to carbonyls"
+              "label": "Iodoform Diagnostic Test (I₂ / NaOH)",
+              "outcome": "Yellow CHI₃ Precipitate = Methyl Ketone (or Ethanol / CH₃CH(OH)R)",
+              "text": "Secondary methyl alcohols (CH₃CH(OH)R) are oxidized in situ by I₂ to methyl ketones and also give a positive yellow precipitate."
+            },
+            {
+              "label": "Triose Phosphate Isomerase (TIM)",
+              "outcome": "Enediol Intermediate Interconverts DHAP ⇌ GAP",
+              "text": "Active-site Glu base abstracts an α-proton to isomerize a ketose phosphate into an aldose phosphate."
             }
           ]
         }
@@ -244,22 +285,52 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Kinetic control vs. thermodynamic control",
+          "layout": "flow",
+          "title": "Keto–Enol Tautomerism vs. Resonance & Kinetic vs. Thermodynamic Enolate Control",
           "items": [
             {
-              "label": "Keto/enol",
-              "text": "H and double-bond positions differ"
+              "label": "Tautomers Are Constitutional Isomers (NOT Resonance Contributors!)",
+              "text": "Tautomerism moves a PROTON (α-H ↔ O–H) and shifts a π bond (⇌ equilibrium arrow); resonance moves ONLY electrons with all nuclei fixed (↔ double-headed arrow).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Enolate",
-              "text": "Deprotonated species, not a neutral tautomer"
+              "label": "Why Keto Usually Dominates Over Enol (>99%)",
+              "text": "The sum of bond energies for C=O + C–H is ~45–60 kJ/mol stronger than C=C + O–H. Exceptions: phenol (aromaticity!) and 1,3-diketones (conjugated + intramolecular H-bond!).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Conditions",
-              "text": "Kinetic versus equilibrium outcome"
+              "label": "Kinetic vs. Thermodynamic Enolate Regioselectivity",
+              "text": "Unsymmetrical ketones (2-methylcyclohexanone) give the LESS substituted enolate with bulky LDA at −78 °C (kinetic) and the MORE substituted enolate with NaOEt at 25 °C (thermodynamic).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Tautomers = Constitutional Isomers (Move H + π)",
+            "Resonance = Move e⁻ Only",
+            "Kinetic = LDA, −78°C (Less Hindered)",
+            "Thermo = NaOEt, 25°C (More Subst)"
+          ],
+          "comparison": [
+            [
+              "Keto vs Enol Tautomers",
+              "Constitutional isomers in equilibrium (⇌)",
+              "Keto heavily favored (C=O + C–H stronger than C=C + O–H)"
+            ],
+            [
+              "Kinetic Enolate",
+              "LDA, THF, −78 °C (Irreversible, Bulky)",
+              "Deprotonates LESS hindered α-C (fastest rate, lower Ea)"
+            ],
+            [
+              "Thermodynamic Enolate",
+              "NaOR / KH, 25 °C (Reversible, Equilibrating)",
+              "Forms MORE substituted C=C double bond (lowest energy)"
+            ]
+          ],
+          "theme": "kinetic-thermo-enolate",
           "figure": {
             "type": "structures",
             "steps": [
@@ -270,47 +341,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Kinetic vs. Thermodynamic Enolate Reaction Conditions Selector",
+          "prompt": "Look at the base, solvent, and temperature over the reaction arrow:",
           "items": [
             {
-              "label": "Only electrons move",
-              "text": "Resonance contributors"
+              "label": "LDA (Lithium Diisopropylamide), THF, −78 °C",
+              "outcome": "KINETIC Enolate (Less Substituted α-Carbon)",
+              "text": "Hindered strong base plucks the most sterically accessible α-H irreversibly at −78 °C before equilibration can occur."
             },
             {
-              "label": "H and pi-bond placement change",
-              "text": "Tautomerization"
+              "label": "NaOEt / EtOH or KH, Room Temp / Heat (25 °C)",
+              "outcome": "THERMODYNAMIC Enolate (More Substituted α-Carbon)",
+              "text": "Reversible proton transfer allows equilibration to the more alkyl-substituted, lower-energy internal C=C enolate."
             },
             {
-              "label": "A proton is removed",
-              "text": "Check the charged conjugate base"
+              "label": "Phenol or 2,4-Pentanedione (β-Diketone)",
+              "outcome": "Enol Tautomer Is Unusually Favored!",
+              "text": "Phenol is ~100% enol to preserve aromaticity; β-diketones favor the enol via conjugation + a 6-membered intramolecular H-bond ring."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Calling Keto and Enol \"Resonance Structures\" or Using ↔ Instead of ⇌",
           "items": [
             {
-              "label": "Avoid",
-              "text": "More substituted always wins"
+              "label": "Common Trap",
+              "text": "Saying \"acetone is stabilized by keto-enol resonance\" or drawing a double-headed resonance arrow ↔ between a ketone and its enol."
             },
             {
-              "label": "Check",
-              "text": "Substrate, temperature, base and equilibration conditions"
+              "label": "Correct Reasoning",
+              "text": "Keto and enol forms have different H atom connectivity (constitutional isomers that can be observed separately in NMR); Enolate anions are resonance hybrids!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Pyruvate Kinase Driving Force, DNA Base Tautomer Mutations & Deuterium Exchange",
           "items": [
             {
-              "label": "Enolate selection",
-              "text": "Chooses the alpha reaction site"
+              "label": "Phosphoenolpyruvate (PEP) → Pyruvate",
+              "outcome": "Locked Enol Phosphate Tautomerizes to Ketone (ΔG°′ = −62 kJ/mol)",
+              "text": "PEP is trapped in the high-energy enol form; hydrolysis releases the enol, which tautomerizes to pyruvate and drives ATP synthesis!"
             },
             {
-              "label": "Synthesis",
-              "text": "Controls where a new bond forms"
+              "label": "α-Deuterium Exchange in D₂O / OD⁻",
+              "outcome": "Replaces All Enolizable α-Protons with D",
+              "text": "Measuring how many H atoms are replaced by D in D₂O/NaOD (via MS Δm/z) reveals the exact number of α-hydrogens!"
+            },
+            {
+              "label": "DNA Base Rare Tautomers",
+              "outcome": "Imino / Enol Tautomers Cause Point Mutations",
+              "text": "Transient keto→enol or amino→imino tautomerization alters H-bond donor/acceptor patterns during DNA replication."
             }
           ]
         }
@@ -395,21 +477,50 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "New bond: donor alpha C to acceptor carbonyl C",
+          "title": "Aldol Addition (β-Hydroxy Carbonyl), Dehydration Condensation (α,β-Enone) & Retro-Aldol",
           "items": [
             {
-              "label": "New bond",
-              "text": "Donor alpha C to acceptor carbonyl C"
+              "label": "Step 1: Nucleophilic Addition (Cα Attacks Partner C=O)",
+              "text": "An α-enolate (or enol in acid) attacks an electrophilic carbonyl carbon to form a new Cα–Cβ bond and a β-hydroxy aldehyde/ketone (\"ald-ol\").",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Addition",
-              "text": "Beta-hydroxy carbonyl"
+              "label": "Step 2: Dehydration to α,β-Unsaturated Carbonyl (Heat Δ)",
+              "text": "Warming in base (E1cb via enolate expulsion of HO⁻) or acid eliminates H₂O to form a conjugated C=C–C=O system.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Condensation",
-              "text": "Water loss gives an unsaturated carbonyl"
+              "label": "Crossed Aldol & Intramolecular Aldol Ring Size",
+              "text": "Clean crossed aldols use one partner with NO α-H (benzaldehyde, formaldehyde) OR pre-form a directed kinetic enolate with LDA at −78 °C. Intramolecular aldols favor 5- and 6-membered rings.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Aldol Addition → β-Hydroxy Carbonyl",
+            "Condensation (+Δ, -H₂O) → α,β-Unsaturated C=O",
+            "Retro-Aldol = Cleave α–β Bond!"
+          ],
+          "comparison": [
+            [
+              "Aldol Addition (Cold/Mild)",
+              "Enolate + Ald/Ket → β-Hydroxy Carbonyl",
+              "Forms new Cα–Cβ σ bond (100% atom economy)"
+            ],
+            [
+              "Aldol Condensation (Heat Δ)",
+              "Eliminates H₂O → α,β-Unsaturated C=O",
+              "Driven by conjugated C=C–C=O π system"
+            ],
+            [
+              "Retro-Aldol Reaction",
+              "Base/Enzyme cleaves Cα–Cβ bond",
+              "Turns β-hydroxy/C=C–C=O back into 2 carbonyls"
+            ]
+          ],
+          "theme": "aldol-condensation",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -421,47 +532,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "3-Step Retro-Aldol Disconnection Trick for Any Exam Structure",
+          "prompt": "How do you find the starting carbonyls of an aldol product?",
           "items": [
             {
-              "label": "OH retained",
-              "text": "Aldol addition"
+              "label": "1. Label the Carbonyl Reference",
+              "outcome": "C=O Is Reference → Adjacent = α → Next = β",
+              "text": "In a valid aldol product, the β-carbon MUST bear either an –OH group (addition) or a C=C double bond to α (condensation)."
             },
             {
-              "label": "Water eliminated",
-              "text": "Aldol condensation"
+              "label": "2. Break the Cα–Cβ Bond",
+              "outcome": "Cut Straight Through the α–β Bond",
+              "text": "The α-carbon piece was the NUCLEOPHILIC enolate; the β-carbon piece was the ELECTROPHILIC carbonyl partner."
             },
             {
-              "label": "Alpha–beta bond cleaved",
-              "text": "Consider retro-aldol logic"
+              "label": "3. Restore the Original Functional Groups",
+              "outcome": "α-Carbon Gets H (or H₂); β-Carbon Becomes C=O!",
+              "text": "Convert the β–OH (or β=α alkene) back into a C=O double bond to reveal the two starting aldehydes/ketones!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Drawing a γ-Hydroxy Carbonyl or Forgetting Why HO⁻ Can Leave in E1cb Dehydration",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Every aldol product must be an aldehyde"
+              "label": "Common Trap",
+              "text": "Connecting the carbonyl carbon or β-carbon instead of the α-carbon, or claiming HO⁻ can never leave under any circumstances."
             },
             {
-              "label": "Check",
-              "text": "Ketone donors/acceptors are possible; mixed aldols need role control"
+              "label": "Correct Reasoning",
+              "text": "Aldol ALWAYS forms a 1,3-functionalized (β-hydroxy or α,β-unsaturated) product; in E1cb dehydration, a stabilized α-enolate pushes out HO⁻ to gain C=C–C=O conjugation!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Glycolysis Aldolase (FBP ⇌ DHAP + GAP) & Citrate Synthase / PLP",
           "items": [
             {
-              "label": "Aldolase",
-              "text": "Related carbon-skeleton logic"
+              "label": "Fructose-1,6-Bisphosphate Aldolase",
+              "outcome": "Reversible Retro-Aldol (6C ⇌ 3C + 3C)",
+              "text": "Cleaves the C3–C4 (α–β) bond of fructose-1,6-bisphosphate into DHAP (enamine/enolate donor) and GAP (aldehyde acceptor)."
             },
             {
-              "label": "Bond tracking",
-              "text": "Follow donor and acceptor atoms"
+              "label": "Class I vs. Class II Aldolases",
+              "outcome": "Schiff Base Enamine (Lys) vs. Zn²⁺ Enolate",
+              "text": "Human Class I aldolase forms a protonated Schiff base iminium with Lys to act as an electron sink; bacterial Class II uses a Zn²⁺ cofactor."
+            },
+            {
+              "label": "Intramolecular Robinson Annulation",
+              "outcome": "Michael Addition + Intramolecular Aldol",
+              "text": "Fuses a new 6-membered cyclohexenone ring onto an existing ketone scaffold in steroid synthesis."
             }
           ]
         }
@@ -525,22 +647,52 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "An enone has more than one electrophilic site",
+          "layout": "flow",
+          "title": "1,2-Direct vs. 1,4-Conjugate (Michael) Addition & The Stork Enamine Synthesis",
           "items": [
             {
-              "label": "Carbonyl carbon",
-              "text": "Possible direct 1,2-addition"
+              "label": "Two Electrophilic Sites in α,β-Unsaturated Carbonyls",
+              "text": "Resonance (C=C–C=O ↔ ⁺Cβ–Cα=C–O⁻) places δ+ charge on BOTH the carbonyl carbon (1,2-site) and the alkene β-carbon (1,4-site).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Beta carbon",
-              "text": "Possible conjugate 1,4-addition"
+              "label": "1,2- vs. 1,4-Regioselectivity (Hard/Irreversible vs. Soft/Reversible)",
+              "text": "Fierce, irreversible nucleophiles (RLi, RMgBr, LiAlH₄) attack the carbonyl C (1,2); softer or stabilized nucleophiles (R₂CuLi, β-dicarbonyl enolates, enamines, thiols, amines) add to the β-carbon (1,4) to preserve the strong C=O bond!",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Reagent and conditions",
-              "text": "Control selectivity"
+              "label": "Michael Addition + Aldol = Robinson Annulation",
+              "text": "1,4-Michael addition of an enolate to methyl vinyl ketone forms a 1,5-diketone, which cyclizes via intramolecular aldol condensation into a 6-membered cyclohexenone ring.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "1,2-Addition = Carbonyl C (Hard/Fast)",
+            "1,4-Michael = β-Carbon (Soft/Reversible)",
+            "Gilman (R₂CuLi) → 1,4",
+            "RLi / RMgBr → 1,2"
+          ],
+          "comparison": [
+            [
+              "1,2-Direct Addition",
+              "Attacks C=O carbon (Kinetic control)",
+              "Organolithium (RLi), Grignard (RMgBr), LiAlH₄"
+            ],
+            [
+              "1,4-Conjugate (Michael)",
+              "Attacks β-carbon (Thermodynamic)",
+              "Gilman (R₂CuLi), Enolates, Enamines, RSH, R₂NH, CN⁻"
+            ],
+            [
+              "Stork Enamine Reaction",
+              "Enamine + Michael acceptor → 1,5-Dicarbonyl",
+              "Mild, neutral alternative to strong-base enolates"
+            ]
+          ],
+          "theme": "michael-12-14",
           "figure": {
             "type": "structures",
             "steps": [
@@ -552,43 +704,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "1,2-Direct vs. 1,4-Conjugate Nucleophile Classifier",
+          "prompt": "Which nucleophile is reacting with cyclohex-2-en-1-one?",
           "items": [
             {
-              "label": "New bond at carbonyl carbon",
-              "text": "Direct 1,2-addition"
+              "label": "Organolithium (CH₃Li) or Grignard (RMgBr)",
+              "outcome": "1,2-Addition to Carbonyl Carbon → Allylic Alcohol",
+              "text": "Highly basic, localized carbanions attack the highest δ+ center (C=O) irreversibly under kinetic control."
             },
             {
-              "label": "New bond at beta carbon",
-              "text": "Conjugate 1,4-addition; follow protonation/tautomerization"
+              "label": "Gilman Reagent (R₂CuLi), Thiol (RSH), or Amine",
+              "outcome": "1,4-Conjugate Addition to β-Carbon → Saturated Ketone",
+              "text": "Soft nucleophiles add at the β-carbon to form a resonance-stabilized enolate, which tautomerizes to keep the strong C=O π bond!"
+            },
+            {
+              "label": "Stabilized Enolate (β-Diketone) or Stork Enamine",
+              "outcome": "Michael 1,4-Addition → 1,5-Dicarbonyl Product!",
+              "text": "Wait: Aldol gives 1,3-functionalized products; Michael conjugate addition ALWAYS gives a 1,5-dicarbonyl spacing!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Thinking \"1,4-Addition\" Leaves the Nucleophile on Oxygen",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Every enone addition is Michael addition"
+              "label": "Common Trap",
+              "text": "Attaching the nucleophile to Cβ and leaving a permanent substituent on O (or forgetting tautomerization back to C=O)."
             },
             {
-              "label": "Check",
-              "text": "The atom attacked and complete pathway"
+              "label": "Correct Reasoning",
+              "text": "In 1,4-conjugate addition, the nucleophile bonds to Cβ and a proton initially lands on O (forming a 1,4-enol), which immediately tautomerizes to put H on Cα and restore C=O (net 3,4-addition across C=C)!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Cysteine Covalent Drugs (Ibrutinib), Glutathione Detoxification & Ubiquinone",
           "items": [
             {
-              "label": "Biological nucleophiles",
-              "text": "Can react with conjugate acceptors"
+              "label": "Targeted Covalent Kinase Inhibitors",
+              "outcome": "Acrylamide Electrophile + Active-Site Cys–SH",
+              "text": "Drugs like ibrutinib use an α,β-unsaturated amide warhead that undergoes 1,4-thia-Michael addition with a specific cysteine residue."
             },
             {
-              "label": "Covalent inhibitors",
-              "text": "Reaction site matters"
+              "label": "Glutathione (GSH) Detoxification",
+              "outcome": "GSH Thiolate Traps Electrophilic Enones",
+              "text": "Glutathione S-transferase catalyzes 1,4-conjugate addition of GSH to toxic α,β-unsaturated aldehydes produced by lipid peroxidation."
+            },
+            {
+              "label": "Fumarase in the Citric Acid Cycle",
+              "outcome": "Conjugate Hydration of Fumarate → L-Malate",
+              "text": "Adds H₂O stereospecifically across the conjugated double bond of fumarate."
             }
           ]
         }
