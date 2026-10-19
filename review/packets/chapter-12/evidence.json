@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "53b5fe2ea34767d093e1ab347d93c4828308eb32d14eb9838b11f6fa5d0e57eb",
+    "sha256": "b94770f451153af12a6f8cbc8f6fbf1cb44c24d3dafd102797f67e42d01ba88b",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -31,6 +31,14 @@
       "height": 359
     },
     {
+      "id": "solubility-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/solubility-visuals.png",
+      "sha256": "1ed5b40e72ea54994a63be2f12eca919aea273f1442c6af177c14a532dcca83b",
+      "width": 607,
+      "height": 1723
+    },
+    {
       "id": "distillation-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/distillation-step-1.png",
@@ -45,6 +53,14 @@
       "sha256": "ffa7fdb17bb84da9a9fd8480ecae91e20cb1e5b30125d198206a908e7d25f412",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "distillation-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/distillation-visuals.png",
+      "sha256": "3bcc5abddead257c3e9f0ca43ce8b99a1abcd7874c15868cf5500c18632496a7",
+      "width": 607,
+      "height": 1772
     },
     {
       "id": "tlc-step-1",
@@ -71,6 +87,14 @@
       "height": 359
     },
     {
+      "id": "tlc-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/tlc-visuals.png",
+      "sha256": "e29c6001c54a6e7f6a320f5850c1856c11d4f4857fe0e5e2e95bb3b6b0a2b323",
+      "width": 607,
+      "height": 1791
+    },
+    {
       "id": "specialized-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/specialized-step-1.png",
@@ -85,6 +109,14 @@
       "sha256": "4085c25c01a070ee131c85279a09349908c8ea63fc97319335ccbacaf2eeffc9",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "specialized-visuals",
+      "kind": "canonical-visual-summaries",
+      "file": "screenshots/specialized-visuals.png",
+      "sha256": "0670451b6006d3232134e6fb51d74cfd274b73c0c8c5be6e59dee3392375c185",
+      "width": 607,
+      "height": 1738
     },
     {
       "id": "acid-extraction-stage-1-molecule",
@@ -410,23 +442,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "34603349ff6d5411946f87f53a52bb7567bd78c30bfeb0e1dc743d47d3a745cd",
+      "sha256": "c812f81e3ee176331feab91c81f2a22319e12e0b2fc3e40d8c958c4bd40cb5c5",
       "width": 1360,
-      "height": 1138
+      "height": 2060
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "ab694b109cd59e4ab57f58c8dbcc9229a8101c3a06c4d395fad169d97299a130",
+      "sha256": "78c36a56e85473440da97e1fcb2d4a794fcdf6a3c1f5dd446881058af157beec",
       "width": 607,
-      "height": 1027
+      "height": 1059
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "25b934c6fada4bdfc8faaed733e5d03cbf198cfc9b39a6cbc2e50717348a7a36",
+      "sha256": "1b822b12a100f101a01deafd7d5e665752aedb34b22748151deeebe30731dfeb",
       "width": 1000,
       "height": 741
     },
@@ -434,17 +466,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "0217a2c2a08a764fefc5ef2f5e17cc6817c11d38e2ff9622499562528089d50d",
+      "sha256": "31bcf4df993c8f9dbca6f171d101f2b5a03429abd4db6662d7ff296b9b04e0ee",
       "width": 375,
-      "height": 3259
+      "height": 3764
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "96abaae4721906c3c44eb2a621811a3e047b876ac8b57833ac4f0ffb56c664ec",
+      "sha256": "1d341c4eb9142526d18acedf49bef8ddffd4b834a3a110c7e7f6d36f464efefd",
       "width": 375,
-      "height": 2523
+      "height": 3764
     },
     {
       "id": "projection-mobile-dark",

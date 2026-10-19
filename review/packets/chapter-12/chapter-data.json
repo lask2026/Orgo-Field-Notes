@@ -83,7 +83,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Change solubility to move a compound",
+          "items": [
+            {
+              "label": "Phases",
+              "text": "Choose immiscible solvents"
+            },
+            {
+              "label": "Charge",
+              "text": "Acid/base chemistry can favor water solubility"
+            },
+            {
+              "label": "Recovery",
+              "text": "Track the target layer"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Move an acid toward water",
+              "text": "Deprotonate to carboxylate"
+            },
+            {
+              "label": "Recover the neutral acid",
+              "text": "Acidify its aqueous fraction"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Organic layer is always on top"
+            },
+            {
+              "label": "Check",
+              "text": "Density and the target location"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Extraction",
+              "text": "Separate acidic/basic/neutral compounds"
+            },
+            {
+              "label": "Recrystallization",
+              "text": "Use suitable hot/cold solubility differences"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "distillation",
@@ -124,7 +186,73 @@
           "highlights": {},
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Vapor is enriched in the more volatile component",
+          "items": [
+            {
+              "label": "Volatility",
+              "text": "Select separation conditions"
+            },
+            {
+              "label": "Close volatilities",
+              "text": "Fractionation adds equilibrium stages"
+            },
+            {
+              "label": "Thermal stability",
+              "text": "Reduced pressure can lower boiling temperature"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Closer volatilities",
+              "text": "Consider fractional distillation"
+            },
+            {
+              "label": "Decomposition risk",
+              "text": "Consider reduced pressure"
+            },
+            {
+              "label": "Azeotrope",
+              "text": "Ordinary distillation can be limited"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "One fixed boiling-point gap always decides"
+            },
+            {
+              "label": "Check",
+              "text": "Curriculum cutoffs are heuristics; use mixture behavior and pressure"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Method choice",
+              "text": "Volatility and thermal stability"
+            },
+            {
+              "label": "Report",
+              "text": "Temperature together with pressure"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "tlc",
@@ -169,7 +297,73 @@
           },
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Retention competes with the mobile phase",
+          "items": [
+            {
+              "label": "Baseline",
+              "text": "Common origin for measurements"
+            },
+            {
+              "label": "Spot-center distance",
+              "text": "Rf numerator"
+            },
+            {
+              "label": "Solvent-front distance",
+              "text": "Rf denominator; ratio has no units"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Normal-phase silica",
+              "text": "Stronger silica binding generally lowers Rf"
+            },
+            {
+              "label": "Reversed phase",
+              "text": "Nonpolar stationary phase changes polarity trends"
+            },
+            {
+              "label": "Comparing Rf",
+              "text": "Use matching plate and solvent conditions"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Equal Rf proves identity or absolute purity"
+            },
+            {
+              "label": "Check",
+              "text": "Supporting evidence, not a permanent molecular constant"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Monitoring",
+              "text": "Compare starting-material/product spots"
+            },
+            {
+              "label": "Separation",
+              "text": "Related retention principles guide TLC and columns"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "specialized",
@@ -214,7 +408,73 @@
           },
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Match the separation to a molecular property",
+          "items": [
+            {
+              "label": "Charge",
+              "text": "Ion exchange"
+            },
+            {
+              "label": "Pore access",
+              "text": "Size exclusion"
+            },
+            {
+              "label": "Specific interaction",
+              "text": "Affinity"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Anions",
+              "text": "Bind a positively charged anion exchanger"
+            },
+            {
+              "label": "Cations",
+              "text": "Bind a negatively charged cation exchanger"
+            },
+            {
+              "label": "Size exclusion",
+              "text": "Larger species generally elute first"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Anion exchanger must be negative"
+            },
+            {
+              "label": "Check",
+              "text": "The name refers to the ions it binds"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Protein purification",
+              "text": "Combine charge, size and affinity methods"
+            },
+            {
+              "label": "GC–MS",
+              "text": "Volatile-analyte separation plus mass-to-charge analysis"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
