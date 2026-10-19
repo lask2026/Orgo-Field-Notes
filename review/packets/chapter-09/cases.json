@@ -3,7 +3,7 @@
   "chapter": 9,
   "title": "Carboxylic Acid Derivatives",
   "sourceSnapshot": {
-    "sha256": "c668d330fe86eea695e9629dc062661d89175aa14834ad3f8eed5edf2a4ddf25",
+    "sha256": "faa728a8c2e404ae2641a80febcd969255ed76ca489f692ae4b40b4215fd32ed",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -695,10 +695,6 @@
       "chapter": 9,
       "kind": "lesson",
       "itemIds": [
-        "families:rule",
-        "families:cue",
-        "families:trap",
-        "families:app",
         "families:step-1",
         "families:step-2",
         "families:step-3"
@@ -706,16 +702,8 @@
       "payload": {
         "lesson": {
           "id": "families",
-          "label": "Recognize acid derivatives",
           "title": "Recognize acid derivatives",
           "molecule": "ester",
-          "tag": "Read the atom directly attached to acyl carbon",
-          "cards": {
-            "rule": "<p>Esters have C(=O)–OR; amides have C(=O)–NR2; anhydrides have C(=O)–O–C(=O). Lactones are cyclic esters and lactams are cyclic amides. A beta-lactam contains a four-membered ring.</p>",
-            "cue": "<p>Acyl C → O–C: ester. Acyl C → N: amide. Acyl C → O → acyl C: anhydride. For esters, name the O-alkyl group then the acid-derived -oate. Amides use -amide, with N- prefixes for N substituents. Anhydrides use the acid name(s) plus anhydride; list both acids for a mixed anhydride. In lactam/lactone shorthand, beta = four ring atoms, gamma = five, delta = six; count the ring heteroatom and carbonyl carbon, excluding the exocyclic oxygen.</p>",
-            "trap": "<p>An ether has no adjacent carbonyl. An N-substituted amide is still an amide even if it has no N–H bond. Ring size names count heteroatoms as ring members. Ammonia, primary and secondary amines can give ordinary neutral amides by acylation and N–H loss. Tertiary amines lack that N–H: they can act as bases or form acylammonium intermediates, rather than the analogous neutral amide by simple acylation.</p>",
-            "app": "<p>Triacylglycerols contain ester links; proteins contain amide links. Beta-lactam antibiotics exploit a strained amide structure.</p>"
-          },
           "steps": [
             {
               "label": "1. Acyclic ester",
@@ -773,86 +761,1072 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Read the atom directly attached to acyl carbon",
-              "items": [
-                {
-                  "label": "Read the acyl neighbor",
-                  "text": "O, N or an acyl-linked O"
-                },
-                {
-                  "label": "Classify",
-                  "text": "Ester, amide or anhydride"
-                },
-                {
-                  "label": "Ring context",
-                  "text": "Lactone = cyclic ester; lactam = cyclic amide"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  1,
-                  2
-                ],
-                "caption": "Cyclic amide versus cyclic ester. Count heteroatoms when counting ring members."
+          ]
+        },
+        "molecules": {
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Acyl C attached to O–C",
-                  "text": "Ester"
-                },
-                {
-                  "label": "Acyl C attached to N",
-                  "text": "Amide"
-                },
-                {
-                  "label": "Acyl C attached to O–acyl C",
-                  "text": "Anhydride"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "No N–H means no amide"
-                },
-                {
-                  "label": "Check",
-                  "text": "Connectivity; N-substituted amides can lack N–H"
-                }
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "betalactam": {
+            "name": "azetidin-2-one (beta-lactam)",
+            "formula": "C3H5NO",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 100,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 145
+              },
+              {
+                "e": "O",
+                "x": 240,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                1,
+                4,
+                2
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Triacylglycerols",
-                  "text": "Ester links"
-                },
-                {
-                  "label": "Proteins",
-                  "text": "Amide links"
-                },
-                {
-                  "label": "Beta-lactams",
-                  "text": "Strained cyclic amides"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "azetidin-2-one (beta-lactam)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "lactone": {
+            "name": "oxolan-2-one (gamma-butyrolactone)",
+            "formula": "C4H6O2",
+            "atoms": [
+              {
+                "e": "O",
+                "x": 135,
+                "y": 35
+              },
+              {
+                "e": "C",
+                "x": 205,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 65,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 265,
+                "y": 55
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                0,
+                1
+              ],
+              [
+                1,
+                5,
+                2
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "oxolan-2-one (gamma-butyrolactone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:families:rule",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "families:rule"
+      ],
+      "payload": {
+        "lessonId": "families",
+        "title": "Recognize acid derivatives",
+        "fullNote": "<p>Esters have C(=O)–OR; amides have C(=O)–NR2; anhydrides have C(=O)–O–C(=O). Lactones are cyclic esters and lactams are cyclic amides. A beta-lactam contains a four-membered ring.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Carboxylic Acid Derivative Reactivity Ski-Slope, Resonance Stabilization & IR Frequencies",
+          "items": [
+            {
+              "label": "Typical acyl-derivative reactivity ladder",
+              "text": "Acid Chloride (RCOCl) > Acid Anhydride > Thioester (RCOSR′) > Ester (RCOOR′) > Amide (RCONR′₂) > Carboxylate Ion (RCOO⁻).",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Two Governing Factors: Leaving Group Basicity + Ground-State Resonance",
+              "text": "Cl⁻ (pKaH −7) is the weakest base and 3p Cl has poor π overlap with 2p C; –NR₂ (pKaH ~38) is a terrible leaving group and 2p N donates strongly into C=O!",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "IR Carbonyl Stretch Mirrors Double-Bond Character",
+              "text": "Stronger resonance donation into C=O weakens the C=O bond (more single-bond character → lower wavenumber): Acid Chloride (1800 cm⁻¹) > Ester (1735 cm⁻¹) > Ketone (1715 cm⁻¹) > Amide (1650 cm⁻¹).",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Reactivity: Acid Chloride > Anhydride > Thioester > Ester > Amide > RCOO⁻",
+            "IR C=O: Cl (1800) > Anhyd (1810/1760) > Ester (1735) > Amide (1650)"
+          ],
+          "comparison": [
+            [
+              "Acid Chloride (RCOCl)",
+              "LG = Cl⁻ (pKaH = −7); Inductive pull > resonance",
+              "Fastest reactivity; highest IR C=O (~1800 cm⁻¹)"
+            ],
+            [
+              "Anhydride ((RCO)₂O)",
+              "LG = RCOO⁻ (pKaH = 4.8); Shared resonance",
+              "High reactivity; TWO IR C=O peaks (~1810 & 1760 cm⁻¹)"
+            ],
+            [
+              "Ester (RCOOR′)",
+              "LG = RO⁻ (pKaH = 16); Moderate O resonance",
+              "Moderate reactivity; IR C=O ~1735 cm⁻¹"
+            ],
+            [
+              "Amide (RCONR′₂)",
+              "LG = R₂N⁻ (pKaH = 38); Strongest N→C=O resonance",
+              "Least reactive neutral derivative; IR C=O ~1650 cm⁻¹"
+            ]
+          ],
+          "theme": "derivative-ski-slope",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              1,
+              2
+            ],
+            "caption": "Cyclic amide versus cyclic ester. Count heteroatoms when counting ring members."
           }
         },
+        "figureSteps": [
+          {
+            "label": "2. Cyclic amide",
+            "text": "<p>The beta-lactam has four ring atoms, one of them N. The carbonyl carbon is part of the ring and the oxygen is outside it.</p>",
+            "molecule": "betalactam",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "prin": [
+                0,
+                1,
+                4
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "3. Cyclic ester",
+            "text": "<p>A lactone contains an ester linkage within a ring. This five-membered lactone has one ring oxygen and four ring carbons.</p>",
+            "molecule": "lactone",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "prin": [
+                0,
+                1,
+                5
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "betalactam": {
+            "name": "azetidin-2-one (beta-lactam)",
+            "formula": "C3H5NO",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 100,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 145
+              },
+              {
+                "e": "O",
+                "x": 240,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "azetidin-2-one (beta-lactam)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "lactone": {
+            "name": "oxolan-2-one (gamma-butyrolactone)",
+            "formula": "C4H6O2",
+            "atoms": [
+              {
+                "e": "O",
+                "x": 135,
+                "y": 35
+              },
+              {
+                "e": "C",
+                "x": 205,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 65,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 265,
+                "y": 55
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                0,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "oxolan-2-one (gamma-butyrolactone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:families:cue",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "families:cue"
+      ],
+      "payload": {
+        "lessonId": "families",
+        "title": "Recognize acid derivatives",
+        "fullNote": "<p>Acyl C → O–C: ester. Acyl C → N: amide. Acyl C → O → acyl C: anhydride. For esters, name the O-alkyl group then the acid-derived -oate. Amides use -amide, with N- prefixes for N substituents. Anhydrides use the acid name(s) plus anhydride; list both acids for a mixed anhydride. In lactam/lactone shorthand, beta = four ring atoms, gamma = five, delta = six; count the ring heteroatom and carbonyl carbon, excluding the exocyclic oxygen.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Why Are Thioesters (Acetyl-CoA) So Much More Reactive Than Oxygen Esters?",
+          "prompt": "Compare Thioesters (R–CO–SR′), Oxygen Esters (R–CO–OR′), and Amides (R–CO–NR′₂):",
+          "items": [
+            {
+              "label": "Thioester vs. Oxygen Ester Orbital Overlap",
+              "outcome": "3p Sulfur Has Poor π Overlap with 2p Carbon!",
+              "text": "Because the C–S bond is long and 3p/2p orbitals mismatch in size, sulfur gives very little resonance stabilization to C=O (leaving the carbonyl carbon highly δ+)."
+            },
+            {
+              "label": "Thiolate (RS⁻) vs. Alkoxide (RO⁻) Leaving Group",
+              "outcome": "RS⁻ (pKaH ~10) Is a Much Better Leaving Group Than RO⁻ (pKaH ~16)",
+              "text": "Thioesters sit right below anhydrides in reactivity—stable enough to survive in water, yet reactive enough for enzymatic acyl transfer!"
+            },
+            {
+              "label": "Why Does an Anhydride Show TWO C=O IR Peaks?",
+              "outcome": "Symmetric (~1810 cm⁻¹) and Asymmetric (~1760 cm⁻¹) Coupled Stretches",
+              "text": "Two C=O bonds joined through a central oxygen vibrate in-phase and out-of-phase, giving a diagnostic doublet in IR!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "betalactam": {
+            "name": "azetidin-2-one (beta-lactam)",
+            "formula": "C3H5NO",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 100,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 145
+              },
+              {
+                "e": "O",
+                "x": 240,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "azetidin-2-one (beta-lactam)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "lactone": {
+            "name": "oxolan-2-one (gamma-butyrolactone)",
+            "formula": "C4H6O2",
+            "atoms": [
+              {
+                "e": "O",
+                "x": 135,
+                "y": 35
+              },
+              {
+                "e": "C",
+                "x": 205,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 65,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 265,
+                "y": 55
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                0,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "oxolan-2-one (gamma-butyrolactone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:families:trap",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "families:trap"
+      ],
+      "payload": {
+        "lessonId": "families",
+        "title": "Recognize acid derivatives",
+        "fullNote": "<p>An ether has no adjacent carbonyl. An N-substituted amide is still an amide even if it has no N–H bond. Ring size names count heteroatoms as ring members. Ammonia, primary and secondary amines can give ordinary neutral amides by acylation and N–H loss. Tertiary amines lack that N–H: they can act as bases or form acylammonium intermediates, rather than the analogous neutral amide by simple acylation.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Trying to Convert an Amide or Ester Directly into an Acid Chloride or Anhydride",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Reacting acetamide with NaCl expecting acetyl chloride, or reacting ethyl acetate with acetate ion expecting acetic anhydride."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "The reactivity ladder predicts many unactivated substitutions. Activation, coupling reagents, catalysis and equilibrium control can enable other conversions; downhill is not an absolute law."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ester": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 156,
+                "y": 52
+              },
+              {
+                "e": "O",
+                "x": 208,
+                "y": 142
+              },
+              {
+                "e": "C",
+                "x": 258,
+                "y": 112
+              },
+              {
+                "e": "C",
+                "x": 308,
+                "y": 142
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                6,
+                1
+              ]
+            ],
+            "w": 360,
+            "h": 200,
+            "name": "ethyl propanoate",
+            "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
+            "formula": "C5H10O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "betalactam": {
+            "name": "azetidin-2-one (beta-lactam)",
+            "formula": "C3H5NO",
+            "atoms": [
+              {
+                "e": "N",
+                "x": 100,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 60
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 145
+              },
+              {
+                "e": "O",
+                "x": 240,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "azetidin-2-one (beta-lactam)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "lactone": {
+            "name": "oxolan-2-one (gamma-butyrolactone)",
+            "formula": "C4H6O2",
+            "atoms": [
+              {
+                "e": "O",
+                "x": 135,
+                "y": 35
+              },
+              {
+                "e": "C",
+                "x": 205,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 90,
+                "y": 165
+              },
+              {
+                "e": "C",
+                "x": 65,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 265,
+                "y": 55
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                0,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "oxolan-2-one (gamma-butyrolactone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:families:app",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "families:app"
+      ],
+      "payload": {
+        "lessonId": "families",
+        "title": "Recognize acid derivatives",
+        "fullNote": "<p>Triacylglycerols contain ester links; proteins contain amide links. Beta-lactam antibiotics exploit a strained amide structure.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Acetyl-CoA Thioester Bioenergetics (ΔG°′ = −31.4 kJ/mol) & β-Lactam Ring Strain",
+          "items": [
+            {
+              "label": "Acetyl-CoA vs. Oxygen Esters",
+              "outcome": "Nature’s Activated Acyl Carrier",
+              "text": "Cells use thioesters (acetyl-CoA, succinyl-CoA) instead of acid chlorides because acid chlorides hydrolyze explosively in water, while thioesters await enzymatic catalysis."
+            },
+            {
+              "label": "Penicillin / Cephalosporin β-Lactams",
+              "outcome": "4-Membered Ring Strain Breaks Amide Resonance!",
+              "text": "Normal amides are unreactive, but a 4-membered β-lactam ring forces non-planar geometry and 90° angle strain, making it acylate bacterial transpeptidase!"
+            },
+            {
+              "label": "Aspirin Acetylation of COX-1 / COX-2",
+              "outcome": "Phenolic Ester Transfers Acetyl Group to Serine –OH",
+              "text": "Phenoxide (pKa 10) is a better leaving group than a standard alkoxide (pKa 16), making phenyl esters reactive acylating agents."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "ester": {
             "atoms": [
@@ -1073,10 +2047,6 @@
       "chapter": 9,
       "kind": "lesson",
       "itemIds": [
-        "acyl-mechanism:rule",
-        "acyl-mechanism:cue",
-        "acyl-mechanism:trap",
-        "acyl-mechanism:app",
         "acyl-mechanism:step-1",
         "acyl-mechanism:step-2",
         "acyl-mechanism:step-3"
@@ -1084,16 +2054,8 @@
       "payload": {
         "lesson": {
           "id": "acyl-mechanism",
-          "label": "Acyl substitution and relative reactivity",
           "title": "Acyl substitution and relative reactivity",
           "molecule": "methylacetate",
-          "tag": "Addition → tetrahedral intermediate → elimination",
-          "cards": {
-            "rule": "<p>A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter. Inductive withdrawal transmits through sigma bonds and can increase acyl-carbon electrophilicity. Steric crowding can hinder nucleophile approach. These effects compete with leaving-group ability, resonance and catalysis; a single naming-priority or conjugation shortcut cannot rank every reaction.</p>",
-            "cue": "<p>Addition–elimination replaces the acyl substituent while retaining a carbonyl.</p>",
-            "trap": "<p>Aldehydes and ketones normally add rather than substitute because hydride or an ordinary carbanion would be a poor leaving group. Conjugation means adjacent aligned p orbitals delocalize electrons; it can stabilize a reactant, intermediate or transition state. A rate depends on the activation free-energy difference, so stabilization alone does not prove a faster reaction. Enones also offer beta attack (1,4-addition), which differs from direct carbonyl attack (1,2-addition). Heteroatom lone-pair donation into C=O, especially from amide N, reduces carbonyl electrophilicity. The effect of conjugation requires the actual substrate, nucleophile, site and conditions.</p>",
-            "app": "<p>Amide resonance makes peptide bonds relatively resistant to uncatalyzed hydrolysis. Strained beta-lactams are more reactive than ordinary unstrained amides. Small rings can have angle strain and torsional strain. Beta-lactam geometry can reduce optimal amide orbital overlap and hydrolysis can relieve strain; the extent of nitrogen pyramidalization and resonance loss depends on ring fusion/substitution. The displayed unfused four-membered connectivity diagram is not a 3D bond-angle model.</p>"
-          },
           "steps": [
             {
               "label": "1. Add to the carbonyl",
@@ -1153,78 +2115,718 @@
               },
               "reveal": false
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Addition → tetrahedral intermediate → elimination",
-              "items": [
-                {
-                  "label": "Addition",
-                  "text": "Nucleophile attacks; pi pair shifts to O"
-                },
-                {
-                  "label": "Intermediate",
-                  "text": "Tetrahedral acyl center"
-                },
-                {
-                  "label": "Elimination",
-                  "text": "C=O reforms as leaving group departs"
-                }
-              ],
-              "figure": {
-                "type": "reaction",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Hydroxide addition gives a tetrahedral intermediate; subsequent collapse is a separate step. Schematic, not balanced."
+          ]
+        },
+        "molecules": {
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Acyl substituent replaced",
-                  "text": "Addition–elimination retains C=O"
-                },
-                {
-                  "label": "Aldehyde/ketone without viable leaving group",
-                  "text": "Compare ordinary nucleophilic addition"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Conjugation predicts a universal rate effect"
-                },
-                {
-                  "label": "Check",
-                  "text": "Leaving group, resonance, substrate and conditions"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester-intermediate": {
+            "name": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "formula": "C3H7O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 25,
+                "charge": -1
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 55,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:acyl-mechanism:rule",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "acyl-mechanism:rule"
+      ],
+      "payload": {
+        "lessonId": "acyl-mechanism",
+        "title": "Acyl substitution and relative reactivity",
+        "fullNote": "<p>A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter. Inductive withdrawal transmits through sigma bonds and can increase acyl-carbon electrophilicity. Steric crowding can hinder nucleophile approach. These effects compete with leaving-group ability, resonance and catalysis; a single naming-priority or conjugation shortcut cannot rank every reaction.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Nucleophilic Acyl Substitution Mechanism & Organometallic / Hydride Selectivity",
+          "items": [
+            {
+              "label": "Two-Step Addition–Elimination Pathway",
+              "text": "Step 1: Nucleophile attacks sp² C=O to form a tetrahedral sp³ intermediate. Step 2: Carbonyl π bond reforms and kicks out the WEAKEST base (best leaving group).",
+              "step": "1",
+              "color": "green"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Ordinary peptide bond",
-                  "text": "Resonance helps resist uncatalyzed hydrolysis"
-                },
-                {
-                  "label": "Beta-lactams",
-                  "text": "Ring geometry can reduce ordinary amide stabilization"
-                }
-              ]
+            {
+              "label": "Grignard / Organolithium + Ester or Acid Chloride (2 Equivalents!)",
+              "text": "First equivalent forms a ketone in situ; because a ketone is MORE reactive than an ester, a second RMgBr immediately attacks to yield a tertiary alcohol (R′–C(OH)R₂).",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Stopping at the Ketone or Aldehyde",
+              "text": "Acid Chloride + R₂CuLi (Gilman) stops at the KETONE; Ester + DIBAL-H at −78 °C (or Acid Chloride + LiAl(Ot-Bu)₃H) stops at the ALDEHYDE.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Step 1: Addition (sp² → sp³)",
+            "Step 2: Elimination (Restore C=O)",
+            "Best LG Leaves Tetrahedral Int",
+            "RMgBr (2 Eq) + Ester → 3° Alcohol"
+          ],
+          "comparison": [
+            [
+              "Ester + 2 Eq RMgBr",
+              "Cannot stop at ketone!",
+              "Gives 3° Alcohol with TWO identical R groups from Grignard"
+            ],
+            [
+              "Acid Chloride + 1 Eq R₂CuLi",
+              "Gilman reagent stops at KETONE!",
+              "Soft cuprate reacts with RCOCl but NOT with the ketone product"
+            ],
+            [
+              "Ester + DIBAL-H (−78 °C)",
+              "1 hydride equivalent stops at ALDEHYDE!",
+              "Tetrahedral aluminate intermediate stays frozen until H₃O⁺ workup"
+            ]
+          ],
+          "theme": "tetrahedral-collapse",
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Hydroxide addition gives a tetrahedral intermediate; subsequent collapse is a separate step. Schematic, not balanced."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Add to the carbonyl",
+            "text": "<p>Hydroxide attacks the ester carbonyl carbon while the pi pair moves to oxygen. The arrow shows that pi-pair movement, not the entire mechanism.</p>",
+            "molecule": "methylacetate",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ],
+              "flow": [
+                {
+                  "fromBond": 1,
+                  "toAtom": 2
+                }
+              ]
+            },
+            "reveal": false
+          },
+          {
+            "label": "2. Tetrahedral intermediate",
+            "text": "<p>The carbon now bears the incoming OH, the original OCH3, and an O− derived from the carbonyl oxygen. It has four single bonds. Four directions are spread in a 2D projection for readability, not a claim of 90-degree physical bond angles.</p>",
+            "molecule": "ester-intermediate",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3,
+                5
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester-intermediate": {
+            "name": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "formula": "C3H7O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 25,
+                "charge": -1
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 55,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:acyl-mechanism:cue",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "acyl-mechanism:cue"
+      ],
+      "payload": {
+        "lessonId": "acyl-mechanism",
+        "title": "Acyl substitution and relative reactivity",
+        "fullNote": "<p>Addition–elimination replaces the acyl substituent while retaining a carbonyl.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Predicting the Product of Hydride or Organometallic Addition to Acyl Derivatives",
+          "prompt": "Which derivative and nucleophile are reacting?",
+          "items": [
+            {
+              "label": "Ester (RCOOR′) + Excess RMgBr or LiAlH₄",
+              "outcome": "Cleaves –OR′! Gives 3° Alcohol (with 2 RMgBr) or 1° Alcohol + R′OH (with LiAlH₄)",
+              "text": "Do NOT forget that the leaving group alcohol (R′OH) is also released as a second organic product!"
+            },
+            {
+              "label": "Amide (RCONR′₂) + LiAlH₄ (then H₂O)",
+              "outcome": "C=O Oxygen Leaves Instead of NR′₂! → Yields AMINE (RCH₂NR′₂)",
+              "text": "Because R₂N⁻ is a terrible leaving group, aluminum coordinates to oxygen and expels O²⁻/Al-oxide via an iminium ion, deoxygenating C=O to CH₂!"
+            },
+            {
+              "label": "Nitrile (R–C≡N) + 1 Eq RMgBr (then H₃O⁺) vs. LiAlH₄",
+              "outcome": "RMgBr → Ketone (R–CO–R′ via Imine Hydrolysis); LiAlH₄ → 1° Amine (RCH₂NH₂)",
+              "text": "Grignard attacks C≡N once to form a negatively charged imine salt (R–C(=NMgBr)R′) that cannot be attacked a second time and hydrolyzes to a ketone!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester-intermediate": {
+            "name": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "formula": "C3H7O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 25,
+                "charge": -1
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 55,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:acyl-mechanism:trap",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "acyl-mechanism:trap"
+      ],
+      "payload": {
+        "lessonId": "acyl-mechanism",
+        "title": "Acyl substitution and relative reactivity",
+        "fullNote": "<p>Aldehydes and ketones normally add rather than substitute because hydride or an ordinary carbanion would be a poor leaving group. Conjugation means adjacent aligned p orbitals delocalize electrons; it can stabilize a reactant, intermediate or transition state. A rate depends on the activation free-energy difference, so stabilization alone does not prove a faster reaction. Enones also offer beta attack (1,4-addition), which differs from direct carbonyl attack (1,2-addition). Heteroatom lone-pair donation into C=O, especially from amide N, reduces carbonyl electrophilicity. The effect of conjugation requires the actual substrate, nucleophile, site and conditions.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Stopping Ester + Grignard at the Ketone or Cleaving the C–N Bond in Amide + LiAlH₄",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Reacting ethyl benzoate with 1 eq CH₃MgBr to get acetophenone cleanly, or reducing an amide with LiAlH₄ to get an alcohol + amine."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Ketones are more reactive than esters, so Ester + RMgBr always double-adds to a 3° alcohol; Amide + LiAlH₄ keeps the C–N bond intact and reduces C=O to CH₂ (forming an amine)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ester-intermediate": {
+            "name": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "formula": "C3H7O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 25,
+                "charge": -1
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 145
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 55,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:acyl-mechanism:app",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "acyl-mechanism:app"
+      ],
+      "payload": {
+        "lessonId": "acyl-mechanism",
+        "title": "Acyl substitution and relative reactivity",
+        "fullNote": "<p>Amide resonance makes peptide bonds relatively resistant to uncatalyzed hydrolysis. Strained beta-lactams are more reactive than ordinary unstrained amides. Small rings can have angle strain and torsional strain. Beta-lactam geometry can reduce optimal amide orbital overlap and hydrolysis can relieve strain; the extent of nitrogen pyramidalization and resonance loss depends on ring fusion/substitution. The displayed unfused four-membered connectivity diagram is not a 3D bond-angle model.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Chymotrypsin Acyl-Enzyme Mechanism (Catalytic Triad: Ser-195, His-57, Asp-102)",
+          "items": [
+            {
+              "label": "Phase 1: Acylation (Peptide C–N Cleaved)",
+              "outcome": "Ser-195 –OH (Deprotonated by His-57) Attacks Amide C=O",
+              "text": "Forms Tetrahedral Intermediate #1 (stabilized by the oxyanion hole), which collapses to release the C-terminal amine fragment and form a covalent Ester (Acyl-Enzyme)."
+            },
+            {
+              "label": "Phase 2: Deacylation (Enzyme Regenerated)",
+              "outcome": "Water (Activated by His-57) Hydrolyzes the Serine Ester",
+              "text": "Forms Tetrahedral Intermediate #2, expelling Ser-195 –OH and releasing the N-terminal carboxylic acid fragment."
+            },
+            {
+              "label": "Why Asp-102 Is Essential",
+              "outcome": "Electrostatic Anchor + Tautomer Lock on His-57",
+              "text": "Asp-102’s carboxylate (−1) stabilizes the imidazolium (+1) ion formed when His-57 accepts the proton from Ser-195."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "methylacetate": {
             "name": "methyl ethanoate",
@@ -1359,10 +2961,6 @@
       "chapter": 9,
       "kind": "lesson",
       "itemIds": [
-        "derivative-reactions:rule",
-        "derivative-reactions:cue",
-        "derivative-reactions:trap",
-        "derivative-reactions:app",
         "derivative-reactions:step-1",
         "derivative-reactions:step-2",
         "derivative-reactions:step-3"
@@ -1370,16 +2968,8 @@
       "payload": {
         "lesson": {
           "id": "derivative-reactions",
-          "label": "Hydrolysis, alcoholysis, and transesterification",
           "title": "Hydrolysis, alcoholysis, and transesterification",
           "molecule": "anhyd",
-          "tag": "Conditions determine the protonation state",
-          "cards": {
-            "rule": "<p>Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine. A condensation joins reactants while losing a small molecule. Fischer esterification is acid + alcohol ⇌ ester + water under acid catalysis; removing water or using excess alcohol favors ester. Water need not be completely absent, and aqueous acid promotes the reverse hydrolysis.</p>",
-            "cue": "<p>Follow the acyl fragment and the departing group separately. Saponification is basic ester cleavage; a triacylglycerol yields glycerol and fatty-acid salts. Suitable dicarboxylic acids can dehydrate on heating to five- or six-membered cyclic anhydrides when geometry and conditions allow; not every diacid cyclizes.</p>",
-            "trap": "<p>In basic ester hydrolysis, carboxylate formation helps drive the net reaction. Do not draw a free carboxylic acid as the major product until acid workup. Amide hydrolysis usually needs more forcing conditions than ester hydrolysis. Acetal/ketal protection masks an aldehyde or ketone electronically and can tolerate many bases or hydrides; aqueous acid removes it. It does not make a carbonyl universally inert or merely block approach by steric bulk.</p>",
-            "app": "<p>Proteases catalyze peptide hydrolysis under mild biological conditions by activating nucleophiles and stabilizing intermediates; the uncatalyzed reaction is much slower.</p>"
-          },
           "steps": [
             {
               "label": "1. Anhydride cleavage",
@@ -1431,78 +3021,940 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Conditions determine the protonation state",
-              "items": [
-                {
-                  "label": "Acyl fragment",
-                  "text": "Track what remains with C=O"
-                },
-                {
-                  "label": "Departing group",
-                  "text": "Track separately"
-                },
-                {
-                  "label": "Workup",
-                  "text": "Sets final protonation state"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  2
-                ],
-                "caption": "Separate anhydride and amide examples, not a reactant/product pair."
+          ]
+        },
+        "molecules": {
+          "anhyd": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 96
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 96
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 210,
+                "y": 40
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Basic ester hydrolysis",
-                  "text": "Carboxylate is the major acid-derived product"
-                },
-                {
-                  "label": "Acid workup",
-                  "text": "Can give the neutral carboxylic acid"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Drawing neutral acid before acid workup"
-                },
-                {
-                  "label": "Check",
-                  "text": "Reaction-medium protonation; amide hydrolysis usually needs stronger conditions"
-                }
+            ],
+            "w": 315,
+            "h": 195,
+            "name": "ethanoic anhydride",
+            "cond": "CH₃–C(=O)–O–C(=O)–CH₃",
+            "formula": "C4H6O3",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Proteases",
-                  "text": "Catalyze peptide hydrolysis"
-                },
-                {
-                  "label": "Catalysis",
-                  "text": "Activates nucleophiles and stabilizes intermediates"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:derivative-reactions:rule",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "derivative-reactions:rule"
+      ],
+      "payload": {
+        "lessonId": "derivative-reactions",
+        "title": "Hydrolysis, alcoholysis, and transesterification",
+        "fullNote": "<p>Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine. A condensation joins reactants while losing a small molecule. Fischer esterification is acid + alcohol ⇌ ester + water under acid catalysis; removing water or using excess alcohol favors ester. Water need not be completely absent, and aqueous acid promotes the reverse hydrolysis.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Hydrolysis, Alcoholysis, Transesterification, Aminolysis & Cyclic Derivatives (Lactones/Lactams)",
+          "items": [
+            {
+              "label": "Universal Hydrolysis Endpoint",
+              "text": "Every carboxylic acid derivative (acid chloride, anhydride, ester, amide, nitrile) hydrolyzes in hot aqueous acid (H₃O⁺, Δ) to a carboxylic acid (RCOOH) or in base (HO⁻, Δ) to a carboxylate (RCOO⁻).",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Transesterification & Matched Alkoxide Rule",
+              "text": "RCOOR′ + R″OH (cat. H⁺ or R″O⁻) ⇌ RCOOR″ + R′OH. Whenever using a basic alkoxide catalyst or solvent with an ester, match the alkoxide (R′O⁻/R′OH) unless you WANT transesterification!",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Why Aminolysis of Acid Chlorides Needs 2 Equivalents of Amine",
+              "text": "RCOCl + 2 R′NH₂ → RCONHR′ + R′NH₃⁺Cl⁻. One equivalent forms the amide; a second equivalent of amine (or added pyridine/Et₃N/NaOH) neutralizes the HCl generated!",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Hydrolysis (H₂O) → RCOOH",
+            "Alcoholysis (ROH) → Ester",
+            "Aminolysis (2 Eq RNH₂) → Amide",
+            "Lactone = Cyclic Ester | Lactam = Cyclic Amide"
+          ],
+          "comparison": [
+            [
+              "Acid Chloride + R′OH / Pyridine",
+              "Fastest quantitative ester synthesis",
+              "Pyridine scavenges HCl byproduct so acid-sensitive groups survive"
+            ],
+            [
+              "Transesterification (RCOOR′ + R″OH)",
+              "Swap ester alkoxy group (H⁺ or R″O⁻)",
+              "Use matched base R″O⁻ with R″OH solvent to prevent scrambling!"
+            ],
+            [
+              "Anhydride + ROH or RNH₂",
+              "1 acyl group becomes product; 1 becomes RCOO⁻",
+              "Acetic anhydride cleanly acetylates salicylic acid → Aspirin"
+            ]
+          ],
+          "theme": "transesterification-loop",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              2
+            ],
+            "caption": "Separate anhydride and amide examples, not a reactant/product pair."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Anhydride cleavage",
+            "text": "<p>Water attack at either equivalent acyl carbon of ethanoic anhydride leads overall to two ethanoic acid molecules.</p>",
+            "molecule": "anhyd",
+            "highlights": {
+              "prin": [
+                1,
+                3,
+                5,
+                6
+              ],
+              "sub": [
+                2
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "3. Hydrolyze an amide",
+            "text": "<p>An amide’s N donation lowers electrophilicity and its leaving group is poor unless conditions enable departure. Strong acid/base with heating or a catalyst can accomplish hydrolysis.</p>",
+            "molecule": "acetamide",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "anhyd": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 96
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 96
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 210,
+                "y": 40
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ],
+            "w": 315,
+            "h": 195,
+            "name": "ethanoic anhydride",
+            "cond": "CH₃–C(=O)–O–C(=O)–CH₃",
+            "formula": "C4H6O3",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:derivative-reactions:cue",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "derivative-reactions:cue"
+      ],
+      "payload": {
+        "lessonId": "derivative-reactions",
+        "title": "Hydrolysis, alcoholysis, and transesterification",
+        "fullNote": "<p>Follow the acyl fragment and the departing group separately. Saponification is basic ester cleavage; a triacylglycerol yields glycerol and fatty-acid salts. Suitable dicarboxylic acids can dehydrate on heating to five- or six-membered cyclic anhydrides when geometry and conditions allow; not every diacid cyclizes.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Cyclic vs. Acyclic Derivative Recognition & Reaction Conditions",
+          "prompt": "Which interconversion or cyclic derivative are you analyzing?",
+          "items": [
+            {
+              "label": "Hydroxy Acid (HO–(CH₂)_n–COOH) + Acid Catalyst",
+              "outcome": "Intramolecular Fischer Esterification → Cyclic Ester (LACTONE)",
+              "text": "5-membered (γ-lactone) and 6-membered (δ-lactone) rings form spontaneously upon mild heating in acid."
+            },
+            {
+              "label": "Amino Acid (H₂N–(CH₂)_n–COOH) Ring Closure",
+              "outcome": "Cyclic Amide (LACTAM)",
+              "text": "β-lactams (4-membered), γ-lactams (5-membered), and δ-lactams (6-membered); hydrolyzing a lactam opens the ring into a single linear amino acid!"
+            },
+            {
+              "label": "Nitrile (R–C≡N) Mild vs. Vigorous Hydrolysis",
+              "outcome": "Mild H₃O⁺/HO⁻ → Primary Amide (RCONH₂) → Vigorous H₃O⁺/Δ → Carboxylic Acid (RCOOH + NH₄⁺)",
+              "text": "Nitriles are masked carboxylic acids: hydrolysis passes through the primary amide intermediate before yielding RCOOH."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "anhyd": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 96
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 96
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 210,
+                "y": 40
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ],
+            "w": 315,
+            "h": 195,
+            "name": "ethanoic anhydride",
+            "cond": "CH₃–C(=O)–O–C(=O)–CH₃",
+            "formula": "C4H6O3",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:derivative-reactions:trap",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "derivative-reactions:trap"
+      ],
+      "payload": {
+        "lessonId": "derivative-reactions",
+        "title": "Hydrolysis, alcoholysis, and transesterification",
+        "fullNote": "<p>In basic ester hydrolysis, carboxylate formation helps drive the net reaction. Do not draw a free carboxylic acid as the major product until acid workup. Amide hydrolysis usually needs more forcing conditions than ester hydrolysis. Acetal/ketal protection masks an aldehyde or ketone electronically and can tolerate many bases or hydrides; aqueous acid removes it. It does not make a carbonyl universally inert or merely block approach by steric bulk.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Using Unmatched NaOEt/EtOH on a Methyl Ester or Forgetting Cyclic Hydrolysis Gives 1 Molecule",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Using NaOCH₂CH₃ in ethanol as the base for a Claisen reaction on a METHYL ester (getting a scrambled methyl/ethyl ester mixture), or splitting a lactone into two separate fragments upon hydrolysis."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Always match the base/solvent to the ester (NaOMe/MeOH for methyl esters); hydrolyzing a cyclic ester (lactone) or cyclic amide (lactam) opens the ring into ONE linear molecule containing both groups!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "anhyd": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 96
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 96
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 210,
+                "y": 40
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                1,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ],
+            "w": 315,
+            "h": 195,
+            "name": "ethanoic anhydride",
+            "cond": "CH₃–C(=O)–O–C(=O)–CH₃",
+            "formula": "C4H6O3",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          },
+          "methylacetate": {
+            "name": "methyl ethanoate",
+            "formula": "C3H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetamide": {
+            "name": "ethanamide",
+            "formula": "C2H5NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "N",
+                "x": 175,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanamide",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch09:lesson:derivative-reactions:app",
+      "chapter": 9,
+      "kind": "lesson",
+      "itemIds": [
+        "derivative-reactions:app"
+      ],
+      "payload": {
+        "lessonId": "derivative-reactions",
+        "title": "Hydrolysis, alcoholysis, and transesterification",
+        "fullNote": "<p>Proteases catalyze peptide hydrolysis under mild biological conditions by activating nucleophiles and stabilizing intermediates; the uncatalyzed reaction is much slower.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Biodiesel Transesterification, Aspirin Synthesis & Acetylcholinesterase",
+          "items": [
+            {
+              "label": "Aspirin Synthesis (Salicylic Acid + Acetic Anhydride)",
+              "outcome": "Phenolic –OH Attacks Acetic Anhydride → Acetylsalicylic Acid + CH₃COOH",
+              "text": "Acetic anhydride is preferred over acetic acid because anhydride alcoholysis is fast and irreversible without needing extreme heat."
+            },
+            {
+              "label": "Acetylcholinesterase (AChE) Synapse Reset",
+              "outcome": "Rapid Ester Hydrolysis of Acetylcholine → Choline + Acetate",
+              "text": "Organophosphate nerve agents and carbamates inhibit AChE by forming a stable covalent phosphoryl/carbamyl-ester on the active-site serine."
+            },
+            {
+              "label": "Polyester (PLA / PGA) Resorbable Sutures",
+              "outcome": "Slow Non-Enzymatic Ester Hydrolysis in Tissue Water",
+              "text": "Polylactic acid sutures gradually hydrolyze into natural lactic acid monomers that enter cellular metabolism."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "anhyd": {
             "atoms": [
