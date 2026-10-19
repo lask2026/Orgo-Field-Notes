@@ -3,7 +3,7 @@
   "chapter": 2,
   "title": "Isomers",
   "sourceSnapshot": {
-    "sha256": "6c40d702deeda03a4e1539a94e522d300625a69c1306c2e48429dab43bb57dfb",
+    "sha256": "0c10d482a6512ea86eb518d8bd0784cce6a7e1723ecc19b96ece785efd9381e9",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1887,10 +1887,6 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "connectivity:rule",
-        "connectivity:cue",
-        "connectivity:trap",
-        "connectivity:app",
         "connectivity:step-1",
         "connectivity:step-2",
         "connectivity:step-3"
@@ -1898,16 +1894,8 @@
       "payload": {
         "lesson": {
           "id": "connectivity",
-          "label": "Connectivity vs. spatial arrangement",
           "title": "Connectivity vs. spatial arrangement",
           "molecule": "ethanol",
-          "tag": "Same formula is only the first test",
-          "cards": {
-            "rule": "<p>Constitutional isomers share a molecular formula but differ in connectivity. Stereoisomers have the same connectivity and differ in spatial arrangement. Conformers interconvert by rotations about single bonds.</p>",
-            "cue": "<p>Formula → connections → space. Compare in that order.</p>",
-            "trap": "<p>A different drawing orientation does not prove isomerism. Rotating the whole molecule changes neither connectivity nor configuration.</p>",
-            "app": "<p>An alcohol and an ether can share a formula but differ in hydrogen-bond donation, boiling point, and reactivity.</p>"
-          },
           "steps": [
             {
               "label": "1. Alcohol connectivity",
@@ -1952,82 +1940,688 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Same formula is only the first test",
-              "items": [
-                {
-                  "label": "Formula",
-                  "text": "Compare elemental composition"
-                },
-                {
-                  "label": "Connectivity",
-                  "text": "Compare the bonded atom pairs"
-                },
-                {
-                  "label": "Space",
-                  "text": "Compare spatial arrangement"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Same elemental composition, different atom connectivity: alcohol versus ether."
+          ]
+        },
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Same formula, different connectivity",
-                  "text": "Constitutional isomers"
-                },
-                {
-                  "label": "Same connectivity, different configuration",
-                  "text": "Stereoisomers"
-                },
-                {
-                  "label": "Only drawing orientation changes",
-                  "text": "Not evidence of a different isomer"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Calling every rotated drawing a new isomer"
-                },
-                {
-                  "label": "Check",
-                  "text": "Connectivity and configuration, not the page orientation"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ether": {
+            "name": "methoxymethane",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 75
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 110
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Alcohol versus ether",
-                  "text": "Same formula can hide different connectivity"
-                },
-                {
-                  "label": "Properties",
-                  "text": "Hydrogen-bond donation and reactivity can differ"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methoxymethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isobutane": {
+            "name": "2-methylpropane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 30
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-methylpropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:connectivity:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "connectivity:rule"
+      ],
+      "payload": {
+        "lessonId": "connectivity",
+        "title": "Connectivity vs. spatial arrangement",
+        "fullNote": "<p>Constitutional isomers share a molecular formula but differ in connectivity. Stereoisomers have the same connectivity and differ in spatial arrangement. Conformers interconvert by rotations about single bonds.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Isomer Classification & Index of Hydrogen Deficiency (IHD / Degrees of Unsaturation)",
+          "formula": "IHD = [2C + 2 + N − H − X] / 2   (O and divalent S have 0 effect on IHD)",
+          "items": [
+            {
+              "label": "1 IHD Unit",
+              "text": "Equals 1 ring OR 1 π bond (alkene C=C or carbonyl C=O)."
+            },
+            {
+              "label": "2 IHD Units",
+              "text": "Equals 1 alkyne (C≡C), 2 double bonds, 2 rings, or 1 ring + 1 double bond (benzene = 4 IHD)."
             }
+          ],
+          "chips": [
+            "IHD = (2C+2+N-H-X)/2",
+            "Ring OR π Bond = 1 IHD",
+            "Constitutional = Diff Connectivity",
+            "Stereoisomer = Diff 3D"
+          ],
+          "comparison": [
+            [
+              "Same Connectivity + 3D",
+              "Identical Molecule",
+              "Conformer rotation / flipped drawing"
+            ],
+            [
+              "Diff Atom-to-Atom Bonds",
+              "Constitutional Isomers",
+              "Same formula, different IUPAC name"
+            ],
+            [
+              "Same Bonds, Diff 3D Space",
+              "Stereoisomers",
+              "Enantiomers or Diastereomers"
+            ]
+          ],
+          "theme": "isomer-tree",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Same elemental composition, different atom connectivity: alcohol versus ether."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Alcohol connectivity",
+            "text": "<p>Count two carbons, six hydrogens, and one oxygen. The oxygen bears H and can donate a hydrogen bond.</p>",
+            "molecule": "ethanol",
+            "highlights": {
+              "prin": [
+                2
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Ether connectivity",
+            "text": "<p>The same formula now has oxygen between two carbons. No O–H bond is present. This is a constitutional isomer, not a different conformation.</p>",
+            "molecule": "ether",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2
+              ],
+              "prin": [
+                1
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ether": {
+            "name": "methoxymethane",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 75
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 110
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methoxymethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isobutane": {
+            "name": "2-methylpropane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 30
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-methylpropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:connectivity:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "connectivity:cue"
+      ],
+      "payload": {
+        "lessonId": "connectivity",
+        "title": "Connectivity vs. spatial arrangement",
+        "fullNote": "<p>Formula → connections → space. Compare in that order.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "3-Question Flowchart: Identical vs. Constitutional vs. Stereoisomer",
+          "prompt": "Compare two structures: how do they relate?",
+          "items": [
+            {
+              "label": "Different Molecular Formula?",
+              "outcome": "NOT Isomers",
+              "text": "Check atom counts first! Different formulas (e.g., C₆H₁₂ vs C₆H₁₄) are completely different compounds, not isomers."
+            },
+            {
+              "label": "Same Formula, Different IUPAC Connectivity?",
+              "outcome": "Constitutional (Structural) Isomers",
+              "text": "Atoms are wired in a different order (e.g., propan-1-ol vs propan-2-ol vs methoxyethane) → different physical & chemical properties."
+            },
+            {
+              "label": "Same Connectivity, Non-Superimposable 3D?",
+              "outcome": "Stereoisomers (Enantiomers / Diastereomers)",
+              "text": "Identical bond-by-bond graph, but groups point differently in 3D space and cannot interconvert by free single-bond rotation."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ether": {
+            "name": "methoxymethane",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 75
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 110
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methoxymethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isobutane": {
+            "name": "2-methylpropane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 30
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-methylpropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:connectivity:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "connectivity:trap"
+      ],
+      "payload": {
+        "lessonId": "connectivity",
+        "title": "Connectivity vs. spatial arrangement",
+        "fullNote": "<p>A different drawing orientation does not prove isomerism. Rotating the whole molecule changes neither connectivity nor configuration.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Mistaking a Rotated Conformer for a Constitutional Isomer",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Looking at a kinked zig-zag alkane drawing and calling it a branched constitutional isomer without naming it."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Generate the IUPAC name for both drawings: if the parent chain and locants are identical, it is the SAME molecule."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ether": {
+            "name": "methoxymethane",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 110
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 75
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 110
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "methoxymethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isobutane": {
+            "name": "2-methylpropane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 30
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-methylpropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:connectivity:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "connectivity:app"
+      ],
+      "payload": {
+        "lessonId": "connectivity",
+        "title": "Connectivity vs. spatial arrangement",
+        "fullNote": "<p>An alcohol and an ether can share a formula but differ in hydrogen-bond donation, boiling point, and reactivity.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Deduce Unknown Ring/Double-Bond Counts from Molecular Formulas",
+          "items": [
+            {
+              "label": "Formula C₈H₈O₂",
+              "outcome": "IHD = (16 + 2 − 8)/2 = 5",
+              "text": "IHD ≥ 4 strongly hints at a benzene ring (4 IHD) plus one carbonyl or extra ring (1 IHD)."
+            },
+            {
+              "label": "G6P vs. F6P Isomerism",
+              "outcome": "Aldose vs. Ketose (C₆H₁₃O₉P)",
+              "text": "Glucose-6-phosphate and fructose-6-phosphate are constitutional isomers interconverted by phosphoglucose isomerase."
+            },
+            {
+              "label": "Halogen & Nitrogen Rule",
+              "outcome": "X subtracts 1; N adds 1",
+              "text": "Halogens replace H (subtract X); trivalent N adds one extra H slot (add N); oxygen is ignored."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "ethanol": {
             "name": "ethanol",
@@ -2158,10 +2752,6 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "conformations:rule",
-        "conformations:cue",
-        "conformations:trap",
-        "conformations:app",
         "conformations:step-1",
         "conformations:step-2",
         "conformations:step-3"
@@ -2169,16 +2759,8 @@
       "payload": {
         "lesson": {
           "id": "conformations",
-          "label": "Conformations and ring strain",
           "title": "Conformations and ring strain",
           "molecule": "butane",
-          "tag": "Rotation changes energy, not identity",
-          "cards": {
-            "rule": "<p>Angle strain is deviation from preferred bond angles; torsional strain comes from eclipsing bonds; nonbonded (steric) strain comes from crowding of atoms not bonded to each other. Butane anti and gauche conformations are staggered, but gauche has greater methyl–methyl crowding. A cyclohexane chair has nearly ideal angles and staggered bonds; bulky substituents usually prefer equatorial sites to reduce 1,3-diaxial crowding.</p>",
-            "cue": "<p>For the butane methyl–methyl dihedral shown: anti = 180°, gauche = 60°, ordinary eclipsed = 120°, and totally (fully) eclipsed = 0°. At 0° the methyl groups eclipse one another, giving the highest energy of these conformations.</p>",
-            "trap": "<p>Axial is not synonymous with up: axial directions alternate. A chair flip swaps axial/equatorial positions while preserving up/down and cis/trans. Boat flagpole contacts are steric interactions; do not call every unfavorable contact angle strain.</p>",
-            "app": "<p>Conformational preferences affect binding. Cyclobutane puckers and cyclopentane can adopt envelope-like shapes to reduce eclipsing; cyclohexane has higher-energy boat and twist-boat forms, and its chair-flip pathway passes through half-chair transition states.</p>"
-          },
           "steps": [
             {
               "label": "1. Rotate a single bond",
@@ -2229,88 +2811,701 @@
               "reveal": true,
               "focus": "app"
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Rotation changes energy, not identity",
-              "items": [
-                {
-                  "label": "Angle strain",
-                  "text": "Deviation from preferred angles"
-                },
-                {
-                  "label": "Torsional strain",
-                  "text": "Eclipsing interactions"
-                },
-                {
-                  "label": "Steric strain",
-                  "text": "Crowding of nonbonded atoms"
-                }
-              ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  0
-                ],
-                "caption": "Newman projection of the lesson graph, shown at the anti teaching angle."
+          ]
+        },
+        "molecules": {
+          "butane": {
+            "name": "butane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Butane at 180°",
-                  "text": "Anti, staggered"
-                },
-                {
-                  "label": "Butane at 60°",
-                  "text": "Gauche, staggered"
-                },
-                {
-                  "label": "Butane at 120° / 0°",
-                  "text": "Eclipsed / fully eclipsed"
-                }
-              ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Equating axial with up"
-                },
-                {
-                  "label": "Check",
-                  "text": "Chair flip swaps axial/equatorial but retains up/down and cis/trans"
-                }
-              ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Binding",
-                  "text": "Conformational preferences affect fit"
-                },
-                {
-                  "label": "Cyclohexane",
-                  "text": "Chair, boat and twist-boat differ"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
               ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  2
-                ],
-                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "cyclohexane": {
+            "name": "cyclohexane (connectivity diagram)",
+            "formula": "C6H12",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
               }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                0,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 203,
+            "cond": "cyclohexane (connectivity diagram)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:conformations:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "conformations:rule"
+      ],
+      "payload": {
+        "lessonId": "conformations",
+        "title": "Conformations and ring strain",
+        "fullNote": "<p>Angle strain is deviation from preferred bond angles; torsional strain comes from eclipsing bonds; nonbonded (steric) strain comes from crowding of atoms not bonded to each other. Butane anti and gauche conformations are staggered, but gauche has greater methyl–methyl crowding. A cyclohexane chair has nearly ideal angles and staggered bonds; bulky substituents usually prefer equatorial sites to reduce 1,3-diaxial crowding.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Newman Dihedral Energy & Cyclohexane Chair Ring-Flip Mechanics",
+          "items": [
+            {
+              "label": "Newman Staggered Conformers",
+              "text": "Anti (180° between bulky groups) is lowest energy; Gauche (60°) has a small steric penalty (~3.8 kJ/mol for butane methyls).",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Newman Eclipsed Transitions",
+              "text": "Eclipsed (120°) has torsional strain; Syn-periplanar (0° bulky-bulky) is the highest-energy barrier (~19 kJ/mol in butane).",
+              "step": "2",
+              "color": "orange"
+            },
+            {
+              "label": "Cyclohexane Chair Ring Flip",
+              "text": "Eliminates angle and torsional strain (0° eclipsing); ring flip converts ALL Axial ⇄ Equatorial while UP stays UP and DOWN stays DOWN.",
+              "step": "3",
+              "color": "blue"
             }
+          ],
+          "chips": [
+            "Anti (180°) < Gauche (60°) < Eclipsed < Syn (0°)",
+            "Chair Flip: Axial ⇄ Equatorial",
+            "Up Stays Up!"
+          ],
+          "comparison": [
+            [
+              "Newman Anti (180°)",
+              "Lowest energy staggered",
+              "Bulky groups maximally separated"
+            ],
+            [
+              "Newman Syn (0°)",
+              "Highest energy eclipsed",
+              "Severe torsional + steric clash"
+            ],
+            [
+              "Chair Equatorial",
+              "Bulky groups point outward",
+              "Avoids 1,3-diaxial steric clash"
+            ]
+          ],
+          "theme": "chair-newman",
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Newman projection of the lesson graph, shown at the anti teaching angle."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Rotate a single bond",
+            "text": "<p>Look down the middle C–C bond of butane. Adjust the angle to compare torsional and methyl–methyl interactions.</p>",
+            "molecule": "butane",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ]
+            },
+            "reveal": true,
+            "diagram": {
+              "type": "newman",
+              "caption": "Butane viewed along C2–C3: blue front bonds and green rear bonds."
+            }
+          }
+        ],
+        "molecules": {
+          "butane": {
+            "name": "butane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "cyclohexane": {
+            "name": "cyclohexane (connectivity diagram)",
+            "formula": "C6H12",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                0,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 203,
+            "cond": "cyclohexane (connectivity diagram)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:conformations:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "conformations:cue"
+      ],
+      "payload": {
+        "lessonId": "conformations",
+        "title": "Conformations and ring strain",
+        "fullNote": "<p>For the butane methyl–methyl dihedral shown: anti = 180°, gauche = 60°, ordinary eclipsed = 120°, and totally (fully) eclipsed = 0°. At 0° the methyl groups eclipse one another, giving the highest energy of these conformations.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "1,4- vs 1,3- vs 1,2-Disubstituted Cyclohexane Cis/Trans Cheat Sheet",
+          "prompt": "What changes and what stays fixed during a cyclohexane chair flip?",
+          "items": [
+            {
+              "label": "Axial vs. Equatorial Status",
+              "outcome": "ALWAYS Flips (Ax ⇄ Eq)",
+              "text": "Every axial bond becomes equatorial and every equatorial bond becomes axial to relieve 1,3-diaxial steric clashes."
+            },
+            {
+              "label": "Up / Down Wedge-Dash Face",
+              "outcome": "NEVER Changes (Up = Up)",
+              "text": "A ring flip is a conformational rotation, not bond breaking: cis remains cis and R/S stereocenters never invert."
+            },
+            {
+              "label": "tert-Butyl Conformational Lock",
+              "outcome": "Locks in Equatorial (>99.9%)",
+              "text": "A bulky tert-butyl group experiences massive 1,3-diaxial strain if axial, locking the chair so t-Bu stays equatorial."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butane": {
+            "name": "butane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "cyclohexane": {
+            "name": "cyclohexane (connectivity diagram)",
+            "formula": "C6H12",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                0,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 203,
+            "cond": "cyclohexane (connectivity diagram)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:conformations:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "conformations:trap"
+      ],
+      "payload": {
+        "lessonId": "conformations",
+        "title": "Conformations and ring strain",
+        "fullNote": "<p>Axial is not synonymous with up: axial directions alternate. A chair flip swaps axial/equatorial positions while preserving up/down and cis/trans. Boat flagpole contacts are steric interactions; do not call every unfavorable contact angle strain.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Equating \"Cis\" with \"Both Equatorial\" or Thinking Ring Flips Invert R/S",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Assuming cis-1,2-dimethylcyclohexane is diequatorial or that a chair flip turns cis into trans."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Alternate Up/Down around the ring: 1,2-cis is (ax,eq), 1,3-cis is (eq,eq) or (ax,ax), and 1,4-trans is (eq,eq) or (ax,ax)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butane": {
+            "name": "butane",
+            "formula": "C4H10",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "cyclohexane": {
+            "name": "cyclohexane (connectivity diagram)",
+            "formula": "C6H12",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                0,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 203,
+            "cond": "cyclohexane (connectivity diagram)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:conformations:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "conformations:app"
+      ],
+      "payload": {
+        "lessonId": "conformations",
+        "title": "Conformations and ring strain",
+        "fullNote": "<p>Conformational preferences affect binding. Cyclobutane puckers and cyclopentane can adopt envelope-like shapes to reduce eclipsing; cyclohexane has higher-energy boat and twist-boat forms, and its chair-flip pathway passes through half-chair transition states.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "β-D-Glucose All-Equatorial Stability & E2 Anti-Periplanar Requirement",
+          "items": [
+            {
+              "label": "β-D-Glucopyranose",
+              "outcome": "All 5 Bulky Groups Equatorial",
+              "text": "β-D-glucose is the most abundant biological hexose because every –OH and –CH₂OH sits equatorial in the chair."
+            },
+            {
+              "label": "Cyclohexane E2 Elimination",
+              "outcome": "Requires Trans-Diaxial (180°)",
+              "text": "Leaving group and β-H must both be AXIAL (anti-periplanar) for E2 elimination to occur."
+            },
+            {
+              "label": "Cyclopropane Ring Strain",
+              "outcome": "60° Bond Angles + Eclipsed C–H",
+              "text": "High angle + torsional strain makes 3-membered rings (epoxides, cyclopropanes) spring-loaded for ring opening."
+            }
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              2
+            ],
+            "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "3. Ring-flip pathway",
+            "text": "<p>This hexagon is a connectivity map, not a chair drawing. A chair flip passes through higher-energy shapes: half-chair transition states and twist-boat regions; the boat has flagpole crowding and eclipsing interactions. The final chair exchanges axial/equatorial sites without changing up/down.</p>",
+            "molecule": "cyclohexane",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            "reveal": true,
+            "focus": "app"
+          }
+        ],
         "molecules": {
           "butane": {
             "name": "butane",
@@ -2439,26 +3634,14 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "chirality:rule",
-        "chirality:cue",
-        "chirality:trap",
-        "chirality:app",
         "chirality:step-1",
         "chirality:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "chirality",
-          "label": "Chirality, enantiomers, and meso compounds",
           "title": "Chirality, enantiomers, and meso compounds",
           "molecule": "butanol2",
-          "tag": "Mirror image ≠ always a different molecule",
-          "cards": {
-            "rule": "<p>A tetrahedral carbon with four different substituents is a common stereogenic center. Enantiomers are nonsuperimposable mirror images. Diastereomers are stereoisomers that are not mirror images; E/Z pairs qualify too.</p>",
-            "cue": "<p>One inverted center in a one-center molecule gives its enantiomer. With several centers, compare the entire molecule.</p>",
-            "trap": "<p>2ⁿ is a maximum number of stereoisomers, not a guarantee. Internal symmetry can make a molecule with stereocenters achiral (meso). R/S does not predict the sign of optical rotation.</p>",
-            "app": "<p>Enantiomers have the same ordinary properties in achiral environments but opposite optical rotations under matched conditions; chiral receptors can distinguish them. A suitable single-enantiomer resolving agent can convert a racemate into diastereomeric salts or derivatives. Their different properties permit separation, followed by regeneration of the original enantiomers. Chiral chromatography is another approach.</p>"
-          },
           "steps": [
             {
               "label": "1. Identify four groups",
@@ -2496,81 +3679,696 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Mirror image ≠ always a different molecule",
-              "items": [
-                {
-                  "label": "Four different groups",
-                  "text": "Common tetrahedral stereogenic-center test"
-                },
-                {
-                  "label": "Mirror image",
-                  "text": "Check superimposability"
-                },
-                {
-                  "label": "Whole molecule",
-                  "text": "Compare every center and internal symmetry"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0
-                ],
-                "caption": "Inspect the four substituents at the OH-bearing carbon. Flat connectivity alone does not assign R/S."
+          ]
+        },
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Nonsuperimposable mirror images",
-                  "text": "Enantiomers"
-                },
-                {
-                  "label": "Stereoisomers, not mirror images",
-                  "text": "Diastereomers"
-                },
-                {
-                  "label": "Internal symmetry",
-                  "text": "Check for a meso compound"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Treating 2ⁿ as a guaranteed stereoisomer count"
-                },
-                {
-                  "label": "Check",
-                  "text": "It is a maximum; symmetry can reduce the count"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "butanediol": {
+            "name": "butane-2,3-diol (stereochemistry unspecified)",
+            "formula": "C4H10O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 165
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                2,
+                5,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane-2,3-diol (stereochemistry unspecified)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:chirality:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "chirality:rule"
+      ],
+      "payload": {
+        "lessonId": "chirality",
+        "title": "Chirality, enantiomers, and meso compounds",
+        "fullNote": "<p>A tetrahedral carbon with four different substituents is a common stereogenic center. Enantiomers are nonsuperimposable mirror images. Diastereomers are stereoisomers that are not mirror images; E/Z pairs qualify too.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Chirality, Enantiomers, Diastereomers & Meso Internal Symmetry Planes",
+          "formula": "Max Stereoisomers = 2ⁿ   (Reduced when an internal symmetry plane σ creates a Meso compound)",
+          "items": [
+            {
+              "label": "Chiral Molecule",
+              "text": "Non-superimposable on its mirror image; lacks an internal mirror plane (σ) or inversion center (i)."
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Achiral environments",
-                  "text": "Matched ordinary properties for enantiomers"
-                },
-                {
-                  "label": "Chiral receptors",
-                  "text": "Can distinguish enantiomers"
-                }
-              ]
+            {
+              "label": "Meso Compound",
+              "text": "Contains ≥2 stereocenters with identical substituent sets and opposite configurations (e.g., (2R,3S)-tartaric acid) → achiral!"
             }
+          ],
+          "chips": [
+            "Chiral = No σ / i Symmetry",
+            "Max Stereoisomers = 2ⁿ",
+            "Meso = Chiral Centers + Plane σ",
+            "Enantiomers = Opposite R/S"
+          ],
+          "comparison": [
+            [
+              "Enantiomers",
+              "Invert ALL chiral centers",
+              "Identical BP/MP; opposite [α]D"
+            ],
+            [
+              "Diastereomers",
+              "Invert SOME chiral centers",
+              "Different BP/MP/polarity (separable!)"
+            ],
+            [
+              "Meso Compound",
+              "Chiral centers + internal σ plane",
+              "Achiral & optically inactive ([α]=0)"
+            ]
+          ],
+          "theme": "chiral-mirror",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0
+            ],
+            "caption": "Inspect the four substituents at the OH-bearing carbon. Flat connectivity alone does not assign R/S."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Identify four groups",
+            "text": "<p>The alcohol-bearing carbon has OH, H, methyl, and ethyl as four distinct groups. Both carbons of the ethyl group are highlighted. The flat graph does not assign R or S. Try It Yourself removes these walkthrough highlights before asking for an atom selection.</p>",
+            "molecule": "butanol2",
+            "highlights": {
+              "prin": [
+                1
+              ],
+              "sub": [
+                0,
+                2,
+                3,
+                4
+              ]
+            },
+            "reveal": false,
+            "challenge": {
+              "prompt": "Select the stereogenic carbon.",
+              "answer": [
+                1
+              ],
+              "explanation": "Atom B has four different substituents."
+            }
+          }
+        ],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "butanediol": {
+            "name": "butane-2,3-diol (stereochemistry unspecified)",
+            "formula": "C4H10O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 165
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                2,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane-2,3-diol (stereochemistry unspecified)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:chirality:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "chirality:cue"
+      ],
+      "payload": {
+        "lessonId": "chirality",
+        "title": "Chirality, enantiomers, and meso compounds",
+        "fullNote": "<p>One inverted center in a one-center molecule gives its enantiomer. With several centers, compare the entire molecule.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Instant Stereochemical Relationship Classifier",
+          "prompt": "Compare the R/S configurations at the stereocenters of two molecules:",
+          "items": [
+            {
+              "label": "Every Center Inverted: (2R,3R) vs (2S,3S)",
+              "outcome": "Enantiomers (Unless Meso!)",
+              "text": "Exact non-superimposable mirror images — check first that neither molecule has an internal mirror plane (meso)."
+            },
+            {
+              "label": "One Inverted, One Same: (2R,3R) vs (2R,3S)",
+              "outcome": "Diastereomers",
+              "text": "Stereoisomers that are NOT mirror images; they have different melting points, boiling points, and TLC Rf values."
+            },
+            {
+              "label": "Mirror Plane Cuts Molecule in Half: (2R,3S)",
+              "outcome": "Meso (Same Achiral Molecule)",
+              "text": "Flipping (2R,3S)-tartaric acid 180° in the page superimposes it on (2S,3R)-tartaric acid — they are identical!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "butanediol": {
+            "name": "butane-2,3-diol (stereochemistry unspecified)",
+            "formula": "C4H10O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 165
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                2,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane-2,3-diol (stereochemistry unspecified)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:chirality:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "chirality:trap"
+      ],
+      "payload": {
+        "lessonId": "chirality",
+        "title": "Chirality, enantiomers, and meso compounds",
+        "fullNote": "<p>2ⁿ is a maximum number of stereoisomers, not a guarantee. Internal symmetry can make a molecule with stereocenters achiral (meso). R/S does not predict the sign of optical rotation.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Assuming Every Molecule with Stereocenters Is Chiral (The Meso Trap)",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Counting n = 2 stereocenters in 2,3-dibromobutane and immediately answering \"4 optically active stereoisomers\"."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Always check for a plane of symmetry: symmetric 2,3-disubstituted chains have ONLY 3 stereoisomers (1 enantiomeric pair + 1 achiral meso)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "butanediol": {
+            "name": "butane-2,3-diol (stereochemistry unspecified)",
+            "formula": "C4H10O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 165
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                2,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butane-2,3-diol (stereochemistry unspecified)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:chirality:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "chirality:app"
+      ],
+      "payload": {
+        "lessonId": "chirality",
+        "title": "Chirality, enantiomers, and meso compounds",
+        "fullNote": "<p>Enantiomers have the same ordinary properties in achiral environments but opposite optical rotations under matched conditions; chiral receptors can distinguish them. A suitable single-enantiomer resolving agent can convert a racemate into diastereomeric salts or derivatives. Their different properties permit separation, followed by regeneration of the original enantiomers. Chiral chromatography is another approach.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Chiral Drug Receptor Binding (Thalidomide, Albuterol) & Enzyme Specificity",
+          "items": [
+            {
+              "label": "Chiral Receptor Pocket",
+              "outcome": "Hands-in-Glove Diastereomeric Fit",
+              "text": "Enantiomers have identical achiral physical properties, but bind chiral enzymes differently (one active, one inactive/toxic)."
+            },
+            {
+              "label": "Epimers in Carbohydrates",
+              "outcome": "Diastereomers Differing at 1 Center",
+              "text": "D-Glucose and D-Mannose are C2 epimers; D-Glucose and D-Galactose are C4 epimers."
+            },
+            {
+              "label": "Physical Separation",
+              "outcome": "Diastereomers Separate on Silica TLC",
+              "text": "Enantiomers require a chiral stationary phase or conversion to diastereomeric salts for separation."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "butanol2": {
             "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
@@ -2704,10 +4502,6 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "configuration:rule",
-        "configuration:cue",
-        "configuration:trap",
-        "configuration:app",
         "configuration:step-1",
         "configuration:step-2",
         "configuration:step-3"
@@ -2715,16 +4509,8 @@
       "payload": {
         "lesson": {
           "id": "configuration",
-          "label": "CIP priorities and Fischer projections",
           "title": "CIP priorities and Fischer projections",
           "molecule": "butanol2",
-          "tag": "Assign priority before tracing direction",
-          "cards": {
-            "rule": "<p>Rank directly attached atoms by atomic number; isotopes by mass. Resolve ties one sphere at a time using sorted atom lists. Treat multiple bonds with duplicate-atom bookkeeping. With priority 4 away, clockwise 1→2→3 is R and counterclockwise is S.</p><p>Absolute configuration assigns a stereochemical arrangement independently (for example R/S). Relative configuration describes a relationship to another stereocenter or reference compound. A remote chemical change can retain the local spatial arrangement while changing CIP priorities and therefore its R/S label; reassess priorities instead of equating a letter change with physical inversion.</p>",
-            "cue": "<p>Fischer: horizontal bonds come forward; vertical bonds go back. If group 4 is horizontal, reverse the apparent result. We draw C1 at the top here. A 180° rotation of the entire Fischer drawing preserves its configuration.</p>",
-            "trap": "<p>A 180° in-plane Fischer rotation preserves configuration; a 90° rotation does not. D/L is a relative-configuration convention, not a synonym for R/S or +/−.</p>",
-            "app": "<p>Most proteinogenic L amino acids are S; L cysteine is R because sulfur changes CIP ranking. Glycine has no stereogenic alpha carbon.</p>"
-          },
           "steps": [
             {
               "label": "1. Rank the substituents",
@@ -2787,82 +4573,456 @@
                 "caption": "Mirror Fischer projection with C1 at the top; the horizontal groups are exchanged."
               }
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Assign priority before tracing direction",
-              "items": [
-                {
-                  "label": "Rank atoms",
-                  "text": "Atomic number; isotope mass for isotopes"
-                },
-                {
-                  "label": "Resolve ties",
-                  "text": "Sorted lists, one sphere at a time"
-                },
-                {
-                  "label": "Group 4 away",
-                  "text": "Clockwise is R; counterclockwise is S"
-                }
-              ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  0,
-                  2
-                ],
-                "caption": "Fischer projections: horizontal bonds point forward; vertical bonds point back."
+          ]
+        },
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Fischer group 4 vertical",
-                  "text": "Points back: use the apparent direction"
-                },
-                {
-                  "label": "Fischer group 4 horizontal",
-                  "text": "Points forward: reverse the apparent direction"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:configuration:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "configuration:rule"
+      ],
+      "payload": {
+        "lessonId": "configuration",
+        "title": "CIP priorities and Fischer projections",
+        "fullNote": "<p>Rank directly attached atoms by atomic number; isotopes by mass. Resolve ties one sphere at a time using sorted atom lists. Treat multiple bonds with duplicate-atom bookkeeping. With priority 4 away, clockwise 1→2→3 is R and counterclockwise is S.</p><p>Absolute configuration assigns a stereochemical arrangement independently (for example R/S). Relative configuration describes a relationship to another stereocenter or reference compound. A remote chemical change can retain the local spatial arrangement while changing CIP priorities and therefore its R/S label; reassess priorities instead of equating a letter change with physical inversion.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Cahn-Ingold-Prelog (CIP) Absolute Configuration (R / S) & Fischer Projections",
+          "items": [
+            {
+              "label": "Rank 4 Groups by Atomic Number (Z)",
+              "text": "Compare directly attached atoms first (I > Br > Cl > S > P > F > O > N > C > H); heavier isotopes win ties (³H > ²H > ¹H).",
+              "step": "1",
+              "color": "green"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Rotating a Fischer drawing by 90°"
-                },
-                {
-                  "label": "Check",
-                  "text": "A 180° whole-drawing rotation preserves configuration"
-                }
-              ]
+            {
+              "label": "Move Outward to First Point of Difference",
+              "text": "List attached atoms in decreasing Z order—the single highest atomic number wins (e.g., –CH₂Br beats –C(CH₃)₃ because Br > C).",
+              "step": "2",
+              "color": "blue"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Most proteinogenic L amino acids",
-                  "text": "S configuration"
-                },
-                {
-                  "label": "L-Cysteine",
-                  "text": "R because sulfur changes CIP ranking"
-                },
-                {
-                  "label": "Glycine",
-                  "text": "No stereogenic alpha carbon"
-                }
-              ]
+            {
+              "label": "Orient Priority #4 & Trace 1 → 2 → 3",
+              "text": "With group #4 on a DASH: Clockwise = R (Rectus), Counterclockwise = S (Sinister). If #4 is on a WEDGE, reverse the result.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "CIP: Atomic Number Z",
+            "Multiple Bond = Ghost Atoms",
+            "4th Group Dash → CW=R, CCW=S",
+            "Fischer H Horizontal = Flip!"
+          ],
+          "comparison": [
+            [
+              "4th Group on DASH",
+              "Read 1→2→3 directly",
+              "Clockwise = R, Counterclockwise = S"
+            ],
+            [
+              "4th Group on WEDGE",
+              "Reverse your 1→2→3 read",
+              "Clockwise → S, Counterclockwise → R"
+            ],
+            [
+              "Fischer 4th Horizontal",
+              "4th group points AT you (wedge)",
+              "Reverse 1→2→3 result!"
+            ]
+          ],
+          "theme": "cip-wheel",
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0,
+              2
+            ],
+            "caption": "Fischer projections: horizontal bonds point forward; vertical bonds point back."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Rank the substituents",
+            "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted in orange, while the competing methyl carbon is unhighlighted. H ranks fourth.</p>",
+            "molecule": "butanol2",
+            "highlights": {
+              "prin": [
+                4
+              ],
+              "sub": [
+                2,
+                3
+              ]
+            },
+            "reveal": false,
+            "diagram": {
+              "type": "fischer",
+              "top": "CH₃",
+              "bottom": "CH₂CH₃",
+              "left": "H",
+              "right": "OH",
+              "caption": "Fischer projection of butan-2-ol with C1 at the top. Horizontal bonds point toward you; vertical bonds point away."
+            }
+          },
+          {
+            "label": "3. Mirror the projection",
+            "text": "<p>Interchanging H and OH inverts this single center. The mirrored projection is R and represents the enantiomer.</p>",
+            "molecule": "butanol2",
+            "highlights": {
+              "prin": [
+                1
+              ]
+            },
+            "reveal": false,
+            "diagram": {
+              "type": "fischer",
+              "top": "CH₃",
+              "bottom": "CH₂CH₃",
+              "left": "OH",
+              "right": "H",
+              "caption": "Mirror Fischer projection with C1 at the top; the horizontal groups are exchanged."
+            }
+          }
+        ],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:configuration:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "configuration:cue"
+      ],
+      "payload": {
+        "lessonId": "configuration",
+        "title": "CIP priorities and Fischer projections",
+        "fullNote": "<p>Fischer: horizontal bonds come forward; vertical bonds go back. If group 4 is horizontal, reverse the apparent result. We draw C1 at the top here. A 180° rotation of the entire Fischer drawing preserves its configuration.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Fischer Projection Crossbow Rule: Horizontal = Hugs You (Wedge)",
+          "prompt": "Where is the lowest-priority group (#4, usually H) located?",
+          "items": [
+            {
+              "label": "Wedge-Dash: #4 on a Dash",
+              "outcome": "Keep 1→2→3 Result (CW = R, CCW = S)",
+              "text": "Standard steering-wheel view looking down the C–#4 bond."
+            },
+            {
+              "label": "Wedge-Dash: #4 on a Wedge",
+              "outcome": "Invert Result (CW = S, CCW = R)",
+              "text": "Because #4 points toward you, flip your clockwise/counterclockwise read."
+            },
+            {
+              "label": "Fischer: #4 on Horizontal Arm",
+              "outcome": "Invert Result (CW = S, CCW = R)",
+              "text": "Horizontal Fischer bonds are wedges hugging you! Vertical Fischer bonds are dashes pointing away."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:configuration:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "configuration:trap"
+      ],
+      "payload": {
+        "lessonId": "configuration",
+        "title": "CIP priorities and Fischer projections",
+        "fullNote": "<p>A 180° in-plane Fischer rotation preserves configuration; a 90° rotation does not. D/L is a relative-configuration convention, not a synonym for R/S or +/−.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Adding Atomic Numbers Instead of Picking the Single Highest Atom",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Ranking –C(CH₃)₃ (three carbons: 6+6+6=18) higher than –CH₂OH (O,H,H: 8+1+1=10)."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Never add atomic numbers! Compare the single highest-Z atom at the tiebreaker shell: O (Z=8) beats C (Z=6), so –CH₂OH wins."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:configuration:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "configuration:app"
+      ],
+      "payload": {
+        "lessonId": "configuration",
+        "title": "CIP priorities and Fischer projections",
+        "fullNote": "<p>Most proteinogenic L amino acids are S; L cysteine is R because sulfur changes CIP ranking. Glycine has no stereogenic alpha carbon.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "L-Amino Acids (S vs Cysteine R) & D/L Carbohydrate Fischer Projections",
+          "items": [
+            {
+              "label": "19 Chiral L-Amino Acids",
+              "outcome": "Almost All Are (S)",
+              "text": "In Fischer projections, L-amino acids have –NH₃⁺ on the left, which corresponds to (S) configuration."
+            },
+            {
+              "label": "L-Cysteine Exception",
+              "outcome": "L-Cysteine Is (R)!",
+              "text": "The side chain –CH₂SH has sulfur (Z=16), which beats the carboxylate carbons (O,O,O) at the second shell!"
+            },
+            {
+              "label": "SN2 Inversion Check",
+              "outcome": "Inverts 3D Umbrella",
+              "text": "SN2 always inverts the stereocenter geometry (and flips R ↔ S unless the incoming nucleophile changes CIP priority order)."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "butanol2": {
             "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
@@ -2929,26 +5089,14 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "alkene:rule",
-        "alkene:cue",
-        "alkene:trap",
-        "alkene:app",
         "alkene:step-1",
         "alkene:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "alkene",
-          "label": "E/Z configuration and achirality",
           "title": "E/Z configuration and achirality",
           "molecule": "e-butene",
-          "tag": "Rank each end separately",
-          "cards": {
-            "rule": "<p>E/Z is defined only if each double-bond carbon has two different substituents. Rank each end by CIP: Z puts the higher-priority groups on the same side; E puts them on opposite sides. E/Z geometry alone does not determine whether a whole molecule is chiral.</p>",
-            "cue": "<p>Z: higher-priority groups together. E: higher-priority groups opposite. Identify E/Z first, then assess the symmetry of the whole molecule separately.</p>",
-            "trap": "<p>Cis/trans cannot replace E/Z in every alkene. Both E- and Z-but-2-ene are achiral. Zero optical rotation can arise from an achiral compound or an equal mixture of enantiomers; it does not identify which situation applies.</p>",
-            "app": "<p>The pure Z isomer of but-2-ene is achiral and shows no ordinary optical activity. It is not a racemate. A racemate requires two distinct enantiomers in equal proportions.</p>"
-          },
           "steps": [
             {
               "label": "1. Compare the two ends",
@@ -2982,82 +5130,594 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Rank each end separately",
-              "items": [
-                {
-                  "label": "Eligibility",
-                  "text": "Two different groups on each alkene carbon"
-                },
-                {
-                  "label": "Rank each end",
-                  "text": "Apply CIP separately"
-                },
-                {
-                  "label": "Compare the winners",
-                  "text": "Same side Z; opposite sides E"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Compare the substituents across C=C. Rank each alkene carbon separately."
+          ]
+        },
+        "molecules": {
+          "e-butene": {
+            "name": "(E)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 150
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Higher-priority groups together",
-                  "text": "Z"
-                },
-                {
-                  "label": "Higher-priority groups opposite",
-                  "text": "E"
-                },
-                {
-                  "label": "Identical groups at either end",
-                  "text": "E/Z is undefined"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Assuming zero rotation proves a racemate"
-                },
-                {
-                  "label": "Check",
-                  "text": "An achiral molecule can also give zero rotation"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(E)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "z-butene": {
+            "name": "(Z)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 50
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(Z)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:alkene:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "alkene:rule"
+      ],
+      "payload": {
+        "lessonId": "alkene",
+        "title": "E/Z configuration and achirality",
+        "fullNote": "<p>E/Z is defined only if each double-bond carbon has two different substituents. Rank each end by CIP: Z puts the higher-priority groups on the same side; E puts them on opposite sides. E/Z geometry alone does not determine whether a whole molecule is chiral.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Alkene E / Z Stereochemistry: Rigid π-Bond Barrier & CIP Priority Per Carbon",
+          "items": [
+            {
+              "label": "Cut Perpendicular to C=C First",
+              "text": "Treat Left C1 and Right C2 independently: rank the two groups on C1 by CIP atomic number, then rank the two groups on C2.",
+              "step": "1",
+              "color": "green"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Z-But-2-ene",
-                  "text": "Achiral"
-                },
-                {
-                  "label": "Racemate",
-                  "text": "Equal proportions of two distinct enantiomers"
-                }
-              ]
+            {
+              "label": "Compare the Two #1 Winners Across the C=C Axis",
+              "text": "Now slice along the C=C bond axis to see whether the two #1 priority winners sit on the same side or opposite sides.",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Assign Z (Same Side) or E (Opposite Sides)",
+              "text": "Z (zusammen = \"zame zide\") when both #1 groups are on the same side; E (entgegen = opposite) when across the double bond.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Split C=C Vertically",
+            "Z = Zusammen (Zame Zide)",
+            "E = Entgegen (Opposite)",
+            "Cis/Trans ≠ E/Z Always"
+          ],
+          "comparison": [
+            [
+              "Z (Zusammen)",
+              "High-priority #1/#1 on SAME side",
+              "Mnemonic: \"Zame Zide\""
+            ],
+            [
+              "E (Entgegen)",
+              "High-priority #1/#1 on OPPOSITE sides",
+              "Mnemonic: \"Epposite\""
+            ],
+            [
+              "Terminal =CH₂",
+              "Two identical groups on one alkene C",
+              "NO E/Z stereoisomerism possible"
+            ]
+          ],
+          "theme": "ez-alkene",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Compare the substituents across C=C. Rank each alkene carbon separately."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Compare the two ends",
+            "text": "<p>Each alkene carbon bears methyl and H. Methyl outranks H, and the methyl groups lie on opposite sides: E.</p>",
+            "molecule": "e-butene",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ],
+              "sub": [
+                0,
+                3
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Same side",
+            "text": "<p>Both higher-priority methyl groups now lie on the same side: Z. Rotation about C=C would disrupt pi overlap, so these are configurational isomers.</p>",
+            "molecule": "z-butene",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ],
+              "sub": [
+                0,
+                3
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "e-butene": {
+            "name": "(E)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 150
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(E)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "z-butene": {
+            "name": "(Z)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 50
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(Z)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:alkene:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "alkene:cue"
+      ],
+      "payload": {
+        "lessonId": "alkene",
+        "title": "E/Z configuration and achirality",
+        "fullNote": "<p>Z: higher-priority groups together. E: higher-priority groups opposite. Identify E/Z first, then assess the symmetry of the whole molecule separately.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Can This Alkene Show E/Z Isomerism?",
+          "prompt": "Inspect the two substituents on each sp² alkene carbon:",
+          "items": [
+            {
+              "label": "Either Carbon Has 2 Identical Groups (R₂C=CR′₂)",
+              "outcome": "Neither E nor Z (No Geometric Isomers)",
+              "text": "Propene, 2-methylbut-2-ene, and terminal =CH₂ alkenes cannot have E/Z stereoisomers."
+            },
+            {
+              "label": "Both #1 CIP Winners on Same Face",
+              "outcome": "Z Configuration (\"Zame Zide\")",
+              "text": "Higher dipole moment in polar alkenes; often less stable than E due to steric clash between the two larger groups."
+            },
+            {
+              "label": "#1 CIP Winners on Opposite Faces",
+              "outcome": "E Configuration (Entgegen)",
+              "text": "Bulky groups sit diagonally across the rigid π bond, minimizing steric strain (higher heat of stability)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "e-butene": {
+            "name": "(E)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 150
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(E)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "z-butene": {
+            "name": "(Z)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 50
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(Z)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:alkene:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "alkene:trap"
+      ],
+      "payload": {
+        "lessonId": "alkene",
+        "title": "E/Z configuration and achirality",
+        "fullNote": "<p>Cis/trans cannot replace E/Z in every alkene. Both E- and Z-but-2-ene are achiral. Zero optical rotation can arise from an achiral compound or an equal mixture of enantiomers; it does not identify which situation applies.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Assuming Cis Always Equals Z and Trans Always Equals E",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Looking at two methyl groups trans to each other in 2-bromobut-2-ene and automatically calling it (E)."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Assign CIP atomic numbers independently on each carbon: –Br (Z=35) outranks –CH₃ (Z=6), which can make a \"trans-methyl\" alkene (Z)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "e-butene": {
+            "name": "(E)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 150
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(E)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "z-butene": {
+            "name": "(Z)-but-2-ene",
+            "formula": "C4H8",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 50
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 185,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 50
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "(Z)-but-2-ene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:alkene:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "alkene:app"
+      ],
+      "payload": {
+        "lessonId": "alkene",
+        "title": "E/Z configuration and achirality",
+        "fullNote": "<p>The pure Z isomer of but-2-ene is achiral and shows no ordinary optical activity. It is not a racemate. A racemate requires two distinct enantiomers in equal proportions.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Retinal Photoisomerization (11-cis → all-trans) & Unsaturated Fatty Acids",
+          "items": [
+            {
+              "label": "Vision Cascade (Rhodopsin)",
+              "outcome": "11-cis-Retinal + hν → all-trans-Retinal",
+              "text": "A single photon promotes a π→π* transition, momentarily breaking the π lock to straighten the retinal tail."
+            },
+            {
+              "label": "Natural Cis Fatty Acids",
+              "outcome": "Z-Double Bonds Create Membrane Kinks",
+              "text": "Cis (Z) alkenes introduce a 30° bend in acyl chains, increasing membrane fluidity by lowering packing (↓ MP)."
+            },
+            {
+              "label": "Trans Fats",
+              "outcome": "Linear E-Alkenes Pack Tightly",
+              "text": "Partial hydrogenation isomerizes Z → E alkenes, raising melting point like saturated fats."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "e-butene": {
             "name": "(E)-but-2-ene",
@@ -3161,10 +5821,6 @@
       "chapter": 2,
       "kind": "lesson",
       "itemIds": [
-        "optical:rule",
-        "optical:cue",
-        "optical:trap",
-        "optical:app",
         "optical:step-1",
         "optical:step-2",
         "optical:step-3"
@@ -3172,16 +5828,8 @@
       "payload": {
         "lesson": {
           "id": "optical",
-          "label": "Optical activity, specific rotation, and resolution",
           "title": "Optical activity, specific rotation, and resolution",
           "molecule": "butanol2",
-          "tag": "Measure rotation; normalize units; keep configuration labels separate",
-          "cards": {
-            "rule": "<p>Observed optical rotation αobs depends on concentration, path length, wavelength, temperature and solvent. In the common solution convention, [α] = αobs/(l × c), with l in dm and c in g/mL. If αobs is in degrees, the corresponding specific-rotation units are °·mL·g⁻¹·dm⁻¹. State wavelength, temperature and solvent when comparing measurements.</p>",
-            "cue": "<p>1 dm = 10 cm. Positive (+), dextrorotatory, means clockwise/rightward rotation as viewed by an observer looking toward the light source through the instrument; negative (−), levorotatory, is counterclockwise/leftward. Older texts use lowercase d/l for these signs. Uppercase D/L and R/S describe configuration and do not predict the rotation sign.</p>",
-            "trap": "<p>Do not put a length in cm directly into a formula requiring dm. Concentration in g per 100 mL needs conversion to g/mL in this convention. A racemate gives zero net rotation under matched ordinary conditions, but zero rotation alone does not prove a racemate. Specific rotation is not just an unnormalized angle.</p>",
-            "app": "<p>For an ideal mixture of only two enantiomers under matched conditions, ee = |%major − %minor| and observed rotation is the signed enantiomer excess times the pure-enantiomer observed rotation at the same total concentration and path length. A 75:25 mixture has 50% ee; if the major pure enantiomer gives +20°, the mixture gives +10°. These are illustrative practice data.</p>"
-          },
           "steps": [
             {
               "label": "1. Geometry is not optical sign",
@@ -3215,93 +5863,441 @@
               "reveal": false,
               "focus": "app"
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Measure rotation; normalize units; keep configuration labels separate",
-              "items": [
-                {
-                  "label": "Measure",
-                  "text": "Record wavelength, temperature and solvent"
-                },
-                {
-                  "label": "Convert",
-                  "text": "Path in dm; concentration in g/mL here"
-                },
-                {
-                  "label": "Normalize",
-                  "text": "[α] = αobs / (l × c)"
-                }
-              ],
-              "figure": {
-                "type": "polarimeter",
-                "steps": [],
-                "caption": "Instrument schematic: rotation is measured after light passes through the sample; no measured angle is supplied."
+          ]
+        },
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Path in cm",
-                  "text": "Divide by 10 to obtain dm"
-                },
-                {
-                  "label": "Concentration in g per 100 mL",
-                  "text": "Divide by 100 to obtain g/mL"
-                },
-                {
-                  "label": "R/S label",
-                  "text": "Does not predict +/− rotation"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
               ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0
-                ],
-                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
-              }
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Using cm directly in a dm convention"
-                },
-                {
-                  "label": "Check",
-                  "text": "Units and measurement conditions before calculating"
-                }
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:optical:rule",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "optical:rule"
+      ],
+      "payload": {
+        "lessonId": "optical",
+        "title": "Optical activity, specific rotation, and resolution",
+        "fullNote": "<p>Observed optical rotation αobs depends on concentration, path length, wavelength, temperature and solvent. In the common solution convention, [α] = αobs/(l × c), with l in dm and c in g/mL. If αobs is in degrees, the corresponding specific-rotation units are °·mL·g⁻¹·dm⁻¹. State wavelength, temperature and solvent when comparing measurements.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Polarimetry, Specific Rotation [α]D, Enantiomeric Excess (ee) & Chiral Resolution",
+          "formula": "[α]_D = α_obs / (c × l)     |     % ee = ([α]_mixture / [α]_pure) × 100 = |% R − % S|",
+          "items": [
+            {
+              "label": "Pathlength l (dm) & Conc c (g/mL)",
+              "text": "Doubling concentration c or tube length l doubles α_obs, but intrinsic specific rotation [α]_D stays constant!"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Ideal two-enantiomer mixture",
-                  "text": "ee is the absolute percentage difference"
-                },
-                {
-                  "label": "Matched conditions",
-                  "text": "Rotation can report signed enantiomer excess"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  2
-                ],
-                "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
-              }
+            {
+              "label": "Enantiomeric Excess (ee)",
+              "text": "Example: 75% (R) + 25% (S) gives 50% racemate (cancels out) + 50% net (R) excess → 50% optical purity."
             }
+          ],
+          "chips": [
+            "[α] = α_obs / (c × l)",
+            "ee = %Major − %Minor",
+            "Racemate (50:50) → α = 0°",
+            "R/S ≠ (+)/(−) Sign!"
+          ],
+          "comparison": [
+            [
+              "Pure Enantiomer",
+              "100% ee",
+              "Full specific rotation ±[α]D"
+            ],
+            [
+              "Racemic Mixture",
+              "50% R + 50% S (0% ee)",
+              "Optically inactive (α_obs = 0°)"
+            ],
+            [
+              "Chiral Resolution",
+              "React racemate + pure chiral agent",
+              "Forms separable diastereomers!"
+            ]
+          ],
+          "theme": "polarimeter-tube",
+          "figure": {
+            "type": "polarimeter",
+            "steps": [],
+            "caption": "Instrument schematic: rotation is measured after light passes through the sample; no measured angle is supplied."
           }
         },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:optical:cue",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "optical:cue"
+      ],
+      "payload": {
+        "lessonId": "optical",
+        "title": "Optical activity, specific rotation, and resolution",
+        "fullNote": "<p>1 dm = 10 cm. Positive (+), dextrorotatory, means clockwise/rightward rotation as viewed by an observer looking toward the light source through the instrument; negative (−), levorotatory, is counterclockwise/leftward. Older texts use lowercase d/l for these signs. Uppercase D/L and R/S describe configuration and do not predict the rotation sign.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Quick Polarimetry & Optical Purity Calculations",
+          "prompt": "What polarimetry question is the MCAT asking?",
+          "items": [
+            {
+              "label": "Concentration or Tube Length Doubled?",
+              "outcome": "α_obs Doubles; [α]_D Stays Constant!",
+              "text": "[α]_D is an intrinsic physical constant at fixed T and λ (like density or boiling point)."
+            },
+            {
+              "label": "Given % ee (e.g., 60% ee of + isomer)",
+              "outcome": "% Major = 50 + (ee/2) = 80%; % Minor = 20%",
+              "text": "Always split the remaining (100 − ee)% equally between the two enantiomers (40% = 20% + 20%)."
+            },
+            {
+              "label": "How to Separate a 50:50 Racemate?",
+              "outcome": "Convert to Diastereomeric Salts or Use Chiral HPLC",
+              "text": "Standard silica TLC or distillation CANNOT separate enantiomers; react with pure (R)-base/acid to make diastereomers."
+            }
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0
+            ],
+            "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "1. Geometry is not optical sign",
+            "text": "<p>Butan-2-ol can exist as enantiomers. Its connectivity alone does not specify which enantiomer is present, and an R/S descriptor does not predict (+)/(−). Measure the rotation experimentally.</p>",
+            "molecule": "butanol2",
+            "highlights": {
+              "prin": [
+                1
+              ]
+            },
+            "reveal": true,
+            "focus": "cue"
+          }
+        ],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:optical:trap",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "optical:trap"
+      ],
+      "payload": {
+        "lessonId": "optical",
+        "title": "Optical activity, specific rotation, and resolution",
+        "fullNote": "<p>Do not put a length in cm directly into a formula requiring dm. Concentration in g per 100 mL needs conversion to g/mL in this convention. A racemate gives zero net rotation under matched ordinary conditions, but zero rotation alone does not prove a racemate. Specific rotation is not just an unnormalized angle.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Assuming (R) Means Dextrorotatory (+) or That [α]D Doubles with Concentration",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Assuming an (R)-enantiomer always rotates light clockwise (+) or doubling [α]_D when c is doubled."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "R/S is a paper geometry rule while (+)/(−) is an experimental measurement; they are completely independent!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butanol2": {
+            "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch02:lesson:optical:app",
+      "chapter": 2,
+      "kind": "lesson",
+      "itemIds": [
+        "optical:app"
+      ],
+      "payload": {
+        "lessonId": "optical",
+        "title": "Optical activity, specific rotation, and resolution",
+        "fullNote": "<p>For an ideal mixture of only two enantiomers under matched conditions, ee = |%major − %minor| and observed rotation is the signed enantiomer excess times the pure-enantiomer observed rotation at the same total concentration and path length. A 75:25 mixture has 50% ee; if the major pure enantiomer gives +20°, the mixture gives +10°. These are illustrative practice data.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Sugar Mutarotation, Racemization at α-Carbons & Enantiopure Drug Synthesis",
+          "items": [
+            {
+              "label": "D-Glucose Mutarotation",
+              "outcome": "α-Anomer (+112°) ⇌ β-Anomer (+18.7°)",
+              "text": "In water, hemiacetal ring-opening equilibrates α and β anomers to a steady +52.7° optical rotation."
+            },
+            {
+              "label": "SN1 vs SN2 Polarimetry",
+              "outcome": "SN1 → Racemization (α → 0°); SN2 → Inversion",
+              "text": "Tracking optical rotation over time distinguishes planar carbocation intermediates from concerted backside attack."
+            },
+            {
+              "label": "Diastereomeric Salt Resolution",
+              "outcome": "(±)-Acid + Pure (−)-Brucine Base",
+              "text": "Forms two diastereomeric salts with different solubilities that crystallize separately."
+            }
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              2
+            ],
+            "caption": "Illustrative graph focus from the corresponding walkthrough explanation; no transformation is implied."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "3. Resolve a racemate",
+            "text": "<p>For a suitable substrate, use a single-enantiomer resolving agent to make diastereomeric salts or derivatives. Separate them by a suitable property difference, then regenerate the starting enantiomers. Ordinary achiral distillation does not generally separate enantiomers, which share the same boiling point under achiral conditions.</p>",
+            "molecule": "butanol2",
+            "highlights": {
+              "prin": [
+                1
+              ]
+            },
+            "reveal": false,
+            "focus": "app"
+          }
+        ],
         "molecules": {
           "butanol2": {
             "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",

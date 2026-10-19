@@ -89,21 +89,42 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Same formula is only the first test",
+          "title": "Isomer Classification & Index of Hydrogen Deficiency (IHD / Degrees of Unsaturation)",
+          "formula": "IHD = [2C + 2 + N − H − X] / 2   (O and divalent S have 0 effect on IHD)",
           "items": [
             {
-              "label": "Formula",
-              "text": "Compare elemental composition"
+              "label": "1 IHD Unit",
+              "text": "Equals 1 ring OR 1 π bond (alkene C=C or carbonyl C=O)."
             },
             {
-              "label": "Connectivity",
-              "text": "Compare the bonded atom pairs"
-            },
-            {
-              "label": "Space",
-              "text": "Compare spatial arrangement"
+              "label": "2 IHD Units",
+              "text": "Equals 1 alkyne (C≡C), 2 double bonds, 2 rings, or 1 ring + 1 double bond (benzene = 4 IHD)."
             }
           ],
+          "chips": [
+            "IHD = (2C+2+N-H-X)/2",
+            "Ring OR π Bond = 1 IHD",
+            "Constitutional = Diff Connectivity",
+            "Stereoisomer = Diff 3D"
+          ],
+          "comparison": [
+            [
+              "Same Connectivity + 3D",
+              "Identical Molecule",
+              "Conformer rotation / flipped drawing"
+            ],
+            [
+              "Diff Atom-to-Atom Bonds",
+              "Constitutional Isomers",
+              "Same formula, different IUPAC name"
+            ],
+            [
+              "Same Bonds, Diff 3D Space",
+              "Stereoisomers",
+              "Enantiomers or Diastereomers"
+            ]
+          ],
+          "theme": "isomer-tree",
           "figure": {
             "type": "structures",
             "steps": [
@@ -115,47 +136,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "3-Question Flowchart: Identical vs. Constitutional vs. Stereoisomer",
+          "prompt": "Compare two structures: how do they relate?",
           "items": [
             {
-              "label": "Same formula, different connectivity",
-              "text": "Constitutional isomers"
+              "label": "Different Molecular Formula?",
+              "outcome": "NOT Isomers",
+              "text": "Check atom counts first! Different formulas (e.g., C₆H₁₂ vs C₆H₁₄) are completely different compounds, not isomers."
             },
             {
-              "label": "Same connectivity, different configuration",
-              "text": "Stereoisomers"
+              "label": "Same Formula, Different IUPAC Connectivity?",
+              "outcome": "Constitutional (Structural) Isomers",
+              "text": "Atoms are wired in a different order (e.g., propan-1-ol vs propan-2-ol vs methoxyethane) → different physical & chemical properties."
             },
             {
-              "label": "Only drawing orientation changes",
-              "text": "Not evidence of a different isomer"
+              "label": "Same Connectivity, Non-Superimposable 3D?",
+              "outcome": "Stereoisomers (Enantiomers / Diastereomers)",
+              "text": "Identical bond-by-bond graph, but groups point differently in 3D space and cannot interconvert by free single-bond rotation."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Mistaking a Rotated Conformer for a Constitutional Isomer",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Calling every rotated drawing a new isomer"
+              "label": "Common Trap",
+              "text": "Looking at a kinked zig-zag alkane drawing and calling it a branched constitutional isomer without naming it."
             },
             {
-              "label": "Check",
-              "text": "Connectivity and configuration, not the page orientation"
+              "label": "Correct Reasoning",
+              "text": "Generate the IUPAC name for both drawings: if the parent chain and locants are identical, it is the SAME molecule."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Deduce Unknown Ring/Double-Bond Counts from Molecular Formulas",
           "items": [
             {
-              "label": "Alcohol versus ether",
-              "text": "Same formula can hide different connectivity"
+              "label": "Formula C₈H₈O₂",
+              "outcome": "IHD = (16 + 2 − 8)/2 = 5",
+              "text": "IHD ≥ 4 strongly hints at a benzene ring (4 IHD) plus one carbonyl or extra ring (1 IHD)."
             },
             {
-              "label": "Properties",
-              "text": "Hydrogen-bond donation and reactivity can differ"
+              "label": "G6P vs. F6P Isomerism",
+              "outcome": "Aldose vs. Ketose (C₆H₁₃O₉P)",
+              "text": "Glucose-6-phosphate and fructose-6-phosphate are constitutional isomers interconverted by phosphoglucose isomerase."
+            },
+            {
+              "label": "Halogen & Nitrogen Rule",
+              "outcome": "X subtracts 1; N adds 1",
+              "text": "Halogens replace H (subtract X); trivalent N adds one extra H slot (add N); oxygen is ignored."
             }
           ]
         }
@@ -226,22 +258,51 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Rotation changes energy, not identity",
+          "layout": "flow",
+          "title": "Newman Dihedral Energy & Cyclohexane Chair Ring-Flip Mechanics",
           "items": [
             {
-              "label": "Angle strain",
-              "text": "Deviation from preferred angles"
+              "label": "Newman Staggered Conformers",
+              "text": "Anti (180° between bulky groups) is lowest energy; Gauche (60°) has a small steric penalty (~3.8 kJ/mol for butane methyls).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Torsional strain",
-              "text": "Eclipsing interactions"
+              "label": "Newman Eclipsed Transitions",
+              "text": "Eclipsed (120°) has torsional strain; Syn-periplanar (0° bulky-bulky) is the highest-energy barrier (~19 kJ/mol in butane).",
+              "step": "2",
+              "color": "orange"
             },
             {
-              "label": "Steric strain",
-              "text": "Crowding of nonbonded atoms"
+              "label": "Cyclohexane Chair Ring Flip",
+              "text": "Eliminates angle and torsional strain (0° eclipsing); ring flip converts ALL Axial ⇄ Equatorial while UP stays UP and DOWN stays DOWN.",
+              "step": "3",
+              "color": "blue"
             }
           ],
+          "chips": [
+            "Anti (180°) < Gauche (60°) < Eclipsed < Syn (0°)",
+            "Chair Flip: Axial ⇄ Equatorial",
+            "Up Stays Up!"
+          ],
+          "comparison": [
+            [
+              "Newman Anti (180°)",
+              "Lowest energy staggered",
+              "Bulky groups maximally separated"
+            ],
+            [
+              "Newman Syn (0°)",
+              "Highest energy eclipsed",
+              "Severe torsional + steric clash"
+            ],
+            [
+              "Chair Equatorial",
+              "Bulky groups point outward",
+              "Avoids 1,3-diaxial steric clash"
+            ]
+          ],
+          "theme": "chair-newman",
           "figure": {
             "type": "projection",
             "steps": [
@@ -252,47 +313,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "1,4- vs 1,3- vs 1,2-Disubstituted Cyclohexane Cis/Trans Cheat Sheet",
+          "prompt": "What changes and what stays fixed during a cyclohexane chair flip?",
           "items": [
             {
-              "label": "Butane at 180°",
-              "text": "Anti, staggered"
+              "label": "Axial vs. Equatorial Status",
+              "outcome": "ALWAYS Flips (Ax ⇄ Eq)",
+              "text": "Every axial bond becomes equatorial and every equatorial bond becomes axial to relieve 1,3-diaxial steric clashes."
             },
             {
-              "label": "Butane at 60°",
-              "text": "Gauche, staggered"
+              "label": "Up / Down Wedge-Dash Face",
+              "outcome": "NEVER Changes (Up = Up)",
+              "text": "A ring flip is a conformational rotation, not bond breaking: cis remains cis and R/S stereocenters never invert."
             },
             {
-              "label": "Butane at 120° / 0°",
-              "text": "Eclipsed / fully eclipsed"
+              "label": "tert-Butyl Conformational Lock",
+              "outcome": "Locks in Equatorial (>99.9%)",
+              "text": "A bulky tert-butyl group experiences massive 1,3-diaxial strain if axial, locking the chair so t-Bu stays equatorial."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Equating \"Cis\" with \"Both Equatorial\" or Thinking Ring Flips Invert R/S",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Equating axial with up"
+              "label": "Common Trap",
+              "text": "Assuming cis-1,2-dimethylcyclohexane is diequatorial or that a chair flip turns cis into trans."
             },
             {
-              "label": "Check",
-              "text": "Chair flip swaps axial/equatorial but retains up/down and cis/trans"
+              "label": "Correct Reasoning",
+              "text": "Alternate Up/Down around the ring: 1,2-cis is (ax,eq), 1,3-cis is (eq,eq) or (ax,ax), and 1,4-trans is (eq,eq) or (ax,ax)."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "β-D-Glucose All-Equatorial Stability & E2 Anti-Periplanar Requirement",
           "items": [
             {
-              "label": "Binding",
-              "text": "Conformational preferences affect fit"
+              "label": "β-D-Glucopyranose",
+              "outcome": "All 5 Bulky Groups Equatorial",
+              "text": "β-D-glucose is the most abundant biological hexose because every –OH and –CH₂OH sits equatorial in the chair."
             },
             {
-              "label": "Cyclohexane",
-              "text": "Chair, boat and twist-boat differ"
+              "label": "Cyclohexane E2 Elimination",
+              "outcome": "Requires Trans-Diaxial (180°)",
+              "text": "Leaving group and β-H must both be AXIAL (anti-periplanar) for E2 elimination to occur."
+            },
+            {
+              "label": "Cyclopropane Ring Strain",
+              "outcome": "60° Bond Angles + Eclipsed C–H",
+              "text": "High angle + torsional strain makes 3-membered rings (epoxides, cyclopropanes) spring-loaded for ring opening."
             }
           ],
           "figure": {
@@ -358,21 +430,42 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Mirror image ≠ always a different molecule",
+          "title": "Chirality, Enantiomers, Diastereomers & Meso Internal Symmetry Planes",
+          "formula": "Max Stereoisomers = 2ⁿ   (Reduced when an internal symmetry plane σ creates a Meso compound)",
           "items": [
             {
-              "label": "Four different groups",
-              "text": "Common tetrahedral stereogenic-center test"
+              "label": "Chiral Molecule",
+              "text": "Non-superimposable on its mirror image; lacks an internal mirror plane (σ) or inversion center (i)."
             },
             {
-              "label": "Mirror image",
-              "text": "Check superimposability"
-            },
-            {
-              "label": "Whole molecule",
-              "text": "Compare every center and internal symmetry"
+              "label": "Meso Compound",
+              "text": "Contains ≥2 stereocenters with identical substituent sets and opposite configurations (e.g., (2R,3S)-tartaric acid) → achiral!"
             }
           ],
+          "chips": [
+            "Chiral = No σ / i Symmetry",
+            "Max Stereoisomers = 2ⁿ",
+            "Meso = Chiral Centers + Plane σ",
+            "Enantiomers = Opposite R/S"
+          ],
+          "comparison": [
+            [
+              "Enantiomers",
+              "Invert ALL chiral centers",
+              "Identical BP/MP; opposite [α]D"
+            ],
+            [
+              "Diastereomers",
+              "Invert SOME chiral centers",
+              "Different BP/MP/polarity (separable!)"
+            ],
+            [
+              "Meso Compound",
+              "Chiral centers + internal σ plane",
+              "Achiral & optically inactive ([α]=0)"
+            ]
+          ],
+          "theme": "chiral-mirror",
           "figure": {
             "type": "structures",
             "steps": [
@@ -383,47 +476,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Instant Stereochemical Relationship Classifier",
+          "prompt": "Compare the R/S configurations at the stereocenters of two molecules:",
           "items": [
             {
-              "label": "Nonsuperimposable mirror images",
-              "text": "Enantiomers"
+              "label": "Every Center Inverted: (2R,3R) vs (2S,3S)",
+              "outcome": "Enantiomers (Unless Meso!)",
+              "text": "Exact non-superimposable mirror images — check first that neither molecule has an internal mirror plane (meso)."
             },
             {
-              "label": "Stereoisomers, not mirror images",
-              "text": "Diastereomers"
+              "label": "One Inverted, One Same: (2R,3R) vs (2R,3S)",
+              "outcome": "Diastereomers",
+              "text": "Stereoisomers that are NOT mirror images; they have different melting points, boiling points, and TLC Rf values."
             },
             {
-              "label": "Internal symmetry",
-              "text": "Check for a meso compound"
+              "label": "Mirror Plane Cuts Molecule in Half: (2R,3S)",
+              "outcome": "Meso (Same Achiral Molecule)",
+              "text": "Flipping (2R,3S)-tartaric acid 180° in the page superimposes it on (2S,3R)-tartaric acid — they are identical!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Assuming Every Molecule with Stereocenters Is Chiral (The Meso Trap)",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Treating 2ⁿ as a guaranteed stereoisomer count"
+              "label": "Common Trap",
+              "text": "Counting n = 2 stereocenters in 2,3-dibromobutane and immediately answering \"4 optically active stereoisomers\"."
             },
             {
-              "label": "Check",
-              "text": "It is a maximum; symmetry can reduce the count"
+              "label": "Correct Reasoning",
+              "text": "Always check for a plane of symmetry: symmetric 2,3-disubstituted chains have ONLY 3 stereoisomers (1 enantiomeric pair + 1 achiral meso)."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Chiral Drug Receptor Binding (Thalidomide, Albuterol) & Enzyme Specificity",
           "items": [
             {
-              "label": "Achiral environments",
-              "text": "Matched ordinary properties for enantiomers"
+              "label": "Chiral Receptor Pocket",
+              "outcome": "Hands-in-Glove Diastereomeric Fit",
+              "text": "Enantiomers have identical achiral physical properties, but bind chiral enzymes differently (one active, one inactive/toxic)."
             },
             {
-              "label": "Chiral receptors",
-              "text": "Can distinguish enantiomers"
+              "label": "Epimers in Carbohydrates",
+              "outcome": "Diastereomers Differing at 1 Center",
+              "text": "D-Glucose and D-Mannose are C2 epimers; D-Glucose and D-Galactose are C4 epimers."
+            },
+            {
+              "label": "Physical Separation",
+              "outcome": "Diastereomers Separate on Silica TLC",
+              "text": "Enantiomers require a chiral stationary phase or conversion to diastereomeric salts for separation."
             }
           ]
         }
@@ -507,21 +611,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Assign priority before tracing direction",
+          "title": "Cahn-Ingold-Prelog (CIP) Absolute Configuration (R / S) & Fischer Projections",
           "items": [
             {
-              "label": "Rank atoms",
-              "text": "Atomic number; isotope mass for isotopes"
+              "label": "Rank 4 Groups by Atomic Number (Z)",
+              "text": "Compare directly attached atoms first (I > Br > Cl > S > P > F > O > N > C > H); heavier isotopes win ties (³H > ²H > ¹H).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Resolve ties",
-              "text": "Sorted lists, one sphere at a time"
+              "label": "Move Outward to First Point of Difference",
+              "text": "List attached atoms in decreasing Z order—the single highest atomic number wins (e.g., –CH₂Br beats –C(CH₃)₃ because Br > C).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Group 4 away",
-              "text": "Clockwise is R; counterclockwise is S"
+              "label": "Orient Priority #4 & Trace 1 → 2 → 3",
+              "text": "With group #4 on a DASH: Clockwise = R (Rectus), Counterclockwise = S (Sinister). If #4 is on a WEDGE, reverse the result.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "CIP: Atomic Number Z",
+            "Multiple Bond = Ghost Atoms",
+            "4th Group Dash → CW=R, CCW=S",
+            "Fischer H Horizontal = Flip!"
+          ],
+          "comparison": [
+            [
+              "4th Group on DASH",
+              "Read 1→2→3 directly",
+              "Clockwise = R, Counterclockwise = S"
+            ],
+            [
+              "4th Group on WEDGE",
+              "Reverse your 1→2→3 read",
+              "Clockwise → S, Counterclockwise → R"
+            ],
+            [
+              "Fischer 4th Horizontal",
+              "4th group points AT you (wedge)",
+              "Reverse 1→2→3 result!"
+            ]
+          ],
+          "theme": "cip-wheel",
           "figure": {
             "type": "projection",
             "steps": [
@@ -533,47 +667,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Fischer Projection Crossbow Rule: Horizontal = Hugs You (Wedge)",
+          "prompt": "Where is the lowest-priority group (#4, usually H) located?",
           "items": [
             {
-              "label": "Fischer group 4 vertical",
-              "text": "Points back: use the apparent direction"
+              "label": "Wedge-Dash: #4 on a Dash",
+              "outcome": "Keep 1→2→3 Result (CW = R, CCW = S)",
+              "text": "Standard steering-wheel view looking down the C–#4 bond."
             },
             {
-              "label": "Fischer group 4 horizontal",
-              "text": "Points forward: reverse the apparent direction"
+              "label": "Wedge-Dash: #4 on a Wedge",
+              "outcome": "Invert Result (CW = S, CCW = R)",
+              "text": "Because #4 points toward you, flip your clockwise/counterclockwise read."
+            },
+            {
+              "label": "Fischer: #4 on Horizontal Arm",
+              "outcome": "Invert Result (CW = S, CCW = R)",
+              "text": "Horizontal Fischer bonds are wedges hugging you! Vertical Fischer bonds are dashes pointing away."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Adding Atomic Numbers Instead of Picking the Single Highest Atom",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Rotating a Fischer drawing by 90°"
+              "label": "Common Trap",
+              "text": "Ranking –C(CH₃)₃ (three carbons: 6+6+6=18) higher than –CH₂OH (O,H,H: 8+1+1=10)."
             },
             {
-              "label": "Check",
-              "text": "A 180° whole-drawing rotation preserves configuration"
+              "label": "Correct Reasoning",
+              "text": "Never add atomic numbers! Compare the single highest-Z atom at the tiebreaker shell: O (Z=8) beats C (Z=6), so –CH₂OH wins."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "L-Amino Acids (S vs Cysteine R) & D/L Carbohydrate Fischer Projections",
           "items": [
             {
-              "label": "Most proteinogenic L amino acids",
-              "text": "S configuration"
+              "label": "19 Chiral L-Amino Acids",
+              "outcome": "Almost All Are (S)",
+              "text": "In Fischer projections, L-amino acids have –NH₃⁺ on the left, which corresponds to (S) configuration."
             },
             {
-              "label": "L-Cysteine",
-              "text": "R because sulfur changes CIP ranking"
+              "label": "L-Cysteine Exception",
+              "outcome": "L-Cysteine Is (R)!",
+              "text": "The side chain –CH₂SH has sulfur (Z=16), which beats the carboxylate carbons (O,O,O) at the second shell!"
             },
             {
-              "label": "Glycine",
-              "text": "No stereogenic alpha carbon"
+              "label": "SN2 Inversion Check",
+              "outcome": "Inverts 3D Umbrella",
+              "text": "SN2 always inverts the stereocenter geometry (and flips R ↔ S unless the incoming nucleophile changes CIP priority order)."
             }
           ]
         }
@@ -628,21 +773,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Rank each end separately",
+          "title": "Alkene E / Z Stereochemistry: Rigid π-Bond Barrier & CIP Priority Per Carbon",
           "items": [
             {
-              "label": "Eligibility",
-              "text": "Two different groups on each alkene carbon"
+              "label": "Cut Perpendicular to C=C First",
+              "text": "Treat Left C1 and Right C2 independently: rank the two groups on C1 by CIP atomic number, then rank the two groups on C2.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Rank each end",
-              "text": "Apply CIP separately"
+              "label": "Compare the Two #1 Winners Across the C=C Axis",
+              "text": "Now slice along the C=C bond axis to see whether the two #1 priority winners sit on the same side or opposite sides.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Compare the winners",
-              "text": "Same side Z; opposite sides E"
+              "label": "Assign Z (Same Side) or E (Opposite Sides)",
+              "text": "Z (zusammen = \"zame zide\") when both #1 groups are on the same side; E (entgegen = opposite) when across the double bond.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Split C=C Vertically",
+            "Z = Zusammen (Zame Zide)",
+            "E = Entgegen (Opposite)",
+            "Cis/Trans ≠ E/Z Always"
+          ],
+          "comparison": [
+            [
+              "Z (Zusammen)",
+              "High-priority #1/#1 on SAME side",
+              "Mnemonic: \"Zame Zide\""
+            ],
+            [
+              "E (Entgegen)",
+              "High-priority #1/#1 on OPPOSITE sides",
+              "Mnemonic: \"Epposite\""
+            ],
+            [
+              "Terminal =CH₂",
+              "Two identical groups on one alkene C",
+              "NO E/Z stereoisomerism possible"
+            ]
+          ],
+          "theme": "ez-alkene",
           "figure": {
             "type": "structures",
             "steps": [
@@ -654,47 +829,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Can This Alkene Show E/Z Isomerism?",
+          "prompt": "Inspect the two substituents on each sp² alkene carbon:",
           "items": [
             {
-              "label": "Higher-priority groups together",
-              "text": "Z"
+              "label": "Either Carbon Has 2 Identical Groups (R₂C=CR′₂)",
+              "outcome": "Neither E nor Z (No Geometric Isomers)",
+              "text": "Propene, 2-methylbut-2-ene, and terminal =CH₂ alkenes cannot have E/Z stereoisomers."
             },
             {
-              "label": "Higher-priority groups opposite",
-              "text": "E"
+              "label": "Both #1 CIP Winners on Same Face",
+              "outcome": "Z Configuration (\"Zame Zide\")",
+              "text": "Higher dipole moment in polar alkenes; often less stable than E due to steric clash between the two larger groups."
             },
             {
-              "label": "Identical groups at either end",
-              "text": "E/Z is undefined"
+              "label": "#1 CIP Winners on Opposite Faces",
+              "outcome": "E Configuration (Entgegen)",
+              "text": "Bulky groups sit diagonally across the rigid π bond, minimizing steric strain (higher heat of stability)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Assuming Cis Always Equals Z and Trans Always Equals E",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Assuming zero rotation proves a racemate"
+              "label": "Common Trap",
+              "text": "Looking at two methyl groups trans to each other in 2-bromobut-2-ene and automatically calling it (E)."
             },
             {
-              "label": "Check",
-              "text": "An achiral molecule can also give zero rotation"
+              "label": "Correct Reasoning",
+              "text": "Assign CIP atomic numbers independently on each carbon: –Br (Z=35) outranks –CH₃ (Z=6), which can make a \"trans-methyl\" alkene (Z)!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Retinal Photoisomerization (11-cis → all-trans) & Unsaturated Fatty Acids",
           "items": [
             {
-              "label": "Z-But-2-ene",
-              "text": "Achiral"
+              "label": "Vision Cascade (Rhodopsin)",
+              "outcome": "11-cis-Retinal + hν → all-trans-Retinal",
+              "text": "A single photon promotes a π→π* transition, momentarily breaking the π lock to straighten the retinal tail."
             },
             {
-              "label": "Racemate",
-              "text": "Equal proportions of two distinct enantiomers"
+              "label": "Natural Cis Fatty Acids",
+              "outcome": "Z-Double Bonds Create Membrane Kinks",
+              "text": "Cis (Z) alkenes introduce a 30° bend in acyl chains, increasing membrane fluidity by lowering packing (↓ MP)."
+            },
+            {
+              "label": "Trans Fats",
+              "outcome": "Linear E-Alkenes Pack Tightly",
+              "text": "Partial hydrogenation isomerizes Z → E alkenes, raising melting point like saturated fats."
             }
           ]
         }
@@ -749,21 +935,42 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Measure rotation; normalize units; keep configuration labels separate",
+          "title": "Polarimetry, Specific Rotation [α]D, Enantiomeric Excess (ee) & Chiral Resolution",
+          "formula": "[α]_D = α_obs / (c × l)     |     % ee = ([α]_mixture / [α]_pure) × 100 = |% R − % S|",
           "items": [
             {
-              "label": "Measure",
-              "text": "Record wavelength, temperature and solvent"
+              "label": "Pathlength l (dm) & Conc c (g/mL)",
+              "text": "Doubling concentration c or tube length l doubles α_obs, but intrinsic specific rotation [α]_D stays constant!"
             },
             {
-              "label": "Convert",
-              "text": "Path in dm; concentration in g/mL here"
-            },
-            {
-              "label": "Normalize",
-              "text": "[α] = αobs / (l × c)"
+              "label": "Enantiomeric Excess (ee)",
+              "text": "Example: 75% (R) + 25% (S) gives 50% racemate (cancels out) + 50% net (R) excess → 50% optical purity."
             }
           ],
+          "chips": [
+            "[α] = α_obs / (c × l)",
+            "ee = %Major − %Minor",
+            "Racemate (50:50) → α = 0°",
+            "R/S ≠ (+)/(−) Sign!"
+          ],
+          "comparison": [
+            [
+              "Pure Enantiomer",
+              "100% ee",
+              "Full specific rotation ±[α]D"
+            ],
+            [
+              "Racemic Mixture",
+              "50% R + 50% S (0% ee)",
+              "Optically inactive (α_obs = 0°)"
+            ],
+            [
+              "Chiral Resolution",
+              "React racemate + pure chiral agent",
+              "Forms separable diastereomers!"
+            ]
+          ],
+          "theme": "polarimeter-tube",
           "figure": {
             "type": "polarimeter",
             "steps": [],
@@ -772,19 +979,23 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Quick Polarimetry & Optical Purity Calculations",
+          "prompt": "What polarimetry question is the MCAT asking?",
           "items": [
             {
-              "label": "Path in cm",
-              "text": "Divide by 10 to obtain dm"
+              "label": "Concentration or Tube Length Doubled?",
+              "outcome": "α_obs Doubles; [α]_D Stays Constant!",
+              "text": "[α]_D is an intrinsic physical constant at fixed T and λ (like density or boiling point)."
             },
             {
-              "label": "Concentration in g per 100 mL",
-              "text": "Divide by 100 to obtain g/mL"
+              "label": "Given % ee (e.g., 60% ee of + isomer)",
+              "outcome": "% Major = 50 + (ee/2) = 80%; % Minor = 20%",
+              "text": "Always split the remaining (100 − ee)% equally between the two enantiomers (40% = 20% + 20%)."
             },
             {
-              "label": "R/S label",
-              "text": "Does not predict +/− rotation"
+              "label": "How to Separate a 50:50 Racemate?",
+              "outcome": "Convert to Diastereomeric Salts or Use Chiral HPLC",
+              "text": "Standard silica TLC or distillation CANNOT separate enantiomers; react with pure (R)-base/acid to make diastereomers."
             }
           ],
           "figure": {
@@ -797,29 +1008,36 @@
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Assuming (R) Means Dextrorotatory (+) or That [α]D Doubles with Concentration",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Using cm directly in a dm convention"
+              "label": "Common Trap",
+              "text": "Assuming an (R)-enantiomer always rotates light clockwise (+) or doubling [α]_D when c is doubled."
             },
             {
-              "label": "Check",
-              "text": "Units and measurement conditions before calculating"
+              "label": "Correct Reasoning",
+              "text": "R/S is a paper geometry rule while (+)/(−) is an experimental measurement; they are completely independent!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Sugar Mutarotation, Racemization at α-Carbons & Enantiopure Drug Synthesis",
           "items": [
             {
-              "label": "Ideal two-enantiomer mixture",
-              "text": "ee is the absolute percentage difference"
+              "label": "D-Glucose Mutarotation",
+              "outcome": "α-Anomer (+112°) ⇌ β-Anomer (+18.7°)",
+              "text": "In water, hemiacetal ring-opening equilibrates α and β anomers to a steady +52.7° optical rotation."
             },
             {
-              "label": "Matched conditions",
-              "text": "Rotation can report signed enantiomer excess"
+              "label": "SN1 vs SN2 Polarimetry",
+              "outcome": "SN1 → Racemization (α → 0°); SN2 → Inversion",
+              "text": "Tracking optical rotation over time distinguishes planar carbocation intermediates from concerted backside attack."
+            },
+            {
+              "label": "Diastereomeric Salt Resolution",
+              "outcome": "(±)-Acid + Pure (−)-Brucine Base",
+              "text": "Forms two diastereomeric salts with different solubilities that crystallize separately."
             }
           ],
           "figure": {
