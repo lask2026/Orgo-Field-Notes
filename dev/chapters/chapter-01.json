@@ -246,7 +246,77 @@
           },
           "focus": "cue"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Principal Group → Longest Chain → Lowest Locants",
+          "items": [
+            {
+              "label": "Principal suffix",
+              "text": "Include its group and required unsaturation"
+            },
+            {
+              "label": "Parent chain",
+              "text": "Compare valid continuous chains"
+            },
+            {
+              "label": "Locants",
+              "text": "First point of difference"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Simple repeated substituent",
+              "text": "Ignore di-, tri- and similar counting multipliers"
+            },
+            {
+              "label": "Traditional alkyl prefix",
+              "text": "Ignore n-, sec-, tert-; retain iso-, neo-, cyclo-"
+            },
+            {
+              "label": "Compound substituent",
+              "text": "Alphabetize its complete name"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Trusting a written parent chain without tracing it"
+            },
+            {
+              "label": "Check",
+              "text": "A branch may extend the longest continuous chain"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Valine",
+              "text": "Isopropyl side chain"
+            },
+            {
+              "label": "Leucine",
+              "text": "Isobutyl side chain"
+            },
+            {
+              "label": "Isoleucine",
+              "text": "sec-Butyl side chain"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "alcohols",
@@ -419,7 +489,69 @@
           },
           "focus": "trap"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Alcohol (–ol) Outranks Alkene (–en–) & Alkyne (–yn–)",
+          "items": [
+            {
+              "label": "Principal OH",
+              "text": "Outranks C=C and C≡C here"
+            },
+            {
+              "label": "Number the chain",
+              "text": "Give the principal OH the lower locant"
+            },
+            {
+              "label": "Build the name",
+              "text": "Retain en/yn in the stem; add ol"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Principal group",
+              "text": "Use the suffix -ol"
+            },
+            {
+              "label": "Subordinate OH",
+              "text": "Use the prefix hydroxy-"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Giving unsaturation priority over the principal OH"
+            },
+            {
+              "label": "Check",
+              "text": "If enyne locant sets tie, the double bond gets the lower locant"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Ethanol",
+              "text": "Ethyl alcohol"
+            },
+            {
+              "label": "Propan-2-ol",
+              "text": "Isopropyl alcohol"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "rings",
@@ -565,7 +697,69 @@
           },
           "focus": "trap"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Principal suffix → Multiple bonds → Substituents",
+          "items": [
+            {
+              "label": "Senior suffix",
+              "text": "First numbering priority"
+            },
+            {
+              "label": "Simple cycloalkene",
+              "text": "Without a senior suffix: double bond at C1–C2"
+            },
+            {
+              "label": "Substituents",
+              "text": "Minimize locants, then resolve genuine ties"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "C1 is an alkene carbon",
+              "text": "C2 must be the other alkene carbon"
+            },
+            {
+              "label": "Senior suffix present",
+              "text": "Apply its locant priority first"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Starting at the most substituted carbon regardless of priority"
+            },
+            {
+              "label": "Check",
+              "text": "Suffix, multiple bonds, then substituent locants"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Cyclic biomolecules",
+              "text": "Recognize the framework"
+            },
+            {
+              "label": "Steroids",
+              "text": "Use established fused-ring numbering"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "diols",
@@ -673,7 +867,69 @@
           },
           "focus": "trap"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Vicinal = 1,2-Diol (Adjacent) · Geminal = 1,1-Diol (Same C)",
+          "items": [
+            {
+              "label": "Two OH groups",
+              "text": "Use -diol; retain the alkane e"
+            },
+            {
+              "label": "Locants",
+              "text": "Number every OH"
+            },
+            {
+              "label": "Arrangement",
+              "text": "Same carbon versus adjacent carbons"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Adjacent carbons",
+              "text": "Vicinal: 1,2-diol"
+            },
+            {
+              "label": "Same carbon",
+              "text": "Geminal: 1,1-diol"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Treating all carbonyl hydrates as equally favored"
+            },
+            {
+              "label": "Check",
+              "text": "Substrate and conditions control the hydration equilibrium"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Hydration",
+              "text": "Reversible addition of water"
+            },
+            {
+              "label": "Aldehyde oxidation",
+              "text": "Hydrated forms can participate; oxidation is separate"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "carbonyls",
@@ -883,7 +1139,73 @@
           },
           "focus": "trap"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Aldehyde (Terminal C1) Outranks Ketone (Internal)",
+          "items": [
+            {
+              "label": "Aldehyde",
+              "text": "Carbonyl carbon has at least one H"
+            },
+            {
+              "label": "Ketone",
+              "text": "Carbonyl carbon has two carbon substituents"
+            },
+            {
+              "label": "Naming context",
+              "text": "Simple acyclic -al/-one; ring attachment may use -carbaldehyde"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Formaldehyde",
+              "text": "Methanal: one carbon"
+            },
+            {
+              "label": "Acetaldehyde",
+              "text": "Ethanal: two carbons"
+            },
+            {
+              "label": "Acetone",
+              "text": "Propanone: three carbons"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Assuming acetone has two carbons from acet-"
+            },
+            {
+              "label": "Check",
+              "text": "Count its complete three-carbon skeleton"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Carbohydrates",
+              "text": "Aldose versus ketose"
+            },
+            {
+              "label": "Alpha carbon",
+              "text": "Enolate and aldol chemistry"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "derivatives",
@@ -1095,7 +1417,73 @@
           },
           "focus": "trap"
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Acid > Anhydride > Ester > Amide > Aldehyde > Ketone > Alcohol",
+          "items": [
+            {
+              "label": "Senior group",
+              "text": "Select the suffix using this chapter hierarchy"
+            },
+            {
+              "label": "Other groups",
+              "text": "Retain prefixes and unsaturation"
+            },
+            {
+              "label": "Separate questions",
+              "text": "Naming seniority is not oxidation-state ranking"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Formic acid",
+              "text": "Methanoic: one carbon"
+            },
+            {
+              "label": "Acetic acid",
+              "text": "Ethanoic: two carbons"
+            },
+            {
+              "label": "Propionic acid",
+              "text": "Propanoic: three carbons"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Equating an ester with an ether"
+            },
+            {
+              "label": "Check",
+              "text": "An ester has an adjacent carbonyl; distinguish P–O–P from carboxylic anhydrides"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Pyruvic acid",
+              "text": "2-Oxopropanoic acid"
+            },
+            {
+              "label": "Tartaric acid",
+              "text": "2,3-Dihydroxybutanedioic acid"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
