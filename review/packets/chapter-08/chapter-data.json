@@ -81,7 +81,15 @@
               "label": "Environment",
               "text": "Hydrogen bonding and ionization"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Neutral acid versus carboxylate. The complete graphs retain all formal charges."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -206,7 +214,15 @@
               "label": "Equilibrium",
               "text": "Water removal or excess alcohol affects Fischer esterification"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Separate acid and ester examples; different carbon skeletons, not an esterification pair."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -323,7 +339,15 @@
               "label": "Carbon audit",
               "text": "Recount before accepting the product"
             }
-          ]
+          ],
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Heating a suitable beta-keto acid can release CO2, followed by tautomerization; schematic net pathway."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -439,7 +463,12 @@
               "label": "Aggregation",
               "text": "Polar heads and nonpolar tails can assemble"
             }
-          ]
+          ],
+          "figure": {
+            "type": "micelle",
+            "steps": [],
+            "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -481,7 +510,12 @@
               "label": "Assembly",
               "text": "Depends on concentration, ions and tail structure"
             }
-          ]
+          ],
+          "figure": {
+            "type": "micelle",
+            "steps": [],
+            "caption": "Aggregate cartoon: each head/tail token represents an amphiphile, not atoms or a resolved molecular structure."
+          }
         }
       }
     }
