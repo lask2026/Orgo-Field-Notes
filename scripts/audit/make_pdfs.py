@@ -21,6 +21,11 @@ if not fonts: raise SystemExit('A Unicode font is required: install Segoe UI or 
 pdfmetrics.registerFont(TTFont('Audit',str(fonts[0])))
 pdfmetrics.registerFont(TTFont('AuditBold',str(fonts[1])))
 pdfmetrics.registerFontFamily('Audit',normal='Audit',bold='AuditBold',italic='Audit',boldItalic='AuditBold')
+symbol_candidates=[Path('C:/Windows/Fonts/seguisym.ttf'),Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')]
+symbol_font=next((p for p in symbol_candidates if p.exists()),None)
+if not symbol_font:raise SystemExit('A chemical-symbol fallback font is required: Segoe UI Symbol or DejaVu Sans.')
+pdfmetrics.registerFont(TTFont('AuditSymbols',str(symbol_font)))
+if 0x21cc not in pdfmetrics.getFont('AuditSymbols').face.charToGlyph:raise SystemExit('Symbol font lacks equilibrium arrow U+21CC.')
 for name in ['Audit','AuditBold']:
  missing=[hex(c) for c in [0x207b,0x2082,0x2083,0x2097,0x209b] if c not in pdfmetrics.getFont(name).face.charToGlyph]
  if missing: raise SystemExit(f'{name} lacks required chemistry glyphs: {missing}')
@@ -36,7 +41,21 @@ styles.add(ParagraphStyle('SmallAudit',fontName='Audit',fontSize=8,leading=11,sp
 
 def load(p):return json.loads(p.read_text(encoding='utf-8'))
 def plain(t):return unescape(re.sub('<[^>]+>',' ',str(t)).replace('\xa0',' ')).strip()
-def para(t,style='BodyText'):return Paragraph(escape(plain(t)).replace('\n','<br/>'),styles[style])
+def para(t,style='BodyText'):
+ # Select real supported glyphs; a text layer alone cannot detect .notdef boxes.
+ base=pdfmetrics.getFont(styles[style].fontName).face.charToGlyph
+ fallback=pdfmetrics.getFont('AuditSymbols').face.charToGlyph
+ runs=[]
+ for char in plain(t).replace('\U0001f590','Hands-on:'):
+  # Monochrome PDF fonts have no separate glyph for emoji presentation selectors.
+  if ord(char) in [0xfe0e,0xfe0f]:continue
+  # This ReportLab runtime cannot reliably round-trip supplementary ToUnicode entries.
+  if ord(char)>0xffff:raise ValueError(f'PDF text mapping requires an explicit equivalent for U+{ord(char):X}')
+  if char=='\n':runs.append('<br/>');continue
+  if char.isspace() or ord(char) in base:runs.append(escape(char))
+  elif ord(char) in fallback:runs.append('<font name="AuditSymbols">'+escape(char)+'</font>')
+  else:raise ValueError(f'No PDF font supports U+{ord(char):04X}')
+ return Paragraph(''.join(runs),styles[style])
 def add(story,t,style='BodyText'):story.append(para(t,style))
 def json_text(story,data):add(story,json.dumps(data,ensure_ascii=False,separators=(', ',': ')),'SmallAudit')
 

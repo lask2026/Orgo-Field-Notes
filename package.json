@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test tests/unit.test.mjs tests/chapter02-review.test.mjs tests/chapter03-review.test.mjs tests/audit.test.mjs",
+    "test": "node --test tests/unit.test.mjs tests/chapter02-review.test.mjs tests/chapter03-review.test.mjs tests/chapter04-review.test.mjs tests/audit.test.mjs",
     "test:schema": "python scripts/validate_schema.py",
     "test:browser": "node tests/browser.mjs",
     "test:regression": "node tests/regression.mjs",

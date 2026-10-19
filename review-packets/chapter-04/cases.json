@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "38242a9012de6c07767e36d8a1b317b31e130521aa753062486fbbf479090340",
+    "sha256": "ff7868101e9d8ce6e5749bcc13893b999e4310839be9274538e0b968aeb5ec9c",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -61,6 +61,7 @@
             ]
           ]
         },
+        "context": "The displayed carboxyl group is a structural example for Stage 1. Stages 2–3 use a separate hypothetical proton-transfer equilibrium, HA + B ⇌ A− + BH+, with all pKa values on a comparable solvent/temperature scale; they are not measured values for the displayed ethanoic acid.",
         "stages": [
           {
             "id": "pka-equilibrium:stage-1",
@@ -70,7 +71,7 @@
           {
             "id": "pka-equilibrium:stage-2",
             "type": "choice",
-            "prompt": "If pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
+            "prompt": "For HA + B ⇌ A− + BH+, if pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
             "options": [
               "Reactants",
               "Products",
@@ -80,7 +81,7 @@
           {
             "id": "pka-equilibrium:stage-3",
             "type": "number",
-            "prompt": "Estimate K for those pKa values.",
+            "prompt": "For that forward equilibrium, using pKa(HA)=5 and pKa(BH+)=10, estimate K.",
             "unit": "dimensionless"
           }
         ]
@@ -137,7 +138,7 @@
           {
             "id": "identify-partners:stage-2",
             "type": "choice",
-            "prompt": "Which species supplies a lone pair as a nucleophile?",
+            "prompt": "Among these choices (including a reagent not drawn), which species supplies a lone pair as a nucleophile?",
             "options": [
               "Hydroxide ion",
               "A proton",
@@ -203,7 +204,7 @@
           {
             "id": "sn2-rate:stage-1",
             "type": "choice",
-            "prompt": "With a strong nucleophile in polar aprotic solvent, this primary halide favors…",
+            "prompt": "With a small, strong nucleophile in a suitable polar aprotic solvent, this primary halide favors…",
             "options": [
               "SN2",
               "Unstabilized primary SN1"
@@ -218,7 +219,7 @@
           {
             "id": "sn2-rate:stage-3",
             "type": "choice",
-            "prompt": "At a chiral SN2 reaction center, the geometry undergoes…",
+            "prompt": "Apply the general rule to a separate chiral SN2 center (the displayed bromoethane is achiral): its geometry undergoes…",
             "options": [
               "Inversion",
               "Always complete racemization",
@@ -279,8 +280,8 @@
           {
             "id": "carbon-redox:stage-2",
             "type": "number",
-            "prompt": "What is this aldehyde carbon’s oxidation state?",
-            "unit": "oxidation state"
+            "prompt": "What is this aldehyde carbon’s oxidation state (a dimensionless signed number)?",
+            "unit": "dimensionless"
           },
           {
             "id": "carbon-redox:stage-3",
@@ -460,7 +461,7 @@
             },
             {
               "type": "choice",
-              "prompt": "If pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
+              "prompt": "For HA + B ⇌ A− + BH+, if pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
               "skill": "Apply the rule",
               "options": [
                 "Reactants",
@@ -468,7 +469,7 @@
                 "Exactly equal amounts"
               ],
               "answer": 1,
-              "explanation": "The product acid is weaker; K ≈ 10^(10−5).",
+              "explanation": "BH+ is the weaker acid: its pKa is higher than that of HA. The equilibrium as written favors products.",
               "hints": [
                 "Compare the two acids.",
                 "Equilibrium favors the side with the higher-pKa acid."
@@ -477,12 +478,12 @@
             },
             {
               "type": "number",
-              "prompt": "Estimate K for those pKa values.",
+              "prompt": "For that forward equilibrium, using pKa(HA)=5 and pKa(BH+)=10, estimate K.",
               "skill": "Calculate and interpret",
               "answer": 100000,
               "unit": "dimensionless",
               "tolerance": 0,
-              "explanation": "K ≈ 10⁵ = 100000.",
+              "explanation": "For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+)−pKa(HA)] = 10⁵ = 100000 under comparable conditions.",
               "hints": [
                 "Subtract reactant-acid pKa from product-acid pKa.",
                 "Raise ten to that difference."
@@ -490,7 +491,8 @@
               "highlights": {}
             }
           ],
-          "summary": "A five-unit pKa advantage favors products by about 10⁵."
+          "summary": "A five-unit pKa advantage favors products by about 10⁵.",
+          "context": "The displayed carboxyl group is a structural example for Stage 1. Stages 2–3 use a separate hypothetical proton-transfer equilibrium, HA + B ⇌ A− + BH+, with all pKa values on a comparable solvent/temperature scale; they are not measured values for the displayed ethanoic acid."
         },
         "molecule": {
           "name": "ethanoic acid",
@@ -580,7 +582,7 @@
             },
             {
               "type": "choice",
-              "prompt": "Which species supplies a lone pair as a nucleophile?",
+              "prompt": "Among these choices (including a reagent not drawn), which species supplies a lone pair as a nucleophile?",
               "skill": "Apply the rule",
               "options": [
                 "Hydroxide ion",
@@ -675,7 +677,7 @@
           "stages": [
             {
               "type": "choice",
-              "prompt": "With a strong nucleophile in polar aprotic solvent, this primary halide favors…",
+              "prompt": "With a small, strong nucleophile in a suitable polar aprotic solvent, this primary halide favors…",
               "skill": "Apply the rule",
               "options": [
                 "SN2",
@@ -705,7 +707,7 @@
             },
             {
               "type": "choice",
-              "prompt": "At a chiral SN2 reaction center, the geometry undergoes…",
+              "prompt": "Apply the general rule to a separate chiral SN2 center (the displayed bromoethane is achiral): its geometry undergoes…",
               "skill": "Apply the rule",
               "options": [
                 "Inversion",
@@ -713,7 +715,7 @@
                 "Retention"
               ],
               "answer": 0,
-              "explanation": "Backside attack gives geometric inversion. R/S labels require a fresh CIP ranking.",
+              "explanation": "Backside attack gives geometric inversion at a stereogenic reaction center; a fresh CIP ranking determines its R/S label. Bromoethane itself is achiral and is only the rate-law example here.",
               "hints": [
                 "The nucleophile approaches opposite the leaving group.",
                 "Think of an umbrella turning inside out."
@@ -795,24 +797,26 @@
               ],
               "highlights": {
                 "prin": [
-                  1,
+                  1
+                ],
+                "sub": [
                   2
                 ]
               }
             },
             {
               "type": "number",
-              "prompt": "What is this aldehyde carbon’s oxidation state?",
+              "prompt": "What is this aldehyde carbon’s oxidation state (a dimensionless signed number)?",
               "skill": "Calculate and interpret",
               "answer": 1,
-              "unit": "oxidation state",
               "tolerance": 0,
               "explanation": "+2 from C=O and −1 from C–H gives +1.",
               "hints": [
                 "Assign electrons in C–O to O and in C–H to C.",
                 "C–C contributes zero."
               ],
-              "highlights": {}
+              "highlights": {},
+              "unit": "dimensionless"
             },
             {
               "type": "choice",
@@ -1062,7 +1066,8 @@
         "acids:trap",
         "acids:app",
         "acids:step-1",
-        "acids:step-2"
+        "acids:step-2",
+        "acids:step-3"
       ],
       "payload": {
         "lesson": {
@@ -1072,8 +1077,8 @@
           "molecule": "aceticacid",
           "tag": "Equilibrium favors the weaker acid/base pair",
           "cards": {
-            "rule": "<p>Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.</p>",
-            "cue": "<p>Lower pKa means stronger acid. Stabilize the conjugate base to increase acidity.</p>",
+            "rule": "<p>Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. In a coordinate covalent bond, both shared electrons originate from the donor; the resulting bond is still covalent. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.</p><p>Amphoteric species can act as acids or bases, depending on the partner. Water can accept H+ to form H3O+ or donate H+ to form OH−; bicarbonate can likewise gain or lose a proton.</p>",
+            "cue": "<p>Lower pKa means stronger acid. Stabilize the conjugate base to increase acidity. Across a comparable row, electronegativity can stabilize negative charge; down a group, weaker H–X bonds and charge dispersion can dominate. Compare like structures and conditions, rather than applying a single trend everywhere.</p>",
             "trap": "<p>Basicity is an equilibrium property; nucleophilicity is a reaction-rate property. Do not use a single periodic trend across different solvents or unrelated functional groups.</p>",
             "app": "<p>A carboxylic acid with pKa 4.8 is mostly carboxylate at pH 7.4; that changes water solubility and membrane partitioning.</p>"
           },
@@ -1107,6 +1112,28 @@
                 ]
               },
               "reveal": true
+            },
+            {
+              "label": "3. Find alpha hydrogens",
+              "text": "<p>In ethanal, the methyl carbon is alpha to the carbonyl. Removing one of its hydrogens with a suitable base can form a resonance-stabilized enolate. Distinguish the acidic alpha C–H sites from the electrophilic carbonyl carbon; an enolate can act as a nucleophile. These hydrogens are implicit in the drawing.</p>",
+              "molecule": "acetaldehyde",
+              "highlights": {
+                "prin": [
+                  0
+                ],
+                "sub": [
+                  1,
+                  2
+                ]
+              },
+              "reveal": true,
+              "challenge": {
+                "prompt": "Select the carbon bearing the alpha hydrogens, not the carbonyl carbon.",
+                "answer": [
+                  0
+                ],
+                "explanation": "A is the methyl carbon adjacent to the C=O group; its C–H hydrogens are alpha hydrogens."
+              }
             }
           ]
         },
@@ -1205,6 +1232,43 @@
             "h": 200,
             "cond": "acetate (one resonance contributor)",
             "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
           }
         }
       }
@@ -1230,8 +1294,8 @@
           "tag": "Electron pairs move from donor to acceptor",
           "cards": {
             "rule": "<p>A nucleophile supplies an electron pair to an electrophile. A leaving group takes the bonding pair when it departs. Stable weak bases usually make better leaving groups. Protonation can turn poor leaving group OH− into neutral water.</p>",
-            "cue": "<p>Find electron-rich donor → electron-poor acceptor → possible leaving group. Curved arrows start at electrons, not positive charges.</p>",
-            "trap": "<p>A carbonyl oxygen is electron rich while its carbon is electron poor. A positive charge is not required for electrophilicity. Polar protic solvents strongly solvate small anions; polar aprotic solvents often increase their SN2 reactivity.</p>",
+            "cue": "<p>Find electron-rich donor → electron-poor acceptor → possible leaving group. Curved arrows start at electrons, not positive charges.</p><p>Compare nucleophilicity using charge, reacting-atom identity, steric access, and solvent. For a similar reacting atom, an anion is often more nucleophilic than its neutral conjugate acid. Across comparable atoms in a row, lower electronegativity often favors donation. Bulky donors are hindered in SN2. Protic solvation and polarizability can reverse simple basicity-based trends down a group; polar aprotic conditions often favor anionic SN2 nucleophiles.</p>",
+            "trap": "<p>A carbonyl oxygen is electron rich while its carbon is electron poor. A positive charge is not required for electrophilicity. For comparable neutral acyl derivatives in nucleophilic acyl substitution, anhydrides are generally more reactive than esters, and esters more reactive than amides. A free carboxylic acid can instead protonate a basic nucleophile; protonation, activation and the leaving group prevent a universal acid/ester ranking.</p>",
             "app": "<p>Enzyme active sites position nucleophiles and electrophiles while stabilizing charge; the same donor–acceptor logic applies.</p>"
           },
           "steps": [
@@ -1339,7 +1403,7 @@
           "steps": [
             {
               "label": "1. Inspect crowding",
-              "text": "<p>The carbon bonded to Br is tertiary, making backside SN2 attack strongly hindered. In a suitable ionizing solvent, ionization can lead to a tertiary carbocation.</p>",
+              "text": "<p>The carbon bonded to Br is tertiary: its three carbon neighbors are highlighted in orange. The cross is a 2D connectivity drawing, not a claim of 90° bond angles. Backside SN2 attack is strongly hindered; a suitable ionizing solvent can permit formation of a tertiary carbocation.</p>",
               "molecule": "tbutylbromide",
               "highlights": {
                 "prin": [
@@ -1355,14 +1419,14 @@
             },
             {
               "label": "2. Compare a primary site",
-              "text": "<p>A primary carbon is less crowded. With a strong nucleophile in a suitable polar aprotic solvent, bromoethane is a much better SN2 candidate. A primary unstabilized carbocation is unfavorable.</p>",
+              "text": "<p>The primary carbon has only one carbon neighbor, highlighted in orange for comparison. With a small, strong nucleophile in a suitable polar aprotic solvent, bromoethane is a better SN2 candidate. An unstabilized primary carbocation is unfavorable; strong bases or heat can make elimination compete.</p>",
               "molecule": "bromoethane",
               "highlights": {
                 "prin": [
                   1
                 ],
                 "sub": [
-                  2
+                  0
                 ]
               },
               "reveal": true
@@ -1376,8 +1440,8 @@
             "atoms": [
               {
                 "e": "C",
-                "x": 50,
-                "y": 115
+                "x": 48,
+                "y": 85
               },
               {
                 "e": "C",
@@ -1386,8 +1450,8 @@
               },
               {
                 "e": "C",
-                "x": 166,
-                "y": 115
+                "x": 168,
+                "y": 85
               },
               {
                 "e": "C",
@@ -1397,7 +1461,7 @@
               {
                 "e": "Br",
                 "x": 108,
-                "y": 155
+                "y": 145
               }
             ],
             "bonds": [
@@ -1425,7 +1489,7 @@
             "w": 320,
             "h": 200,
             "cond": "2-bromo-2-methylpropane",
-            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+            "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
           },
           "bromoethane": {
             "name": "bromoethane",
@@ -1488,9 +1552,9 @@
           "molecule": "ethanol",
           "tag": "Track bonds to H and electronegative atoms",
           "cards": {
-            "rule": "<p>Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero when assigning carbon oxidation states. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde; aqueous strong oxidants can give an acid.</p>",
+            "rule": "<p>Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero to carbon oxidation state. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde. Aqueous acidic CrO3 or dichromate (Na2Cr2O7/K2Cr2O7), or suitable KMnO4 conditions, can oxidize a primary alcohol further to a carboxylic acid; substrate and conditions determine the outcome.</p>",
             "cue": "<p>More bonds to O, less H: carbon is oxidized. Hydride addition to C=O generally reduces it.</p>",
-            "trap": "<p>NaBH4 commonly reduces aldehydes and ketones but ordinarily not esters or carboxylic acids. LiAlH4 reduces a wider set, including esters and acids, with appropriate workup. Reagent conditions matter.</p>",
+            "trap": "<p>NaBH4 commonly reduces aldehydes and ketones but ordinarily not esters or carboxylic acids. LiAlH4 reduces esters and acids to alcohols and amides to amines, using suitable nonaqueous reaction conditions followed by a separate workup. Reagent, solvent and workup matter; do not treat LiAlH4 as compatible with an aqueous reaction medium.</p>",
             "app": "<p>NAD+/NADH couples biological alcohol/carbonyl oxidation states through hydride transfer; not every laboratory reagent has a direct biological analogue.</p>"
           },
           "steps": [
@@ -1679,8 +1743,8 @@
           "cards": {
             "rule": "<p>Inventory functional groups, identify reagent roles, locate the likely reactive site, account for solvent and acid–base steps, then track bonds and stereochemistry. Chemoselectivity means preferential reaction at one functional group.</p>",
             "cue": "<p>Group inventory → reagent → first step → bond changes → product checks.</p>",
-            "trap": "<p>The group with the highest naming priority is not automatically the most reactive. Under ordinary NaBH4 conditions, a ketone can be reduced while an ester survives. Protecting groups change electronic reactivity, not merely steric bulk.</p>",
-            "app": "<p>Acetals protect aldehyde/ketone carbonyls from many basic and nucleophilic conditions; aqueous acid restores the carbonyl.</p>"
+            "trap": "<p>Do not substitute a naming-priority or carbon-oxidation-state ranking for reaction analysis. An ester is senior to a ketone in naming, yet its alkoxy oxygen donates electron density into the carbonyl by resonance. Under ordinary NaBH4 conditions, the ketone can be reduced while the ester survives. An amide is also resonance-stabilized. Acid–base reactions, activation and conditions can change which site reacts first.</p>",
+            "app": "<p>Acetals protect aldehyde/ketone carbonyls from many basic and nucleophilic conditions; aqueous acid restores the carbonyl. Protection replaces the carbonyl pi system with a different functional group, changing electronic reactivity rather than merely adding steric bulk. Carbonyl compounds may also react through acidic alpha hydrogens: deprotonation creates an enolate nucleophile instead of nucleophilic addition at the carbonyl carbon.</p>"
           },
           "steps": [
             {
@@ -1940,6 +2004,54 @@
       }
     },
     {
+      "id": "ch04:molecule:acetaldehyde",
+      "chapter": 4,
+      "kind": "molecule",
+      "itemIds": [
+        "acetaldehyde"
+      ],
+      "payload": {
+        "id": "acetaldehyde",
+        "authorClaims": {
+          "name": "ethanal",
+          "formula": "C2H4O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanal",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
       "id": "ch04:molecule:bromoethane",
       "chapter": 4,
       "kind": "molecule",
@@ -2002,8 +2114,8 @@
           "atoms": [
             {
               "e": "C",
-              "x": 50,
-              "y": 115
+              "x": 48,
+              "y": 85
             },
             {
               "e": "C",
@@ -2012,8 +2124,8 @@
             },
             {
               "e": "C",
-              "x": 166,
-              "y": 115
+              "x": 168,
+              "y": 85
             },
             {
               "e": "C",
@@ -2023,7 +2135,7 @@
             {
               "e": "Br",
               "x": 108,
-              "y": 155
+              "y": 145
             }
           ],
           "bonds": [
@@ -2051,7 +2163,7 @@
           "w": 320,
           "h": 200,
           "cond": "2-bromo-2-methylpropane",
-          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
         }
       }
     },
@@ -2099,54 +2211,6 @@
           "w": 320,
           "h": 200,
           "cond": "ethanol",
-          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
-      }
-    },
-    {
-      "id": "ch04:molecule:acetaldehyde",
-      "chapter": 4,
-      "kind": "molecule",
-      "itemIds": [
-        "acetaldehyde"
-      ],
-      "payload": {
-        "id": "acetaldehyde",
-        "authorClaims": {
-          "name": "ethanal",
-          "formula": "C2H4O",
-          "atoms": [
-            {
-              "e": "C",
-              "x": 50,
-              "y": 115
-            },
-            {
-              "e": "C",
-              "x": 108,
-              "y": 85
-            },
-            {
-              "e": "O",
-              "x": 108,
-              "y": 25
-            }
-          ],
-          "bonds": [
-            [
-              0,
-              1,
-              1
-            ],
-            [
-              1,
-              2,
-              2
-            ]
-          ],
-          "w": 320,
-          "h": 200,
-          "cond": "ethanal",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
         }
       }
@@ -2362,10 +2426,11 @@
             "id": "acids",
             "title": "Acid–base reasoning",
             "tag": "Equilibrium favors the weaker acid/base pair",
-            "coreRule": "Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.",
+            "coreRule": "Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. In a coordinate covalent bond, both shared electrons originate from the donor; the resulting bond is still covalent. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.\nAmphoteric species can act as acids or bases, depending on the partner. Water can accept H+ to form H3O+ or donate H+ to form OH−; bicarbonate can likewise gain or lose a proton.",
             "stepTopics": [
               "1. Locate the acidic group",
-              "2. Compare conjugate bases"
+              "2. Compare conjugate bases",
+              "3. Find alpha hydrogens"
             ]
           },
           {
@@ -2392,7 +2457,7 @@
             "id": "redox",
             "title": "Organic oxidation and reduction",
             "tag": "Track bonds to H and electronegative atoms",
-            "coreRule": "Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero when assigning carbon oxidation states. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde; aqueous strong oxidants can give an acid.",
+            "coreRule": "Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero to carbon oxidation state. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde. Aqueous acidic CrO3 or dichromate (Na2Cr2O7/K2Cr2O7), or suitable KMnO4 conditions, can oxidize a primary alcohol further to a carboxylic acid; substrate and conditions determine the outcome.",
             "stepTopics": [
               "1. Alcohol carbon",
               "2. Aldehyde carbon",
@@ -2417,8 +2482,8 @@
             "lesson": "acids",
             "stages": [
               "Select both oxygens of the carboxyl group.",
-              "If pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
-              "Estimate K for those pKa values."
+              "For HA + B ⇌ A− + BH+, if pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
+              "For that forward equilibrium, using pKa(HA)=5 and pKa(BH+)=10, estimate K."
             ]
           },
           {
@@ -2427,7 +2492,7 @@
             "lesson": "partners",
             "stages": [
               "Select the electrophilic carbon.",
-              "Which species supplies a lone pair as a nucleophile?",
+              "Among these choices (including a reagent not drawn), which species supplies a lone pair as a nucleophile?",
               "When C–Br breaks heterolytically, the pair goes to…"
             ]
           },
@@ -2436,9 +2501,9 @@
             "title": "Mechanism and kinetics",
             "lesson": "substitution",
             "stages": [
-              "With a strong nucleophile in polar aprotic solvent, this primary halide favors…",
+              "With a small, strong nucleophile in a suitable polar aprotic solvent, this primary halide favors…",
               "If both substrate and nucleophile concentrations double, by what factor does the ideal SN2 rate change?",
-              "At a chiral SN2 reaction center, the geometry undergoes…"
+              "Apply the general rule to a separate chiral SN2 center (the displayed bromoethane is achiral): its geometry undergoes…"
             ]
           },
           {
@@ -2447,7 +2512,7 @@
             "lesson": "redox",
             "stages": [
               "Select the carbonyl carbon.",
-              "What is this aldehyde carbon’s oxidation state?",
+              "What is this aldehyde carbon’s oxidation state (a dimensionless signed number)?",
               "NaBH4 followed by protonation converts it to…"
             ]
           },
@@ -2471,6 +2536,22 @@
           {
             "label": "SN1 stereochemical qualifications: OpenStax 11.4",
             "location": "https://openstax.org/books/organic-chemistry/pages/11-4-the-sn1-reaction"
+          },
+          {
+            "label": "OpenStax: SN2 nucleophile and solvent effects",
+            "location": "https://openstax.org/books/organic-chemistry/pages/11-3-characteristics-of-the-sn2-reaction"
+          },
+          {
+            "label": "OpenStax: aldehyde oxidation conditions",
+            "location": "https://openstax.org/books/organic-chemistry/pages/19-3-oxidation-of-aldehydes-and-ketones"
+          },
+          {
+            "label": "OpenStax: amide reduction to amines",
+            "location": "https://openstax.org/books/organic-chemistry/pages/21-7-chemistry-of-amides"
+          },
+          {
+            "label": "OpenStax: acyl substitution and conditional reactivity order",
+            "location": "https://openstax.org/books/organic-chemistry/pages/21-2-nucleophilic-acyl-substitution-reactions"
           }
         ],
         "referencePassages": []

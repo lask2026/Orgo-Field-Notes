@@ -33,7 +33,7 @@ export function drawDiagram(d,value,{concealAnswers=false}={}){
   }else if(d.type==='acid'){
     const ph=value??d.pKa,f=1/(1+10**(d.pKa-ph));
     svg=`<rect x="40" y="70" width="280" height="45" fill="#dbeafe"/><rect x="40" y="70" width="${280*f}" height="45" fill="#059669"/><text x="180" y="145">${(100*f).toFixed(1)}% deprotonated</text>`;
-    controls=`<label>pH <output>${ph}</output><input data-control="diagram" type="range" min="0" max="14" step="0.1" value="${ph}" aria-label="pH"></label><p>Model monoprotic acid, pKa = ${d.pKa}. Fraction A⁻ = 1 / (1 + 10^(pKa − pH)).</p>`;
+    controls=`<p>Green: A⁻ (deprotonated), ${(100*f).toFixed(1)}%. Light blue: HA (protonated), ${(100*(1-f)).toFixed(1)}%.</p><label>pH (range 0–14) <output>${ph}</output><input data-control="diagram" type="range" min="0" max="14" step="0.1" value="${ph}" aria-label="pH" aria-valuetext="pH ${ph}; ${(100*f).toFixed(1)}% deprotonated"></label><p>Model monoprotic acid, pKa = ${d.pKa}. Fraction A⁻ = 1 / (1 + 10^(pKa − pH)). This concentration-based teaching model neglects activity corrections.</p>`;
   }
   return `<figure class="diagram"><svg viewBox="0 0 360 230" role="img" aria-label="${esc(d.caption)}" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#334155" stroke-width="2">${svg}</g></svg><figcaption>${esc(d.caption)}</figcaption>${controls}</figure>`;
 }

@@ -1,7 +1,7 @@
 {
   "chapter": 4,
   "sourceSnapshot": {
-    "sha256": "38242a9012de6c07767e36d8a1b317b31e130521aa753062486fbbf479090340",
+    "sha256": "ff7868101e9d8ce6e5749bcc13893b999e4310839be9274538e0b968aeb5ec9c",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -18,9 +18,9 @@
       "id": "acids-step-1-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/acids-step-1-diagram.png",
-      "sha256": "5e79475e287d4857826cd699173573b3a6ef8fb7c368e591cb312ef41957ee8e",
+      "sha256": "d88dc1fa9e1b30d04c0e2f8cc2eb5559a83a3817c8c52562b38a93011e228a6c",
       "width": 661,
-      "height": 403
+      "height": 451
     },
     {
       "id": "acids-step-2",
@@ -29,6 +29,22 @@
       "sha256": "49545ced90d9fd4c2ae06e34cb2f116c6f9f67701c85f9ccf281a06788e80209",
       "width": 661,
       "height": 359
+    },
+    {
+      "id": "acids-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/acids-step-3.png",
+      "sha256": "b8798435eb6bd90cfaa05c10fe00d124d0906fb1c838f012e05866d89a073435",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acids-step-3-challenge",
+      "kind": "learn-challenge",
+      "file": "screenshots/acids-step-3-challenge.png",
+      "sha256": "d1ade81bf74956a4527abcefe9b19a311a0674ed58b8681cc78d31fd39eed3e0",
+      "width": 699,
+      "height": 611
     },
     {
       "id": "partners-step-1",
@@ -58,7 +74,7 @@
       "id": "substitution-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/substitution-step-1.png",
-      "sha256": "e949092d28ce40d374db9c2ad7bdaadaea76a928a254baaa01539443ea08f313",
+      "sha256": "0c2a309e7ef7c61d408f35020b167399e19ce62fa281a45dd7331413cda0704f",
       "width": 661,
       "height": 359
     },
@@ -66,7 +82,7 @@
       "id": "substitution-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/substitution-step-2.png",
-      "sha256": "52a471833900d999e4a6d50f986a8003ffabff59577e1b46356cb48e1af13e36",
+      "sha256": "64ce8983a5edc0268fde519b2c660498f23bdc21ffc69f5f597b182782ce220f",
       "width": 661,
       "height": 359
     },
@@ -154,17 +170,17 @@
       "id": "pka-equilibrium-stage-2-question",
       "kind": "practice-question",
       "file": "screenshots/pka-equilibrium-stage-2-question.png",
-      "sha256": "5b9b1a31de76329978723ee50849fd647c3c95264b59171377f366c5cfab4da6",
+      "sha256": "593262f200882d0f3fb45767de1d8ae40cd8ec3ce2955feb09e958d3a0b12539",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "pka-equilibrium-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/pka-equilibrium-stage-2-feedback.png",
-      "sha256": "bb0baee11316b8018583b7c31ac9567356d82d35f1b857a0f98b6dedf05f05e3",
+      "sha256": "136b9987f31f14f2afd44bf8d7c4f128831832ba62cd65e52594484ebb5b9081",
       "width": 607,
-      "height": 326
+      "height": 373
     },
     {
       "id": "pka-equilibrium-stage-3-molecule",
@@ -178,25 +194,25 @@
       "id": "pka-equilibrium-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/pka-equilibrium-stage-3-question.png",
-      "sha256": "1c4348ece5d15dab1c5630d7e8bdc136a3537785ebaa2ee1b6cfd4af47abc190",
+      "sha256": "fa01c161d96c253a96735972f718213a2ca746eda2ea143b63cb852e065dd653",
       "width": 607,
-      "height": 255
+      "height": 280
     },
     {
       "id": "pka-equilibrium-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/pka-equilibrium-stage-3-feedback.png",
-      "sha256": "9899dfe86997be67700d7fa12a6ab669d692a334a70683ab03add9fb4ac40fbf",
+      "sha256": "195620519d1c61ce52e8b2a9f332abb8f73b8495c34d50da6b069ccba160859c",
       "width": 607,
-      "height": 291
+      "height": 337
     },
     {
       "id": "pka-equilibrium-complete",
       "kind": "practice-complete",
       "file": "screenshots/pka-equilibrium-complete.png",
-      "sha256": "72ac5b7d637028f5372a5cd72e02e5c33b9ea8bf9488f04e197e2b50bae0e23d",
+      "sha256": "270a38d42dcd19dec775b72ba13f8d8af77bfb27e33c80d77de180f2d6d9221a",
       "width": 1324,
-      "height": 574
+      "height": 682
     },
     {
       "id": "identify-partners-stage-1-molecule",
@@ -234,17 +250,17 @@
       "id": "identify-partners-stage-2-question",
       "kind": "practice-question",
       "file": "screenshots/identify-partners-stage-2-question.png",
-      "sha256": "1c61555509c5948b737cf568bbb23f24d24fab87af72c26294c89a6587c0f37b",
+      "sha256": "0f75540e368796793856a62c6aebe2251b50f762b8d649bf242b72c4c96248f3",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "identify-partners-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/identify-partners-stage-2-feedback.png",
-      "sha256": "37508fbf9e7342958bbb7fcc8302ba59c9f55b73f8df0488ecb5c7c7270d8127",
+      "sha256": "0adde4ea85caed6a9df1e8c6a1f72a7628f02a2953f3f564baca4b1345585c8e",
       "width": 607,
-      "height": 326
+      "height": 351
     },
     {
       "id": "identify-partners-stage-3-molecule",
@@ -274,7 +290,7 @@
       "id": "identify-partners-complete",
       "kind": "practice-complete",
       "file": "screenshots/identify-partners-complete.png",
-      "sha256": "df19573ff37b2cd3a65e744080a2943b9b4628cc45db6f7195559d55f9612224",
+      "sha256": "09a7fca7c5e6a770cfb087885f3c585fb50b90795712448d42608553d434b592",
       "width": 1324,
       "height": 574
     },
@@ -290,7 +306,7 @@
       "id": "sn2-rate-stage-1-question",
       "kind": "practice-question",
       "file": "screenshots/sn2-rate-stage-1-question.png",
-      "sha256": "8c4026fe57a112b8351fa94f633003be28add7751a91a76e5ed72bc6627910cf",
+      "sha256": "f48086358575edf9ee215c2a28a7fba61bf39de88e9a4496137c64eca629cae3",
       "width": 607,
       "height": 266
     },
@@ -298,7 +314,7 @@
       "id": "sn2-rate-stage-1-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/sn2-rate-stage-1-feedback.png",
-      "sha256": "cd2bc2f8f46bb41d0ff5446794e905600ff9a7ae14abb522c5e22613f588d80b",
+      "sha256": "20d13f63c85bb0593198638d78dba5183033a7a46495afab54caf71b77c003f6",
       "width": 607,
       "height": 301
     },
@@ -338,23 +354,23 @@
       "id": "sn2-rate-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/sn2-rate-stage-3-question.png",
-      "sha256": "2d73c3f78d3f0d895466097ef63dbbe08a09eab6f6d18415566cde8720b09197",
+      "sha256": "dbfed173a4e7e02d4c85f7d854f594a8b347e18690cfc9cdd30cd28499d15d2e",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "sn2-rate-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/sn2-rate-stage-3-feedback.png",
-      "sha256": "68b8316afea3f2d69bfa95e24d7840f50b3ace1015fc7496e92c84adef8aa3b0",
+      "sha256": "2caa8a4f695e0cce0dd0264791fbce8a57e6b1dc7c4c4fc32e8b6372eb7c7930",
       "width": 607,
-      "height": 326
+      "height": 394
     },
     {
       "id": "sn2-rate-complete",
       "kind": "practice-complete",
       "file": "screenshots/sn2-rate-complete.png",
-      "sha256": "966119c847487a999af605fef796b125018a46068bcce1cc476144ca9b241978",
+      "sha256": "be211014851c566ad17ab37d9712ac3fba7bb9e8eea138af94a93c55045c68b1",
       "width": 1324,
       "height": 574
     },
@@ -386,7 +402,7 @@
       "id": "carbon-redox-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/carbon-redox-stage-2-molecule.png",
-      "sha256": "85412040fb2a8af684739468f1e19768d4ebd7e6d83e8d83374efde9d81bbbe5",
+      "sha256": "ccf9fe142dc30bcc93428ba12d5e3d90d85925819174ed20a67d29e3a1d59da4",
       "width": 661,
       "height": 359
     },
@@ -394,17 +410,17 @@
       "id": "carbon-redox-stage-2-question",
       "kind": "practice-question",
       "file": "screenshots/carbon-redox-stage-2-question.png",
-      "sha256": "dce37fef1b5a07056dd7541c4c2c948e599ea53e5026336144592b83285f01b6",
+      "sha256": "d578eb517162241c7ecea800a65cc63e3cbc73e35038bb11c58c57c98aadf48b",
       "width": 607,
-      "height": 255
+      "height": 280
     },
     {
       "id": "carbon-redox-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/carbon-redox-stage-2-feedback.png",
-      "sha256": "e212d029eba3b97ac1ddf6c71d532016dc290aab515b982fde0a36735e9d4ec2",
+      "sha256": "84cefa00333228ad3a8b4d350da50d1622cdb8ffcccb16f8badd0dc969cea41d",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "carbon-redox-stage-3-molecule",
@@ -418,7 +434,7 @@
       "id": "carbon-redox-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/carbon-redox-stage-3-question.png",
-      "sha256": "e0ec1a55fe155a1d1a74141b0a5823d7bb73dfe70e0fd1ca86ac3233a461ce4d",
+      "sha256": "49b176dc2c7dff325e9b6f658efb0164e46e90a0d8945c821ca7171605f173b2",
       "width": 607,
       "height": 291
     },
@@ -434,7 +450,7 @@
       "id": "carbon-redox-complete",
       "kind": "practice-complete",
       "file": "screenshots/carbon-redox-complete.png",
-      "sha256": "102559a0185bb1061b2a794d7c8ce22c2bb79ebe28b3f1810a8cfead4fce0ad4",
+      "sha256": "386384fbfd7506178e6e757d8c401534b120792d82b2b209ccaa7f06def2339a",
       "width": 1324,
       "height": 574
     },
@@ -522,28 +538,32 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "3004df8ca858d3ad355d1e9a2f5d289cd1665e708a33bb2d741fbf0b50c9563b",
+      "sha256": "f3eba1f5dd78588ab1d65ed42f14f2bf0d86d510a516367a11fc5910bf19d356",
       "width": 1360,
-      "height": 1420
+      "height": 1515
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "3cfef71be47f7d8f7a4585ce34edb8e64834e20f4beb90b76c6e554bb39f5245",
+      "sha256": "14abb92ea88343784354081932ceb5afe6a4a0f0d54f2b221ac8ff19bd05da61",
       "width": 375,
-      "height": 2430
+      "height": 2723
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "66870798e796e7d8321a8b85c9533bb1fe39955b01f591b8d9a287acd9aa17ff",
+      "sha256": "6301ed3f0955ecc5ad286fd2dc74210e19a8f1e4bb7df6e27c26a6fdbfa55458",
       "width": 375,
-      "height": 2430
+      "height": 2723
     }
   ],
   "interactions": [
+    {
+      "id": "acids-step-3",
+      "result": "encoded challenge accepted"
+    },
     {
       "id": "partners-step-1",
       "result": "encoded challenge accepted"

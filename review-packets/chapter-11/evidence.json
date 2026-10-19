@@ -1,7 +1,7 @@
 {
   "chapter": 11,
   "sourceSnapshot": {
-    "sha256": "a3cf72bf7daba7d76cb851eaad5e894d929974d40d2ea1bb0feaf8649082f2fe",
+    "sha256": "d49cc1fae30b7ba3624726d48a5e1e4bd0b67aea1ea182945430252d29c1f396",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -290,7 +290,7 @@
       "id": "uv-energy-complete",
       "kind": "practice-complete",
       "file": "screenshots/uv-energy-complete.png",
-      "sha256": "ff3971af55c2f7a57bb4c25ce4729d9c38c1df3fce7902f27d923a1ea0172b85",
+      "sha256": "db5ee0fd1954a825dcfd3458537a32da9158c7d6868a632af7f3f23b49fd68da",
       "width": 1324,
       "height": 574
     },

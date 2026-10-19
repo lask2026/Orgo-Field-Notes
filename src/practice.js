@@ -3,7 +3,7 @@ import {drawMolecule,formulaLabel} from './molecules.js';
 import {drawDiagram} from './diagrams.js';
 import {getProgress} from './progress.js';
 import {anatomy} from './learn.js';
-export function solutionText(s){return s.type==='choice'?s.options[s.answer]:s.type==='atoms'?s.answer.map(atomLabel).join(', '):s.type==='text'?s.accepted[0]:`${s.answer}${s.unit?' '+s.unit:''}`;}
+export function solutionText(s){return s.type==='choice'?s.options[s.answer]:s.type==='atoms'?s.answer.map(atomLabel).join(', '):s.type==='text'?s.accepted[0]:`${s.answer}${s.unit&&s.unit!=='dimensionless'?' '+s.unit:''}`;}
 export function renderPractice(ch,molecules,state,ui){
   const labs=ch.exercises.filter(e=>e.lesson===ch.lessons[state.lesson].id),ex=labs[state.exercise]||labs[0],p=getProgress(state,ch,ex),done=p.stage===ex.stages.length,s=ex.stages[p.stage];
   const displayed=done?ex.stages.at(-1):s,molecule=displayed.molecule||ex.molecule;

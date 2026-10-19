@@ -12,7 +12,7 @@
         6,
         13
       ],
-      "sha256": "6743c54f198a21869b644d1f6677f98852dc53d03b202b303fec551256eeced7"
+      "sha256": "270bb47a65511788ea9f2a7f321a959a32f1fa244b2682153fe66b75f0a5b9da"
     },
     {
       "chapter": 1,
@@ -25,7 +25,7 @@
         50,
         101
       ],
-      "sha256": "1b9e37c3f075ce5cb47d64a4fede5e37d8f022b457cff15f450d5f88e7f52b12"
+      "sha256": "6a1a56a63190b6605dbf2414801ec1fccc6c99e9ac2b5f0149ee4359c6414a1c"
     },
     {
       "chapter": 2,
@@ -38,7 +38,7 @@
         6,
         12
       ],
-      "sha256": "0a87619e17a719c0db5a8583bc3dd1e6fe65d8e9c922f82908be50451ab6f592"
+      "sha256": "2a00c48329325838dddb5ff05e22f9d8d43010a58287f106f9844b49bd2ff390"
     },
     {
       "chapter": 2,
@@ -51,7 +51,7 @@
         32,
         65
       ],
-      "sha256": "526a4c02716161181e8d6be351acf56ed2ad66aa47fb816fd92e1ec55a1af7ad"
+      "sha256": "ac06ed4104f7a604574a977af10ddd0016158c3bb301585e7bd863fae470cef3"
     },
     {
       "chapter": 3,
@@ -63,7 +63,7 @@
         2,
         5
       ],
-      "sha256": "aeb31379d9a670db86cc343c5b11f28c5efe41863dbf5984ba7305b6fb2160bc"
+      "sha256": "63718af3e2840e53fdcdab75ef3f517a08cd75dc41aa9227783f740dd809c994"
     },
     {
       "chapter": 3,
@@ -76,7 +76,7 @@
         17,
         34
       ],
-      "sha256": "5d6fdf3428d89b9b9fc9e062c11077a2c850a5b83bf37c2baa37dd7f0b7b8c8d"
+      "sha256": "4287189ba179f39f75b397a5b2bb1dc7be3bac04657699d693011da9be45d151"
     },
     {
       "chapter": 4,
@@ -89,20 +89,20 @@
         3,
         6
       ],
-      "sha256": "3891fbf719d750a343cd9096af04f8df91ae7f76e70eb8701da834f4bc296a0e"
+      "sha256": "15cdae4392ccabfb8bb0bd5ade78f9121d523f6995f1e4cab9b1bd60c55257ba"
     },
     {
       "chapter": 4,
       "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 42,
+      "pages": 44,
       "textCoverage": "passed",
       "renderedPages": [
         1,
         2,
-        21,
-        42
+        22,
+        44
       ],
-      "sha256": "0e24604950bd46177c444e4ead22ebca941a6826be0841fd6210b78c3580dacb"
+      "sha256": "1cf457526371eec65b958a32bd7b5d3eac11b48dfcf78fc4d37387d1f13fb551"
     },
     {
       "chapter": 5,
@@ -114,7 +114,7 @@
         2,
         5
       ],
-      "sha256": "2dedcd3dc57c33362ed93589b923f88aee656bd353dea884be0dec8309742bf7"
+      "sha256": "d52ca74ef80aaa8c944d0a24f7dc0476a346df14ff5633fec2dcb6b614ccfef6"
     },
     {
       "chapter": 5,
@@ -127,7 +127,7 @@
         18,
         36
       ],
-      "sha256": "d8458751d47758984ef2469ff1c04469307bf990bb86dfd5bd5bb7a76c71e6b5"
+      "sha256": "2c46a6dea10f42707e26839c4c4571f9b893b9e1960f5e9f0e903d284a9860ab"
     },
     {
       "chapter": 6,
@@ -139,7 +139,7 @@
         2,
         5
       ],
-      "sha256": "658c10038485d51c84dcd59f744ab1e4f431f0514caa46fb2aedfbda01fc2157"
+      "sha256": "97196cd6536c4ca2d8a342249b98d6e31563874b9fb5c0788d2369df7042d4d0"
     },
     {
       "chapter": 6,
@@ -152,7 +152,7 @@
         18,
         36
       ],
-      "sha256": "cde86f0822b1a23b884a4859941c450ecadcf501da4c47dcca653d998eadc306"
+      "sha256": "e829685044378edb520cb5aa4e14f4b1b4371fddf952dd68605aadf376776df0"
     },
     {
       "chapter": 7,
@@ -164,7 +164,7 @@
         2,
         5
       ],
-      "sha256": "6169883977cb644ebee8671443ca0b1471c7e5a5c1559a88c1a2a9e06f8131d6"
+      "sha256": "54bf751f260ed313bb098a3799f68b8e755f1e5e3269357a85f67e3c491ff616"
     },
     {
       "chapter": 7,
@@ -177,7 +177,7 @@
         17,
         35
       ],
-      "sha256": "858a5af22d0f0f30722d346fe32b4850e9f6c512b0e6ed62b506417bb40710e0"
+      "sha256": "ef510741c771aad5467d7bd1c43fe01b8d45831c3ab8588cbb2bc7e18a72ca6a"
     },
     {
       "chapter": 8,
@@ -190,7 +190,7 @@
         3,
         6
       ],
-      "sha256": "4c9caef62eb91aea023e4a43e7942fc9b79cb6407e0849a1b0bf51644b3f8b40"
+      "sha256": "3d20826ffe1757aaa2486c53cdb5117b64ad7cdbb437ac323748bdda512dc231"
     },
     {
       "chapter": 8,
@@ -203,7 +203,7 @@
         17,
         35
       ],
-      "sha256": "c2fadb25df7b9c642762eaf4f9cb710c49fc2455ecb2ec4988235c524b116598"
+      "sha256": "358e67c96c913fcd9ebdc6363dc9c01add60a31182572699bed6cbc5e4c56e13"
     },
     {
       "chapter": 9,
@@ -215,7 +215,7 @@
         2,
         4
       ],
-      "sha256": "0b04d9c9cc383f2cbbcb88c0df79d6f1405809e7cbc37b3a97a15549ad31dc5f"
+      "sha256": "f668d56e89521da92255a981eb915feb2dfd6a2ac666d9c9345bbdc1dcf2ca59"
     },
     {
       "chapter": 9,
@@ -228,7 +228,7 @@
         14,
         28
       ],
-      "sha256": "84e160d004d1049867b606613a51c8447693e9a32682e9bf248bc7c445d1152c"
+      "sha256": "02c2b4412bdf3ca9347fe7ee11893439d034cd446243099f5d03d902d31a935c"
     },
     {
       "chapter": 10,
@@ -240,7 +240,7 @@
         2,
         5
       ],
-      "sha256": "439cebf5ec59637f7eff0bfcffb67127a2b1dd4b2c0941263b9a07bde3eb396f"
+      "sha256": "0f06d34af022d7ff8444059a861faf650dc2daa2c3790fde2bfe29a23126686c"
     },
     {
       "chapter": 10,
@@ -253,7 +253,7 @@
         18,
         37
       ],
-      "sha256": "5679ca3c75ff6467b152e8b0ae18dee909fbf0d402b65653000df43162a1bc65"
+      "sha256": "07a6e8612760c299daf2bf0d3cd5368fe6ee18299491b3df18ec74e07c96d682"
     },
     {
       "chapter": 11,
@@ -266,7 +266,7 @@
         3,
         7
       ],
-      "sha256": "516151a01fbd76bfefa5b83c4b81edb53f7897fd3b49651b8e9fea5502c966ee"
+      "sha256": "22e429b2a82ee31272807fe5100ca6aebc5a104f61bec34a034ec46b8ecd03c8"
     },
     {
       "chapter": 11,
@@ -279,7 +279,7 @@
         20,
         40
       ],
-      "sha256": "919a3f862a3d2de55011e5bfadcc13cf2e2a663fbd05b67b3f71fd3ada5bc902"
+      "sha256": "4c24d4eb7f126e56020cf866f90d2dcc7a74370b08c0d9290273d248b91dc9d7"
     },
     {
       "chapter": 12,
@@ -292,7 +292,7 @@
         4,
         8
       ],
-      "sha256": "aed76dc2b1e333c99d46d825fbc234852eed80641896940440d6b3d168c94364"
+      "sha256": "76d069e311204db0bb5c925e2371c5256ac4962455048eea2da94faa9133060a"
     },
     {
       "chapter": 12,
@@ -305,7 +305,7 @@
         18,
         37
       ],
-      "sha256": "407c0d0cb5af954cadfb8949b6d1fd40c981a20841b72d08f2126025d1074c5a"
+      "sha256": "e67706d52859e6193f722717c9872194b387b5ca5823e062cfc82c347329023d"
     }
   ],
   "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
@@ -314,12 +314,15 @@
     "samplePages": 90,
     "contactSheets": 8,
     "additionalChecks": [
-      "Chapter 3 full pages 4 and 5: carbon orbital-filling diagrams",
-      "Chapter 3 full page 13: subscript quantum notation",
-      "Chapter 3 full page 31: explicit acetate net charge",
-      "Mobile orbital cards and sources, amide atom controls and acetate disclosure"
+      "Chapter 4 full page 3: supported equilibrium arrow glyph",
+      "Chapter 4 blind page 2: forward equation and concealed numeric key",
+      "Speciation legend and mobile expanded teaching cards",
+      "Tertiary/primary neighbor highlights and redox focus/signed input"
     ],
-    "finalRenderComparison": "Four detailed Chapter 3 pages re-rendered after the final invisible click-target change; all four PNGs identical to their visually inspected versions.",
-    "limits": "Sampled visual QA, not every PDF page and not independent chemistry verification."
+    "pdfTextChecks": [
+      "Equilibrium arrow U+21CC retained in both Chapter 4 PDFs",
+      "Blind equilibrium page contains no 100000 numeric key"
+    ],
+    "limits": "Sampled visual checks, not every PDF page and not independent chemistry verification."
   }
 }

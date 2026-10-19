@@ -52,3 +52,9 @@ GitHub Pages-compatible files are requested; no remote repository or deployment 
 - Added reusable atomic-filling schematics, revealed formula net-charge labels, clear two-carbon groups, and wider group highlights. Graph indices and composition metadata remain stable.
 - Extended quantum practice to six stages; current app total is 178 stages. Prior three-stage completion is no longer counted as completion of the expanded workshop.
 - Shared renderer changes require refreshed review packets for all chapters. Chapter 1 audit adjudication and a true Chapter 2 chair diagram remain outstanding.
+
+## Chapter 4 review checkpoint
+
+- Adjudicated all eleven reported findings: docs/CHAPTER_04_REVIEW_ADJUDICATION.md. Five lessons/five workshops/15 stages retained; an alpha-hydrogen walkthrough and challenge were appended.
+- Added symbol-font fallback and unsupported-glyph failure, labeled acid-speciation species/range, clarified hypothetical equilibrium data and stereochemical transfer, aligned focus colors, and preserved valid graph/formula metadata.
+- Shared changes require refreshed app builds and all review packets. Earlier Chapter 1 audit, true Chapter 2 chair visualization and external expert sign-off remain open.

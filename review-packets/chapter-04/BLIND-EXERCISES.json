@@ -1,7 +1,7 @@
 {
   "chapter": 4,
   "sourceSnapshot": {
-    "sha256": "38242a9012de6c07767e36d8a1b317b31e130521aa753062486fbbf479090340",
+    "sha256": "ff7868101e9d8ce6e5749bcc13893b999e4310839be9274538e0b968aeb5ec9c",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -48,6 +48,7 @@
           ]
         ]
       },
+      "context": "The displayed carboxyl group is a structural example for Stage 1. Stages 2–3 use a separate hypothetical proton-transfer equilibrium, HA + B ⇌ A− + BH+, with all pKa values on a comparable solvent/temperature scale; they are not measured values for the displayed ethanoic acid.",
       "stages": [
         {
           "id": "pka-equilibrium:stage-1",
@@ -57,7 +58,7 @@
         {
           "id": "pka-equilibrium:stage-2",
           "type": "choice",
-          "prompt": "If pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
+          "prompt": "For HA + B ⇌ A− + BH+, if pKa(HA)=5 and pKa(BH+)=10, equilibrium favors…",
           "options": [
             "Reactants",
             "Products",
@@ -67,7 +68,7 @@
         {
           "id": "pka-equilibrium:stage-3",
           "type": "number",
-          "prompt": "Estimate K for those pKa values.",
+          "prompt": "For that forward equilibrium, using pKa(HA)=5 and pKa(BH+)=10, estimate K.",
           "unit": "dimensionless"
         }
       ]
@@ -114,7 +115,7 @@
         {
           "id": "identify-partners:stage-2",
           "type": "choice",
-          "prompt": "Which species supplies a lone pair as a nucleophile?",
+          "prompt": "Among these choices (including a reagent not drawn), which species supplies a lone pair as a nucleophile?",
           "options": [
             "Hydroxide ion",
             "A proton",
@@ -170,7 +171,7 @@
         {
           "id": "sn2-rate:stage-1",
           "type": "choice",
-          "prompt": "With a strong nucleophile in polar aprotic solvent, this primary halide favors…",
+          "prompt": "With a small, strong nucleophile in a suitable polar aprotic solvent, this primary halide favors…",
           "options": [
             "SN2",
             "Unstabilized primary SN1"
@@ -185,7 +186,7 @@
         {
           "id": "sn2-rate:stage-3",
           "type": "choice",
-          "prompt": "At a chiral SN2 reaction center, the geometry undergoes…",
+          "prompt": "Apply the general rule to a separate chiral SN2 center (the displayed bromoethane is achiral): its geometry undergoes…",
           "options": [
             "Inversion",
             "Always complete racemization",
@@ -236,8 +237,8 @@
         {
           "id": "carbon-redox:stage-2",
           "type": "number",
-          "prompt": "What is this aldehyde carbon’s oxidation state?",
-          "unit": "oxidation state"
+          "prompt": "What is this aldehyde carbon’s oxidation state (a dimensionless signed number)?",
+          "unit": "dimensionless"
         },
         {
           "id": "carbon-redox:stage-3",

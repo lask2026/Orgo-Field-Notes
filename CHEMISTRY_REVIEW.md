@@ -93,3 +93,7 @@ See docs/CHAPTER_02_FOLLOWUP_REVIEW.md for adjudication of seven new findings an
 ## Chapter 3 candidate review
 
 Adjudication: docs/CHAPTER_03_REVIEW_ADJUDICATION.md. Re-derived all nine original keys; none changed. Fixed the acetamide/acetate prompt mismatch, made revealed ionic charge explicit without changing charge-free composition metadata, improved two-carbon hydrogen labels and multi-character highlights, and added a carbon orbital-filling diagram. Expanded node/energy/bond-strength coverage with hydrogen-like versus multielectron qualifications and three original practice stages. The offset letter badge remains a separate control rather than a chemical bond endpoint. The candidate report is not expert verification.
+
+## Chapter 4 candidate review
+
+See docs/CHAPTER_04_REVIEW_ADJUDICATION.md for all three major and eight minor findings. All 15 original keys were re-derived and retained. The acetate metadata convention was already handled by Chapter 3; the app continues to show net ionic charge explicitly. Clarified the forward equilibrium, removed early arithmetic feedback, retained condition-based chemoselectivity over the textbook shortcut, and expanded qualified acid/base, nucleophilicity, redox and alpha-site coverage. Corrected highlights, speciation labels, dimensionless answer wording, 2D drawing clarity and PDF symbol fallback. These changes remain source-backed author review, not expert sign-off.

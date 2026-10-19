@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "3070ce84f12e3b643ebca6b649241ce127ee16e531b05d586bcdc36424202dd4",
+    "sha256": "879cc182a549d26acc8bc2878a40fac08c888a695dc824071e43aa4bbe7f4c4d",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -338,7 +338,7 @@
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "9ae7c11717d094609ce2f65805981544fd247a849cc6465f9f7693ab1ba9bc85",
+      "sha256": "20e69429b38e8e4ef09e313b553291cc8797a42c5cd2f1bf6ee75cc28d08cbbe",
       "width": 375,
       "height": 1910
     }

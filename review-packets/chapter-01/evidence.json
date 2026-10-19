@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "sourceSnapshot": {
-    "sha256": "de12a79273f264c6ba06b5405c4914bdcf51022c5858474496953f2778cb97ed",
+    "sha256": "be7f76933dfcd1820ac42b3fe54482d86828046ec13c97eef072e266e0fd3f64",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -1098,7 +1098,7 @@
       "id": "gp6a-stage-1-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp6a-stage-1-molecule.png",
-      "sha256": "cff56b81722ee81a356b527bbe87f675564a2334762f4c5584e7b9e6988a6b99",
+      "sha256": "08ed5e4c65511d498f7a930853fe00ed90019404e20a2650192024bc024a2894",
       "width": 661,
       "height": 419
     },

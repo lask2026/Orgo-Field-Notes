@@ -1,7 +1,7 @@
 {
   "chapter": 12,
   "sourceSnapshot": {
-    "sha256": "f793a9c8ae72dbb87ee973d69f77f07029f8bd21b8e5dabed56c1bc8ed4a8287",
+    "sha256": "1c38145d9d8d70dea20c5a78064ef8d4b29bbf985362ba890c2d6995c0fd0640",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -338,7 +338,7 @@
       "id": "rf-calculation-complete",
       "kind": "practice-complete",
       "file": "screenshots/rf-calculation-complete.png",
-      "sha256": "b7966a23ed3a20c055435a3d174b081c3a86d28ca8d6ed5a5cacf641c2ebd3cd",
+      "sha256": "41fa3844bea51abf8b25dac076aae72252436562cb93cad4ea8a13c3a8bfd2f9",
       "width": 1324,
       "height": 1009
     },

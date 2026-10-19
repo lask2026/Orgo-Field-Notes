@@ -3,7 +3,7 @@
   "chapter": 5,
   "title": "Alcohols",
   "sourceSnapshot": {
-    "sha256": "c736660a4d286f9f94cbf87230b5c9f2dc37d4cfb1f65e61f33b2054f4efb9e5",
+    "sha256": "36f06166e4183517e515f1f8efec62b476b7ec61ff30c705bca7e6129aea658f",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

@@ -102,3 +102,5 @@ Existing local behavioral tests remain available: `node tests/browser.mjs` and `
 - [Gemini PDF document understanding](https://ai.google.dev/gemini-api/docs/document-processing): visual and textual PDF input.
 
 No API keys are required for the local runner. AI Studio model availability and upload constraints depend on your account and selected model.
+
+PDF font regression checks (with requirements-audit.txt installed): `python scripts/audit/test_pdf_fonts.py`. The generator uses Segoe UI Symbol on Windows or DejaVu Sans as a fallback for chemical symbols, and fails on unsupported text glyphs. A decorative hand icon is printed as “Hands-on:” in audit text; the app retains its icon.

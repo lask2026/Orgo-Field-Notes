@@ -94,6 +94,43 @@
     "cond": "acetate (one resonance contributor)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },
+  "acetaldehyde": {
+    "name": "ethanal",
+    "formula": "C2H4O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanal",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
   "bromoethane": {
     "name": "bromoethane",
     "formula": "C2H5Br",
@@ -137,8 +174,8 @@
     "atoms": [
       {
         "e": "C",
-        "x": 50,
-        "y": 115
+        "x": 48,
+        "y": 85
       },
       {
         "e": "C",
@@ -147,8 +184,8 @@
       },
       {
         "e": "C",
-        "x": 166,
-        "y": 115
+        "x": 168,
+        "y": 85
       },
       {
         "e": "C",
@@ -158,7 +195,7 @@
       {
         "e": "Br",
         "x": 108,
-        "y": 155
+        "y": 145
       }
     ],
     "bonds": [
@@ -186,7 +223,7 @@
     "w": 320,
     "h": 200,
     "cond": "2-bromo-2-methylpropane",
-    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+    "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
   },
   "ethanol": {
     "name": "ethanol",
@@ -223,43 +260,6 @@
     "w": 320,
     "h": 200,
     "cond": "ethanol",
-    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-  },
-  "acetaldehyde": {
-    "name": "ethanal",
-    "formula": "C2H4O",
-    "atoms": [
-      {
-        "e": "C",
-        "x": 50,
-        "y": 115
-      },
-      {
-        "e": "C",
-        "x": 108,
-        "y": 85
-      },
-      {
-        "e": "O",
-        "x": 108,
-        "y": 25
-      }
-    ],
-    "bonds": [
-      [
-        0,
-        1,
-        1
-      ],
-      [
-        1,
-        2,
-        2
-      ]
-    ],
-    "w": 320,
-    "h": 200,
-    "cond": "ethanal",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },
   "acetone": {
