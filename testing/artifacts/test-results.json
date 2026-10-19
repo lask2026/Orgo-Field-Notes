@@ -186,6 +186,30 @@
       "Corrupt saved JSON recovers without crashing"
     ]
   },
+  "clicks": {
+    "startedAt": "2026-10-19T21:48:30.984Z",
+    "status": "passed",
+    "clicks": 4542,
+    "lessons": 102,
+    "cardToggles": 1632,
+    "branches": 302,
+    "viewerChecks": 102,
+    "practiceStages": 181,
+    "hints": 362,
+    "wrongChoices": 141,
+    "errors": [],
+    "scenarios": [
+      {
+        "width": 1440,
+        "theme": "light"
+      },
+      {
+        "width": 375,
+        "theme": "dark"
+      }
+    ],
+    "finishedAt": "2026-10-19T21:51:43.972Z"
+  },
   "chemistry": "Author reviewed; independent expert review pending",
   "limitations": [
     "Chromium on Windows tested; Safari/Firefox not tested",

@@ -18,7 +18,8 @@
     "test:layout": "node --test testing/tests/layout.test.mjs",
     "test:pdf": "node testing/scripts/run-pdf-tests.mjs",
     "report": "node testing/scripts/report.mjs",
-    "subject:new": "node dev/scripts/new-subject.mjs"
+    "subject:new": "node dev/scripts/new-subject.mjs",
+    "test:clicks": "node testing/tests/clicks.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

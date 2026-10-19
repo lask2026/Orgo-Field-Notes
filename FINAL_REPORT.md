@@ -71,6 +71,10 @@ Migration verification preserved the canonical source and historical review/pack
 
 The supplied remix card layouts include chips, colored rule ladders, comparison tables, interactive memory branches, paired traps and passage connections. Full notes expand beneath persistent visuals. Molecular drawings use canonical graphs; applicable original SVG schematics remain. Inline and fullscreen graph projections work offline and preserve atom identities. Active Guided Practice and learn atom challenges retain the 2D answer canvas. Names, formulas and author notes remain concealed until revealed. The projection uses arbitrary display depth, not physical conformer geometry; no PubChem verification or independent chemistry sign-off is claimed. Added interface tests and the full browser/regression suites check these software behaviors.
 
+## Complete click sweep
+
+Passed 4542 clicks against the standalone app with networking disabled: all 51 lessons in desktop/light and phone/dark layouts, 302 cue-branch selections, 102 viewer checks, 181 practice stages, all 362 hints and 141 incorrect multiple-choice options. No browser errors. Print dispatch was intercepted in the isolated test page. This verifies software behavior against canonical content, not independent chemistry correctness.
+
 ## Start reviewing
 
 Open `Orgo-Field-Notes-offline.html` directly, or run `node dev/scripts/serve.mjs` and visit `http://127.0.0.1:4173`. Use Export progress for a portable backup. See README.md for build, test, and Pages instructions.

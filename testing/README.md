@@ -10,11 +10,14 @@ npm test
 npm run build
 npm run test:browser
 npm run test:regression
+npm run test:clicks
 npm run test:pdf
 npm run audit:check
 ```
 
 Browser and regression suites both start a server on port 4173: run them sequentially and stop a manual dev server first. To limit browser checks temporarily, set `$env:CHAPTER='6'`; clear it before the complete suite with `Remove-Item Env:CHAPTER`.
+
+The click sweep uses the standalone HTML with networking disabled. It tests all 51 lessons at desktop/light and phone/dark sizes: individual and bulk note controls, all memory branches, source disclosures, inline/fullscreen graph views, rotation/tilt/style/reset controls and previous/next navigation. A separate isolated browser state checks every practice hint, every incorrect choice, assisted completion, reveal/replay and next-workshop navigation. Print dispatch is intercepted in the test page rather than opening a system dialog. Evidence is written to `artifacts/clicks.json`. These checks validate the app against its canonical content; they do not establish independent chemistry correctness.
 
 Install schema dependencies using `python -m pip install -r testing/requirements.txt`. PDF checks need `review/requirements.txt`; the PDF test helper uses a compatible configured/default Python or the installed Codex runtime when available. It does not install dependencies automatically. `ORGO_AUDIT_PYTHON` can select a compatible Python.
 

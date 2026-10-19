@@ -232,3 +232,9 @@ Validation checkpoint: 68 chemistry figure specifications cover all 51 lessons. 
 ## 2026-10-19 — Remix visual design restoration
 
 Restored the supplied remix's four distinct card layouts and interactions in canonical chapter JSON and reusable source. Full notes expand beneath persistent visuals. Removed repeated generic summary labeling. Graph-backed molecular figures and practice safeguards remain. Review exports include chips, equations, comparison rows and branch outcomes; 483 bounded review cases preserve full content. Validation and packet regeneration recorded in the current testing artifacts; independent chemistry sign-off remains outstanding.
+
+## 2026-10-19 — Full content and click verification
+
+Ran current schema validation, all 97 application/review tests, the complete 12-chapter browser suite and 28 regression groups. Added `npm run test:clicks`, an offline standalone-app sweep across all lessons in desktop/light and phone/dark layouts, plus every practice hint and incorrect multiple-choice option. It checks canonical full-note rendering, persistent compact visuals, all cue branch outcomes, disclosures, viewer controls, navigation and assisted-state behavior. The isolated print handler is intercepted; tests do not alter the user's browser progress. Machine-readable results live in testing/artifacts/clicks.json. These checks establish software/content consistency, not independent chemistry sign-off.
+
+Full click sweep passed: 4,542 clicks; 102 lesson/layout visits, 1,632 card disclosure/toggle clicks, 302 branch selections, 102 viewer checks, 181 assisted stages, 362 hints and 141 wrong-choice submissions. No browser errors. Existing content and app behavior required no changes.
