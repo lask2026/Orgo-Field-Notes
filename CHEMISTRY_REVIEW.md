@@ -37,3 +37,5 @@ Chapter 5 (Alcohols): original content aligned to supplied section headings and 
 Chapter 6 (Aldehydes and Ketones I): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
 
 Chapter 7 (Aldehydes and Ketones II: Enolates): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
+
+Chapter 8 (Carboxylic Acids): original content aligned to supplied section headings and summary. Connectivity, formulas, encoded keys, and atom selections checked. Author review complete; external expert review pending.
