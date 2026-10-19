@@ -3,7 +3,7 @@
   "chapter": 11,
   "title": "Spectroscopy",
   "sourceSnapshot": {
-    "sha256": "e918feff760042998c11f30becdab9bc9cd32bf2a63a0c084db27b8874c0a241",
+    "sha256": "ed978f297b8cf2ece50285a78a7fad18a23424167fb9b8d2941a7e662d626fe7",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1007,10 +1007,6 @@
       "chapter": 11,
       "kind": "lesson",
       "itemIds": [
-        "ir:rule",
-        "ir:cue",
-        "ir:trap",
-        "ir:app",
         "ir:step-1",
         "ir:step-2",
         "ir:step-3"
@@ -1018,16 +1014,8 @@
       "payload": {
         "lesson": {
           "id": "ir",
-          "label": "IR: recognize functional groups",
           "title": "IR: recognize functional groups",
           "molecule": "acetone",
-          "tag": "Vibrations must change dipole moment",
-          "cards": {
-            "rule": "<p>IR probes molecular vibrations. A vibration absorbs IR when it changes the molecular dipole moment. Useful approximate regions: alcohol O–H 3200–3600 cm⁻¹ (often broad); acid O–H 2500–3300 (very broad); C=O about 1650–1800; nitrile about 2210–2260. N–H is often near 3300, generally less broad than hydrogen-bonded OH.</p>",
-            "cue": "<p>Use a band pattern, not one magic number. The fingerprint region below about 1500 cm⁻¹ helps comparison.</p>",
-            "trap": "<p>Carbonyl positions vary with functional group, conjugation, ring strain, and environment. Absence of an OH band may support a structure, but sample conditions matter. IR alone seldom gives complete connectivity.</p>",
-            "app": "<p>Follow loss of a carbonyl band and appearance of OH when monitoring a carbonyl reduction, together with other evidence.</p>"
-          },
           "steps": [
             {
               "label": "1. Carbonyl signature",
@@ -1126,81 +1114,771 @@
                 ]
               }
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Vibrations must change dipole moment",
-              "items": [
-                {
-                  "label": "Vibration",
-                  "text": "Must change dipole moment to absorb"
-                },
-                {
-                  "label": "Pattern",
-                  "text": "Use multiple approximate band regions"
-                },
-                {
-                  "label": "Corroborate",
-                  "text": "IR seldom specifies complete connectivity"
-                }
-              ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  0
-                ],
-                "caption": "Matched molecule and illustrative IR bands. Band shapes and heights are not experimental data."
+          ]
+        },
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
               }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:ir:rule",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "ir:rule"
+      ],
+      "payload": {
+        "lessonId": "ir",
+        "title": "IR: recognize functional groups",
+        "fullNote": "<p>IR probes molecular vibrations. A vibration absorbs IR when it changes the molecular dipole moment. Useful approximate regions: alcohol O–H 3200–3600 cm⁻¹ (often broad); acid O–H 2500–3300 (very broad); C=O about 1650–1800; nitrile about 2210–2260. N–H is often near 3300, generally less broad than hydrogen-bonded OH.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Infrared (IR) Spectroscopy: Hooke’s Law (Bond Strength vs. Reduced Mass) & Key Diagnostic Zones",
+          "formula": "ν̃ (cm⁻¹) ∝ √(k / μ)     →     Stronger Bond (↑ k: Triple > Double > Single) & Lighter Atoms (↓ μ: O–H > C–C) = HIGHER Wavenumber!",
+          "items": [
+            {
+              "label": "Requirement for IR Absorption",
+              "text": "A vibration is IR-active ONLY if it changes the molecule’s net dipole moment (symmetric stretches of O₂, N₂, or trans-2-butene C=C are IR-inactive!)."
             },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "O–H pattern",
-                  "text": "Alcohol and acid have different typical breadth/ranges"
-                },
-                {
-                  "label": "C=O region",
-                  "text": "About 1650–1800 cm⁻¹; context shifts bands"
-                },
-                {
-                  "label": "Fingerprint region",
-                  "text": "Below about 1500 cm⁻¹ helps comparison"
-                }
+            {
+              "label": "Four Clean IR Zones",
+              "text": "Zone 1 (2500–3600): O–H, N–H, C–H | Zone 2 (2100–2260): C≡C, C≡N | Zone 3 (1600–1820): C=O, C=N, C=C | Fingerprint (<1500): C–O (1050–1250)."
+            }
+          ],
+          "chips": [
+            "O–H: 3200–3600 cm⁻¹ (Broad)",
+            "N–H: 3300–3500 cm⁻¹ (Sharp; 1°=2 Spikes)",
+            "C=O: 1700–1750 cm⁻¹ (Strong Sharp)",
+            "sp C–H ~3300 | C≡N/C≡C ~2200"
+          ],
+          "comparison": [
+            [
+              "Alcohol O–H",
+              "3200–3600 cm⁻¹ (Smooth U-shaped broad)",
+              "Carboxylic acid O–H: 2500–3300 cm⁻¹ (ultra-broad beard)"
+            ],
+            [
+              "Amine / Amide N–H",
+              "3300–3500 cm⁻¹ (Medium, sharper than OH)",
+              "1° NH₂ = 2 peaks; 2° NH = 1 peak; 3° N = 0 peaks"
+            ],
+            [
+              "Carbonyl C=O",
+              "1650–1810 cm⁻¹ (Very strong, sharp)",
+              "Conjugation ↓ wavenumber by ~20–30 cm⁻¹; Ring strain ↑ wavenumber"
+            ]
+          ],
+          "theme": "ir-spectrum",
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Matched molecule and illustrative IR bands. Band shapes and heights are not experimental data."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "1. Carbonyl signature",
+            "text": "<p>A simple saturated acyclic ketone often absorbs near 1715 cm⁻¹. The illustrative plot marks a band position, not an experimentally measured spectrum.</p>",
+            "molecule": "acetone",
+            "highlights": {
+              "prin": [
+                1,
+                3
               ]
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
+            "reveal": true,
+            "diagram": {
+              "type": "spectrum",
+              "min": 400,
+              "max": 4000,
+              "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+              "caption": "Schematic ketone absorption; not measured data. Real IR spectra often plot transmittance downward.",
+              "peaks": [
                 {
-                  "label": "Avoid",
-                  "text": "One magic wavenumber identifies the molecule"
+                  "x": 1715,
+                  "height": 0.95,
+                  "label": "C=O"
                 },
                 {
-                  "label": "Check",
-                  "text": "Functional group, environment and independent evidence"
-                }
-              ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Carbonyl reduction",
-                  "text": "Follow C=O loss and OH appearance"
-                },
-                {
-                  "label": "Interpretation",
-                  "text": "Use sample context and other evidence"
+                  "x": 2950,
+                  "height": 0.45,
+                  "label": "C–H"
                 }
               ]
             }
           }
+        ],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:ir:cue",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "ir:cue"
+      ],
+      "payload": {
+        "lessonId": "ir",
+        "title": "IR: recognize functional groups",
+        "fullNote": "<p>Use a band pattern, not one magic number. The fingerprint region below about 1500 cm⁻¹ helps comparison.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "3-Second IR Functional Group Identifier",
+          "prompt": "What signature peak do you see in the IR spectrum?",
+          "items": [
+            {
+              "label": "Strong Sharp Peak Around 1700–1750 cm⁻¹",
+              "outcome": "Carbonyl (C=O) Present! Now Check 2500–3600 cm⁻¹:",
+              "text": "+ Broad 2500–3300 = Carboxylic Acid; + 2720/2820 doublet = Aldehyde; + 1650/3350 = Amide; + 1735 & C–O 1200 = Ester; Alone at 1715 = Ketone!"
+            },
+            {
+              "label": "Broad Rounded Trough at 3200–3600 cm⁻¹ (No 1700 Peak)",
+              "outcome": "Alcohol (O–H) or Phenol!",
+              "text": "Intermolecular hydrogen bonding creates a wide distribution of O–H bond strengths, broadening the peak into a smooth U-shape."
+            },
+            {
+              "label": "Conjugation vs. Ring Strain on C=O Wavenumber",
+              "outcome": "Conjugation LOWERS ν̃ (~1685 cm⁻¹); Small Ring Strain RAISES ν̃ (~1780 cm⁻¹)",
+              "text": "Conjugation gives C=O more single-bond character (↓ k → ↓ cm⁻¹); small 4/5-membered rings force higher s-character into the exocyclic C=O (↑ k → ↑ cm⁻¹)."
+            }
+          ]
         },
+        "figureSteps": [],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:ir:trap",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "ir:trap"
+      ],
+      "payload": {
+        "lessonId": "ir",
+        "title": "IR: recognize functional groups",
+        "fullNote": "<p>Carbonyl positions vary with functional group, conjugation, ring strain, and environment. Absence of an OH band may support a structure, but sample conditions matter. IR alone seldom gives complete connectivity.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Confusing Alcohol O–H (3350 cm⁻¹) with Carboxylic Acid O–H (2500–3300 cm⁻¹ + 1710 cm⁻¹)",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Seeing an O–H peak without a 1700 cm⁻¹ C=O peak and calling it a carboxylic acid, or thinking symmetric alkyne C≡C stretches are strong."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "A carboxylic acid MUST have BOTH a strong C=O peak (~1710 cm⁻¹) AND a massive broad O–H beard (2500–3300 cm⁻¹); without ~1700 cm⁻¹, an O–H peak is an alcohol/phenol!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:ir:app",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "ir:app"
+      ],
+      "payload": {
+        "lessonId": "ir",
+        "title": "IR: recognize functional groups",
+        "fullNote": "<p>Follow loss of a carbonyl band and appearance of OH when monitoring a carbonyl reduction, together with other evidence.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Monitoring Reaction Progress by IR Disappearance / Appearance",
+          "items": [
+            {
+              "label": "Oxidation of 2° Alcohol → Ketone",
+              "outcome": "3350 cm⁻¹ Broad O–H Disappears; 1715 cm⁻¹ Sharp C=O Appears!",
+              "text": "The cleanest way to verify complete PCC or Jones oxidation of cyclohexanol to cyclohexanone is watching the 3350 cm⁻¹ O–H band vanish."
+            },
+            {
+              "label": "Reduction of Ketone / Ester with NaBH₄ or LiAlH₄",
+              "outcome": "1715–1735 cm⁻¹ C=O Disappears; 3350 cm⁻¹ Broad O–H Appears",
+              "text": "Confirms conversion of the carbonyl group into the product alcohol."
+            },
+            {
+              "label": "D₂O Isotope Shift (O–H → O–D)",
+              "outcome": "Heavy Deuterium Doubles Reduced Mass μ → Shifts ν̃ Down by ~1/√2 (to ~2450 cm⁻¹)",
+              "text": "Replacing H (m=1) with D (m=2) lowers the stretching wavenumber from ~3400 cm⁻¹ to ~2450 cm⁻¹, proving Hooke’s law!"
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "acetone": {
             "name": "propanone",
@@ -1351,26 +2029,14 @@
       "chapter": 11,
       "kind": "lesson",
       "itemIds": [
-        "uv:rule",
-        "uv:cue",
-        "uv:trap",
-        "uv:app",
         "uv:step-1",
         "uv:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "uv",
-          "label": "UV–visible: conjugation and energy",
           "title": "UV–visible: conjugation and energy",
           "molecule": "butadiene",
-          "tag": "Longer wavelength means lower photon energy",
-          "cards": {
-            "rule": "<p>UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime. For a simple pi system, a pi → pi* excitation can promote an electron from the highest occupied molecular orbital (HOMO) to the lowest unoccupied molecular orbital (LUMO). Extended conjugation often narrows that gap in comparable systems; allowed transitions and actual spectra also depend on the molecule.</p>",
-            "cue": "<p>More extended conjugation often gives a red shift. Doubling wavelength halves photon energy.</p>",
-            "trap": "<p>Conjugation trends compare appropriate related systems, not every possible molecule. UV absorption does not uniquely identify a structure. Beer–Lambert requires compatible units and an appropriate concentration range.</p>",
-            "app": "<p>Conjugated chromophores underlie retinal photochemistry and many biological absorbance measurements.</p>"
-          },
           "steps": [
             {
               "label": "1. Follow conjugation",
@@ -1398,82 +2064,498 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Longer wavelength means lower photon energy",
-              "items": [
-                {
-                  "label": "Transition",
-                  "text": "Photon promotes an electronic transition"
-                },
-                {
-                  "label": "Energy",
-                  "text": "E = hc/λ"
-                },
-                {
-                  "label": "Conjugation",
-                  "text": "Comparable systems often shift to longer wavelength as conjugation extends"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Conjugated and isolated pi-system examples. No numerical wavelength or universal rate effect is inferred."
+          ]
+        },
+        "molecules": {
+          "butadiene": {
+            "name": "buta-1,3-diene",
+            "formula": "C4H6",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Wavelength doubles",
-                  "text": "Photon energy halves"
-                },
-                {
-                  "label": "Transition energy decreases",
-                  "text": "Wavelength increases"
-                },
-                {
-                  "label": "Concentration from absorbance",
-                  "text": "Check Beer–Lambert units and range"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "A universal conjugation trend for all molecules"
-                },
-                {
-                  "label": "Check",
-                  "text": "Appropriate related systems; UV alone is not unique identification"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "buta-1,3-diene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethene": {
+            "name": "ethene",
+            "formula": "C2H4",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:uv:rule",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "uv:rule"
+      ],
+      "payload": {
+        "lessonId": "uv",
+        "title": "UV–visible: conjugation and energy",
+        "fullNote": "<p>UV–visible absorption promotes electrons between electronic states. In many comparable conjugated pi systems, increasing conjugation lowers the transition energy and shifts absorption to longer wavelength. Photon energy obeys E=hc/λ. Beer–Lambert law is A=εlc in its linear regime. For a simple pi system, a pi → pi* excitation can promote an electron from the highest occupied molecular orbital (HOMO) to the lowest unoccupied molecular orbital (LUMO). Extended conjugation often narrows that gap in comparable systems; allowed transitions and actual spectra also depend on the molecule.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "UV–Visible Spectroscopy: HOMO → LUMO Gap, Conjugated Polyenes & Complementary Colors",
+          "formula": "ΔE = hν = hc/λ; A = εcl. Conjugation often lowers the relevant transition energy; there is no universal wavelength increment per double bond.",
+          "items": [
+            {
+              "label": "Why Conjugation Increases λ_max (Red / Bathochromic Shift)",
+              "text": "Combining more p orbitals into a conjugated π system raises the HOMO energy and lowers the LUMO energy, shrinking ΔE so longer-wavelength (lower-energy) photons are absorbed."
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Retinal",
-                  "text": "Conjugated chromophore"
-                },
-                {
-                  "label": "Biological assays",
-                  "text": "Absorbance can monitor suitable chromophores"
-                }
-              ]
+            {
+              "label": "Absorbed vs. Perceived Color",
+              "text": "A compound that absorbs in the visible region (400–700 nm) appears as the COMPLEMENTARY color of the wavelength it absorbs (absorbs blue ~450 nm → looks orange/yellow)."
             }
+          ],
+          "chips": [
+            "π → π* and n → π* Transitions",
+            "↑ Conjugation → ↓ ΔE → ↑ λ_max (Bathochromic Shift)",
+            "A = ε × c × l (Beer-Lambert)"
+          ],
+          "comparison": [
+            [
+              "Isolated Alkene (Ethene)",
+              "1 π bond (Large HOMO–LUMO ΔE)",
+              "λ_max = 171 nm (Vacuum UV, invisible)"
+            ],
+            [
+              "1,3-Butadiene (2 Conjugated π)",
+              "Smaller HOMO–LUMO energy gap",
+              "λ_max = 217 nm (+46 nm red shift)"
+            ],
+            [
+              "β-Carotene (11 Conjugated π)",
+              "Tiny HOMO–LUMO gap → absorbs blue-green (455 nm)",
+              "Reflects complementary ORANGE-RED color!"
+            ]
+          ],
+          "theme": "homo-lumo-gap",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Conjugated and isolated pi-system examples. No numerical wavelength or universal rate effect is inferred."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Follow conjugation",
+            "text": "<p>Alternating C=C–C=C bonds create a connected p-orbital system. Adjacent p orbitals must remain sufficiently aligned for conjugation.</p>",
+            "molecule": "butadiene",
+            "highlights": {
+              "path": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Connect wavelength to energy",
+            "text": "<p>Relative to an isolated comparable alkene, conjugation often reduces the pi-to-pi-star transition energy. Use E=hc/λ to translate that smaller gap into longer wavelength.</p>",
+            "molecule": "ethene",
+            "highlights": {
+              "prin": [
+                0,
+                1
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "butadiene": {
+            "name": "buta-1,3-diene",
+            "formula": "C4H6",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "buta-1,3-diene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethene": {
+            "name": "ethene",
+            "formula": "C2H4",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:uv:cue",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "uv:cue"
+      ],
+      "payload": {
+        "lessonId": "uv",
+        "title": "UV–visible: conjugation and energy",
+        "fullNote": "<p>More extended conjugation often gives a red shift. Doubling wavelength halves photon energy.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "UV–Vis Conjugation & Color Predictor",
+          "prompt": "What UV-Vis question is on the exam?",
+          "items": [
+            {
+              "label": "Rank Molecules by Increasing λ_max",
+              "outcome": "Count Alternating Single-Double (Conjugated) Bonds!",
+              "text": "More continuous conjugated π bonds = smaller ΔE = LONGER λ_max (ignore isolated double bonds separated by ≥2 sp³ single bonds!)."
+            },
+            {
+              "label": "What Happens to Color If a Polyene Is Bleached (O₃ or Br₂)?",
+              "outcome": "Breaks Conjugation → ↑ ΔE → ↓ λ_max into UV (<300 nm) → Becomes Colorless!",
+              "text": "Oxidative cleavage or halogenation interrupts the p-orbital highway, shifting absorption out of the visible spectrum."
+            },
+            {
+              "label": "pH-Sensitive Indicators (Phenolphthalein / Azo Dyes)",
+              "outcome": "Deprotonation Extends Auxochrome Lone-Pair Delocalization → Shifts λ_max!",
+              "text": "Deprotonating a phenolic –OH to –O⁻ pushes electron density across the conjugated rings, shrinking ΔE and turning the solution bright pink."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butadiene": {
+            "name": "buta-1,3-diene",
+            "formula": "C4H6",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "buta-1,3-diene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethene": {
+            "name": "ethene",
+            "formula": "C2H4",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:uv:trap",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "uv:trap"
+      ],
+      "payload": {
+        "lessonId": "uv",
+        "title": "UV–visible: conjugation and energy",
+        "fullNote": "<p>Conjugation trends compare appropriate related systems, not every possible molecule. UV absorption does not uniquely identify a structure. Beer–Lambert requires compatible units and an appropriate concentration range.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Counting Isolated Double Bonds as Conjugated or Thinking Larger ΔE Gives Larger λ_max",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying 1,4-pentadiene absorbs at a longer wavelength than 1,3-butadiene, or saying ↑ ΔE means ↑ λ_max."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "1,4-pentadiene has an sp³ CH₂ group blocking p-orbital overlap (behaves like an isolated alkene, λ_max ~178 nm); energy ΔE and wavelength λ are INVERSELY proportional (↓ ΔE = ↑ λ_max)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "butadiene": {
+            "name": "buta-1,3-diene",
+            "formula": "C4H6",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "buta-1,3-diene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethene": {
+            "name": "ethene",
+            "formula": "C2H4",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethene",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:uv:app",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "uv:app"
+      ],
+      "payload": {
+        "lessonId": "uv",
+        "title": "UV–visible: conjugation and energy",
+        "fullNote": "<p>Conjugated chromophores underlie retinal photochemistry and many biological absorbance measurements.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "NADH vs. NAD⁺ Spectrophotometric Enzyme Assays (340 nm) & Heme Soret Bands",
+          "items": [
+            {
+              "label": "Monitoring Dehydrogenases at 340 nm",
+              "outcome": "NADH Absorbs at 340 nm; NAD⁺ Does NOT (Both Absorb at 260 nm)",
+              "text": "Reduction of the aromatic nicotinamide ring in NAD⁺ to the quinoid dihydronicotinamide in NADH creates a new 340 nm chromophore!"
+            },
+            {
+              "label": "Nucleic Acid (260 nm) vs. Protein (280 nm) Ratio",
+              "outcome": "A₂₆₀/A₂₈₀ ≈ 1.8 (Pure DNA) vs. 0.6 (Pure Protein)",
+              "text": "Purine/pyrimidine bases absorb strongly at 260 nm, while Trp/Tyr side chains absorb at 280 nm."
+            },
+            {
+              "label": "Pulse Oximetry (Oxyhemoglobin vs. Deoxyhemoglobin)",
+              "outcome": "O₂ Binding Shifts Heme Porphyrin Absorption (660 nm vs 940 nm)",
+              "text": "Changes in iron d-orbital coordination alter the porphyrin π→π* transition, turning venous blood dark red and arterial blood bright crimson."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "butadiene": {
             "name": "buta-1,3-diene",
@@ -1557,10 +2639,6 @@
       "chapter": 11,
       "kind": "lesson",
       "itemIds": [
-        "nmr:rule",
-        "nmr:cue",
-        "nmr:trap",
-        "nmr:app",
         "nmr:step-1",
         "nmr:step-2",
         "nmr:step-3"
@@ -1568,16 +2646,8 @@
       "payload": {
         "lesson": {
           "id": "nmr",
-          "label": "Proton NMR: shift, integration, splitting",
           "title": "Proton NMR: shift, integration, splitting",
           "molecule": "ethylacetate",
-          "tag": "Three independent kinds of evidence",
-          "cards": {
-            "rule": "<p>Chemical shift reports environment; integration reports relative proton count; splitting reports coupling. In simple first-order cases, coupling to n equivalent neighboring protons produces n+1 lines. Equivalent protons do not split one another. Deshielded protons appear downfield at higher ppm.</p>",
-            "cue": "<p>Shift = neighborhood; area = population; splitting = neighbors. Upfield means lower ppm and greater shielding; downfield means higher ppm. Tetramethylsilane (TMS) is commonly assigned δ = 0 ppm. Coupling constant J is the line spacing in Hz, not the integral or chemical shift.</p>",
-            "trap": "<p>n+1 is a limited first-order rule, not universal. Nonequivalent neighbors can give more complex patterns; exchangeable OH/NH protons often do not show the expected simple coupling. Chemical equivalence depends on symmetry and timescale. NMR requires nonzero nuclear spin. Odd-mass isotopes such as ¹H and ¹³C are active; odd-atomic-number nuclei with even mass, such as ²H and ¹⁴N, can also be active. Even-proton/even-neutron nuclei such as ¹²C and ¹⁶O have spin zero. Some active isotopes have broad or difficult signals, so activity alone does not guarantee easy detection.</p>",
-            "app": "<p>Typical rough proton regions: alkyl 0–3 ppm; C next to O often 3–4.5; vinylic about 4.5–6.5; aromatic 6–8.5; aldehydic 9–10; acid OH often 10–13. Use the full pattern.</p>"
-          },
           "steps": [
             {
               "label": "1. Three proton sets",
@@ -1714,92 +2784,558 @@
                 ]
               }
             }
+          ]
+        },
+        "molecules": {
+          "ethylacetate": {
+            "name": "ethyl ethanoate",
+            "formula": "C4H8O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:nmr:rule",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "nmr:rule"
+      ],
+      "payload": {
+        "lessonId": "nmr",
+        "title": "Proton NMR: shift, integration, splitting",
+        "fullNote": "<p>Chemical shift reports environment; integration reports relative proton count; splitting reports coupling. In simple first-order cases, coupling to n equivalent neighboring protons produces n+1 lines. Equivalent protons do not split one another. Deshielded protons appear downfield at higher ppm.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "¹H and ¹³C NMR: Symmetry Equivalence, Chemical Shift (δ ppm), Integration & (n + 1) Splitting",
+          "items": [
+            {
+              "label": "Number of Signals = Chemically Non-Equivalent Proton Sets",
+              "text": "Protons interchangeable by a rotational axis (C_n) or mirror plane (homotopic/enantiotopic in achiral solvent) give ONE shared signal.",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Chemical Shift (δ ppm from TMS = 0 ppm)",
+              "text": "Downfield (higher ppm, to the LEFT) = DESHIELDED by electronegative atoms (O, N, Halogens) or π-bond magnetic anisotropy (Aldehyde 9–10, Aromatic 7–8, Alkene 5–6, O–CH 3.5–4, α-C=O 2.1, Alkyl 0.9–1.5).",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Integration (Area = Proton Ratio) & Spin–Spin Splitting (n + 1 Rule)",
+              "text": "Peak area ratio gives the relative number of H atoms in each set; n non-equivalent neighboring H atoms (within 3 bonds, H–C–C–H) split a signal into (n + 1) peaks (Pascal’s triangle: 1:1 doublet, 1:2:1 triplet, 1:3:3:1 quartet).",
+              "step": "3",
+              "color": "orange"
+            }
           ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Three independent kinds of evidence",
-              "items": [
-                {
-                  "label": "Shift",
-                  "text": "Chemical environment"
-                },
-                {
-                  "label": "Integration",
-                  "text": "Relative proton count from area"
-                },
-                {
-                  "label": "Splitting",
-                  "text": "Coupling; n+1 only in simple first-order cases"
-                }
+          "chips": [
+            "# Signals = Symmetry Sets",
+            "Shift δ (ppm): Downfield = Deshielded (Left)",
+            "Integration = H Ratio",
+            "Splitting = n + 1 Neighbors"
+          ],
+          "comparison": [
+            [
+              "Aldehyde (RCHO) / COOH",
+              "δ 9–10 ppm (Ald) | δ 10–13 ppm (COOH)",
+              "Extreme deshielding (C=O anisotropy + induction)"
+            ],
+            [
+              "Aromatic (Ar–H) / Alkene",
+              "δ 6.5–8.5 ppm (Ar) | δ 4.5–6.5 ppm (C=C)",
+              "π ring current / anisotropy deshields protons"
+            ],
+            [
+              "α to O/N/X (–OCH₂–)",
+              "δ 3.0–4.5 ppm",
+              "Electronegative heteroatom pulls e⁻ density"
+            ],
+            [
+              "Alkyl / α to C=O",
+              "δ 0.8–1.8 ppm (R–H) | δ 2.0–2.5 ppm (α-C=O)",
+              "Shielded upfield near TMS reference (0.0 ppm)"
+            ]
+          ],
+          "theme": "nmr-splitting",
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Matched molecule and illustrative NMR signals. Peak height is not integral; use the signal labels and complete pattern."
+          }
+        },
+        "figureSteps": [
+          {
+            "label": "1. Three proton sets",
+            "text": "<p>Ethyl ethanoate has acyl methyl, OCH2, and terminal ethyl methyl proton sets. Their integrals are 3:2:3. The carbonyl carbon has no H. The three green carbon sites carry separate proton environments, not one combined set. Their positions and integrals distinguish them; the orange carbonyl carbon carries no H.</p>",
+            "molecule": "ethylacetate",
+            "highlights": {
+              "prin": [
+                0,
+                4,
+                5
               ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  0
-                ],
-                "caption": "Matched molecule and illustrative NMR signals. Peak height is not integral; use the signal labels and complete pattern."
-              }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Neighborhood",
-                  "text": "Chemical shift"
-                },
-                {
-                  "label": "Population",
-                  "text": "Integrated area, not peak height"
-                },
-                {
-                  "label": "Neighbors",
-                  "text": "Coupling pattern, with rule limitations"
-                }
-              ],
-              "figure": {
-                "type": "projection",
-                "steps": [
-                  1
-                ],
-                "caption": "Illustrative integrated signal areas for the same graph; line height is not proton count."
-              }
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Tallest line means most protons"
-                },
-                {
-                  "label": "Check",
-                  "text": "Integrated area and the full pattern; equivalence and exchange matter"
-                }
+              "sub": [
+                1
               ]
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
+            "reveal": true,
+            "diagram": {
+              "type": "spectrum",
+              "min": 0,
+              "max": 5,
+              "unit": "Chemical shift δ / ppm",
+              "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
+              "peaks": [
                 {
-                  "label": "Alkyl",
-                  "text": "Roughly 0–3 ppm"
+                  "x": 4.1,
+                  "height": 0.65,
+                  "label": "Signal 1",
+                  "lines": 4,
+                  "spacing": 0.06
                 },
                 {
-                  "label": "Aromatic",
-                  "text": "Roughly 6–8.5 ppm"
+                  "x": 2,
+                  "height": 0.85,
+                  "label": "Signal 2",
+                  "lines": 1
                 },
                 {
-                  "label": "Aldehydic",
-                  "text": "Roughly 9–10 ppm; use the complete pattern"
+                  "x": 1.2,
+                  "height": 0.85,
+                  "label": "Signal 3",
+                  "lines": 3,
+                  "spacing": 0.06
                 }
               ]
             }
           }
+        ],
+        "molecules": {
+          "ethylacetate": {
+            "name": "ethyl ethanoate",
+            "formula": "C4H8O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:nmr:cue",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "nmr:cue"
+      ],
+      "payload": {
+        "lessonId": "nmr",
+        "title": "Proton NMR: shift, integration, splitting",
+        "fullNote": "<p>Shift = neighborhood; area = population; splitting = neighbors. Upfield means lower ppm and greater shielding; downfield means higher ppm. Tetramethylsilane (TMS) is commonly assigned δ = 0 ppm. Coupling constant J is the line spacing in Hz, not the integral or chemical shift.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Classic NMR Splitting Patterns & Exchangeable Proton Tricks",
+          "prompt": "What NMR pattern do you observe in the spectrum?",
+          "items": [
+            {
+              "label": "3H Triplet (~1.2 ppm) + 2H Quartet (~3.5–4.1 ppm)",
+              "outcome": "Unmistakable ETHYL Group (–CH₂CH₃)!",
+              "text": "The CH₃ (3H) is split by 2 neighbors into a triplet (2+1=3); the CH₂ (2H) is split by 3 neighbors into a quartet (3+1=4)."
+            },
+            {
+              "label": "6H Doublet (~1.1 ppm) + 1H Septet (~2.5–4.0 ppm)",
+              "outcome": "Unmistakable ISOPROPYL Group (–CH(CH₃)₂)!",
+              "text": "Two symmetric methyls (6H) are split by 1 methine H into a doublet; the single CH (1H) is split by 6 methyl H’s into a 7-line septet."
+            },
+            {
+              "label": "1H Broad Singlet That Vanishes After Adding D₂O",
+              "outcome": "Alcohol (–OH) or Amine (–NH) Proton!",
+              "text": "Rapid intermolecular proton exchange averages out spin-spin coupling (usually a broad singlet) and swaps –OH for NMR-silent –OD in D₂O!"
+            }
+          ],
+          "figure": {
+            "type": "projection",
+            "steps": [
+              1
+            ],
+            "caption": "Illustrative integrated signal areas for the same graph; line height is not proton count."
+          }
         },
+        "figureSteps": [
+          {
+            "label": "2. Ethyl splitting",
+            "text": "<p>OCH2 couples to three neighboring methyl H atoms, giving a quartet in a simple first-order picture. The terminal CH3 couples to two methylene H atoms, giving a triplet.</p>",
+            "molecule": "ethylacetate",
+            "highlights": {
+              "path": [
+                4,
+                5
+              ],
+              "prin": [
+                4
+              ],
+              "sub": [
+                5
+              ]
+            },
+            "reveal": false,
+            "diagram": {
+              "type": "spectrum",
+              "min": 0,
+              "max": 5,
+              "unit": "Chemical shift δ / ppm",
+              "caption": "Schematic proton NMR: Signal 1 near 4.1 ppm (2H), Signal 2 near 2.0 (3H), Signal 3 near 1.2 (3H). Signal numbers are not atom letters; cluster spacing is illustrative, not a measured J.",
+              "peaks": [
+                {
+                  "x": 4.1,
+                  "height": 0.65,
+                  "label": "Signal 1",
+                  "lines": 4,
+                  "spacing": 0.06
+                },
+                {
+                  "x": 2,
+                  "height": 0.85,
+                  "label": "Signal 2",
+                  "lines": 1
+                },
+                {
+                  "x": 1.2,
+                  "height": 0.85,
+                  "label": "Signal 3",
+                  "lines": 3,
+                  "spacing": 0.06
+                }
+              ]
+            }
+          }
+        ],
+        "molecules": {
+          "ethylacetate": {
+            "name": "ethyl ethanoate",
+            "formula": "C4H8O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:nmr:trap",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "nmr:trap"
+      ],
+      "payload": {
+        "lessonId": "nmr",
+        "title": "Proton NMR: shift, integration, splitting",
+        "fullNote": "<p>n+1 is a limited first-order rule, not universal. Nonequivalent neighbors can give more complex patterns; exchangeable OH/NH protons often do not show the expected simple coupling. Chemical equivalence depends on symmetry and timescale. NMR requires nonzero nuclear spin. Odd-mass isotopes such as ¹H and ¹³C are active; odd-atomic-number nuclei with even mass, such as ²H and ¹⁴N, can also be active. Even-proton/even-neutron nuclei such as ¹²C and ¹⁶O have spin zero. Some active isotopes have broad or difficult signals, so activity alone does not guarantee easy detection.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Using Peak Height Instead of Integral Area or Splitting by Equivalent / Same-Carbon Protons",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying a tall singlet has more protons than a wide multiplet based on peak height, or splitting a CH₃ group into a quartet using its own 3 protons."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Integral measures signal area, not height. The simple n+1 rule assumes first-order coupling to equivalent neighbors; magnetic equivalence and coupling patterns require more care in complex systems."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ethylacetate": {
+            "name": "ethyl ethanoate",
+            "formula": "C4H8O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 45,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 100,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 100,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 155,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 210,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 265,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl ethanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:nmr:app",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "nmr:app"
+      ],
+      "payload": {
+        "lessonId": "nmr",
+        "title": "Proton NMR: shift, integration, splitting",
+        "fullNote": "<p>Typical rough proton regions: alkyl 0–3 ppm; C next to O often 3–4.5; vinylic about 4.5–6.5; aromatic 6–8.5; aldehydic 9–10; acid OH often 10–13. Use the full pattern.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "¹³C NMR Carbonyl Diagnostics & MRI Medical Imaging Principles",
+          "items": [
+            {
+              "label": "¹³C NMR Spectrum (0–220 ppm)",
+              "outcome": "Counts Non-Equivalent Carbons Including Quaternary C=O!",
+              "text": "Unlike ¹H NMR, ¹³C NMR directly detects quaternary carbons and carbonyls without C–H bonds (Ketones/Aldehydes at 190–220 ppm; Esters/Acids/Amides at 165–185 ppm)."
+            },
+            {
+              "label": "Para-Disubstituted Benzene Pattern",
+              "outcome": "2 Doublets (2H Each) in the 7–8 ppm Region!",
+              "text": "Symmetry reduces the 4 aromatic protons of a 1,4-disubstituted benzene ring into 2 equivalent pairs that split each other into two leaning doublets."
+            },
+            {
+              "label": "Magnetic Resonance Imaging (MRI)",
+              "outcome": "Spatial ¹H NMR of Tissue Water & Lipid Protons",
+              "text": "Measures T1 (spin-lattice) and T2 (spin-spin) relaxation times of water protons in magnetic field gradients to generate non-invasive 3D anatomical scans."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "ethylacetate": {
             "name": "ethyl ethanoate",
@@ -1876,10 +3412,6 @@
       "chapter": 11,
       "kind": "lesson",
       "itemIds": [
-        "combine:rule",
-        "combine:cue",
-        "combine:trap",
-        "combine:app",
         "combine:step-1",
         "combine:step-2",
         "combine:step-3"
@@ -1887,16 +3419,8 @@
       "payload": {
         "lesson": {
           "id": "combine",
-          "label": "Combine formula, IR, and NMR",
           "title": "Combine formula, IR, and NMR",
           "molecule": "acetone",
-          "tag": "Independent clues should agree",
-          "cards": {
-            "rule": "<p>For ordinary neutral closed-shell organic formulas, degree of unsaturation (DBE) = (2C+2+N−H−X)/2; O and divalent S do not enter. A ring or double bond contributes one DBE; a triple bond contributes two. Then combine IR group evidence with NMR environments and integrations.</p>",
-            "cue": "<p>Formula constrains possibilities; IR finds groups; NMR organizes the skeleton.</p>",
-            "trap": "<p>A single NMR signal can represent several equivalent groups. DBE says how much unsaturation exists, not where it is. Do not force phosphorus-rich or unusual-valence formulas into this simple equation.</p>",
-            "app": "<p>Passage-based structure identification rewards eliminating structures inconsistent with even one reliable observation.</p>"
-          },
           "steps": [
             {
               "label": "1. Formula constraint",
@@ -1933,82 +3457,585 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Independent clues should agree",
-              "items": [
-                {
-                  "label": "Formula and DBE",
-                  "text": "Constrain unsaturation"
-                },
-                {
-                  "label": "IR",
-                  "text": "Functional-group evidence"
-                },
-                {
-                  "label": "NMR",
-                  "text": "Build a skeleton consistent with all clues"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  2
-                ],
-                "caption": "Same formula, different connectivity: compare the two carbonyl isomers."
+          ]
+        },
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Amount of unsaturation",
-                  "text": "Ring/double bond counts one; triple counts two"
-                },
-                {
-                  "label": "Location of unsaturation",
-                  "text": "DBE alone does not locate it"
-                },
-                {
-                  "label": "Unusual-valence formula",
-                  "text": "Check whether the simple equation applies"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "One signal must represent only one group"
-                },
-                {
-                  "label": "Check",
-                  "text": "Symmetry/equivalence and agreement among independent clues"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "propanal": {
+            "name": "propanal",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 95,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 155,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 215,
+                "y": 115,
+                "showHydrogens": true
+              },
+              {
+                "e": "O",
+                "x": 267,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
               ]
+            ],
+            "w": 340,
+            "h": 200,
+            "cond": "propanal",
+            "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:combine:rule",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "combine:rule"
+      ],
+      "payload": {
+        "lessonId": "combine",
+        "title": "Combine formula, IR, and NMR",
+        "fullNote": "<p>For ordinary neutral closed-shell organic formulas, degree of unsaturation (DBE) = (2C+2+N−H−X)/2; O and divalent S do not enter. A ring or double bond contributes one DBE; a triple bond contributes two. Then combine IR group evidence with NMR environments and integrations.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Integrated Structure Elucidation Workflow: Formula/MS → IHD → IR → ¹H/¹³C NMR",
+          "items": [
+            {
+              "label": "Step 1: Molecular Formula, Nitrogen Rule & IHD",
+              "text": "Calculate IHD = (2C + 2 + N − H − X)/2. If IHD ≥ 4, suspect a benzene ring (4 IHD). Check Mass Spec for M⁺ molecular ion and halogen M+2 isotopes (Cl = 3:1; Br = 1:1).",
+              "step": "1",
+              "color": "green"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Passage identification",
-                  "text": "Eliminate incompatible candidates"
-                },
-                {
-                  "label": "Evidence check",
-                  "text": "Do not force a favorite structure to fit one clue"
-                }
-              ]
+            {
+              "label": "Step 2: Pinpoint Functional Groups by IR",
+              "text": "Check 1650–1800 cm⁻¹ for C=O and 2500–3600 cm⁻¹ for O–H / N–H. Combine IHD + IR (e.g., 1 IHD + 1715 cm⁻¹ IR = ketone or aldehyde; 0 IHD + 3350 cm⁻¹ = saturated alcohol).",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "Step 3: Assemble Fragments with ¹H & ¹³C NMR",
+              "text": "Use signal count to spot symmetry, integration to distribute H counts, chemical shift (δ) to place groups next to C=O or O, and (n + 1) splitting to connect adjacent CH_x neighbors.",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "1. Formula → IHD",
+            "2. IR → Functional Group (C=O, O–H)",
+            "3. NMR Symmetry + Shifts + Splitting",
+            "4. MS: M⁺, Br (1:1), Cl (3:1)"
+          ],
+          "comparison": [
+            [
+              "Step 1: Formula & MS",
+              "IHD = (2C+2+N−H−X)/2; Odd MW = Odd # of N",
+              "M+2 peak: Br = 1:1 (⁷⁹Br/⁸¹Br); Cl = 3:1 (³⁵Cl/³⁷Cl)"
+            ],
+            [
+              "Step 2: IR Spectrum",
+              "1715 cm⁻¹ = C=O; 3350 cm⁻¹ = O–H",
+              "Immediately tells you where the oxygen/nitrogen lives"
+            ],
+            [
+              "Step 3: ¹H & ¹³C NMR",
+              "Count signals (symmetry) + integration + (n+1)",
+              "Snap together fragments (ethyl, isopropyl, para-aryl)"
+            ]
+          ],
+          "theme": "spec-puzzle",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              2
+            ],
+            "caption": "Same formula, different connectivity: compare the two carbonyl isomers."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Formula constraint",
+            "text": "<p>C3H6O has DBE=(2×3+2−6)/2=1. A carbonyl can account for that entire unit of unsaturation.</p>",
+            "molecule": "acetone",
+            "highlights": {},
+            "reveal": false
+          },
+          {
+            "label": "3. Challenge an alternative",
+            "text": "<p>Propanal shares C3H6O and DBE=1 with acetone, and both have C=O absorption. But propanal has an aldehydic H (shown explicitly as CH at the terminal carbonyl carbon) and multiple proton environments; it does not fit the single 6H singlet. Compare every observation, not just formula and IR.</p>",
+            "molecule": "propanal",
+            "highlights": {
+              "prin": [
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "propanal": {
+            "name": "propanal",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 95,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 155,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 215,
+                "y": 115,
+                "showHydrogens": true
+              },
+              {
+                "e": "O",
+                "x": 267,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 340,
+            "h": 200,
+            "cond": "propanal",
+            "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:combine:cue",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "combine:cue"
+      ],
+      "payload": {
+        "lessonId": "combine",
+        "title": "Combine formula, IR, and NMR",
+        "fullNote": "<p>Formula constrains possibilities; IR finds groups; NMR organizes the skeleton.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Distinguishing Constitutional Isomers Using Combined IR + NMR Clues",
+          "prompt": "How do you quickly distinguish common isomer pairs on the MCAT?",
+          "items": [
+            {
+              "label": "3-Pentanone vs. 2-Pentanone (Both C₅H₁₀O, 1715 cm⁻¹)",
+              "outcome": "3-Pentanone Has Symmetry → Only 2 ¹H Signals (6H Triplet + 4H Quartet) And 3 ¹³C Signals!",
+              "text": "2-Pentanone is unsymmetrical (4 ¹H signals including a 3H methyl ketone singlet at 2.1 ppm, plus 5 ¹³C signals)."
+            },
+            {
+              "label": "Ethyl Acetate (CH₃COOCH₂CH₃) vs. Methyl Propanoate (CH₃CH₂COOCH₃)",
+              "outcome": "Check Which Group Is at ~4.1 ppm (Bonded to –O–)!",
+              "text": "In ethyl acetate, the 2H QUARTET is at 4.1 ppm (–OCH₂CH₃) and the 3H singlet is at 2.0 ppm; in methyl propanoate, the 3H SINGLET is at 3.7 ppm (–OCH₃)!"
+            },
+            {
+              "label": "Aldehyde vs. Ketone Isomers",
+              "outcome": "Aldehyde Shows a 1H Peak at 9.5–10 ppm NMR + 2720/2820 cm⁻¹ IR!",
+              "text": "A ketone lacks the downfield 9.5 ppm aldehydic proton and the C–H Fermi doublet in IR."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "propanal": {
+            "name": "propanal",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 95,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 155,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 215,
+                "y": 115,
+                "showHydrogens": true
+              },
+              {
+                "e": "O",
+                "x": 267,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 340,
+            "h": 200,
+            "cond": "propanal",
+            "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:combine:trap",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "combine:trap"
+      ],
+      "payload": {
+        "lessonId": "combine",
+        "title": "Combine formula, IR, and NMR",
+        "fullNote": "<p>A single NMR signal can represent several equivalent groups. DBE says how much unsaturation exists, not where it is. Do not force phosphorus-rich or unusual-valence formulas into this simple equation.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Confusing the Base Peak (Tallest MS Peak = 100%) with the Parent Molecular Ion (M⁺•)",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Assuming the tallest peak in a mass spectrum is always the molecular weight (M⁺), or ignoring symmetry when counting ¹³C NMR peaks."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "The BASE PEAK is simply the most stable carbocation fragment (100% relative abundance, e.g., tropylium m/z 91 or acylium RCO⁺); the parent ion M⁺• is the highest m/z peak (excluding M+1/M+2 isotopes)!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "propanal": {
+            "name": "propanal",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 95,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 155,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 215,
+                "y": 115,
+                "showHydrogens": true
+              },
+              {
+                "e": "O",
+                "x": 267,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ]
+            ],
+            "w": 340,
+            "h": 200,
+            "cond": "propanal",
+            "review": "Original same-formula aldehyde comparison for acetone; terminal CH explicitly displayed. Connectivity/formula author-reviewed; independent expert verification pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch11:lesson:combine:app",
+      "chapter": 11,
+      "kind": "lesson",
+      "itemIds": [
+        "combine:app"
+      ],
+      "payload": {
+        "lessonId": "combine",
+        "title": "Combine formula, IR, and NMR",
+        "fullNote": "<p>Passage-based structure identification rewards eliminating structures inconsistent with even one reliable observation.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Unknown Metabolite Identification & Isotope Ratio Mass Spectrometry",
+          "items": [
+            {
+              "label": "Bromine vs. Chlorine MS Isotope Signature",
+              "outcome": "M : M+2 = 1:1 (Bromine ⁷⁹Br/⁸¹Br) vs. 3:1 (Chlorine ³⁵Cl/³⁷Cl)",
+              "text": "Twin parent peaks of equal height separated by 2 m/z units instantly prove the molecule contains one bromine atom."
+            },
+            {
+              "label": "Nitrogen Rule in Mass Spectrometry",
+              "outcome": "Odd M⁺ Molecular Weight = Odd Number of Nitrogens (1, 3, 5...)",
+              "text": "Because N is trivalent with an even atomic mass (14), a neutral organic molecule with 1 nitrogen always has an ODD molecular weight!"
+            },
+            {
+              "label": "Benzylic Fragmentation (m/z = 91)",
+              "outcome": "Alkylbenzenes Cleave at the Benzylic Bond → C₇H₇⁺ (m/z 91)",
+              "text": "Forms the exceptionally stable aromatic tropylium cation (6π electrons in a 7-membered ring) as the base peak."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "acetone": {
             "name": "propanone",

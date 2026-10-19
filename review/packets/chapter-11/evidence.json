@@ -1,7 +1,7 @@
 {
   "chapter": 11,
   "sourceSnapshot": {
-    "sha256": "e918feff760042998c11f30becdab9bc9cd32bf2a63a0c084db27b8874c0a241",
+    "sha256": "ed978f297b8cf2ece50285a78a7fad18a23424167fb9b8d2941a7e662d626fe7",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -58,9 +58,9 @@
       "id": "ir-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/ir-visuals.png",
-      "sha256": "7bb23c1d3e29db18fea17b1d4fd58b3435330138262fd398675f2341eec6c284",
+      "sha256": "3152e91bb313af65c0d6f87027aa7cd788851d045e2cd2c3b3d9b1457c7715ff",
       "width": 607,
-      "height": 2100
+      "height": 2583
     },
     {
       "id": "uv-step-1",
@@ -82,9 +82,9 @@
       "id": "uv-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/uv-visuals.png",
-      "sha256": "6a9015ac89d9fca79e7be1f9deeb15a785d82d78b63c2cc0e6240aaf98407239",
+      "sha256": "c9e1c9f3167cfcec0481d87f4fc2bcc30352585ddf557645917345ee13870150",
       "width": 607,
-      "height": 1829
+      "height": 2159
     },
     {
       "id": "nmr-step-1",
@@ -138,9 +138,9 @@
       "id": "nmr-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/nmr-visuals.png",
-      "sha256": "f38fed0d0fd191865171ad20e34fd0632548bcc326b6c59b1363f5ada182b540",
+      "sha256": "58ffe4d417657155c33d628f2bb4aae40934944de3f75bb73c8df6d7fcff50cc",
       "width": 607,
-      "height": 2798
+      "height": 2728
     },
     {
       "id": "combine-step-1",
@@ -170,9 +170,9 @@
       "id": "combine-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/combine-visuals.png",
-      "sha256": "bb4c3e09c93d9a3b0258c54816456231cca9c4102e8cd3fc181c95f3ff2dbe6b",
+      "sha256": "219d337f5355ffb88e1ddb1799f6f37493bbde07de46468767bbdfd437d72859",
       "width": 607,
-      "height": 1810
+      "height": 2185
     },
     {
       "id": "ir-read-stage-1-molecule",
@@ -514,23 +514,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "8ff5433c529983332cf76b7464b53e2feb53dd7ba94f525b86798c74036510a2",
+      "sha256": "03a15c299f68197b8901d96af1806c4ed62bcfb957f4e7fa28c46e65b646c5da",
       "width": 1360,
-      "height": 2437
+      "height": 2920
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "3eada8d4a18620869611a3960a1665f873222e3a990ee25974afe55193a961e7",
+      "sha256": "0823ed5e6829718390dbbd919ed0582a1eca7c766cd5f1f8786d76fcff873bb6",
       "width": 607,
-      "height": 1035
+      "height": 2993
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "106e3467056d7f5f5d389a640ae003fc6ee91a8ae6020cb334bf0696955ee8c3",
+      "sha256": "7b0dcfba1c3465aa134f6de585e450779463730d4d9367f92694461262050f78",
       "width": 1000,
       "height": 741
     },
@@ -538,17 +538,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "efe35ba82cb23cf3c6528258f7df0936996189dfb734dda6a170fcb6d21fa42e",
+      "sha256": "2e50d7b6dfeee96f721e49784154a5c49d2f37b23901e5806ee70e0e1d21f0da",
       "width": 375,
-      "height": 4352
+      "height": 5526
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "7ea65c7a6ffa3dfc6ded9fa40fb988941ada963fe42909a5b17c3920736559da",
+      "sha256": "500a14fd64357a7729a80b5857d14ef84b9a89a504576702a5449600ec7b93df",
       "width": 375,
-      "height": 4352
+      "height": 5526
     },
     {
       "id": "projection-mobile-dark",
