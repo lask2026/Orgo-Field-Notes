@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "id": 5,
+  "title": "Alcohols",
+  "description": "Link alcohol structure to oxidation, leaving-group activation, protection, and phenol redox chemistry.",
+  "objectives": [
+    "Classify alcohols and physical properties",
+    "Predict oxidation and protection outcomes",
+    "Distinguish phenols, quinones, and hydroquinones"
+  ],
+  "sources": [
+    {
+      "label": "Supplied Kaplan curriculum: Chapter 5; section scope checked against local body and summary",
+      "location": "organic_chemistry_kaplan/OEBPS/chapter05b.xhtml"
+    }
+  ],
+  "review": {
+    "status": "author-reviewed",
+    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+  },
+  "lessons": [
+    {
+      "id": "properties",
+      "label": "Alcohol classes and physical properties",
+      "title": "Alcohol classes and physical properties",
+      "molecule": "isopropanol",
+      "tag": "Classify the carbon bearing OH",
+      "cards": {
+        "rule": "<p>A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility.</p>",
+        "cue": "<p>Count C neighbors of C–OH; do not count the number of OH groups.</p>",
+        "trap": "<p>A secondary alcohol is not an alcohol with two hydroxyl groups. Phenol has OH directly attached to an aromatic ring and differs in acidity from an aliphatic alcohol.</p>",
+        "app": "<p>An OH group can increase water affinity and supply a hydrogen-bond donor and acceptor in a binding site, but whole-molecule properties still matter.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Secondary alcohol",
+          "text": "<p>The OH-bearing carbon has two carbon neighbors and one H. It is a secondary alcohol.</p>",
+          "molecule": "isopropanol",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "reveal": true,
+          "challenge": {
+            "prompt": "Select the carbon whose neighbors determine alcohol class.",
+            "answer": [
+              1
+            ],
+            "explanation": "B is the OH-bearing carbon."
+          }
+        },
+        {
+          "label": "2. Tertiary alcohol",
+          "text": "<p>Three carbon groups surround the OH-bearing carbon, which therefore has no C–H bond. This changes its usual oxidation behavior.</p>",
+          "molecule": "tbutanol",
+          "highlights": {
+            "prin": [
+              1,
+              4
+            ],
+            "sub": [
+              0,
+              2,
+              3
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "oxidation",
+      "label": "Predict alcohol oxidation products",
+      "title": "Predict alcohol oxidation products",
+      "molecule": "isopropanol",
+      "tag": "Alcohol class + oxidant + conditions",
+      "cards": {
+        "rule": "<p>Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage.</p>",
+        "cue": "<p>1° → aldehyde → acid; 2° → ketone; 3° lacks the necessary C–H.</p>",
+        "trap": "<p>PCC is not the only aldehyde-selective oxidant. Do not label every reagent containing oxygen “strong enough” or assume every tertiary alcohol is inert under all conditions.</p>",
+        "app": "<p>Alcohol dehydrogenases catalyze related biological redox steps using cofactors; substrate and cofactor specificity control the result.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Locate the oxidized carbon",
+          "text": "<p>Oxidizing propan-2-ol removes an O–H hydrogen and the H on its central carbon, producing C=O.</p>",
+          "molecule": "isopropanol",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Compare the product",
+          "text": "<p>The same three-carbon framework is now a ketone. Carbon–carbon connectivity is unchanged in this ordinary alcohol oxidation.</p>",
+          "molecule": "acetone",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Primary-alcohol conditions",
+          "text": "<p>Ethanal can be obtained from ethanol with an appropriate anhydrous oxidant. In aqueous strongly oxidizing conditions it can be oxidized further to ethanoic acid.</p>",
+          "molecule": "acetaldehyde",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "activation",
+      "label": "Activate and protect functional groups",
+      "title": "Activate and protect functional groups",
+      "molecule": "mesylate",
+      "tag": "Make leaving groups; mask carbonyls",
+      "cards": {
+        "rule": "<p>Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions.</p>",
+        "cue": "<p>Activation changes what can leave. Protection temporarily changes what can react.</p>",
+        "trap": "<p>Making a tosylate does not itself perform SN2 at carbon. Acetals are generally acid-labile; acid and water are needed for hydrolysis. Protection does not make a group universally inert.</p>",
+        "app": "<p>A carbonyl can be protected while another group reacts, then regenerated. Choose protection and deprotection conditions compatible with the rest of the molecule.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Sulfonate ester",
+          "text": "<p>The ethyl group retains its C–O bond. The oxygen is now part of a sulfonate ester, whose leaving anion is resonance stabilized.</p>",
+          "molecule": "mesylate",
+          "highlights": {
+            "prin": [
+              2,
+              3,
+              5,
+              6
+            ],
+            "path": [
+              0,
+              1
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Acetal protection",
+          "text": "<p>The central carbon has two OR groups and no carbonyl pi bond. Acetals can be made from aldehydes or ketones with alcohol under acid catalysis; removing water favors formation.</p>",
+          "molecule": "acetal",
+          "highlights": {
+            "prin": [
+              1,
+              3,
+              4
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Restore the carbonyl",
+          "text": "<p>Aqueous acid hydrolyzes the acetal, regenerating the ketone and alcohol. The protection/deprotection sequence is reversible under appropriate conditions.</p>",
+          "molecule": "acetone",
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    },
+    {
+      "id": "phenols",
+      "label": "Phenols, quinones, and hydroquinones",
+      "title": "Phenols, quinones, and hydroquinones",
+      "molecule": "phenol",
+      "tag": "Acidity and biological electron transfer",
+      "cards": {
+        "rule": "<p>Phenol is more acidic than an ordinary aliphatic alcohol because phenoxide can delocalize negative charge into the ring. Electron-withdrawing substituents can increase acidity. Hydroquinone can be oxidized to a quinone; the reverse is reduction.</p>",
+        "cue": "<p>Quinone + 2 H+ + 2 e− → hydroquinone. “Hydro” here tracks reduction, not merely adding OH groups.</p>",
+        "trap": "<p>Hydroquinone and hydroxyquinone are different terms. Hydroquinone is a reduced quinone form; a hydroxyquinone still has a quinone framework bearing an extra OH. Coenzyme Q accepts electrons upstream of complex III and delivers them to complex III.</p>",
+        "app": "<p>Ubiquinone/ubiquinol transports electrons within the mitochondrial inner membrane; proton-coupled redox chemistry links the organic structure to energy metabolism.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Phenolic OH",
+          "text": "<p>OH is attached directly to an aromatic carbon. Deprotonation gives phenoxide, stabilized by resonance. The pictured alternating bonds are one aromatic resonance representation.</p>",
+          "molecule": "phenol",
+          "highlights": {
+            "prin": [
+              0,
+              6
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Reduced member",
+          "text": "<p>Hydroquinone has two phenolic OH groups in a para arrangement. Oxidation removes two H atoms overall, formally two protons plus two electrons.</p>",
+          "molecule": "hydroquinone",
+          "highlights": {
+            "prin": [
+              0,
+              3,
+              6,
+              7
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Oxidized member",
+          "text": "<p>The quinone has two carbonyls. Its ring is not simply benzene with unchanged aromatic bonding; the pi-bond arrangement has changed.</p>",
+          "molecule": "quinone",
+          "highlights": {
+            "prin": [
+              0,
+              3,
+              6,
+              7
+            ]
+          },
+          "reveal": true
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "classify-alcohol",
+      "lesson": "properties",
+      "molecule": "tbutanol",
+      "label": "Classify by carbon neighbors",
+      "title": "Classify by carbon neighbors",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the OH-bearing carbon.",
+          "skill": "Read the structure",
+          "answer": [
+            1
+          ],
+          "explanation": "B is attached to the hydroxyl oxygen.",
+          "hints": [
+            "Find the C–O bond.",
+            "Choose the carbon, not the oxygen."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              4
+            ]
+          }
+        },
+        {
+          "type": "number",
+          "prompt": "How many carbon neighbors does it have?",
+          "skill": "Calculate and interpret",
+          "answer": 3,
+          "unit": "carbon neighbors",
+          "tolerance": 0,
+          "explanation": "The central carbon is bonded to three methyl carbons.",
+          "hints": [
+            "Count only directly attached C atoms.",
+            "Exclude oxygen and implicit H."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "text",
+          "prompt": "Classify this alcohol: primary, secondary, or tertiary.",
+          "skill": "State your conclusion",
+          "accepted": [
+            "tertiary",
+            "3°",
+            "3"
+          ],
+          "explanation": "Three carbon neighbors make the alcohol tertiary.",
+          "hints": [
+            "Use the carbon-neighbor count.",
+            "The OH-bearing carbon has no hydrogen."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "A tertiary alcohol is defined by the carbon bearing OH."
+    },
+    {
+      "id": "oxidize-secondary",
+      "lesson": "oxidation",
+      "molecule": "isopropanol",
+      "label": "Predict the oxidation product",
+      "title": "Predict the oxidation product",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the carbon that changes oxidation state.",
+          "skill": "Read the structure",
+          "answer": [
+            1
+          ],
+          "explanation": "The OH-bearing central carbon is oxidized.",
+          "hints": [
+            "The carbon skeleton stays intact.",
+            "Track the C–O bond."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Ordinary oxidation produces which functional group?",
+          "skill": "Apply the rule",
+          "options": [
+            "Ketone",
+            "Aldehyde",
+            "Carboxylic acid without C–C cleavage"
+          ],
+          "answer": 0,
+          "explanation": "A secondary alcohol becomes a ketone.",
+          "hints": [
+            "How many carbon substituents remain on the carbonyl?",
+            "Two carbon neighbors indicate a ketone."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "text",
+          "prompt": "Name the three-carbon product.",
+          "skill": "State your conclusion",
+          "accepted": [
+            "propanone",
+            "propan-2-one",
+            "acetone"
+          ],
+          "explanation": "Propan-2-ol oxidizes to propanone, commonly called acetone.",
+          "hints": [
+            "Retain all three carbons.",
+            "Replace the secondary alcohol with a ketone."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Propan-2-ol → propanone."
+    },
+    {
+      "id": "protection",
+      "lesson": "activation",
+      "molecule": "acetal",
+      "label": "Use a protecting group correctly",
+      "title": "Use a protecting group correctly",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the carbon bearing both OR groups.",
+          "skill": "Read the structure",
+          "answer": [
+            1
+          ],
+          "explanation": "B is the acetal carbon.",
+          "hints": [
+            "Find a carbon attached to two oxygens.",
+            "There is no C=O at that carbon."
+          ],
+          "highlights": {
+            "prin": [
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Which conditions ordinarily regenerate the ketone?",
+          "skill": "Apply the rule",
+          "options": [
+            "Aqueous acid",
+            "Dry neutral solvent alone",
+            "Base alone under ordinary conditions"
+          ],
+          "answer": 0,
+          "explanation": "Acetal hydrolysis is acid-catalyzed and uses water.",
+          "hints": [
+            "Consider the reverse of acetal formation.",
+            "Both catalyst and water are important."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Making an alkyl tosylate from ROH directly causes…",
+          "skill": "Apply the rule",
+          "options": [
+            "Retention of the C–O framework",
+            "SN2 inversion at carbon in every case",
+            "Cleavage of the carbon skeleton"
+          ],
+          "answer": 0,
+          "explanation": "Sulfonate formation reacts at oxygen/sulfur; a subsequent SN2 at carbon is a separate step.",
+          "hints": [
+            "Distinguish activation from displacement.",
+            "The original C–O bond remains during activation."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Acetals protect carbonyls; sulfonates activate alcohol-derived leaving groups."
+    },
+    {
+      "id": "quinone-redox",
+      "lesson": "phenols",
+      "molecule": "quinone",
+      "label": "Track quinone reduction",
+      "title": "Track quinone reduction",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select both carbonyl oxygen atoms.",
+          "skill": "Read the structure",
+          "answer": [
+            6,
+            7
+          ],
+          "explanation": "G and H are the quinone oxygens.",
+          "hints": [
+            "Identify the two C=O bonds.",
+            "Select the oxygen ends."
+          ],
+          "highlights": {
+            "prin": [
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Quinone → hydroquinone is…",
+          "skill": "Apply the rule",
+          "options": [
+            "Reduction",
+            "Oxidation",
+            "Only a conformational change"
+          ],
+          "answer": 0,
+          "explanation": "The quinone accepts electrons and protons.",
+          "hints": [
+            "Track C=O versus C–OH.",
+            "The reduced form carries more hydrogen."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
+          "skill": "Calculate and interpret",
+          "answer": 2,
+          "unit": "electrons",
+          "tolerance": 0,
+          "explanation": "Two electrons and two protons give the hydroquinone form.",
+          "hints": [
+            "There are two carbonyl oxygens converted to OH.",
+            "Each coupled reduction contributes one electron in the overall pair."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Quinone + 2 H+ + 2 e− → hydroquinone."
+    }
+  ]
+}

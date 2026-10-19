@@ -29,6 +29,10 @@ The test runners first use a project-installed Playwright (or one already availa
 
 `node scripts/check-chapter.mjs 6` runs schema, unit/integration, build, and chapter browser checks in sequence, stops on failure, then appends the passed checkpoint to the logs. Git commits are separate explicit checkpoints.
 
+## Independent content review packages
+
+See [review-packets/START-HERE.md](review-packets/START-HERE.md) for chapter-by-chapter AI Studio PDF uploads and a local PowerShell Llama runner. Each chapter has a blind exercise PDF and a full content/rendering PDF. The packages include original app content and actual UI screenshots; they do not include textbook body passages. No files are uploaded automatically. Model output remains a candidate review requiring adjudication.
+
 ## Content and engine
 
 - `chapters/chapter-01.json` through `chapter-12.json`: canonical lessons, teaching cards, exercises, keys, and references.

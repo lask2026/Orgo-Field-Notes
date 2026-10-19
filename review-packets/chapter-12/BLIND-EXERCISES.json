@@ -1,0 +1,498 @@
+{
+  "chapter": 12,
+  "sourceSnapshot": {
+    "sha256": "b913bafcca67f41be708f5aaaa379ad214e10c52fdb2e1f5d87b210e174790c9",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "acid-extraction",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 160,
+            "y": 95
+          },
+          {
+            "e": "C",
+            "x": 220,
+            "y": 130
+          },
+          {
+            "e": "C",
+            "x": 220,
+            "y": 200
+          },
+          {
+            "e": "C",
+            "x": 160,
+            "y": 235
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 200
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 130
+          },
+          {
+            "e": "C",
+            "x": 160,
+            "y": 35
+          },
+          {
+            "e": "O",
+            "x": 225,
+            "y": 5
+          },
+          {
+            "e": "O",
+            "x": 95,
+            "y": 5
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            2
+          ],
+          [
+            6,
+            8,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "acid-extraction:stage-1",
+          "type": "atoms",
+          "prompt": "Select the complete carboxyl group."
+        },
+        {
+          "id": "acid-extraction:stage-2",
+          "type": "choice",
+          "prompt": "To favor transfer of this acid into an aqueous phase, choose…",
+          "options": [
+            "A pH well above its pKa",
+            "A pH far below its pKa in every case"
+          ]
+        },
+        {
+          "id": "acid-extraction:stage-3",
+          "type": "choice",
+          "prompt": "To collect recrystallized solid from cold mother liquor, use…",
+          "options": [
+            "Vacuum filtration",
+            "Hot gravity filtration to keep all product dissolved",
+            "Simple distillation of the crystals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choose-distillation",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 170,
+            "y": 37
+          },
+          {
+            "e": "C",
+            "x": 228.88972745734185,
+            "y": 71
+          },
+          {
+            "e": "C",
+            "x": 228.88972745734185,
+            "y": 139
+          },
+          {
+            "e": "C",
+            "x": 170,
+            "y": 173
+          },
+          {
+            "e": "C",
+            "x": 111.11027254265817,
+            "y": 139
+          },
+          {
+            "e": "C",
+            "x": 111.11027254265818,
+            "y": 71
+          },
+          {
+            "e": "C",
+            "x": 170,
+            "y": 5
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "choose-distillation:stage-1",
+          "type": "choice",
+          "prompt": "A close-boiling liquid mixture is generally better separated with…",
+          "options": [
+            "Fractional distillation",
+            "Simple filtration"
+          ]
+        },
+        {
+          "id": "choose-distillation:stage-2",
+          "type": "choice",
+          "prompt": "Reducing external pressure generally makes the boiling temperature…",
+          "options": [
+            "Lower",
+            "Higher",
+            "Exactly unchanged"
+          ]
+        },
+        {
+          "id": "choose-distillation:stage-3",
+          "type": "choice",
+          "prompt": "Which can limit ordinary fractional distillation?",
+          "options": [
+            "An azeotrope",
+            "The presence of any carbon atom",
+            "A colored liquid by itself"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rf-calculation",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 160,
+            "y": 95
+          },
+          {
+            "e": "C",
+            "x": 220,
+            "y": 130
+          },
+          {
+            "e": "C",
+            "x": 220,
+            "y": 200
+          },
+          {
+            "e": "C",
+            "x": 160,
+            "y": 235
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 200
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 130
+          },
+          {
+            "e": "C",
+            "x": 160,
+            "y": 35
+          },
+          {
+            "e": "O",
+            "x": 225,
+            "y": 5
+          },
+          {
+            "e": "O",
+            "x": 95,
+            "y": 5
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            2
+          ],
+          [
+            6,
+            8,
+            1
+          ]
+        ]
+      },
+      "diagram": {
+        "type": "tlc",
+        "caption": "Explore the normal-phase trend; use the distances in the question for the calculation."
+      },
+      "stages": [
+        {
+          "id": "rf-calculation:stage-1",
+          "type": "number",
+          "prompt": "A spot center travels 1.8 cm and the solvent front 6.0 cm. What is Rf?",
+          "unit": "dimensionless"
+        },
+        {
+          "id": "rf-calculation:stage-2",
+          "type": "choice",
+          "prompt": "On normal-phase silica, a stronger eluent usually makes Rf…",
+          "options": [
+            "Increase",
+            "Decrease in every case"
+          ]
+        },
+        {
+          "id": "rf-calculation:stage-3",
+          "type": "choice",
+          "prompt": "Two compounds with the same Rf on one plate are…",
+          "options": [
+            "Not proven identical",
+            "Necessarily identical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chromatography-match",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "N",
+            "x": 35,
+            "y": 110,
+            "charge": 1
+          },
+          {
+            "e": "C",
+            "x": 90,
+            "y": 80
+          },
+          {
+            "e": "C",
+            "x": 145,
+            "y": 110
+          },
+          {
+            "e": "O",
+            "x": 145,
+            "y": 170
+          },
+          {
+            "e": "N",
+            "x": 200,
+            "y": 80
+          },
+          {
+            "e": "C",
+            "x": 255,
+            "y": 110
+          },
+          {
+            "e": "C",
+            "x": 310,
+            "y": 80
+          },
+          {
+            "e": "O",
+            "x": 310,
+            "y": 20
+          },
+          {
+            "e": "O",
+            "x": 365,
+            "y": 110,
+            "charge": -1
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            5,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            2
+          ],
+          [
+            6,
+            8,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "chromatography-match:stage-1",
+          "type": "choice",
+          "prompt": "A protein at pH 7 with pI 5 tends to have what net charge?",
+          "options": [
+            "Negative",
+            "Positive"
+          ]
+        },
+        {
+          "id": "chromatography-match:stage-2",
+          "type": "choice",
+          "prompt": "Which resin would electrostatically bind that protein?",
+          "options": [
+            "Positively charged anion exchanger",
+            "Negatively charged cation exchanger"
+          ]
+        },
+        {
+          "id": "chromatography-match:stage-3",
+          "type": "choice",
+          "prompt": "In ideal size exclusion, larger molecules within the useful separation range usually elute…",
+          "options": [
+            "Earlier",
+            "Later"
+          ]
+        }
+      ]
+    }
+  ]
+}

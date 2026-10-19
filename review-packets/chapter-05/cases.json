@@ -1,0 +1,2797 @@
+{
+  "packetVersion": 1,
+  "chapter": 5,
+  "title": "Alcohols",
+  "sourceSnapshot": {
+    "sha256": "7c5b4be69e98e33c9a2b0e4cb4a05c20b36132c8aba866a65b6559f1080f8621",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "referencePassagesIncluded": false,
+  "scientificVerification": false,
+  "cases": [
+    {
+      "id": "ch05:blind:classify-alcohol",
+      "chapter": 5,
+      "kind": "blind",
+      "itemIds": [
+        "classify-alcohol:stage-1",
+        "classify-alcohol:stage-2",
+        "classify-alcohol:stage-3"
+      ],
+      "payload": {
+        "id": "classify-alcohol",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 160
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "classify-alcohol:stage-1",
+            "type": "atoms",
+            "prompt": "Select the OH-bearing carbon."
+          },
+          {
+            "id": "classify-alcohol:stage-2",
+            "type": "number",
+            "prompt": "How many carbon neighbors does it have?",
+            "unit": "carbon neighbors"
+          },
+          {
+            "id": "classify-alcohol:stage-3",
+            "type": "text",
+            "prompt": "Classify this alcohol: primary, secondary, or tertiary."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch05:blind:oxidize-secondary",
+      "chapter": 5,
+      "kind": "blind",
+      "itemIds": [
+        "oxidize-secondary:stage-1",
+        "oxidize-secondary:stage-2",
+        "oxidize-secondary:stage-3"
+      ],
+      "payload": {
+        "id": "oxidize-secondary",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "oxidize-secondary:stage-1",
+            "type": "atoms",
+            "prompt": "Select the carbon that changes oxidation state."
+          },
+          {
+            "id": "oxidize-secondary:stage-2",
+            "type": "choice",
+            "prompt": "Ordinary oxidation produces which functional group?",
+            "options": [
+              "Ketone",
+              "Aldehyde",
+              "Carboxylic acid without C–C cleavage"
+            ]
+          },
+          {
+            "id": "oxidize-secondary:stage-3",
+            "type": "text",
+            "prompt": "Name the three-carbon product."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch05:blind:protection",
+      "chapter": 5,
+      "kind": "blind",
+      "itemIds": [
+        "protection:stage-1",
+        "protection:stage-2",
+        "protection:stage-3"
+      ],
+      "payload": {
+        "id": "protection",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 75,
+              "y": 130
+            },
+            {
+              "e": "C",
+              "x": 135,
+              "y": 100
+            },
+            {
+              "e": "C",
+              "x": 195,
+              "y": 130
+            },
+            {
+              "e": "O",
+              "x": 105,
+              "y": 45
+            },
+            {
+              "e": "O",
+              "x": 175,
+              "y": 45
+            },
+            {
+              "e": "C",
+              "x": 50,
+              "y": 15
+            },
+            {
+              "e": "C",
+              "x": 230,
+              "y": 15
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              1
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "protection:stage-1",
+            "type": "atoms",
+            "prompt": "Select the carbon bearing both OR groups."
+          },
+          {
+            "id": "protection:stage-2",
+            "type": "choice",
+            "prompt": "Which conditions ordinarily regenerate the ketone?",
+            "options": [
+              "Aqueous acid",
+              "Dry neutral solvent alone",
+              "Base alone under ordinary conditions"
+            ]
+          },
+          {
+            "id": "protection:stage-3",
+            "type": "choice",
+            "prompt": "Making an alkyl tosylate from ROH directly causes…",
+            "options": [
+              "Retention of the C–O framework",
+              "SN2 inversion at carbon in every case",
+              "Cleavage of the carbon skeleton"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch05:blind:quinone-redox",
+      "chapter": 5,
+      "kind": "blind",
+      "itemIds": [
+        "quinone-redox:stage-1",
+        "quinone-redox:stage-2",
+        "quinone-redox:stage-3"
+      ],
+      "payload": {
+        "id": "quinone-redox",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 170,
+              "y": 37
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 71
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 170,
+              "y": 173
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265817,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265818,
+              "y": 71
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 5
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              0,
+              6,
+              2
+            ],
+            [
+              3,
+              7,
+              2
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "quinone-redox:stage-1",
+            "type": "atoms",
+            "prompt": "Select both carbonyl oxygen atoms."
+          },
+          {
+            "id": "quinone-redox:stage-2",
+            "type": "choice",
+            "prompt": "Quinone → hydroquinone is…",
+            "options": [
+              "Reduction",
+              "Oxidation",
+              "Only a conformational change"
+            ]
+          },
+          {
+            "id": "quinone-redox:stage-3",
+            "type": "number",
+            "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
+            "unit": "electrons"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch05:exercise:classify-alcohol",
+      "chapter": 5,
+      "kind": "exercise",
+      "itemIds": [
+        "classify-alcohol:stage-1",
+        "classify-alcohol:stage-2",
+        "classify-alcohol:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "classify-alcohol",
+          "lesson": "properties",
+          "molecule": "tbutanol",
+          "label": "Classify by carbon neighbors",
+          "title": "Classify by carbon neighbors",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the OH-bearing carbon.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "B is attached to the hydroxyl oxygen.",
+              "hints": [
+                "Find the C–O bond.",
+                "Choose the carbon, not the oxygen."
+              ],
+              "highlights": {
+                "prin": [
+                  1,
+                  4
+                ]
+              }
+            },
+            {
+              "type": "number",
+              "prompt": "How many carbon neighbors does it have?",
+              "skill": "Calculate and interpret",
+              "answer": 3,
+              "unit": "carbon neighbors",
+              "tolerance": 0,
+              "explanation": "The central carbon is bonded to three methyl carbons.",
+              "hints": [
+                "Count only directly attached C atoms.",
+                "Exclude oxygen and implicit H."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "text",
+              "prompt": "Classify this alcohol: primary, secondary, or tertiary.",
+              "skill": "State your conclusion",
+              "accepted": [
+                "tertiary",
+                "3°",
+                "3"
+              ],
+              "explanation": "Three carbon neighbors make the alcohol tertiary.",
+              "hints": [
+                "Use the carbon-neighbor count.",
+                "The OH-bearing carbon has no hydrogen."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "A tertiary alcohol is defined by the carbon bearing OH."
+        },
+        "molecule": {
+          "name": "2-methylpropan-2-ol",
+          "formula": "C4H10O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 160
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "2-methylpropan-2-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch05:blind:classify-alcohol"
+    },
+    {
+      "id": "ch05:exercise:oxidize-secondary",
+      "chapter": 5,
+      "kind": "exercise",
+      "itemIds": [
+        "oxidize-secondary:stage-1",
+        "oxidize-secondary:stage-2",
+        "oxidize-secondary:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "oxidize-secondary",
+          "lesson": "oxidation",
+          "molecule": "isopropanol",
+          "label": "Predict the oxidation product",
+          "title": "Predict the oxidation product",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the carbon that changes oxidation state.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "The OH-bearing central carbon is oxidized.",
+              "hints": [
+                "The carbon skeleton stays intact.",
+                "Track the C–O bond."
+              ],
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "Ordinary oxidation produces which functional group?",
+              "skill": "Apply the rule",
+              "options": [
+                "Ketone",
+                "Aldehyde",
+                "Carboxylic acid without C–C cleavage"
+              ],
+              "answer": 0,
+              "explanation": "A secondary alcohol becomes a ketone.",
+              "hints": [
+                "How many carbon substituents remain on the carbonyl?",
+                "Two carbon neighbors indicate a ketone."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "text",
+              "prompt": "Name the three-carbon product.",
+              "skill": "State your conclusion",
+              "accepted": [
+                "propanone",
+                "propan-2-one",
+                "acetone"
+              ],
+              "explanation": "Propan-2-ol oxidizes to propanone, commonly called acetone.",
+              "hints": [
+                "Retain all three carbons.",
+                "Replace the secondary alcohol with a ketone."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Propan-2-ol → propanone."
+        },
+        "molecule": {
+          "name": "propan-2-ol",
+          "formula": "C3H8O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "propan-2-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch05:blind:oxidize-secondary"
+    },
+    {
+      "id": "ch05:exercise:protection",
+      "chapter": 5,
+      "kind": "exercise",
+      "itemIds": [
+        "protection:stage-1",
+        "protection:stage-2",
+        "protection:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "protection",
+          "lesson": "activation",
+          "molecule": "acetal",
+          "label": "Use a protecting group correctly",
+          "title": "Use a protecting group correctly",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the carbon bearing both OR groups.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "B is the acetal carbon.",
+              "hints": [
+                "Find a carbon attached to two oxygens.",
+                "There is no C=O at that carbon."
+              ],
+              "highlights": {
+                "prin": [
+                  1,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "Which conditions ordinarily regenerate the ketone?",
+              "skill": "Apply the rule",
+              "options": [
+                "Aqueous acid",
+                "Dry neutral solvent alone",
+                "Base alone under ordinary conditions"
+              ],
+              "answer": 0,
+              "explanation": "Acetal hydrolysis is acid-catalyzed and uses water.",
+              "hints": [
+                "Consider the reverse of acetal formation.",
+                "Both catalyst and water are important."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "choice",
+              "prompt": "Making an alkyl tosylate from ROH directly causes…",
+              "skill": "Apply the rule",
+              "options": [
+                "Retention of the C–O framework",
+                "SN2 inversion at carbon in every case",
+                "Cleavage of the carbon skeleton"
+              ],
+              "answer": 0,
+              "explanation": "Sulfonate formation reacts at oxygen/sulfur; a subsequent SN2 at carbon is a separate step.",
+              "hints": [
+                "Distinguish activation from displacement.",
+                "The original C–O bond remains during activation."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Acetals protect carbonyls; sulfonates activate alcohol-derived leaving groups."
+        },
+        "molecule": {
+          "name": "2,2-dimethoxypropane",
+          "formula": "C5H12O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 75,
+              "y": 130
+            },
+            {
+              "e": "C",
+              "x": 135,
+              "y": 100
+            },
+            {
+              "e": "C",
+              "x": 195,
+              "y": 130
+            },
+            {
+              "e": "O",
+              "x": 105,
+              "y": 45
+            },
+            {
+              "e": "O",
+              "x": 175,
+              "y": 45
+            },
+            {
+              "e": "C",
+              "x": 50,
+              "y": 15
+            },
+            {
+              "e": "C",
+              "x": 230,
+              "y": 15
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "2,2-dimethoxypropane",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch05:blind:protection"
+    },
+    {
+      "id": "ch05:exercise:quinone-redox",
+      "chapter": 5,
+      "kind": "exercise",
+      "itemIds": [
+        "quinone-redox:stage-1",
+        "quinone-redox:stage-2",
+        "quinone-redox:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "quinone-redox",
+          "lesson": "phenols",
+          "molecule": "quinone",
+          "label": "Track quinone reduction",
+          "title": "Track quinone reduction",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select both carbonyl oxygen atoms.",
+              "skill": "Read the structure",
+              "answer": [
+                6,
+                7
+              ],
+              "explanation": "G and H are the quinone oxygens.",
+              "hints": [
+                "Identify the two C=O bonds.",
+                "Select the oxygen ends."
+              ],
+              "highlights": {
+                "prin": [
+                  6,
+                  7
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "Quinone → hydroquinone is…",
+              "skill": "Apply the rule",
+              "options": [
+                "Reduction",
+                "Oxidation",
+                "Only a conformational change"
+              ],
+              "answer": 0,
+              "explanation": "The quinone accepts electrons and protons.",
+              "hints": [
+                "Track C=O versus C–OH.",
+                "The reduced form carries more hydrogen."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "number",
+              "prompt": "How many electrons are accepted in the full quinone/hydroquinone conversion?",
+              "skill": "Calculate and interpret",
+              "answer": 2,
+              "unit": "electrons",
+              "tolerance": 0,
+              "explanation": "Two electrons and two protons give the hydroquinone form.",
+              "hints": [
+                "There are two carbonyl oxygens converted to OH.",
+                "Each coupled reduction contributes one electron in the overall pair."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Quinone + 2 H+ + 2 e− → hydroquinone."
+        },
+        "molecule": {
+          "name": "1,4-benzoquinone",
+          "formula": "C6H4O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 170,
+              "y": 37
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 71
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 170,
+              "y": 173
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265817,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265818,
+              "y": 71
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 5
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              0,
+              6,
+              2
+            ],
+            [
+              3,
+              7,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 235,
+          "cond": "1,4-benzoquinone",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch05:blind:quinone-redox"
+    },
+    {
+      "id": "ch05:lesson:properties",
+      "chapter": 5,
+      "kind": "lesson",
+      "itemIds": [
+        "properties:rule",
+        "properties:cue",
+        "properties:trap",
+        "properties:app",
+        "properties:step-1",
+        "properties:step-2"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "properties",
+          "label": "Alcohol classes and physical properties",
+          "title": "Alcohol classes and physical properties",
+          "molecule": "isopropanol",
+          "tag": "Classify the carbon bearing OH",
+          "cards": {
+            "rule": "<p>A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility.</p>",
+            "cue": "<p>Count C neighbors of C–OH; do not count the number of OH groups.</p>",
+            "trap": "<p>A secondary alcohol is not an alcohol with two hydroxyl groups. Phenol has OH directly attached to an aromatic ring and differs in acidity from an aliphatic alcohol.</p>",
+            "app": "<p>An OH group can increase water affinity and supply a hydrogen-bond donor and acceptor in a binding site, but whole-molecule properties still matter.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Secondary alcohol",
+              "text": "<p>The OH-bearing carbon has two carbon neighbors and one H. It is a secondary alcohol.</p>",
+              "molecule": "isopropanol",
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              },
+              "reveal": true,
+              "challenge": {
+                "prompt": "Select the carbon whose neighbors determine alcohol class.",
+                "answer": [
+                  1
+                ],
+                "explanation": "B is the OH-bearing carbon."
+              }
+            },
+            {
+              "label": "2. Tertiary alcohol",
+              "text": "<p>Three carbon groups surround the OH-bearing carbon, which therefore has no C–H bond. This changes its usual oxidation behavior.</p>",
+              "molecule": "tbutanol",
+              "highlights": {
+                "prin": [
+                  1,
+                  4
+                ],
+                "sub": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "tbutanol": {
+            "name": "2-methylpropan-2-ol",
+            "formula": "C4H10O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 160
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-methylpropan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch05:lesson:oxidation",
+      "chapter": 5,
+      "kind": "lesson",
+      "itemIds": [
+        "oxidation:rule",
+        "oxidation:cue",
+        "oxidation:trap",
+        "oxidation:app",
+        "oxidation:step-1",
+        "oxidation:step-2",
+        "oxidation:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "oxidation",
+          "label": "Predict alcohol oxidation products",
+          "title": "Predict alcohol oxidation products",
+          "molecule": "isopropanol",
+          "tag": "Alcohol class + oxidant + conditions",
+          "cards": {
+            "rule": "<p>Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage.</p>",
+            "cue": "<p>1° → aldehyde → acid; 2° → ketone; 3° lacks the necessary C–H.</p>",
+            "trap": "<p>PCC is not the only aldehyde-selective oxidant. Do not label every reagent containing oxygen “strong enough” or assume every tertiary alcohol is inert under all conditions.</p>",
+            "app": "<p>Alcohol dehydrogenases catalyze related biological redox steps using cofactors; substrate and cofactor specificity control the result.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Locate the oxidized carbon",
+              "text": "<p>Oxidizing propan-2-ol removes an O–H hydrogen and the H on its central carbon, producing C=O.</p>",
+              "molecule": "isopropanol",
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Compare the product",
+              "text": "<p>The same three-carbon framework is now a ketone. Carbon–carbon connectivity is unchanged in this ordinary alcohol oxidation.</p>",
+              "molecule": "acetone",
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Primary-alcohol conditions",
+              "text": "<p>Ethanal can be obtained from ethanol with an appropriate anhydrous oxidant. In aqueous strongly oxidizing conditions it can be oxidized further to ethanoic acid.</p>",
+              "molecule": "acetaldehyde",
+              "highlights": {
+                "prin": [
+                  1,
+                  2
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "isopropanol": {
+            "name": "propan-2-ol",
+            "formula": "C3H8O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propan-2-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch05:lesson:activation",
+      "chapter": 5,
+      "kind": "lesson",
+      "itemIds": [
+        "activation:rule",
+        "activation:cue",
+        "activation:trap",
+        "activation:app",
+        "activation:step-1",
+        "activation:step-2",
+        "activation:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "activation",
+          "label": "Activate and protect functional groups",
+          "title": "Activate and protect functional groups",
+          "molecule": "mesylate",
+          "tag": "Make leaving groups; mask carbonyls",
+          "cards": {
+            "rule": "<p>Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions.</p>",
+            "cue": "<p>Activation changes what can leave. Protection temporarily changes what can react.</p>",
+            "trap": "<p>Making a tosylate does not itself perform SN2 at carbon. Acetals are generally acid-labile; acid and water are needed for hydrolysis. Protection does not make a group universally inert.</p>",
+            "app": "<p>A carbonyl can be protected while another group reacts, then regenerated. Choose protection and deprotection conditions compatible with the rest of the molecule.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Sulfonate ester",
+              "text": "<p>The ethyl group retains its C–O bond. The oxygen is now part of a sulfonate ester, whose leaving anion is resonance stabilized.</p>",
+              "molecule": "mesylate",
+              "highlights": {
+                "prin": [
+                  2,
+                  3,
+                  5,
+                  6
+                ],
+                "path": [
+                  0,
+                  1
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Acetal protection",
+              "text": "<p>The central carbon has two OR groups and no carbonyl pi bond. Acetals can be made from aldehydes or ketones with alcohol under acid catalysis; removing water favors formation.</p>",
+              "molecule": "acetal",
+              "highlights": {
+                "prin": [
+                  1,
+                  3,
+                  4
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Restore the carbonyl",
+              "text": "<p>Aqueous acid hydrolyzes the acetal, regenerating the ketone and alcohol. The protection/deprotection sequence is reversible under appropriate conditions.</p>",
+              "molecule": "acetone",
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "mesylate": {
+            "name": "ethyl methanesulfonate",
+            "formula": "C3H8O3S",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 35,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 85,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 140,
+                "y": 130
+              },
+              {
+                "e": "S",
+                "x": 200,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 255,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 200,
+                "y": 35
+              },
+              {
+                "e": "O",
+                "x": 255,
+                "y": 60
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                3,
+                5,
+                2
+              ],
+              [
+                3,
+                6,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethyl methanesulfonate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetal": {
+            "name": "2,2-dimethoxypropane",
+            "formula": "C5H12O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 75,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 135,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 195,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 105,
+                "y": 45
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 45
+              },
+              {
+                "e": "C",
+                "x": 50,
+                "y": 15
+              },
+              {
+                "e": "C",
+                "x": 230,
+                "y": 15
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                3,
+                5,
+                1
+              ],
+              [
+                4,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2,2-dimethoxypropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch05:lesson:phenols",
+      "chapter": 5,
+      "kind": "lesson",
+      "itemIds": [
+        "phenols:rule",
+        "phenols:cue",
+        "phenols:trap",
+        "phenols:app",
+        "phenols:step-1",
+        "phenols:step-2",
+        "phenols:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "phenols",
+          "label": "Phenols, quinones, and hydroquinones",
+          "title": "Phenols, quinones, and hydroquinones",
+          "molecule": "phenol",
+          "tag": "Acidity and biological electron transfer",
+          "cards": {
+            "rule": "<p>Phenol is more acidic than an ordinary aliphatic alcohol because phenoxide can delocalize negative charge into the ring. Electron-withdrawing substituents can increase acidity. Hydroquinone can be oxidized to a quinone; the reverse is reduction.</p>",
+            "cue": "<p>Quinone + 2 H+ + 2 e− → hydroquinone. “Hydro” here tracks reduction, not merely adding OH groups.</p>",
+            "trap": "<p>Hydroquinone and hydroxyquinone are different terms. Hydroquinone is a reduced quinone form; a hydroxyquinone still has a quinone framework bearing an extra OH. Coenzyme Q accepts electrons upstream of complex III and delivers them to complex III.</p>",
+            "app": "<p>Ubiquinone/ubiquinol transports electrons within the mitochondrial inner membrane; proton-coupled redox chemistry links the organic structure to energy metabolism.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Phenolic OH",
+              "text": "<p>OH is attached directly to an aromatic carbon. Deprotonation gives phenoxide, stabilized by resonance. The pictured alternating bonds are one aromatic resonance representation.</p>",
+              "molecule": "phenol",
+              "highlights": {
+                "prin": [
+                  0,
+                  6
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Reduced member",
+              "text": "<p>Hydroquinone has two phenolic OH groups in a para arrangement. Oxidation removes two H atoms overall, formally two protons plus two electrons.</p>",
+              "molecule": "hydroquinone",
+              "highlights": {
+                "prin": [
+                  0,
+                  3,
+                  6,
+                  7
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Oxidized member",
+              "text": "<p>The quinone has two carbonyls. Its ring is not simply benzene with unchanged aromatic bonding; the pi-bond arrangement has changed.</p>",
+              "molecule": "quinone",
+              "highlights": {
+                "prin": [
+                  0,
+                  3,
+                  6,
+                  7
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "phenol": {
+            "name": "phenol",
+            "formula": "C6H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 5
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 203,
+            "cond": "phenol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "hydroquinone": {
+            "name": "benzene-1,4-diol (hydroquinone)",
+            "formula": "C6H6O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 205
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                3,
+                7,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 235,
+            "cond": "benzene-1,4-diol (hydroquinone)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "quinone": {
+            "name": "1,4-benzoquinone",
+            "formula": "C6H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 5
+              },
+              {
+                "e": "O",
+                "x": 170,
+                "y": 205
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                2
+              ],
+              [
+                5,
+                0,
+                1
+              ],
+              [
+                0,
+                6,
+                2
+              ],
+              [
+                3,
+                7,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 235,
+            "cond": "1,4-benzoquinone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:isopropanol",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "isopropanol"
+      ],
+      "payload": {
+        "id": "isopropanol",
+        "authorClaims": {
+          "name": "propan-2-ol",
+          "formula": "C3H8O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "propan-2-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:tbutanol",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "tbutanol"
+      ],
+      "payload": {
+        "id": "tbutanol",
+        "authorClaims": {
+          "name": "2-methylpropan-2-ol",
+          "formula": "C4H10O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 160
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "2-methylpropan-2-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:acetone",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "acetone"
+      ],
+      "payload": {
+        "id": "acetone",
+        "authorClaims": {
+          "name": "propanone",
+          "formula": "C3H6O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "propanone",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:acetaldehyde",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "acetaldehyde"
+      ],
+      "payload": {
+        "id": "acetaldehyde",
+        "authorClaims": {
+          "name": "ethanal",
+          "formula": "C2H4O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanal",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:mesylate",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "mesylate"
+      ],
+      "payload": {
+        "id": "mesylate",
+        "authorClaims": {
+          "name": "ethyl methanesulfonate",
+          "formula": "C3H8O3S",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 35,
+              "y": 130
+            },
+            {
+              "e": "C",
+              "x": 85,
+              "y": 100
+            },
+            {
+              "e": "O",
+              "x": 140,
+              "y": 130
+            },
+            {
+              "e": "S",
+              "x": 200,
+              "y": 100
+            },
+            {
+              "e": "C",
+              "x": 255,
+              "y": 130
+            },
+            {
+              "e": "O",
+              "x": 200,
+              "y": 35
+            },
+            {
+              "e": "O",
+              "x": 255,
+              "y": 60
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              3,
+              5,
+              2
+            ],
+            [
+              3,
+              6,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethyl methanesulfonate",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:acetal",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "acetal"
+      ],
+      "payload": {
+        "id": "acetal",
+        "authorClaims": {
+          "name": "2,2-dimethoxypropane",
+          "formula": "C5H12O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 75,
+              "y": 130
+            },
+            {
+              "e": "C",
+              "x": 135,
+              "y": 100
+            },
+            {
+              "e": "C",
+              "x": 195,
+              "y": 130
+            },
+            {
+              "e": "O",
+              "x": 105,
+              "y": 45
+            },
+            {
+              "e": "O",
+              "x": 175,
+              "y": 45
+            },
+            {
+              "e": "C",
+              "x": 50,
+              "y": 15
+            },
+            {
+              "e": "C",
+              "x": 230,
+              "y": 15
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "2,2-dimethoxypropane",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:phenol",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "phenol"
+      ],
+      "payload": {
+        "id": "phenol",
+        "authorClaims": {
+          "name": "phenol",
+          "formula": "C6H6O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 170,
+              "y": 37
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 71
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 170,
+              "y": 173
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265817,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265818,
+              "y": 71
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 5
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              2
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              0,
+              6,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 203,
+          "cond": "phenol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:hydroquinone",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "hydroquinone"
+      ],
+      "payload": {
+        "id": "hydroquinone",
+        "authorClaims": {
+          "name": "benzene-1,4-diol (hydroquinone)",
+          "formula": "C6H6O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 170,
+              "y": 37
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 71
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 170,
+              "y": 173
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265817,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265818,
+              "y": 71
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 5
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              2
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              0,
+              6,
+              1
+            ],
+            [
+              3,
+              7,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 235,
+          "cond": "benzene-1,4-diol (hydroquinone)",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:molecule:quinone",
+      "chapter": 5,
+      "kind": "molecule",
+      "itemIds": [
+        "quinone"
+      ],
+      "payload": {
+        "id": "quinone",
+        "authorClaims": {
+          "name": "1,4-benzoquinone",
+          "formula": "C6H4O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 170,
+              "y": 37
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 71
+            },
+            {
+              "e": "C",
+              "x": 228.88972745734185,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 170,
+              "y": 173
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265817,
+              "y": 139
+            },
+            {
+              "e": "C",
+              "x": 111.11027254265818,
+              "y": 71
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 5
+            },
+            {
+              "e": "O",
+              "x": 170,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              0,
+              6,
+              2
+            ],
+            [
+              3,
+              7,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 235,
+          "cond": "1,4-benzoquinone",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch05:curriculum",
+      "chapter": 5,
+      "kind": "curriculum",
+      "itemIds": [
+        "scope-1",
+        "scope-2",
+        "scope-3"
+      ],
+      "payload": {
+        "title": "Alcohols",
+        "sections": [
+          {
+            "itemId": "scope-1",
+            "title": "5.1 Description and Properties"
+          },
+          {
+            "itemId": "scope-2",
+            "title": "5.2 Reactions of Alcohols"
+          },
+          {
+            "itemId": "scope-3",
+            "title": "5.3 Reactions of Phenols "
+          }
+        ],
+        "objectives": [
+          "Classify alcohols and physical properties",
+          "Predict oxidation and protection outcomes",
+          "Distinguish phenols, quinones, and hydroquinones"
+        ],
+        "lessonInventory": [
+          {
+            "id": "properties",
+            "title": "Alcohol classes and physical properties",
+            "tag": "Classify the carbon bearing OH",
+            "coreRule": "A primary, secondary, or tertiary alcohol has one, two, or three carbon substituents on the OH-bearing carbon. Hydrogen bonding raises boiling points relative to comparable nonpolar molecules. Small alcohols mix well with water; increasing hydrocarbon size lowers water solubility.",
+            "stepTopics": [
+              "1. Secondary alcohol",
+              "2. Tertiary alcohol"
+            ]
+          },
+          {
+            "id": "oxidation",
+            "title": "Predict alcohol oxidation products",
+            "tag": "Alcohol class + oxidant + conditions",
+            "coreRule": "Primary alcohols give aldehydes with suitable mild anhydrous oxidation (PCC is one example), or acids with suitable aqueous strong oxidation. Secondary alcohols give ketones. Tertiary alcohols do not undergo the ordinary C–H-removing oxidation without C–C cleavage.",
+            "stepTopics": [
+              "1. Locate the oxidized carbon",
+              "2. Compare the product",
+              "3. Primary-alcohol conditions"
+            ]
+          },
+          {
+            "id": "activation",
+            "title": "Activate and protect functional groups",
+            "tag": "Make leaving groups; mask carbonyls",
+            "coreRule": "Converting ROH to a mesylate (ROMs) or tosylate (ROTs) gives a much better leaving group. The alcohol oxygen remains bonded to carbon during sulfonate formation. A later SN2 displacement at that carbon inverts its geometry. Acetals protect carbonyls under many basic conditions.",
+            "stepTopics": [
+              "1. Sulfonate ester",
+              "2. Acetal protection",
+              "3. Restore the carbonyl"
+            ]
+          },
+          {
+            "id": "phenols",
+            "title": "Phenols, quinones, and hydroquinones",
+            "tag": "Acidity and biological electron transfer",
+            "coreRule": "Phenol is more acidic than an ordinary aliphatic alcohol because phenoxide can delocalize negative charge into the ring. Electron-withdrawing substituents can increase acidity. Hydroquinone can be oxidized to a quinone; the reverse is reduction.",
+            "stepTopics": [
+              "1. Phenolic OH",
+              "2. Reduced member",
+              "3. Oxidized member"
+            ]
+          }
+        ],
+        "exercises": [
+          {
+            "id": "classify-alcohol",
+            "title": "Classify by carbon neighbors",
+            "lesson": "properties",
+            "stages": [
+              "Select the OH-bearing carbon.",
+              "How many carbon neighbors does it have?",
+              "Classify this alcohol: primary, secondary, or tertiary."
+            ]
+          },
+          {
+            "id": "oxidize-secondary",
+            "title": "Predict the oxidation product",
+            "lesson": "oxidation",
+            "stages": [
+              "Select the carbon that changes oxidation state.",
+              "Ordinary oxidation produces which functional group?",
+              "Name the three-carbon product."
+            ]
+          },
+          {
+            "id": "protection",
+            "title": "Use a protecting group correctly",
+            "lesson": "activation",
+            "stages": [
+              "Select the carbon bearing both OR groups.",
+              "Which conditions ordinarily regenerate the ketone?",
+              "Making an alkyl tosylate from ROH directly causes…"
+            ]
+          },
+          {
+            "id": "quinone-redox",
+            "title": "Track quinone reduction",
+            "lesson": "phenols",
+            "stages": [
+              "Select both carbonyl oxygen atoms.",
+              "Quinone → hydroquinone is…",
+              "How many electrons are accepted in the full quinone/hydroquinone conversion?"
+            ]
+          }
+        ],
+        "scopeNote": "This is a scope inventory; full claim accuracy is reviewed in the separate lesson and exercise cases.",
+        "sourceLabels": [
+          {
+            "label": "Supplied Kaplan curriculum: Chapter 5; section scope checked against local body and summary",
+            "location": "organic_chemistry_kaplan/OEBPS/chapter05b.xhtml"
+          }
+        ],
+        "referencePassages": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "chapter": 10,
+  "sourceSnapshot": {
+    "sha256": "fc158ea2a36116c07d2eec85c6fcab4c83fc5261ea0a22a4fda0b0660eb56c69",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "glycine-charge",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "N",
+            "x": 45,
+            "y": 115,
+            "charge": 1
+          },
+          {
+            "e": "C",
+            "x": 105,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 165,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 165,
+            "y": 175
+          },
+          {
+            "e": "O",
+            "x": 225,
+            "y": 85,
+            "charge": -1
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "glycine-charge:stage-1",
+          "type": "choice",
+          "prompt": "What is the net formal charge of the displayed zwitterion?",
+          "options": [
+            "0",
+            "+1",
+            "−1"
+          ]
+        },
+        {
+          "id": "glycine-charge:stage-2",
+          "type": "choice",
+          "prompt": "Why is glycine achiral?",
+          "options": [
+            "Its alpha carbon has two H substituents",
+            "All amino acids are achiral",
+            "Its nitrogen is neutral"
+          ]
+        },
+        {
+          "id": "glycine-charge:stage-3",
+          "type": "number",
+          "prompt": "Using pKa values 2.3 and 9.6 for this neutral-side-chain model, calculate pI.",
+          "unit": "pH units"
+        }
+      ]
+    },
+    {
+      "id": "peptide-link",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "N",
+            "x": 35,
+            "y": 110,
+            "charge": 1
+          },
+          {
+            "e": "C",
+            "x": 90,
+            "y": 80
+          },
+          {
+            "e": "C",
+            "x": 145,
+            "y": 110
+          },
+          {
+            "e": "O",
+            "x": 145,
+            "y": 170
+          },
+          {
+            "e": "N",
+            "x": 200,
+            "y": 80
+          },
+          {
+            "e": "C",
+            "x": 255,
+            "y": 110
+          },
+          {
+            "e": "C",
+            "x": 310,
+            "y": 80
+          },
+          {
+            "e": "O",
+            "x": 310,
+            "y": 20
+          },
+          {
+            "e": "O",
+            "x": 365,
+            "y": 110,
+            "charge": -1
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            5,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            2
+          ],
+          [
+            6,
+            8,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "peptide-link:stage-1",
+          "type": "atoms",
+          "prompt": "Select the two endpoints of the internal peptide C–N bond."
+        },
+        {
+          "id": "peptide-link:stage-2",
+          "type": "choice",
+          "prompt": "Why is rotation around this bond restricted?",
+          "options": [
+            "Amide resonance gives partial double-bond character",
+            "Every single bond is completely rigid",
+            "The bond is an ionic salt bridge"
+          ]
+        },
+        {
+          "id": "peptide-link:stage-3",
+          "type": "choice",
+          "prompt": "Peptide sequences are read from…",
+          "options": [
+            "N-terminus to C-terminus",
+            "C-terminus to N-terminus by default"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strecker-map",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 110,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 170,
+            "y": 120
+          },
+          {
+            "e": "N",
+            "x": 230,
+            "y": 155
+          },
+          {
+            "e": "N",
+            "x": 110,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "strecker-map:stage-1",
+          "type": "atoms",
+          "prompt": "Select the carbon that becomes the carboxyl carbon after hydrolysis."
+        },
+        {
+          "id": "strecker-map:stage-2",
+          "type": "choice",
+          "prompt": "Which group is retained as the alanine side chain?",
+          "options": [
+            "Methyl",
+            "Nitrile nitrogen",
+            "A new phenyl group"
+          ]
+        },
+        {
+          "id": "strecker-map:stage-3",
+          "type": "choice",
+          "prompt": "Under achiral conditions, the chiral product is generally…",
+          "options": [
+            "Racemic",
+            "Only L without a chiral influence",
+            "Only D without a chiral influence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phosphate-links",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "P",
+            "x": 160,
+            "y": 100
+          },
+          {
+            "e": "O",
+            "x": 160,
+            "y": 30
+          },
+          {
+            "e": "O",
+            "x": 90,
+            "y": 100
+          },
+          {
+            "e": "O",
+            "x": 230,
+            "y": 100
+          },
+          {
+            "e": "O",
+            "x": 160,
+            "y": 170,
+            "charge": -1
+          },
+          {
+            "e": "C",
+            "x": 35,
+            "y": 140
+          },
+          {
+            "e": "C",
+            "x": 285,
+            "y": 140
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            3,
+            6,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "phosphate-links:stage-1",
+          "type": "atoms",
+          "prompt": "Select the phosphorus atom."
+        },
+        {
+          "id": "phosphate-links:stage-2",
+          "type": "choice",
+          "prompt": "This structure models a…",
+          "options": [
+            "Phosphodiester",
+            "Phosphoanhydride",
+            "Carboxylic anhydride"
+          ]
+        },
+        {
+          "id": "phosphate-links:stage-3",
+          "type": "choice",
+          "prompt": "Why can ATP hydrolysis be favorable overall?",
+          "options": [
+            "Products have lower free energy under the stated conditions",
+            "Breaking a bond itself releases energy",
+            "All phosphate bonds break spontaneously at the same rate"
+          ]
+        }
+      ]
+    }
+  ]
+}

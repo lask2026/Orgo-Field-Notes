@@ -1,0 +1,380 @@
+{
+  "chapter": 2,
+  "sourceSnapshot": {
+    "sha256": "3790c3072a422920a2793636cc0e671c8e2a766731209b66b68c3e110873ccb4",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "isomer-pair",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 60,
+            "y": 110
+          },
+          {
+            "e": "O",
+            "x": 120,
+            "y": 75
+          },
+          {
+            "e": "C",
+            "x": 180,
+            "y": 110
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "isomer-pair:stage-1",
+          "type": "atoms",
+          "prompt": "Select the oxygen atom."
+        },
+        {
+          "id": "isomer-pair:stage-2",
+          "type": "choice",
+          "prompt": "Compared with ethanol (C2H6O), this compound is a…",
+          "options": [
+            "Constitutional isomer",
+            "Conformer",
+            "Enantiomer"
+          ]
+        },
+        {
+          "id": "isomer-pair:stage-3",
+          "type": "choice",
+          "prompt": "Which can donate an O–H hydrogen bond?",
+          "options": [
+            "Both",
+            "Ethanol only",
+            "This ether only"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "butane-rotation",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ]
+      },
+      "diagram": {
+        "type": "newman",
+        "caption": "Rotate butane and compare its conformations."
+      },
+      "stages": [
+        {
+          "id": "butane-rotation:stage-1",
+          "type": "atoms",
+          "prompt": "Select the two carbons forming the central bond."
+        },
+        {
+          "id": "butane-rotation:stage-2",
+          "type": "choice",
+          "prompt": "At a 180° methyl–methyl dihedral, the conformation is…",
+          "options": [
+            "Anti",
+            "Gauche",
+            "Fully eclipsed"
+          ]
+        },
+        {
+          "id": "butane-rotation:stage-3",
+          "type": "choice",
+          "prompt": "A cyclohexane chair flip changes…",
+          "options": [
+            "Up into down",
+            "Axial into equatorial, preserving up/down",
+            "Cis into trans"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stereocenters",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          },
+          {
+            "e": "O",
+            "x": 166,
+            "y": 165
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "stereocenters:stage-1",
+          "type": "atoms",
+          "prompt": "Select both potentially stereogenic carbons."
+        },
+        {
+          "id": "stereocenters:stage-2",
+          "type": "number",
+          "prompt": "What is the maximum 2ⁿ count before symmetry is considered?",
+          "unit": "isomers"
+        },
+        {
+          "id": "stereocenters:stage-3",
+          "type": "number",
+          "prompt": "After accounting for the meso form, how many distinct stereoisomers exist?",
+          "unit": "isomers"
+        }
+      ]
+    },
+    {
+      "id": "fischer-cip",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "diagram": {
+        "type": "fischer",
+        "top": "CH₂CH₃",
+        "bottom": "CH₃",
+        "left": "OH",
+        "right": "H",
+        "caption": "Fischer projection of butan-2-ol. Horizontal bonds point toward you; vertical bonds point away."
+      },
+      "stages": [
+        {
+          "id": "fischer-cip:stage-1",
+          "type": "choice",
+          "prompt": "Which substituent has highest CIP priority?",
+          "options": [
+            "OH",
+            "Ethyl",
+            "Methyl",
+            "H"
+          ]
+        },
+        {
+          "id": "fischer-cip:stage-2",
+          "type": "choice",
+          "prompt": "In this projection, the lowest-priority H points…",
+          "options": [
+            "Away",
+            "Toward you",
+            "In the paper plane"
+          ]
+        },
+        {
+          "id": "fischer-cip:stage-3",
+          "type": "text",
+          "prompt": "Assign the configuration: R or S."
+        }
+      ]
+    },
+    {
+      "id": "ez-ee",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 60,
+            "y": 50
+          },
+          {
+            "e": "C",
+            "x": 115,
+            "y": 100
+          },
+          {
+            "e": "C",
+            "x": 185,
+            "y": 100
+          },
+          {
+            "e": "C",
+            "x": 240,
+            "y": 50
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "ez-ee:stage-1",
+          "type": "atoms",
+          "prompt": "Select both alkene carbon atoms."
+        },
+        {
+          "id": "ez-ee:stage-2",
+          "type": "text",
+          "prompt": "Assign E or Z."
+        },
+        {
+          "id": "ez-ee:stage-3",
+          "type": "number",
+          "prompt": "Separately, what is the ee of a 75:25 enantiomer mixture?",
+          "unit": "%"
+        }
+      ]
+    }
+  ]
+}

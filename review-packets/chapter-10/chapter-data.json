@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "id": 10,
+  "title": "Nitrogen- and Phosphorus-Containing Compounds",
+  "description": "Connect amino-acid charge, peptide structure, synthesis, and phosphate chemistry.",
+  "objectives": [
+    "Analyze amino-acid charge and stereochemistry",
+    "Identify peptide bonds and synthesis carbon sources",
+    "Distinguish phosphate linkages and reaction energetics"
+  ],
+  "sources": [
+    {
+      "label": "Supplied Kaplan curriculum: Chapter 10; section scope checked against local body and summary",
+      "location": "organic_chemistry_kaplan/OEBPS/chapter10b.xhtml"
+    }
+  ],
+  "review": {
+    "status": "author-reviewed",
+    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+  },
+  "lessons": [
+    {
+      "id": "amino-acids",
+      "label": "Amino acids, charge, and stereochemistry",
+      "title": "Amino acids, charge, and stereochemistry",
+      "molecule": "alanine",
+      "tag": "Ionization depends on pH",
+      "cards": {
+        "rule": "<p>An alpha amino acid has amino and carboxyl groups attached to the same alpha carbon. At many near-neutral pH conditions, simple amino acids predominantly form zwitterions. Side chains add nonpolar, aromatic, polar, acidic, or basic behavior. Glycine has no stereocenter; most proteinogenic L amino acids are S, with cysteine the familiar R exception.</p>",
+        "cue": "<p>Low pH adds protons; high pH removes them. Net charge is the sum of all ionized groups.</p>",
+        "trap": "<p>A zwitterion has formal charges despite net zero charge. The pI is the pH of average net zero charge; for ionizable side chains, average the two pKa values bracketing the neutral species, not automatically the terminal pKa pair.</p>",
+        "app": "<p>Aliphatic side chains such as Ala, Val, Leu, and Ile are nonpolar; Ser and Thr have polar OH groups; Asn and Gln have polar amides. Asp/Glu are usually negatively charged near neutral pH; Lys/Arg usually positive. Histidine protonation is strongly pH- and environment-dependent. Aromatic does not always mean purely nonpolar: Tyr has a phenolic OH. At pH below pI a protein tends positive; above pI it tends negative.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Zwitterionic alanine",
+          "text": "<p>The nitrogen bears positive charge and the carboxylate bears negative charge. Its alpha carbon also has methyl and H. This connectivity drawing leaves stereochemistry unspecified.</p>",
+          "molecule": "alanine",
+          "highlights": {
+            "prin": [
+              0,
+              2,
+              3,
+              4
+            ],
+            "sub": [
+              5
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Glycine exception",
+          "text": "<p>Glycine has two hydrogens at its alpha carbon and is achiral. Its neutral net charge near suitable pH does not mean it lacks charged sites.</p>",
+          "molecule": "glycine",
+          "highlights": {
+            "prin": [
+              1
+            ],
+            "sub": [
+              0,
+              4
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Relative configuration",
+          "text": "<p>This Fischer projection is the L-alanine arrangement. The carboxyl group is above, side chain below, amino group left. L is not a statement about optical-rotation sign.</p>",
+          "molecule": "alanine",
+          "highlights": {
+            "prin": [
+              1
+            ]
+          },
+          "reveal": false,
+          "diagram": {
+            "type": "fischer",
+            "top": "COO⁻",
+            "bottom": "CH₃",
+            "left": "NH₃⁺",
+            "right": "H",
+            "caption": "L-alanine Fischer projection; the horizontal bonds point toward you."
+          }
+        }
+      ]
+    },
+    {
+      "id": "peptides",
+      "label": "Peptide bonds and protein structure",
+      "title": "Peptide bonds and protein structure",
+      "molecule": "glycylglycine",
+      "tag": "An amide links amino-acid residues",
+      "cards": {
+        "rule": "<p>A peptide bond joins one residue’s carbonyl carbon to the next residue’s nitrogen. Resonance makes the peptide group approximately planar with restricted C–N rotation. Sequence is conventionally read N-terminus → C-terminus. Primary sequence supports secondary structures, tertiary folding, and sometimes quaternary assembly.</p>",
+        "cue": "<p>N to C is the reading direction. Peptide C–N is the restricted bond; adjacent backbone single bonds supply much of the flexibility.</p>",
+        "trap": "<p>A peptide bond is not a C–C bond between two alpha carbons. Peptide formation is thermodynamically and kinetically enabled by activation in cells; plain amino acids in water do not rapidly polymerize by themselves.</p>",
+        "app": "<p>Hydrogen bonding organizes alpha helices and beta sheets; hydrophobic effects and side-chain interactions help stabilize folded proteins.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Find the amide linkage",
+          "text": "<p>The internal nitrogen is bonded directly to the preceding carbonyl carbon. The terminal amino and carboxyl groups remain available for ionization.</p>",
+          "molecule": "glycylglycine",
+          "highlights": {
+            "prin": [
+              2,
+              3,
+              4
+            ],
+            "sub": [
+              0,
+              6,
+              8
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Trace the backbone",
+          "text": "<p>Follow N–Cα–C(=O)–N–Cα–C(=O). The peptide C–N link is approximately planar because the N lone pair participates in resonance.</p>",
+          "molecule": "glycylglycine",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            "prin": [
+              2,
+              4
+            ]
+          },
+          "reveal": false
+        }
+      ]
+    },
+    {
+      "id": "synthesis",
+      "label": "Strecker and Gabriel amino-acid strategies",
+      "title": "Strecker and Gabriel amino-acid strategies",
+      "molecule": "aminonitrile",
+      "tag": "Track where the carboxyl carbon comes from",
+      "cards": {
+        "rule": "<p>In the Strecker route, an aldehyde reacts through an imine/iminium stage with ammonia and cyanide to form an alpha-aminonitrile. Nitrile hydrolysis gives the carboxyl group. A Gabriel–malonic ester route installs protected nitrogen and an alkyl side chain, then hydrolyzes and decarboxylates to an alpha amino acid.</p>",
+        "cue": "<p>Strecker: nitrile carbon becomes carboxyl carbon. Gabriel–malonate: alkylation builds the side chain; decarboxylation removes one carboxyl group.</p>",
+        "trap": "<p>Achiral starting materials and conditions usually give a racemic chiral amino-acid product; glycine is achiral. Ordinary Gabriel amine synthesis and the malonic-ester amino-acid variant are related but not identical.</p>",
+        "app": "<p>Laboratory racemic synthesis contrasts with enzyme-controlled production of stereochemically selected amino acids.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Aminonitrile intermediate",
+          "text": "<p>The central carbon carries an amino group, methyl, H, and a nitrile carbon. This is the carbon skeleton leading to alanine on nitrile hydrolysis.</p>",
+          "molecule": "aminonitrile",
+          "highlights": {
+            "prin": [
+              1,
+              4
+            ],
+            "sub": [
+              2,
+              3
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Carbon bookkeeping",
+          "text": "<p>The nitrile carbon becomes the amino acid’s carboxyl carbon. The original aldehyde carbon becomes its alpha carbon; the methyl side chain is retained. Protonation state then depends on pH.</p>",
+          "molecule": "alanine",
+          "highlights": {
+            "prin": [
+              1,
+              2
+            ],
+            "sub": [
+              5
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "3. Alternative protected route",
+          "text": "<p>In the Gabriel–malonic ester amino-acid variant, phthalimide supplies protected nitrogen, malonate chemistry enables side-chain alkylation, and hydrolysis/deprotection plus decarboxylation yields the amino acid. This is a route overview, not a laboratory protocol.</p>",
+          "molecule": "alanine",
+          "highlights": {
+            "prin": [
+              0,
+              1
+            ],
+            "sub": [
+              5
+            ]
+          },
+          "reveal": false
+        }
+      ]
+    },
+    {
+      "id": "phosphorus",
+      "label": "Phosphates and phosphoryl transfer",
+      "title": "Phosphates and phosphoryl transfer",
+      "molecule": "dimethylphosphate",
+      "tag": "Phosphoesters differ from phosphoanhydrides",
+      "cards": {
+        "rule": "<p>A phosphate ester contains P–O–C; a phosphodiester has two such ester links. A phosphoanhydride contains P–O–P. Phosphoric acid has successive dissociations, so charge depends on pH. Formal P=O Lewis drawings are bookkeeping models of delocalized bonding.</p>",
+        "cue": "<p>DNA/RNA backbone: phosphodiester. Between ATP phosphate groups: phosphoanhydride. Approximate aqueous phosphoric-acid pKa values are 2.1, 7.2, and 12.3, so the H2PO4−/HPO4²− pair can buffer near neutral pH; temperature and ionic conditions shift these values.</p>",
+        "trap": "<p>Breaking a bond requires energy. Favorable ATP hydrolysis reflects the overall free-energy difference between reactants and solvated products, including resonance, electrostatics, and solvation; energy is not released simply by breaking one bond.</p>",
+        "app": "<p>Phosphoryl transfer can couple reactions. Nucleic-acid synthesis releases pyrophosphate, whose subsequent hydrolysis can help favor polymerization.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Acidic phosphate",
+          "text": "<p>The neutral phosphoric-acid representation has three OH groups. Sequential deprotonation gives different phosphate ions; this drawing is not the predominant form at every pH.</p>",
+          "molecule": "phosphoricacid",
+          "highlights": {
+            "prin": [
+              0,
+              2,
+              3,
+              4
+            ]
+          },
+          "reveal": true
+        },
+        {
+          "label": "2. Phosphodiester model",
+          "text": "<p>Dimethyl phosphate illustrates two P–O–C connections and a negative charge. The nucleic-acid backbone replaces the methyl groups with sugar-derived groups.</p>",
+          "molecule": "dimethylphosphate",
+          "highlights": {
+            "path": [
+              5,
+              2,
+              0,
+              3,
+              6
+            ],
+            "prin": [
+              0,
+              1,
+              4
+            ]
+          },
+          "reveal": true,
+          "challenge": {
+            "prompt": "Select the phosphorus atom.",
+            "answer": [
+              0
+            ],
+            "explanation": "A is P, the central atom in the phosphate group."
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "glycine-charge",
+      "lesson": "amino-acids",
+      "molecule": "glycine",
+      "label": "Charge and isoelectric point",
+      "title": "Charge and isoelectric point",
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "What is the net formal charge of the displayed zwitterion?",
+          "skill": "Apply the rule",
+          "options": [
+            "0",
+            "+1",
+            "−1"
+          ],
+          "answer": 0,
+          "explanation": "The +1 ammonium and −1 carboxylate charges cancel.",
+          "hints": [
+            "Add the labeled formal charges.",
+            "Net zero does not mean no charged sites."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Why is glycine achiral?",
+          "skill": "Apply the rule",
+          "options": [
+            "Its alpha carbon has two H substituents",
+            "All amino acids are achiral",
+            "Its nitrogen is neutral"
+          ],
+          "answer": 0,
+          "explanation": "Two identical H substituents prevent a stereogenic alpha carbon.",
+          "hints": [
+            "Inspect the implicit hydrogens.",
+            "The side chain itself is H."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "Using pKa values 2.3 and 9.6 for this neutral-side-chain model, calculate pI.",
+          "skill": "Calculate and interpret",
+          "answer": 5.95,
+          "unit": "pH units",
+          "tolerance": 0.005,
+          "explanation": "The neutral form lies between those dissociations: (2.3+9.6)/2=5.95.",
+          "hints": [
+            "Use the pKa pair bracketing net zero.",
+            "Average the two supplied numbers."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Glycine is achiral; the zwitterion has net zero charge."
+    },
+    {
+      "id": "peptide-link",
+      "lesson": "peptides",
+      "molecule": "glycylglycine",
+      "label": "Read a peptide backbone",
+      "title": "Read a peptide backbone",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the two endpoints of the internal peptide C–N bond.",
+          "skill": "Read the structure",
+          "answer": [
+            2,
+            4
+          ],
+          "explanation": "C–E links the first residue’s carbonyl carbon to the next residue’s N.",
+          "hints": [
+            "Find C(=O)–N inside the molecule.",
+            "Exclude the terminal ammonium nitrogen."
+          ],
+          "highlights": {
+            "prin": [
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Why is rotation around this bond restricted?",
+          "skill": "Apply the rule",
+          "options": [
+            "Amide resonance gives partial double-bond character",
+            "Every single bond is completely rigid",
+            "The bond is an ionic salt bridge"
+          ],
+          "answer": 0,
+          "explanation": "N lone-pair donation favors a planar peptide group.",
+          "hints": [
+            "Apply the amide resonance model.",
+            "Aligned p orbitals stabilize the group."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Peptide sequences are read from…",
+          "skill": "Apply the rule",
+          "options": [
+            "N-terminus to C-terminus",
+            "C-terminus to N-terminus by default"
+          ],
+          "answer": 0,
+          "explanation": "The conventional sequence direction is N to C.",
+          "hints": [
+            "Find the free terminal amino group.",
+            "Start there and follow the backbone."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Peptide bonds are planar amide links read N → C."
+    },
+    {
+      "id": "strecker-map",
+      "lesson": "synthesis",
+      "molecule": "aminonitrile",
+      "label": "Track a Strecker intermediate",
+      "title": "Track a Strecker intermediate",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the carbon that becomes the carboxyl carbon after hydrolysis.",
+          "skill": "Read the structure",
+          "answer": [
+            2
+          ],
+          "explanation": "C is the nitrile carbon.",
+          "hints": [
+            "Hydrolysis transforms C≡N into a carboxyl group.",
+            "Track the carbon, not the nitrile nitrogen."
+          ],
+          "highlights": {
+            "prin": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Which group is retained as the alanine side chain?",
+          "skill": "Apply the rule",
+          "options": [
+            "Methyl",
+            "Nitrile nitrogen",
+            "A new phenyl group"
+          ],
+          "answer": 0,
+          "explanation": "The original aldehyde methyl substituent remains attached to the alpha carbon.",
+          "hints": [
+            "Follow the carbon skeleton.",
+            "No new aromatic group is introduced."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Under achiral conditions, the chiral product is generally…",
+          "skill": "Apply the rule",
+          "options": [
+            "Racemic",
+            "Only L without a chiral influence",
+            "Only D without a chiral influence"
+          ],
+          "answer": 0,
+          "explanation": "The planar imine/iminium can be approached from either face in an achiral environment.",
+          "hints": [
+            "Ask whether the reaction distinguishes enantiotopic faces.",
+            "No chiral catalyst or reagent is specified."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "The nitrile carbon becomes the carboxyl carbon."
+    },
+    {
+      "id": "phosphate-links",
+      "lesson": "phosphorus",
+      "molecule": "dimethylphosphate",
+      "label": "Identify phosphorus linkages",
+      "title": "Identify phosphorus linkages",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the phosphorus atom.",
+          "skill": "Read the structure",
+          "answer": [
+            0
+          ],
+          "explanation": "A is phosphorus.",
+          "hints": [
+            "Read the P label.",
+            "It is bonded to four oxygens."
+          ],
+          "highlights": {
+            "prin": [
+              0
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "This structure models a…",
+          "skill": "Apply the rule",
+          "options": [
+            "Phosphodiester",
+            "Phosphoanhydride",
+            "Carboxylic anhydride"
+          ],
+          "answer": 0,
+          "explanation": "There are two P–O–C ester links and no P–O–P link.",
+          "hints": [
+            "Count oxygen links to carbon groups.",
+            "Only one phosphorus is present."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "choice",
+          "prompt": "Why can ATP hydrolysis be favorable overall?",
+          "skill": "Apply the rule",
+          "options": [
+            "Products have lower free energy under the stated conditions",
+            "Breaking a bond itself releases energy",
+            "All phosphate bonds break spontaneously at the same rate"
+          ],
+          "answer": 0,
+          "explanation": "Overall free energy includes bond breaking and formation, resonance, solvation, concentrations, and other effects.",
+          "hints": [
+            "Distinguish a single bond-breaking step from the full reaction.",
+            "Thermodynamics does not determine the rate by itself."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Phosphodiesters connect P through oxygen to two carbon groups."
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "ketone": {
+    "atoms": [
+      {
+        "e": "C",
+        "x": 48,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 102,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 156,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 210,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 264,
+        "y": 115
+      },
+      {
+        "e": "O",
+        "x": 102,
+        "y": 30
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        2
+      ]
+    ],
+    "w": 311,
+    "h": 200,
+    "name": "pentan-2-one",
+    "cond": "CH₃–C(=O)–CH₂–CH₂–CH₃",
+    "formula": "C5H10O",
+    "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+  },
+  "ethanal-enolate": {
+    "name": "ethanal enolate (oxygen-charged contributor)",
+    "formula": "C2H3O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 120
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 120,
+        "charge": -1
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanal enolate (oxygen-charged contributor)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "vinylalcohol": {
+    "name": "ethenol (vinyl alcohol)",
+    "formula": "C2H4O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 165,
+        "y": 115
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethenol (vinyl alcohol)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "aldol": {
+    "name": "3-hydroxybutanal (stereochemistry unspecified)",
+    "formula": "C4H8O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 50,
+        "y": 45
+      },
+      {
+        "e": "O",
+        "x": 166,
+        "y": 175
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        2
+      ],
+      [
+        2,
+        5,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 205,
+    "cond": "3-hydroxybutanal (stereochemistry unspecified)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "crotonaldehyde": {
+    "name": "but-2-enal (E/Z unspecified)",
+    "formula": "C4H6O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 50,
+        "y": 45
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "but-2-enal (E/Z unspecified)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "methylvinylketone": {
+    "name": "but-3-en-2-one",
+    "formula": "C4H6O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        1,
+        4,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "but-3-en-2-one",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  }
+}

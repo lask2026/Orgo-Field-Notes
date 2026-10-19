@@ -1,0 +1,131 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "caseId",
+    "summary",
+    "coverage",
+    "findings",
+    "answers",
+    "limitations"
+  ],
+  "properties": {
+    "caseId": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "status",
+          "note"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "reviewed",
+              "uncertain",
+              "not-reviewed"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "severity",
+          "claim",
+          "reasoning",
+          "evidenceKind",
+          "evidence",
+          "correction",
+          "confidence"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "critical",
+              "major",
+              "minor"
+            ]
+          },
+          "claim": {
+            "type": "string"
+          },
+          "reasoning": {
+            "type": "string"
+          },
+          "evidenceKind": {
+            "enum": [
+              "provided-reference",
+              "derivation",
+              "unverified"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "correction": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        }
+      }
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "answer",
+          "reasoning"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "reasoning": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

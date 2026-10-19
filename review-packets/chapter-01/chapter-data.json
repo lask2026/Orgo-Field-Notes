@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 1,
+  "id": 1,
+  "title": "Nomenclature",
+  "description": "Read a structure, identify the principal group, and assemble an unambiguous name.",
+  "objectives": [
+    "Choose parents and locants",
+    "Distinguish common functional groups",
+    "Name multifunctional compounds"
+  ],
+  "sources": [
+    {
+      "label": "Supplied Kaplan curriculum: Chapter 1, sections 1.1–1.5",
+      "location": "organic_chemistry_kaplan/OEBPS/chapter01b.html"
+    },
+    {
+      "label": "IUPAC Blue Book: nomenclature conventions",
+      "location": "https://iupac.qmul.ac.uk/BlueBook/contents.html"
+    }
+  ],
+  "review": {
+    "status": "author-reviewed",
+    "note": "Source-backed author review; not independently expert-verified."
+  },
+  "lessons": [
+    {
+      "id": "naming",
+      "label": "Parent Chains",
+      "title": "1.1 Parent Chains, Locant Tiebreakers & Alphabetization",
+      "tag": "Principal Group → Longest Chain → Lowest Locants",
+      "molecule": "fig15",
+      "cards": {
+        "rule": "<p>For the simple saturated acyclic structures here, choose the longest continuous carbon chain; tied lengths favor more substituents. For functionalized structures, first include the principal suffix group and required unsaturation. Compare locant sets at their first difference, not by their sum.</p>",
+        "cue": "<p><strong>Alphabetization Rule:</strong><br>• <strong>IGNORE:</strong> Multipliers (<code>di-, tri-, tetra-</code>) and hyphenated prefixes (<code>n-, sec-, tert-</code>).<br>• <strong>INCLUDE:</strong> Non-hyphenated roots (<code>iso-, neo-, cyclo-</code>).</p>",
+        "trap": "<p><strong>The \"Fake Parent Chain\" Trap (\"2,3-diethylpentane\"):</strong><br>An ethyl group at C2 of a pentane chain extends the longest chain to 6 carbons (<strong>3-ethyl-4-methylhexane</strong>). Always draw out suspect names!</p>",
+        "app": "<p><strong>Branched Amino Acids (Val, Leu, Ile):</strong><br>Recognizing <strong>isopropyl</strong> (Valine), <strong>isobutyl</strong> (Leucine), and <strong>sec-butyl</strong> (Isoleucine) lets you classify hydrophobic side chains on sight.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Inspect",
+          "text": "<strong>Step 1 (Inspect):</strong> Unnumbered hydrocarbon with 11 total carbons. Trace every continuous path before choosing the parent chain.",
+          "molecule": "fig15",
+          "highlights": {},
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-",
+              "C4 branch (E 1st)"
+            ],
+            [
+              "np-sub",
+              "2,3-dimethyl",
+              "C2 & C3 (ignore di-)"
+            ],
+            [
+              "np-root",
+              "hept",
+              "7C parent"
+            ],
+            [
+              "np-suf",
+              "ane",
+              "alkane"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this structure!",
+            "answer": [
+              6
+            ],
+            "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "2. Parent Chain",
+          "text": "<strong>Step 2 (Longest Chain + Tiebreaker):</strong> The longest continuous path has <strong>7 carbons (heptane)</strong>. Going through the ethyl branch only reaches 6 carbons, so the 7-carbon path wins. (If two chains <em>did</em> tie, pick the one with <strong>more substituents</strong>.)",
+          "molecule": "fig15",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-",
+              "C4 branch (E 1st)"
+            ],
+            [
+              "np-sub",
+              "2,3-dimethyl",
+              "C2 & C3 (ignore di-)"
+            ],
+            [
+              "np-root",
+              "hept",
+              "7C parent"
+            ],
+            [
+              "np-suf",
+              "ane",
+              "alkane"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this structure!",
+            "answer": [
+              6
+            ],
+            "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "3. Number Carbons",
+          "text": "<strong>Step 3 (Animated Carbon Numbering):</strong> Numbering right-to-left gives <strong>(2,3,4)</strong>; left-to-right gives (4,5,6). Compare at the first point of difference: <code>2 &lt; 4</code>.",
+          "molecule": "fig15",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "num": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-",
+              "C4 branch (E 1st)"
+            ],
+            [
+              "np-sub",
+              "2,3-dimethyl",
+              "C2 & C3 (ignore di-)"
+            ],
+            [
+              "np-root",
+              "hept",
+              "7C parent"
+            ],
+            [
+              "np-suf",
+              "ane",
+              "alkane"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this structure!",
+            "answer": [
+              6
+            ],
+            "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
+          },
+          "focus": "trap"
+        },
+        {
+          "label": "4. Assemble Name",
+          "text": "<strong>Step 4 (IUPAC Name Assembly):</strong> Alphabetize <code>4-ethyl</code> before <code>2,3-dimethyl</code> (ignore <em>di-</em>) → <strong>4-ethyl-2,3-dimethylheptane</strong>.",
+          "molecule": "fig15",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "num": [
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "sub": [
+              7,
+              8,
+              9,
+              10
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-",
+              "C4 branch (E 1st)"
+            ],
+            [
+              "np-sub",
+              "2,3-dimethyl",
+              "C2 & C3 (ignore di-)"
+            ],
+            [
+              "np-root",
+              "hept",
+              "7C parent"
+            ],
+            [
+              "np-suf",
+              "ane",
+              "alkane"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this structure!",
+            "answer": [
+              6
+            ],
+            "explanation": "Spot on! Carbon G (right end) is C1 because right-to-left gives locants (2,3,4) instead of left-to-right (4,5,6)."
+          },
+          "focus": "cue"
+        }
+      ]
+    },
+    {
+      "id": "alcohols",
+      "label": "Alcohols & Alkenes",
+      "title": "1.2 Hydrocarbons, Unsaturation & Alcohol Suffix Priority",
+      "tag": "Alcohol (–ol) Outranks Alkene (–en–) & Alkyne (–yn–)",
+      "molecule": "enol",
+      "cards": {
+        "rule": "<p>An <strong>alcohol (–OH)</strong> has higher IUPAC naming seniority than carbon–carbon double or triple bonds. Replace the final <code>–e</code> with <code>–ol</code> and number the chain to give the <code>–OH</code> carbon the lowest possible locant.</p>",
+        "cue": "<p><strong>Infix + Suffix Pattern (<code>Root + en/yn + ol</code>):</strong><br>Unsaturation inside the parent chain stays in the stem as <code>–en–</code> or <code>–yn–</code> (e.g., <strong>but-3-en-2-ol</strong>).</p>",
+        "trap": "<p>Give the principal alcohol the lowest locant before the C=C or C≡C. If multiple-bond locant sets tie in an enyne, the double bond receives the lower locant.</p>",
+        "app": "<p><strong>Common Alcohol Names:</strong><br><strong>Ethanol</strong> = <em>ethyl alcohol</em>; <strong>propan-2-ol (2-propanol)</strong> = <em>isopropyl alcohol</em>. Subordinate –OH is named <strong>hydroxy–</strong>.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Inspect",
+          "text": "<strong>Step 1 (Inspect):</strong> Unnumbered skeletal structure. Identify the alcohol (–OH) and the double bond (C=C).",
+          "molecule": "enol",
+          "highlights": {},
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-root",
+              "but",
+              "4C parent"
+            ],
+            [
+              "np-inf",
+              "-3-en-",
+              "C3 alkene infix"
+            ],
+            [
+              "np-suf",
+              "-2-ol",
+              "C2 alcohol"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom that must be Carbon #1 in this unsaturated alcohol!",
+            "answer": [
+              3
+            ],
+            "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "2. Principal Group",
+          "text": "<strong>Step 2 (Identify Principal Group):</strong> By IUPAC seniority, <strong>alcohols (–OH) outrank alkenes and alkynes</strong> and supply the suffix <code>–ol</code>.",
+          "molecule": "enol",
+          "highlights": {
+            "prin": [
+              4
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-root",
+              "but",
+              "4C parent"
+            ],
+            [
+              "np-inf",
+              "-3-en-",
+              "C3 alkene infix"
+            ],
+            [
+              "np-suf",
+              "-2-ol",
+              "C2 alcohol"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom that must be Carbon #1 in this unsaturated alcohol!",
+            "answer": [
+              3
+            ],
+            "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "3. Parent Chain",
+          "text": "<strong>Step 3 (Parent Chain &amp; Infix):</strong> Both the –OH carbon and C=C bond lie in the 4-carbon chain, so C=C becomes the infix <code>–en–</code>.",
+          "molecule": "enol",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "prin": [
+              4
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-root",
+              "but",
+              "4C parent"
+            ],
+            [
+              "np-inf",
+              "-3-en-",
+              "C3 alkene infix"
+            ],
+            [
+              "np-suf",
+              "-2-ol",
+              "C2 alcohol"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom that must be Carbon #1 in this unsaturated alcohol!",
+            "answer": [
+              3
+            ],
+            "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
+          },
+          "focus": "cue"
+        },
+        {
+          "label": "4. Number & Name",
+          "text": "<strong>Step 4 (Number &amp; Assemble):</strong> Right-to-left gives <code>–OH</code> locant <strong>2</strong> (rather than 3). The double bond starts at C3 → <strong>but-3-en-2-ol</strong>.",
+          "molecule": "enol",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "num": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              4
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-root",
+              "but",
+              "4C parent"
+            ],
+            [
+              "np-inf",
+              "-3-en-",
+              "C3 alkene infix"
+            ],
+            [
+              "np-suf",
+              "-2-ol",
+              "C2 alcohol"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom that must be Carbon #1 in this unsaturated alcohol!",
+            "answer": [
+              3
+            ],
+            "explanation": "Correct! Carbon D (right end) is C1 so the principal alcohol group gets locant 2 instead of 3."
+          },
+          "focus": "trap"
+        }
+      ]
+    },
+    {
+      "id": "rings",
+      "label": "Ring Numbering",
+      "title": "1.3 Cyclic Hydrocarbons & Ring Numbering Hierarchy",
+      "tag": "Principal suffix → Multiple bonds → Substituents",
+      "molecule": "cyhex",
+      "cards": {
+        "rule": "<p>A senior suffix such as –ol determines the starting locant first. In a simple cycloalkene with no senior suffix, the double bond occupies C1 and C2. Then minimize substituent locants at the first difference; use alphabetization only for a remaining appropriate tie.</p>",
+        "cue": "<p><strong>\"Never Jump Across a Ring Double Bond!\"</strong><br>If you assign one alkene carbon C1, C2 <em>must</em> be the other carbon of that double bond.</p>",
+        "trap": "<p><strong>Why \"Most Substituted Carbon First\" Fails:</strong><br>In <em>4-propylcyclohexene</em>, the alkene takes C1–C2 priority over the propyl substituent. Only use substitution when priority tiers tie (<code>1,1,2-trimethylcyclobutane</code> beats <code>1,2,2-</code>).</p>",
+        "app": "<p>Ring recognition helps interpret cyclic biomolecules. Retinal is an aldehyde related to vitamin A. Steroids use established fused-ring parent numbering; do not extend simple cyclohexene numbering mechanically to steroid skeletons.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Inspect Ring",
+          "text": "<strong>Step 1 (Inspect):</strong> A 6-membered ring with a double bond, a methyl group on one alkene carbon, and an ethyl group across the ring.",
+          "molecule": "cyhex",
+          "highlights": {},
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-1-methyl",
+              "alphabetized prefixes (1,4)"
+            ],
+            [
+              "np-root",
+              "cyclohex",
+              "6C ring"
+            ],
+            [
+              "np-suf",
+              "-1-ene",
+              "C1=C2 ring alkene"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the ring carbon that must be assigned Carbon #1!",
+            "answer": [
+              4
+            ],
+            "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "2. Lock C1–C2 on C=C",
+          "text": "<strong>Step 2 (Cycloalkene Rule):</strong> Unsaturation outranks alkyl substituents, so the two carbons of the double bond <strong>must be C1 and C2</strong>.",
+          "molecule": "cyhex",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "prin": [
+              4,
+              5
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-1-methyl",
+              "alphabetized prefixes (1,4)"
+            ],
+            [
+              "np-root",
+              "cyclohex",
+              "6C ring"
+            ],
+            [
+              "np-suf",
+              "-1-ene",
+              "C1=C2 ring alkene"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the ring carbon that must be assigned Carbon #1!",
+            "answer": [
+              4
+            ],
+            "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "3. Number & Name",
+          "text": "<strong>Step 3 (Compare Locant Sets):</strong> Clockwise from the methylated alkene carbon (<code>E=C1 → F=C2 → A=C3 → B=C4</code>) gives substituent locants <strong>(1,4)</strong>, beating counter-clockwise <code>(2,5)</code> → <strong>4-ethyl-1-methylcyclohex-1-ene</strong>.",
+          "molecule": "cyhex",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "sub": [
+              6,
+              7,
+              8
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-ethyl-1-methyl",
+              "alphabetized prefixes (1,4)"
+            ],
+            [
+              "np-root",
+              "cyclohex",
+              "6C ring"
+            ],
+            [
+              "np-suf",
+              "-1-ene",
+              "C1=C2 ring alkene"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the ring carbon that must be assigned Carbon #1!",
+            "answer": [
+              4
+            ],
+            "explanation": "Correct! Carbon E is C1 because numbering clockwise through the double bond (E=C1 → F=C2 → A=C3 → B=C4) gives substituent locants (1,4) instead of (2,5)!"
+          },
+          "focus": "trap"
+        }
+      ]
+    },
+    {
+      "id": "diols",
+      "label": "Diols & Hydrates",
+      "title": "1.4 Geminal vs. Vicinal Diols & Reversible Hydration",
+      "tag": "Vicinal = 1,2-Diol (Adjacent) · Geminal = 1,1-Diol (Same C)",
+      "molecule": "vicinal",
+      "cards": {
+        "rule": "<p>Alcohols with two hydroxyl groups are named <strong>alkane-x,y-diols</strong> (preserving the <code>–e</code> of the parent alkane before \"d\"). Every hydroxyl gets a locant number.</p>",
+        "cue": "<p><strong>Memory cue:</strong><br>• <strong><u>Vicin</u>al</strong> = in the <strong><u>vicin</u>ity</strong> (adjacent carbons, 1,2).<br>• <strong><u>Gemin</u>al</strong> = <strong><u>Gemin</u>i twins</strong> (same carbon, 1,1).</p>",
+        "trap": "<p>Carbonyl hydration is reversible. Electron-withdrawing substituents and less crowding generally favor the hydrate. Formaldehyde is strongly hydrated in water; acetone predominantly remains a carbonyl. The equilibrium depends on conditions.</p>",
+        "app": "<p>In aqueous aldehyde oxidation, the hydrated form can participate in oxidation to the carboxylic acid. Hydration and oxidation are distinct steps.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Vicinal Diol (1,2)",
+          "text": "<strong>Vicinal Diol (Glycol):</strong> Two <code>–OH</code> groups on <strong>adjacent carbons</strong>: <strong>ethane-1,2-diol</strong> (<em>ethylene glycol</em>).",
+          "molecule": "vicinal",
+          "highlights": {
+            "path": [
+              0,
+              1
+            ],
+            "prin": [
+              2,
+              3
+            ],
+            "num": [
+              0,
+              1
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-root",
+              "ethane",
+              "retain final -e!"
+            ],
+            [
+              "np-inf",
+              "-1,2-di",
+              "adjacent C1 & C2"
+            ],
+            [
+              "np-suf",
+              "ol",
+              "diol suffix"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click both carbon atoms bearing hydroxyl groups in this vicinal diol!",
+            "answer": [
+              0,
+              1
+            ],
+            "explanation": "Correct! Both adjacent carbons (C1 and C2) carry hydroxyl groups in ethane-1,2-diol."
+          },
+          "focus": "cue"
+        },
+        {
+          "label": "2. Geminal Diol (1,1)",
+          "text": "<strong>Geminal Diol (Hydrate):</strong> Two <code>–OH</code> groups on the <strong>same carbon</strong> (<strong>propane-2,2-diol</strong>), in reversible equilibrium with a carbonyl + H₂O.",
+          "molecule": "geminal",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2
+            ],
+            "prin": [
+              3,
+              4
+            ],
+            "num": [
+              0,
+              1,
+              2
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-root",
+              "propane",
+              "3C parent (keep -e)"
+            ],
+            [
+              "np-inf",
+              "-2,2-di",
+              "paired on SAME carbon"
+            ],
+            [
+              "np-suf",
+              "ol",
+              "geminal diol (hydrate)"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the single carbon atom bearing BOTH hydroxyl groups in this geminal diol!",
+            "answer": [
+              1
+            ],
+            "explanation": "Spot on! Carbon B (C2) carries both hydroxyl groups in propane-2,2-diol."
+          },
+          "focus": "trap"
+        }
+      ]
+    },
+    {
+      "id": "carbonyls",
+      "label": "Aldehydes & Ketones",
+      "title": "1.5 Carbonyls: Aldehydes (–al), Ketones (–one) & α-Carbons",
+      "tag": "Aldehyde (Terminal C1) Outranks Ketone (Internal)",
+      "molecule": "ketone",
+      "cards": {
+        "rule": "<p>Aldehydes have a carbonyl carbon bonded to at least one H; ketones have two carbon substituents. The simple acyclic examples here use –al and –one. A formyl group attached to a ring may instead require a –carbaldehyde name. Subordinate carbonyl naming depends on whether its carbon belongs to the selected parent; oxo– and formyl– are not universally interchangeable.</p>",
+        "cue": "<p><strong>Common Names (1C–3C):</strong><br>• 1C: <strong>Formaldehyde</strong> (methanal)<br>• 2C: <strong>Acetaldehyde</strong> (ethanal)<br>• 3C: <strong>Propionaldehyde</strong> (propanal) &amp; <strong>Acetone</strong> (propanone)</p>",
+        "trap": "<p><strong>Acetone Carbon-Count Trap:</strong><br>Although <code>acet–</code> usually means 2 carbons, <strong>acetone (propanone) has 3 carbons</strong> because a ketone requires a carbon on both sides of C=O!</p>",
+        "app": "<p><strong>Aldoses, Ketoses &amp; Enolates:</strong><br>Carbohydrates are aldoses or ketoses; acidic α-hydrogens on α-carbons form nucleophilic enolates in aldol reactions.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Inspect Carbonyl",
+          "text": "<strong>Step 1 (Classify):</strong> C=O bonded to two carbons is an internal <strong>ketone (–one)</strong>; terminal C=O bonded to H is an <strong>aldehyde (–al)</strong>.",
+          "molecule": "ketone",
+          "highlights": {
+            "prin": [
+              5
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-root",
+              "pent",
+              "5C parent"
+            ],
+            [
+              "np-inf",
+              "an",
+              "saturated chain"
+            ],
+            [
+              "np-suf",
+              "-2-one",
+              "C2 ketone"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click BOTH α-carbons in pentan-2-one! (Do not click the C=O carbon).",
+            "answer": [
+              0,
+              2
+            ],
+            "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "2. Number Ketone",
+          "text": "<strong>Step 2 (Numbering):</strong> Left-to-right gives C=O <strong>C2</strong> (rather than C4).",
+          "molecule": "ketone",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "prin": [
+              5
+            ]
+          },
+          "reveal": false,
+          "anatomy": [
+            [
+              "np-root",
+              "pent",
+              "5C parent"
+            ],
+            [
+              "np-inf",
+              "an",
+              "saturated chain"
+            ],
+            [
+              "np-suf",
+              "-2-one",
+              "C2 ketone"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click BOTH α-carbons in pentan-2-one! (Do not click the C=O carbon).",
+            "answer": [
+              0,
+              2
+            ],
+            "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "3. α-Carbons & Name",
+          "text": "<strong>Step 3 (Greek Letters &amp; Name):</strong> Carbons directly adjacent to C=O are <strong>α-carbons</strong> (C1 and C3), followed by β (C4) and γ (C5) → <strong>pentan-2-one</strong>.",
+          "molecule": "ketone",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alpha": [
+              0,
+              2
+            ],
+            "prin": [
+              5
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-root",
+              "pent",
+              "5C parent"
+            ],
+            [
+              "np-inf",
+              "an",
+              "saturated chain"
+            ],
+            [
+              "np-suf",
+              "-2-one",
+              "C2 ketone"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click BOTH α-carbons in pentan-2-one! (Do not click the C=O carbon).",
+            "answer": [
+              0,
+              2
+            ],
+            "explanation": "Spot on! Carbons A (C1) and C (C3) are directly adjacent to C2=O, making both α-carbons!"
+          },
+          "focus": "app"
+        },
+        {
+          "label": "4. Aldehyde Priority",
+          "text": "<strong>Step 4 (4-hydroxybutanal):</strong> Terminal aldehyde outranks alcohol, taking <strong>C1 (–al)</strong> while the C4 alcohol becomes <code>4-hydroxy–</code>.",
+          "molecule": "hyald",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "num": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              4,
+              5
+            ],
+            "sub": [
+              6
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-hydroxy",
+              "subordinate C4 alcohol"
+            ],
+            [
+              "np-root",
+              "butan",
+              "4C parent chain"
+            ],
+            [
+              "np-suf",
+              "al",
+              "terminal C1 aldehyde"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom that must be assigned Carbon #1 in this hydroxy aldehyde!",
+            "answer": [
+              3
+            ],
+            "explanation": "Correct! Carbon D (the aldehyde carbon on the right) outranks the alcohol and is automatically C1."
+          },
+          "focus": "trap"
+        }
+      ]
+    },
+    {
+      "id": "derivatives",
+      "label": "Acids & Priority",
+      "title": "1.6 Carboxylic Acids, Derivatives & Master Priority Hierarchy",
+      "tag": "Acid > Anhydride > Ester > Amide > Aldehyde > Ketone > Alcohol",
+      "molecule": "hyoxo",
+      "cards": {
+        "rule": "<p>For these examples, naming seniority is acid > anhydride > ester > amide > aldehyde > ketone > alcohol. Naming seniority is a convention, not an oxidation-state calculation. Unsaturation is retained in the parent name. This is a chapter subset, not the complete IUPAC hierarchy.</p>",
+        "cue": "<p><strong>Common Acid Roots:</strong><br>• 1C: <strong>Formic acid</strong> (methanoic) → <em>methyl formate</em><br>• 2C: <strong>Acetic acid</strong> (ethanoic) → <em>acetic anhydride</em><br>• 3C: <strong>Propionic acid</strong> (propanoic)</p>",
+        "trap": "<p><strong>High-Yield Distinctions:</strong><br>• <strong>Ester vs. Ether:</strong> Esters have C=O next to O; ethers (R–O–R′) do not.<br>• <strong>NADH Trap:</strong> NADH contains an <strong>amide</strong> (nicotinamide) and <strong>phosphoanhydride</strong> (P–O–P), NOT a carboxylic anhydride!</p>",
+        "app": "<p><strong>Pyruvic &amp; Tartaric Acid:</strong><br>• <strong>Pyruvic acid</strong> (<em>acetylformic acid</em>) = <code>2-oxopropanoic acid</code>.<br>• <strong>Tartaric acid</strong> = <code>2,3-dihydroxybutanedioic acid</code>.</p>"
+      },
+      "steps": [
+        {
+          "label": "1. Multifunctional Acid",
+          "text": "<strong>Priority Winner:</strong> Carboxylic acid takes C1 and <code>–oic acid</code>. Alphabetize <code>4-hydroxy–</code> before <code>2-oxo–</code> → <strong>4-hydroxy-2-oxopentanoic acid</strong>.",
+          "molecule": "hyoxo",
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              7,
+              8
+            ],
+            "sub": [
+              5,
+              6
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "4-hydroxy-",
+              "C4 alcohol (H 1st)"
+            ],
+            [
+              "np-sub",
+              "2-oxo",
+              "C2 ketone (O 2nd)"
+            ],
+            [
+              "np-root",
+              "pentan",
+              "5C parent"
+            ],
+            [
+              "np-suf",
+              "oic acid",
+              "C1 acid suffix"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click the carbon atom assigned Carbon #1 in this multifunctional acid!",
+            "answer": [
+              4
+            ],
+            "explanation": "Spot on! Carbon E (the carboxylic acid carbon) is C1, placing oxo at C2 and hydroxy at C4."
+          },
+          "focus": "rule"
+        },
+        {
+          "label": "2. Ester (alkyl –oate)",
+          "text": "<strong>Ester Naming:</strong> O-attached alkyl group first (<code>ethyl</code>) + 3C acid parent (<code>propanoate</code>) → <strong>ethyl propanoate</strong>.",
+          "molecule": "ester",
+          "highlights": {
+            "path": [
+              2,
+              1,
+              0
+            ],
+            "num": [
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              3,
+              4
+            ],
+            "sub": [
+              5,
+              6
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "ethyl ",
+              "O-attached alkyl (1st word)"
+            ],
+            [
+              "np-root",
+              "propan",
+              "3C acyl chain"
+            ],
+            [
+              "np-suf",
+              "oate",
+              "ester suffix"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click Carbon #1 of the acyl parent chain (propanoate) in this ester!",
+            "answer": [
+              2
+            ],
+            "explanation": "Correct! Carbon C is the ester carbonyl carbon (C1 of the 3-carbon propanoate parent)."
+          },
+          "focus": "cue"
+        },
+        {
+          "label": "3. N-Amide (N– prefix)",
+          "text": "<strong>Amide Naming:</strong> Nitrogen groups use capital <strong>N–</strong> and are alphabetized → <strong>N-ethyl-N-methylpropanamide</strong>.",
+          "molecule": "namide",
+          "highlights": {
+            "path": [
+              2,
+              1,
+              0
+            ],
+            "num": [
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              3,
+              4
+            ],
+            "sub": [
+              5,
+              6,
+              7
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-sub",
+              "N-ethyl-N-methyl",
+              "N-alkyl groups (alphabetical)"
+            ],
+            [
+              "np-root",
+              "propan",
+              "3C acyl parent"
+            ],
+            [
+              "np-suf",
+              "amide",
+              "amide suffix"
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click Carbon #1 of the acyl parent chain (propanamide) in this amide!",
+            "answer": [
+              2
+            ],
+            "explanation": "Correct! Carbon C is the amide carbonyl carbon (C1 of the 3-carbon propanamide parent)."
+          },
+          "focus": "cue"
+        },
+        {
+          "label": "4. Anhydrides",
+          "text": "<strong>Anhydride Naming:</strong> Two acyl groups bridged by O (<strong>ethanoic anhydride</strong> = acetic anhydride).",
+          "molecule": "anhyd",
+          "highlights": {
+            "prin": [
+              2,
+              5,
+              6
+            ]
+          },
+          "reveal": true,
+          "anatomy": [
+            [
+              "np-root",
+              "ethanoic ",
+              "2C acid root (symmetric)"
+            ],
+            [
+              "np-suf",
+              "anhydride",
+              "replaces \"acid\""
+            ]
+          ],
+          "challenge": {
+            "prompt": "🖐️ Try It Yourself: Click BOTH carbonyl carbon atoms in ethanoic anhydride!",
+            "answer": [
+              1,
+              3
+            ],
+            "explanation": "Correct! Carbons B and D are the two acyl carbonyl carbons flanking the central bridging oxygen."
+          },
+          "focus": "trap"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "gp1a",
+      "lesson": "naming",
+      "label": "Molecule A: Branched Alkane",
+      "title": "1.1A · Parent Chain & Numbering Direction",
+      "molecule": "branch",
+      "summary": "3-methylhexane",
+      "anatomy": [
+        [
+          "np-sub",
+          "3-methyl",
+          "C3 branch"
+        ],
+        [
+          "np-root",
+          "hex",
+          "6C parent"
+        ],
+        [
+          "np-suf",
+          "ane",
+          "alkane"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click all 6 carbon atoms in the longest continuous parent chain.",
+          "skill": "Parent-chain selection",
+          "answer": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Correct! Carbons A–F form the 6-carbon hexane chain; G is a methyl branch.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: Which numbering direction gives the methyl branch its lowest locant?",
+          "skill": "Numbering direction",
+          "options": [
+            "Left-to-right (methyl at C3)",
+            "Right-to-left (methyl at C4)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Left-to-right gives C3 instead of C4.",
+            "Red counter-example shown: Right-to-left puts the methyl group at C4 instead of C3!"
+          ],
+          "explanation": "Correct! Left-to-right gives C3 instead of C4.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sub": [
+              6
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "3-methylhexane"
+          ],
+          "explanation": "Spot on! 3-methylhexane.",
+          "hints": [
+            "Hint 1 (Rule): Format as [locant]-[substituent][parent root][suffix] with a hyphen between the number and letter.",
+            "Hint 2 (Structure): There is a methyl group at C3 on a 6-carbon alkane parent (hexane)."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp1b",
+      "lesson": "naming",
+      "label": "Molecule B: \"2-ethyl-4-methylpentane\" Trap",
+      "title": "1.1B · Diagnosing a Hidden Parent Chain",
+      "molecule": "fake_pent",
+      "summary": "2,4-dimethylhexane",
+      "anatomy": [
+        [
+          "np-sub",
+          "2,4-dimethyl",
+          "two methyls"
+        ],
+        [
+          "np-root",
+          "hex",
+          "true 6C parent"
+        ],
+        [
+          "np-suf",
+          "ane",
+          "alkane"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Stage 1/3: Why is \"2-ethyl-4-methylpentane\" an invalid name for this structure?",
+          "skill": "Parent-chain selection",
+          "options": [
+            "The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)",
+            "It has 8 carbons in a straight chain"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! An \"ethyl\" group at C2 extends the parent chain to 6 carbons.",
+            "There are 8 total carbons, but a continuous chain cannot fork (longest path = 6 carbons)."
+          ],
+          "explanation": "Correct! An \"ethyl\" group at C2 extends the parent chain to 6 carbons.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: Which locant set is lower for the two methyl substituents?",
+          "skill": "Numbering direction",
+          "options": [
+            "Left-to-right: (2,4)",
+            "Right-to-left: (3,5)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! At the first point of difference, 2 < 3.",
+            "Red counter-example shown: Right-to-left gives locants (3,5), which loses to (2,4) at the first point of difference!"
+          ],
+          "explanation": "Correct! At the first point of difference, 2 < 3.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sub": [
+              6,
+              7
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the true IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "2,4-dimethylhexane"
+          ],
+          "explanation": "Correct! 2,4-dimethylhexane.",
+          "hints": [
+            "Hint 1 (Rule): Two identical substituents require two locants separated by a comma and the multiplier prefix di–.",
+            "Hint 2 (Structure): Two methyl groups sit at C2 and C4 on a 6-carbon hexane chain."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp2a",
+      "lesson": "alcohols",
+      "label": "Molecule A: Unsaturated Alcohol (Alkene)",
+      "title": "1.2A · Alcohol vs. Alkene Priority",
+      "molecule": "enol",
+      "summary": "but-3-en-2-ol",
+      "anatomy": [
+        [
+          "np-root",
+          "but",
+          "4C parent"
+        ],
+        [
+          "np-inf",
+          "-3-en-",
+          "C3 alkene"
+        ],
+        [
+          "np-suf",
+          "-2-ol",
+          "C2 alcohol"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group has highest priority and supplies the principal suffix?",
+          "skill": "Suffix priority",
+          "options": [
+            "Double bond (–ene)",
+            "Hydroxyl group (–ol; alkene kept as –en–)"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Priority Error: Alcohols have higher IUPAC seniority than alkenes.",
+            "Correct! Alcohol supplies –ol and alkene stays in the stem as –en–."
+          ],
+          "explanation": "Correct! Alcohol supplies –ol and alkene stays in the stem as –en–.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "prin": [
+              4
+            ]
+          }
+        },
+        {
+          "type": "atoms",
+          "prompt": "Stage 2/3: Click the carbon atom on the diagram that must be assigned Carbon #1.",
+          "skill": "Numbering direction",
+          "answer": [
+            3
+          ],
+          "explanation": "Correct! Carbon D (right end) gives –OH locant 2 instead of 3.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "num": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              4
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete systematic IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "but-3-en-2-ol",
+            "3-buten-2-ol"
+          ],
+          "explanation": "Excellent! but-3-en-2-ol.",
+          "hints": [
+            "Hint 1 (Rule): Combine the carbon root, the unsaturation locant + infix (–en–), and the principal alcohol locant + suffix (–ol).",
+            "Hint 2 (Structure): 4-carbon root (but), double bond starting at C3, and alcohol at C2."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp2b",
+      "lesson": "alcohols",
+      "label": "Molecule B: Unsaturated Alcohol (Alkyne)",
+      "title": "1.2B · Alcohol vs. Alkyne Priority",
+      "molecule": "ynol5",
+      "summary": "pent-4-yn-2-ol",
+      "anatomy": [
+        [
+          "np-root",
+          "pent",
+          "5C parent"
+        ],
+        [
+          "np-inf",
+          "-4-yn-",
+          "C4 alkyne"
+        ],
+        [
+          "np-suf",
+          "-2-ol",
+          "C2 alcohol"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group determines the principal suffix in this 5-carbon structure?",
+          "skill": "Suffix priority",
+          "options": [
+            "The alcohol (–ol; triple bond becomes –yn– infix)",
+            "The alkyne (–yne; alcohol becomes hydroxy–)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Alcohols outrank alkynes.",
+            "Priority Error: Alcohols outrank both alkenes and alkynes."
+          ],
+          "explanation": "Correct! Alcohols outrank alkynes.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "prin": [
+              5
+            ]
+          }
+        },
+        {
+          "type": "atoms",
+          "prompt": "Stage 2/3: Click the carbon atom that must be assigned Carbon #1.",
+          "skill": "Numbering direction",
+          "answer": [
+            4
+          ],
+          "explanation": "Correct! Carbon E (right end) gives the principal alcohol C2 instead of C4.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              5
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "pent-4-yn-2-ol",
+            "4-pentyn-2-ol"
+          ],
+          "explanation": "Bravo! pent-4-yn-2-ol.",
+          "hints": [
+            "Hint 1 (Rule): Use the triple-bond infix –yn– before the principal alcohol suffix –ol.",
+            "Hint 2 (Structure): 5-carbon chain (pent), triple bond at C4, and alcohol at C2."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp3a",
+      "lesson": "rings",
+      "label": "Molecule A: Substituted Cycloalkene",
+      "title": "1.3A · Cycloalkene Numbering Rules",
+      "molecule": "cyhex",
+      "summary": "4-ethyl-1-methylcyclohex-1-ene",
+      "anatomy": [
+        [
+          "np-sub",
+          "4-ethyl-1-methyl",
+          "alphabetized prefixes (1,4)"
+        ],
+        [
+          "np-root",
+          "cyclohex",
+          "6C ring"
+        ],
+        [
+          "np-suf",
+          "-1-ene",
+          "C1=C2 alkene"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the ring carbon that must be assigned Carbon #1.",
+          "skill": "Ring numbering",
+          "answer": [
+            4
+          ],
+          "explanation": "Correct! Carbon E is C1 because numbering clockwise through C1=C2 (E → F → A → B) gives substituent locants (1,4) instead of (2,5).",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: With C1 at the methylated alkene carbon and C2 at the other alkene carbon, what is the ethyl locant?",
+          "skill": "Substituent locants",
+          "options": [
+            "C4 (giving 4-ethyl-1-methyl)",
+            "C5 (giving 5-ethyl-2-methyl)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Continuing clockwise from C1 through C2 places the ethyl group at C4; alphabetize 4-ethyl before 1-methyl.",
+            "(1,4) beats (2,5) at the first point of difference!"
+          ],
+          "explanation": "Correct! Continuing clockwise from C1 through C2 places the ethyl group at C4; alphabetize 4-ethyl before 1-methyl.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              4,
+              5,
+              0,
+              1,
+              2,
+              3
+            ],
+            "sub": [
+              6,
+              7,
+              8
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "4-ethyl-1-methylcyclohex-1-ene",
+            "4-ethyl-1-methylcyclohexene"
+          ],
+          "explanation": "Spot on! 4-ethyl-1-methylcyclohex-1-ene.",
+          "hints": [
+            "Hint 1 (Rule): Alphabetize the substituents (ethyl before methyl), followed by the cycloalkene parent name.",
+            "Hint 2 (Structure): Ethyl is at C4 and methyl is at C1 on cyclohex-1-ene (or cyclohexene)."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp3b",
+      "lesson": "rings",
+      "label": "Molecule B: Cyclic Alcohol",
+      "title": "1.3B · Cyclic Alcohol Priority & Numbering",
+      "molecule": "cyol",
+      "summary": "3-methylcyclohexan-1-ol",
+      "anatomy": [
+        [
+          "np-sub",
+          "3-methyl",
+          "C3 branch"
+        ],
+        [
+          "np-root",
+          "cyclohexan",
+          "6C ring"
+        ],
+        [
+          "np-suf",
+          "-1-ol",
+          "C1 alcohol"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the ring carbon that must be assigned Carbon #1.",
+          "skill": "Ring priority",
+          "answer": [
+            0
+          ],
+          "explanation": "Correct! Carbon A bears the principal –OH group and is automatically C1.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "prin": [
+              6
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: From C1 (at –OH), which direction gives the methyl group its lowest locant?",
+          "skill": "Numbering direction",
+          "options": [
+            "Clockwise (methyl at C3)",
+            "Counter-clockwise (methyl at C5)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Clockwise gives C3 instead of counter-clockwise C5.",
+            "Red counter-example shown: Counter-clockwise puts methyl at C5 instead of C3!"
+          ],
+          "explanation": "Correct! Clockwise gives C3 instead of counter-clockwise C5.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "prin": [
+              6
+            ],
+            "sub": [
+              7
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "3-methylcyclohexan-1-ol",
+            "3-methylcyclohexanol"
+          ],
+          "explanation": "Excellent! 3-methylcyclohexan-1-ol.",
+          "hints": [
+            "Hint 1 (Rule): Prefix the methyl substituent and its locant before the cyclic alcohol parent name.",
+            "Hint 2 (Structure): Methyl at C3 on a cyclohexan-1-ol (or cyclohexanol) ring."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp4a",
+      "lesson": "diols",
+      "label": "Molecule A: Vicinal Diol (1,2)",
+      "title": "1.4A · Vicinal Diol (Glycol) Nomenclature",
+      "molecule": "vicinal",
+      "summary": "ethane-1,2-diol",
+      "anatomy": [
+        [
+          "np-root",
+          "ethane",
+          "keep final -e!"
+        ],
+        [
+          "np-inf",
+          "-1,2-di",
+          "adjacent C1 & C2"
+        ],
+        [
+          "np-suf",
+          "ol",
+          "diol"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Stage 1/2: How are the two hydroxyl groups positioned in this molecule?",
+          "skill": "Diol classification",
+          "options": [
+            "Vicinal (on adjacent carbons C1 and C2)",
+            "Geminal (paired on the same carbon)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Vicinal diols (glycols) have –OH on adjacent carbons.",
+            "Geminal diols have both –OH groups on the same carbon."
+          ],
+          "explanation": "Correct! Vicinal diols (glycols) have –OH on adjacent carbons.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1
+            ],
+            "num": [
+              0,
+              1
+            ],
+            "prin": [
+              2,
+              3
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 2/2: Type the systematic IUPAC name (common name: ethylene glycol).",
+          "skill": "Name assembly",
+          "accepted": [
+            "ethane-1,2-diol",
+            "1,2-ethanediol"
+          ],
+          "explanation": "Correct! ethane-1,2-diol (retaining the final -e before -diol).",
+          "hints": [
+            "Hint 1 (Rule): Preserve the full alkane name (including –e) before adding the locants and –diol suffix.",
+            "Hint 2 (Structure): 2-carbon alkane (ethane) with hydroxyls at C1 and C2."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp4b",
+      "lesson": "diols",
+      "label": "Molecule B: Geminal Diol (1,1)",
+      "title": "1.4B · Geminal Diol (Hydrate) Nomenclature",
+      "molecule": "geminal",
+      "summary": "propane-2,2-diol",
+      "anatomy": [
+        [
+          "np-root",
+          "propane",
+          "3C parent"
+        ],
+        [
+          "np-inf",
+          "-2,2-di",
+          "same carbon!"
+        ],
+        [
+          "np-suf",
+          "ol",
+          "diol"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/2: Click the carbon atom bearing both hydroxyl groups in this geminal diol.",
+          "skill": "Diol classification",
+          "answer": [
+            1
+          ],
+          "explanation": "Correct! Carbon B (C2) carries both –OH groups (formed by hydration of propanone/acetone).",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2
+            ],
+            "num": [
+              0,
+              1,
+              2
+            ],
+            "prin": [
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 2/2: Type the systematic IUPAC name (remember: every group needs a locant!).",
+          "skill": "Name assembly",
+          "accepted": [
+            "propane-2,2-diol",
+            "2,2-propanediol"
+          ],
+          "explanation": "Spot on! propane-2,2-diol.",
+          "hints": [
+            "Hint 1 (Rule): Even when both –OH groups sit on the same carbon, repeat the locant number before –diol.",
+            "Hint 2 (Structure): 3-carbon alkane (propane) with both hydroxyls at C2."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp5a",
+      "lesson": "carbonyls",
+      "label": "Molecule A: Internal Ketone",
+      "title": "1.5A · Ketone Numbering & Alpha Carbons",
+      "molecule": "ketone",
+      "summary": "pentan-2-one",
+      "anatomy": [
+        [
+          "np-root",
+          "pent",
+          "5C parent"
+        ],
+        [
+          "np-inf",
+          "an",
+          "single bonds"
+        ],
+        [
+          "np-suf",
+          "-2-one",
+          "C2 ketone"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click BOTH α-carbons on the diagram (do not click the C=O carbon).",
+          "skill": "Alpha carbons",
+          "answer": [
+            0,
+            2
+          ],
+          "explanation": "Correct! Carbons A and C flank the C=O carbon and are both α-carbons.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "alpha": [
+              0,
+              2
+            ],
+            "prin": [
+              5
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: Which direction gives the ketone carbonyl its lower locant?",
+          "skill": "Numbering direction",
+          "options": [
+            "Left-to-right (C2)",
+            "Right-to-left (C4)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! C2 < C4.",
+            "Red counter-example shown: Right-to-left gives the ketone C4 instead of C2!"
+          ],
+          "explanation": "Correct! C2 < C4.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "alpha": [
+              0,
+              2
+            ],
+            "prin": [
+              5
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "pentan-2-one",
+            "2-pentanone"
+          ],
+          "explanation": "Spot on! pentan-2-one.",
+          "hints": [
+            "Hint 1 (Rule): Replace the final –e of the alkane with the ketone locant and suffix –one.",
+            "Hint 2 (Structure): 5-carbon alkane (pentan-) with a ketone at C2."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp5b",
+      "lesson": "carbonyls",
+      "label": "Molecule B: Hydroxy Aldehyde",
+      "title": "1.5B · Aldehyde vs. Alcohol Priority",
+      "molecule": "hyald",
+      "summary": "4-hydroxybutanal",
+      "anatomy": [
+        [
+          "np-sub",
+          "4-hydroxy",
+          "C4 alcohol prefix"
+        ],
+        [
+          "np-root",
+          "butan",
+          "4C parent"
+        ],
+        [
+          "np-suf",
+          "al",
+          "C1 aldehyde"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the carbon atom that must be assigned Carbon #1.",
+          "skill": "Priority",
+          "answer": [
+            3
+          ],
+          "explanation": "Correct! Carbon D is the terminal aldehyde carbon and is automatically C1.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "num": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: When an alcohol is subordinate to an aldehyde, how is the C4 –OH named?",
+          "skill": "Subordinate prefix",
+          "options": [
+            "4-hydroxy–",
+            "4-oxo–"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Subordinate alcohols use the prefix hydroxy–.",
+            "oxo– is for subordinate carbonyls, not alcohols."
+          ],
+          "explanation": "Correct! Subordinate alcohols use the prefix hydroxy–.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "num": [
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              4,
+              5
+            ],
+            "sub": [
+              6
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "4-hydroxybutanal"
+          ],
+          "explanation": "Bravo! 4-hydroxybutanal.",
+          "hints": [
+            "Hint 1 (Rule): Terminal aldehydes are assumed to be C1 and take the suffix –al without a number.",
+            "Hint 2 (Structure): 4-hydroxy prefix + 4-carbon aldehyde parent (butanal)."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp6a",
+      "lesson": "derivatives",
+      "label": "Molecule A: N-Substituted Amide",
+      "title": "1.6A · N-Substituted Amide Construction",
+      "molecule": "namide",
+      "summary": "N-ethyl-N-methylpropanamide",
+      "anatomy": [
+        [
+          "np-sub",
+          "N-ethyl-N-methyl",
+          "N-groups"
+        ],
+        [
+          "np-root",
+          "propan",
+          "3C acyl chain"
+        ],
+        [
+          "np-suf",
+          "amide",
+          "amide"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the carbonyl carbon (Carbon #1 of the amide parent chain).",
+          "skill": "Acyl parent",
+          "answer": [
+            2
+          ],
+          "explanation": "Correct! Carbon C is C1 of the 3-carbon propanamide parent.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              2,
+              1,
+              0
+            ],
+            "num": [
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: How are the ethyl and methyl groups on nitrogen written?",
+          "skill": "N-substituents",
+          "options": [
+            "N-ethyl-N-methyl- (alphabetical)",
+            "N-methyl-N-ethyl-"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Each N-group gets N– in alphabetical order.",
+            "Alphabetize ethyl before methyl."
+          ],
+          "explanation": "Correct! Each N-group gets N– in alphabetical order.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              2,
+              1,
+              0
+            ],
+            "num": [
+              2,
+              1,
+              0
+            ],
+            "sub": [
+              5,
+              6,
+              7
+            ],
+            "prin": [
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "n-ethyl-n-methylpropanamide"
+          ],
+          "explanation": "Excellent! N-ethyl-N-methylpropanamide.",
+          "hints": [
+            "Hint 1 (Rule): List the alphabetized N-alkyl prefixes directly before the acyl parent amide name.",
+            "Hint 2 (Structure): N-ethyl-N-methyl + 3-carbon amide parent (propanamide)."
+          ],
+          "highlights": {}
+        }
+      ]
+    },
+    {
+      "id": "gp6b",
+      "lesson": "derivatives",
+      "label": "Molecule B: Multifunctional Acid",
+      "title": "1.6B · Multifunctional Priority Ladder",
+      "molecule": "hyoxo",
+      "summary": "4-hydroxy-2-oxopentanoic acid",
+      "anatomy": [
+        [
+          "np-sub",
+          "4-hydroxy-",
+          "C4 alcohol"
+        ],
+        [
+          "np-sub",
+          "2-oxo",
+          "C2 ketone"
+        ],
+        [
+          "np-root",
+          "pentan",
+          "5C parent"
+        ],
+        [
+          "np-suf",
+          "oic acid",
+          "C1 acid"
+        ]
+      ],
+      "stages": [
+        {
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group has highest priority and determines the suffix?",
+          "skill": "Priority",
+          "options": [
+            "Carboxylic acid (–oic acid)",
+            "Ketone (–one)"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Acid outranks ketone and alcohol.",
+            "Carboxylic acid outranks ketone."
+          ],
+          "explanation": "Correct! Acid outranks ketone and alcohol.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "prin": [
+              7,
+              8
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "Stage 2/3: With C1 at the acid, what are the prefixes for the C2 ketone and C4 alcohol?",
+          "skill": "Prefixes",
+          "options": [
+            "2-oxo– and 4-hydroxy–",
+            "4-oxo– and 2-hydroxy–"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Correct! Alphabetized as 4-hydroxy-2-oxo–.",
+            "Red counter-example shown: C1 is the acid on the right, so the ketone is C2 and the alcohol is C4!"
+          ],
+          "explanation": "Correct! Alphabetized as 4-hydroxy-2-oxo–.",
+          "hints": [
+            "Use the molecular connectivity, then apply the rule.",
+            "Identify the principal group or the longest required parent before numbering."
+          ],
+          "highlights": {
+            "path": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "num": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "prin": [
+              7,
+              8
+            ],
+            "sub": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name.",
+          "skill": "Name assembly",
+          "accepted": [
+            "4-hydroxy-2-oxopentanoic acid"
+          ],
+          "explanation": "Bravo! 4-hydroxy-2-oxopentanoic acid.",
+          "hints": [
+            "Hint 1 (Rule): Alphabetize the prefixes (\"h\" in hydroxy before \"o\" in oxo) before the parent acid name.",
+            "Hint 2 (Structure): 4-hydroxy-2-oxo + 5-carbon carboxylic acid (pentanoic acid)."
+          ],
+          "highlights": {}
+        }
+      ]
+    }
+  ]
+}

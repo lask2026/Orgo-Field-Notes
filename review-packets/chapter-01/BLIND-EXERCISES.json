@@ -1,0 +1,1133 @@
+{
+  "chapter": 1,
+  "sourceSnapshot": {
+    "sha256": "f03800639483be5d54f946d7528f671facba48a98c6618a2d37804a6b958d675",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "gp1a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 264,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 318,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 36
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp1a:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click all 6 carbon atoms in the longest continuous parent chain."
+        },
+        {
+          "id": "gp1a:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: Which numbering direction gives the methyl branch its lowest locant?",
+          "options": [
+            "Left-to-right (methyl at C3)",
+            "Right-to-left (methyl at C4)"
+          ]
+        },
+        {
+          "id": "gp1a:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp1b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 264,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 318,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 32
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 32
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            1,
+            6,
+            1
+          ],
+          [
+            3,
+            7,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp1b:stage-1",
+          "type": "choice",
+          "prompt": "Stage 1/3: Why is \"2-ethyl-4-methylpentane\" an invalid name for this structure?",
+          "options": [
+            "The 2-carbon branch extends the longest continuous chain to 6 carbons (hexane)",
+            "It has 8 carbons in a straight chain"
+          ]
+        },
+        {
+          "id": "gp1b:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: Which locant set is lower for the two methyl substituents?",
+          "options": [
+            "Left-to-right: (2,4)",
+            "Right-to-left: (3,5)"
+          ]
+        },
+        {
+          "id": "gp1b:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the true IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp2a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 156,
+            "y": 166
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp2a:stage-1",
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group has highest priority and supplies the principal suffix?",
+          "options": [
+            "Double bond (–ene)",
+            "Hydroxyl group (–ol; alkene kept as –en–)"
+          ]
+        },
+        {
+          "id": "gp2a:stage-2",
+          "type": "atoms",
+          "prompt": "Stage 2/3: Click the carbon atom on the diagram that must be assigned Carbon #1."
+        },
+        {
+          "id": "gp2a:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete systematic IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp2b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 264,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 210,
+            "y": 32
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            3,
+            5,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp2b:stage-1",
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group determines the principal suffix in this 5-carbon structure?",
+          "options": [
+            "The alcohol (–ol; triple bond becomes –yn– infix)",
+            "The alkyne (–yne; alcohol becomes hydroxy–)"
+          ]
+        },
+        {
+          "id": "gp2b:stage-2",
+          "type": "atoms",
+          "prompt": "Stage 2/3: Click the carbon atom that must be assigned Carbon #1."
+        },
+        {
+          "id": "gp2b:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp3a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 155,
+            "y": 42
+          },
+          {
+            "e": "C",
+            "x": 208,
+            "y": 74
+          },
+          {
+            "e": "C",
+            "x": 208,
+            "y": 136
+          },
+          {
+            "e": "C",
+            "x": 155,
+            "y": 168
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 136
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 74
+          },
+          {
+            "e": "C",
+            "x": 258,
+            "y": 48
+          },
+          {
+            "e": "C",
+            "x": 302,
+            "y": 74
+          },
+          {
+            "e": "C",
+            "x": 50,
+            "y": 168
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            1
+          ],
+          [
+            4,
+            8,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp3a:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the ring carbon that must be assigned Carbon #1."
+        },
+        {
+          "id": "gp3a:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: With C1 at the methylated alkene carbon and C2 at the other alkene carbon, what is the ethyl locant?",
+          "options": [
+            "C4 (giving 4-ethyl-1-methyl)",
+            "C5 (giving 5-ethyl-2-methyl)"
+          ]
+        },
+        {
+          "id": "gp3a:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp3b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 155,
+            "y": 42
+          },
+          {
+            "e": "C",
+            "x": 208,
+            "y": 74
+          },
+          {
+            "e": "C",
+            "x": 208,
+            "y": 136
+          },
+          {
+            "e": "C",
+            "x": 155,
+            "y": 168
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 136
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 74
+          },
+          {
+            "e": "O",
+            "x": 155,
+            "y": 10
+          },
+          {
+            "e": "C",
+            "x": 260,
+            "y": 136
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            2,
+            7,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp3b:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the ring carbon that must be assigned Carbon #1."
+        },
+        {
+          "id": "gp3b:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: From C1 (at –OH), which direction gives the methyl group its lowest locant?",
+          "options": [
+            "Clockwise (methyl at C3)",
+            "Counter-clockwise (methyl at C5)"
+          ]
+        },
+        {
+          "id": "gp3b:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp4a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 48,
+            "y": 52
+          },
+          {
+            "e": "O",
+            "x": 102,
+            "y": 30
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp4a:stage-1",
+          "type": "choice",
+          "prompt": "Stage 1/2: How are the two hydroxyl groups positioned in this molecule?",
+          "options": [
+            "Vicinal (on adjacent carbons C1 and C2)",
+            "Geminal (paired on the same carbon)"
+          ]
+        },
+        {
+          "id": "gp4a:stage-2",
+          "type": "text",
+          "prompt": "Stage 2/2: Type the systematic IUPAC name (common name: ethylene glycol)."
+        }
+      ]
+    },
+    {
+      "id": "gp4b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 76,
+            "y": 32
+          },
+          {
+            "e": "O",
+            "x": 130,
+            "y": 32
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp4b:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/2: Click the carbon atom bearing both hydroxyl groups in this geminal diol."
+        },
+        {
+          "id": "gp4b:stage-2",
+          "type": "text",
+          "prompt": "Stage 2/2: Type the systematic IUPAC name (remember: every group needs a locant!)."
+        }
+      ]
+    },
+    {
+      "id": "gp5a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 264,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 102,
+            "y": 30
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            1,
+            5,
+            2
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp5a:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click BOTH α-carbons on the diagram (do not click the C=O carbon)."
+        },
+        {
+          "id": "gp5a:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: Which direction gives the ketone carbonyl its lower locant?",
+          "options": [
+            "Left-to-right (C2)",
+            "Right-to-left (C4)"
+          ]
+        },
+        {
+          "id": "gp5a:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the systematic IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp5b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 210,
+            "y": 30
+          },
+          {
+            "e": "H",
+            "x": 260,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 48,
+            "y": 168
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            2
+          ],
+          [
+            3,
+            5,
+            1
+          ],
+          [
+            0,
+            6,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp5b:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the carbon atom that must be assigned Carbon #1."
+        },
+        {
+          "id": "gp5b:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: When an alcohol is subordinate to an aldehyde, how is the C4 –OH named?",
+          "options": [
+            "4-hydroxy–",
+            "4-oxo–"
+          ]
+        },
+        {
+          "id": "gp5b:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp6a",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 156,
+            "y": 52
+          },
+          {
+            "e": "N",
+            "x": 208,
+            "y": 142
+          },
+          {
+            "e": "C",
+            "x": 208,
+            "y": 190
+          },
+          {
+            "e": "C",
+            "x": 258,
+            "y": 112
+          },
+          {
+            "e": "C",
+            "x": 308,
+            "y": 142
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            4,
+            6,
+            1
+          ],
+          [
+            6,
+            7,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp6a:stage-1",
+          "type": "atoms",
+          "prompt": "Stage 1/3: Click the carbonyl carbon (Carbon #1 of the amide parent chain)."
+        },
+        {
+          "id": "gp6a:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: How are the ethyl and methyl groups on nitrogen written?",
+          "options": [
+            "N-ethyl-N-methyl- (alphabetical)",
+            "N-methyl-N-ethyl-"
+          ]
+        },
+        {
+          "id": "gp6a:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name."
+        }
+      ]
+    },
+    {
+      "id": "gp6b",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 48,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 102,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 156,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 264,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 102,
+            "y": 30
+          },
+          {
+            "e": "O",
+            "x": 210,
+            "y": 30
+          },
+          {
+            "e": "O",
+            "x": 264,
+            "y": 52
+          },
+          {
+            "e": "O",
+            "x": 316,
+            "y": 142
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            1,
+            5,
+            1
+          ],
+          [
+            3,
+            6,
+            2
+          ],
+          [
+            4,
+            7,
+            2
+          ],
+          [
+            4,
+            8,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "gp6b:stage-1",
+          "type": "choice",
+          "prompt": "Stage 1/3: Which group has highest priority and determines the suffix?",
+          "options": [
+            "Carboxylic acid (–oic acid)",
+            "Ketone (–one)"
+          ]
+        },
+        {
+          "id": "gp6b:stage-2",
+          "type": "choice",
+          "prompt": "Stage 2/3: With C1 at the acid, what are the prefixes for the C2 ketone and C4 alcohol?",
+          "options": [
+            "2-oxo– and 4-hydroxy–",
+            "4-oxo– and 2-hydroxy–"
+          ]
+        },
+        {
+          "id": "gp6b:stage-3",
+          "type": "text",
+          "prompt": "Stage 3/3: Type the complete IUPAC name."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "chapter": 11,
+  "sourceSnapshot": {
+    "sha256": "7fccca3a7bd5b3ea1b8cc2b60910d7431934e26c13d72bda3f2db4b6d3cdbd0c",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "ir-read",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ]
+      },
+      "diagram": {
+        "type": "spectrum",
+        "min": 400,
+        "max": 4000,
+        "unit": "Wavenumber / cm⁻¹ (schematic absorption)",
+        "caption": "Illustrative ketone band positions; real IR spectra often plot transmittance downward.",
+        "peaks": [
+          {
+            "x": 1715,
+            "height": 0.95,
+            "label": "C=O"
+          },
+          {
+            "x": 2950,
+            "height": 0.45,
+            "label": "C–H"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "id": "ir-read:stage-1",
+          "type": "atoms",
+          "prompt": "Select the bond endpoints responsible for the prominent carbonyl band."
+        },
+        {
+          "id": "ir-read:stage-2",
+          "type": "choice",
+          "prompt": "An IR-active vibration must change…",
+          "options": [
+            "Dipole moment",
+            "Molecular formula",
+            "The number of carbon atoms"
+          ]
+        },
+        {
+          "id": "ir-read:stage-3",
+          "type": "choice",
+          "prompt": "A broad 3200–3600 cm⁻¹ band appearing after reduction supports…",
+          "options": [
+            "An alcohol OH",
+            "Only a new alkane",
+            "A nitrile as the sole explanation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uv-energy",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 85
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "uv-energy:stage-1",
+          "type": "atoms",
+          "prompt": "Select all carbons participating in the conjugated diene."
+        },
+        {
+          "id": "uv-energy:stage-2",
+          "type": "choice",
+          "prompt": "For comparable pi systems, increased conjugation often shifts absorption to…",
+          "options": [
+            "Longer wavelength",
+            "Shorter wavelength in every case"
+          ]
+        },
+        {
+          "id": "uv-energy:stage-3",
+          "type": "number",
+          "prompt": "If ε=10000 L mol⁻¹ cm⁻¹, l=1 cm, and c=0.000020 mol L⁻¹, what is A?",
+          "unit": "dimensionless"
+        }
+      ]
+    },
+    {
+      "id": "nmr-ethyl",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 45,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 100,
+            "y": 25
+          },
+          {
+            "e": "O",
+            "x": 155,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 210,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 265,
+            "y": 120
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "diagram": {
+        "type": "spectrum",
+        "min": 0,
+        "max": 5,
+        "unit": "Chemical shift δ / ppm",
+        "caption": "Illustrative ethyl ethanoate signal centers. A: 2H quartet near 4.1; B: 3H singlet near 2.0; C: 3H triplet near 1.2.",
+        "peaks": [
+          {
+            "x": 4.1,
+            "height": 0.65,
+            "label": "A"
+          },
+          {
+            "x": 2,
+            "height": 0.85,
+            "label": "B"
+          },
+          {
+            "x": 1.2,
+            "height": 0.85,
+            "label": "C"
+          }
+        ]
+      },
+      "stages": [
+        {
+          "id": "nmr-ethyl:stage-1",
+          "type": "atoms",
+          "prompt": "Select the OCH2 carbon."
+        },
+        {
+          "id": "nmr-ethyl:stage-2",
+          "type": "number",
+          "prompt": "How many lines does its signal have in the simple n+1 model?",
+          "unit": "lines"
+        },
+        {
+          "id": "nmr-ethyl:stage-3",
+          "type": "choice",
+          "prompt": "The terminal ethyl CH3 gives an approximate…",
+          "options": [
+            "Triplet, integrating to 3H",
+            "Quartet, integrating to 2H",
+            "Singlet, integrating to 1H"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combined-data",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 50,
+            "y": 115
+          },
+          {
+            "e": "C",
+            "x": 108,
+            "y": 85
+          },
+          {
+            "e": "C",
+            "x": 166,
+            "y": 115
+          },
+          {
+            "e": "O",
+            "x": 108,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ]
+      },
+      "context": "Supplied illustrative data: C3H6O; a ketone-like C=O band; one proton NMR singlet integrating to 6H near 2 ppm.",
+      "stages": [
+        {
+          "id": "combined-data:stage-1",
+          "type": "number",
+          "prompt": "For formula C3H6O, calculate DBE.",
+          "unit": "DBE"
+        },
+        {
+          "id": "combined-data:stage-2",
+          "type": "choice",
+          "prompt": "A single 6H singlet near 2 ppm suggests…",
+          "options": [
+            "Two equivalent methyl groups with no adjacent H-bearing carbon",
+            "Six nonequivalent one-H environments",
+            "An aldehydic proton at 2 ppm"
+          ]
+        },
+        {
+          "id": "combined-data:stage-3",
+          "type": "text",
+          "prompt": "With a ketone-like IR band, name the consistent C3H6O structure."
+        }
+      ]
+    }
+  ]
+}

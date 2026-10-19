@@ -1,0 +1,506 @@
+{
+  "chapter": 5,
+  "sourceSnapshot": {
+    "sha256": "7c5b4be69e98e33c9a2b0e4cb4a05c20b36132c8aba866a65b6559f1080f8621",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "properties-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/properties-step-1.png",
+      "sha256": "e3f6a7f7c3f5e24d9b9ecebf2fe1fb21a4026d2b81fb36d7f0f7d1bf3c8b2e1f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "properties-step-1-challenge",
+      "kind": "learn-challenge",
+      "file": "screenshots/properties-step-1-challenge.png",
+      "sha256": "435f0cac9db3bee0f97e98688a08fdbd340c5e0d871bcfabf41c20e8fc3c8f6b",
+      "width": 699,
+      "height": 611
+    },
+    {
+      "id": "properties-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/properties-step-2.png",
+      "sha256": "4ac4597fc1a65ca04c9eb2deebaabcc80bdb37a7360c1df3528b90f21240f0ef",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxidation-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxidation-step-1.png",
+      "sha256": "e3f6a7f7c3f5e24d9b9ecebf2fe1fb21a4026d2b81fb36d7f0f7d1bf3c8b2e1f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxidation-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxidation-step-2.png",
+      "sha256": "0f2a5d2cd0f4d2655c730f29e0faf0f28fa830c00cde4a55651a5190d760e9c5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxidation-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxidation-step-3.png",
+      "sha256": "85412040fb2a8af684739468f1e19768d4ebd7e6d83e8d83374efde9d81bbbe5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "activation-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/activation-step-1.png",
+      "sha256": "f2db03467d7e6cd4b33d25755da5904649d76cdb6ecb1e37b0ac4270c7304d47",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "activation-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/activation-step-2.png",
+      "sha256": "74b6b265e5060f579200ffb52c2c5faa20c17d9179f9696f10a588f138b33a2c",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "activation-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/activation-step-3.png",
+      "sha256": "0f2a5d2cd0f4d2655c730f29e0faf0f28fa830c00cde4a55651a5190d760e9c5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "phenols-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/phenols-step-1.png",
+      "sha256": "aeda377e6c2fe0553cf9274b6e57ae903c00163707aaddbf061257c696b81f39",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "phenols-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/phenols-step-2.png",
+      "sha256": "6e4bd405e590405f712a75ca9418ffa0300ce840d84d3abb5a5e03d1403b4c7a",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "phenols-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/phenols-step-3.png",
+      "sha256": "50612d885558df1face30e3fb8f83cafbfbbad79ffb5d2ec8840e8f643b33296",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "classify-alcohol-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/classify-alcohol-stage-1-molecule.png",
+      "sha256": "df144116bd5dc9e45d464b11e36615bbc290a576255c3784db68fbcdc1d62ad4",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "classify-alcohol-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/classify-alcohol-stage-1-question.png",
+      "sha256": "c6d653d10ccf994285fb860b12c9917e26bdff798e4ca29ae74002dcc8abfaf1",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "classify-alcohol-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/classify-alcohol-stage-1-feedback.png",
+      "sha256": "2a9fedfa00b848e28b5d17c0a22ff208ce792059c3b16be1d316041d200eeb6e",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "classify-alcohol-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/classify-alcohol-stage-2-molecule.png",
+      "sha256": "27cbceffbdb1ef9e131da3a50a02f58b9d487112fc5977345e04e303309e721a",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "classify-alcohol-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/classify-alcohol-stage-2-question.png",
+      "sha256": "24ab65cd2edb2a985e84194b80c57949f8515a0987a4cbae25aaedfb3a296dcf",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "classify-alcohol-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/classify-alcohol-stage-2-feedback.png",
+      "sha256": "47034c3afd8fde96560afe67d946a3e629affc2b99bc89565efab91c0a523502",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "classify-alcohol-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/classify-alcohol-stage-3-molecule.png",
+      "sha256": "9161fe4d9d1cdd929c9304100482a6bee5f3be279edfb1c100fb5659ef09cde7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "classify-alcohol-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/classify-alcohol-stage-3-question.png",
+      "sha256": "0b7ae285e949750526c60044455867c5275adcf8dbfdf924457830db5ad035b7",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "classify-alcohol-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/classify-alcohol-stage-3-feedback.png",
+      "sha256": "e4bbc0e5a61cdb5d373143ef44d76ea54da358bbca11ec1868cb0137be8e141b",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "classify-alcohol-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/classify-alcohol-complete.png",
+      "sha256": "d2a720dd0d675d0bfc4d94cda533ba694305d25f550a36b25ad5eef5e31d4c5a",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "oxidize-secondary-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/oxidize-secondary-stage-1-molecule.png",
+      "sha256": "214a868aaac3b274de59fff5abebd0bd795e9d4ca7c7d2c1fc92bbd09a1f6717",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "oxidize-secondary-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/oxidize-secondary-stage-1-question.png",
+      "sha256": "4914d424cb423131addfa51d915eb6a83c71269545795ed3f9c844983a52486e",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "oxidize-secondary-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/oxidize-secondary-stage-1-feedback.png",
+      "sha256": "66f2bb96d574ffa7e8ceb81870154aeba30cb9d5c57b27b3f3099dfd422b6899",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "oxidize-secondary-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/oxidize-secondary-stage-2-molecule.png",
+      "sha256": "e3f6a7f7c3f5e24d9b9ecebf2fe1fb21a4026d2b81fb36d7f0f7d1bf3c8b2e1f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxidize-secondary-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/oxidize-secondary-stage-2-question.png",
+      "sha256": "1a82a8872076d53948ca8c8e312cc486054520ea834a48cdb179a396e8fa94e1",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "oxidize-secondary-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/oxidize-secondary-stage-2-feedback.png",
+      "sha256": "4b646858a8eb3865f6625c7cac7aa36a089dc56daddfa0abf1906d0a31e0dbfe",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "oxidize-secondary-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/oxidize-secondary-stage-3-molecule.png",
+      "sha256": "378c1f4b22788efa57831566d5e6b2492b09f2c0b58a90aed2efd28a6721421f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxidize-secondary-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/oxidize-secondary-stage-3-question.png",
+      "sha256": "b0f6cf3f220f38c819f6db386fe5ca3ed12108dd3269249f87069fb18e5c681e",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "oxidize-secondary-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/oxidize-secondary-stage-3-feedback.png",
+      "sha256": "13243b73776da97a65af23f11e038c176ece246c19b3ff2d9d7998bd3f41458f",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "oxidize-secondary-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/oxidize-secondary-complete.png",
+      "sha256": "70eb230bc7328b9e9652a35f1281ebcea973a2a0eb3c40d22c27daeba202d735",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "protection-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/protection-stage-1-molecule.png",
+      "sha256": "40bca949baff74da6ea83ea0170a61e2050958bb9dbcfd08dcd5244bbcb8b7b0",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "protection-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/protection-stage-1-question.png",
+      "sha256": "c991798b89edebc46bd68d4eb4ee67a880347a3a10fb6310252df0d4c0e80b9f",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "protection-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/protection-stage-1-feedback.png",
+      "sha256": "c7eb5f238ded71b4c4a58d4c0413d1f9dc2122cf9b0fae4b0442067cb9bb6201",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "protection-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/protection-stage-2-molecule.png",
+      "sha256": "74b6b265e5060f579200ffb52c2c5faa20c17d9179f9696f10a588f138b33a2c",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "protection-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/protection-stage-2-question.png",
+      "sha256": "6a8da76f64cf490816d7059355386a9d18c78f4433746ccf4527735ffe1c14db",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "protection-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/protection-stage-2-feedback.png",
+      "sha256": "b5a2922d0044f4b393a22e0c1ea117f4aa405f5fcce6df53ec265e1f06d9fa1e",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "protection-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/protection-stage-3-molecule.png",
+      "sha256": "e9592d70ff7ec1403cabf20776acda797c4c000c7f374370c60206294246ce81",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "protection-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/protection-stage-3-question.png",
+      "sha256": "6af00e188b53900819da3c7a589c937961c64c572a1eafd98fe1e36dfcc3ce97",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "protection-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/protection-stage-3-feedback.png",
+      "sha256": "b42371f693973cf3e02c0c414fbebe6cd9688949089072950eb3c1566392adc1",
+      "width": 607,
+      "height": 348
+    },
+    {
+      "id": "protection-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/protection-complete.png",
+      "sha256": "eb7f7cc56810b141aa79e3e5151f1b5c03101ef71d64d5fcfa5c9b7ad22239f0",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "quinone-redox-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quinone-redox-stage-1-molecule.png",
+      "sha256": "0f31ae4afe6da003970083ac85eeeeb6bb295711230f517c93de304d7a61af19",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "quinone-redox-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/quinone-redox-stage-1-question.png",
+      "sha256": "b2f561bdf17dba9c7e019191ecccffed5e13f8dcd812decde3cfdce04076c438",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "quinone-redox-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quinone-redox-stage-1-feedback.png",
+      "sha256": "43ca9c3977f632a597eb4d4d5b1fcf3dce117a3f1b7183154d12345e0425b946",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "quinone-redox-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quinone-redox-stage-2-molecule.png",
+      "sha256": "d39dd5c7b85ea2b9b7176c7282bf516422b497f620e8f34022e6f16ba9ae8377",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quinone-redox-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/quinone-redox-stage-2-question.png",
+      "sha256": "a05f829b82b125c9364c83fe6dd9568cb0e3ed86b63802dcc47a6b0b4d998f89",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "quinone-redox-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quinone-redox-stage-2-feedback.png",
+      "sha256": "b4462fb2993a007731be2e26c80344c46a14eda1ca4cbdb4c7c712505d69da78",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "quinone-redox-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quinone-redox-stage-3-molecule.png",
+      "sha256": "cdec2090906300c6ce4489bc911ffb866986ac37fd75fa3560c3b4abd9d00272",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quinone-redox-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/quinone-redox-stage-3-question.png",
+      "sha256": "b4be2db227de83036243166a6fe838f5d5b39c54dbefc0378f71d99a75b3305d",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "quinone-redox-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quinone-redox-stage-3-feedback.png",
+      "sha256": "cb9b4b681b22d50a1ce7b6cd9d8d160bc1568b357046407b75d25dcca6d4d87c",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "quinone-redox-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/quinone-redox-complete.png",
+      "sha256": "5addd187376d10b2496831fc7444ef4992c3258569b0398d50c5360c7b22495f",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "f6328a16c2a53954549db4f53806d82ec6ef34f61931e67f0f43ec17e50ea87f",
+      "width": 1360,
+      "height": 1036
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "c2695da49800e3e7a350ba6da28deddc35013b6280c207d604c382b2d98a4890",
+      "width": 375,
+      "height": 2133
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "4a75d6291f3e69af142aefc655a9fb150c65cf4d4d69394f0d2f183563877df3",
+      "width": 375,
+      "height": 2133
+    }
+  ],
+  "interactions": [
+    {
+      "id": "properties-step-1",
+      "result": "encoded challenge accepted"
+    },
+    {
+      "id": "classify-alcohol-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "classify-alcohol-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "classify-alcohol-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "oxidize-secondary-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "oxidize-secondary-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "oxidize-secondary-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "protection-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "protection-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "protection-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "quinone-redox-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "quinone-redox-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "quinone-redox-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

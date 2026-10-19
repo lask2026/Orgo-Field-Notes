@@ -1,0 +1,502 @@
+{
+  "chapter": 12,
+  "sourceSnapshot": {
+    "sha256": "b913bafcca67f41be708f5aaaa379ad214e10c52fdb2e1f5d87b210e174790c9",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "solubility-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/solubility-step-1.png",
+      "sha256": "0892407ff6d321d7607057d9d3d95cc92419dc7fdd1676a48ff3b35a886ff4e6",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "solubility-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/solubility-step-2.png",
+      "sha256": "9321c04209375a2cec211feb3b36ee4346927eccf61fa1c9c806733e111cec37",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "solubility-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/solubility-step-3.png",
+      "sha256": "c3971f8d4c48ad3d416f017ca1145478f233a455751ac40492c9ae5ae885158f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "distillation-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/distillation-step-1.png",
+      "sha256": "e1196d2ea6bbd838f968c9455ffb9f655aa6724455a48aa081f41b8ed3e474b8",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "distillation-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/distillation-step-2.png",
+      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "tlc-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/tlc-step-1.png",
+      "sha256": "82667bcef19171d8ab8fdda616ec858817124ef08ee5090c9b5be4faedda19a7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "tlc-step-1-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/tlc-step-1-diagram.png",
+      "sha256": "ba97c4e73c24cd8e774d209cf01c5fc869313b5b0b6695d519bed5cb734ac859",
+      "width": 661,
+      "height": 445
+    },
+    {
+      "id": "tlc-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/tlc-step-2.png",
+      "sha256": "82667bcef19171d8ab8fdda616ec858817124ef08ee5090c9b5be4faedda19a7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "tlc-step-2-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/tlc-step-2-diagram.png",
+      "sha256": "ce5507ff7cd2f5661a05b663720539c28215e4ece158d73c06fce680825d755f",
+      "width": 661,
+      "height": 424
+    },
+    {
+      "id": "specialized-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/specialized-step-1.png",
+      "sha256": "2315405a3d2205b0e5fe5b4d4aef8d8104ddd66ed6f7eef97bc1fbcd2b42371d",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "specialized-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/specialized-step-2.png",
+      "sha256": "4085c25c01a070ee131c85279a09349908c8ea63fc97319335ccbacaf2eeffc9",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-extraction-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-extraction-stage-1-molecule.png",
+      "sha256": "964e72f7c0b7008aacaaae07fb2f361ea6a84d0b98cf4f377be5dd66018405e9",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "acid-extraction-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-extraction-stage-1-question.png",
+      "sha256": "f61c81bf48f06f516d7b9e14f53fc63254a326a23e301dacc1523d6c1d8687ad",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "acid-extraction-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-extraction-stage-1-feedback.png",
+      "sha256": "b3a38dd4eb3b517be5897cd56488331f194f8ba10efcdfc04c5a42e556645ccd",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "acid-extraction-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-extraction-stage-2-molecule.png",
+      "sha256": "c3971f8d4c48ad3d416f017ca1145478f233a455751ac40492c9ae5ae885158f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-extraction-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-extraction-stage-2-question.png",
+      "sha256": "6443c1e24092840b0a417101468872b7f5fa566be5b2ef8ec68b67ad3e9aceea",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "acid-extraction-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-extraction-stage-2-feedback.png",
+      "sha256": "4b797a564f8c050bacff5e404186cc28bfda95bc7e58d27c27ac736b3495d481",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "acid-extraction-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-extraction-stage-3-molecule.png",
+      "sha256": "64b6ecb79d0e7fddfa67c198a7d3579a344fa6af040d08e6da4dcb9f149bf2e0",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-extraction-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-extraction-stage-3-question.png",
+      "sha256": "ca537e8116ca2ae44f9e26e4edf9017b89fd490e781b236e962209da3e7bb363",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "acid-extraction-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-extraction-stage-3-feedback.png",
+      "sha256": "7c26ca7e04bc34620d4010bb3d1378386837f7ec3a719363c1a0e1b9efe1fce9",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "acid-extraction-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/acid-extraction-complete.png",
+      "sha256": "596fe07b3080c878cebff6e3c6228e6f40ed761d7438d98943a91fb6ff50b8d0",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "choose-distillation-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/choose-distillation-stage-1-molecule.png",
+      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "choose-distillation-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/choose-distillation-stage-1-question.png",
+      "sha256": "fe25bc128591a5c933cd0f6c5cf14992a13456bca70f067c01bd2f7bcae0c498",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "choose-distillation-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/choose-distillation-stage-1-feedback.png",
+      "sha256": "cc064485add51a7d09b281368070b3757ce13eef778f266338663975d2ff815c",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "choose-distillation-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/choose-distillation-stage-2-molecule.png",
+      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "choose-distillation-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/choose-distillation-stage-2-question.png",
+      "sha256": "fab9fa59238d0e43cde64d392d991d2aa4670268c5e6d24875675d9d65d4ceff",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "choose-distillation-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/choose-distillation-stage-2-feedback.png",
+      "sha256": "4798eff8ec42ae94574ebae37bd2f3ba98d399db29e9f4a7dc349e02ff4261bf",
+      "width": 607,
+      "height": 348
+    },
+    {
+      "id": "choose-distillation-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/choose-distillation-stage-3-molecule.png",
+      "sha256": "d291924f88bb55ac83450568e381f69e7254b8709f482f586f2bbd78f5ab3333",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "choose-distillation-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/choose-distillation-stage-3-question.png",
+      "sha256": "fffb4aa506629f3b1daa9d3308e982c35e056118f4eb48c302abdea949c24a54",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "choose-distillation-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/choose-distillation-stage-3-feedback.png",
+      "sha256": "0d1294edb3573c4c4430e267fbe2c8697c2bdb931fa85b5cb7fe0b79a05ac03d",
+      "width": 607,
+      "height": 348
+    },
+    {
+      "id": "choose-distillation-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/choose-distillation-complete.png",
+      "sha256": "4c11fc46f00171b862233f550d887c496dd86a53de02194bb0ed4b9a1ed85ea2",
+      "width": 1324,
+      "height": 591
+    },
+    {
+      "id": "rf-calculation-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/rf-calculation-stage-1-molecule.png",
+      "sha256": "64b6ecb79d0e7fddfa67c198a7d3579a344fa6af040d08e6da4dcb9f149bf2e0",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "rf-calculation-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/rf-calculation-stage-1-question.png",
+      "sha256": "2a2f063d2672343eda4ee6c03831a910d7c342fd3a35caac8e0e827281e84892",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "rf-calculation-diagram",
+      "kind": "practice-diagram",
+      "file": "screenshots/rf-calculation-diagram.png",
+      "sha256": "5ae6e791b36126009751756e815c50ed21d7d641bf0dad1abde7cfc4e0f73a5e",
+      "width": 661,
+      "height": 424
+    },
+    {
+      "id": "rf-calculation-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/rf-calculation-stage-1-feedback.png",
+      "sha256": "d3a624a9fd71cee321b0bb6076863f993298f89ef309662bf650f6f99a39cef2",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "rf-calculation-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/rf-calculation-stage-2-molecule.png",
+      "sha256": "64b6ecb79d0e7fddfa67c198a7d3579a344fa6af040d08e6da4dcb9f149bf2e0",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "rf-calculation-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/rf-calculation-stage-2-question.png",
+      "sha256": "c238e549e102359092f5b457a6acd37bfad23ef840efefa419a9e7435475b9d2",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "rf-calculation-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/rf-calculation-stage-2-feedback.png",
+      "sha256": "d7454b72a03b8bea96f26867e48c23035fff622933574d647e8ece8b848d9c5c",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "rf-calculation-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/rf-calculation-stage-3-molecule.png",
+      "sha256": "64b6ecb79d0e7fddfa67c198a7d3579a344fa6af040d08e6da4dcb9f149bf2e0",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "rf-calculation-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/rf-calculation-stage-3-question.png",
+      "sha256": "a1f5934d164bb5ef4923f792037f7880fd4097963e922e2bd98491bd0d2647cc",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "rf-calculation-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/rf-calculation-stage-3-feedback.png",
+      "sha256": "25bcc5079758b4ba878afc2c5d9dc0f4e56cb1de200d2fc47b57ff1ae606d371",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "rf-calculation-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/rf-calculation-complete.png",
+      "sha256": "b7966a23ed3a20c055435a3d174b081c3a86d28ca8d6ed5a5cacf641c2ebd3cd",
+      "width": 1324,
+      "height": 1009
+    },
+    {
+      "id": "chromatography-match-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chromatography-match-stage-1-molecule.png",
+      "sha256": "76733dae8421fdafd3b57b820b1aeb56cfc8a8a53d1e579a7ca77970c9da92a8",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chromatography-match-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/chromatography-match-stage-1-question.png",
+      "sha256": "151459cf766b83dacaf706ce20744d6ad7da8d764d48ff732212e27dab498aa4",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "chromatography-match-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chromatography-match-stage-1-feedback.png",
+      "sha256": "ebae24c8ff1c16e9ed977d2b47ebb884415e9af8639908f573c7fd9df961920e",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "chromatography-match-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chromatography-match-stage-2-molecule.png",
+      "sha256": "76733dae8421fdafd3b57b820b1aeb56cfc8a8a53d1e579a7ca77970c9da92a8",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chromatography-match-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/chromatography-match-stage-2-question.png",
+      "sha256": "b9baad91c58982c57d4a8126630742580860b607013ca42fe82f648afb0fae73",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "chromatography-match-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chromatography-match-stage-2-feedback.png",
+      "sha256": "a615c935d4eb5f9f37199011f25db09a35de37ea5df312ead97420e706bcf328",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "chromatography-match-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/chromatography-match-stage-3-molecule.png",
+      "sha256": "76733dae8421fdafd3b57b820b1aeb56cfc8a8a53d1e579a7ca77970c9da92a8",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chromatography-match-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/chromatography-match-stage-3-question.png",
+      "sha256": "e9c1fa4310e43a7ddb572d0009e2dc81a0435408a50b0de4a6653490e60b59c7",
+      "width": 607,
+      "height": 266
+    },
+    {
+      "id": "chromatography-match-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/chromatography-match-stage-3-feedback.png",
+      "sha256": "8b92d9c65391ba4238465ac25b14882db314a37cfe4145a163963e991d85ac44",
+      "width": 607,
+      "height": 301
+    },
+    {
+      "id": "chromatography-match-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/chromatography-match-complete.png",
+      "sha256": "5ea6e3a40ebc7451f02d130962bf25d35703acc9c3f800f557154e17283add8b",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "f832f22e00d6203a9420965f27d602c221aff1d818ad4e5fc747504f151739a2",
+      "width": 1360,
+      "height": 1090
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "98d6dee8a13357420a6b1d631dcec01c1f05c89b21354d9af1e79910a08de206",
+      "width": 375,
+      "height": 2206
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "11bf966aa46f8182746da6991a46d74abbf6b9f914c0f6dc640ecdf547b1ac38",
+      "width": 375,
+      "height": 2206
+    }
+  ],
+  "interactions": [
+    {
+      "id": "acid-extraction-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acid-extraction-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acid-extraction-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "choose-distillation-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "choose-distillation-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "choose-distillation-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "rf-calculation-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "rf-calculation-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "rf-calculation-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chromatography-match-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chromatography-match-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "chromatography-match-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

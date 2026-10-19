@@ -1,0 +1,2440 @@
+{
+  "packetVersion": 1,
+  "chapter": 6,
+  "title": "Aldehydes and Ketones I",
+  "sourceSnapshot": {
+    "sha256": "9fb3cedcd7853e59e27dce1e4217884c47c03626a5e31a799426accdb16e5d2e",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "referencePassagesIncluded": false,
+  "scientificVerification": false,
+  "cases": [
+    {
+      "id": "ch06:blind:addition-site",
+      "chapter": 6,
+      "kind": "blind",
+      "itemIds": [
+        "addition-site:stage-1",
+        "addition-site:stage-2",
+        "addition-site:stage-3"
+      ],
+      "payload": {
+        "id": "addition-site",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "addition-site:stage-1",
+            "type": "atoms",
+            "prompt": "Select the atom attacked by a carbon nucleophile."
+          },
+          {
+            "id": "addition-site:stage-2",
+            "type": "choice",
+            "prompt": "As the new sigma bond forms, the C=O pi pair moves to…",
+            "options": [
+              "Oxygen",
+              "The incoming nucleophile",
+              "A methyl hydrogen"
+            ]
+          },
+          {
+            "id": "addition-site:stage-3",
+            "type": "choice",
+            "prompt": "The immediate former-carbonyl geometry becomes approximately…",
+            "options": [
+              "Tetrahedral",
+              "Linear",
+              "Unchanged trigonal planar"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch06:blind:hemiacetal-identify",
+      "chapter": 6,
+      "kind": "blind",
+      "itemIds": [
+        "hemiacetal-identify:stage-1",
+        "hemiacetal-identify:stage-2",
+        "hemiacetal-identify:stage-3"
+      ],
+      "payload": {
+        "id": "hemiacetal-identify",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 240,
+              "y": 85
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "hemiacetal-identify:stage-1",
+            "type": "atoms",
+            "prompt": "Select the carbon bearing two oxygen substituents."
+          },
+          {
+            "id": "hemiacetal-identify:stage-2",
+            "type": "choice",
+            "prompt": "One OH and one OR on that carbon identify a…",
+            "options": [
+              "Hemiacetal",
+              "Acetal",
+              "Geminal diol"
+            ]
+          },
+          {
+            "id": "hemiacetal-identify:stage-3",
+            "type": "choice",
+            "prompt": "Converting it to an acetal with alcohol is favored by…",
+            "options": [
+              "Acid catalysis and removal of water",
+              "Adding abundant water alone",
+              "Strong base alone"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch06:blind:cyanohydrin-count",
+      "chapter": 6,
+      "kind": "blind",
+      "itemIds": [
+        "cyanohydrin-count:stage-1",
+        "cyanohydrin-count:stage-2",
+        "cyanohydrin-count:stage-3"
+      ],
+      "payload": {
+        "id": "cyanohydrin-count",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 150
+            },
+            {
+              "e": "N",
+              "x": 120,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              3
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "cyanohydrin-count:stage-1",
+            "type": "atoms",
+            "prompt": "Select the nitrile carbon added by cyanide."
+          },
+          {
+            "id": "cyanohydrin-count:stage-2",
+            "type": "number",
+            "prompt": "How many carbons are in the cyanohydrin?",
+            "unit": "carbons"
+          },
+          {
+            "id": "cyanohydrin-count:stage-3",
+            "type": "choice",
+            "prompt": "A secondary amine plus a ketone with alpha H typically forms…",
+            "options": [
+              "An enamine",
+              "A primary amide directly",
+              "A cyanohydrin"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch06:blind:hydride-product",
+      "chapter": 6,
+      "kind": "blind",
+      "itemIds": [
+        "hydride-product:stage-1",
+        "hydride-product:stage-2",
+        "hydride-product:stage-3"
+      ],
+      "payload": {
+        "id": "hydride-product",
+        "molecule": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              2
+            ]
+          ]
+        },
+        "stages": [
+          {
+            "id": "hydride-product:stage-1",
+            "type": "atoms",
+            "prompt": "Select the carbonyl carbon receiving hydride."
+          },
+          {
+            "id": "hydride-product:stage-2",
+            "type": "choice",
+            "prompt": "After protonation, the product is a…",
+            "options": [
+              "Secondary alcohol",
+              "Primary alcohol",
+              "Tertiary alcohol"
+            ]
+          },
+          {
+            "id": "hydride-product:stage-3",
+            "type": "text",
+            "prompt": "Name the product."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ch06:exercise:addition-site",
+      "chapter": 6,
+      "kind": "exercise",
+      "itemIds": [
+        "addition-site:stage-1",
+        "addition-site:stage-2",
+        "addition-site:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "addition-site",
+          "lesson": "carbonyl",
+          "molecule": "acetaldehyde",
+          "label": "Follow nucleophilic addition",
+          "title": "Follow nucleophilic addition",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the atom attacked by a carbon nucleophile.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "The nucleophile attacks the carbonyl carbon.",
+              "hints": [
+                "Locate the positively polarized end of C=O.",
+                "Carbon is less electronegative than oxygen."
+              ],
+              "highlights": {
+                "prin": [
+                  1
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "As the new sigma bond forms, the C=O pi pair moves to…",
+              "skill": "Apply the rule",
+              "options": [
+                "Oxygen",
+                "The incoming nucleophile",
+                "A methyl hydrogen"
+              ],
+              "answer": 0,
+              "explanation": "Moving the pi pair to O prevents carbon from exceeding an octet.",
+              "hints": [
+                "Count the carbon bonds during attack.",
+                "O can carry the resulting negative charge."
+              ],
+              "highlights": {
+                "flow": [
+                  {
+                    "fromBond": 1,
+                    "toAtom": 2
+                  }
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "The immediate former-carbonyl geometry becomes approximately…",
+              "skill": "Apply the rule",
+              "options": [
+                "Tetrahedral",
+                "Linear",
+                "Unchanged trigonal planar"
+              ],
+              "answer": 0,
+              "explanation": "Addition replaces the pi bond and gives four sigma directions around carbon.",
+              "hints": [
+                "Count electron domains after addition.",
+                "Four directions correspond to sp³-like geometry."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Nucleophilic addition changes planar C=O into a tetrahedral center."
+        },
+        "molecule": {
+          "name": "ethanal",
+          "formula": "C2H4O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanal",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch06:blind:addition-site"
+    },
+    {
+      "id": "ch06:exercise:hemiacetal-identify",
+      "chapter": 6,
+      "kind": "exercise",
+      "itemIds": [
+        "hemiacetal-identify:stage-1",
+        "hemiacetal-identify:stage-2",
+        "hemiacetal-identify:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "hemiacetal-identify",
+          "lesson": "oxygen-addition",
+          "molecule": "hemiacetal",
+          "label": "Read oxygen substituents",
+          "title": "Read oxygen substituents",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the carbon bearing two oxygen substituents.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "B is the former carbonyl carbon.",
+              "hints": [
+                "Trace both C–O bonds to their shared carbon.",
+                "The O atoms are C and D."
+              ],
+              "highlights": {
+                "prin": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "One OH and one OR on that carbon identify a…",
+              "skill": "Apply the rule",
+              "options": [
+                "Hemiacetal",
+                "Acetal",
+                "Geminal diol"
+              ],
+              "answer": 0,
+              "explanation": "A hemiacetal has both OH and OR.",
+              "hints": [
+                "Inspect whether each oxygen also has a carbon substituent.",
+                "One oxygen is OH; the other links to methyl."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "choice",
+              "prompt": "Converting it to an acetal with alcohol is favored by…",
+              "skill": "Apply the rule",
+              "options": [
+                "Acid catalysis and removal of water",
+                "Adding abundant water alone",
+                "Strong base alone"
+              ],
+              "answer": 0,
+              "explanation": "Acid enables water departure; removing water shifts the equilibrium toward acetal.",
+              "hints": [
+                "Water is a product of acetal formation.",
+                "Apply Le Châtelier’s principle."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Hemiacetal: OH + OR on the same carbon."
+        },
+        "molecule": {
+          "name": "1-methoxyethan-1-ol",
+          "formula": "C3H8O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 240,
+              "y": 85
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "1-methoxyethan-1-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch06:blind:hemiacetal-identify"
+    },
+    {
+      "id": "ch06:exercise:cyanohydrin-count",
+      "chapter": 6,
+      "kind": "exercise",
+      "itemIds": [
+        "cyanohydrin-count:stage-1",
+        "cyanohydrin-count:stage-2",
+        "cyanohydrin-count:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "cyanohydrin-count",
+          "lesson": "nitrogen-addition",
+          "molecule": "cyanohydrin",
+          "label": "Track the new carbon bond",
+          "title": "Track the new carbon bond",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the nitrile carbon added by cyanide.",
+              "skill": "Read the structure",
+              "answer": [
+                4
+              ],
+              "explanation": "E is the carbon triple-bonded to N and bonded to the former carbonyl carbon.",
+              "hints": [
+                "Cyanide adds through carbon.",
+                "Find the carbon endpoint of C≡N."
+              ],
+              "highlights": {
+                "prin": [
+                  4,
+                  5
+                ]
+              }
+            },
+            {
+              "type": "number",
+              "prompt": "How many carbons are in the cyanohydrin?",
+              "skill": "Calculate and interpret",
+              "answer": 4,
+              "unit": "carbons",
+              "tolerance": 0,
+              "explanation": "Acetone supplies three carbons and cyanide supplies one.",
+              "hints": [
+                "Count carbon atoms, not total atoms.",
+                "Include the nitrile carbon."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "choice",
+              "prompt": "A secondary amine plus a ketone with alpha H typically forms…",
+              "skill": "Apply the rule",
+              "options": [
+                "An enamine",
+                "A primary amide directly",
+                "A cyanohydrin"
+              ],
+              "answer": 0,
+              "explanation": "A secondary amine gives an enamine after condensation and alpha deprotonation.",
+              "hints": [
+                "Distinguish primary and secondary amine reagents.",
+                "The product contains C=C–N."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Cyanohydrin formation adds one carbon; secondary amines can form enamines."
+        },
+        "molecule": {
+          "name": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+          "formula": "C4H7NO",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 150
+            },
+            {
+              "e": "N",
+              "x": 120,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              3
+            ]
+          ],
+          "w": 320,
+          "h": 235,
+          "cond": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch06:blind:cyanohydrin-count"
+    },
+    {
+      "id": "ch06:exercise:hydride-product",
+      "chapter": 6,
+      "kind": "exercise",
+      "itemIds": [
+        "hydride-product:stage-1",
+        "hydride-product:stage-2",
+        "hydride-product:stage-3"
+      ],
+      "payload": {
+        "exercise": {
+          "id": "hydride-product",
+          "lesson": "carbonyl-redox",
+          "molecule": "acetone",
+          "label": "Predict carbonyl reduction",
+          "title": "Predict carbonyl reduction",
+          "stages": [
+            {
+              "type": "atoms",
+              "prompt": "Select the carbonyl carbon receiving hydride.",
+              "skill": "Read the structure",
+              "answer": [
+                1
+              ],
+              "explanation": "B receives hydride.",
+              "hints": [
+                "Hydride is the nucleophile.",
+                "Attack the electron-poor carbon."
+              ],
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ]
+              }
+            },
+            {
+              "type": "choice",
+              "prompt": "After protonation, the product is a…",
+              "skill": "Apply the rule",
+              "options": [
+                "Secondary alcohol",
+                "Primary alcohol",
+                "Tertiary alcohol"
+              ],
+              "answer": 0,
+              "explanation": "The alcohol-bearing carbon retains its two methyl substituents.",
+              "hints": [
+                "Count carbon neighbors of the new C–OH carbon.",
+                "No C–C bonds are added or removed."
+              ],
+              "highlights": {}
+            },
+            {
+              "type": "text",
+              "prompt": "Name the product.",
+              "skill": "State your conclusion",
+              "accepted": [
+                "propan-2-ol",
+                "2-propanol",
+                "isopropanol"
+              ],
+              "explanation": "Acetone reduces to propan-2-ol.",
+              "hints": [
+                "Retain the three-carbon chain.",
+                "Place OH at the central carbon."
+              ],
+              "highlights": {}
+            }
+          ],
+          "summary": "Propanone → propan-2-ol."
+        },
+        "molecule": {
+          "name": "propanone",
+          "formula": "C3H6O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "propanone",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      },
+      "dependsOn": "ch06:blind:hydride-product"
+    },
+    {
+      "id": "ch06:lesson:carbonyl",
+      "chapter": 6,
+      "kind": "lesson",
+      "itemIds": [
+        "carbonyl:rule",
+        "carbonyl:cue",
+        "carbonyl:trap",
+        "carbonyl:app",
+        "carbonyl:step-1",
+        "carbonyl:step-2"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "carbonyl",
+          "label": "Carbonyl polarity and geometry",
+          "title": "Carbonyl polarity and geometry",
+          "molecule": "acetaldehyde",
+          "tag": "Planar electrophile → tetrahedral addition product",
+          "cards": {
+            "rule": "<p>The carbonyl is polarized Cδ+–Oδ−. A nucleophile attacks carbon while the pi pair shifts to oxygen; protonation can then give an alcohol. Aldehydes are generally less crowded and less electron-rich than comparable ketones, so they often add nucleophiles more readily.</p>",
+            "cue": "<p>Attack C; move pi electrons to O; then handle proton transfers.</p>",
+            "trap": "<p>Neutral aldehydes and ketones can accept hydrogen bonds but lack an O–H donor. Do not draw five bonds to carbon when a nucleophile adds. A planar carbonyl can be attacked from either face.</p>",
+            "app": "<p>A chiral environment can favor one face; without such bias, addition that creates a single new stereocenter often yields a racemic mixture.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Find the electrophile",
+              "text": "<p>The C=O carbon is trigonal planar and electron poor. Oxygen is electron rich.</p>",
+              "molecule": "acetaldehyde",
+              "highlights": {
+                "prin": [
+                  1
+                ],
+                "sub": [
+                  2
+                ]
+              },
+              "reveal": false,
+              "challenge": {
+                "prompt": "Select the electrophilic carbonyl carbon.",
+                "answer": [
+                  1
+                ],
+                "explanation": "B is the carbonyl carbon."
+              }
+            },
+            {
+              "label": "2. Move the pi pair",
+              "text": "<p>The purple curved arrow shows the carbonyl pi pair moving toward oxygen during nucleophilic attack. This arrow is one part of an addition mechanism; the incoming nucleophile is described in the lesson rather than drawn here.</p>",
+              "molecule": "acetaldehyde",
+              "highlights": {
+                "prin": [
+                  1,
+                  2
+                ],
+                "flow": [
+                  {
+                    "fromBond": 1,
+                    "toAtom": 2
+                  }
+                ]
+              },
+              "reveal": false
+            }
+          ]
+        },
+        "molecules": {
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch06:lesson:oxygen-addition",
+      "chapter": 6,
+      "kind": "lesson",
+      "itemIds": [
+        "oxygen-addition:rule",
+        "oxygen-addition:cue",
+        "oxygen-addition:trap",
+        "oxygen-addition:app",
+        "oxygen-addition:step-1",
+        "oxygen-addition:step-2",
+        "oxygen-addition:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "oxygen-addition",
+          "label": "Hydrates, hemiacetals, and acetals",
+          "title": "Hydrates, hemiacetals, and acetals",
+          "molecule": "hemiacetal",
+          "tag": "Distinguish OH from OR on the same carbon",
+          "cards": {
+            "rule": "<p>Hydration gives a geminal diol. Alcohol addition gives a hemiacetal (one OH and one OR at the former carbonyl carbon). Further acid-catalyzed reaction gives an acetal (two OR groups). These transformations are reversible and respond to water/alcohol activities.</p>",
+            "cue": "<p>Two OH = hydrate; OH + OR = hemiacetal; two OR = acetal. Ketone-derived examples are also called hemiketals/ketals.</p>",
+            "trap": "<p>Acetal formation requires acid catalysis; base alone does not turn OH− into a good leaving group. Cyclic sugar hemiacetals can be stable because intramolecular ring formation is favorable.</p>",
+            "app": "<p>Monosaccharides cyclize through hemiacetal or hemiketal formation. The new anomeric center can have two configurations.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Identify a hemiacetal",
+              "text": "<p>This carbon bears both OH and OCH3, along with methyl and H. It is a hemiacetal from ethanal and methanol.</p>",
+              "molecule": "hemiacetal",
+              "highlights": {
+                "prin": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Compare an acetal",
+              "text": "<p>This ketone-derived acetal has two OCH3 groups on the central carbon and no OH there. Hydrolysis with aqueous acid returns a carbonyl.</p>",
+              "molecule": "acetal",
+              "highlights": {
+                "prin": [
+                  1,
+                  3,
+                  4
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Compare a hydrate",
+              "text": "<p>Here both oxygen substituents are OH: a geminal diol. The equilibrium does not equally favor hydrates for every carbonyl.</p>",
+              "molecule": "geminal",
+              "highlights": {
+                "prin": [
+                  1,
+                  3,
+                  4
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "hemiacetal": {
+            "name": "1-methoxyethan-1-ol",
+            "formula": "C3H8O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 120,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 180,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 85
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "1-methoxyethan-1-ol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetal": {
+            "name": "2,2-dimethoxypropane",
+            "formula": "C5H12O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 75,
+                "y": 130
+              },
+              {
+                "e": "C",
+                "x": 135,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 195,
+                "y": 130
+              },
+              {
+                "e": "O",
+                "x": 105,
+                "y": 45
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 45
+              },
+              {
+                "e": "C",
+                "x": 50,
+                "y": 15
+              },
+              {
+                "e": "C",
+                "x": 230,
+                "y": 15
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                3,
+                5,
+                1
+              ],
+              [
+                4,
+                6,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2,2-dimethoxypropane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "geminal": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 102,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 156,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 76,
+                "y": 32
+              },
+              {
+                "e": "O",
+                "x": 130,
+                "y": 32
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 310,
+            "h": 200,
+            "name": "propane-2,2-diol",
+            "cond": "CH₃–C(OH)₂–CH₃",
+            "formula": "C3H8O2",
+            "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch06:lesson:nitrogen-addition",
+      "chapter": 6,
+      "kind": "lesson",
+      "itemIds": [
+        "nitrogen-addition:rule",
+        "nitrogen-addition:cue",
+        "nitrogen-addition:trap",
+        "nitrogen-addition:app",
+        "nitrogen-addition:step-1",
+        "nitrogen-addition:step-2",
+        "nitrogen-addition:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "nitrogen-addition",
+          "label": "Imines, enamines, and cyanohydrins",
+          "title": "Imines, enamines, and cyanohydrins",
+          "molecule": "imine",
+          "tag": "Reagent identity changes the product",
+          "cards": {
+            "rule": "<p>A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha H is available. Related nitrogen reagents form oximes (hydroxylamine), hydrazones (hydrazine derivatives), and semicarbazones (semicarbazide). Cyanide addition followed by protonation forms a cyanohydrin and creates a C–C bond.</p>",
+            "cue": "<p>Primary amine → C=N; secondary amine + alpha H → C=C–N. Cyanide adds its carbon.</p>",
+            "trap": "<p>Too much acid protonates the amine and suppresses its nucleophilicity. Enamine formation needs an alpha hydrogen. Do not attach cyanide through nitrogen in a standard cyanohydrin product.</p>",
+            "app": "<p>Schiff-base (imine) intermediates help enzymes reorganize electron density; nitrogen chemistry is a bridge to amino-acid metabolism.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Imine bond",
+              "text": "<p>The C=N bond replaces the starting C=O after condensation with a primary amine. This connectivity drawing does not assign E/Z about C=N.</p>",
+              "molecule": "imine",
+              "highlights": {
+                "prin": [
+                  1,
+                  2
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Enamine bond",
+              "text": "<p>An enamine has N attached to a C=C system. The nitrogen lone pair is conjugated with the double bond, giving nucleophilic carbon character.</p>",
+              "molecule": "enamine",
+              "highlights": {
+                "path": [
+                  0,
+                  1,
+                  2
+                ],
+                "prin": [
+                  2
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Cyanohydrin carbon count",
+              "text": "<p>Acetone cyanohydrin contains a new C–C bond between the former carbonyl carbon and the nitrile carbon. The nitrile N is triple-bonded to that new carbon.</p>",
+              "molecule": "cyanohydrin",
+              "highlights": {
+                "prin": [
+                  1,
+                  3
+                ],
+                "sub": [
+                  4,
+                  5
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "imine": {
+            "name": "N-methylethanimine (E/Z unspecified)",
+            "formula": "C3H7N",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "N",
+                "x": 180,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "N-methylethanimine (E/Z unspecified)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "enamine": {
+            "name": "N,N-dimethylethenamine",
+            "formula": "C4H9N",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "N",
+                "x": 180,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 240,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 180
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                2,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 210,
+            "cond": "N,N-dimethylethenamine",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "cyanohydrin": {
+            "name": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+            "formula": "C4H7NO",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 60,
+                "y": 120
+              },
+              {
+                "e": "C",
+                "x": 120,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 120
+              },
+              {
+                "e": "O",
+                "x": 120,
+                "y": 25
+              },
+              {
+                "e": "C",
+                "x": 120,
+                "y": 150
+              },
+              {
+                "e": "N",
+                "x": 120,
+                "y": 205
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                3
+              ]
+            ],
+            "w": 320,
+            "h": 235,
+            "cond": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch06:lesson:carbonyl-redox",
+      "chapter": 6,
+      "kind": "lesson",
+      "itemIds": [
+        "carbonyl-redox:rule",
+        "carbonyl-redox:cue",
+        "carbonyl-redox:trap",
+        "carbonyl-redox:app",
+        "carbonyl-redox:step-1",
+        "carbonyl-redox:step-2",
+        "carbonyl-redox:step-3"
+      ],
+      "payload": {
+        "lesson": {
+          "id": "carbonyl-redox",
+          "label": "Aldehyde oxidation and hydride reduction",
+          "title": "Aldehyde oxidation and hydride reduction",
+          "molecule": "acetaldehyde",
+          "tag": "Separate addition from net redox",
+          "cards": {
+            "rule": "<p>Aldehydes can be oxidized to carboxylic acids; ordinary ketones resist analogous oxidation without C–C cleavage. NaBH4 and LiAlH4 reduce aldehydes to primary alcohols and ketones to secondary alcohols. Hydride adds first, then oxygen is protonated in workup or by the medium.</p>",
+            "cue": "<p>Aldehyde reduction → 1° alcohol; ketone reduction → 2° alcohol.</p>",
+            "trap": "<p>Do not predict an alkane from ordinary hydride reduction of C=O. The oxygen remains in the alcohol. A positive aldehyde oxidation test is contextual evidence, not a complete structural identification.</p>",
+            "app": "<p>Biological NADH-dependent carbonyl reductions transfer a hydride equivalent; the enzyme can control stereochemistry.</p>"
+          },
+          "steps": [
+            {
+              "label": "1. Aldehyde substrate",
+              "text": "<p>Ethanal has a hydrogen on its carbonyl carbon, allowing ordinary oxidation to a carboxylic acid.</p>",
+              "molecule": "acetaldehyde",
+              "highlights": {
+                "prin": [
+                  1,
+                  2
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "2. Oxidized product",
+              "text": "<p>Ethanoic acid retains the two-carbon skeleton and adds a carbon–oxygen bond overall.</p>",
+              "molecule": "aceticacid",
+              "highlights": {
+                "prin": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Reduced product",
+              "text": "<p>The reduction product ethanol retains the same oxygen but has a single C–O bond and more C–H bonding.</p>",
+              "molecule": "ethanol",
+              "highlights": {
+                "prin": [
+                  1,
+                  2
+                ]
+              },
+              "reveal": true
+            }
+          ]
+        },
+        "molecules": {
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:acetaldehyde",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "acetaldehyde"
+      ],
+      "payload": {
+        "id": "acetaldehyde",
+        "authorClaims": {
+          "name": "ethanal",
+          "formula": "C2H4O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanal",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:hemiacetal",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "hemiacetal"
+      ],
+      "payload": {
+        "id": "hemiacetal",
+        "authorClaims": {
+          "name": "1-methoxyethan-1-ol",
+          "formula": "C3H8O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 240,
+              "y": 85
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              4,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "1-methoxyethan-1-ol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:acetal",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "acetal"
+      ],
+      "payload": {
+        "id": "acetal",
+        "authorClaims": {
+          "name": "2,2-dimethoxypropane",
+          "formula": "C5H12O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 75,
+              "y": 130
+            },
+            {
+              "e": "C",
+              "x": 135,
+              "y": 100
+            },
+            {
+              "e": "C",
+              "x": 195,
+              "y": 130
+            },
+            {
+              "e": "O",
+              "x": 105,
+              "y": 45
+            },
+            {
+              "e": "O",
+              "x": 175,
+              "y": 45
+            },
+            {
+              "e": "C",
+              "x": 50,
+              "y": 15
+            },
+            {
+              "e": "C",
+              "x": 230,
+              "y": 15
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              3,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "2,2-dimethoxypropane",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:geminal",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "geminal"
+      ],
+      "payload": {
+        "id": "geminal",
+        "authorClaims": {
+          "atoms": [
+            {
+              "e": "C",
+              "x": 48,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 102,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 156,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 76,
+              "y": 32
+            },
+            {
+              "e": "O",
+              "x": 130,
+              "y": 32
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ]
+          ],
+          "w": 310,
+          "h": 200,
+          "name": "propane-2,2-diol",
+          "cond": "CH₃–C(OH)₂–CH₃",
+          "formula": "C3H8O2",
+          "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:imine",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "imine"
+      ],
+      "payload": {
+        "id": "imine",
+        "authorClaims": {
+          "name": "N-methylethanimine (E/Z unspecified)",
+          "formula": "C3H7N",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 55,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 115,
+              "y": 85
+            },
+            {
+              "e": "N",
+              "x": 180,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 240,
+              "y": 120
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "N-methylethanimine (E/Z unspecified)",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:enamine",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "enamine"
+      ],
+      "payload": {
+        "id": "enamine",
+        "authorClaims": {
+          "name": "N,N-dimethylethenamine",
+          "formula": "C4H9N",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 55,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 115,
+              "y": 85
+            },
+            {
+              "e": "N",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 240,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 180,
+              "y": 180
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              2,
+              4,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 210,
+          "cond": "N,N-dimethylethenamine",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:cyanohydrin",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "cyanohydrin"
+      ],
+      "payload": {
+        "id": "cyanohydrin",
+        "authorClaims": {
+          "name": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+          "formula": "C4H7NO",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 60,
+              "y": 120
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 180,
+              "y": 120
+            },
+            {
+              "e": "O",
+              "x": 120,
+              "y": 25
+            },
+            {
+              "e": "C",
+              "x": 120,
+              "y": 150
+            },
+            {
+              "e": "N",
+              "x": 120,
+              "y": 205
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              1
+            ],
+            [
+              4,
+              5,
+              3
+            ]
+          ],
+          "w": 320,
+          "h": 235,
+          "cond": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:aceticacid",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "aceticacid"
+      ],
+      "payload": {
+        "id": "aceticacid",
+        "authorClaims": {
+          "name": "ethanoic acid",
+          "formula": "C2H4O2",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            },
+            {
+              "e": "O",
+              "x": 166,
+              "y": 115
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              3,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanoic acid",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:ethanol",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "ethanol"
+      ],
+      "payload": {
+        "id": "ethanol",
+        "authorClaims": {
+          "name": "ethanol",
+          "formula": "C2H6O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 166,
+              "y": 115
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanol",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:molecule:acetone",
+      "chapter": 6,
+      "kind": "molecule",
+      "itemIds": [
+        "acetone"
+      ],
+      "payload": {
+        "id": "acetone",
+        "authorClaims": {
+          "name": "propanone",
+          "formula": "C3H6O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 50,
+              "y": 115
+            },
+            {
+              "e": "C",
+              "x": 108,
+              "y": 85
+            },
+            {
+              "e": "C",
+              "x": 166,
+              "y": 115
+            },
+            {
+              "e": "O",
+              "x": 108,
+              "y": 25
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "propanone",
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+        }
+      }
+    },
+    {
+      "id": "ch06:curriculum",
+      "chapter": 6,
+      "kind": "curriculum",
+      "itemIds": [
+        "scope-1",
+        "scope-2",
+        "scope-3"
+      ],
+      "payload": {
+        "title": "Aldehydes and Ketones I",
+        "sections": [
+          {
+            "itemId": "scope-1",
+            "title": "6.1 Description and Properties"
+          },
+          {
+            "itemId": "scope-2",
+            "title": "6.2 Nucleophilic Addition Reactions"
+          },
+          {
+            "itemId": "scope-3",
+            "title": "6.3 Oxidation–Reduction Reactions"
+          }
+        ],
+        "objectives": [
+          "Track carbonyl addition electron flow",
+          "Identify hydrates, hemiacetals, acetals, imines, and enamines",
+          "Predict carbonyl redox outcomes"
+        ],
+        "lessonInventory": [
+          {
+            "id": "carbonyl",
+            "title": "Carbonyl polarity and geometry",
+            "tag": "Planar electrophile → tetrahedral addition product",
+            "coreRule": "The carbonyl is polarized Cδ+–Oδ−. A nucleophile attacks carbon while the pi pair shifts to oxygen; protonation can then give an alcohol. Aldehydes are generally less crowded and less electron-rich than comparable ketones, so they often add nucleophiles more readily.",
+            "stepTopics": [
+              "1. Find the electrophile",
+              "2. Move the pi pair"
+            ]
+          },
+          {
+            "id": "oxygen-addition",
+            "title": "Hydrates, hemiacetals, and acetals",
+            "tag": "Distinguish OH from OR on the same carbon",
+            "coreRule": "Hydration gives a geminal diol. Alcohol addition gives a hemiacetal (one OH and one OR at the former carbonyl carbon). Further acid-catalyzed reaction gives an acetal (two OR groups). These transformations are reversible and respond to water/alcohol activities.",
+            "stepTopics": [
+              "1. Identify a hemiacetal",
+              "2. Compare an acetal",
+              "3. Compare a hydrate"
+            ]
+          },
+          {
+            "id": "nitrogen-addition",
+            "title": "Imines, enamines, and cyanohydrins",
+            "tag": "Reagent identity changes the product",
+            "coreRule": "A primary amine condenses with an aldehyde or ketone to form an imine after addition, proton transfers, and water loss. A secondary amine can form an enamine when an alpha H is available. Related nitrogen reagents form oximes (hydroxylamine), hydrazones (hydrazine derivatives), and semicarbazones (semicarbazide). Cyanide addition followed by protonation forms a cyanohydrin and creates a C–C bond.",
+            "stepTopics": [
+              "1. Imine bond",
+              "2. Enamine bond",
+              "3. Cyanohydrin carbon count"
+            ]
+          },
+          {
+            "id": "carbonyl-redox",
+            "title": "Aldehyde oxidation and hydride reduction",
+            "tag": "Separate addition from net redox",
+            "coreRule": "Aldehydes can be oxidized to carboxylic acids; ordinary ketones resist analogous oxidation without C–C cleavage. NaBH4 and LiAlH4 reduce aldehydes to primary alcohols and ketones to secondary alcohols. Hydride adds first, then oxygen is protonated in workup or by the medium.",
+            "stepTopics": [
+              "1. Aldehyde substrate",
+              "2. Oxidized product",
+              "3. Reduced product"
+            ]
+          }
+        ],
+        "exercises": [
+          {
+            "id": "addition-site",
+            "title": "Follow nucleophilic addition",
+            "lesson": "carbonyl",
+            "stages": [
+              "Select the atom attacked by a carbon nucleophile.",
+              "As the new sigma bond forms, the C=O pi pair moves to…",
+              "The immediate former-carbonyl geometry becomes approximately…"
+            ]
+          },
+          {
+            "id": "hemiacetal-identify",
+            "title": "Read oxygen substituents",
+            "lesson": "oxygen-addition",
+            "stages": [
+              "Select the carbon bearing two oxygen substituents.",
+              "One OH and one OR on that carbon identify a…",
+              "Converting it to an acetal with alcohol is favored by…"
+            ]
+          },
+          {
+            "id": "cyanohydrin-count",
+            "title": "Track the new carbon bond",
+            "lesson": "nitrogen-addition",
+            "stages": [
+              "Select the nitrile carbon added by cyanide.",
+              "How many carbons are in the cyanohydrin?",
+              "A secondary amine plus a ketone with alpha H typically forms…"
+            ]
+          },
+          {
+            "id": "hydride-product",
+            "title": "Predict carbonyl reduction",
+            "lesson": "carbonyl-redox",
+            "stages": [
+              "Select the carbonyl carbon receiving hydride.",
+              "After protonation, the product is a…",
+              "Name the product."
+            ]
+          }
+        ],
+        "scopeNote": "This is a scope inventory; full claim accuracy is reviewed in the separate lesson and exercise cases.",
+        "sourceLabels": [
+          {
+            "label": "Supplied Kaplan curriculum: Chapter 6; section scope checked against local body and summary",
+            "location": "organic_chemistry_kaplan/OEBPS/chapter06b.xhtml"
+          }
+        ],
+        "referencePassages": []
+      }
+    }
+  ]
+}

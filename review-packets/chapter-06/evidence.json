@@ -1,0 +1,506 @@
+{
+  "chapter": 6,
+  "sourceSnapshot": {
+    "sha256": "9fb3cedcd7853e59e27dce1e4217884c47c03626a5e31a799426accdb16e5d2e",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "carbonyl-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/carbonyl-step-1.png",
+      "sha256": "ccf9fe142dc30bcc93428ba12d5e3d90d85925819174ed20a67d29e3a1d59da4",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "carbonyl-step-1-challenge",
+      "kind": "learn-challenge",
+      "file": "screenshots/carbonyl-step-1-challenge.png",
+      "sha256": "abee11f9777961f24f91ad647418a675cc679057283ff649fe5398f749c420a4",
+      "width": 699,
+      "height": 611
+    },
+    {
+      "id": "carbonyl-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/carbonyl-step-2.png",
+      "sha256": "ba8e118ed55719fcb73b63266b2a68758c40a988d6b956956c79a92b2c6071e5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxygen-addition-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxygen-addition-step-1.png",
+      "sha256": "e5d406064a63adeec6e38909a824eac7efa4f7edbcd258068100260737c24bea",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxygen-addition-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxygen-addition-step-2.png",
+      "sha256": "74b6b265e5060f579200ffb52c2c5faa20c17d9179f9696f10a588f138b33a2c",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "oxygen-addition-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/oxygen-addition-step-3.png",
+      "sha256": "087b81c9ecb3f6dc81b61a34c078f6fb2bcfd7970f75124f09270d5cb9be2e62",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "nitrogen-addition-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/nitrogen-addition-step-1.png",
+      "sha256": "c20c1664ab79df6d87bf60e31e52082ec82620d4042e861d5163d76b492e0453",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "nitrogen-addition-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/nitrogen-addition-step-2.png",
+      "sha256": "5bd36a761fcb62ef7629c68f6761bcc28b7bd6ee8c9021077a8ae809c1f945c7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "nitrogen-addition-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/nitrogen-addition-step-3.png",
+      "sha256": "ca5a6209bfe35a439298db3713f2db786edd043647652549561a5c66f20fb237",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "carbonyl-redox-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/carbonyl-redox-step-1.png",
+      "sha256": "85412040fb2a8af684739468f1e19768d4ebd7e6d83e8d83374efde9d81bbbe5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "carbonyl-redox-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/carbonyl-redox-step-2.png",
+      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "carbonyl-redox-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/carbonyl-redox-step-3.png",
+      "sha256": "5ebc9c36404624cdb8f6d8a5d3c159b1e267caad0fb68fe924eba55f62da8171",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "addition-site-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/addition-site-stage-1-molecule.png",
+      "sha256": "c9e1767eb6ea9a0dd2960ecdf6bdab0b4d170565e584dc492ed72fde0cafaf2e",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "addition-site-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/addition-site-stage-1-question.png",
+      "sha256": "46f1a0263054f0444b14eee94c1b77db2ad5b102a30dece19267e6caf0607bfc",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "addition-site-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/addition-site-stage-1-feedback.png",
+      "sha256": "fc6ddcf14b753153e386baa8465131fa77fc2fa2e45cc95f414dfa9f4975511c",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "addition-site-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/addition-site-stage-2-molecule.png",
+      "sha256": "1a1af2670a5462840a376b852ea34646f5e724ee51bc72aa3c4c82932b467c70",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "addition-site-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/addition-site-stage-2-question.png",
+      "sha256": "3d1c2037ff915bc6fe0055d754d01bf35232cb18a87d6072e43162bd143ccfae",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "addition-site-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/addition-site-stage-2-feedback.png",
+      "sha256": "0361bdfce45bb02965a43394bc9eca599b5425b8e7e8c1e0e2d93891cc8567c7",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "addition-site-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/addition-site-stage-3-molecule.png",
+      "sha256": "6abfb2509cb814b4a9dee403ea1f21032bc246596cb2a310f4291ec30ec6cfe1",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "addition-site-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/addition-site-stage-3-question.png",
+      "sha256": "d464c3d658da08eb04d24d880dfb7799bd626a2042280d2cbe9ade38f99e9d68",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "addition-site-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/addition-site-stage-3-feedback.png",
+      "sha256": "65ddb16f37ad01f5bf8729de3aba9679c6a5ddf3e2703da0720026670ec058ff",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "addition-site-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/addition-site-complete.png",
+      "sha256": "7788785abe4f1f28114301f7d955f2de0d741a8d0da23ecb3bdafd757f109836",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "hemiacetal-identify-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hemiacetal-identify-stage-1-molecule.png",
+      "sha256": "886c1d295fce9f6b48b9a96d57bc139815ab91867cddecaa87529ca45d8ab822",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "hemiacetal-identify-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/hemiacetal-identify-stage-1-question.png",
+      "sha256": "217c06b6b7a6a1e5306af3eaca5d3b416186b5adc5c9b0474a3691b25479398f",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "hemiacetal-identify-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hemiacetal-identify-stage-1-feedback.png",
+      "sha256": "8c0017bf6967063a0552246332c14099b84875f6a383a2555fdb7ca8dc4314d9",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "hemiacetal-identify-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hemiacetal-identify-stage-2-molecule.png",
+      "sha256": "e5d406064a63adeec6e38909a824eac7efa4f7edbcd258068100260737c24bea",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hemiacetal-identify-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/hemiacetal-identify-stage-2-question.png",
+      "sha256": "b3eaf600bc8784b4efa5c632d78ec3e21c2d252a17673e58dbedb1e45de65ffb",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hemiacetal-identify-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hemiacetal-identify-stage-2-feedback.png",
+      "sha256": "b4ec320d7be1cc6ea90cbf9732a9741df58964020ac0cb91d036a5e3d7abce8f",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "hemiacetal-identify-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hemiacetal-identify-stage-3-molecule.png",
+      "sha256": "cc2cc9e0ff2722e9b034ab5826d1d83058d63dd25188c5f2a4145b1912a29b6b",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hemiacetal-identify-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/hemiacetal-identify-stage-3-question.png",
+      "sha256": "f211cc16afa45ffd47ef82e9e8e95aa8f14574057fb7f5c73bad227e72be728c",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hemiacetal-identify-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hemiacetal-identify-stage-3-feedback.png",
+      "sha256": "ed27dbdd408faaa3d6ad6e514334f8934cf52d3b45b7ac8b50f53fbff7d1a81c",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "hemiacetal-identify-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/hemiacetal-identify-complete.png",
+      "sha256": "3bef41f1a65192b9dde467bf003a35136f1c1ef0ef6ac61be133f5f1cb5e78e4",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "cyanohydrin-count-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyanohydrin-count-stage-1-molecule.png",
+      "sha256": "a138df3f8ee59a03954d92f4c19c1777bc603c4d3d7ccedad83c7bfc8992529e",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "cyanohydrin-count-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyanohydrin-count-stage-1-question.png",
+      "sha256": "4a0815d12a248a0d599bf4b23f325d7b8a6b5c091980d5522d0a84123dbbc457",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "cyanohydrin-count-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyanohydrin-count-stage-1-feedback.png",
+      "sha256": "5ade22120369259ce9e5dffc8ab8fa41f56946a1e9b752f31b8272d99d04f92f",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "cyanohydrin-count-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyanohydrin-count-stage-2-molecule.png",
+      "sha256": "93e2586c9dd45a438666f15efcd7b5b484d7a11b9da1274fd06a117c159fbbc4",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "cyanohydrin-count-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyanohydrin-count-stage-2-question.png",
+      "sha256": "8238fd0a3cef4b1597311bb77bf98a0f008131c63c5a0c9262834851cc865c3f",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "cyanohydrin-count-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyanohydrin-count-stage-2-feedback.png",
+      "sha256": "deb89c3c7a7c07f33c19f7fd1b5f2eae586ce00a37607dfe809900c621f78ed8",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "cyanohydrin-count-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyanohydrin-count-stage-3-molecule.png",
+      "sha256": "f5d2babc2aae2e40ce34d695e84f416daa8a5fda18aea1a9e63dd9f5faa8caff",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "cyanohydrin-count-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyanohydrin-count-stage-3-question.png",
+      "sha256": "f6c0d26208eb23e8db33a993bfd1ae2f3d59d544431857c0fb7ef90dc020f8c9",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "cyanohydrin-count-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyanohydrin-count-stage-3-feedback.png",
+      "sha256": "d7bbce9b945e40db9c2078995db3e7be0da13ab1f8b964391005a14b10c63dd7",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "cyanohydrin-count-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/cyanohydrin-count-complete.png",
+      "sha256": "fb30837709a2c93e1aa0e4bacb3c7faa9c486c0f771f8a25c9d0b35728fcb0cf",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "hydride-product-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydride-product-stage-1-molecule.png",
+      "sha256": "1d8ffbae41a8e653f5dea7ecc74ce72c73e3178b1818627ab44467905215307e",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "hydride-product-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydride-product-stage-1-question.png",
+      "sha256": "dc2e59f65a8179519492f7679fe5cf7a4d2f1ce554bb7aefa4bb826932c74620",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "hydride-product-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydride-product-stage-1-feedback.png",
+      "sha256": "0173568e439f96e2c95aa633af09ecf25e36a095325ce8b46011d3a731473a3a",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "hydride-product-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydride-product-stage-2-molecule.png",
+      "sha256": "0f2a5d2cd0f4d2655c730f29e0faf0f28fa830c00cde4a55651a5190d760e9c5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hydride-product-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydride-product-stage-2-question.png",
+      "sha256": "d341922100990bc7d65d0c4040ae7f41cb561e152e5d7b65fc53191b67a970b0",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hydride-product-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydride-product-stage-2-feedback.png",
+      "sha256": "ee53158175565411768cf7a9af4429d681f524cbfa6063c56627ea98298374f1",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "hydride-product-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydride-product-stage-3-molecule.png",
+      "sha256": "12ce5410c9043b5c318dcb7a430e7402283d35c89b522771588379277fb681f1",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hydride-product-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydride-product-stage-3-question.png",
+      "sha256": "c3677a8f2fba0bafc86700f3e28d4dc26a9a4360216de35e730367ef5922b1c6",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "hydride-product-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydride-product-stage-3-feedback.png",
+      "sha256": "348858c7d9a1334e6f879f63273938ec1e6bc48ae6685ce46cac68fab19faa06",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hydride-product-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/hydride-product-complete.png",
+      "sha256": "2fa5f0bb536ec5bae437fe9bf6df71e99fcd6c7e3024309781b0c9540bc000ef",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "d6dbd4251a4175fbaa3ea100b33c2c769fee95d1704831078465a40793a3f6b6",
+      "width": 1360,
+      "height": 1014
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "adc8019e3dc4ddeccd243b4c966c282c0eb007b503c9455bf4b265a101624f2b",
+      "width": 375,
+      "height": 2097
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "59759d75e9dd686d9a7f07ef17c2935f8b69c57ee3fbcfbcdcab1049c194d8fe",
+      "width": 375,
+      "height": 2097
+    }
+  ],
+  "interactions": [
+    {
+      "id": "carbonyl-step-1",
+      "result": "encoded challenge accepted"
+    },
+    {
+      "id": "addition-site-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "addition-site-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "addition-site-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hemiacetal-identify-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hemiacetal-identify-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hemiacetal-identify-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "cyanohydrin-count-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "cyanohydrin-count-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "cyanohydrin-count-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydride-product-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydride-product-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydride-product-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

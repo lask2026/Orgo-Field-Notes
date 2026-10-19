@@ -9,6 +9,9 @@
     "test:schema": "python scripts/validate_schema.py",
     "test:browser": "node tests/browser.mjs",
     "test:regression": "node tests/regression.mjs",
+    "audit:build": "node scripts/audit/build-packets.mjs",
+    "audit:check": "node scripts/audit/check-packets.mjs",
+    "test:audit": "node --test tests/audit.test.mjs",
     "dev": "node scripts/serve.mjs"
   },
   "devDependencies": { "playwright": "1.62.1" }

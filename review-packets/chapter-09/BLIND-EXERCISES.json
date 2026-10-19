@@ -1,0 +1,248 @@
+{
+  "chapter": 9,
+  "sourceSnapshot": {
+    "sha256": "2636e13ed7a1d7a695b328f026c6124432101be86e77a6eba8e7ace43d123406",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "exercises": [
+    {
+      "id": "cyclic-derivative",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "N",
+            "x": 100,
+            "y": 60
+          },
+          {
+            "e": "C",
+            "x": 185,
+            "y": 60
+          },
+          {
+            "e": "C",
+            "x": 185,
+            "y": 145
+          },
+          {
+            "e": "C",
+            "x": 100,
+            "y": 145
+          },
+          {
+            "e": "O",
+            "x": 240,
+            "y": 25
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            1,
+            4,
+            2
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "cyclic-derivative:stage-1",
+          "type": "atoms",
+          "prompt": "Select the ring nitrogen and carbonyl carbon."
+        },
+        {
+          "id": "cyclic-derivative:stage-2",
+          "type": "number",
+          "prompt": "How many atoms are in the ring?",
+          "unit": "ring atoms"
+        },
+        {
+          "id": "cyclic-derivative:stage-3",
+          "type": "choice",
+          "prompt": "The functional-group family is…",
+          "options": [
+            "Lactam",
+            "Lactone",
+            "Ether"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acyl-order",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 55,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 115,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 115,
+            "y": 25
+          },
+          {
+            "e": "O",
+            "x": 175,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 235,
+            "y": 85
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "acyl-order:stage-1",
+          "type": "atoms",
+          "prompt": "Select the electrophilic acyl carbon."
+        },
+        {
+          "id": "acyl-order:stage-2",
+          "type": "choice",
+          "prompt": "After addition, what restores the carbonyl?",
+          "options": [
+            "Collapse of a tetrahedral intermediate with leaving-group departure",
+            "Free rotation around C=O",
+            "Loss of the methyl carbon as methane"
+          ]
+        },
+        {
+          "id": "acyl-order:stage-3",
+          "type": "choice",
+          "prompt": "Among comparable ordinary anhydrides, esters, and amides, which is least reactive toward acyl substitution?",
+          "options": [
+            "Anhydride",
+            "Ester",
+            "Amide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydrolysis-products",
+      "molecule": {
+        "atoms": [
+          {
+            "e": "C",
+            "x": 55,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 115,
+            "y": 85
+          },
+          {
+            "e": "O",
+            "x": 115,
+            "y": 25
+          },
+          {
+            "e": "O",
+            "x": 175,
+            "y": 120
+          },
+          {
+            "e": "C",
+            "x": 235,
+            "y": 85
+          }
+        ],
+        "bonds": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ]
+        ]
+      },
+      "stages": [
+        {
+          "id": "hydrolysis-products:stage-1",
+          "type": "atoms",
+          "prompt": "Select the O-bound methyl carbon that leaves with the alkoxy fragment."
+        },
+        {
+          "id": "hydrolysis-products:stage-2",
+          "type": "choice",
+          "prompt": "Under excess aqueous NaOH, the major acid-derived product is…",
+          "options": [
+            "Acetate",
+            "Neutral ethanoic acid",
+            "Ethanal"
+          ]
+        },
+        {
+          "id": "hydrolysis-products:stage-3",
+          "type": "text",
+          "prompt": "What alcohol is produced from the O-methyl group?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Review Chapter 5: Alcohols of Orgo Field Notes. Read the attached PDF as an audit packet, not as a trusted textbook. It contains original app content and labeled screenshots.
+
+Audit every lesson card, walkthrough step, molecular name/formula/charge, graph, diagram, atom selection, hint, answer key, option feedback, and explanation. Re-derive answers. Check curriculum coverage against the included section-heading checklist. Look for scientifically incorrect claims, missing reaction conditions, stereochemical errors, ambiguous questions, valid answer aliases, and misleading highlights/arrows. Check the visual evidence for clipping, readability, labels and consistency with explanations.
+
+For each finding give the exact item ID/page, severity (critical/major/minor), problematic claim, reasoning, supporting evidence, proposed correction, and confidence. Distinguish confirmed errors from suspicions. Source titles and URLs are not supplied reference passages: do not pretend to have read them. Ask for an authoritative excerpt when needed.
+
+Return a coverage checklist using the item IDs, and list all unreviewed/uncertain items. Screenshots cannot prove that clicks, persistence or animations work; those need execution. Do not claim to run the app. Do not call a chapter verified just because no errors were found. All model output is a candidate review pending adjudication.
+
+For independent solving, first use 01-BLIND-EXERCISES.pdf in a separate chat with no full review packet or keys. Solve each numbered stage from the graph, diagram and context, marking missing information. Save that attempt before opening 02-CHAPTER-REVIEW.pdf, then compare it with the keys.

@@ -1,0 +1,382 @@
+{
+  "chapter": 3,
+  "sourceSnapshot": {
+    "sha256": "8a59db9f1bd641519bbc53e66a48dc91e2f98451fcadaed885ac48986c9e616b",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "orbitals-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/orbitals-step-1.png",
+      "sha256": "33438bf15f78ca82723e2066b752b8eaf8497ee4d610d6e5638168fce2ab1c51",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "orbitals-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/orbitals-step-2.png",
+      "sha256": "3e007634678e3e93ea2b4369ad30cefaffe6865d0cf5cbc5923b603fde6da398",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "sigma-pi-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/sigma-pi-step-1.png",
+      "sha256": "3e007634678e3e93ea2b4369ad30cefaffe6865d0cf5cbc5923b603fde6da398",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "sigma-pi-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/sigma-pi-step-2.png",
+      "sha256": "f73b85208ec16a0a248b9ec70212522a5889d38cdd4c621620b36d3776915307",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hybridization-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/hybridization-step-1.png",
+      "sha256": "9507e25517c70e5499e92900b53da837e8734f445130dfb76774f523c9af3d38",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hybridization-step-1-challenge",
+      "kind": "learn-challenge",
+      "file": "screenshots/hybridization-step-1-challenge.png",
+      "sha256": "d638edafd96a4576297bc9a7daeac7a5f47d1e5cd1cc84703130548f4de95a30",
+      "width": 699,
+      "height": 647
+    },
+    {
+      "id": "hybridization-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/hybridization-step-2.png",
+      "sha256": "7ee0ee4b7cacdf260208b4cf37bb7ae9f0440035ee149a66bba0cd735874238a",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hybridization-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/hybridization-step-3.png",
+      "sha256": "5c9b2112c4eb83471adfe26739de9017c3d644eed9001ec38ac37fd448916c8a",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quantum-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quantum-stage-1-molecule.png",
+      "sha256": "edce0fc5c35a9da8d11b26d62e21ebf504668ae34bf16940f8badc4ca3872a71",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quantum-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/quantum-stage-1-question.png",
+      "sha256": "e35c66a88fb29097af925caed0a00f44caf30c0572aebd220c052f9c067fe67e",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "quantum-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quantum-stage-1-feedback.png",
+      "sha256": "1d3047c6d7ac1f91dc802932adafd11f4e57e97a44fc8fc7fe20453ee2be6bde",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "quantum-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quantum-stage-2-molecule.png",
+      "sha256": "edce0fc5c35a9da8d11b26d62e21ebf504668ae34bf16940f8badc4ca3872a71",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quantum-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/quantum-stage-2-question.png",
+      "sha256": "9bd86d131600fe0be9eb5885b280695760553bc36a34347aeb197cda556009d3",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "quantum-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quantum-stage-2-feedback.png",
+      "sha256": "b0189573606f3fe97e8405e79d9e12d55ebdf9fa50f4d27cec05ca38824c94d3",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "quantum-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/quantum-stage-3-molecule.png",
+      "sha256": "edce0fc5c35a9da8d11b26d62e21ebf504668ae34bf16940f8badc4ca3872a71",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "quantum-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/quantum-stage-3-question.png",
+      "sha256": "e52cc83e249150429ea3c52912ce348e4d92118d8c1a7f3994c6c7938dccae24",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "quantum-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/quantum-stage-3-feedback.png",
+      "sha256": "487bf6fbfa1d7d12e276473c9919f1f7140c6e6f3f35fe962ed3eb3846538d7a",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "quantum-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/quantum-complete.png",
+      "sha256": "a08b7dd549fe72b39c965614a1488ccea76e620315519f2cf54980e93e140c92",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "bond-count-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/bond-count-stage-1-molecule.png",
+      "sha256": "89d65d6bf75b148059611fa513e735872838e2f6f1006cbbb8a07b20a7530d9f",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "bond-count-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/bond-count-stage-1-question.png",
+      "sha256": "76b2d66413d622812e968d4052a6d513429cf73fc42b4b8f900b06128334e6e0",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "bond-count-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/bond-count-stage-1-feedback.png",
+      "sha256": "277fe2cf2f0daa29664fecbc5f2abab7d6d65d075a4fa78420bfd6acf38f5f90",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "bond-count-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/bond-count-stage-2-molecule.png",
+      "sha256": "f73b85208ec16a0a248b9ec70212522a5889d38cdd4c621620b36d3776915307",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "bond-count-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/bond-count-stage-2-question.png",
+      "sha256": "4de4240e01983b6f9e78dbc3bfed761619062cd8c22bb29bf45aabca4e29f1d3",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "bond-count-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/bond-count-stage-2-feedback.png",
+      "sha256": "ada0ae4f143d37e427974adb54ca1186d09268bb118b097de9c34038e393b2d2",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "bond-count-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/bond-count-stage-3-molecule.png",
+      "sha256": "7f3c38e6dd76a570f1c148bdac46b311a0e8a7079c063f88b5794d46eb4e5b27",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "bond-count-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/bond-count-stage-3-question.png",
+      "sha256": "e4ff5b7f28900c9363d8944e0a5d3dca708178a3cb1c873e9978913a18888f20",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "bond-count-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/bond-count-stage-3-feedback.png",
+      "sha256": "f52ba12f0b18eea2153db164402b5e50a0e19e51c273ccd0da0b28a30c68550b",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "bond-count-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/bond-count-complete.png",
+      "sha256": "2fb753403d466a82a3f59cb3adda0f7d89561b706d7eb5013bd749c69ec4b401",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "amide-resonance-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/amide-resonance-stage-1-molecule.png",
+      "sha256": "b564a31236f13e1791c67d036b2a2af1d093ea594ed1f8b3b213217684dcea96",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "amide-resonance-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/amide-resonance-stage-1-question.png",
+      "sha256": "d4f99dfb43fed0d263f9f963221a1c2694ccc9cd0a4b43dd7f9018932e97dc3d",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "amide-resonance-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/amide-resonance-stage-1-feedback.png",
+      "sha256": "101a57d04a17c5bc38ea1602f10bc62b3ae95eaac863fcc557f09b7e15a058b6",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "amide-resonance-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/amide-resonance-stage-2-molecule.png",
+      "sha256": "b5049733554bd07df68d3251d30a9fc84e63764c5aaed7635db01b2271cab9d4",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "amide-resonance-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/amide-resonance-stage-2-question.png",
+      "sha256": "209d8e65725e0697c6b12544a8d4a63953f15cf8ec4f2f2397884d49a664939c",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "amide-resonance-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/amide-resonance-stage-2-feedback.png",
+      "sha256": "26104c9d8dc1ca163bcff1c2c21ba01513168e4f52db4702650056e231835527",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "amide-resonance-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/amide-resonance-stage-3-molecule.png",
+      "sha256": "da37548982d6c88631fba11d667a710a983cab1d142117a9fbd958afd19fa655",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "amide-resonance-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/amide-resonance-stage-3-question.png",
+      "sha256": "18c993309523800cd7911e367c6f46bce82ae8b868c4da943d2758d436a695bd",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "amide-resonance-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/amide-resonance-stage-3-feedback.png",
+      "sha256": "f5245410f1430b30f76d80b0901dc8f64fda857e2e8915aba91e8e0954ecf1d4",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "amide-resonance-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/amide-resonance-complete.png",
+      "sha256": "3b5da9398cbd9b004cf361bc8313b0a50f39ee4ca4570488eaa0c47cfd387e9c",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "afcb2bcd971de86aca3ed42c2bcecb96bf1f4e2239cbf231635e2ca570879d66",
+      "width": 1360,
+      "height": 1000
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "52b692fab031add606d863aded4e67d9560dadc7333e99055ed9bfc06fb9110d",
+      "width": 375,
+      "height": 2041
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "baaf414dd6a2c5c716694146bb3a5ec1f4964305120dddf04ead098109d3a89a",
+      "width": 375,
+      "height": 2041
+    }
+  ],
+  "interactions": [
+    {
+      "id": "hybridization-step-1",
+      "result": "encoded challenge accepted"
+    },
+    {
+      "id": "quantum-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "quantum-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "quantum-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "bond-count-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "bond-count-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "bond-count-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "amide-resonance-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "amide-resonance-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "amide-resonance-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

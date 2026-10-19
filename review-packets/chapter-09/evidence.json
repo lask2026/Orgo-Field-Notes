@@ -1,0 +1,386 @@
+{
+  "chapter": 9,
+  "sourceSnapshot": {
+    "sha256": "2636e13ed7a1d7a695b328f026c6124432101be86e77a6eba8e7ace43d123406",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "families-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/families-step-1.png",
+      "sha256": "7799679ee3555c8817556e745af0bc61283f9e3ee481b8f95696248a8827c9cd",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "families-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/families-step-2.png",
+      "sha256": "972bf9a6bdf9b79c725818479054f5bf8fdbc05d47a8ceff97c696935e48f9e5",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "families-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/families-step-3.png",
+      "sha256": "9b71b87dd176c6ffb538ef8e9e7ed336fe51cef53ef8a43f65b999cf29864d13",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acyl-mechanism-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/acyl-mechanism-step-1.png",
+      "sha256": "1e5a9bfe0370457aed379caffeff12552147b4fcd7520c0d933ee017713c4d67",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acyl-mechanism-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/acyl-mechanism-step-2.png",
+      "sha256": "8fd9f7228a9cdd851eca282e57e8c0e19fe3cec80d073f12a0819074e86ee479",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acyl-mechanism-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/acyl-mechanism-step-3.png",
+      "sha256": "dd6b35aa998177dd6893bf2c566e95d97091967969506d69b4c1e5e0c7ecd4fb",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "derivative-reactions-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/derivative-reactions-step-1.png",
+      "sha256": "57abf45dca97ffdb00aea593960b09e2451a6d75eeda1fa8a9ce76c5f1be4c99",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "derivative-reactions-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/derivative-reactions-step-2.png",
+      "sha256": "b4465109d4f0a68b763636d8052b604fdd5e1529caae9026e4b73670f1a071f6",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "derivative-reactions-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/derivative-reactions-step-3.png",
+      "sha256": "5fccc75301c8e3fcdb5226fb10cf3cf429b6a810235618e1e1f4803d1950a9c7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "cyclic-derivative-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyclic-derivative-stage-1-molecule.png",
+      "sha256": "b4138907eb13eaa39ee010e305d69c7ebeb4dc29253b3cd15ff51a357de1da19",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "cyclic-derivative-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyclic-derivative-stage-1-question.png",
+      "sha256": "7a1c9fb12e1c05ba5286075310163ec095e32399f7f0534255b83b7b428ec752",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "cyclic-derivative-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyclic-derivative-stage-1-feedback.png",
+      "sha256": "cb3785c4a33baa8621dce8298b7d18d4951f851e0343ac2de8499d55983ae812",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "cyclic-derivative-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyclic-derivative-stage-2-molecule.png",
+      "sha256": "5d92d15bfe2fea611be96894f46fadcc0cb58b004be66ac7e6c8104ff891c756",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "cyclic-derivative-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyclic-derivative-stage-2-question.png",
+      "sha256": "28ea3ac5755d004666da55c2da94fa91d9a79b3c02557b90193fbc135e95f040",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "cyclic-derivative-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyclic-derivative-stage-2-feedback.png",
+      "sha256": "da7bfa66a2ab6b79b0b46f8508375e3496eab8193070eda8a21b0756520c5653",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "cyclic-derivative-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/cyclic-derivative-stage-3-molecule.png",
+      "sha256": "a38820be469ef0cbace414124c1852348a048428b34785256fb424c4dbf3e56c",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "cyclic-derivative-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/cyclic-derivative-stage-3-question.png",
+      "sha256": "2905fc074eb80703b8ab4c7c233c9135d87c1662e6385b50335cc87356b9f73d",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "cyclic-derivative-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/cyclic-derivative-stage-3-feedback.png",
+      "sha256": "7988a6e30bd897cbe53f2599b7bf9c372a3f68b33766eb9702d3900a879ab0d2",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "cyclic-derivative-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/cyclic-derivative-complete.png",
+      "sha256": "ee103796142d12ccf80cf982d38d26d12612853a9df81c6d8a69ce25cde184be",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "acyl-order-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acyl-order-stage-1-molecule.png",
+      "sha256": "ad8e51946d9fea8c69edc071b54cb1cb6f4013f14667ddeaa614bee4130db77e",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "acyl-order-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/acyl-order-stage-1-question.png",
+      "sha256": "c8ce7f7940a474ab027e8d2b7a58fbc2a9c964566beb32c689e297e666cba578",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "acyl-order-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acyl-order-stage-1-feedback.png",
+      "sha256": "60293fe30ef09cc99ea79503fe2153c455753ca71ab70fbebd79ce5324920027",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "acyl-order-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acyl-order-stage-2-molecule.png",
+      "sha256": "b7e24cf77a6213d284590262fa081fc84de9c4e1e0a158a2af098355cf05e6a1",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acyl-order-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/acyl-order-stage-2-question.png",
+      "sha256": "50c917070a8e77c9916b10f76469a7bb1122c34b763dc9cfa8b2ac8b4c2f7c5e",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "acyl-order-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acyl-order-stage-2-feedback.png",
+      "sha256": "ed66fbfad408fe1cb6f224dbd56847053d24a82753d9add4d27a6763055fc6e8",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "acyl-order-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acyl-order-stage-3-molecule.png",
+      "sha256": "8d8a0dc31e4645ff59f5434c4b6f6136a296ae371a38660622089ef373151732",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acyl-order-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/acyl-order-stage-3-question.png",
+      "sha256": "8423a50f20d610d4e973c0701c9e49d25a1f07d906f468e16c1909afc09e6c1c",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "acyl-order-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acyl-order-stage-3-feedback.png",
+      "sha256": "a12059bdbce3c3a2615dd419b22154afce35834092ad322a409fce7b35cc474c",
+      "width": 607,
+      "height": 351
+    },
+    {
+      "id": "acyl-order-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/acyl-order-complete.png",
+      "sha256": "02915b78fa697bca0b39d971654068173acc89d6b9fa18bf58cd022c9a8c8089",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "hydrolysis-products-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydrolysis-products-stage-1-molecule.png",
+      "sha256": "ad8e51946d9fea8c69edc071b54cb1cb6f4013f14667ddeaa614bee4130db77e",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "hydrolysis-products-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydrolysis-products-stage-1-question.png",
+      "sha256": "665d8c5afd201f41af2e478c201afbd62ff259b57af26e7f314ca8a326009bfd",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "hydrolysis-products-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydrolysis-products-stage-1-feedback.png",
+      "sha256": "d3eb1285714c3445a0833e06dfab97f5973343bff8535bcff527751fe743449e",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "hydrolysis-products-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydrolysis-products-stage-2-molecule.png",
+      "sha256": "c0c41f92eac5a40926846dbe23640e1cf05a306183071221abb66f10e1bdb865",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hydrolysis-products-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydrolysis-products-stage-2-question.png",
+      "sha256": "9132d788b199c9fb63a74ef3c41d946c2bfe62fd1e8e8c0f73dfcd1b808a5043",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hydrolysis-products-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydrolysis-products-stage-2-feedback.png",
+      "sha256": "9ae2279653bd1a2a9caac13e364e8a1a47b17496764597b073bfa1052486cfa6",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "hydrolysis-products-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/hydrolysis-products-stage-3-molecule.png",
+      "sha256": "8d8a0dc31e4645ff59f5434c4b6f6136a296ae371a38660622089ef373151732",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "hydrolysis-products-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/hydrolysis-products-stage-3-question.png",
+      "sha256": "c4cc7d5af3ce0e89d7e71d15c352dd3dd3c07b1120d0974ae1707a8aa6d6937e",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "hydrolysis-products-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/hydrolysis-products-stage-3-feedback.png",
+      "sha256": "6ca527456c2c082aab44c898538b42de881393dc6f095900cc6e8952e2ce3d52",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "hydrolysis-products-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/hydrolysis-products-complete.png",
+      "sha256": "950236250c0736531fdfed20ac0aa448b254c62b5d87a4c0afb5be3b43f9dfef",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "97811dab033e631e66e99b72ebacd0ba30225d9d78961ce21cd3b5897eba28f8",
+      "width": 1360,
+      "height": 1008
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "61865637907df00707e114181d09fc4f25f76b0d57525adaa1945a5287363b9f",
+      "width": 375,
+      "height": 1910
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "9ae7c11717d094609ce2f65805981544fd247a849cc6465f9f7693ab1ba9bc85",
+      "width": 375,
+      "height": 1910
+    }
+  ],
+  "interactions": [
+    {
+      "id": "cyclic-derivative-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "cyclic-derivative-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "cyclic-derivative-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acyl-order-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acyl-order-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acyl-order-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydrolysis-products-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydrolysis-products-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "hydrolysis-products-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

@@ -1,0 +1,654 @@
+{
+  "chapter": 2,
+  "sourceSnapshot": {
+    "sha256": "3790c3072a422920a2793636cc0e671c8e2a766731209b66b68c3e110873ccb4",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "connectivity-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/connectivity-step-1.png",
+      "sha256": "01b7dceab1c8032f4eac390f2e6a44411bcecc267a2c47a7e750d61b5c31faf6",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "connectivity-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/connectivity-step-2.png",
+      "sha256": "90ae21ccb687e4f077de8b7c1a68c7eb48b5df2bbd7898eeba2602c2033ea33a",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "connectivity-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/connectivity-step-3.png",
+      "sha256": "06f1a17d6c9223b9b7e64d29595ffa6f0e79b3dc73fad4cedddbe702ec304899",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "conformations-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/conformations-step-1.png",
+      "sha256": "4be9726ed035ae6083f8aeb641472daa374e9244217929cd88bc931ec8377214",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "conformations-step-1-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/conformations-step-1-diagram.png",
+      "sha256": "48abbd5349b04a8c0fb94766e4ae4a8875ade1410158359b3c77c89c2f8b7d52",
+      "width": 661,
+      "height": 403
+    },
+    {
+      "id": "conformations-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/conformations-step-2.png",
+      "sha256": "fdb8aadd16107647eaccccc4a660a6810dbff7f3ac00b1ebacf0d638f14e3f40",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chirality-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/chirality-step-1.png",
+      "sha256": "ffeaeb8a3787232e4c5e4e5a50f3aede5002e80b48ff818364a71ef52609fb41",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "chirality-step-1-challenge",
+      "kind": "learn-challenge",
+      "file": "screenshots/chirality-step-1-challenge.png",
+      "sha256": "3be72c07913b16c8ccea134c878ea42c7d0175912a2a3782c413bf93f0a19887",
+      "width": 699,
+      "height": 647
+    },
+    {
+      "id": "chirality-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/chirality-step-2.png",
+      "sha256": "c6ac8ad43e42829927f0bc1e93aadfc98bc15ac05fc66bd854edbb6f4e442d36",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "configuration-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/configuration-step-1.png",
+      "sha256": "b984bf4635ae12e7cd53fa442aae9b735f0edcb81fbc6f02c9b8753be9ced873",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "configuration-step-1-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/configuration-step-1-diagram.png",
+      "sha256": "917815754d776d38b8eba1e94842e4e8f10a2358f1359741903f36ddd3fb6503",
+      "width": 661,
+      "height": 300
+    },
+    {
+      "id": "configuration-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/configuration-step-2.png",
+      "sha256": "a565b8c66c7ec705368182ac409c342b65dac8cd07456ee75ac5b7dc39fcbaeb",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "configuration-step-2-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/configuration-step-2-diagram.png",
+      "sha256": "917815754d776d38b8eba1e94842e4e8f10a2358f1359741903f36ddd3fb6503",
+      "width": 661,
+      "height": 300
+    },
+    {
+      "id": "configuration-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/configuration-step-3.png",
+      "sha256": "a565b8c66c7ec705368182ac409c342b65dac8cd07456ee75ac5b7dc39fcbaeb",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "configuration-step-3-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/configuration-step-3-diagram.png",
+      "sha256": "64068b5d227cc9116646ff0495d55648f06d28107e0c8c9c92ed991f353ab25d",
+      "width": 661,
+      "height": 300
+    },
+    {
+      "id": "alkene-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/alkene-step-1.png",
+      "sha256": "556aedde258e8882064ca2d455648e75b8c55527752ddb45c1958f4e9629b7d2",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "alkene-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/alkene-step-2.png",
+      "sha256": "d36027a64752982b76e8bc8729d53f6619cd121229c60d51681d95640a602041",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "isomer-pair-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/isomer-pair-stage-1-molecule.png",
+      "sha256": "dffe5ec5c2d8d74284979ea8487c47418a177ba0233c81295d06d23b67bd3e9d",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "isomer-pair-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/isomer-pair-stage-1-question.png",
+      "sha256": "75c8862af31b2b9bc4f4828f91ab3d709fddac9e401cc517d1de56738c726068",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "isomer-pair-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/isomer-pair-stage-1-feedback.png",
+      "sha256": "19d47161a386dba23bb6cc231b23b100796c0d06cd0b60a9baba981ca4cbd505",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "isomer-pair-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/isomer-pair-stage-2-molecule.png",
+      "sha256": "5c19eccc6eede6f9f4e44d9e5858b4c9f8975b54c1ba99e9489b0fd4e60ee2eb",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "isomer-pair-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/isomer-pair-stage-2-question.png",
+      "sha256": "0ad7e33a0902179fa503fc0d22d062ead9d71692fcfac6335992870e076b9a89",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "isomer-pair-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/isomer-pair-stage-2-feedback.png",
+      "sha256": "cbaa68374d04bcf51c6f822f1d624c8266263ebf9f481a73d4f1fe1e00fd35eb",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "isomer-pair-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/isomer-pair-stage-3-molecule.png",
+      "sha256": "382c3789c9f0ab763311e938b6fe1b6b0518d621bd3d4d38fd6999b4e26ec62c",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "isomer-pair-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/isomer-pair-stage-3-question.png",
+      "sha256": "3b47b854ecf29f1fb255a273705b44e81b390e2b3906b60977a275905acf565b",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "isomer-pair-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/isomer-pair-stage-3-feedback.png",
+      "sha256": "67d66717a4aebc648b1ac0931cf381c7152118fec439ba80fc5194ce1d2df4ae",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "isomer-pair-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/isomer-pair-complete.png",
+      "sha256": "fffa44984b9a8c704d908f43a0dea46d568a8b8e9002788d2ccc252c7f8fc56f",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "butane-rotation-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/butane-rotation-stage-1-molecule.png",
+      "sha256": "0cd877a893807c42f417d8be71536f274e5f4fd1c25079107993f180e98889ec",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "butane-rotation-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/butane-rotation-stage-1-question.png",
+      "sha256": "af0d858dd1223f88ef7f0fe3802efd7e6c7fcb75ba7dcec6c975c3d0ff19e390",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "butane-rotation-diagram",
+      "kind": "practice-diagram",
+      "file": "screenshots/butane-rotation-diagram.png",
+      "sha256": "b28baa760fb0a8b8c6e397d29e8fca0b80ffb7269b947b0c1809500a034b87d3",
+      "width": 661,
+      "height": 403
+    },
+    {
+      "id": "butane-rotation-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/butane-rotation-stage-1-feedback.png",
+      "sha256": "697a0434978be9dceb18416dfea6d6ace3dc71d6a14d64e1938655b6b34cde5c",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "butane-rotation-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/butane-rotation-stage-2-molecule.png",
+      "sha256": "190affef1af2163d9b4ce07ddc5a46d4dbadd43f4d65b8e3cbeb88ca377e1a74",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "butane-rotation-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/butane-rotation-stage-2-question.png",
+      "sha256": "8c2dcdbccdd9ed1249986c56a0ebe0e62787dd5ded830665d5e9f9fea12f76eb",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "butane-rotation-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/butane-rotation-stage-2-feedback.png",
+      "sha256": "bf1e1f3157d7f310d1c88f954fb750bc5672924e87f77d64514028e9ecf87a51",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "butane-rotation-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/butane-rotation-stage-3-molecule.png",
+      "sha256": "6c73461485e2d73b2c63645201d09545032dae732d001191c37b0c248dcc8d15",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "butane-rotation-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/butane-rotation-stage-3-question.png",
+      "sha256": "1d23ff6bff0ae60b1cee362fb4e622dc774134ce453799cd3b362470da1e2dea",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "butane-rotation-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/butane-rotation-stage-3-feedback.png",
+      "sha256": "34e30a8cd6194ea8c54511dcf36a6cbc1fe5322a27557a291599367adedea67c",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "butane-rotation-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/butane-rotation-complete.png",
+      "sha256": "5ebbb32fa4ea1b81391e6efdf56d343b5c699187e6e8473b87e24e0f6ad4d5b6",
+      "width": 1324,
+      "height": 988
+    },
+    {
+      "id": "stereocenters-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/stereocenters-stage-1-molecule.png",
+      "sha256": "769b3c3cbea80c3b0eb478a411baf7c1dd164aa73153e2d1326c1424ea48b48f",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "stereocenters-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/stereocenters-stage-1-question.png",
+      "sha256": "74aec9dbce7f0524ee31f8da378ad9152b07198c8e0ce95ba2bc1fce218ddb47",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "stereocenters-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/stereocenters-stage-1-feedback.png",
+      "sha256": "9a816f0a2688fab684fa708ec5af44da79c8f324c32d32b892cdeea0578036ae",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "stereocenters-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/stereocenters-stage-2-molecule.png",
+      "sha256": "c6ac8ad43e42829927f0bc1e93aadfc98bc15ac05fc66bd854edbb6f4e442d36",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "stereocenters-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/stereocenters-stage-2-question.png",
+      "sha256": "368e2a1f87b99c7e6df780d5121c337ad4668c761950d49c40ea897409f2cd68",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "stereocenters-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/stereocenters-stage-2-feedback.png",
+      "sha256": "ad3f2d9407d477c69a28477fda4646845bafc616d0d2fe9ce6c81d8c15e542cc",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "stereocenters-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/stereocenters-stage-3-molecule.png",
+      "sha256": "e07afad12fbd36f9ac9da7b74b8f52387c41250940a5af98b2cec1b172e0de6e",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "stereocenters-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/stereocenters-stage-3-question.png",
+      "sha256": "746dd8a917d0b55129f234bbbc787480b2050cfb1b668472e86bad294833c88d",
+      "width": 607,
+      "height": 280
+    },
+    {
+      "id": "stereocenters-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/stereocenters-stage-3-feedback.png",
+      "sha256": "68cf304e84260c6c72c612dab48d21baba7288e067b619948a37a033d96786a7",
+      "width": 607,
+      "height": 316
+    },
+    {
+      "id": "stereocenters-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/stereocenters-complete.png",
+      "sha256": "d2dc5764df03e7c1dd2a91c4fd39047611d5c712d3f3f85a946e23f4261f36ef",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "fischer-cip-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/fischer-cip-stage-1-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "fischer-cip-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/fischer-cip-stage-1-question.png",
+      "sha256": "4114787962ccd3dbfd89e8e98393fe22d3cec64ea3903aacb214a31e4feefa75",
+      "width": 607,
+      "height": 341
+    },
+    {
+      "id": "fischer-cip-diagram",
+      "kind": "practice-diagram",
+      "file": "screenshots/fischer-cip-diagram.png",
+      "sha256": "2afa82b3e8a81381d254bee7e733ab919c494bc30a04c29ce9be4eab56338523",
+      "width": 661,
+      "height": 300
+    },
+    {
+      "id": "fischer-cip-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/fischer-cip-stage-1-feedback.png",
+      "sha256": "78545fe53965fce1da2db7b2a4f458ff2b7da3c665541d955c626103d642f9fa",
+      "width": 607,
+      "height": 376
+    },
+    {
+      "id": "fischer-cip-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/fischer-cip-stage-2-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "fischer-cip-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/fischer-cip-stage-2-question.png",
+      "sha256": "d1081f21fa311a6ae24c612348237cdb048cc1c791154c96c772862c374f03d4",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "fischer-cip-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/fischer-cip-stage-2-feedback.png",
+      "sha256": "a1e065f396dc2a6af33e9c643536901f3f5c8d5086de2b7cd00a0931eb4a0940",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "fischer-cip-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/fischer-cip-stage-3-molecule.png",
+      "sha256": "daebd801d24e67193eff48f3934c488c76468bc096bea363864548e83c758057",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "fischer-cip-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/fischer-cip-stage-3-question.png",
+      "sha256": "9e9aa57aba4c682f57d337f1ce76d23385c8bdec1ecfdca70ec487a75837318a",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "fischer-cip-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/fischer-cip-stage-3-feedback.png",
+      "sha256": "57c8968c8fc73dc3b700047915771b0f261f225ac9bd33397d02b8addb0f04a3",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "fischer-cip-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/fischer-cip-complete.png",
+      "sha256": "04de144c9f52a46a239d058b041cfa0be2eaa0ff6ca54f50e883d3b26fbbfbb2",
+      "width": 1324,
+      "height": 885
+    },
+    {
+      "id": "ez-ee-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/ez-ee-stage-1-molecule.png",
+      "sha256": "ffd882aa4413bb5bdc5ac88662e865c494be3f024c39467aafd5d81b8105dce5",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "ez-ee-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/ez-ee-stage-1-question.png",
+      "sha256": "e46d9f6332d858a448113c05bb110dab2c364308b7610c21dd2d6c1cf435eac3",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "ez-ee-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/ez-ee-stage-1-feedback.png",
+      "sha256": "dc4cca9a60e6e1ae8b315a7550e1545a072b8a2f0715be1ad31a435bfba44d26",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "ez-ee-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/ez-ee-stage-2-molecule.png",
+      "sha256": "ef1d8f39441cf3e46cc1d9d951f26194f85fb01d1713ebab6f740fea109e3553",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "ez-ee-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/ez-ee-stage-2-question.png",
+      "sha256": "6d00da5fbbf01deb1a0f9be41d00c72097c10d3e81f0627c69e1e0297abb2fc9",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "ez-ee-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/ez-ee-stage-2-feedback.png",
+      "sha256": "c32cbc46379cb37d8ab2cf4085520388bebc98ce35c1ba3b190fdf1d4a24f781",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "ez-ee-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/ez-ee-stage-3-molecule.png",
+      "sha256": "34498a8234997edca0fcb73b4b2d4a81a12f004820281e146682d3103b13fd89",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "ez-ee-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/ez-ee-stage-3-question.png",
+      "sha256": "99ce2097d815578a7ebf11258fac7f8beb045039196903dc9a43344aa090b205",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "ez-ee-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/ez-ee-stage-3-feedback.png",
+      "sha256": "1b07829f8e5501bcf1cd3dd8dab0076c42a1ac41de561c244d6065237864a54c",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "ez-ee-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/ez-ee-complete.png",
+      "sha256": "a0e97f84980d6ce97d73854833527353d12c7df178714e21ab206c6ded6a7fd4",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "c98a7def2b08f9045868ad2cbd0d337668e695ef213a929ce35d7e741f1c26d3",
+      "width": 1360,
+      "height": 1055
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "06b2932353fcaa927bef5dc61c5347c07a38ee4a07de3622c26d7a662a33402d",
+      "width": 375,
+      "height": 2107
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "8d874d282a1000f07de922482761a43c8369f64f6b1c7bf9970b7badbb74586e",
+      "width": 375,
+      "height": 2107
+    }
+  ],
+  "interactions": [
+    {
+      "id": "chirality-step-1",
+      "result": "encoded challenge accepted"
+    },
+    {
+      "id": "isomer-pair-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "isomer-pair-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "isomer-pair-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "butane-rotation-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "butane-rotation-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "butane-rotation-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "stereocenters-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "stereocenters-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "stereocenters-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "fischer-cip-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "fischer-cip-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "fischer-cip-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "ez-ee-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "ez-ee-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "ez-ee-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}

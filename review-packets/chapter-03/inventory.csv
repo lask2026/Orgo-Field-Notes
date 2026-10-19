@@ -1,0 +1,16 @@
+caseId,kind,coverageItems
+ch03:blind:quantum,blind,3
+ch03:blind:bond-count,blind,3
+ch03:blind:amide-resonance,blind,3
+ch03:exercise:quantum,exercise,3
+ch03:exercise:bond-count,exercise,3
+ch03:exercise:amide-resonance,exercise,3
+ch03:lesson:orbitals,lesson,6
+ch03:lesson:sigma-pi,lesson,6
+ch03:lesson:hybridization,lesson,7
+ch03:molecule:ethene,molecule,1
+ch03:molecule:ethyne,molecule,1
+ch03:molecule:acetamide,molecule,1
+ch03:molecule:acetaldehyde,molecule,1
+ch03:molecule:acetate,molecule,1
+ch03:curriculum,curriculum,3

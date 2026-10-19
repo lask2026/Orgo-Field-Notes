@@ -1,0 +1,460 @@
+{
+  "ethanol": {
+    "name": "ethanol",
+    "formula": "C2H6O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 166,
+        "y": 115
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanol",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "ether": {
+    "name": "methoxymethane",
+    "formula": "C2H6O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 60,
+        "y": 110
+      },
+      {
+        "e": "O",
+        "x": 120,
+        "y": 75
+      },
+      {
+        "e": "C",
+        "x": 180,
+        "y": 110
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "methoxymethane",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "isobutane": {
+    "name": "2-methylpropane",
+    "formula": "C4H10",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 30
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "2-methylpropane",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "butane": {
+    "name": "butane",
+    "formula": "C4H10",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "butane",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "cyclohexane": {
+    "name": "cyclohexane (connectivity diagram)",
+    "formula": "C6H12",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 170,
+        "y": 37
+      },
+      {
+        "e": "C",
+        "x": 228.88972745734185,
+        "y": 71
+      },
+      {
+        "e": "C",
+        "x": 228.88972745734185,
+        "y": 139
+      },
+      {
+        "e": "C",
+        "x": 170,
+        "y": 173
+      },
+      {
+        "e": "C",
+        "x": 111.11027254265817,
+        "y": 139
+      },
+      {
+        "e": "C",
+        "x": 111.11027254265818,
+        "y": 71
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        5,
+        0,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 203,
+    "cond": "cyclohexane (connectivity diagram)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "butanol2": {
+    "name": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+    "formula": "C4H10O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "butan-2-ol (connectivity; stereochemistry specified by projection)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "butanediol": {
+    "name": "butane-2,3-diol (stereochemistry unspecified)",
+    "formula": "C4H10O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 50,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 108,
+        "y": 85
+      },
+      {
+        "e": "C",
+        "x": 166,
+        "y": 115
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 108,
+        "y": 25
+      },
+      {
+        "e": "O",
+        "x": 166,
+        "y": 165
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "butane-2,3-diol (stereochemistry unspecified)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "e-butene": {
+    "name": "(E)-but-2-ene",
+    "formula": "C4H8",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 60,
+        "y": 50
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 100
+      },
+      {
+        "e": "C",
+        "x": 185,
+        "y": 100
+      },
+      {
+        "e": "C",
+        "x": 240,
+        "y": 150
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "(E)-but-2-ene",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "z-butene": {
+    "name": "(Z)-but-2-ene",
+    "formula": "C4H8",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 60,
+        "y": 50
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 100
+      },
+      {
+        "e": "C",
+        "x": 185,
+        "y": 100
+      },
+      {
+        "e": "C",
+        "x": 240,
+        "y": 50
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "(Z)-but-2-ene",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  }
+}

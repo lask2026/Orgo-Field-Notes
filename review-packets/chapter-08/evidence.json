@@ -1,0 +1,486 @@
+{
+  "chapter": 8,
+  "sourceSnapshot": {
+    "sha256": "c204e0692096b7748c26d06c23423f7c1619e8e0b43ba3eeb456747621fd142b",
+    "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
+  },
+  "captureStatus": "passed",
+  "screenshots": [
+    {
+      "id": "acid-properties-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/acid-properties-step-1.png",
+      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-properties-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/acid-properties-step-2.png",
+      "sha256": "b0acfa699107fec11d2d3f8560fbc026b4d5247b3b6062e7da34a00f5958005f",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-properties-step-2-diagram",
+      "kind": "learn-diagram",
+      "file": "screenshots/acid-properties-step-2-diagram.png",
+      "sha256": "057bbb0bdcbbca5ec6d343987dc3bda1f8603b43ac789738b9aa8efd27f548f1",
+      "width": 661,
+      "height": 403
+    },
+    {
+      "id": "acid-reactions-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/acid-reactions-step-1.png",
+      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-reactions-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/acid-reactions-step-2.png",
+      "sha256": "6201d8476bf744ddc2d2a41670cf58ef4dcac851aff413e809d86c2e0df21afb",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-reactions-step-3",
+      "kind": "learn-molecule",
+      "file": "screenshots/acid-reactions-step-3.png",
+      "sha256": "5fccc75301c8e3fcdb5226fb10cf3cf429b6a810235618e1e1f4803d1950a9c7",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "reduction-decarboxylation-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/reduction-decarboxylation-step-1.png",
+      "sha256": "e55bf6e04f9e2039ee51833dd2e80b84265cf0af204cb39f1310f8ca164bbaa0",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "reduction-decarboxylation-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/reduction-decarboxylation-step-2.png",
+      "sha256": "2f8d049f65e6d6e2cbb1e9f0bebcc27cdbd71260cb99847a3a9bf367b5a74cef",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "soap-step-1",
+      "kind": "learn-molecule",
+      "file": "screenshots/soap-step-1.png",
+      "sha256": "3c7cf7fc6d11bdfe5e2e0af6d55a328ec4ed4be6d29c825f72961eb0899c3743",
+      "width": 661,
+      "height": 266
+    },
+    {
+      "id": "soap-step-2",
+      "kind": "learn-molecule",
+      "file": "screenshots/soap-step-2.png",
+      "sha256": "7efc9a81e53c2d9afde52214d95fae002e70be2e7bc1fed166d2a8463ce2b6ad",
+      "width": 661,
+      "height": 266
+    },
+    {
+      "id": "acid-ratio-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-ratio-stage-1-molecule.png",
+      "sha256": "53761efcaeb01c5ade35bbc09ca65154a7f5cf2885d45e39560bd0b07994567d",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "acid-ratio-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-ratio-stage-1-question.png",
+      "sha256": "b3e0f1500f65472119a96a28ed7719b99557ba6ac0e59b54de71f00c2c056101",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "acid-ratio-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-ratio-stage-1-feedback.png",
+      "sha256": "ba3ee0da9a701b2befea65d0b4f00e7a712a0ec0d31d00153bbd54f8ada9a356",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "acid-ratio-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-ratio-stage-2-molecule.png",
+      "sha256": "d013c1ef9f9b2aa6fbf78f6300ae6e53488573e6ba5711cd79ed3fb6cb69ba32",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-ratio-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-ratio-stage-2-question.png",
+      "sha256": "4151837795b6c9fdd939bd3213f0cc51fc6a044dccd63beb08fb8a3d63ebbbaf",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "acid-ratio-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-ratio-stage-2-feedback.png",
+      "sha256": "96d0306b39c1e0fbd6683ccd177292897353724dae77c9c735436350d9a510a3",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "acid-ratio-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/acid-ratio-stage-3-molecule.png",
+      "sha256": "1811dfe316b9a89da6b9b01f531169cd4f403d99e56524a2a0b0d6556ed5b2f6",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "acid-ratio-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/acid-ratio-stage-3-question.png",
+      "sha256": "06465a80161a8cc869b6d5ec959e5e1f2afc5dcab880abd5e215c66fa7bc7809",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "acid-ratio-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/acid-ratio-stage-3-feedback.png",
+      "sha256": "ccba811a488977cf7579286b06b3071666e0f1786d734053762d0b8298cae876",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "acid-ratio-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/acid-ratio-complete.png",
+      "sha256": "476db20392d2a94bdb8dd8ff1075416706365c55954dbdd067300160a5bdc576",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "make-ester-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/make-ester-stage-1-molecule.png",
+      "sha256": "6d4dcdc156e0855fc8d96e3b0961970ca7179df11d0c7e055b70afc0c0f249db",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "make-ester-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/make-ester-stage-1-question.png",
+      "sha256": "587eec44ed3765379973e44736ae4f662cfc0c521caa5d0bbe23b7a8c93f8b56",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "make-ester-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/make-ester-stage-1-feedback.png",
+      "sha256": "0b258fd0e6ac0772fba7bfe6a43a1770d6da1eff5682d631ea1338f3d0d5f440",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "make-ester-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/make-ester-stage-2-molecule.png",
+      "sha256": "0096e3662d4138ff010de97f8013f3d031db2b6f8ba8f59fa9adb06579d9fd15",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "make-ester-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/make-ester-stage-2-question.png",
+      "sha256": "4bfb0c71415c0f9abc2d64cc0b39c9449c0e235e505b9f554be43f5118b10f4f",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "make-ester-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/make-ester-stage-2-feedback.png",
+      "sha256": "15b91334b013fb156c0d6f4e10b0555d21a5185758a28be0a1f6654a8a823e3f",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "make-ester-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/make-ester-stage-3-molecule.png",
+      "sha256": "27fe9607546bc82febda80e9a71ca3d8cf1afbb0047a08632e80a118cbaa4e21",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "make-ester-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/make-ester-stage-3-question.png",
+      "sha256": "447751b90e644f6100c3ac06442a67b54584011b5295a51012fb370a76229e90",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "make-ester-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/make-ester-stage-3-feedback.png",
+      "sha256": "1cab761909344c05ef564b399724548f29f93db49358abac6944300a2f81b5b9",
+      "width": 607,
+      "height": 348
+    },
+    {
+      "id": "make-ester-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/make-ester-complete.png",
+      "sha256": "5f861e9cccba08c679472238625bb484502534161a49493aa1d974609d333dfe",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "lose-co2-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/lose-co2-stage-1-molecule.png",
+      "sha256": "a6dfe2ea96ff492515a23b400e810bf1ff0a6a4dbb20127bd1935c9f8110375d",
+      "width": 661,
+      "height": 419
+    },
+    {
+      "id": "lose-co2-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/lose-co2-stage-1-question.png",
+      "sha256": "52a9927c6ee3a412e984fe6c70600ea6c7e9ed8a2020f174a8e61114b49e9636",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "lose-co2-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/lose-co2-stage-1-feedback.png",
+      "sha256": "d16bfc09b32fac615b57461023948d471d15cb2f4cca1f90ea45cbf0078d94a1",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "lose-co2-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/lose-co2-stage-2-molecule.png",
+      "sha256": "cf2e941cc85b60b4fc60d5c38f85a6b99c139b5e6b8fb8445ed8c850d730c767",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "lose-co2-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/lose-co2-stage-2-question.png",
+      "sha256": "fcd9995919c7da73cfa504eaee0802e1cb453917eb297d547d5fd089fd9fa6a1",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "lose-co2-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/lose-co2-stage-2-feedback.png",
+      "sha256": "7b84bb538cab63d3748c321acbeedfa21aba437eb671b3fa64644028e1a51167",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "lose-co2-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/lose-co2-stage-3-molecule.png",
+      "sha256": "dc06ecf46982bd7b08009a6e79e8c3aa753be36fdb784d147e6093aeba8edf9d",
+      "width": 661,
+      "height": 359
+    },
+    {
+      "id": "lose-co2-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/lose-co2-stage-3-question.png",
+      "sha256": "ddf4b00ed6e6caa6eb01aaea34fbfcc087d5ad3c078d02237134fdc1834bdb11",
+      "width": 607,
+      "height": 255
+    },
+    {
+      "id": "lose-co2-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/lose-co2-stage-3-feedback.png",
+      "sha256": "ecddf2dc4611ab89ab2c27d275bb1c819981c7ac0e749a724c3e7da19511eb07",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "lose-co2-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/lose-co2-complete.png",
+      "sha256": "188be1c4a66ab21b5652480002c424dbc315cdfa8c1ffbb18689e9ddd51adbfc",
+      "width": 1324,
+      "height": 574
+    },
+    {
+      "id": "soap-head-stage-1-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/soap-head-stage-1-molecule.png",
+      "sha256": "446af5312c455925f1a3917f6d96a12968381f34d98bb2c040adcc8f1e2a94fa",
+      "width": 661,
+      "height": 375
+    },
+    {
+      "id": "soap-head-stage-1-question",
+      "kind": "practice-question",
+      "file": "screenshots/soap-head-stage-1-question.png",
+      "sha256": "5204fc8c2544076065d7cdf755f2f0f31bb35ceb4282a9de30f6c516cda15bd8",
+      "width": 607,
+      "height": 162
+    },
+    {
+      "id": "soap-head-stage-1-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/soap-head-stage-1-feedback.png",
+      "sha256": "488960e2abfd7e3028fa97a98752616fe62b1cf7e3820f5998c7fd2285df6107",
+      "width": 607,
+      "height": 237
+    },
+    {
+      "id": "soap-head-stage-2-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/soap-head-stage-2-molecule.png",
+      "sha256": "d89fff878d90a1670db33ff77c9ef2ed8b5b2cfd3055fe387a4510eb4d0ba329",
+      "width": 661,
+      "height": 266
+    },
+    {
+      "id": "soap-head-stage-2-question",
+      "kind": "practice-question",
+      "file": "screenshots/soap-head-stage-2-question.png",
+      "sha256": "5e6ca5d933cb346f1235a0403b53d38d655d3f66df419c40efef22da202c4ecb",
+      "width": 607,
+      "height": 241
+    },
+    {
+      "id": "soap-head-stage-2-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/soap-head-stage-2-feedback.png",
+      "sha256": "c78127b31b85f6610f557a9d6f235e19f233a3589a073f4c7cd980b51980951a",
+      "width": 607,
+      "height": 276
+    },
+    {
+      "id": "soap-head-stage-3-molecule",
+      "kind": "practice-molecule",
+      "file": "screenshots/soap-head-stage-3-molecule.png",
+      "sha256": "a6eaaf70e351b6271cf8ff528b229af7bbacc7f943fee08edc1a597995a699cb",
+      "width": 661,
+      "height": 266
+    },
+    {
+      "id": "soap-head-stage-3-question",
+      "kind": "practice-question",
+      "file": "screenshots/soap-head-stage-3-question.png",
+      "sha256": "a65e300dcb21e6a9b6ade560292dc5ae13135902eedd8621e6a5738993fadca4",
+      "width": 607,
+      "height": 291
+    },
+    {
+      "id": "soap-head-stage-3-feedback",
+      "kind": "practice-feedback",
+      "file": "screenshots/soap-head-stage-3-feedback.png",
+      "sha256": "b54533e60bba71a00e0b2889131e3878cc017b6e656c6d9a45ef90f22aa4475e",
+      "width": 607,
+      "height": 326
+    },
+    {
+      "id": "soap-head-complete",
+      "kind": "practice-complete",
+      "file": "screenshots/soap-head-complete.png",
+      "sha256": "03793f00d0ade2efd44690170e14dde97c22bcef7e1014b33760bcb22809a180",
+      "width": 1324,
+      "height": 481
+    },
+    {
+      "id": "layout-desktop-light",
+      "kind": "layout",
+      "file": "screenshots/layout-desktop-light.png",
+      "sha256": "3142f994b533ca80a419dc92b7b6a83be52fad33dff196265c090d5c72d45a3d",
+      "width": 1360,
+      "height": 1008
+    },
+    {
+      "id": "layout-mobile-light",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-light.png",
+      "sha256": "af2123e5beb85ffacadb309e42c96fec99c7961d9f9bc774bdc0df48f6be3aa2",
+      "width": 375,
+      "height": 2078
+    },
+    {
+      "id": "layout-mobile-dark",
+      "kind": "layout",
+      "file": "screenshots/layout-mobile-dark.png",
+      "sha256": "120b23b92867a1fff7f3498eb158f6980cc86629889a933a30a1aee63e55ab8d",
+      "width": 375,
+      "height": 2078
+    }
+  ],
+  "interactions": [
+    {
+      "id": "acid-ratio-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acid-ratio-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "acid-ratio-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "make-ester-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "make-ester-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "make-ester-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "lose-co2-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "lose-co2-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "lose-co2-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "soap-head-stage-1",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "soap-head-stage-2",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    },
+    {
+      "id": "soap-head-stage-3",
+      "result": "incorrect rejected; encoded key accepted; continued"
+    }
+  ],
+  "pageErrors": [],
+  "note": "Actual local Chromium UI captures. Successful encoded answers test software behavior, not independent chemistry."
+}
