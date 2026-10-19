@@ -3,7 +3,7 @@
   "chapter": 3,
   "title": "Bonding",
   "sourceSnapshot": {
-    "sha256": "f7c53a054a3e64cf4906eea887de66adcae1abb76ae0433ec58f68af5fd4c127",
+    "sha256": "6ce68664a9ea6d9381b821aead16f2684803b051b853969185651fe6aa18b0b1",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -713,7 +713,14 @@
                   "label": "Orbital and spin",
                   "text": "mₗ = −l … +l; mₛ = ±1/2"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "projection",
+                "steps": [
+                  0
+                ],
+                "caption": "Isolated carbon-atom spin occupancy model, not a molecular structure or an energy-scale diagram."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -862,7 +869,14 @@
                   "label": "Multiple bond",
                   "text": "Double: 1σ + 1π; triple: 1σ + 2π"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "overlap",
+                "steps": [
+                  0
+                ],
+                "caption": "Bonding-orbital overlap schematic. Lobe colors denote phase, not electric charge or electron paths."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1065,7 +1079,15 @@
                   "label": "Two domains",
                   "text": "Typical carbon: sp, 180°"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1,
+                  2
+                ],
+                "caption": "Conjugated amide and carboxylate examples. A flat drawing does not measure bond angles."
+              }
             },
             "cue": {
               "layout": "decision",

@@ -137,7 +137,14 @@
               "label": "Orbital and spin",
               "text": "mₗ = −l … +l; mₛ = ±1/2"
             }
-          ]
+          ],
+          "figure": {
+            "type": "projection",
+            "steps": [
+              0
+            ],
+            "caption": "Isolated carbon-atom spin occupancy model, not a molecular structure or an energy-scale diagram."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -242,7 +249,14 @@
               "label": "Multiple bond",
               "text": "Double: 1σ + 1π; triple: 1σ + 2π"
             }
-          ]
+          ],
+          "figure": {
+            "type": "overlap",
+            "steps": [
+              0
+            ],
+            "caption": "Bonding-orbital overlap schematic. Lobe colors denote phase, not electric charge or electron paths."
+          }
         },
         "cue": {
           "layout": "decision",
@@ -373,7 +387,15 @@
               "label": "Two domains",
               "text": "Typical carbon: sp, 180°"
             }
-          ]
+          ],
+          "figure": {
+            "type": "structures",
+            "steps": [
+              1,
+              2
+            ],
+            "caption": "Conjugated amide and carboxylate examples. A flat drawing does not measure bond angles."
+          }
         },
         "cue": {
           "layout": "decision",
