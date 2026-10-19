@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "sourceSnapshot": {
-    "sha256": "f5c68f166ab49b67d8a63fa296f0c334bb2cac4d9715811c8cb0ad7ccb9f8f40",
+    "sha256": "d268d08ea03f220738b0dbf463ec805915eca65da281b98b41843b64106aaf28",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -74,9 +74,9 @@
       "id": "naming-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/naming-visuals.png",
-      "sha256": "7823b2dec86e0534f2d1b97e75b6ddd69dae008b770f60f1b3d8f9b269e4d050",
+      "sha256": "fab3f58b26cffe7c82dfe21ebc35ce42029af7b60e9e646b441f0aeef603070e",
       "width": 607,
-      "height": 2487
+      "height": 2315
     },
     {
       "id": "alcohols-step-1",
@@ -146,9 +146,9 @@
       "id": "alcohols-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/alcohols-visuals.png",
-      "sha256": "81710f4fb58101b4dd75693f6dcca95a881d509aaae827c33e1e807f639b1e76",
+      "sha256": "b933c117884e1868a489a373060ded24401883ee79d4be907afc2bb4b823bfb4",
       "width": 607,
-      "height": 2356
+      "height": 2124
     },
     {
       "id": "rings-step-1",
@@ -202,9 +202,9 @@
       "id": "rings-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/rings-visuals.png",
-      "sha256": "c0bc853709afdccb49eea94f80f034f0214ea29e5b09407cd41706b706297859",
+      "sha256": "87639965c7b07a88bf969458d744b6cfb5f99a24e233b1f049452b6aec4006ec",
       "width": 607,
-      "height": 1995
+      "height": 2106
     },
     {
       "id": "diols-step-1",
@@ -242,9 +242,9 @@
       "id": "diols-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/diols-visuals.png",
-      "sha256": "419880ab95b5090da35a4eee71a21b36c590e36231e6adc3605fe3a583a5f5d4",
+      "sha256": "61c87f08407678f74b7469ec17d571976f243c8266deaacf4d56ea8ad8e672aa",
       "width": 607,
-      "height": 2350
+      "height": 2131
     },
     {
       "id": "carbonyls-step-1",
@@ -314,9 +314,9 @@
       "id": "carbonyls-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/carbonyls-visuals.png",
-      "sha256": "8acce29fd595453ab97ec245e78a4c6c913f802e409a44833a661973be7d6933",
+      "sha256": "f7f46328ee108f46fc95429f32d2520746ac3961276350f078d996125a502962",
       "width": 607,
-      "height": 2266
+      "height": 2205
     },
     {
       "id": "derivatives-step-1",
@@ -386,9 +386,9 @@
       "id": "derivatives-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/derivatives-visuals.png",
-      "sha256": "d23da982fe083183b9359abd12fedd48dc24260ed159f9d195c15d94ed860187",
+      "sha256": "19c1a5caee97e3ccba5a5535cab340795a6a642bd5833a174bbd6db7d7fed6f6",
       "width": 607,
-      "height": 2355
+      "height": 2059
     },
     {
       "id": "gp1a-stage-1-molecule",
@@ -1306,23 +1306,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "169b9b87d054e6f0fd351749a681a85f0b48e7fb095531b0a55867ba3af77e1e",
+      "sha256": "71342fc9dad038f5f79dcdc2b15e2e1a2965cfcd2ce575d6c6e5e03c628d16b8",
       "width": 1360,
-      "height": 2753
+      "height": 2629
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "f870219d65cbbdeb72b6888da251150f44210df21c8569613dd1382e9a306b6f",
+      "sha256": "04142a6d5a77a46926b44a6304ce9fc97734d34bf473322ad159ce30ff6e620d",
       "width": 607,
-      "height": 1178
+      "height": 2802
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "deafe439b32acd291a29704e46eb12a8d82a90de18fc34095ffb2be9228a9a2b",
+      "sha256": "7027d3adda7c0ec32a6d3d5577abb6200dc62c860c2fa4f084c5cf8fe06707ce",
       "width": 1000,
       "height": 741
     },
@@ -1330,17 +1330,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "7b407967b273971bc4a24798cdbe8f0d1166b0481150bb35634a2d8b10df3af9",
+      "sha256": "d30edd826d6befb1780e3879135a8bf52c44a83ba4590f4dd9aa0e0ab1ae8550",
       "width": 375,
-      "height": 4447
+      "height": 4848
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "b023e5bff61e440ee88cc0156901bbb5db8c9070019db0c20f5f5cdfffe2d41f",
+      "sha256": "33c61eaaf8bac08593961fcdf657a01b883bae65e9aefaaed178c57e4160cba8",
       "width": 375,
-      "height": 4447
+      "height": 4848
     },
     {
       "id": "projection-mobile-dark",

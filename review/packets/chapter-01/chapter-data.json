@@ -250,21 +250,62 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Principal Group → Longest Chain → Lowest Locants",
+          "title": "4-Step IUPAC Hierarchy: Suffix → Chain → First Point of Difference → Alphabetical",
           "items": [
             {
-              "label": "Principal suffix",
-              "text": "Include its group and required unsaturation"
+              "label": "Principal Functional Group",
+              "text": "Highest-priority group sets the suffix (-oic acid, -al, -one, -ol) and gets the lowest possible locant.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Parent chain",
-              "text": "Compare valid continuous chains"
+              "label": "Longest Carbon Chain",
+              "text": "Find the longest continuous carbon chain containing the principal functional group and maximum unsaturation.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Locants",
-              "text": "First point of difference"
+              "label": "First Point of Difference",
+              "text": "Number from the end that gives the lower number at the very first locant difference (e.g., 2,3,6 beats 2,5,6).",
+              "step": "3",
+              "color": "orange"
+            },
+            {
+              "label": "Alphabetical Tiebreaker",
+              "text": "If locant sets are identical from both ends, give the lower locant to the substituent that comes first alphabetically.",
+              "step": "4",
+              "color": "purple"
             }
           ],
+          "chips": [
+            "1. Principal Suffix",
+            "2. Longest Chain",
+            "3. Lowest Locant Set",
+            "4. A→Z Ignore Multiplicative"
+          ],
+          "comparison": [
+            [
+              "1° Rule",
+              "Principal functional group",
+              "Sets suffix + lowest locant"
+            ],
+            [
+              "2° Rule",
+              "Longest continuous C chain",
+              "Max carbons with FG"
+            ],
+            [
+              "3° Rule",
+              "First point of difference",
+              "Compare locant sets term-by-term"
+            ],
+            [
+              "4° Rule",
+              "Alphabetize substituents",
+              "ethyl < methyl (ignore di/tri)"
+            ]
+          ],
+          "theme": "chain-locant",
           "figure": {
             "type": "structures",
             "steps": [
@@ -275,19 +316,23 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Alphabetization Prefix Rule: Ignore di-, tri-, sec-, tert-; Keep iso-, neo-, cyclo-",
+          "prompt": "Which prefix type are you alphabetizing in an IUPAC name?",
           "items": [
             {
-              "label": "Simple repeated substituent",
-              "text": "Ignore di-, tri- and similar counting multipliers"
+              "label": "di- / tri- / tetra-",
+              "outcome": "IGNORE for alphabetizing",
+              "text": "Multiplicative prefixes only count how many identical groups exist: \"ethyl\" comes before \"dimethyl\" (e vs m)."
             },
             {
-              "label": "Traditional alkyl prefix",
-              "text": "Ignore n-, sec-, tert-; retain iso-, neo-, cyclo-"
+              "label": "sec- / tert-",
+              "outcome": "Ignore simple sec-/tert- prefixes",
+              "text": "Ignore sec- and tert- in alphabetization; retain iso-, neo- and cyclo-. Alphabetize the complete substituent name for compound substituents."
             },
             {
-              "label": "Compound substituent",
-              "text": "Alphabetize its complete name"
+              "label": "iso- / neo- / cyclo-",
+              "outcome": "KEEP for alphabetizing",
+              "text": "Non-hyphenated structural prefixes are part of the base group name: \"isopropyl\" is alphabetized under I, \"cyclopropyl\" under C."
             }
           ],
           "figure": {
@@ -300,15 +345,15 @@
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Sum-of-Locants Myth vs. First Point of Difference",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Trusting a written parent chain without tracing it"
+              "label": "Common Trap",
+              "text": "Adding up all locants (\"sum of locants\") or alphabetizing \"dimethyl\" under D before \"ethyl\" under E."
             },
             {
-              "label": "Check",
-              "text": "A branch may extend the longest continuous chain"
+              "label": "Correct Reasoning",
+              "text": "Compare locant sets left-to-right at the first point of difference (2,3,6 < 2,5,6), and alphabetize \"ethyl\" (E) before \"dimethyl\" (M)."
             }
           ],
           "figure": {
@@ -321,19 +366,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Reconstructing Unfamiliar Drug & Metabolite Structures on MCAT Passages",
           "items": [
             {
-              "label": "Valine",
-              "text": "Isopropyl side chain"
+              "label": "Passage Stem",
+              "outcome": "2-ethyl-4,4-dimethylpentanal",
+              "text": "Parse the proposed name, then redraw and verify the longest eligible chain before accepting it."
             },
             {
-              "label": "Leucine",
-              "text": "Isobutyl side chain"
+              "label": "Chain & Suffix",
+              "outcome": "Aldehyde carbon is C1",
+              "text": "The longest eligible parent must include the aldehyde carbon; a longer path that omits C1 cannot replace it."
             },
             {
-              "label": "Isoleucine",
-              "text": "sec-Butyl side chain"
+              "label": "Branch Verification",
+              "outcome": "C2 ethyl; C4,C4 dimethyl",
+              "text": "The proposed 2-ethyl-4,4-dimethylpentanal has a five-carbon parent containing the aldehyde carbon. The six-carbon path through the ethyl branch omits that required carbon."
             }
           ]
         }
@@ -514,21 +562,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Alcohol (–ol) Outranks Alkene (–en–) & Alkyne (–yn–)",
+          "title": "Alcohol Suffix (-ol) Outranks All C–C Multiple Bonds & Halide/Alkyl Substituents",
           "items": [
             {
-              "label": "Principal OH",
-              "text": "Outranks C=C and C≡C here"
+              "label": "Alcohol (-ol) Priority",
+              "text": "Outranks alkenes (-ene), alkynes (-yne), halides, and alkyl chains; always number to give -ol the lowest locant.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Number the chain",
-              "text": "Give the principal OH the lower locant"
+              "label": "Combined Enol / Ynol Names",
+              "text": "Keep unsaturation in the stem and attach -ol at the end: e.g., pent-3-en-1-ol (drop terminal \"e\" before vowel).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Build the name",
-              "text": "Retain en/yn in the stem; add ol"
+              "label": "Alkene vs. Alkyne Locant Rule",
+              "text": "Lowest locant set for all multiple bonds wins first; only if tied (e.g., 1,6 vs 1,6) does alkene (-en-) beat alkyne (-yn-).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "-ol > C=C / C≡C",
+            "en-X-ol Combined Infix",
+            "C=C Beats C≡C on Tie",
+            "Drop -e Before Vowel"
+          ],
+          "comparison": [
+            [
+              "Suffix Priority",
+              "Alcohol (-ol) > Alkene/Alkyne",
+              "Always number for lowest -ol locant"
+            ],
+            [
+              "Combined Infix",
+              "pent-3-en-1-ol",
+              "Keep both unsaturation + alcohol suffix"
+            ],
+            [
+              "Alkene vs Alkyne",
+              "1-en-6-yne beats 6-en-1-yne",
+              "Alkene wins 1-vs-1 tiebreaker"
+            ]
+          ],
+          "theme": "alcohol-priority",
           "figure": {
             "type": "structures",
             "steps": [
@@ -539,15 +617,18 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Suffix vs. Prefix Switch for -OH Groups",
+          "prompt": "Is the alcohol (-OH) the highest-priority group in the molecule?",
           "items": [
             {
-              "label": "Principal group",
-              "text": "Use the suffix -ol"
+              "label": "Yes — Highest Priority",
+              "outcome": "Use suffix \"-ol\" + lowest C1/C2 locant",
+              "text": "Alcohol dominates the parent chain numbering over alkenes, alkynes, halides, and alkyls (e.g., but-3-en-1-ol)."
             },
             {
-              "label": "Subordinate OH",
-              "text": "Use the prefix hydroxy-"
+              "label": "No — Carbonyl/Acid Present",
+              "outcome": "Demote -OH to prefix \"hydroxy-\"",
+              "text": "When a carboxylic acid, ester, aldehyde, or ketone is present, -OH becomes a substituent (e.g., 3-hydroxybutanal)."
             }
           ],
           "figure": {
@@ -560,15 +641,15 @@
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Giving Alkene C=C a Lower Locant Than Alcohol -OH",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Giving unsaturation priority over the principal OH"
+              "label": "Common Trap",
+              "text": "Naming HO–CH₂–CH₂–CH=CH₂ as \"but-1-en-4-ol\" to give the double bond C1."
             },
             {
-              "label": "Check",
-              "text": "If enyne locant sets tie, the double bond gets the lower locant"
+              "label": "Correct Reasoning",
+              "text": "Name it \"but-3-en-1-ol\": the principal suffix (-ol) always outranks carbon-carbon unsaturation."
             }
           ],
           "figure": {
@@ -581,15 +662,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Terpene Alcohols, Retinol & Steroid Suffixes (-ol vs -one)",
           "items": [
             {
-              "label": "Ethanol",
-              "text": "Ethyl alcohol"
+              "label": "Retinol / Geraniol",
+              "outcome": "Polyene + Terminal -OH",
+              "text": "The -ol suffix immediately tells you the alcohol is the highest-priority group and C1 is anchored near -OH."
             },
             {
-              "label": "Propan-2-ol",
-              "text": "Isopropyl alcohol"
+              "label": "Estradiol vs. Estrone",
+              "outcome": "-diol (-OH) vs. -one (C=O)",
+              "text": "Suffix shifts instantly reveal whether a steroid hormone carries alcohol or ketone functionality."
+            },
+            {
+              "label": "Enol Intermediates",
+              "outcome": "Alkene + Alcohol on same C",
+              "text": "Recognize enols as transient tautomers that rapidly rearrange to more stable carbonyls."
             }
           ]
         }
@@ -743,21 +831,51 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Principal suffix → Multiple bonds → Substituents",
+          "title": "Ring Numbering: C1 at Principal Group/Double Bond → Minimize Next Substituent Locant",
           "items": [
             {
-              "label": "Senior suffix",
-              "text": "First numbering priority"
+              "label": "Anchor C1 at Principal Group",
+              "text": "In cycloalkanols or cycloalkanones, C1 is automatically the carbon bearing -OH or =O.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Simple cycloalkene",
-              "text": "Without a senior suffix: double bond at C1–C2"
+              "label": "Cycloalkene Double Bond Walk",
+              "text": "In cycloalkenes, C1 and C2 MUST step across the double bond; choose the direction that gives the first substituent the lowest locant.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Substituents",
-              "text": "Minimize locants, then resolve genuine ties"
+              "label": "Polysubstituted Cycloalkanes",
+              "text": "Start at the carbon that yields the lowest locant set (e.g., 1,1,3 beats 1,3,3); break ties alphabetically.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "C1 = Principal Group",
+            "Minimize 2nd Locant",
+            "Ring vs Chain Tie → Ring",
+            "1,1-Disubstituted = C1"
+          ],
+          "comparison": [
+            [
+              "1 Substituent",
+              "Locant 1 omitted",
+              "methylcyclohexane"
+            ],
+            [
+              "1,1-Geminals",
+              "C1 gets both groups",
+              "1,1-dimethyl-3-ethyl..."
+            ],
+            [
+              "Ring vs Chain",
+              "More C wins (Tie → Ring)",
+              "1-butylcyclohexane"
+            ]
+          ],
+          "theme": "ring-numbering",
           "figure": {
             "type": "structures",
             "steps": [
@@ -768,29 +886,32 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Ring vs. Open Chain: Which One Is the Parent?",
+          "prompt": "How do you choose between a ring and an attached chain as the parent?",
           "items": [
             {
-              "label": "C1 is an alkene carbon",
-              "text": "C2 must be the other alkene carbon"
+              "label": "Cycloalkene without senior suffix",
+              "outcome": "Double bond at C1=C2",
+              "text": "Assign the two alkene carbons 1 and 2, then minimize substituent locants."
             },
             {
               "label": "Senior suffix present",
-              "text": "Apply its locant priority first"
+              "outcome": "Number the suffix first",
+              "text": "A principal alcohol or other senior suffix controls numbering; do not force its carbon to also be an alkene carbon."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Stepping Away from C1=C2 in Cycloalkenes",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Starting at the most substituted carbon regardless of priority"
+              "label": "Common Trap",
+              "text": "Numbering C1 at one alkene carbon and stepping away from the double bond to hit a methyl group at C2."
             },
             {
-              "label": "Check",
-              "text": "Suffix, multiple bonds, then substituent locants"
+              "label": "Correct Reasoning",
+              "text": "In cycloalkenes, C1 and C2 MUST be the two carbons of the double bond (e.g., 3-methylcyclohex-1-ene, never 2-methyl)."
             }
           ],
           "figure": {
@@ -803,15 +924,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Prostaglandins, Menthol & Cyclohexane Drug Scaffolds",
           "items": [
             {
-              "label": "Cyclic biomolecules",
-              "text": "Recognize the framework"
+              "label": "Menthol Scaffold",
+              "outcome": "2-isopropyl-5-methylcyclohexan-1-ol",
+              "text": "C1 is fixed at -OH; numbering proceeds toward C2 isopropyl (1,2,5 < 1,3,6)."
             },
             {
-              "label": "Steroids",
-              "text": "Use established fused-ring numbering"
+              "label": "Cycloalkene Intermediates",
+              "outcome": "Ring alkene numbering",
+              "text": "Used to track regioselective hydroboration or epoxidation sites on cyclic substrates."
+            },
+            {
+              "label": "Bicyclic / Steroid Rings",
+              "outcome": "Fixed framework numbering",
+              "text": "Fixed numbering lets passages reference C3-OH or C17-ketone without ambiguity."
             }
           ]
         }
@@ -927,21 +1055,41 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Vicinal = 1,2-Diol (Adjacent) · Geminal = 1,1-Diol (Same C)",
+          "title": "Geminal 1,1-diols and vicinal 1,2-diols: connectivity and hydration equilibrium",
+          "formula": "R₂C=O + H₂O ⇌ R₂C(OH)₂   (K_eq ≪ 1 for most ketones; K_eq > 1 for H₂C=O or Cl₃C–CHO)",
           "items": [
             {
-              "label": "Two OH groups",
-              "text": "Use -diol; retain the alkane e"
+              "label": "Geminal Diol (1,1)",
+              "text": "Two -OH groups on the SAME carbon; spontaneously loses H₂O to form a carbonyl (C=O σ+π is stronger than two C–O σ bonds)."
             },
             {
-              "label": "Locants",
-              "text": "Number every OH"
-            },
-            {
-              "label": "Arrangement",
-              "text": "Same carbon versus adjacent carbons"
+              "label": "Vicinal Diol (1,2)",
+              "text": "Two -OH groups on ADJACENT carbons; stable, isolable glycol formed from alkene dihydroxylation (OsO₄) or epoxide opening."
             }
           ],
+          "chips": [
+            "Geminal: same carbon",
+            "Vicinal: neighboring carbons",
+            "Hydration depends on structure and conditions"
+          ],
+          "comparison": [
+            [
+              "Geminal (1,1)",
+              "Two -OH on SAME carbon",
+              "Hydrate ⇌ carbonyl + water; equilibrium varies"
+            ],
+            [
+              "Vicinal (1,2)",
+              "Two -OH on ADJACENT C",
+              "Isolable glycol; NaIO₄ cleaves C–C"
+            ],
+            [
+              "EWGs (Cl₃C–CHO)",
+              "Destabilize δ+ carbonyl C",
+              "Shifts K_eq toward stable hydrate"
+            ]
+          ],
+          "theme": "diol-equilibrium",
           "figure": {
             "type": "structures",
             "steps": [
@@ -953,15 +1101,23 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Mnemonic: \"GEM = Twins on ONE Carbon; VIC = Neighbors in the VICinity\"",
+          "prompt": "What kind of diol or carbonyl substrate do you see?",
           "items": [
             {
-              "label": "Adjacent carbons",
-              "text": "Vicinal: 1,2-diol"
+              "label": "1,1-Diol (Geminal)",
+              "outcome": "Eliminates H₂O → Aldehyde/Ketone",
+              "text": "Treat a 1,1-diol as a disguised carbonyl hydrate in aqueous equilibrium."
             },
             {
-              "label": "Same carbon",
-              "text": "Geminal: 1,1-diol"
+              "label": "1,2-Diol (Vicinal)",
+              "outcome": "Stable Glycol (Cleaved by HIO₄)",
+              "text": "Stable to water loss; undergoes oxidative C–C cleavage with periodate (NaIO₄) or pinacol rearrangement in strong acid."
+            },
+            {
+              "label": "Aldehyde + Adjacent EWGs",
+              "outcome": "Forms Stable Geminal Diol (Chloral Hydrate)",
+              "text": "Strong electron-withdrawing groups (–CCl₃, –CF₃) destabilize the δ+ carbonyl carbon, favoring the sp³ gem-diol."
             }
           ],
           "figure": {
@@ -974,15 +1130,15 @@
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Dropping the Vowel \"e\" Before \"-diol\" or Isolating Simple Gem-Diols",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Treating all carbonyl hydrates as equally favored"
+              "label": "Common Trap",
+              "text": "Writing \"ethandiol\" (dropping the \"e\") or assuming propan-2,2-diol can be bottled as a pure liquid."
             },
             {
-              "label": "Check",
-              "text": "Substrate and conditions control the hydration equilibrium"
+              "label": "Correct Reasoning",
+              "text": "Retain the \"e\" before consonant suffix \"-diol\" (ethane-1,2-diol), and recognize that simple 1,1-diols revert to ketones/aldehydes."
             }
           ],
           "figure": {
@@ -995,15 +1151,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Serine Protease Tetrahedral Intermediates & Periodate Sugar Cleavage",
           "items": [
             {
-              "label": "Hydration",
-              "text": "Reversible addition of water"
+              "label": "Chloral Hydrate",
+              "outcome": "Cl₃C–CH(OH)₂ Sedative",
+              "text": "Three inductive Cl atoms make the aldehyde carbonyl so electrophilic that the geminal diol predominates in water."
             },
             {
-              "label": "Aldehyde oxidation",
-              "text": "Hydrated forms can participate; oxidation is separate"
+              "label": "Carbonic Anhydrase / CO₂",
+              "outcome": "CO₂ + H₂O ⇌ H₂CO₃",
+              "text": "Hydration of CO₂ is biologically analogous to reversible carbonyl hydration."
+            },
+            {
+              "label": "Carbohydrate Vicinal Diols",
+              "outcome": "1,2-Diols in Ribose & Glucose",
+              "text": "Periodate (IO₄⁻) selectively cleaves vicinal diols in sugar rings to determine ring size."
             }
           ]
         }
@@ -1220,22 +1383,52 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Aldehyde (Terminal C1) Outranks Ketone (Internal)",
+          "layout": "flow",
+          "title": "Aldehydes (-al) Outrank Ketones (-one); Greek Letters (α, β, γ) Start Adjacent to C=O",
           "items": [
             {
-              "label": "Aldehyde",
-              "text": "Carbonyl carbon has at least one H"
+              "label": "Aldehyde (-al) Priority",
+              "text": "Terminal R–CHO defines C1 (locant 1 omitted in simple chains: butanal). Ring-attached –CHO is \"-carbaldehyde\".",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Ketone",
-              "text": "Carbonyl carbon has two carbon substituents"
+              "label": "Ketone (-one) Numbering",
+              "text": "Internal R–CO–R′ requires a locant in chains ≥5 carbons (pentan-2-one vs pentan-3-one); becomes \"oxo-\" when outranked.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Naming context",
-              "text": "Simple acyclic -al/-one; ring attachment may use -carbaldehyde"
+              "label": "Greek Letter Mapping (α, β, γ)",
+              "text": "The carbonyl carbon itself has NO Greek letter; α is the directly attached carbon, β is two bonds away, γ is three.",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Aldehyde (-al) > Ketone (-one)",
+            "Aldehyde = C1 (Omit 1)",
+            "Ketone Needs Locant (-2-one)",
+            "α-C = Adjacent to C=O"
+          ],
+          "comparison": [
+            [
+              "Aldehyde (–CHO)",
+              "Terminal C1; suffix -al",
+              "Prefix if outranked: oxo- / formyl-"
+            ],
+            [
+              "Ketone (R–CO–R′)",
+              "Internal C; suffix -one",
+              "Prefix if outranked: oxo-"
+            ],
+            [
+              "α-Carbon",
+              "Directly bonded to C=O",
+              "Acidic α-H (pKa ~19–20) → enolate"
+            ]
+          ],
+          "theme": "carbonyl-alpha",
           "figure": {
             "type": "structures",
             "steps": [
@@ -1247,33 +1440,37 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Prefix Selection When Carbonyls Are Outranked: \"oxo-\" vs. \"formyl-\"",
+          "prompt": "How do you name a carbonyl when a higher-priority group (-COOH or ester) is present?",
           "items": [
             {
-              "label": "Formaldehyde",
-              "text": "Methanal: one carbon"
+              "label": "Ketone on Parent Chain",
+              "outcome": "Always Prefix \"oxo-\"",
+              "text": "Example: 3-oxobutanoic acid (acetoacetic acid) — ketone at C3 is outranked by C1 carboxylic acid."
             },
             {
-              "label": "Acetaldehyde",
-              "text": "Ethanal: two carbons"
+              "label": "Aldehyde Counted IN Parent Chain",
+              "outcome": "Prefix \"oxo-\" at Terminal Carbon",
+              "text": "Example: 4-oxobutanoic acid — the aldehyde carbon IS C4 of the 4-carbon chain."
             },
             {
-              "label": "Acetone",
-              "text": "Propanone: three carbons"
+              "label": "–CHO Attached as a Pendant Branch",
+              "outcome": "Prefix \"formyl-\"",
+              "text": "Used when the –CHO carbon cannot be included in the main parent chain or ring."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Calling the Carbonyl Carbon \"α\" or Mixing Up Greek Letters with IUPAC Numbers",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Assuming acetone has two carbons from acet-"
+              "label": "Common Trap",
+              "text": "Labeling the C=O carbon as the α-carbon or writing \"2-α-methylbutanal\" in a systematic name."
             },
             {
-              "label": "Check",
-              "text": "Count its complete three-carbon skeleton"
+              "label": "Correct Reasoning",
+              "text": "C=O is the reference point (C1 in aldehydes); C2 is the α-carbon, C3 is the β-carbon, and never mix Greek letters into IUPAC numbering."
             }
           ],
           "figure": {
@@ -1286,15 +1483,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Ketone Bodies (Acetoacetate) & Pyridoxal Phosphate (PLP) Schiff Bases",
           "items": [
             {
-              "label": "Carbohydrates",
-              "text": "Aldose versus ketose"
+              "label": "Acetoacetate (Ketone Body)",
+              "outcome": "3-oxobutanoate (β-ketoacid)",
+              "text": "The ketone sits at the β-carbon (C3) relative to the C1 carboxylate, enabling facile decarboxylation to acetone."
             },
             {
-              "label": "Alpha carbon",
-              "text": "Enolate and aldol chemistry"
+              "label": "Aldolase Substrates",
+              "outcome": "α-Carbon Enolate + Aldehyde",
+              "text": "Deprotonation at the α-carbon forms the nucleophile that attacks a partner aldehyde C=O."
+            },
+            {
+              "label": "Retinal & PLP Cofactors",
+              "outcome": "Aldehyde (-al) Schiff Base",
+              "text": "Terminal aldehyde reacts with lysine ε-NH₂ to form a conjugated imine linkage."
             }
           ],
           "figure": {
@@ -1521,21 +1725,61 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Acid > Anhydride > Ester > Amide > Aldehyde > Ketone > Alcohol",
+          "title": "Master IUPAC Priority Hierarchy: Carboxylic Acid > Derivative > Carbonyl > Alcohol > Amine > Alkene",
           "items": [
             {
-              "label": "Senior group",
-              "text": "Select the suffix using this chapter hierarchy"
+              "label": "Carboxylic Acid (-oic acid)",
+              "text": "Top of the organic hierarchy; always defines C1 at the –COOH carbon (or uses \"-carboxylic acid\" on rings).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Other groups",
-              "text": "Retain prefixes and unsaturation"
+              "label": "Carboxylic Acid Derivatives",
+              "text": "Anhydride > Ester (-oate) > Acid Halide (-oyl halide) > Amide (-amide) > Nitrile (-nitrile).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Separate questions",
-              "text": "Naming seniority is not oxidation-state ranking"
+              "label": "Aldehydes & Ketones",
+              "text": "Aldehyde (-al) > Ketone (-one); both become \"oxo-\" when a carboxylic acid or derivative is present.",
+              "step": "3",
+              "color": "orange"
+            },
+            {
+              "label": "Alcohols, Thiols & Amines",
+              "text": "Alcohol (-ol) > Thiol (-thiol) > Amine (-amine); demoted to hydroxy-, sulfanyl-, and amino- prefixes.",
+              "step": "4",
+              "color": "purple"
             }
           ],
+          "chips": [
+            "-COOH > Ester > Amide > -CN > -CHO > -CO- > -OH > NH₂ > C=C",
+            "Ester = Alkyl ...oate",
+            "N-Alkyl Amide Locant"
+          ],
+          "comparison": [
+            [
+              "1. Carboxylic Acid",
+              "-oic acid (Prefix: carboxy-)",
+              "Highest IUPAC priority (C1)"
+            ],
+            [
+              "2. Ester / Acid Halide",
+              "-oate / -oyl halide",
+              "O-alkyl listed as 1st word"
+            ],
+            [
+              "3. Amide / Nitrile",
+              "-amide / -nitrile",
+              "N-substituents use N- locant"
+            ],
+            [
+              "4. Aldehyde / Ketone",
+              "-al / -one (Prefix: oxo-)",
+              "Outrank alcohols & amines"
+            ]
+          ],
+          "theme": "priority-crown",
           "figure": {
             "type": "structures",
             "steps": [
@@ -1547,19 +1791,23 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Naming Multifunctional Molecules & Ester / Amide Attachments",
+          "prompt": "What type of carboxylic acid derivative or multifunctional compound are you naming?",
           "items": [
             {
-              "label": "Formic acid",
-              "text": "Methanoic: one carbon"
+              "label": "Ester (R–CO–OR′)",
+              "outcome": "Two Words: \"[R′ alkyl] [R-oate]\"",
+              "text": "Group on single-bonded oxygen is word 1 (ethyl); acyl chain with C=O is word 2 (ethanoate → ethyl ethanoate)."
             },
             {
-              "label": "Acetic acid",
-              "text": "Ethanoic: two carbons"
+              "label": "Substituted Amide (R–CO–NR′R″)",
+              "outcome": "Prefix \"N-alkyl\" Before Parent \"-amide\"",
+              "text": "Substituents on nitrogen get locant N- (e.g., N,N-dimethylmethanamide = DMF)."
             },
             {
-              "label": "Propionic acid",
-              "text": "Propanoic: three carbons"
+              "label": "Nitrile (R–C≡N)",
+              "outcome": "Chain Includes Nitrile Carbon (-nitrile)",
+              "text": "Keep terminal \"e\" before \"-nitrile\" (butanenitrile = 4 carbons total including C≡N); prefix is \"cyano-\" when outranked."
             }
           ],
           "figure": {
@@ -1573,15 +1821,15 @@
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Swapping the Acyl Chain and Oxygen-Alkyl Group in Esters",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Equating an ester with an ether"
+              "label": "Common Trap",
+              "text": "Naming CH₃COOCH₂CH₃ as \"methyl propanoate\" or forgetting to count the C≡N carbon in a nitrile chain."
             },
             {
-              "label": "Check",
-              "text": "An ester has an adjacent carbonyl; distinguish P–O–P from carboxylic anhydrides"
+              "label": "Correct Reasoning",
+              "text": "Split the ester at the C–O single bond: the oxygen bears \"ethyl\" and the C=O chain has 2 carbons (\"ethanoate\") → ethyl ethanoate."
             }
           ],
           "figure": {
@@ -1594,15 +1842,22 @@
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Amino Acids, Aspirin (Acetylsalicylic Acid) & β-Lactam Antibiotics",
           "items": [
             {
-              "label": "Pyruvic acid",
-              "text": "2-Oxopropanoic acid"
+              "label": "Canonical Amino Acids",
+              "outcome": "2-aminopropanoic acid (Alanine)",
+              "text": "Carboxylic acid (-oic acid) outranks the amine, so –NH₂ is named as the \"2-amino\" prefix at Cα."
             },
             {
-              "label": "Tartaric acid",
-              "text": "2,3-Dihydroxybutanedioic acid"
+              "label": "GABA Neurotransmitter",
+              "outcome": "4-aminobutanoic acid",
+              "text": "C1 is the carboxylic acid; C2=α, C3=β, C4=γ bears the amino substituent."
+            },
+            {
+              "label": "Aspirin Scaffold",
+              "outcome": "Carboxylic Acid + Phenyl Ester",
+              "text": "Carboxylic acid is the principal group (-benzoic acid), while the ester is an acetoxy substituent."
             }
           ]
         }
