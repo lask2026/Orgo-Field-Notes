@@ -3,7 +3,7 @@
   "chapter": 10,
   "title": "Nitrogen- and Phosphorus-Containing Compounds",
   "sourceSnapshot": {
-    "sha256": "fc158ea2a36116c07d2eec85c6fcab4c83fc5261ea0a22a4fda0b0660eb56c69",
+    "sha256": "98721eb07e6d89b59262db78bb4c82121dfda5df7f09f8dc2fbcf504817a7d45",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -564,7 +564,8 @@
           "h": 205,
           "cond": "glycine zwitterion",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch10:blind:glycine-charge"
     },
@@ -739,7 +740,8 @@
           "h": 200,
           "cond": "glycylglycine zwitterion",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch10:blind:peptide-link"
     },
@@ -872,7 +874,8 @@
           "h": 200,
           "cond": "2-aminopropanenitrile (stereochemistry unspecified)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch10:blind:strecker-map"
     },
@@ -1025,7 +1028,8 @@
           "h": 200,
           "cond": "dimethyl phosphate monoanion (formal Lewis representation)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch10:blind:phosphate-links"
     },

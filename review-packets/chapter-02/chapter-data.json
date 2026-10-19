@@ -217,7 +217,7 @@
       "steps": [
         {
           "label": "1. Rank the substituents",
-          "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal carbon D (index 3) of ethyl supplies the C that breaks the tie; it is now highlighted too. H ranks fourth.</p>",
+          "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted. H ranks fourth.</p>",
           "molecule": "butanol2",
           "highlights": {
             "prin": [
@@ -241,7 +241,7 @@
         },
         {
           "label": "2. Orient then assign",
-          "text": "<p>This is a 180° rotation of the earlier valid projection. Priorities are OH (right) > ethyl (bottom) > methyl (top) > H (left). The apparent 1→2→3 order is clockwise; H is horizontal and toward you, so reverse it: S.</p>",
+          "text": "<p>Use the same Fischer projection with C1 at the top. Priorities are OH (right) > ethyl (bottom) > methyl (top) > H (left). The apparent 1→2→3 order is clockwise; H is horizontal and toward you, so reverse it: S.</p>",
           "molecule": "butanol2",
           "highlights": {
             "prin": [
@@ -483,7 +483,7 @@
         },
         {
           "type": "choice",
-          "prompt": "A cyclohexane chair flip changes…",
+          "prompt": "For cyclohexane (connectivity shown), a chair flip changes…",
           "skill": "Apply the rule",
           "options": [
             "Up into down",
@@ -496,7 +496,8 @@
             "Track the bond orientation relative to the ring.",
             "Up/down and axial/equatorial are different labels."
           ],
-          "highlights": {}
+          "highlights": {},
+          "molecule": "cyclohexane"
         }
       ],
       "summary": "Conformations interconvert without changing configuration.",
@@ -616,7 +617,8 @@
             "(2S)",
             "(S)-butan-2-ol",
             "(2S)-butan-2-ol",
-            "(S)-2-butanol"
+            "(S)-2-butanol",
+            "(2S)-2-butanol"
           ],
           "explanation": "The apparent clockwise sequence is reversed because priority 4 points toward you.",
           "hints": [
@@ -674,7 +676,8 @@
             "(2Z)",
             "(Z)-but-2-ene",
             "(2Z)-but-2-ene",
-            "(Z)-2-butene"
+            "(Z)-2-butene",
+            "(2Z)-2-butene"
           ],
           "explanation": "The two higher-priority methyl groups are on the same side.",
           "hints": [
@@ -685,7 +688,7 @@
         },
         {
           "type": "choice",
-          "prompt": "Why does a pure sample of this Z-but-2-ene show no ordinary optical rotation?",
+          "prompt": "Why does a pure sample of this alkene isomer show no ordinary optical rotation?",
           "skill": "Apply the rule",
           "options": [
             "It is achiral",

@@ -14,13 +14,16 @@ from pypdf import PdfReader
 from PIL import Image as PILImage
 
 ROOT=Path(__file__).resolve().parents[2]
-font_candidates=[(Path('C:/Windows/Fonts/arial.ttf'),Path('C:/Windows/Fonts/arialbd.ttf')),
+font_candidates=[(Path('C:/Windows/Fonts/segoeui.ttf'),Path('C:/Windows/Fonts/segoeuib.ttf')),
  (Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'),Path('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'))]
 fonts=next(((a,b) for a,b in font_candidates if a.exists() and b.exists()),None)
-if not fonts: raise SystemExit('A Unicode font is required: install Arial or DejaVu Sans.')
+if not fonts: raise SystemExit('A Unicode font is required: install Segoe UI or DejaVu Sans.')
 pdfmetrics.registerFont(TTFont('Audit',str(fonts[0])))
 pdfmetrics.registerFont(TTFont('AuditBold',str(fonts[1])))
 pdfmetrics.registerFontFamily('Audit',normal='Audit',bold='AuditBold',italic='Audit',boldItalic='AuditBold')
+for name in ['Audit','AuditBold']:
+ missing=[hex(c) for c in [0x207b,0x2082,0x2083] if c not in pdfmetrics.getFont(name).face.charToGlyph]
+ if missing: raise SystemExit(f'{name} lacks required chemistry glyphs: {missing}')
 styles=getSampleStyleSheet()
 for name in ['Normal','BodyText','Title','Heading1','Heading2','Heading3']:
  styles[name].fontName='AuditBold' if name in ['Title','Heading1','Heading2','Heading3'] else 'Audit'
@@ -109,6 +112,10 @@ def build(directory):
    if blind:graph(story,molecules[ex['molecule']],True)
    for i,s in enumerate(ex['stages']):
     sid=f"{ex['id']}-stage-{i+1}";group=[]
+    if s.get('molecule'):
+     add(story,'This stage uses a different molecule (connectivity shown).','SmallAudit')
+     if blind:
+      picture(story,directory,shots,sid+'-molecule',190);graph(story,molecules[s['molecule']],True)
     add(group,f"{ex['id']}:stage-{i+1} | {s['prompt']}",'Heading2')
     add(group,'Answer type: '+s['type']+((' | unit: '+s['unit']) if s.get('unit') else ''),'SmallAudit')
     for oi,o in enumerate(s.get('options',[])):add(group,f"Option {oi} ({chr(65+oi)}): {o}")

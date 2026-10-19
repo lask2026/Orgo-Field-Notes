@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "afe988d3371a2c61a9c471ef9fb0934bf2b06d6670508568ed7a3ec49866dcc9",
+    "sha256": "7ecf927d8185b7c2824fd80aa9464fc8b1017c72727c4336329c6800aeca371e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -132,12 +132,78 @@
         {
           "id": "butane-rotation:stage-3",
           "type": "choice",
-          "prompt": "A cyclohexane chair flip changes…",
+          "prompt": "For cyclohexane (connectivity shown), a chair flip changes…",
           "options": [
             "Up into down",
             "Axial into equatorial, preserving up/down",
             "Cis into trans"
-          ]
+          ],
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 170,
+                "y": 37
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 71
+              },
+              {
+                "e": "C",
+                "x": 228.88972745734185,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 170,
+                "y": 173
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265817,
+                "y": 139
+              },
+              {
+                "e": "C",
+                "x": 111.11027254265818,
+                "y": 71
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                1
+              ],
+              [
+                5,
+                0,
+                1
+              ]
+            ]
+          }
         }
       ]
     },
@@ -371,7 +437,7 @@
         {
           "id": "ez-chirality:stage-3",
           "type": "choice",
-          "prompt": "Why does a pure sample of this Z-but-2-ene show no ordinary optical rotation?",
+          "prompt": "Why does a pure sample of this alkene isomer show no ordinary optical rotation?",
           "options": [
             "It is achiral",
             "It is necessarily a 50:50 enantiomer mixture",

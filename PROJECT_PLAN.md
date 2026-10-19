@@ -38,3 +38,10 @@ GitHub Pages-compatible files are requested; no remote repository or deployment 
 - Independent chemistry expert sign-off has not been performed.
 - GitHub Pages deployment requires a destination repository and Pages activation; no remote was supplied.
 - Browser tests cover Chromium on this Windows host; Safari/Firefox and assistive-technology user testing are outside the completed validation.
+
+## Follow-up review checkpoint
+
+- Chapter 2 second-review decisions: docs/CHAPTER_02_FOLLOWUP_REVIEW.md. Eight local Llama blind responses preserved and assessed; model agreement is not sign-off.
+- Added reusable stage molecule overrides and Guided Practice Newman answer concealment; refreshed the common PDF font.
+- Outstanding visual teaching improvement: real chair/axial/equatorial drawings for the cyclohexane walkthrough.
+- The earlier Chapter 1 candidate audit remains pending adjudication; do not treat its geometry concerns as resolved by the Chapter 2 changes.

@@ -3,7 +3,7 @@
   "chapter": 5,
   "title": "Alcohols",
   "sourceSnapshot": {
-    "sha256": "7c5b4be69e98e33c9a2b0e4cb4a05c20b36132c8aba866a65b6559f1080f8621",
+    "sha256": "eb93a325abc40eeb368706b795a3a69389782001da748f634f79bc1d52e3c7dc",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -525,7 +525,8 @@
           "h": 200,
           "cond": "2-methylpropan-2-ol",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch05:blind:classify-alcohol"
     },
@@ -647,7 +648,8 @@
           "h": 200,
           "cond": "propan-2-ol",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch05:blind:oxidize-secondary"
     },
@@ -801,7 +803,8 @@
           "h": 200,
           "cond": "2,2-dimethoxypropane",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch05:blind:protection"
     },
@@ -967,7 +970,8 @@
           "h": 235,
           "cond": "1,4-benzoquinone",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch05:blind:quinone-redox"
     },

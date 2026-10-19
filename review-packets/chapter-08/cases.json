@@ -3,7 +3,7 @@
   "chapter": 8,
   "title": "Carboxylic Acids",
   "sourceSnapshot": {
-    "sha256": "c204e0692096b7748c26d06c23423f7c1619e8e0b43ba3eeb456747621fd142b",
+    "sha256": "47542a7f6e5e7bb798d44a1c1beecc9f0022d7c2f57c44bce94638dc2b979e93",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -597,7 +597,8 @@
           "h": 200,
           "cond": "ethanoic acid",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch08:blind:acid-ratio"
     },
@@ -751,7 +752,8 @@
           "cond": "CH₃–CH₂–C(=O)–O–CH₂CH₃",
           "formula": "C5H10O2",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch08:blind:make-ester"
     },
@@ -901,7 +903,8 @@
           "h": 200,
           "cond": "3-oxobutanoic acid (acetoacetic acid)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch08:blind:lose-co2"
     },
@@ -1125,7 +1128,8 @@
           "h": 200,
           "cond": "dodecanoate (laurate)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch08:blind:soap-head"
     },

@@ -14,3 +14,6 @@
 - Only the lesson `text` and four card fields allow curated HTML: paragraphs, emphasis, code, lists, line breaks, subscript/superscript. No executable HTML, event attributes, embedded media, or textbook figures. All other fields are escaped.
 
 Validation: `python scripts/validate_schema.py` checks schemas; `node --test tests/unit.test.mjs` checks graph/formula consistency, references, and stage behavior. Neither independently verifies chemistry. Review provenance and mechanistic assumptions separately.
+
+Stage `molecule` optionally selects a different graph for transfer questions. Its highlights and atom answers refer to that graph; previous-graph highlights and the exercise-wide diagram are suppressed when switching. Audit blind cases include the replacement graph without author names, formulas or keys.
+Newman names and energy commentary are withheld in active Guided Practice; Learn & Explore retains them.

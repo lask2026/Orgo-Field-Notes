@@ -3,7 +3,7 @@
   "chapter": 7,
   "title": "Aldehydes and Ketones II: Enolates",
   "sourceSnapshot": {
-    "sha256": "208ea74db3f7f7deaf994126006b6f412727957ab157f8aeed86d166aca93996",
+    "sha256": "f0e7a5fa4a7c7b895b9681105ec04dc49a003ecbf478dcc37c73e39328931816",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -532,7 +532,8 @@
           "cond": "CH₃–C(=O)–CH₂–CH₂–CH₃",
           "formula": "C5H10O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch07:blind:alpha-map"
     },
@@ -673,7 +674,8 @@
           "cond": "CH₃–C(=O)–CH₂–CH₂–CH₃",
           "formula": "C5H10O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch07:blind:enolate-control"
     },
@@ -826,7 +828,8 @@
           "h": 205,
           "cond": "3-hydroxybutanal (stereochemistry unspecified)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch07:blind:aldol-map"
     },
@@ -960,7 +963,8 @@
           "h": 200,
           "cond": "but-3-en-2-one",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch07:blind:michael-site"
     },

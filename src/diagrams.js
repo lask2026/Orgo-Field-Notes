@@ -1,5 +1,5 @@
 import {escapeHTML as esc} from './validation.js';
-export function drawDiagram(d,value){
+export function drawDiagram(d,value,{concealAnswers=false}={}){
   if(!d)return '';
   let svg='',controls='';
   if(d.type==='fischer'){
@@ -12,7 +12,7 @@ export function drawDiagram(d,value){
       svg+=`<line x1="180" y1="105" x2="${180+58*Math.cos(a)}" y2="${105+58*Math.sin(a)}" stroke="#2563eb"/><text x="${180+78*Math.cos(a)}" y="${110+78*Math.sin(a)}" fill="#1d4ed8">${i===0?'CH₃':'H'}</text>`;
     }
     svg+='<circle cx="180" cy="105" r="4" fill="#2563eb"/>';
-    controls=`<label>CH₃–CH₃ dihedral angle: <output>${angle}°</output><input data-control="diagram" type="range" min="0" max="180" step="60" value="${angle}" aria-label="Dihedral angle"></label><p>${angle===180?'Anti: staggered, lowest energy for butane.':angle===60?'Gauche: staggered, methyl groups closer together.':angle===0?'Fully eclipsed: methyl groups overlap; highest energy.':'Eclipsed: torsional strain exceeds staggered conformations.'}</p>`;
+    controls=`<label>CH₃–CH₃ dihedral angle: <output>${angle}°</output><input data-control="diagram" type="range" min="0" max="180" step="60" value="${angle}" aria-label="Dihedral angle"></label><p>${concealAnswers?'Use the bond positions to identify the conformation.':angle===180?'Anti: staggered, lowest energy for butane.':angle===60?'Gauche: staggered, methyl groups closer together.':angle===0?'Fully eclipsed: methyl groups overlap; highest energy.':'Eclipsed: torsional strain exceeds staggered conformations.'}</p>`;
   }else if(d.type==='spectrum'){
     svg='<path d="M35 25 V165 H335"/>';
     const peaks=d.peaks;

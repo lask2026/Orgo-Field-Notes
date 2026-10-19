@@ -3,7 +3,7 @@
   "chapter": 3,
   "title": "Bonding",
   "sourceSnapshot": {
-    "sha256": "8a59db9f1bd641519bbc53e66a48dc91e2f98451fcadaed885ac48986c9e616b",
+    "sha256": "6adaab58d2ab9952457d9fe2d9a446aa1c3660cd16105c2bcc3f278bc11f538e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -292,7 +292,8 @@
           "h": 200,
           "cond": "ethene",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch03:blind:quantum"
     },
@@ -390,7 +391,8 @@
           "h": 200,
           "cond": "ethyne",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch03:blind:bond-count"
     },
@@ -512,7 +514,8 @@
           "h": 200,
           "cond": "ethanamide",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch03:blind:amide-resonance"
     },

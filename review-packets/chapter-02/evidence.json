@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "afe988d3371a2c61a9c471ef9fb0934bf2b06d6670508568ed7a3ec49866dcc9",
+    "sha256": "7ecf927d8185b7c2824fd80aa9464fc8b1017c72727c4336329c6800aeca371e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -274,7 +274,7 @@
       "id": "butane-rotation-diagram",
       "kind": "practice-diagram",
       "file": "screenshots/butane-rotation-diagram.png",
-      "sha256": "b28baa760fb0a8b8c6e397d29e8fca0b80ffb7269b947b0c1809500a034b87d3",
+      "sha256": "0d947745ebd0a70f39b58ad9859d35887ec34939f72f202a245d98aac0da1154",
       "width": 661,
       "height": 403
     },
@@ -314,7 +314,7 @@
       "id": "butane-rotation-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/butane-rotation-stage-3-molecule.png",
-      "sha256": "6c73461485e2d73b2c63645201d09545032dae732d001191c37b0c248dcc8d15",
+      "sha256": "5d51c11b4bc8b7c070f66b9d2fccc235c63ddef681a485d69b44aa62bb1893b5",
       "width": 661,
       "height": 359
     },
@@ -322,7 +322,7 @@
       "id": "butane-rotation-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/butane-rotation-stage-3-question.png",
-      "sha256": "1d23ff6bff0ae60b1cee362fb4e622dc774134ce453799cd3b362470da1e2dea",
+      "sha256": "baf741293c227f9b4ade313c7758da6b8a00255e3cd8ebe3f8b5d3e47d3b87ea",
       "width": 607,
       "height": 291
     },
@@ -330,7 +330,7 @@
       "id": "butane-rotation-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/butane-rotation-stage-3-feedback.png",
-      "sha256": "34e30a8cd6194ea8c54511dcf36a6cbc1fe5322a27557a291599367adedea67c",
+      "sha256": "c4db6c042d572593f98185191809dd2afd149af8cc4d59a1e9efa7ca3a75e5cc",
       "width": 607,
       "height": 326
     },
@@ -338,9 +338,9 @@
       "id": "butane-rotation-complete",
       "kind": "practice-complete",
       "file": "screenshots/butane-rotation-complete.png",
-      "sha256": "5ebbb32fa4ea1b81391e6efdf56d343b5c699187e6e8473b87e24e0f6ad4d5b6",
+      "sha256": "ddd24880cfa9cd5c2ccae1fdad4308dc548b7993d095a7de3aab6ad777c7f920",
       "width": 1324,
-      "height": 988
+      "height": 574
     },
     {
       "id": "stereocenters-stage-1-molecule",
@@ -570,7 +570,7 @@
       "id": "ez-chirality-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/ez-chirality-stage-3-question.png",
-      "sha256": "eba91b5c26269c900df30a5e0c2028cd18ffd23d2d1e6238764a0546f298e320",
+      "sha256": "02f6b5f3b2ce7f659efe7708e58178b829f8cb63d24924f04645b5d51cca6a60",
       "width": 607,
       "height": 316
     },
@@ -578,7 +578,7 @@
       "id": "ez-chirality-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/ez-chirality-stage-3-feedback.png",
-      "sha256": "b6405a5aa298f5238736fb1a21e9db8a111417d6bde7b3c050b8168a4ad67afe",
+      "sha256": "44f11f305c3b1fd4d6c40ffec6638a65ad27e6494e640567b00e797acdaa55fc",
       "width": 607,
       "height": 373
     },
@@ -586,7 +586,7 @@
       "id": "ez-chirality-complete",
       "kind": "practice-complete",
       "file": "screenshots/ez-chirality-complete.png",
-      "sha256": "55b3aa76e1e5bb3cb536eeafcd1fa87824d97496e1af558e0e534181d1e0109f",
+      "sha256": "77d85381592aabc6bff06f01734214c2e52a07f9f8c75cad3e6a5ae82f36d353",
       "width": 1324,
       "height": 574
     },

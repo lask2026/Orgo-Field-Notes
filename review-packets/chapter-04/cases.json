@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "50a87925677ae8f1d7155bc02a38945fe032780dd9703df11bac550ef2eeffda",
+    "sha256": "ece9d543b87e8de535e4577e12ce3e6af00c3d6807faf0b3834f5e1761372839",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -538,7 +538,8 @@
           "h": 200,
           "cond": "ethanoic acid",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch04:blind:pka-equilibrium"
     },
@@ -650,7 +651,8 @@
           "h": 200,
           "cond": "bromoethane",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch04:blind:identify-partners"
     },
@@ -757,7 +759,8 @@
           "h": 200,
           "cond": "bromoethane",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch04:blind:sn2-rate"
     },
@@ -867,7 +870,8 @@
           "h": 200,
           "cond": "ethanal",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch04:blind:carbon-redox"
     },
@@ -1043,7 +1047,8 @@
           "h": 225,
           "cond": "methyl 4-oxopentanoate",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch04:blind:selective-reduction"
     },

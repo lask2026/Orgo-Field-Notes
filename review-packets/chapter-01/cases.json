@@ -3,7 +3,7 @@
   "chapter": 1,
   "title": "Nomenclature",
   "sourceSnapshot": {
-    "sha256": "f03800639483be5d54f946d7528f671facba48a98c6618a2d37804a6b958d675",
+    "sha256": "0384bae0a316067ca14daf8cd5b4fd4233714a4e6b24ec390fe5a35e1ed15785",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1446,7 +1446,8 @@
           "cond": "CH₃–CH₂–CH(CH₃)–CH₂–CH₂–CH₃",
           "formula": "C7H16",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp1a"
     },
@@ -1657,7 +1658,8 @@
           "cond": "CH₃–CH(CH₃)–CH₂–CH(CH₃)–CH₂–CH₃",
           "formula": "C8H18",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp1b"
     },
@@ -1823,7 +1825,8 @@
           "cond": "CH₂=CH–CH(OH)–CH₃",
           "formula": "C4H8O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp2a"
     },
@@ -2001,7 +2004,8 @@
           "cond": "HC≡C–CH₂–CH(OH)–CH₃",
           "formula": "C5H8O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp2b"
     },
@@ -2231,7 +2235,8 @@
           "cond": "Cyclohexene with methyl at C1 and ethyl at C4",
           "formula": "C9H16",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp3a"
     },
@@ -2447,7 +2452,8 @@
           "cond": "Cyclohexane with –OH at C1 and methyl at C3",
           "formula": "C7H14O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp3b"
     },
@@ -2581,7 +2587,8 @@
           "cond": "HO–CH₂–CH₂–OH",
           "formula": "C2H6O2",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp4a"
     },
@@ -2721,7 +2728,8 @@
           "cond": "CH₃–C(OH)₂–CH₃",
           "formula": "C3H8O2",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp4b"
     },
@@ -2908,7 +2916,8 @@
           "cond": "CH₃–C(=O)–CH₂–CH₂–CH₃",
           "formula": "C5H10O",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp5a"
     },
@@ -3110,7 +3119,8 @@
           "cond": "HO–CH₂–CH₂–CH₂–CHO",
           "formula": "C4H8O2",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp5b"
     },
@@ -3320,7 +3330,8 @@
           "cond": "CH₃–CH₂–C(=O)–N(CH₃)–CH₂CH₃",
           "formula": "C6H13NO",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp6a"
     },
@@ -3551,7 +3562,8 @@
           "cond": "CH₃–CH(OH)–CH₂–C(=O)–COOH",
           "formula": "C5H8O4",
           "review": "Migrated graph; valence/formula checked separately from chemical naming author review."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch01:blind:gp6b"
     },

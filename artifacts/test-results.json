@@ -139,6 +139,7 @@
       "All 51 concepts at 320, 375, 768px: no page overflow; one h1/main; named controls",
       "Large-molecule atom controls have 44px touch targets",
       "Interactive Newman angle changes interpretation; Fischer diagram rendered",
+      "Guided Newman captions withhold answers at changed angles; chair transfer switches graph; optical unit text and cards render",
       "TLC eluent slider updates model Rf",
       "pH slider updates ionization model",
       "Corrupt saved JSON recovers without crashing"

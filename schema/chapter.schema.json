@@ -691,6 +691,11 @@
         "unit": {
           "type": "string",
           "minLength": 1
+        },
+        "molecule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional molecule ID for a transfer stage; replaces the exercise molecule and hides its exercise-wide diagram."
         }
       },
       "required": [

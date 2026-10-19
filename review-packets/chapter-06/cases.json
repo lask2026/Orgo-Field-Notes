@@ -3,7 +3,7 @@
   "chapter": 6,
   "title": "Aldehydes and Ketones I",
   "sourceSnapshot": {
-    "sha256": "9fb3cedcd7853e59e27dce1e4217884c47c03626a5e31a799426accdb16e5d2e",
+    "sha256": "9753d9af98eeba71e4832842ba3fe2740217e0310e4959123b817776406426e2",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -459,7 +459,8 @@
           "h": 200,
           "cond": "ethanal",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch06:blind:addition-site"
     },
@@ -593,7 +594,8 @@
           "h": 200,
           "cond": "1-methoxyethan-1-ol",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch06:blind:hemiacetal-identify"
     },
@@ -733,7 +735,8 @@
           "h": 235,
           "cond": "2-hydroxy-2-methylpropanenitrile (acetone cyanohydrin)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch06:blind:cyanohydrin-count"
     },
@@ -855,7 +858,8 @@
           "h": 200,
           "cond": "propanone",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch06:blind:hydride-product"
     },

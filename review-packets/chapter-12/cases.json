@@ -3,7 +3,7 @@
   "chapter": 12,
   "title": "Separations and Purifications",
   "sourceSnapshot": {
-    "sha256": "b913bafcca67f41be708f5aaaa379ad214e10c52fdb2e1f5d87b210e174790c9",
+    "sha256": "e25a627ab1afcc7637de7afe8549e97acf37ca9459b234b444be62768ca99cf3",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -714,7 +714,8 @@
           "h": 265,
           "cond": "benzoic acid",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch12:blind:acid-extraction"
     },
@@ -869,7 +870,8 @@
           "h": 203,
           "cond": "methylbenzene (toluene)",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch12:blind:choose-distillation"
     },
@@ -1044,7 +1046,8 @@
           "h": 265,
           "cond": "benzoic acid",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch12:blind:rf-calculation"
     },
@@ -1214,7 +1217,8 @@
           "h": 200,
           "cond": "glycylglycine zwitterion",
           "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
-        }
+        },
+        "stageMolecules": {}
       },
       "dependsOn": "ch12:blind:chromatography-match"
     },

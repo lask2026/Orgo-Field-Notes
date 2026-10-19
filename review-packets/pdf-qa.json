@@ -12,7 +12,7 @@
         6,
         13
       ],
-      "sha256": "f6403111a3803edea3cda15b49e99726b90af310b0998b6cd4f805e48ae61354"
+      "sha256": "7aac652f6d45b9080bdb3a93ab3e9d43254ce1746146154e0dd2193df8440c25"
     },
     {
       "chapter": 1,
@@ -25,261 +25,7 @@
         50,
         101
       ],
-      "sha256": "c2dba411b3338c44571639ffd3b913b3042b47e59af8260990e760bcd9ec522e"
-    },
-    {
-      "chapter": 3,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 4,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        4
-      ],
-      "sha256": "7d80fee39d6cacbd01b4815f19b6e25c977bc74e7d7016c41288fea89a871204"
-    },
-    {
-      "chapter": 3,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 28,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        14,
-        28
-      ],
-      "sha256": "a403eed2afb3de09eb42dfed89caa0b2c95f48f4d4dfbb6fe606983a217ebd73"
-    },
-    {
-      "chapter": 4,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 6,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        3,
-        6
-      ],
-      "sha256": "1eae6f261753ab477cebe42241810e11eabd448a89be7e75128af768099fbe31"
-    },
-    {
-      "chapter": 4,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 42,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        21,
-        42
-      ],
-      "sha256": "8633a8041f0773a6048428fe454108137ea1e320f8b1ef4d1be8ddfca57b40bc"
-    },
-    {
-      "chapter": 5,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "d228aa78aed4829f2739e60a8f395ed00aafd7f48d8a04dcb1a8ac1dd71aa51f"
-    },
-    {
-      "chapter": 5,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 36,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        18,
-        36
-      ],
-      "sha256": "525dab4b2cc32aa38b4704039fbe258e127869ba9bc600dd68a9393ae15d2df5"
-    },
-    {
-      "chapter": 6,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "f6633c3c600a5e45d52246262dc5c2a38b07ab62277e3f840453c0d8d4424bc1"
-    },
-    {
-      "chapter": 6,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 36,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        18,
-        36
-      ],
-      "sha256": "f49a0860453ba4b806bee86c2c6690eb64b717e96d7554944a80fddfea6f6ebf"
-    },
-    {
-      "chapter": 7,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "208c2b7c5419a5d86f9ccc3ab22fd0317934ef3b4379d9aa1121f6192be88968"
-    },
-    {
-      "chapter": 7,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 35,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        17,
-        35
-      ],
-      "sha256": "3e4b5b91c85b9c1dd265c3136d8a72d04b1a9b07ab409c46a0f94f79d84a38d0"
-    },
-    {
-      "chapter": 8,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 6,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        3,
-        6
-      ],
-      "sha256": "cc8f659256db3ee88308544ed44206e05928ba087bd6b6492dbd85a9d899221c"
-    },
-    {
-      "chapter": 8,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 35,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        17,
-        35
-      ],
-      "sha256": "35dd632123f4c80921ebb5af3ae81fd0aec703d6fea6a8a9f1ba821beaa1c34f"
-    },
-    {
-      "chapter": 9,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 4,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        4
-      ],
-      "sha256": "efe1cb18f0b47d0b558f6592aa2adbcf55ea7754c02944651609c1db62cc8a4c"
-    },
-    {
-      "chapter": 9,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 28,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        14,
-        28
-      ],
-      "sha256": "c3d9c808e013a9f0d01d9cab22a6f249b12a5a304c21fdd0be028d2d1df0414b"
-    },
-    {
-      "chapter": 10,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "cff1640227103b865d58c23d5cff1cc8ce585c06ad944770e76e7a20bd748422"
-    },
-    {
-      "chapter": 10,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 37,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        18,
-        37
-      ],
-      "sha256": "39ab2187433c0e2ac192a831ed4589074847442254349ff9ffada9afa1e8720d"
-    },
-    {
-      "chapter": 11,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 7,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        3,
-        7
-      ],
-      "sha256": "9dcf4ba01844d0477cf7da2763da7548d180ae447426fcfd2af174df2b8c2366"
-    },
-    {
-      "chapter": 11,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 40,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        20,
-        40
-      ],
-      "sha256": "09512e1ff74386bb5e2d63195dc2a26ccf008c0a93299263213866b1f24923f1"
-    },
-    {
-      "chapter": 12,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 8,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        4,
-        8
-      ],
-      "sha256": "d5553cc85e8d5f8ae8f4d264a90d56161f491085cffb8a5265b084315887243c"
-    },
-    {
-      "chapter": 12,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 37,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        18,
-        37
-      ],
-      "sha256": "bc1986908a231bca738baf4e58c7d4b7b8e9614768a93d934215a8791ff4abc4"
+      "sha256": "618dfaf35e67358f49dfb67da3b07693c79dff27b6fb0cdd10f060ca03d7c06f"
     },
     {
       "chapter": 2,
@@ -292,7 +38,7 @@
         6,
         12
       ],
-      "sha256": "e012e39321a4a698d72facd5c8750239b5b5df5daad45525cd3bdf06170dca3f"
+      "sha256": "011e81c8eb10542596c138e6217fda5cc6068067389e7c70b993f93565416487"
     },
     {
       "chapter": 2,
@@ -305,12 +51,274 @@
         32,
         65
       ],
-      "sha256": "bf03f526271ff3801949933bd4cbec0d24101f86441731ff59eab2e50be892f8"
+      "sha256": "221c56bd69697d467fcf3b62c32229555fe3eca62b6da2154e910037d0fdc85f"
+    },
+    {
+      "chapter": 3,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 4,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        4
+      ],
+      "sha256": "38f3db08fc53e8fd1085c8310f89df7ab630b7ac7cf48594e6bd2fc7d13babac"
+    },
+    {
+      "chapter": 3,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 28,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        14,
+        28
+      ],
+      "sha256": "f93a4de8c33cf61ccb74f0487edcedb7e8ed440d92523a1c961d9195fd7febbf"
+    },
+    {
+      "chapter": 4,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 6,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "sha256": "2a875b3ce4834475869abb798904992a0899fbd60f005cca2412322625f94c04"
+    },
+    {
+      "chapter": 4,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 42,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        21,
+        42
+      ],
+      "sha256": "b5d51c62fde8693b49be9d00d3858474acef2b3a94fbd624c96282de79599914"
+    },
+    {
+      "chapter": 5,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 5,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        5
+      ],
+      "sha256": "59b7b752ffb243732bc017963d51805c274c0dba15f7550c98465c750c2eacbe"
+    },
+    {
+      "chapter": 5,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 36,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        36
+      ],
+      "sha256": "9e842ffc633ce214d0d98b8775759b382a111b733d73d286a36fba0b907e0ac5"
+    },
+    {
+      "chapter": 6,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 5,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        5
+      ],
+      "sha256": "efb7fe8fb87368843a19033998a8bad89a35c8aeddb723395949ffa182a8a790"
+    },
+    {
+      "chapter": 6,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 36,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        36
+      ],
+      "sha256": "4d5590632fe95c7a1de53d4745809496c6cf940996c7238101d9ba5214103b4e"
+    },
+    {
+      "chapter": 7,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 5,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        5
+      ],
+      "sha256": "153d0dbb1c68e397d11d0607f3234291c35a6bcfbdb50b0cc624f267e5ff7569"
+    },
+    {
+      "chapter": 7,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 35,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        17,
+        35
+      ],
+      "sha256": "09c2c054aa8164e235ba58d0147ba472d32cbdf24b66af46934a0ddc46fc4436"
+    },
+    {
+      "chapter": 8,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 6,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "sha256": "26f000aeb139496b1b662230c1001ab415434a5d160387938eb1761a781656c1"
+    },
+    {
+      "chapter": 8,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 35,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        17,
+        35
+      ],
+      "sha256": "c385005b1845a0410285ba88ca6c95483943e709d02acac88fc473ab373259a9"
+    },
+    {
+      "chapter": 9,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 4,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        4
+      ],
+      "sha256": "1830544e1b3cb288c38777b47e111c7b187a05d4924614aae97066aa4ea5cce5"
+    },
+    {
+      "chapter": 9,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 28,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        14,
+        28
+      ],
+      "sha256": "f1e9f0fb09c9479634e42dbbb48c0f040bd43e27b6cb218bf284dfa8ceae961d"
+    },
+    {
+      "chapter": 10,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 5,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        5
+      ],
+      "sha256": "dd9b42cb5b270e10b4075b7091e69826296b59f463baeed2358d04e5932beb85"
+    },
+    {
+      "chapter": 10,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 37,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        37
+      ],
+      "sha256": "76b82a7d02ca76e25c725d359f8b6533b02fa48ccb38436c81e8919fd5cc6a26"
+    },
+    {
+      "chapter": 11,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 7,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "sha256": "143b8cb9a9f4b596d24005d3fc4e3a22347c678a7191c20fb087947020426fa0"
+    },
+    {
+      "chapter": 11,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 40,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        20,
+        40
+      ],
+      "sha256": "1bd748a16efd31b87711d0f9f4b23cdf6b868501a9f4a41028ad28438090c0c8"
+    },
+    {
+      "chapter": 12,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 8,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "sha256": "79b83b287214919459b6e40bc638d19559cb5cc81fcfc1e6b4b201d3cf997f30"
+    },
+    {
+      "chapter": 12,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 37,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        37
+      ],
+      "sha256": "1307758ac4c6b8abdea797d78232ad9f6ea21194711d6e6e749b176c149c9c4d"
     }
   ],
   "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
   "visualInspection": {
     "status": "sampled-pages-inspected",
-    "note": "Previously inspected samples retained for unchanged chapters. Revised Chapter 2: eight sampled pages plus full-size Fischer and optical exercise pages rendered and visually inspected."
+    "samplePages": 90,
+    "contactSheets": 8,
+    "additionalChecks": [
+      "Chapter 2 blind page 6: printed Fischer JSON subscripts",
+      "Chapter 2 blind page 9: printed specific-rotation inverse units",
+      "Mobile optical lesson with expanded teaching cards",
+      "Mobile cyclohexane transfer stage with expanded graph description"
+    ],
+    "limits": "Sampled layout review only; not all PDF pages and not independent chemistry verification."
   }
 }

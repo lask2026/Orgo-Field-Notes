@@ -46,6 +46,8 @@ Detailed evidence: \`artifacts/test-results.json\`, \`artifacts/browser.json\`, 
 
 Chemistry has source-backed author review, not independent expert sign-off. Code tests are **not** proof of scientific correctness. Corrections, sources, modeling assumptions, and open verification tasks are recorded in \`CHEMISTRY_REVIEW.md\`. No known unresolved chemistry defect remains from the author audit. External expert review of names, stereochemistry, mechanisms, and explanations remains pending.
 
+Chapter 2 follow-up review repaired wording, answer spoilers, transfer-stage structure selection, explicit aliases and PDF glyph coverage. See \`docs/CHAPTER_02_FOLLOWUP_REVIEW.md\` for local-model disagreements and decisions. A real chair/axial/equatorial visualization remains outstanding, and the earlier Chapter 1 candidate audit is pending adjudication.
+
 Spectra and TLC behavior are labeled schematic; no experimental-data verification is claimed. Browser checks ran in Chromium on Windows, not Safari/Firefox. Targeted accessibility checks are not a WCAG certification or screen-reader user study.
 
 The Pages build and workflow are ready, but no GitHub remote was supplied and no site was published. No external dependency or execution blocker remains for using the delivered offline application.

@@ -63,3 +63,12 @@
 - Current totals: 51 lessons, 59 workshops, 175 stages; Chapter 2 has 6 lessons, 8 workshops and 24 stages. Regenerated both app builds and Chapter 2 PDFs/data/screenshots. Review packages now contain 274 model cases and 803 current screenshot records.
 - Passed: 28 test groups across application, Chapter 2 revision and audit tests; 13 schema documents; full 12-chapter Playwright run; all 12 regression groups; packet integrity checks for all chapters. Revised PDF text and sampled visual rendering checked, including Fischer and optical exercises.
 - Chapter 2 external report remains model evidence, not expert certification. Full independent chemistry review remains pending.
+
+## Chapter 2 second-review checkpoint
+
+- Preserved and inspected all eight completed local llama3.1:8b blind records (24 stages). Recorded 13 key matches and 11 disagreements, plus incorrect reasoning attached to some matching answers; no key was changed to follow the model. Detailed adjudication: docs/CHAPTER_02_FOLLOWUP_REVIEW.md.
+- Addressed contradictory Fischer wording, hidden-index prose, Newman answer captions, the printed Z spoiler, two explicit parenthesized aliases, stage-to-molecule mismatch, and common PDF font glyphs. Added reusable stage molecule overrides with reference validation and blind-graph support.
+- Open: the chair walkthrough still needs an actual chair/axial/equatorial visualization; the earlier Chapter 1 audit remains pending. Neither model review constitutes expert chemistry sign-off.
+- Passed: 28 Node test groups, 13 schema documents, all 12 chapters in the full browser suite, and 13 regression groups covering offline/persistence/mobile behavior plus the new concealment, replacement graph and expanded optical cards. Repaired test assertions that initially read collapsed content or toggled an already-open card.
+- Refreshed all 24 PDFs and all 12 source snapshots/captures. Packet integrity passed for 274 cases and 803 screenshot records. PDF extracted-text coverage and 90 sampled Poppler page renders passed; eight contact sheets, Chapter 2 printed subscripts/units, and mobile optical/transfer screenshots visually inspected. App counts remain 51 lessons, 59 workshops, 175 stages and 68 molecular graphs.
+- Historical Llama source hashes remain intact. Resume will rerun stale cases; no automatic or additional model inference was started.

@@ -85,3 +85,7 @@ Chapter 2 external-review follow-up: adjudicated six findings from the user's pa
 - Spectra are illustrative positions, not experimental measurements. The NMR plot labels multiplicities in its caption rather than simulating full multiplet line shapes.
 - IR regions, proton shifts, and pKa values are approximate. Speciation assumes a simple monoprotic model. TLC sliders illustrate a trend and do not predict a real Rf.
 - Reagent selectivity, equilibria, and chromatography depend on substrate and conditions. Conditions and limitations accompany the rules.
+
+## Chapter 2 second candidate review and local Llama results
+
+See docs/CHAPTER_02_FOLLOWUP_REVIEW.md for adjudication of seven new findings and all 11 disagreements in the eight completed local blind cases. The 13 matching keys out of 24 do not measure scientific accuracy: some matching answers have false reasoning. No answer key was changed to follow Llama. Confirmed wording and answer spoilers were repaired, explicit parenthesized aliases added, the chair-transfer graph corrected, and PDF glyph support repaired. The actual chair/axial/equatorial visualization remains open; the lessons disclose that their hexagons show connectivity only. External expert chemistry review remains pending.
