@@ -3,7 +3,7 @@
   "chapter": 2,
   "title": "Isomers",
   "sourceSnapshot": {
-    "sha256": "515d4f6c29846b61c9f88a5e23d2c76941d34758b1f2ef7ceb2af2c14c30f2d5",
+    "sha256": "afa3e9c3de14864556969b486dacab90ee20a862847863d497ab8aa3875ae5ef",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

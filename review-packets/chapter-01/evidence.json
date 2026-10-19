@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "sourceSnapshot": {
-    "sha256": "97bca474a17a151bd638935035269968c04b15af21bd57835fe40a00c6ce6cd2",
+    "sha256": "a251804a79200a19db0e9896bd141f9915425655e333788d2f259a1ec3bbe8c9",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -42,7 +42,7 @@
       "id": "naming-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/naming-step-3.png",
-      "sha256": "12d42080f764de8efa0036c08810f84fb6b503b771412d281f0dce203e1d61f6",
+      "sha256": "5e66dd2f870c0e071354935d03012e7cade57245ad10f19db4a3b6e79e75a8ac",
       "width": 661,
       "height": 359
     },
@@ -58,7 +58,7 @@
       "id": "naming-step-4",
       "kind": "learn-molecule",
       "file": "screenshots/naming-step-4.png",
-      "sha256": "b543f0d8bdaf409c5c83666f0a305f155ea56944fbde55737215d1d73394f463",
+      "sha256": "7ba5b6327ec6cefb01275c5181bbab9893a0ac0964433a4ab9728e4f394654df",
       "width": 661,
       "height": 359
     },
@@ -122,7 +122,7 @@
       "id": "alcohols-step-4",
       "kind": "learn-molecule",
       "file": "screenshots/alcohols-step-4.png",
-      "sha256": "881a0f3c989e2d9dcb6cd89f9fa9b4fa8d78dfe4481c1577625f21d49a0ade66",
+      "sha256": "3e58bd2466b112fbea4cca8012eb663ed05c8ce09c89ace68c6da3920cdef432",
       "width": 661,
       "height": 359
     },
@@ -170,7 +170,7 @@
       "id": "rings-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/rings-step-3.png",
-      "sha256": "8dc302b360b758a88d76c0b4f1be05bcf53cc242281b515ab80611c7cf77e48d",
+      "sha256": "1d98ea4f96062bf03c8584f8a8fbab58bf67418c795e4c18e272d5d27ffe54ae",
       "width": 661,
       "height": 359
     },
@@ -186,7 +186,7 @@
       "id": "diols-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/diols-step-1.png",
-      "sha256": "4ff812b56b927d213337082b58d307bd613ef10855886d61a75afe5343c63016",
+      "sha256": "324cefd2a709167acd1a718652d65c934ebe7adf211e52e4c4f9a2ceabc1c4e6",
       "width": 661,
       "height": 359
     },
@@ -202,7 +202,7 @@
       "id": "diols-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/diols-step-2.png",
-      "sha256": "e4106736e7c97e6ae6ca127d10f617a884c2febb776a19b26115d4eac4abdb53",
+      "sha256": "1ba36510cd7748bcf55895d35743012ae39ead5b1496900f4bcb0228c6ee988f",
       "width": 661,
       "height": 359
     },
@@ -234,7 +234,7 @@
       "id": "carbonyls-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyls-step-2.png",
-      "sha256": "2be97ef64ffb23f44146d9927e047a5d75046ae877c98933c5fbee8153646065",
+      "sha256": "80fea3c1da74e22da9fccef7b0735cf17e3c6cc338021dc60091f85d2d6b5762",
       "width": 661,
       "height": 359
     },
@@ -250,7 +250,7 @@
       "id": "carbonyls-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyls-step-3.png",
-      "sha256": "f3970f477769cf3a14078018a3327bd0e6d5f9d23d887b8d0ef2d6bd5b357df2",
+      "sha256": "17f4abb6bdb86cb135f65de32af8b5d3b11752074aaf50a14a2bc64ffdfe0baa",
       "width": 661,
       "height": 359
     },
@@ -266,7 +266,7 @@
       "id": "carbonyls-step-4",
       "kind": "learn-molecule",
       "file": "screenshots/carbonyls-step-4.png",
-      "sha256": "b4832150b36674698c3a8c84b3e9a3d5cc92a8206ee7d6df24c4d68fe8e2fc2b",
+      "sha256": "ccc6bbf57bb16c746b1156f5007476feada84ed80d74fa4b63ab4403e322c1f7",
       "width": 661,
       "height": 359
     },
@@ -282,7 +282,7 @@
       "id": "derivatives-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/derivatives-step-1.png",
-      "sha256": "89fc1f5df3677fb32a8ae461baa92156d687b94a6c5ce139105a815911682b1d",
+      "sha256": "e6b93ddb8227a3203bb9c6f809ada1db142b29d344599a92636b9db476ba9c11",
       "width": 661,
       "height": 359
     },
@@ -298,7 +298,7 @@
       "id": "derivatives-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/derivatives-step-2.png",
-      "sha256": "08c7a1c5749d73e591ae2a730ec8b6be674f23585b1c20d849a2eb3e6d7774df",
+      "sha256": "d0dc6155993198a6aef930b1a4ae524b6792b4eac879f0e9b91d17c4d838b511",
       "width": 661,
       "height": 359
     },
@@ -314,7 +314,7 @@
       "id": "derivatives-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/derivatives-step-3.png",
-      "sha256": "c46d1f432a7169e96d7a6ec63068eb3eb70765c3219143d650a4a4ffc9ac95aa",
+      "sha256": "3a2f5ac961be339b62466e792bbd883a9a84fc35467e9746495189110c4768a0",
       "width": 661,
       "height": 359
     },
@@ -394,7 +394,7 @@
       "id": "gp1a-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp1a-stage-3-molecule.png",
-      "sha256": "063eb441a9d01b0af036bb511734c051cadad650a82e357730aa402047fa979f",
+      "sha256": "42505dedf6334ca1967c72f5ca68be64cc165514ddec68174f2f60d5b61f7601",
       "width": 661,
       "height": 359
     },
@@ -474,7 +474,7 @@
       "id": "gp1b-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp1b-stage-3-molecule.png",
-      "sha256": "128045bed650dbfd9d065111a5e015e7d557da7a660e569888891e6869b334e1",
+      "sha256": "5c136f2118ee71c834926edee56053753f60eeb0861b89a0c74bdfa4e82d1a41",
       "width": 661,
       "height": 359
     },
@@ -554,7 +554,7 @@
       "id": "gp2a-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp2a-stage-3-molecule.png",
-      "sha256": "881a0f3c989e2d9dcb6cd89f9fa9b4fa8d78dfe4481c1577625f21d49a0ade66",
+      "sha256": "3e58bd2466b112fbea4cca8012eb663ed05c8ce09c89ace68c6da3920cdef432",
       "width": 661,
       "height": 359
     },
@@ -634,7 +634,7 @@
       "id": "gp2b-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp2b-stage-3-molecule.png",
-      "sha256": "be843c0ce98cb4e9ca1e7eed179a632454e91d9b9c5692675b3c548ab8896ca6",
+      "sha256": "89a93d647eeeca55e5cab78caa5e66f4a9df5a04a2a75561a021004ade57103b",
       "width": 661,
       "height": 359
     },
@@ -690,7 +690,7 @@
       "id": "gp3a-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp3a-stage-2-molecule.png",
-      "sha256": "3dbf9a6b2a200418aa45d28045fbfcad533928c2370bb081ef714c6236756c2c",
+      "sha256": "1824b9e09767d591f12fd425877bb0d0dfc8686402906b806bd13ccd694a0870",
       "width": 661,
       "height": 359
     },
@@ -714,7 +714,7 @@
       "id": "gp3a-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp3a-stage-3-molecule.png",
-      "sha256": "8dc302b360b758a88d76c0b4f1be05bcf53cc242281b515ab80611c7cf77e48d",
+      "sha256": "1d98ea4f96062bf03c8584f8a8fbab58bf67418c795e4c18e272d5d27ffe54ae",
       "width": 661,
       "height": 359
     },
@@ -794,7 +794,7 @@
       "id": "gp3b-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp3b-stage-3-molecule.png",
-      "sha256": "9144963f47be28bccac6a640390e913f838382d2e76f51f4ecc5acdff8b69fb0",
+      "sha256": "995fa7705a1ae385d437936fff18de2befbb84eb814493442a7c148af51a602b",
       "width": 661,
       "height": 359
     },
@@ -850,7 +850,7 @@
       "id": "gp4a-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp4a-stage-2-molecule.png",
-      "sha256": "4ff812b56b927d213337082b58d307bd613ef10855886d61a75afe5343c63016",
+      "sha256": "324cefd2a709167acd1a718652d65c934ebe7adf211e52e4c4f9a2ceabc1c4e6",
       "width": 661,
       "height": 359
     },
@@ -906,7 +906,7 @@
       "id": "gp4b-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp4b-stage-2-molecule.png",
-      "sha256": "e4106736e7c97e6ae6ca127d10f617a884c2febb776a19b26115d4eac4abdb53",
+      "sha256": "1ba36510cd7748bcf55895d35743012ae39ead5b1496900f4bcb0228c6ee988f",
       "width": 661,
       "height": 359
     },
@@ -986,7 +986,7 @@
       "id": "gp5a-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp5a-stage-3-molecule.png",
-      "sha256": "f3970f477769cf3a14078018a3327bd0e6d5f9d23d887b8d0ef2d6bd5b357df2",
+      "sha256": "17f4abb6bdb86cb135f65de32af8b5d3b11752074aaf50a14a2bc64ffdfe0baa",
       "width": 661,
       "height": 359
     },
@@ -1042,7 +1042,7 @@
       "id": "gp5b-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp5b-stage-2-molecule.png",
-      "sha256": "2392b8acb2aa886e9ee42a2a6f38edc4630207e77573c9ae75def01920e2b07d",
+      "sha256": "d3e3cc07d2ed4ad88730f0cd60d54788bb465849624aaed04bd69b232d4bdc9e",
       "width": 661,
       "height": 359
     },
@@ -1066,7 +1066,7 @@
       "id": "gp5b-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp5b-stage-3-molecule.png",
-      "sha256": "b4832150b36674698c3a8c84b3e9a3d5cc92a8206ee7d6df24c4d68fe8e2fc2b",
+      "sha256": "ccc6bbf57bb16c746b1156f5007476feada84ed80d74fa4b63ab4403e322c1f7",
       "width": 661,
       "height": 359
     },
@@ -1122,7 +1122,7 @@
       "id": "gp6a-stage-2-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp6a-stage-2-molecule.png",
-      "sha256": "104aaf1dbfd69888723f9a7c69cd0d40db1592e997ddc6caaf48952f72bdffc9",
+      "sha256": "ac973b7e7a0eae5759059a5cb998eb677bd698dbc13ea831faf1b7e6c2adff49",
       "width": 661,
       "height": 359
     },
@@ -1146,7 +1146,7 @@
       "id": "gp6a-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp6a-stage-3-molecule.png",
-      "sha256": "c46d1f432a7169e96d7a6ec63068eb3eb70765c3219143d650a4a4ffc9ac95aa",
+      "sha256": "3a2f5ac961be339b62466e792bbd883a9a84fc35467e9746495189110c4768a0",
       "width": 661,
       "height": 359
     },
@@ -1226,7 +1226,7 @@
       "id": "gp6b-stage-3-molecule",
       "kind": "practice-molecule",
       "file": "screenshots/gp6b-stage-3-molecule.png",
-      "sha256": "89fc1f5df3677fb32a8ae461baa92156d687b94a6c5ce139105a815911682b1d",
+      "sha256": "e6b93ddb8227a3203bb9c6f809ada1db142b29d344599a92636b9db476ba9c11",
       "width": 661,
       "height": 359
     },

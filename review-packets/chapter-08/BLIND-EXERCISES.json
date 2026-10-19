@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "a10a64e812eded49798c2edbcabe857eb4236474eecb3dc3350764b35e21181e",
+    "sha256": "e0f293f59b38a1e55845e4a6376ea54c68b9d9da5b8df5679db8c3f06eb3f5e8",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -144,6 +144,7 @@
           ]
         ]
       },
+      "context": "The ester canvas illustrates the functional-group pattern. The later acid/amine question is a separate transfer question, not a transformation of this ester.",
       "stages": [
         {
           "id": "make-ester:stage-1",
@@ -179,37 +180,37 @@
           {
             "e": "C",
             "x": 50,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 108,
-            "y": 85
-          },
-          {
-            "e": "C",
-            "x": 166,
             "y": 115
           },
           {
             "e": "C",
-            "x": 224,
+            "x": 166,
             "y": 85
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 115
           },
           {
             "e": "O",
             "x": 50,
-            "y": 45
+            "y": 25
           },
           {
             "e": "O",
-            "x": 10,
-            "y": 155
+            "x": 0,
+            "y": 115
           },
           {
             "e": "O",
             "x": 166,
-            "y": 45
+            "y": 25
           }
         ],
         "bonds": [
@@ -260,7 +261,48 @@
         {
           "id": "lose-co2:stage-3",
           "type": "text",
-          "prompt": "Name the carbonyl product after tautomerization."
+          "prompt": "Name the carbonyl product after tautomerization.",
+          "molecule": {
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ]
+          }
         }
       ]
     },
@@ -271,72 +313,72 @@
           {
             "e": "C",
             "x": 50,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 108,
-            "y": 85
+            "y": 115
           },
           {
             "e": "C",
             "x": 166,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 224,
-            "y": 85
+            "y": 115
           },
           {
             "e": "C",
             "x": 282,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 340,
-            "y": 85
+            "y": 115
           },
           {
             "e": "C",
             "x": 398,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 456,
-            "y": 85
+            "y": 115
           },
           {
             "e": "C",
             "x": 514,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 572,
-            "y": 85
-          },
-          {
-            "e": "C",
-            "x": 630,
             "y": 115
           },
           {
             "e": "C",
-            "x": 688,
+            "x": 630,
             "y": 85
+          },
+          {
+            "e": "C",
+            "x": 688,
+            "y": 115
           },
           {
             "e": "O",
             "x": 50,
-            "y": 45
+            "y": 25
           },
           {
             "e": "O",
-            "x": 10,
-            "y": 160,
+            "x": 0,
+            "y": 115,
             "charge": -1
           }
         ],

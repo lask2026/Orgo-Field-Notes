@@ -3,7 +3,7 @@
   "chapter": 9,
   "title": "Carboxylic Acid Derivatives",
   "sourceSnapshot": {
-    "sha256": "e5dd1487d0782972ee9385f3a13e04a39e248a0f93cbef2455348bcf33dce6d2",
+    "sha256": "6155664634c695f24c00b63203875a747c2b8d959f43daca2ab73998d6e79301",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -265,7 +265,7 @@
             "type": "choice",
             "prompt": "Under excess aqueous NaOH, the major acid-derived product is…",
             "options": [
-              "Acetate",
+              "Acetate (ethanoate)",
               "Neutral ethanoic acid",
               "Ethanal"
             ]
@@ -273,7 +273,7 @@
           {
             "id": "hydrolysis-products:stage-3",
             "type": "text",
-            "prompt": "What alcohol is produced from the O-methyl group?"
+            "prompt": "Identify the alcohol produced from the O-methyl group (name or condensed formula)."
           }
         ]
       }
@@ -590,7 +590,7 @@
               "prompt": "Under excess aqueous NaOH, the major acid-derived product is…",
               "skill": "Apply the rule",
               "options": [
-                "Acetate",
+                "Acetate (ethanoate)",
                 "Neutral ethanoic acid",
                 "Ethanal"
               ],
@@ -604,11 +604,13 @@
             },
             {
               "type": "text",
-              "prompt": "What alcohol is produced from the O-methyl group?",
+              "prompt": "Identify the alcohol produced from the O-methyl group (name or condensed formula).",
               "skill": "State your conclusion",
               "accepted": [
                 "methanol",
-                "methyl alcohol"
+                "methyl alcohol",
+                "CH3OH",
+                "MeOH"
               ],
               "explanation": "The departing methoxide is protonated to methanol.",
               "hints": [
@@ -618,7 +620,7 @@
               "highlights": {}
             }
           ],
-          "summary": "Methyl ethanoate + hydroxide → acetate + methanol."
+          "summary": "Methyl ethanoate + hydroxide → acetate (ethanoate) + methanol. The canvas retains the starting ester; both products are described here."
         },
         "molecule": {
           "name": "methyl ethanoate",
@@ -703,14 +705,14 @@
           "tag": "Read the atom directly attached to acyl carbon",
           "cards": {
             "rule": "<p>Esters have C(=O)–OR; amides have C(=O)–NR2; anhydrides have C(=O)–O–C(=O). Lactones are cyclic esters and lactams are cyclic amides. A beta-lactam contains a four-membered ring.</p>",
-            "cue": "<p>Acyl C → O–C: ester. Acyl C → N: amide. Acyl C → O → acyl C: anhydride.</p>",
-            "trap": "<p>An ether has no adjacent carbonyl. An N-substituted amide is still an amide even if it has no N–H bond. Ring size names count heteroatoms as ring members.</p>",
+            "cue": "<p>Acyl C → O–C: ester. Acyl C → N: amide. Acyl C → O → acyl C: anhydride. For esters, name the O-alkyl group then the acid-derived -oate. Amides use -amide, with N- prefixes for N substituents. Anhydrides use the acid name(s) plus anhydride; list both acids for a mixed anhydride. In lactam/lactone shorthand, beta = four ring atoms, gamma = five, delta = six; count the ring heteroatom and carbonyl carbon, excluding the exocyclic oxygen.</p>",
+            "trap": "<p>An ether has no adjacent carbonyl. An N-substituted amide is still an amide even if it has no N–H bond. Ring size names count heteroatoms as ring members. Ammonia, primary and secondary amines can give ordinary neutral amides by acylation and N–H loss. Tertiary amines lack that N–H: they can act as bases or form acylammonium intermediates, rather than the analogous neutral amide by simple acylation.</p>",
             "app": "<p>Triacylglycerols contain ester links; proteins contain amide links. Beta-lactam antibiotics exploit a strained amide structure.</p>"
           },
           "steps": [
             {
-              "label": "1. Ester vs. amide",
-              "text": "<p>Ethyl propanoate connects the acyl carbon to oxygen. The alkoxy carbon chain lies beyond that oxygen.</p>",
+              "label": "1. Acyclic ester",
+              "text": "<p>Ethyl propanoate connects the acyl carbon to oxygen. The alkoxy carbon chain lies beyond that oxygen. An amide instead bonds the acyl carbon directly to nitrogen.</p>",
               "molecule": "ester",
               "highlights": {
                 "prin": [
@@ -1002,10 +1004,10 @@
           "molecule": "methylacetate",
           "tag": "Addition → tetrahedral intermediate → elimination",
           "cards": {
-            "rule": "<p>A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter.</p>",
+            "rule": "<p>A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter. Inductive withdrawal transmits through sigma bonds and can increase acyl-carbon electrophilicity. Steric crowding can hinder nucleophile approach. These effects compete with leaving-group ability, resonance and catalysis; a single naming-priority or conjugation shortcut cannot rank every reaction.</p>",
             "cue": "<p>Addition–elimination replaces the acyl substituent while retaining a carbonyl.</p>",
-            "trap": "<p>Aldehydes and ketones usually undergo addition because H− or an ordinary carbanion would be poor leaving groups. Acid/base catalysis and ring strain can change rates. Conjugation does not universally increase carbonyl electrophilicity.</p>",
-            "app": "<p>Amide resonance makes peptide bonds relatively resistant to uncatalyzed hydrolysis. Strained beta-lactams are more reactive than ordinary unstrained amides.</p>"
+            "trap": "<p>Aldehydes and ketones normally add rather than substitute because hydride or an ordinary carbanion would be a poor leaving group. Conjugation means adjacent aligned p orbitals delocalize electrons; it can stabilize a reactant, intermediate or transition state. A rate depends on the activation free-energy difference, so stabilization alone does not prove a faster reaction. Enones also offer beta attack (1,4-addition), which differs from direct carbonyl attack (1,2-addition). Heteroatom lone-pair donation into C=O, especially from amide N, reduces carbonyl electrophilicity. The effect of conjugation requires the actual substrate, nucleophile, site and conditions.</p>",
+            "app": "<p>Amide resonance makes peptide bonds relatively resistant to uncatalyzed hydrolysis. Strained beta-lactams are more reactive than ordinary unstrained amides. Small rings can have angle strain and torsional strain. Beta-lactam geometry can reduce optimal amide orbital overlap and hydrolysis can relieve strain; the extent of nitrogen pyramidalization and resonance loss depends on ring fusion/substitution. The displayed unfused four-membered connectivity diagram is not a 3D bond-angle model.</p>"
           },
           "steps": [
             {
@@ -1028,7 +1030,7 @@
             },
             {
               "label": "2. Tetrahedral intermediate",
-              "text": "<p>The carbon now bears the incoming OH, the original OCH3, and an O− derived from the carbonyl oxygen. It has four single bonds.</p>",
+              "text": "<p>The carbon now bears the incoming OH, the original OCH3, and an O− derived from the carbonyl oxygen. It has four single bonds. Four directions are spread in a 2D projection for readability, not a claim of 90-degree physical bond angles.</p>",
               "molecule": "ester-intermediate",
               "highlights": {
                 "prin": [
@@ -1133,7 +1135,7 @@
               {
                 "e": "C",
                 "x": 55,
-                "y": 120
+                "y": 145
               },
               {
                 "e": "C",
@@ -1142,24 +1144,24 @@
               },
               {
                 "e": "O",
-                "x": 115,
+                "x": 175,
                 "y": 25,
                 "charge": -1
               },
               {
                 "e": "O",
                 "x": 175,
-                "y": 120
+                "y": 145
               },
               {
                 "e": "C",
                 "x": 235,
-                "y": 85
+                "y": 110
               },
               {
                 "e": "O",
                 "x": 55,
-                "y": 35
+                "y": 25
               }
             ],
             "bonds": [
@@ -1192,7 +1194,7 @@
             "w": 320,
             "h": 200,
             "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
-            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
           }
         }
       }
@@ -1218,9 +1220,9 @@
           "molecule": "anhyd",
           "tag": "Conditions determine the protonation state",
           "cards": {
-            "rule": "<p>Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine.</p>",
-            "cue": "<p>Follow the acyl fragment and the departing group separately.</p>",
-            "trap": "<p>In basic ester hydrolysis, carboxylate formation helps drive the net reaction. Do not draw a free carboxylic acid as the major product until acid workup. Amide hydrolysis usually needs more forcing conditions than ester hydrolysis.</p>",
+            "rule": "<p>Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine. A condensation joins reactants while losing a small molecule. Fischer esterification is acid + alcohol ⇌ ester + water under acid catalysis; removing water or using excess alcohol favors ester. Water need not be completely absent, and aqueous acid promotes the reverse hydrolysis.</p>",
+            "cue": "<p>Follow the acyl fragment and the departing group separately. Saponification is basic ester cleavage; a triacylglycerol yields glycerol and fatty-acid salts. Suitable dicarboxylic acids can dehydrate on heating to five- or six-membered cyclic anhydrides when geometry and conditions allow; not every diacid cyclizes.</p>",
+            "trap": "<p>In basic ester hydrolysis, carboxylate formation helps drive the net reaction. Do not draw a free carboxylic acid as the major product until acid workup. Amide hydrolysis usually needs more forcing conditions than ester hydrolysis. Acetal/ketal protection masks an aldehyde or ketone electronically and can tolerate many bases or hydrides; aqueous acid removes it. It does not make a carbonyl universally inert or merely block approach by steric bulk.</p>",
             "app": "<p>Proteases catalyze peptide hydrolysis under mild biological conditions by activating nucleophiles and stabilizing intermediates; the uncatalyzed reaction is much slower.</p>"
           },
           "steps": [
@@ -1789,7 +1791,7 @@
             {
               "e": "C",
               "x": 55,
-              "y": 120
+              "y": 145
             },
             {
               "e": "C",
@@ -1798,24 +1800,24 @@
             },
             {
               "e": "O",
-              "x": 115,
+              "x": 175,
               "y": 25,
               "charge": -1
             },
             {
               "e": "O",
               "x": 175,
-              "y": 120
+              "y": 145
             },
             {
               "e": "C",
               "x": 235,
-              "y": 85
+              "y": 110
             },
             {
               "e": "O",
               "x": 55,
-              "y": 35
+              "y": 25
             }
           ],
           "bonds": [
@@ -1848,7 +1850,7 @@
           "w": 320,
           "h": 200,
           "cond": "tetrahedral intermediate of methyl ethanoate hydroxide addition",
-          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending. Four single bonds are spread in a 2D projection for legibility; the drawing does not assert physical 90-degree tetrahedral bond angles."
         }
       }
     },
@@ -2035,7 +2037,7 @@
             "tag": "Read the atom directly attached to acyl carbon",
             "coreRule": "Esters have C(=O)–OR; amides have C(=O)–NR2; anhydrides have C(=O)–O–C(=O). Lactones are cyclic esters and lactams are cyclic amides. A beta-lactam contains a four-membered ring.",
             "stepTopics": [
-              "1. Ester vs. amide",
+              "1. Acyclic ester",
               "2. Cyclic amide",
               "3. Cyclic ester"
             ]
@@ -2044,7 +2046,7 @@
             "id": "acyl-mechanism",
             "title": "Acyl substitution and relative reactivity",
             "tag": "Addition → tetrahedral intermediate → elimination",
-            "coreRule": "A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter.",
+            "coreRule": "A nucleophile adds to an acyl carbon and shifts the pi pair to O. Collapse of the tetrahedral intermediate reforms C=O and expels a leaving group. For comparable unactivated derivatives, a useful order is acid chloride > anhydride > ester > amide. Leaving-group basicity and resonance donation both matter. Inductive withdrawal transmits through sigma bonds and can increase acyl-carbon electrophilicity. Steric crowding can hinder nucleophile approach. These effects compete with leaving-group ability, resonance and catalysis; a single naming-priority or conjugation shortcut cannot rank every reaction.",
             "stepTopics": [
               "1. Add to the carbonyl",
               "2. Tetrahedral intermediate",
@@ -2055,7 +2057,7 @@
             "id": "derivative-reactions",
             "title": "Hydrolysis, alcoholysis, and transesterification",
             "tag": "Conditions determine the protonation state",
-            "coreRule": "Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine.",
+            "coreRule": "Anhydrides react with water to give acids, with alcohols to give ester plus acid, and with amines to give amide plus acid-derived products. Transesterification exchanges one OR group for another under suitable catalysis. Acidic amide hydrolysis gives carboxylic acid and protonated amine; basic hydrolysis gives carboxylate and amine. A condensation joins reactants while losing a small molecule. Fischer esterification is acid + alcohol ⇌ ester + water under acid catalysis; removing water or using excess alcohol favors ester. Water need not be completely absent, and aqueous acid promotes the reverse hydrolysis.",
             "stepTopics": [
               "1. Anhydride cleavage",
               "2. Exchange an ester group",
@@ -2091,7 +2093,7 @@
             "stages": [
               "Select the O-bound methyl carbon that leaves with the alkoxy fragment.",
               "Under excess aqueous NaOH, the major acid-derived product is…",
-              "What alcohol is produced from the O-methyl group?"
+              "Identify the alcohol produced from the O-methyl group (name or condensed formula)."
             ]
           }
         ],
@@ -2100,6 +2102,18 @@
           {
             "label": "Supplied Kaplan curriculum: Chapter 9; section scope checked against local body and summary",
             "location": "organic_chemistry_kaplan/OEBPS/chapter09b.xhtml"
+          },
+          {
+            "label": "Nucleophilic acyl substitution: OpenStax 21.2, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/21-2-nucleophilic-acyl-substitution-reactions"
+          },
+          {
+            "label": "Carboxylic acid reactions and esterification: OpenStax 21.3, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/21-3-reactions-of-carboxylic-acids"
+          },
+          {
+            "label": "Acid derivative naming: OpenStax 21.1, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/21-1-naming-carboxylic-acid-derivatives"
           }
         ],
         "referencePassages": []

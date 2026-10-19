@@ -1,7 +1,7 @@
 {
   "chapter": 7,
   "sourceSnapshot": {
-    "sha256": "72ef1281588d974431e380a3457d38aef62e0d25805acc17c8273a8ce0803d7c",
+    "sha256": "192b1d0f4620d96577130afa746d201a1d353d725f6eca92a5b974564c627448",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -193,32 +193,32 @@
           {
             "e": "C",
             "x": 50,
-            "y": 115
+            "y": 85
           },
           {
             "e": "C",
             "x": 108,
-            "y": 85
-          },
-          {
-            "e": "C",
-            "x": 166,
             "y": 115
           },
           {
             "e": "C",
-            "x": 224,
+            "x": 166,
             "y": 85
+          },
+          {
+            "e": "C",
+            "x": 224,
+            "y": 115
           },
           {
             "e": "O",
             "x": 50,
-            "y": 45
+            "y": 25
           },
           {
             "e": "O",
             "x": 166,
-            "y": 175
+            "y": 25
           }
         ],
         "bonds": [
@@ -339,7 +339,7 @@
         {
           "id": "michael-site:stage-3",
           "type": "choice",
-          "prompt": "Attack directly at the carbonyl carbon is called…",
+          "prompt": "Attack directly at the carbonyl carbon (the C=O site rather than beta) is called…",
           "options": [
             "1,2-addition",
             "1,4-addition",

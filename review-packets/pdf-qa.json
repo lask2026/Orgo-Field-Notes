@@ -12,7 +12,7 @@
         6,
         13
       ],
-      "sha256": "b1dfb6128562282a1e4e4f1a6c6fcbf407c333ecebe6bb42271aa88df5fd7e28"
+      "sha256": "3d6b5e98e332ce2538cbed829644eec1b63b34bcc90c46935797a32aafb31b29"
     },
     {
       "chapter": 1,
@@ -25,7 +25,7 @@
         50,
         101
       ],
-      "sha256": "0e0383cb21f0af16cfbb76612c6b969ef19d7fad7b28068f52665337841dc646"
+      "sha256": "0e6c43bd7f0731ca15b0098a3a238de43f6d7c955603454a4342b3e97b422450"
     },
     {
       "chapter": 2,
@@ -38,7 +38,7 @@
         6,
         12
       ],
-      "sha256": "ff776c3271dcbff4679bfd5b8679fe5bc4d56f920b23788ac9fc7f7bcb7f322d"
+      "sha256": "17c07e41f39636f4c58950afa04121e49d8fa0141fc131bf3dcc675083120cdc"
     },
     {
       "chapter": 2,
@@ -51,7 +51,7 @@
         32,
         65
       ],
-      "sha256": "82e3902afeb37a9f169ed72c3e32dd0c95ed3133f9ab2b6c6cb046e0856192af"
+      "sha256": "6b7d5badaee08ad57c2c7c4a2c585c2f0895e606245bf52ec4e743782c75c166"
     },
     {
       "chapter": 3,
@@ -63,7 +63,7 @@
         2,
         5
       ],
-      "sha256": "d5407d2b0d9aab529eb923895dc30d84b2a429443503971ba6e8789499474f23"
+      "sha256": "eb9577392cd0708528f2dc791d9367854c52061ca953de222f6a18aec12cd966"
     },
     {
       "chapter": 3,
@@ -76,7 +76,7 @@
         17,
         34
       ],
-      "sha256": "d326b485fff7dc808a8efc00bed272e956cbcfe5c99f2c5eb5faf9966d5c5c59"
+      "sha256": "b9283459c9b17df1393a28c3b0e6047bffdf6c9bf8d2251bdddf68cd0f1c3f0e"
     },
     {
       "chapter": 4,
@@ -89,7 +89,7 @@
         3,
         6
       ],
-      "sha256": "46b2b7f0199996b4d842b002d2760b3f3174fd25f811d9a26aebc8fc30dc1a56"
+      "sha256": "05317b14ed0f28431bc468e578a89555443aab3ecff7f38b6ae6b2154f2b7a14"
     },
     {
       "chapter": 4,
@@ -102,7 +102,7 @@
         22,
         44
       ],
-      "sha256": "af45119503c53ff528bf1cf0f344e397a7b2f983ffba918ba9993583da4eda74"
+      "sha256": "6d5555ce2c271faad7a9d3ce51c8c8d0578f916d1fd4920d91334c046fa68e3d"
     },
     {
       "chapter": 5,
@@ -115,7 +115,7 @@
         4,
         8
       ],
-      "sha256": "1038f00a1c88170c192f7397988dd1c717b76a8db34a5f71c194b62fa8a63058"
+      "sha256": "d3984116a55df23c2f80e8d078394f62d96cff243a012921bdd5ef76ae374dc5"
     },
     {
       "chapter": 5,
@@ -128,35 +128,10 @@
         18,
         36
       ],
-      "sha256": "571b39c33fa390789c4a6e36a79f65aaad73a4ef9a16e9a8a3f9d5f42312e370"
+      "sha256": "ddd5e099b29ae7cdf13c64d20d51f0dbcabbd2dd6a9553e9d1015f47d316aa8a"
     },
     {
-      "chapter": 7,
-      "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 5,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        5
-      ],
-      "sha256": "5668f00c50cfc0f2142754a42828181dd912527d5cda4f10b6644ec4c9a2b045"
-    },
-    {
-      "chapter": 7,
-      "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 35,
-      "textCoverage": "passed",
-      "renderedPages": [
-        1,
-        2,
-        17,
-        35
-      ],
-      "sha256": "b82b7b270d8e295f9929b3f301999a8dfdcc5a14fced115fbf6d5b4dbf8cb1bb"
-    },
-    {
-      "chapter": 8,
+      "chapter": 6,
       "file": "01-BLIND-EXERCISES.pdf",
       "pages": 6,
       "textCoverage": "passed",
@@ -166,7 +141,33 @@
         3,
         6
       ],
-      "sha256": "72bf1c8d761e6f465ee7c251e06bbda4be11912d920085819cbb8837d17633af"
+      "sha256": "beca00aa296add8d1416ed24d41cdf3230c9a00b4176b2ba017f8fda2cd697d2"
+    },
+    {
+      "chapter": 6,
+      "file": "02-CHAPTER-REVIEW.pdf",
+      "pages": 37,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        18,
+        37
+      ],
+      "sha256": "265637e86b642633d6587d53ac38c1b55eecf8aa19dcb276e96b36bdbcd42f23"
+    },
+    {
+      "chapter": 8,
+      "file": "01-BLIND-EXERCISES.pdf",
+      "pages": 8,
+      "textCoverage": "passed",
+      "renderedPages": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "sha256": "f4b5cd8dfc293cfa665ef73aa5bb7cb138669e00f5c5052bb9baa42cb06fdf09"
     },
     {
       "chapter": 8,
@@ -179,7 +180,7 @@
         17,
         35
       ],
-      "sha256": "f09ebca1861019ce236c1690509eb3118bc90b758cf20881ef22e18568a10930"
+      "sha256": "5490c168360b599066d91a97074215dfe7bc542f7ee3af95fd8fe5f71e121d68"
     },
     {
       "chapter": 9,
@@ -191,20 +192,20 @@
         2,
         4
       ],
-      "sha256": "9de9ea2ea8db2aa79b722a476945025d5cc6c5fae2e15fd01dbd205968a5d0d7"
+      "sha256": "84ec18e606180945e289c6dbdc6004c60e2d36d2628dc55ab867f1862553518f"
     },
     {
       "chapter": 9,
       "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 28,
+      "pages": 30,
       "textCoverage": "passed",
       "renderedPages": [
         1,
         2,
-        14,
-        28
+        15,
+        30
       ],
-      "sha256": "d7afde0fa31070f320461701290b724edd2cef31560507f998700d7c4fceaba3"
+      "sha256": "ec8d4d91253dd91a06a9230a575377f5d86461ffe248ca450e88b52f60269650"
     },
     {
       "chapter": 10,
@@ -216,7 +217,7 @@
         2,
         5
       ],
-      "sha256": "f4ec37125822a10af766fd0dfcc1996107f7df5ed5c8c25c1f298a4c38d24a73"
+      "sha256": "e7c44fc05f31d0ce7eaa8a772d75dac483e01507287846c86dcf9072e2a4561c"
     },
     {
       "chapter": 10,
@@ -229,7 +230,7 @@
         18,
         37
       ],
-      "sha256": "be53dc81c88abeb288afb6155cd02e7842b51123c921e796db48dc08ab68cfe7"
+      "sha256": "935c168c696f88a944f9db76dbb18a71682f927f8a98e8b2a1f0355248b6c7ef"
     },
     {
       "chapter": 11,
@@ -242,7 +243,7 @@
         3,
         7
       ],
-      "sha256": "c71d75923ce0c2ee76ff47fb3c024db64b6bce59d405b0947a7805d68da189c5"
+      "sha256": "cc791a7069805748c3e3317a103bfc9711ddf669afba0d3702e688084da64798"
     },
     {
       "chapter": 11,
@@ -255,7 +256,7 @@
         20,
         40
       ],
-      "sha256": "2b281f7d026c93d92578ae5285d94f7d3619f7f17c87224c8c7b6b29445e49b4"
+      "sha256": "64fed7b86f21fd657dc83ee34683d05860650f604577e9c398fba4ec612d588b"
     },
     {
       "chapter": 12,
@@ -268,7 +269,7 @@
         4,
         8
       ],
-      "sha256": "8d2bc27b22fb926d39bef3e46a257eae67323cb99d8b8fed74f02dbae0acff3c"
+      "sha256": "ca4a6c8ea8f63319cbae7d1fab4efaf537fc9b6208b94f916ae16a91e9ff1bff"
     },
     {
       "chapter": 12,
@@ -281,39 +282,38 @@
         18,
         37
       ],
-      "sha256": "b9992a95a02b6329bd692376add781f7035e1ca0de00d0ad3e3407664644a5b1"
+      "sha256": "9c1165c470832a99af1ef5050d53d52b12a4571402ba91e6fe35e09bd3d544dd"
     },
     {
-      "chapter": 6,
+      "chapter": 7,
       "file": "01-BLIND-EXERCISES.pdf",
-      "pages": 6,
+      "pages": 5,
       "textCoverage": "passed",
       "renderedPages": [
         1,
         2,
-        3,
-        6
+        5
       ],
-      "sha256": "36e60babb38a5dd531b664b204a1d53e7ecaa7be117d5f9cba6478501a22d3ee"
+      "sha256": "bbd9193686d4498e95002aa8d8c39f94a7cee594cdbb1fc024d3d02fb4df9fdf"
     },
     {
-      "chapter": 6,
+      "chapter": 7,
       "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 37,
+      "pages": 36,
       "textCoverage": "passed",
       "renderedPages": [
         1,
         2,
         18,
-        37
+        36
       ],
-      "sha256": "a86c12859f05c849942ab5f4ee1487522d365aae3e1cd4c850381e4e4818eff0"
+      "sha256": "b75d45894eafb541f0eff1ea3d39054323e3a1a7ab194aea2b7e69d573a59169"
     }
   ],
   "note": "Text coverage and sampled Poppler renders passed. Contact sheets need visual inspection; this is not chemistry verification.",
   "visualInspection": {
     "date": "2026-10-19",
     "status": "passed",
-    "scope": "All eight all-chapter contact sheets (92 sample pages); Chapter 5/6 full pages 3-4; refreshed Chapter 6 contact sheet and full page 3 after comparator repair; mechanism flow in chapters 6/7/9, mesylate, mobile-dark product completion. Complete comparison also asserted in PDF extracted text. No remaining missing text, clipping or glyph boxes in inspected samples. Not full-page certification or independent chemistry verification."
+    "scope": "All eight contact sheets from the 92-page all-chapter sample, plus refreshed Chapter 7 seven-page contact sheet; Chapter 7/8/9 full-review pages 3 and 4 at 1500px; aldol/beta-keto locants, charged-carbon contributor, intermediate flow and product/head-tail browser captures. No clipping, missing text or glyph boxes observed in inspected current samples. Not full-page certification or independent chemistry verification."
   }
 }

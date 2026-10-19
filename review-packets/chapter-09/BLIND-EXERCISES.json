@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "e5dd1487d0782972ee9385f3a13e04a39e248a0f93cbef2455348bcf33dce6d2",
+    "sha256": "6155664634c695f24c00b63203875a747c2b8d959f43daca2ab73998d6e79301",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -232,7 +232,7 @@
           "type": "choice",
           "prompt": "Under excess aqueous NaOH, the major acid-derived product is…",
           "options": [
-            "Acetate",
+            "Acetate (ethanoate)",
             "Neutral ethanoic acid",
             "Ethanal"
           ]
@@ -240,7 +240,7 @@
         {
           "id": "hydrolysis-products:stage-3",
           "type": "text",
-          "prompt": "What alcohol is produced from the O-methyl group?"
+          "prompt": "Identify the alcohol produced from the O-methyl group (name or condensed formula)."
         }
       ]
     }

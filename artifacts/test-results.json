@@ -5,7 +5,7 @@
     "lessons": 51,
     "workshops": 59,
     "stages": 178,
-    "molecules": 68
+    "molecules": 69
   },
   "schema": {
     "documents": 13,
@@ -13,7 +13,7 @@
     "validator": "jsonschema 4.26.0; Draft 2020-12"
   },
   "unit": {
-    "groups": 39,
+    "groups": 49,
     "status": "passed",
     "runner": "Node.js built-in test runner",
     "files": [
@@ -22,7 +22,10 @@
       "tests/chapter03-review.test.mjs",
       "tests/chapter04-review.test.mjs",
       "tests/chapter05-review.test.mjs",
-      "tests/chapter06-review.test.mjs"
+      "tests/chapter06-review.test.mjs",
+      "tests/chapter07-review.test.mjs",
+      "tests/chapter08-review.test.mjs",
+      "tests/chapter09-review.test.mjs"
     ]
   },
   "auditInfrastructure": {
@@ -150,6 +153,9 @@
       "Chapter 4 speciation labels/extremes and accessible slider, alpha challenge, forward equation, no early numeric answer, 1e5/+1 parsing",
       "Chapter 5 actual active-step and disabled-choice contrast >=4.5:1 in light/dark at mobile/desktop; aliases and product formula",
       "Chapter 6 isopropyl alcohol alias, reduced product formula, new cyanohydrin atom-pair assessment and visible carbonyl flow",
+      "Chapter 7 charged carbon contributor, formula/charge, mobile numbering and Michael carbonyl/beta contrast without success leakage",
+      "Chapter 8 exact aliases/rejections, product formula concealment and completion, complete soap-head focus",
+      "Chapter 9 spaced intermediate arrows, acetate/ethanoate wording and explicit CH3OH/MeOH aliases reject methoxide",
       "Corrupt saved JSON recovers without crashing"
     ]
   },

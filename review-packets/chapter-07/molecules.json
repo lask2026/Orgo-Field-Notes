@@ -104,6 +104,45 @@
     "cond": "ethanal enolate (oxygen-charged contributor)",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   },
+  "ethanal-enolate-carbon": {
+    "name": "ethanal enolate (carbon-charged contributor)",
+    "formula": "C2H3O",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 55,
+        "y": 120,
+        "charge": -1,
+        "h": 2
+      },
+      {
+        "e": "C",
+        "x": 115,
+        "y": 85
+      },
+      {
+        "e": "O",
+        "x": 175,
+        "y": 120
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ]
+    ],
+    "w": 320,
+    "h": 200,
+    "cond": "ethanal enolate (carbon-charged contributor)",
+    "review": "Original resonance contributor: same nuclei, connectivity, C2H3O composition and net -1 charge as the oxygen-charged contributor; the alpha carbon has two H and a lone pair. Author review, independent expert verification pending."
+  },
   "vinylalcohol": {
     "name": "ethenol (vinyl alcohol)",
     "formula": "C2H4O",
@@ -148,32 +187,32 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 166,
         "y": 115
       },
       {
         "e": "C",
-        "x": 224,
+        "x": 166,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       },
       {
         "e": "O",
         "x": 166,
-        "y": 175
+        "y": 25
       }
     ],
     "bonds": [
@@ -215,27 +254,27 @@
       {
         "e": "C",
         "x": 50,
-        "y": 115
+        "y": 85
       },
       {
         "e": "C",
         "x": 108,
-        "y": 85
-      },
-      {
-        "e": "C",
-        "x": 166,
         "y": 115
       },
       {
         "e": "C",
-        "x": 224,
+        "x": 166,
         "y": 85
+      },
+      {
+        "e": "C",
+        "x": 224,
+        "y": 115
       },
       {
         "e": "O",
         "x": 50,
-        "y": 45
+        "y": 25
       }
     ],
     "bonds": [

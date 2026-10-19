@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "e5dd1487d0782972ee9385f3a13e04a39e248a0f93cbef2455348bcf33dce6d2",
+    "sha256": "6155664634c695f24c00b63203875a747c2b8d959f43daca2ab73998d6e79301",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -42,7 +42,7 @@
       "id": "acyl-mechanism-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-2.png",
-      "sha256": "68df59859341464b29cbc909740f4921ead0d411fcd6182dd535450f9c5398f7",
+      "sha256": "22f97dcfb6cc0f9ac7ae58786a0804f04daa4700258f4ddb86a34523da07bebf",
       "width": 661,
       "height": 359
     },
@@ -50,7 +50,7 @@
       "id": "acyl-mechanism-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/acyl-mechanism-step-3.png",
-      "sha256": "cc65f68550c10d6d5412472260e18e613a5c0a8973163bbbb794af2aa07980aa",
+      "sha256": "a2a9f8ce01091a140f1b6e5915804553594745af1b27d77dc7796e504292a5c0",
       "width": 661,
       "height": 359
     },
@@ -274,7 +274,7 @@
       "id": "hydrolysis-products-stage-2-question",
       "kind": "practice-question",
       "file": "screenshots/hydrolysis-products-stage-2-question.png",
-      "sha256": "9132d788b199c9fb63a74ef3c41d946c2bfe62fd1e8e8c0f73dfcd1b808a5043",
+      "sha256": "1b7b160d6d14fa137628d6b54643de8a95886b2b17eb74111986df480d3df1e7",
       "width": 607,
       "height": 291
     },
@@ -282,7 +282,7 @@
       "id": "hydrolysis-products-stage-2-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hydrolysis-products-stage-2-feedback.png",
-      "sha256": "0f3c31713a8d14db16c933c6981093d8d4d20b4aaf8f51cb6e2155c1a2e9168c",
+      "sha256": "6367f8ecb0e92370ba81140b1a70e035bd044f00788098c7665b2c4150b4fa3e",
       "width": 607,
       "height": 326
     },
@@ -298,31 +298,31 @@
       "id": "hydrolysis-products-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/hydrolysis-products-stage-3-question.png",
-      "sha256": "c4cc7d5af3ce0e89d7e71d15c352dd3dd3c07b1120d0974ae1707a8aa6d6937e",
+      "sha256": "b423ac4df6fad4b8ab9bdea6373496db7c642a9163ed511a4d4051efb7371507",
       "width": 607,
-      "height": 255
+      "height": 280
     },
     {
       "id": "hydrolysis-products-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/hydrolysis-products-stage-3-feedback.png",
-      "sha256": "6ca527456c2c082aab44c898538b42de881393dc6f095900cc6e8952e2ce3d52",
+      "sha256": "c78e42f1d03fd5584c73b84fb138f9cbc2a136fa69f2137b3096d20c8ba8a0e0",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "hydrolysis-products-complete",
       "kind": "practice-complete",
       "file": "screenshots/hydrolysis-products-complete.png",
-      "sha256": "3a4e25c42556af845a46690cb847f15e10457bd464ac513ca0b91576f20e766f",
+      "sha256": "ff177ae90f99583a19fd19e51bb1a43d243347f6e4c308ac48753caab7da516c",
       "width": 1324,
-      "height": 595
+      "height": 612
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "97811dab033e631e66e99b72ebacd0ba30225d9d78961ce21cd3b5897eba28f8",
+      "sha256": "3b0e8f7e46348eb8f256dcdf45136d0dcc4205c17db940753445f5ae4c0d8a59",
       "width": 1360,
       "height": 1008
     },
@@ -330,17 +330,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "61865637907df00707e114181d09fc4f25f76b0d57525adaa1945a5287363b9f",
+      "sha256": "8550664c5406a65581b0917d7d9f4901c4dacacf949654d411fd469301acbe8b",
       "width": 375,
-      "height": 1910
+      "height": 1934
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "4d0966f7867ca6c7c523fbdf4fa04b3bf4392f3b7e661f4114bfab236f9dfe3c",
+      "sha256": "bda67cb5fd08d7c02bc0a15541cb3c081e8873061d462bba89563b202fa7e733",
       "width": 375,
-      "height": 1910
+      "height": 1934
     }
   ],
   "interactions": [

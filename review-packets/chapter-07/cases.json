@@ -3,7 +3,7 @@
   "chapter": 7,
   "title": "Aldehydes and Ketones II: Enolates",
   "sourceSnapshot": {
-    "sha256": "72ef1281588d974431e380a3457d38aef62e0d25805acc17c8273a8ce0803d7c",
+    "sha256": "192b1d0f4620d96577130afa746d201a1d353d725f6eca92a5b974564c627448",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -226,32 +226,32 @@
             {
               "e": "C",
               "x": 50,
-              "y": 115
+              "y": 85
             },
             {
               "e": "C",
               "x": 108,
-              "y": 85
-            },
-            {
-              "e": "C",
-              "x": 166,
               "y": 115
             },
             {
               "e": "C",
-              "x": 224,
+              "x": 166,
               "y": 85
+            },
+            {
+              "e": "C",
+              "x": 224,
+              "y": 115
             },
             {
               "e": "O",
               "x": 50,
-              "y": 45
+              "y": 25
             },
             {
               "e": "O",
               "x": 166,
-              "y": 175
+              "y": 25
             }
           ],
           "bonds": [
@@ -382,7 +382,7 @@
           {
             "id": "michael-site:stage-3",
             "type": "choice",
-            "prompt": "Attack directly at the carbonyl carbon is called…",
+            "prompt": "Attack directly at the carbonyl carbon (the C=O site rather than beta) is called…",
             "options": [
               "1,2-addition",
               "1,4-addition",
@@ -747,7 +747,7 @@
                 1,
                 2
               ],
-              "explanation": "The alpha–beta bond B–C is cleaved.",
+              "explanation": "The alpha–beta bond B–C is cleaved. Here green marks the two selected bond endpoints; focus color changes with the task.",
               "hints": [
                 "Reverse the new carbon–carbon bond formation.",
                 "Connect the alpha carbon to the OH-bearing beta carbon."
@@ -769,32 +769,32 @@
             {
               "e": "C",
               "x": 50,
-              "y": 115
+              "y": 85
             },
             {
               "e": "C",
               "x": 108,
-              "y": 85
-            },
-            {
-              "e": "C",
-              "x": 166,
               "y": 115
             },
             {
               "e": "C",
-              "x": 224,
+              "x": 166,
               "y": 85
+            },
+            {
+              "e": "C",
+              "x": 224,
+              "y": 115
             },
             {
               "e": "O",
               "x": 50,
-              "y": 45
+              "y": 25
             },
             {
               "e": "O",
               "x": 166,
-              "y": 175
+              "y": 25
             }
           ],
           "bonds": [
@@ -882,6 +882,10 @@
                 "The alkene extends away from C=O."
               ],
               "highlights": {
+                "prin": [
+                  1,
+                  4
+                ],
                 "sub": [
                   3
                 ]
@@ -889,7 +893,7 @@
             },
             {
               "type": "choice",
-              "prompt": "Attack directly at the carbonyl carbon is called…",
+              "prompt": "Attack directly at the carbonyl carbon (the C=O site rather than beta) is called…",
               "skill": "Apply the rule",
               "options": [
                 "1,2-addition",
@@ -902,7 +906,12 @@
                 "Track the attacked site.",
                 "The oxygen and carbonyl carbon are positions 1 and 2 in this shorthand."
               ],
-              "highlights": {}
+              "highlights": {
+                "prin": [
+                  1,
+                  4
+                ]
+              }
             }
           ],
           "summary": "Conjugate addition attacks beta carbon."
@@ -978,7 +987,8 @@
         "alpha:trap",
         "alpha:app",
         "alpha:step-1",
-        "alpha:step-2"
+        "alpha:step-2",
+        "alpha:step-3"
       ],
       "payload": {
         "lesson": {
@@ -988,9 +998,9 @@
           "molecule": "ketone",
           "tag": "The conjugate base is resonance stabilized",
           "cards": {
-            "rule": "<p>An alpha carbon is adjacent to a carbonyl carbon. Removing an alpha H yields an enolate, whose negative charge can be represented on oxygen or alpha carbon. Ordinary aldehyde/ketone alpha H pKa values are roughly 17–21; a 1,3-dicarbonyl can be substantially more acidic.</p>",
+            "rule": "<p>An alpha carbon is adjacent to a carbonyl carbon. Removing an alpha H gives an enolate stabilized by resonance and inductive withdrawal. For orientation, approximate teaching values are ethanal alpha-H pKa about 17 and acetone about 19; 1,3-dicarbonyl alpha H can be much more acidic. Values depend on substrate, solvent and scale; do not mix pKa tables from different media.</p>",
             "cue": "<p>Alpha = one bond from C=O. Carbonyl carbon is not alpha.</p>",
-            "trap": "<p>Only a site bearing H can be deprotonated there. Stabilization of an enolate explains alpha acidity; do not treat every C–H bond in a carbonyl molecule as equally acidic.</p>",
+            "trap": "<p>Only a site bearing H can be deprotonated there. Stabilization of an enolate explains alpha acidity; do not treat every C–H bond in a carbonyl molecule as equally acidic. Among comparable simple examples, aldehyde alpha H is often more acidic than ketone alpha H. Additional alkyl donation can destabilize the conjugate base; substituents and conditions can change the trend. Aldehydes also often undergo nucleophilic addition more readily than comparable ketones because they are less crowded and less electron-rich.</p>",
             "app": "<p>Enolate-like intermediates allow enzymes to make or break carbon–carbon bonds adjacent to carbonyls.</p>"
           },
           "steps": [
@@ -1020,7 +1030,7 @@
             },
             {
               "label": "2. Delocalize charge",
-              "text": "<p>The ethanal enolate is drawn with negative charge on O. A second contributor places the charge at the alpha carbon; both describe the same delocalized ion.</p>",
+              "text": "<p>This oxygen-charged contributor and the carbon-charged contributor in the next step describe one delocalized ethanal enolate. Purple arrows redistribute electrons, not atoms; no proton moves in this resonance operation.</p>",
               "molecule": "ethanal-enolate",
               "highlights": {
                 "path": [
@@ -1040,6 +1050,22 @@
                     "fromBond": 0,
                     "toAtom": 0
                   }
+                ]
+              },
+              "reveal": true
+            },
+            {
+              "label": "3. Compare the carbon contributor",
+              "text": "<p>The same atom skeleton now has a carbonyl and a lone pair/negative formal charge on the alpha carbon, shown as H2C−. Both contributors have C2H3O composition and net −1 charge. They are not separate species interconverting in time; the actual ion is delocalized.</p>",
+              "molecule": "ethanal-enolate-carbon",
+              "highlights": {
+                "prin": [
+                  0
+                ],
+                "path": [
+                  0,
+                  1,
+                  2
                 ]
               },
               "reveal": true
@@ -1151,6 +1177,45 @@
             "h": 200,
             "cond": "ethanal enolate (oxygen-charged contributor)",
             "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "ethanal-enolate-carbon": {
+            "name": "ethanal enolate (carbon-charged contributor)",
+            "formula": "C2H3O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 120,
+                "charge": -1,
+                "h": 2
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 120
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal enolate (carbon-charged contributor)",
+            "review": "Original resonance contributor: same nuclei, connectivity, C2H3O composition and net -1 charge as the oxygen-charged contributor; the alpha carbon has two H and a lone pair. Author review, independent expert verification pending."
           }
         }
       }
@@ -1178,7 +1243,7 @@
           "cards": {
             "rule": "<p>Keto and enol forms are constitutional isomers that differ in H placement and a double bond; interconversion requires proton transfer. An enolate is the deprotonated species, not another neutral tautomer. Bulky strong base at low temperature under irreversible conditions often favors the less substituted kinetic enolate. Reversible conditions often favor the more substituted thermodynamic enolate.</p>",
             "cue": "<p>Tautomers move H and pi bonds. Resonance moves only electrons.</p>",
-            "trap": "<p>Kinetic/thermodynamic predictions require the substrate and conditions. More substituted is not a universal stability rule for every enolate. Simple aldehydes and ketones usually favor the keto form, but conjugation and aromaticity can change that.</p>",
+            "trap": "<p>Kinetic/thermodynamic predictions require the substrate and conditions. More substituted is not a universal stability rule for every enolate. Simple aldehydes and ketones usually favor the keto form, but conjugation and aromaticity can change that. Enolization makes an alpha center planar and can erase its configuration. Reprotonation from either face can racemize a single alpha stereocenter in an otherwise achiral environment; with other stereocenters it can cause epimerization. Rate and extent depend on conditions, so rapid complete racemization is not automatic.</p>",
             "app": "<p>Selective enolate generation lets a synthesis control which alpha carbon forms a new bond.</p>"
           },
           "steps": [
@@ -1437,32 +1502,32 @@
               {
                 "e": "C",
                 "x": 50,
-                "y": 115
+                "y": 85
               },
               {
                 "e": "C",
                 "x": 108,
-                "y": 85
-              },
-              {
-                "e": "C",
-                "x": 166,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 224,
+                "x": 166,
                 "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
               },
               {
                 "e": "O",
                 "x": 50,
-                "y": 45
+                "y": 25
               },
               {
                 "e": "O",
                 "x": 166,
-                "y": 175
+                "y": 25
               }
             ],
             "bonds": [
@@ -1504,27 +1569,27 @@
               {
                 "e": "C",
                 "x": 50,
-                "y": 115
+                "y": 85
               },
               {
                 "e": "C",
                 "x": 108,
-                "y": 85
-              },
-              {
-                "e": "C",
-                "x": 166,
                 "y": 115
               },
               {
                 "e": "C",
-                "x": 224,
+                "x": 166,
                 "y": 85
+              },
+              {
+                "e": "C",
+                "x": 224,
+                "y": 115
               },
               {
                 "e": "O",
                 "x": 50,
-                "y": 45
+                "y": 25
               }
             ],
             "bonds": [
@@ -1579,13 +1644,13 @@
           "cards": {
             "rule": "<p>An alpha,beta-unsaturated carbonyl can undergo direct 1,2-addition at carbonyl carbon or conjugate 1,4-addition at beta carbon. Enolates and enamines can serve as carbon nucleophiles; their selectivity depends on reagent and conditions.</p>",
             "cue": "<p>Michael addition: nucleophile bonds to beta carbon, then protonation/tautomerization restores the carbonyl.</p>",
-            "trap": "<p>Do not label every nucleophile addition to an enone “Michael.” Direct carbonyl attack is 1,2-addition. Enamines are neutral nitrogen analogues used for alpha functionalization, then hydrolyzed back to carbonyls.</p>",
+            "trap": "<p>Do not label every nucleophile addition to an enone “Michael.” Direct carbonyl attack is 1,2-addition. Enamines are neutral nitrogen analogues used for alpha functionalization, then hydrolyzed back to carbonyls. A suitable imine with an alpha H can tautomerize to an enamine with N–H by proton and double-bond relocation. Relative tautomer stability depends on substitution and conjugation. A tertiary enamine without N–H does not have an ordinary neutral imine tautomer; protonation instead gives an iminium ion.</p>",
             "app": "<p>Conjugate acceptors can react with biological nucleophiles; the site of reaction matters for covalent inhibitor design.</p>"
           },
           "steps": [
             {
               "label": "1. Locate the conjugated system",
-              "text": "<p>The carbonyl carbon is B, alpha carbon is C, and beta carbon is D. Alternating pi/sigma bonding allows electron redistribution.</p>",
+              "text": "<p>The carbonyl group is green, its adjacent alpha carbon is red, and the terminal beta carbon is orange. Locate them by their bonds as well as color: alpha is one C–C bond from the carbonyl carbon, beta is two. Aligned p orbitals allow electron delocalization across the alternating bonds.</p>",
               "molecule": "methylvinylketone",
               "highlights": {
                 "path": [
@@ -1609,7 +1674,7 @@
             },
             {
               "label": "2. Choose the beta site",
-              "text": "<p>A Michael-type conjugate addition makes a new bond at the beta carbon. The carbonyl is retained after the enolate-like intermediate is protonated.</p>",
+              "text": "<p>The beta carbon, now the green focus, is the terminal alkene carbon two C–C bonds from the carbonyl carbon. A Michael-type addition makes a new bond there; protonation of the enolate-like intermediate restores the carbonyl. Green marks the current focus rather than one fixed atom type.</p>",
               "molecule": "methylvinylketone",
               "highlights": {
                 "prin": [
@@ -1816,6 +1881,56 @@
       }
     },
     {
+      "id": "ch07:molecule:ethanal-enolate-carbon",
+      "chapter": 7,
+      "kind": "molecule",
+      "itemIds": [
+        "ethanal-enolate-carbon"
+      ],
+      "payload": {
+        "id": "ethanal-enolate-carbon",
+        "authorClaims": {
+          "name": "ethanal enolate (carbon-charged contributor)",
+          "formula": "C2H3O",
+          "atoms": [
+            {
+              "e": "C",
+              "x": 55,
+              "y": 120,
+              "charge": -1,
+              "h": 2
+            },
+            {
+              "e": "C",
+              "x": 115,
+              "y": 85
+            },
+            {
+              "e": "O",
+              "x": 175,
+              "y": 120
+            }
+          ],
+          "bonds": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "w": 320,
+          "h": 200,
+          "cond": "ethanal enolate (carbon-charged contributor)",
+          "review": "Original resonance contributor: same nuclei, connectivity, C2H3O composition and net -1 charge as the oxygen-charged contributor; the alpha carbon has two H and a lone pair. Author review, independent expert verification pending."
+        }
+      }
+    },
+    {
       "id": "ch07:molecule:vinylalcohol",
       "chapter": 7,
       "kind": "molecule",
@@ -1879,32 +1994,32 @@
             {
               "e": "C",
               "x": 50,
-              "y": 115
+              "y": 85
             },
             {
               "e": "C",
               "x": 108,
-              "y": 85
-            },
-            {
-              "e": "C",
-              "x": 166,
               "y": 115
             },
             {
               "e": "C",
-              "x": 224,
+              "x": 166,
               "y": 85
+            },
+            {
+              "e": "C",
+              "x": 224,
+              "y": 115
             },
             {
               "e": "O",
               "x": 50,
-              "y": 45
+              "y": 25
             },
             {
               "e": "O",
               "x": 166,
-              "y": 175
+              "y": 25
             }
           ],
           "bonds": [
@@ -1957,27 +2072,27 @@
             {
               "e": "C",
               "x": 50,
-              "y": 115
+              "y": 85
             },
             {
               "e": "C",
               "x": 108,
-              "y": 85
-            },
-            {
-              "e": "C",
-              "x": 166,
               "y": 115
             },
             {
               "e": "C",
-              "x": 224,
+              "x": 166,
               "y": 85
+            },
+            {
+              "e": "C",
+              "x": 224,
+              "y": 115
             },
             {
               "e": "O",
               "x": 50,
-              "y": 45
+              "y": 25
             }
           ],
           "bonds": [
@@ -2112,10 +2227,11 @@
             "id": "alpha",
             "title": "Alpha carbons and acidic hydrogens",
             "tag": "The conjugate base is resonance stabilized",
-            "coreRule": "An alpha carbon is adjacent to a carbonyl carbon. Removing an alpha H yields an enolate, whose negative charge can be represented on oxygen or alpha carbon. Ordinary aldehyde/ketone alpha H pKa values are roughly 17–21; a 1,3-dicarbonyl can be substantially more acidic.",
+            "coreRule": "An alpha carbon is adjacent to a carbonyl carbon. Removing an alpha H gives an enolate stabilized by resonance and inductive withdrawal. For orientation, approximate teaching values are ethanal alpha-H pKa about 17 and acetone about 19; 1,3-dicarbonyl alpha H can be much more acidic. Values depend on substrate, solvent and scale; do not mix pKa tables from different media.",
             "stepTopics": [
               "1. Locate alpha sites",
-              "2. Delocalize charge"
+              "2. Delocalize charge",
+              "3. Compare the carbon contributor"
             ]
           },
           {
@@ -2189,7 +2305,7 @@
             "stages": [
               "Select the carbonyl carbon.",
               "Select the beta carbon attacked in a Michael addition.",
-              "Attack directly at the carbonyl carbon is called…"
+              "Attack directly at the carbonyl carbon (the C=O site rather than beta) is called…"
             ]
           }
         ],
@@ -2202,6 +2318,10 @@
           {
             "label": "Enolate acidity cross-check: OpenStax 22.5",
             "location": "https://openstax.org/books/organic-chemistry/pages/22-5-acidity-of-alpha-hydrogen-atoms-enolate-ion-formation"
+          },
+          {
+            "label": "Aldehyde/ketone nucleophilic addition comparison: OpenStax 19.4, inspected",
+            "location": "https://openstax.org/books/organic-chemistry/pages/19-4-nucleophilic-addition-reactions-of-aldehydes-and-ketones"
           }
         ],
         "referencePassages": []

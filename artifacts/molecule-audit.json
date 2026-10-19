@@ -746,5 +746,16 @@
     "bonds": 7,
     "internalFormulaMatch": true,
     "scientificReview": "Author reviewed; not independently expert verified"
+  },
+  {
+    "id": "ethanal-enolate-carbon",
+    "name": "ethanal enolate (carbon-charged contributor)",
+    "formula": "C2H3O",
+    "graphFormula": "C2H3O",
+    "charge": -1,
+    "atoms": 3,
+    "bonds": 2,
+    "internalFormulaMatch": true,
+    "scientificReview": "Author reviewed; not independently expert verified"
   }
 ]
