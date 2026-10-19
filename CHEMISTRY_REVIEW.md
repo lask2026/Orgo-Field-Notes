@@ -123,3 +123,15 @@ Qwen3.5:9b and Llama3.1:8b independently attempted two Chapter 1 naming exercise
 ## Layout-only migration
 
 Source/content now lives under dev/, deterministic tests and their reports under testing/, and scientific review materials under review/. The migration preserved every canonical source/data/schema/outline byte and every original packet/review-evidence byte checked by testing/artifacts/layout-migration.json. No molecule, answer, lesson, assessment ID or scientific conclusion was changed. Original model outputs retain their original signatures and paths; review/RELOCATION-MAP.json maps current locations. Updated model tools and their new signatures do not retroactively verify historical output. All previously unresolved scientific questions and expert sign-off remain unresolved; passing migrated software and provenance checks is not a new chemistry review.
+
+
+## 2026-10-19 — Conservative visual-card and 3D interaction port
+
+Adapted the supplied AI Studio remix's compact-card/full-note and inline/fullscreen inspection patterns. Teaching text remains entirely in canonical chapter JSON; no parallel curriculum, new answer keys, cached PubChem database claims, accuracy dashboard, model sign-off or replacement test tools were imported. The two study modes and v5 color roles remain intact.
+
+The offline SVG viewer uses the displayed graph with stable zero-based indices, bond multiplicities and explicit carbon charges. Its depth offsets are arbitrary display offsets: it is explicitly a schematic projection, not VSEPR geometry, an optimized conformer, a stereochemical assignment or experimental data. It supplies keyboard rotation/tilt, larger spheres, reset and fullscreen inspection. No network or new runtime dependency is required. Names, formulas and author review notes remain concealed until revealed. Active Guided Practice and learn atom challenges keep their 2D answer-bearing canvas; inspection is available after workshop completion and uses the final stage's molecule override. Existing progress and workshop IDs remain valid because assessments are unchanged.
+
+The remix's independent molecular-geometry, chair-energy and stereochemical claims were not adopted. A future physically meaningful conformer feature needs source-backed coordinates, graph/atom mapping and chemistry review. Independent chemistry sign-off remains pending. Historical review results and provenance notices are preserved; current packets are regenerated because rendering changed.
+
+
+Validation checkpoint: schema validation passed for 13 documents; npm test passed all 94 tests (existing suites retained, four interface tests added); the full browser suite passed all 12 chapters/181 stages; regression passed 25 groups. Current packet checks passed 279 cases, 863 screenshots and 24 PDFs. Chemistry font tests passed; PDF QA checked all 24 records and rendered 93 sample pages. Desktop/light and mobile/dark viewer screenshots and a sample PDF contact sheet were visually inspected. These are software, provenance and sampled layout checks, not independent chemistry verification.

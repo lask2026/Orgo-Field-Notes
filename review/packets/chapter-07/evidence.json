@@ -1,7 +1,7 @@
 {
   "chapter": 7,
   "sourceSnapshot": {
-    "sha256": "0269642f72b027adacc888ab0229c20ca6c217f2a9b85dda17a2dc2f051c6bc1",
+    "sha256": "a8926b6fa896c83345faf08377a82d042530aa0b5c1d09f325986109be4b3226",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -186,9 +186,9 @@
       "id": "alpha-map-complete",
       "kind": "practice-complete",
       "file": "screenshots/alpha-map-complete.png",
-      "sha256": "e0c52f958fb3875caf8032d3093ef35081177c6c4b45903984b96f8970ee117a",
+      "sha256": "33ff3993904f7b8d708d54a9f3edf4dd205510d6a4c4f7d268decb77f6297b5f",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "enolate-control-stage-1-molecule",
@@ -266,9 +266,9 @@
       "id": "enolate-control-complete",
       "kind": "practice-complete",
       "file": "screenshots/enolate-control-complete.png",
-      "sha256": "4364c368cfddab7ad27643496f370a4b4f520b6f259786e6c74fd69a35016e77",
+      "sha256": "8090c7840d3c229fd4864a7c1b02157358af57d8e5cd2bd64bdc48409bd7f142",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "aldol-map-stage-1-molecule",
@@ -346,9 +346,9 @@
       "id": "aldol-map-complete",
       "kind": "practice-complete",
       "file": "screenshots/aldol-map-complete.png",
-      "sha256": "5dde251c0541f272f08a85209221998246d3ef2faabb4e9862d0951879b4b8fe",
+      "sha256": "0d6971c9a1feaeab640c15f658cb54122db61c742baf5310a16f86408b363a1e",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "michael-site-stage-1-molecule",
@@ -426,33 +426,57 @@
       "id": "michael-site-complete",
       "kind": "practice-complete",
       "file": "screenshots/michael-site-complete.png",
-      "sha256": "8d203767994961dd3f582f065e65267dd3bf618a8e5435a91b460e18dea5407a",
+      "sha256": "fa883ce74e00e4bbe926af6bcd6e669a7b392c228b72881420d62cffef4ea655",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "8a73a07e08bc2a4a12cf79c12963057d7f589345a922453069d01a4a72045ed2",
+      "sha256": "64109d5aa5971185c0eaf07fe8575748ec6f5e117ae53d26149490ccc6780d61",
       "width": 1360,
-      "height": 1153
+      "height": 1201
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "03a5282a04a936574afc1c311147a61957bba5e181dcc0527fb39abc67189c84",
+      "width": 607,
+      "height": 1075
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "53e44a3d50fba946152be07a95e019e8c6c28908ed74e35efb1c8ea8ee8730e6",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "49159a90feefce71b82bf1001627c4083a509d05b6a034f51ec69010dcf5fb25",
+      "sha256": "29575d496f6c3cb562756e416904aeec0c0397a17126574b92c455cbfe8ec336",
       "width": 375,
-      "height": 2259
+      "height": 3540
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "7d62b011f79833fb6ed3cf88d03015312de6a9abd8458b385ce310063d723535",
+      "sha256": "a0a806201dffb5bf63460d02018169b49e178143c696a93d60b19a6a57e58b06",
       "width": 375,
-      "height": 2259
+      "height": 2605
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "a6ad85481cd60e92d92e54c69c4f067bbbad64d9da3fe82922aea427cfd1057e",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node dev/scripts/build.mjs",
-    "test": "node --test testing/tests/unit.test.mjs testing/tests/chapter01-review.test.mjs testing/tests/chapter02-review.test.mjs testing/tests/chapter03-review.test.mjs testing/tests/chapter04-review.test.mjs testing/tests/chapter05-review.test.mjs testing/tests/chapter06-review.test.mjs testing/tests/chapter07-review.test.mjs testing/tests/chapter08-review.test.mjs testing/tests/chapter09-review.test.mjs testing/tests/chapter10-review.test.mjs testing/tests/chapter11-review.test.mjs testing/tests/chapter12-review.test.mjs testing/tests/audit.test.mjs testing/tests/review-panel.test.mjs testing/tests/layout.test.mjs",
+    "test": "node --test testing/tests/unit.test.mjs testing/tests/chapter01-review.test.mjs testing/tests/chapter02-review.test.mjs testing/tests/chapter03-review.test.mjs testing/tests/chapter04-review.test.mjs testing/tests/chapter05-review.test.mjs testing/tests/chapter06-review.test.mjs testing/tests/chapter07-review.test.mjs testing/tests/chapter08-review.test.mjs testing/tests/chapter09-review.test.mjs testing/tests/chapter10-review.test.mjs testing/tests/chapter11-review.test.mjs testing/tests/chapter12-review.test.mjs testing/tests/audit.test.mjs testing/tests/review-panel.test.mjs testing/tests/layout.test.mjs testing/tests/visuals.test.mjs",
     "test:schema": "python testing/scripts/validate_schema.py",
     "test:browser": "node testing/tests/browser.mjs",
     "test:regression": "node testing/tests/regression.mjs",

@@ -3,7 +3,7 @@
   "chapter": 1,
   "title": "Nomenclature",
   "sourceSnapshot": {
-    "sha256": "0c55c49478270ef4a37f7fdf07f1ce30e89bdd361a97cd2f4371947abcb6728c",
+    "sha256": "78fc056142c95b0a58a1d630af9256c733352a3b9386ed5e91973b99c1685b93",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

@@ -1,3 +1,4 @@
+import {open3DViewer,renderProjection} from './viewer3d.js';
 import {escapeHTML as esc,validateAnswer} from './validation.js';
 import {readProgress,writeProgress,getProgress,freshState} from './progress.js';
 import {applyPreferences} from './animations.js';
@@ -15,6 +16,10 @@ export function startApp(data){
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
   const exercise=()=>labs()[state.exercise]||labs()[0];
   const save=()=>{if(!writeProgress(storage,state))storageError=true;};
+  function currentViewerMolecule(){
+    const ch=chapter();if(state.mode==='learn'){const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return null;return molecules[s.molecule||l.molecule];}
+    const ex=exercise(),p=getProgress(state,ch,ex);return p.stage===ex.stages.length?molecules[ex.stages.at(-1).molecule||ex.molecule]:null;
+  }
   function render(focus){
     const ch=chapter();applyPreferences(state);
     document.title=`Orgo Field Notes · ${ch.id}. ${ch.title}`;
@@ -33,7 +38,9 @@ export function startApp(data){
     ui.correct=validateAnswer(s,value);ui.feedback=ui.correct?s.explanation:s.type==='choice'?(s.feedback?.[value]||'Not yet. Reconsider the rule and try again.'):'Not yet. Check the exact selection, punctuation, sign, or requested units. Use a hint if needed.';
     render(ui.correct?'[data-act="continue"]':s.type==='text'||s.type==='number'?'#answer':undefined);
   }
-  document.addEventListener('input',e=>{if(e.target.id==='answer')ui.value=e.target.value;});
+  document.addEventListener('input',e=>{if(e.target.id==='answer')ui.value=e.target.value;
+    if(e.target.dataset.projection){const mol=currentViewerMolecule();if(!mol)return;const yaw=document.querySelector('[data-projection="yaw"]'),pitch=document.querySelector('[data-projection="pitch"]');document.getElementById('inlineProjectionViewport').innerHTML=renderProjection(mol,Number(yaw.value),Number(pitch.value));}
+  });
   document.addEventListener('change',e=>{
     if(e.target.id==='chSel'){state.chapter=Number(e.target.value);state.lesson=state.step=state.exercise=0;resetUI();save();render('#main');}
     if(e.target.dataset.control==='diagram'){ui.diagramValue=Number(e.target.value);render('[data-control="diagram"]');}
@@ -60,6 +67,17 @@ export function startApp(data){
     else if(act==='revealSolution'){const ex=exercise(),p=getProgress(state,chapter(),ex);p.stage=ex.stages.length;p.assisted=true;p.solved=false;resetUI();}
     else if(act==='replay'){state.practice[`${chapter().id}:${exercise().id}`]={stage:0,assisted:false,solved:false,hints:0};resetUI();}
     else if(act==='nextExercise'){if(state.exercise+1<labs().length)state.exercise++;else{state.exercise=0;if(state.lesson+1<chapter().lessons.length)state.lesson++;else{state.lesson=0;state.chapter=chapters[(chapters.findIndex(c=>c.id===state.chapter)+1)%chapters.length].id;}}resetUI();}
+    else if(act==='cardNote'){const card=b.closest('.visual-card-body'),open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));b.textContent=open?'Compact card':'Full note';card.querySelector('.visual-card-note').hidden=!open;card.querySelector('.visual-card-compact').hidden=open;return;}
+    else if(act==='expandCards'){const cards=[...document.querySelectorAll('.tstack .visual-card-body')],open=cards.some(c=>c.querySelector('.visual-card-note').hidden);cards.forEach(c=>{c.closest('details').open=true;c.querySelector('.visual-card-note').hidden=!open;c.querySelector('.visual-card-compact').hidden=open;const btn=c.querySelector('[data-act="cardNote"]');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Compact card':'Full note';});b.textContent=open?'Compact notes':'Expand all notes';return;}
+    else if(act==='stageView'){if(!currentViewerMolecule())return;ui.stage3d=!ui.stage3d;render('[data-act="stageView"]');return;}
+    else if(act==='open3d'){
+      const ch=chapter();
+      if(state.mode==='learn'){
+        const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return;
+        open3DViewer(molecules[s.molecule||l.molecule],Boolean(s.reveal||ui.revealLearn));
+      }else{const ex=exercise(),p=getProgress(state,ch,ex);if(p.stage!==ex.stages.length)return;open3DViewer(molecules[ex.stages.at(-1).molecule||ex.molecule],true);}
+      return;
+    }
     else if(act==='reset'){document.getElementById('resetDialog').showModal();return;}
     else if(act==='cancelReset'){document.getElementById('resetDialog').close();return;}
     else if(act==='confirmReset'){state.practice={};document.getElementById('resetDialog').close();resetUI();}

@@ -14,6 +14,12 @@ The project now separates [development](dev/README.md), [testing](testing/README
 
 The app stores chapter position, completed stages, assistance status, solved workshops, theme, and animation preference in browser-local storage. **Export progress** and **Import progress** transfer a backup between browsers or between the website and offline file. File-origin storage behavior varies by browser. Hints and revealed solutions count as assisted study, not independent solves.
 
+## Visual notes and graph inspection
+
+Lesson cards offer compact numbered panels and expandable full notes using the same canonical chapter text. Learn & Explore includes inline and fullscreen graph rotation; completed workshops inspect their final displayed graph. Active Guided Practice and atom-selection challenges retain their original 2D canvas.
+
+The viewer is an offline **illustrative projection with arbitrary depth offsets**. It does not determine physical conformations, stereochemistry, bond angles or distances. Atom letters match the 2D graph; names/formulas stay concealed until revealed. Keyboard-operable sliders rotate and tilt the view, and Escape closes fullscreen inspection. No PubChem lookup, network request or chemistry-verification badge is added.
+
 ## Build and test
 
 Runtime: a modern browser. Build: Node.js 20 or newer. Browser tests: Playwright 1.62.1 and Chromium/Chrome/Edge. Schema tests: Python with jsonschema 4.26.0.

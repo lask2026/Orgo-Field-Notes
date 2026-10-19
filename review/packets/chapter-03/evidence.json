@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "a137d07fbe7003683ca81d12ba579a8e6761f381c98d75e008b988c7f2fbda97",
+    "sha256": "4a4baac0c142982f00f36aa037b989cee9c0f33d387bbddf01ff6660c3c85923",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -234,7 +234,7 @@
       "id": "quantum-complete",
       "kind": "practice-complete",
       "file": "screenshots/quantum-complete.png",
-      "sha256": "6e3c6e6b61c734ca6476c97a7b8816a70bd970416104684e6220bbbd5586c310",
+      "sha256": "5516421f37e7f83fd6e3cfc9e2ebb032c95eff8c6778e408a9631a6d2c632d2b",
       "width": 1324,
       "height": 928
     },
@@ -314,9 +314,9 @@
       "id": "bond-count-complete",
       "kind": "practice-complete",
       "file": "screenshots/bond-count-complete.png",
-      "sha256": "5c5640c04a5ca0cb6459f7f792c56ec4dfa7bb4ce9e29ef2aecb6b5bc67ccbe9",
+      "sha256": "ad451ce6a61901acfd0e0366991b342924c85f7ddfb26bbef2059a8583b24c7d",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "amide-resonance-stage-1-molecule",
@@ -394,33 +394,57 @@
       "id": "amide-resonance-complete",
       "kind": "practice-complete",
       "file": "screenshots/amide-resonance-complete.png",
-      "sha256": "73c09e2c5283602717aad047172aed66f134fba8f9a0a9dea24dc12fe527fbbc",
+      "sha256": "bb69767acd5b7acfd6e211b7e35766284f519a7548c60eac73dfaf60a2744a85",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "ce1e90a1f37a57ddec0b3974a3c0286db6a4dbb00ca2242b7e216c768b52e19d",
+      "sha256": "c2fbdba2086f81e85212592c9007633b4b3479e3f3d3d784fb2b9443c13c0575",
       "width": 1360,
-      "height": 1460
+      "height": 1508
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "cfdc12c92e9d689a207b6e3d86812c063b5e89433fbd318c96882c26d94a6840",
+      "width": 607,
+      "height": 1177
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "d6b02f047fb825adccfd2591039e934f9fa5449a1379b7c004a1bec7405a47a2",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "0fe566a8fd45927357b0545b7d2ff0f7fb0b6c18de6334c44cf112d2f216d81f",
+      "sha256": "00bf8dc3c0e78d6504a35f457d78ee295b35364f10acad92329dc1ae70d68ec5",
       "width": 375,
-      "height": 2616
+      "height": 3978
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "0aacffed3cf1f3c30711c141693dea6b696f2d80c1804e69ed72ba48ebf806d0",
+      "sha256": "34178b75166585f70da8c1334921a8eaf20341fbc7dbfec9dea3af05dda604aa",
       "width": 375,
-      "height": 2616
+      "height": 2993
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "0bc7a7bd0cb5bbd3637a366b117fa06a364a603ad9587af97f878b53d902b855",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

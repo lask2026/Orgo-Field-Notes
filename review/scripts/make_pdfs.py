@@ -155,7 +155,7 @@ def build(directory):
    for mid,m in molecules.items():add(story,mid,'Heading2');graph(story,m)
    story.append(PageBreak());add(story,'Layout samples','Heading1')
    add(story,'These overview images are scaled for page fit. Detailed structure and stage images appear earlier. Samples cover the first concept on desktop and mobile in both themes, not every responsive state.','SmallAudit')
-   for sid in ['layout-desktop-light','layout-mobile-light','layout-mobile-dark']:picture(story,directory,shots,sid,600)
+   for sid in ['layout-desktop-light','layout-mobile-light','layout-mobile-dark','visual-notes-expanded','projection-desktop-light','projection-mobile-dark']:picture(story,directory,shots,sid,600)
    group=[];add(group,'Execution evidence','Heading1');add(group,f"{len(shots)} screenshots and {len(evidence['interactions'])} recorded interactions. Incorrect answers rejected and encoded keys accepted for captured guided stages. This checks implementation against its data; it does not validate chemistry independently. Static screenshots do not verify animation timing, arbitrary clicks, or screen-reader experience.");story.append(KeepTogether(group))
   dest=directory/filename
   doc=SimpleDocTemplate(str(dest),pagesize=(612,792),rightMargin=42,leftMargin=42,topMargin=40,bottomMargin=48,title=f"Orgo Field Notes Chapter {ch['id']} - {'blind exercises' if blind else 'full review'}",author='Orgo Field Notes')

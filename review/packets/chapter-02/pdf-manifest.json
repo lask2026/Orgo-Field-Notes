@@ -1,22 +1,22 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "df2ed305c060fdd0110da4c763149ef545a773453a95236d3b2e09c597ffeb13",
+    "sha256": "9c4ff63c4f092cf19afe6bb2fedefb5b79ab3198072552c72d49a826d540ad22",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "files": [
     {
       "file": "01-BLIND-EXERCISES.pdf",
       "pages": 12,
-      "bytes": 145786,
-      "sha256": "9240827431fb057c36dd09314b2362cb6a0f4eef763677b0e6a7ad112c725c01",
+      "bytes": 145785,
+      "sha256": "b97ebf9e92836c9ff5b7790dff498298944688a0aefda1920850201e2250ca13",
       "blind": true
     },
     {
       "file": "02-CHAPTER-REVIEW.pdf",
-      "pages": 66,
-      "bytes": 1691508,
-      "sha256": "ab0be5e69ec2946d02e7837e318ce3ec8ad1247693b124ef3696f30d48d7a4aa",
+      "pages": 69,
+      "bytes": 1843482,
+      "sha256": "f543ef44cb7f470e9e5038fcff7aa3cc5052051896f38c33d04e4bc3c9673c8d",
       "blind": false
     }
   ]

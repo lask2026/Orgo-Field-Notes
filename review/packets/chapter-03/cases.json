@@ -3,7 +3,7 @@
   "chapter": 3,
   "title": "Bonding",
   "sourceSnapshot": {
-    "sha256": "a137d07fbe7003683ca81d12ba579a8e6761f381c98d75e008b988c7f2fbda97",
+    "sha256": "4a4baac0c142982f00f36aa037b989cee9c0f33d387bbddf01ff6660c3c85923",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

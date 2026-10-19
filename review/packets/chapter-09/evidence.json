@@ -1,7 +1,7 @@
 {
   "chapter": 9,
   "sourceSnapshot": {
-    "sha256": "cf3e315a1b33e6f8ac01f52b4d16e04a7863c0fa2bb9553950f116b22f6c4258",
+    "sha256": "e0ef507421b006b2ba207e7698d447b6380e1800534cada659708d80f8aeeb33",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -154,9 +154,9 @@
       "id": "cyclic-derivative-complete",
       "kind": "practice-complete",
       "file": "screenshots/cyclic-derivative-complete.png",
-      "sha256": "a37ac480a79500a27d0e92ff76a8d180e648f6fb7dfa64348d4ca62a92e4d5bd",
+      "sha256": "04fbbff0141f71078e2150649cc1a61fcd3d9b1b3dd584190edc84b423928f6a",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "acyl-order-stage-1-molecule",
@@ -234,9 +234,9 @@
       "id": "acyl-order-complete",
       "kind": "practice-complete",
       "file": "screenshots/acyl-order-complete.png",
-      "sha256": "6ce46f54d9019583ce6a75c4d56c24067d80a0ca883cf9bee5514fe4f3a39136",
+      "sha256": "ea0bf775a2656ece53f2f023aef2db452d2d960af698a174f084a6a454c2c6b8",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "hydrolysis-products-stage-1-molecule",
@@ -314,33 +314,57 @@
       "id": "hydrolysis-products-complete",
       "kind": "practice-complete",
       "file": "screenshots/hydrolysis-products-complete.png",
-      "sha256": "ff177ae90f99583a19fd19e51bb1a43d243347f6e4c308ac48753caab7da516c",
+      "sha256": "2873c8fd7c1a87d14f1315257eacc5b95f145db9f3033fc336af43cb5443ef97",
       "width": 1324,
-      "height": 612
+      "height": 660
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "626346f5a8cb7665eaed96f9b963fe6c70320843590f6cfc73fa64833c5f4435",
+      "sha256": "c536ee75aab7e75d022dbfb9bdfdf9b04cd9a64e728ba2b52c0c36347d00ff75",
       "width": 1360,
-      "height": 1008
+      "height": 1056
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "a6fe38c5b002e89e1f6f9b9e3c321101a287c8cd82c910b4721962a61b628ddf",
+      "width": 607,
+      "height": 1122
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "5f1bbff5a661747f305ff1b0941c9328c21807e3dce71393f8d77c6b21f16b7f",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "4ea43a42edac49f4eebe0edc7218bdeb7c469e6aeed19fa5796c60dbedac778a",
+      "sha256": "b13bcd2b3928c11e507708253ec015bb5fa09c373bb46888d238100b211580a0",
       "width": 375,
-      "height": 1968
+      "height": 3394
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "0c9767972f808d41c25ac7bfd030631e26dd3ed7843d5de88b45d6de94ba7df3",
+      "sha256": "ee57d412af93ce4ac33fdac1659d0d58480a78e22d40f8bc08dbb8758dbe4754",
       "width": 375,
-      "height": 1968
+      "height": 2209
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "405eb1be8bef8e7c4c38cc4a5604fe126b174aba261b84754db1e188c0ae8871",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

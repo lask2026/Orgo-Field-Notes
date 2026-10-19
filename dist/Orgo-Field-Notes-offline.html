@@ -65,6 +65,12 @@ details.tcard>summary{list-style:none;cursor:pointer;display:flex;justify-conten
 /* Keep active steps and completed choices readable in both themes. */
 [data-theme=dark] .sbar .sbtn[aria-pressed=true]{background:#2563eb;color:#fff;border-color:#2563eb}
 .copt:disabled{opacity:1}
+
+/* Compact visual notes retain canonical text and the v5 color roles. */
+.visual-card-body{padding:12px}.visual-card-strip{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:800;flex-wrap:wrap}.visual-card-strip .btn{margin-left:auto}.visual-card-number{border:1px solid var(--bd);background:var(--sub);padding:4px 9px;border-radius:8px;font-variant-numeric:tabular-nums}.visual-card-item{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--bd);border-radius:9px;margin-top:10px;padding:12px;background:var(--card);color:var(--ink)}.visual-card-item>span{font-weight:800;min-width:1.2em;color:var(--sec)}.visual-card-note{padding-top:12px}.visual-card-note[hidden],.visual-card-compact[hidden]{display:none}.visual-card-note p{margin:0}.stage-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:8px 0}.viewer3d-dialog{margin:auto;padding:22px;width:94vw;max-width:1000px;max-height:92vh;overflow:auto;background:var(--card);color:var(--ink);border:1px solid var(--bd);border-radius:14px}.viewer3d-dialog::backdrop{background:#020617aa}.viewer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.viewer-head h2{font-size:1.1rem}.viewer-note{margin:12px 0;color:var(--sec)}#projectionViewport svg{display:block;width:100%;max-height:45vh;background:var(--sub);border-radius:10px}.projection-bonds line{stroke:var(--ink);stroke-width:2.5}.projection-atom circle{fill:var(--card);stroke:var(--ink);stroke-width:2}.projection-labels text{fill:var(--ink);font:700 9px system-ui;text-anchor:middle;paint-order:stroke;stroke:var(--card);stroke-width:2px}.projection-atom.element-O circle{stroke:var(--red);stroke-width:3}.projection-atom.element-N circle{stroke:var(--blue);stroke-width:3}.viewer-controls{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0}.viewer-controls label{display:grid;gap:4px;flex:1;min-width:120px}.viewer3d-dialog details{margin-top:12px}.viewer3d-dialog li{margin-left:24px}.viewer3d-dialog input:focus-visible{outline:3px solid var(--orange)}
+@media print{.stage-toolbar,.tstack>[data-act="expandCards"],.visual-card-strip button{display:none}.visual-card-compact[hidden]{display:block}.visual-card-note{display:none}}
+
+.inline-projection svg{display:block;width:100%;max-height:300px}.inline-projection p{font-size:.85rem;color:var(--sec)}
 </style></head><body>
 <a class="skip" href="#main">Skip to learning content</a>
 <header class="hdr"><div class="hdr-in"><div class="brand"><div class="logo" aria-hidden="true">🧪</div><div><div class="b-title">ORGO <span>FIELD NOTES</span></div><div class="b-sub">Interactive MCAT Organic Chemistry · Learn, explore, and reason</div></div></div><div class="hdr-ctrl"><select id="chSel" class="ch-sel" aria-label="Select chapter"></select><button id="themeBtn" class="ubtn" data-act="theme">Dark</button><button id="animBtn" class="ubtn" data-act="animations">Animations</button><button class="ubtn" data-act="saveApp">Save App HTML</button></div></div></header>
@@ -243,7 +249,64 @@ function drawDiagram(d,value,{concealAnswers=false}={}){
 }
 
 return {drawDiagram};})();
+const visuals=(()=>{
+// Presentation only: teaching text remains in the canonical chapter cards.
+function renderVisualCardBody(lesson,kind){
+ const text=lesson.cards[kind],labels={rule:['01','Rule'],cue:['02','Recall'],trap:['03','Check'],app:['04','Apply']},[number,label]=labels[kind];
+ // Split only explicit paragraph/break boundaries, retaining every qualification.
+ const pieces=text.replace(/^<p>|<\/p>$/g,'').split(/<br\s*\/?>(?:\s*)|<\/p>\s*<p>/i).filter(Boolean);
+ return `<div class="visual-card-body"><div class="visual-card-strip"><span class="visual-card-number">${number}</span>${label}<button type="button" class="btn" data-act="cardNote" aria-expanded="false">Full note</button></div><div class="visual-card-compact">${pieces.map((p,i)=>`<div class="visual-card-item"><span aria-hidden="true">${i+1}</span><div>${p}</div></div>`).join('')}</div><div class="visual-card-note" hidden>${text}</div></div>`;
+}
+
+return {renderVisualCardBody};})();
+const viewer3d=(()=>{
+const {escapeHTML:esc,atomLabel}=validation;
+const {formulaLabel,hydrogens}=molecules;
+function renderStageToolbar(is3d=false){
+ return `<div class="stage-toolbar" role="group" aria-label="Graph view controls"><button type="button" class="btn" data-act="stageView" aria-pressed="${is3d}">${is3d?'Return to 2D':'Illustrative 3D'}</button><button type="button" class="btn" data-act="open3d">Fullscreen 3D</button></div>`;
+}
+function renderInline3D(mol){
+ return `<div class="inline-projection"><div id="inlineProjectionViewport">${renderProjection(mol,35,20)}</div><div class="viewer-controls"><label>Rotate <input data-projection="yaw" type="range" min="-180" max="180" value="35"></label><label>Tilt <input data-projection="pitch" type="range" min="-80" max="80" value="20"></label></div><p>Illustrative graph with arbitrary depth offsets, not a physical conformer. Angles, distances and stereochemistry cannot be inferred from this projection.</p></div>`;
+}
+function projectGraph(mol,yaw=35,pitch=20){
+ const cx=mol.atoms.reduce((s,a)=>s+a.x,0)/mol.atoms.length,cy=mol.atoms.reduce((s,a)=>s+a.y,0)/mol.atoms.length;
+ const a=yaw*Math.PI/180,b=pitch*Math.PI/180;
+ return mol.atoms.map((atom,i)=>{
+  // Drawing coordinates supply connectivity context, not optimized geometry.
+  const x=(atom.x-cx),y=(atom.y-cy),z=(i%2?1:-1)*12;
+  const u=x*Math.cos(a)+z*Math.sin(a),v=-x*Math.sin(a)+z*Math.cos(a);
+  return {i,x:u,y:y*Math.cos(b)-v*Math.sin(b),z:y*Math.sin(b)+v*Math.cos(b)};
+ });
+}
+function renderProjection(mol,yaw,pitch,spacefill=false){
+ const points=projectGraph(mol,yaw,pitch),extent=Math.max(60,...points.flatMap(p=>[Math.abs(p.x),Math.abs(p.y)])),scale=140/extent;
+ const xy=p=>({x:200+p.x*scale,y:170+p.y*scale});
+ const bonds=spacefill?'':mol.bonds.map(([u,v,order])=>{
+  const a=xy(points[u]),b=xy(points[v]),len=Math.hypot(b.x-a.x,b.y-a.y)||1,dx=-(b.y-a.y)/len*3,dy=(b.x-a.x)/len*3;
+  return Array.from({length:order},(_,j)=>{const k=j-(order-1)/2;return `<line x1="${a.x+k*dx}" y1="${a.y+k*dy}" x2="${b.x+k*dx}" y2="${b.y+k*dy}"/>`;}).join('');
+ }).join('');
+ const labels=[];
+ const nodes=[...points].sort((a,b)=>a.z-b.z).map(p=>{
+  const a=mol.atoms[p.i],v=xy(p),q=a.charge?`${a.charge>0?'+':'−'}${Math.abs(a.charge)===1?'':Math.abs(a.charge)}`:'';
+  labels.push(`<text x="${v.x}" y="${v.y+3}">${esc(atomLabel(p.i))}: ${esc(a.e+q)}</text>`);
+  return `<g class="projection-atom element-${esc(a.e)}"><circle cx="${v.x}" cy="${v.y}" r="${spacefill?23:10}"/></g>`;
+ }).join('');
+ return `<svg viewBox="0 0 400 340" role="img" aria-label="Illustrative projection of the displayed molecular graph"><g class="projection-bonds">${bonds}</g>${nodes}<g class="projection-labels">${labels.join('')}</g></svg>`;
+}
+function open3DViewer(mol,revealed=false){
+ if(!mol)return;document.getElementById('viewer3dDialog')?.close();const dlg=document.createElement('dialog');dlg.id='viewer3dDialog';dlg.className='viewer3d-dialog';dlg.setAttribute('aria-labelledby','viewer3dTitle');document.body.append(dlg);
+ let yaw=35,pitch=20,spacefill=false;const prior=document.activeElement;
+ dlg.innerHTML=`<div class="viewer-head"><h2 id="viewer3dTitle">${revealed?esc(mol.name):'Displayed molecular graph'}</h2><button type="button" class="btn" id="close3d">Close 3D</button></div><p class="viewer-note">Illustrative graph projection with arbitrary depth offsets for inspection. Rotation adds no structural evidence: bond angles, distances, conformations and stereochemistry are not determined by this view. It is not an optimized or experimental geometry.</p><div id="projectionViewport"></div><div class="viewer-controls"><label>Rotate <input id="projectionYaw" type="range" min="-180" max="180" value="35"></label><label>Tilt <input id="projectionPitch" type="range" min="-80" max="80" value="20"></label><button type="button" class="btn" id="projectionStyle" aria-pressed="false">Larger atom spheres</button><button type="button" class="btn" id="projectionReset">Reset view</button></div><p>${revealed?`Formula: ${esc(formulaLabel(mol))}. `:''}Atom letters retain the 2D graph indices. Hydrogens are listed below rather than assigned invented positions.</p><details><summary>Atom inventory and review note</summary><p>${revealed?esc(mol.review):'Teaching graph; molecular identity and author review note remain concealed until revealed.'}</p><ul>${mol.atoms.map((a,i)=>`<li>${esc(atomLabel(i))}: ${esc(a.e)}; H count ${hydrogens(mol,i)}${a.charge?`; charge ${a.charge}`:''}</li>`).join('')}</ul></details>`;
+ const draw=()=>{dlg.querySelector('#projectionViewport').innerHTML=renderProjection(mol,yaw,pitch,spacefill);};draw();
+ dlg.oninput=e=>{if(e.target.id==='projectionYaw')yaw=Number(e.target.value);if(e.target.id==='projectionPitch')pitch=Number(e.target.value);draw();};
+ dlg.onclick=e=>{const id=e.target.closest('button')?.id;if(id==='close3d')dlg.close();if(id==='projectionStyle'){spacefill=!spacefill;e.target.setAttribute('aria-pressed',String(spacefill));draw();}if(id==='projectionReset'){yaw=35;pitch=20;dlg.querySelector('#projectionYaw').value=yaw;dlg.querySelector('#projectionPitch').value=pitch;draw();}};
+ dlg.onclose=()=>{dlg.remove();dlg.oninput=dlg.onclick=null;prior?.focus();};dlg.showModal();dlg.querySelector('#close3d').focus();
+}
+
+return {renderStageToolbar,renderInline3D,projectGraph,renderProjection,open3DViewer};})();
 const learn=(()=>{
+const {renderVisualCardBody}=visuals;
+const {renderStageToolbar,renderInline3D}=viewer3d;
 const {escapeHTML:esc,validateAnswer}=validation;
 const {drawMolecule,formulaLabel}=molecules;
 const {drawDiagram}=diagrams;
@@ -254,13 +317,14 @@ function renderLearn(ch,molecules,state,ui){
   const challenge=ui.tryMode&&s.challenge;
   const good=challenge&&ui.checked&&validateAnswer({type:'atoms',answer:s.challenge.answer},ui.selected);
   const opts=challenge?{click:true,sel:ui.selected}:s.highlights;
-  return `<div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(l.title)}</h1><span class="c-tag">${esc(l.tag)}</span></div><div class="stage">${drawMolecule(m,opts)}</div>${drawDiagram(s.diagram,ui.diagramValue)}
+  return `<div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(l.title)}</h1><span class="c-tag">${esc(l.tag)}</span></div>${challenge?'':renderStageToolbar(ui.stage3d)}<div class="stage">${ui.stage3d&&!challenge?renderInline3D(m):drawMolecule(m,opts)}</div>${drawDiagram(s.diagram,ui.diagramValue)}
   ${challenge?`<p>${esc(s.challenge.prompt)}</p><button class="btn pri" data-act="checkTry">Check selection</button> <button class="btn" data-act="try">Back to walkthrough</button>${ui.checked?`<div role="status" class="fbox ${good?'ok':'err'}">${good?esc(s.challenge.explanation):'Not yet. Select exactly the requested atoms; use the walkthrough for a hint.'}</div>`:''}`:`<div class="sbar"><button class="sbtn" data-act="prev" ${state.step===0?'disabled':''}>← Previous</button>${l.steps.map((t,i)=>`<button class="sbtn" data-act="step" data-idx="${i}" aria-pressed="${i===state.step}">${esc(t.label)}</button>`).join('')}<button class="sbtn" data-act="next" ${state.step===l.steps.length-1?'disabled':''}>Next →</button></div><div class="sexp" role="status">${s.text}</div>${revealed?anatomy(s.anatomy,m.name)+`<p class="formula">Formula: ${esc(formulaLabel(m))}</p>`:'<div class="abar">Structure name concealed until its explanation. <button class="btn" data-act="revealLearn">Reveal name</button></div>'}${s.challenge?'<button class="btn try-btn" data-act="try">🖐 Try It Yourself</button>':''}`}</section>
-  <aside class="tstack">${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c} ${s.focus===k?'focus':''}" ${k===(s.focus||'rule')?'open':''}><summary><h2>${t}</h2></summary>${l.cards[k]}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
+  <aside class="tstack"><button type="button" class="btn" data-act="expandCards">Expand all notes</button>${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c} ${s.focus===k?'focus':''}" ${k===(s.focus||'rule')?'open':''}><summary><h2>${t}</h2></summary>${renderVisualCardBody(l,k)}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
 }
 
 return {anatomy,renderLearn};})();
 const practice=(()=>{
+const {renderStageToolbar,renderInline3D}=viewer3d;
 const {escapeHTML:esc,atomLabel}=validation;
 const {drawMolecule,formulaLabel}=molecules;
 const {drawDiagram}=diagrams;
@@ -276,7 +340,7 @@ function renderPractice(ch,molecules,state,ui){
   // An explicitly empty highlight set clears focus; it is not a fallback request.
   const priorHighlights=switched?{}:(ex.stages[p.stage-1]?.highlights||{});
   const opts=done?(ex.stages.at(-1).highlights||{}):{...(ui.correct?(s.highlights||{}):priorHighlights),...(s.type==='atoms'?{click:true,sel:ui.selected}:{})};
-  return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div><div class="stage">${ex.concealStructure&&!done?'<p class="concealed-structure">Candidate structure withheld. Use the supplied observations to infer it; the structure is shown after completion.</p>':drawMolecule(molecules[molecule],opts)}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
+  return `<div class="sub-nav"><span>Guided workshops</span><div class="workshops">${labs.map((e,i)=>`<button class="btn ${i===state.exercise?'pri':''}" data-act="exercise" data-idx="${i}" aria-pressed="${i===state.exercise}">${esc(e.label)}${state.practice[`${ch.id}:${e.id}`]?.solved?' ✓':''}</button>`).join('')}</div></div><div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(ex.title)}</h1><span class="c-tag">${done?(p.solved?'Solved independently':'Studied with support'):`Stage ${p.stage+1} of ${ex.stages.length}`}</span></div>${done?renderStageToolbar(ui.stage3d):''}<div class="stage">${ex.concealStructure&&!done?'<p class="concealed-structure">Candidate structure withheld. Use the supplied observations to infer it; the structure is shown after completion.</p>':(done&&ui.stage3d?renderInline3D(molecules[molecule]):drawMolecule(molecules[molecule],opts))}</div>${drawDiagram(displayed.molecule?null:ex.diagram,ui.diagramValue,{concealAnswers:!done})}${ex.context?`<p>${esc(ex.context)}</p>`:''}
   ${done?`${anatomy(ex.anatomy,ex.summary)}<p class="formula">Displayed structure: ${esc(molecules[molecule].name)}<br>Formula: ${esc(formulaLabel(molecules[molecule]))}</p><button class="btn" data-act="replay">Replay workshop</button> <button class="btn pri" data-act="nextExercise">Next workshop →</button>`:'<p class="muted">Solve each decision. Hints and revealed solutions are recorded as assisted study.</p><button class="btn" data-act="revealSolution">Reveal worked solution</button>'}</section><section aria-label="Workshop stages">
   ${done?ex.stages.map((st,i)=>`<div class="scard"><h2 class="shead">${i+1}. ${esc(st.prompt)}</h2><p><strong>${esc(solutionText(st))}</strong></p><div class="sexp">${esc(st.explanation)}</div></div>`).join(''):`${p.stage?`<p class="muted">${p.stage} earlier decision${p.stage>1?'s':''} completed.</p>`:''}<div class="scard"><h2 class="shead" tabindex="-1" id="stageTitle">${esc(s.prompt)}</h2><span class="stag">${esc(s.skill)}</span>${s.type==='choice'?`<div class="clist">${s.options.map((o,i)=>`<button class="copt ${ui.correct&&i===s.answer?'ok':''}" data-act="choice" data-idx="${i}" ${ui.correct?'disabled':''}><span class="clet">${atomLabel(i)}</span>${esc(o)}</button>`).join('')}</div>`:s.type==='atoms'?`<p>Select atoms on the structure using click or Tab and Enter. Selected: <strong>${ui.selected.map(atomLabel).join(', ')||'None'}</strong></p><button class="btn pri" data-act="checkAnswer" ${ui.correct?'disabled':''}>Check selection</button>`:`<form id="answerForm"><label for="answer">${s.type==='number'?`Numeric answer${s.unit?' ('+esc(s.unit)+')':''}`:'Your answer'}</label><input id="answer" class="tinp" autocomplete="off" spellcheck="false" ${s.type==='number'?'inputmode="decimal"':''} value="${esc(ui.value)}" ${ui.correct?'disabled':''}><button class="btn pri" type="submit" ${ui.correct?'disabled':''}>Check answer</button></form>`}
   ${ui.feedback?`<div class="fbox ${ui.correct?'ok':'err'}" role="status">${esc(ui.feedback)}</div>`:''}
@@ -285,6 +349,7 @@ function renderPractice(ch,molecules,state,ui){
 
 return {solutionText,renderPractice};})();
 const app=(()=>{
+const {open3DViewer,renderProjection}=viewer3d;
 const {escapeHTML:esc,validateAnswer}=validation;
 const {readProgress,writeProgress,getProgress,freshState}=progress;
 const {applyPreferences}=animations;
@@ -302,6 +367,10 @@ function startApp(data){
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
   const exercise=()=>labs()[state.exercise]||labs()[0];
   const save=()=>{if(!writeProgress(storage,state))storageError=true;};
+  function currentViewerMolecule(){
+    const ch=chapter();if(state.mode==='learn'){const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return null;return molecules[s.molecule||l.molecule];}
+    const ex=exercise(),p=getProgress(state,ch,ex);return p.stage===ex.stages.length?molecules[ex.stages.at(-1).molecule||ex.molecule]:null;
+  }
   function render(focus){
     const ch=chapter();applyPreferences(state);
     document.title=`Orgo Field Notes · ${ch.id}. ${ch.title}`;
@@ -320,7 +389,9 @@ function startApp(data){
     ui.correct=validateAnswer(s,value);ui.feedback=ui.correct?s.explanation:s.type==='choice'?(s.feedback?.[value]||'Not yet. Reconsider the rule and try again.'):'Not yet. Check the exact selection, punctuation, sign, or requested units. Use a hint if needed.';
     render(ui.correct?'[data-act="continue"]':s.type==='text'||s.type==='number'?'#answer':undefined);
   }
-  document.addEventListener('input',e=>{if(e.target.id==='answer')ui.value=e.target.value;});
+  document.addEventListener('input',e=>{if(e.target.id==='answer')ui.value=e.target.value;
+    if(e.target.dataset.projection){const mol=currentViewerMolecule();if(!mol)return;const yaw=document.querySelector('[data-projection="yaw"]'),pitch=document.querySelector('[data-projection="pitch"]');document.getElementById('inlineProjectionViewport').innerHTML=renderProjection(mol,Number(yaw.value),Number(pitch.value));}
+  });
   document.addEventListener('change',e=>{
     if(e.target.id==='chSel'){state.chapter=Number(e.target.value);state.lesson=state.step=state.exercise=0;resetUI();save();render('#main');}
     if(e.target.dataset.control==='diagram'){ui.diagramValue=Number(e.target.value);render('[data-control="diagram"]');}
@@ -347,6 +418,17 @@ function startApp(data){
     else if(act==='revealSolution'){const ex=exercise(),p=getProgress(state,chapter(),ex);p.stage=ex.stages.length;p.assisted=true;p.solved=false;resetUI();}
     else if(act==='replay'){state.practice[`${chapter().id}:${exercise().id}`]={stage:0,assisted:false,solved:false,hints:0};resetUI();}
     else if(act==='nextExercise'){if(state.exercise+1<labs().length)state.exercise++;else{state.exercise=0;if(state.lesson+1<chapter().lessons.length)state.lesson++;else{state.lesson=0;state.chapter=chapters[(chapters.findIndex(c=>c.id===state.chapter)+1)%chapters.length].id;}}resetUI();}
+    else if(act==='cardNote'){const card=b.closest('.visual-card-body'),open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));b.textContent=open?'Compact card':'Full note';card.querySelector('.visual-card-note').hidden=!open;card.querySelector('.visual-card-compact').hidden=open;return;}
+    else if(act==='expandCards'){const cards=[...document.querySelectorAll('.tstack .visual-card-body')],open=cards.some(c=>c.querySelector('.visual-card-note').hidden);cards.forEach(c=>{c.closest('details').open=true;c.querySelector('.visual-card-note').hidden=!open;c.querySelector('.visual-card-compact').hidden=open;const btn=c.querySelector('[data-act="cardNote"]');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Compact card':'Full note';});b.textContent=open?'Compact notes':'Expand all notes';return;}
+    else if(act==='stageView'){if(!currentViewerMolecule())return;ui.stage3d=!ui.stage3d;render('[data-act="stageView"]');return;}
+    else if(act==='open3d'){
+      const ch=chapter();
+      if(state.mode==='learn'){
+        const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return;
+        open3DViewer(molecules[s.molecule||l.molecule],Boolean(s.reveal||ui.revealLearn));
+      }else{const ex=exercise(),p=getProgress(state,ch,ex);if(p.stage!==ex.stages.length)return;open3DViewer(molecules[ex.stages.at(-1).molecule||ex.molecule],true);}
+      return;
+    }
     else if(act==='reset'){document.getElementById('resetDialog').showModal();return;}
     else if(act==='cancelReset'){document.getElementById('resetDialog').close();return;}
     else if(act==='confirmReset'){state.practice={};document.getElementById('resetDialog').close();resetUI();}

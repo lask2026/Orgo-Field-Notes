@@ -1,6 +1,7 @@
 {
   "date": "2026-10-19",
   "checks": [
+    "Canonical visual notes expand/compact; inline projection keyboard rotation; concealed modal identity; Escape cleanup and focus restoration",
     "Correct stage progress persists across reload",
     "Export/import round trip; reset cancellation and confirmation",
     "Real UI rejects missing naming hyphen; no solution/name in rendered SVG labels",

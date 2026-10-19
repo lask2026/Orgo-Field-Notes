@@ -1,7 +1,7 @@
 {
   "chapter": 5,
   "sourceSnapshot": {
-    "sha256": "1fbb0a15d8a61e5e79da06b98026ec84737c3597559ca62536c7e49290523302",
+    "sha256": "1caed4e3251c559a9e2b38001c7dfc3840e98e6d1641436a81f30293cf08e969",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -178,9 +178,9 @@
       "id": "classify-alcohol-complete",
       "kind": "practice-complete",
       "file": "screenshots/classify-alcohol-complete.png",
-      "sha256": "e6ef317fc3a6158419fca8cbe143ce2c233d928b4dcfd89420e83666f4160054",
+      "sha256": "902a93f29331fc4324db54939a39ad9dc40debbb56e3f25bd79ce35aee6190e2",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "oxidize-secondary-stage-1-molecule",
@@ -258,9 +258,9 @@
       "id": "oxidize-secondary-complete",
       "kind": "practice-complete",
       "file": "screenshots/oxidize-secondary-complete.png",
-      "sha256": "49e4990790f09120345b2f62f418c39b00387f030a9881125552e9c8576c752d",
+      "sha256": "4795f521c98fa466f676053f469ccf0383a7b4704702edd73d15ed9f1944ebfd",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "protection-stage-1-molecule",
@@ -338,9 +338,9 @@
       "id": "protection-complete",
       "kind": "practice-complete",
       "file": "screenshots/protection-complete.png",
-      "sha256": "ca94a855f1212955d601c447014e276a60bf2f925b3533d4248b2d62f55ee3f3",
+      "sha256": "e000bbe8ad9e5399910efccf98eb77850590062bad724d9afef501ce7d876af7",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "quinone-redox-stage-1-molecule",
@@ -418,33 +418,57 @@
       "id": "quinone-redox-complete",
       "kind": "practice-complete",
       "file": "screenshots/quinone-redox-complete.png",
-      "sha256": "bc697643858e91c81cf5448ed5b7e9ce6adbc7ba97e342e5395be0fd62bbe7ef",
+      "sha256": "883f516da508a92f63e0a3c567db78dbfc278338d5d2d0495546d863a0dc8366",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "de0404ddfa0ea2811bdeb99afb6067a1cd7d140525754cde077b57c00ebebe24",
+      "sha256": "2af812dc571001193e484bbb8117d0cfddd625a4d63cf1fad9af63d7486ee826",
       "width": 1360,
-      "height": 1083
+      "height": 1131
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "298057bcec124769c7362af872641bba23f940569f0a7801760b97f55a0032de",
+      "width": 607,
+      "height": 1122
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "27dd9a561a8006043ef96598459537176b39891b851e59ebc546f12cc43c2e7b",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "88ebc57b1429410a35398c37b505917b6d5df7df5c810fcc022787231658b36d",
+      "sha256": "d50e6497486ef3076cd7f0f3ddb60ac0fa6aad623a1837f344498048c484b3c3",
       "width": 375,
-      "height": 2323
+      "height": 3511
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "f86a15a2ed7ca8c82207b662f63f7f13a7e5acd70381611c7acec90f031888e3",
+      "sha256": "933e31433ecdbe75312ca6f60fe28c2289926de95ac8c4ebd4a91bd4ee6033db",
       "width": 375,
-      "height": 2323
+      "height": 2726
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "5e5c3d64d48c6eb4302f1f7fd97cf13994faaa76f8888aed885a2e96bc7f2e90",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

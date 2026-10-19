@@ -1,7 +1,7 @@
 {
   "chapter": 6,
   "sourceSnapshot": {
-    "sha256": "96f9cf5d5bc581449c1ad7cacbd8bfb25284d83498f0887e8c5f876f000762c8",
+    "sha256": "78a84ed39319352c38d2b4333197d617eec4594e7d4ad5761c5aa4e137195f91",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -178,9 +178,9 @@
       "id": "addition-site-complete",
       "kind": "practice-complete",
       "file": "screenshots/addition-site-complete.png",
-      "sha256": "796e64bbab5a55ff3fabde40f158c30b6002e252b5a5a971b903b881d3a3b662",
+      "sha256": "4af67c1e2c0758dd8818ad0a33a7a385515f3cf8a4f4059fdb5c96010efd4f8b",
       "width": 1324,
-      "height": 653
+      "height": 701
     },
     {
       "id": "hemiacetal-identify-stage-1-molecule",
@@ -258,9 +258,9 @@
       "id": "hemiacetal-identify-complete",
       "kind": "practice-complete",
       "file": "screenshots/hemiacetal-identify-complete.png",
-      "sha256": "d9c7c37b1ef25c104bee6327a7633af16392fe2917ccf586a1629e28788e6b39",
+      "sha256": "f8ed732ae35bb2b5bbc3c06caae4bd6e3ba98d39bc1f64424d924c56c00dcd6f",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "cyanohydrin-bond-stage-1-molecule",
@@ -338,9 +338,9 @@
       "id": "cyanohydrin-bond-complete",
       "kind": "practice-complete",
       "file": "screenshots/cyanohydrin-bond-complete.png",
-      "sha256": "33178746c200540e0b6e6a518bbc7625d3436bd8d55c70adfbd3d15ab30790cd",
+      "sha256": "8904dae08dabcffd38351d3a7dd16dd2bc184ff572c5a0b01258a92732e67277",
       "width": 1324,
-      "height": 612
+      "height": 660
     },
     {
       "id": "hydride-product-stage-1-molecule",
@@ -418,33 +418,57 @@
       "id": "hydride-product-complete",
       "kind": "practice-complete",
       "file": "screenshots/hydride-product-complete.png",
-      "sha256": "f6a7e56bbc94cc456d464799629ef4307e1b82b1786d4d564e12b51c3aee775e",
+      "sha256": "198081d80fdb7f6e1ccca45e68d147d98379acd6a0983b840072f751d5fdec87",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "562782411205b55d5e2ed3bf2675d16cbcdfe3ebc518284606c2ba2bee7058b2",
+      "sha256": "46703ac9daf7aef8971ee9c98959d5d3740d43c169dc7b4a6c10c5d4c09e0ce5",
       "width": 1360,
-      "height": 1014
+      "height": 1062
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "10b4f3572e19cff22e8f932e30c68ee18e749b9bca93523fc532321b1afa3c2e",
+      "width": 607,
+      "height": 1098
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "8fe957fbb163f9882e33ebd8946142676375b6f9871a9d55ac99813a7039daed",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "c31ae68483e7f58551b7718b1a3e2322d1a07d7c92cc7e2c1ca077ad281c5081",
+      "sha256": "26f2f84d576f365e6b1bf7459e76f6e65c4966b2f538c8eb984d92facc4468a9",
       "width": 375,
-      "height": 2120
+      "height": 3498
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "adb6060bdbb08b4346c927c228b998ac3b5da0399f731b6016945d009c4c82f2",
+      "sha256": "4b7b2e33a1d282a276439468dc4128261f75dd72cdd7dc5803c9f4d114755c1c",
       "width": 375,
-      "height": 2120
+      "height": 2389
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "41d4606d8f962eaa0a070dd6d2916064f978befd40b68fda6804ff2c16c56d7c",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

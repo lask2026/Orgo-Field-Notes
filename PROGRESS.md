@@ -196,3 +196,15 @@
 - Rebuilt website and offline HTML. Passed 13 schema documents, all 90 Node tests, the full 12-chapter browser suite, all 24 regression groups and three PDF font tests. Browser and regression suites use the same local port and were run sequentially after an initial overlapping server startup failed.
 - Refreshed all 12 review packets, including 279 cases, 827 screenshots and 24 PDFs; packet/source integrity checks pass. No model review or independent chemistry sign-off was performed.
 - Confirmed source books, EPUB contents and private local settings are absent from tracked files and scanned Git path history. Biology has its own private repository. GitHub Pages activation is outside this code-push checkpoint.
+
+
+## 2026-10-19 — Conservative visual-card and 3D interaction port
+
+Adapted the supplied AI Studio remix's compact-card/full-note and inline/fullscreen inspection patterns. Teaching text remains entirely in canonical chapter JSON; no parallel curriculum, new answer keys, cached PubChem database claims, accuracy dashboard, model sign-off or replacement test tools were imported. The two study modes and v5 color roles remain intact.
+
+The offline SVG viewer uses the displayed graph with stable zero-based indices, bond multiplicities and explicit carbon charges. Its depth offsets are arbitrary display offsets: it is explicitly a schematic projection, not VSEPR geometry, an optimized conformer, a stereochemical assignment or experimental data. It supplies keyboard rotation/tilt, larger spheres, reset and fullscreen inspection. No network or new runtime dependency is required. Names, formulas and author review notes remain concealed until revealed. Active Guided Practice and learn atom challenges keep their 2D answer-bearing canvas; inspection is available after workshop completion and uses the final stage's molecule override. Existing progress and workshop IDs remain valid because assessments are unchanged.
+
+The remix's independent molecular-geometry, chair-energy and stereochemical claims were not adopted. A future physically meaningful conformer feature needs source-backed coordinates, graph/atom mapping and chemistry review. Independent chemistry sign-off remains pending. Historical review results and provenance notices are preserved; current packets are regenerated because rendering changed.
+
+
+Validation checkpoint: schema validation passed for 13 documents; npm test passed all 94 tests (existing suites retained, four interface tests added); the full browser suite passed all 12 chapters/181 stages; regression passed 25 groups. Current packet checks passed 279 cases, 863 screenshots and 24 PDFs. Chemistry font tests passed; PDF QA checked all 24 records and rendered 93 sample pages. Desktop/light and mobile/dark viewer screenshots and a sample PDF contact sheet were visually inspected. These are software, provenance and sampled layout checks, not independent chemistry verification.

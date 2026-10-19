@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "df2ed305c060fdd0110da4c763149ef545a773453a95236d3b2e09c597ffeb13",
+    "sha256": "9c4ff63c4f092cf19afe6bb2fedefb5b79ab3198072552c72d49a826d540ad22",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -42,7 +42,7 @@
       "id": "conformations-step-1-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/conformations-step-1-diagram.png",
-      "sha256": "48abbd5349b04a8c0fb94766e4ae4a8875ade1410158359b3c77c89c2f8b7d52",
+      "sha256": "0cc4dd051660674b93bd58b91120635fa7fa2c15cf8d73c1ceb98e4da2738028",
       "width": 661,
       "height": 403
     },
@@ -250,9 +250,9 @@
       "id": "isomer-pair-complete",
       "kind": "practice-complete",
       "file": "screenshots/isomer-pair-complete.png",
-      "sha256": "5852c768206174b5126d590be217d44f957aaa12417d8284572ba213c717d634",
+      "sha256": "515e6c4b5a9ac19289e70e33810eed455a8f5c771e29278bb06d274216968161",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "butane-rotation-stage-1-molecule",
@@ -338,9 +338,9 @@
       "id": "butane-rotation-complete",
       "kind": "practice-complete",
       "file": "screenshots/butane-rotation-complete.png",
-      "sha256": "b06da4055afcefc66306ec1ec4d70a1bfda08dd676d6a57e4b581698eb310c60",
+      "sha256": "7134697d54d2f934c4ad510d89748f707450e1307a992fba0580ddf48e8bd613",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "stereocenters-stage-1-molecule",
@@ -418,9 +418,9 @@
       "id": "stereocenters-complete",
       "kind": "practice-complete",
       "file": "screenshots/stereocenters-complete.png",
-      "sha256": "fce04e0c40787943ac00ba52e9ecdcdf1171458f90949d494a24cd083b5c82bc",
+      "sha256": "c96077578ecdbfb572552d749556787f7f67d451b20de170ec357fb2f6c92e93",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "fischer-cip-stage-1-molecule",
@@ -506,9 +506,9 @@
       "id": "fischer-cip-complete",
       "kind": "practice-complete",
       "file": "screenshots/fischer-cip-complete.png",
-      "sha256": "fd46806d6035da76ae34d17addadee7dfb0581543d3eaf183eeb9a698618273e",
+      "sha256": "88555424064fb250d482caafc400f89a8c87f4b4a010ce174f803af6c2c1ffd8",
       "width": 1324,
-      "height": 928
+      "height": 976
     },
     {
       "id": "ez-chirality-stage-1-molecule",
@@ -586,9 +586,9 @@
       "id": "ez-chirality-complete",
       "kind": "practice-complete",
       "file": "screenshots/ez-chirality-complete.png",
-      "sha256": "5db5752a5ac31f224c02897c02808719569c9d855746f5452e0ddc87efc6749d",
+      "sha256": "aeb70af8b14116d23b94eb41e5014fd6d6e03f567d2a2956d2d6bf78843085d2",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "specific-rotation-stage-1-molecule",
@@ -666,9 +666,9 @@
       "id": "specific-rotation-complete",
       "kind": "practice-complete",
       "file": "screenshots/specific-rotation-complete.png",
-      "sha256": "0c3ac0f9ee9cc82912f4582948db2174109a8993c5a350956c4fbce1b502ad1d",
+      "sha256": "74c2686aa7d239f477515ca560462eab47f50393a5c5a336d5489663695370e6",
       "width": 1324,
-      "height": 678
+      "height": 726
     },
     {
       "id": "optical-mixture-stage-1-molecule",
@@ -746,9 +746,9 @@
       "id": "optical-mixture-complete",
       "kind": "practice-complete",
       "file": "screenshots/optical-mixture-complete.png",
-      "sha256": "94f90307ea75bd132987ac966908d7fcd35d26e7fe696177e7bf8501d1afd715",
+      "sha256": "1ebad982ec32d6ab9a90dcfdefadc6b2cffcaeac4d6b9a041c57a6b7fef035c9",
       "width": 1324,
-      "height": 678
+      "height": 726
     },
     {
       "id": "chiral-resolution-stage-1-molecule",
@@ -826,33 +826,57 @@
       "id": "chiral-resolution-complete",
       "kind": "practice-complete",
       "file": "screenshots/chiral-resolution-complete.png",
-      "sha256": "0292f239082473a3e89d3a3c5f2648c32f152f3c282cb2e11cc30be5b89564f7",
+      "sha256": "3e2fa53955a23384ccf93f105e2e21402f6eccac1000976e5b56e846326f482d",
       "width": 1324,
-      "height": 612
+      "height": 660
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "44f377eeabc93c7025d914efa2bc0992b71cccdd9d58e129a715664c9893bdd0",
+      "sha256": "b2c74bc2982e8f89419fae32e85db3cdb4e3c3962d6204b0c8c5d0b4e9f67fed",
       "width": 1360,
-      "height": 1055
+      "height": 1103
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "9501674840439cecdc1e18338c05d9283c5b7cd7350d632fb6726d66c280270c",
+      "width": 607,
+      "height": 909
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "302261eaceaccf46cb5c46a4b3ff5490b9ca1392ae36c96a0793b0dd568babfc",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "758d6c42068ff3c9f13084bac21956527b70c58a2787a5fc432040652604c466",
+      "sha256": "1edf317dcf94f792d05ce586d5044a2284fb2fed9d7c8e1f286a2173a9520be3",
       "width": 375,
-      "height": 2203
+      "height": 3080
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "41cd965d317f61bcd9cd540910bd1e0351bf0ef981dfd3e4a2246f93c93a9daa",
+      "sha256": "eef66216765b1941daac76303b8dcae6732582e743ecb913a5edc67a75a83bed",
       "width": 375,
-      "height": 2203
+      "height": 2469
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "e4f0bdce804ecdccf8a5fa0b318e6d82e3c8d4fb6f6b2c649d2427039cb56c87",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [

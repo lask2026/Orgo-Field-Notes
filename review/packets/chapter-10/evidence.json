@@ -1,7 +1,7 @@
 {
   "chapter": 10,
   "sourceSnapshot": {
-    "sha256": "7528368d36838d7a2bcf7a8a00016b1c6df22abc946dd12abc614e35aae1a5a1",
+    "sha256": "75ebfabac926e1afaa25b3101f0cd673bcb4324e5f7d651ce92509e05cf663ea",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -26,7 +26,7 @@
       "id": "amino-acids-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/amino-acids-step-3.png",
-      "sha256": "ff9142f2f21dcbffe10ef7a934a55b3056be2492ea2fa59050b6838d679f91ed",
+      "sha256": "0a5b642f1fe3db86cdafcb9349bd9451209557f1d70ba9fb39cff79d0877846f",
       "width": 661,
       "height": 359
     },
@@ -34,7 +34,7 @@
       "id": "amino-acids-step-3-diagram",
       "kind": "learn-diagram",
       "file": "screenshots/amino-acids-step-3-diagram.png",
-      "sha256": "a1c18b06f6f10f5dae31efeb04208405330407984c16b01e0960dd4a18998f3b",
+      "sha256": "b7c479dcbe046ed44b08b747737831aa73364997ace8d9e39482eb8623dd98f8",
       "width": 661,
       "height": 300
     },
@@ -178,9 +178,9 @@
       "id": "glycine-charge-complete",
       "kind": "practice-complete",
       "file": "screenshots/glycine-charge-complete.png",
-      "sha256": "e57b49940cdc08fea23bff0cbd38328623152bdef8579b9c8f51f9c72f48b8f1",
+      "sha256": "fd3ae543477662535fbdf2dd0b7b965f3a3a3849a62b4d36f74a4ca36aa8c86e",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "peptide-link-stage-1-molecule",
@@ -258,9 +258,9 @@
       "id": "peptide-link-complete",
       "kind": "practice-complete",
       "file": "screenshots/peptide-link-complete.png",
-      "sha256": "804c6abce191072d2b03cb8625c3e0edd62cf43dbf382b283be11b53bb21d807",
+      "sha256": "7e64d8109a10d4da840d8e31588ce9bbd003339bc95bfb6bd92f5bb3fedb55cc",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "strecker-map-stage-1-molecule",
@@ -338,9 +338,9 @@
       "id": "strecker-map-complete",
       "kind": "practice-complete",
       "file": "screenshots/strecker-map-complete.png",
-      "sha256": "a627f36d92be6a11785755ae6773c35f3aea84e9a69dac469591a9465635ab10",
+      "sha256": "35799d33c5b2cdb8ddefda77145c000fa2b4a8c3368838eef8b2d8fbd0f35b8d",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "phosphate-links-stage-1-molecule",
@@ -418,9 +418,9 @@
       "id": "phosphate-links-complete",
       "kind": "practice-complete",
       "file": "screenshots/phosphate-links-complete.png",
-      "sha256": "54147fcd4e5564e5e6dbbe6a78975630dc58ed46a10ea4ef7689cb2a4a05bd0c",
+      "sha256": "08fd9dc87417a286945cf464ce90d037b9c00865d8590459828b729cfcca73bd",
       "width": 1324,
-      "height": 595
+      "height": 643
     },
     {
       "id": "gabriel-route-stage-1-molecule",
@@ -498,33 +498,57 @@
       "id": "gabriel-route-complete",
       "kind": "practice-complete",
       "file": "screenshots/gabriel-route-complete.png",
-      "sha256": "e1a1b48713ccc24ae0bb888ea5c8c04b0a86ef84b3b48b32a376e6354343225f",
+      "sha256": "1201ce07a692907037ec5f465b44dc45f3aa6e21d374a8f7345acfb17cd622d4",
       "width": 1324,
-      "height": 706
+      "height": 754
     },
     {
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "5aebe8a150b358fa9afa2122308ca63a0ab3f7e0200aeceb19b5238e9fc0aa7e",
+      "sha256": "82eea17274071adbd1dd7dd08a87e716b1aee6821b762ad2b5e91e579ecab4a1",
       "width": 1360,
-      "height": 1055
+      "height": 1103
+    },
+    {
+      "id": "visual-notes-expanded",
+      "kind": "visual-notes",
+      "file": "screenshots/visual-notes-expanded.png",
+      "sha256": "4aad65caf882d67df49d90ab684179af127dd3da4761274da44e34038f7f1140",
+      "width": 607,
+      "height": 1240
+    },
+    {
+      "id": "projection-desktop-light",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-desktop-light.png",
+      "sha256": "e2507d7b439d1cd739389a42c98065f5ad033fbe1ce85da174b4c5bbdaddad61",
+      "width": 1000,
+      "height": 741
     },
     {
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "e631e18dea0f822b540445e88237ac6cd5e08e120d41af9ff329959adc81d619",
+      "sha256": "d3dfa6f938c8245b33fca7889b5909e55e06dcbf654a3ca47d43035bc9bb241a",
       "width": 375,
-      "height": 2314
+      "height": 3923
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "054be97da38224a6d00a780c3d2a9d02730ab515e8c45904c8aec57150adcbbd",
+      "sha256": "07eb3ff1d3014a4917b4d07b9ebe7bc390fa629defee6c29a727c61bdae30c15",
       "width": 375,
-      "height": 2314
+      "height": 2664
+    },
+    {
+      "id": "projection-mobile-dark",
+      "kind": "illustrative-projection",
+      "file": "screenshots/projection-mobile-dark.png",
+      "sha256": "30e31dcc11467062079b69c58169717e10f6c2805afafe27e1676300d843a098",
+      "width": 353,
+      "height": 747
     }
   ],
   "interactions": [
