@@ -108,21 +108,41 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Equilibrium favors the weaker acid/base pair",
+          "title": "Acid–Base Strength (pKa), Conjugate Base Stability (ARIO) & Equilibrium Direction",
+          "formula": "pKa = −log₁₀(Ka)     |     pH = pKa + log₁₀([A⁻]/[HA])     |     Equilibrium Favors HIGHER pKa (Weaker Acid)",
           "items": [
             {
-              "label": "Identify roles",
-              "text": "Brønsted H+ transfer or Lewis electron-pair transfer"
+              "label": "ARIO Priority Checklist",
+              "text": "1. Atom (Row: EN C<N<O<F; Column: Size F<Cl<Br<I) → 2. Resonance → 3. Induction (EDGs vs EWGs) → 4. Orbital (sp > sp² > sp³)."
             },
             {
-              "label": "Compare conjugate pairs",
-              "text": "Use compatible conditions"
-            },
-            {
-              "label": "Equilibrium",
-              "text": "Favors the weaker acid/base pair"
+              "label": "Predicting Equilibrium Direction",
+              "text": "Compare the two acids (HA on left vs HB⁺ on right): equilibrium ALWAYS shifts toward the weaker acid (the side with the HIGHER pKa)."
             }
           ],
+          "chips": [
+            "↓ pKa = ↑ Ka = Stronger Acid",
+            "ARIO: Atom > Resonance > Induction > Orbital",
+            "pH > pKa → A⁻ Predominates"
+          ],
+          "comparison": [
+            [
+              "pH < pKa",
+              "Acidic buffer region",
+              "Protonated form (HA / RNH₃⁺) predominates"
+            ],
+            [
+              "pH = pKa",
+              "Half-equivalence point",
+              "[HA] = [A⁻] (50:50 max buffer capacity)"
+            ],
+            [
+              "pH > pKa",
+              "Basic buffer region",
+              "Deprotonated conjugate base (A⁻ / RNH₂) wins"
+            ]
+          ],
+          "theme": "ario-pka-scale",
           "figure": {
             "type": "structures",
             "steps": [
@@ -134,47 +154,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "ARIO Conjugate Base Stability & pH vs. pKa Speciation",
+          "prompt": "How are you evaluating acid strength or protonation state?",
           "items": [
             {
-              "label": "Lower pKa",
-              "text": "Stronger acid"
+              "label": "Comparing Two Acids Without pKa Values",
+              "outcome": "Deprotonate Both → Apply ARIO to Conjugate Base A⁻",
+              "text": "More stable conjugate base = stronger acid! Across a row electronegativity wins (OH > NH₂); down a column size wins (I⁻ > F⁻, so HI > HF)."
             },
             {
-              "label": "More stable conjugate base",
-              "text": "Generally stronger acid"
+              "label": "Comparing pH to pKa in Solution",
+              "outcome": "pH < pKa → Protonated (HA); pH > pKa → Deprotonated (A⁻)",
+              "text": "If pH is 2 units above pKa, the ratio [A⁻]/[HA] is 10² = 100:1 (99% deprotonated)."
             },
             {
-              "label": "Periodic trend",
-              "text": "Compare like structures and account for solvent"
+              "label": "Inductive Effect (CF₃COOH vs CH₃COOH)",
+              "outcome": "EWGs Pull Electron Density → ↓ pKa (Stronger Acid)",
+              "text": "Inductive withdrawal falls off rapidly with distance (α-Cl > β-Cl > γ-Cl) and follows electronegativity (F > Cl > Br > I)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Thinking HF Is Stronger Than HI or That Electron-Withdrawing Groups Raise pKa",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Equating basicity and nucleophilicity"
+              "label": "Common Trap",
+              "text": "Saying HF is stronger than HI because F is more electronegative, or saying EWGs \"increase pKa\"."
             },
             {
-              "label": "Check",
-              "text": "Equilibrium strength versus reaction-rate behavior"
+              "label": "Correct Reasoning",
+              "text": "Down a periodic column, atomic radius dominates (I⁻ spreads negative charge over a huge volume, so HI pKa −10 ≪ HF pKa 3.2); stronger acids have LOWER pKa!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Physiological pH (7.4) Charge States & Liquid–Liquid Acid/Base Extraction",
           "items": [
             {
-              "label": "pKa 4.8 at pH 7.4",
-              "text": "Mostly carboxylate"
+              "label": "Carboxylic Acids at pH 7.4",
+              "outcome": "pKa ~4.8 < pH 7.4 → RCOO⁻ (−1)",
+              "text": "Over 99% deprotonated as water-soluble carboxylate anions in blood plasma."
             },
             {
-              "label": "Partitioning",
-              "text": "Ionization changes water affinity"
+              "label": "Alkyl Amines at pH 7.4",
+              "outcome": "pKaH ~10.5 > pH 7.4 → RNH₃⁺ (+1)",
+              "text": "Protonated as positively charged ammonium cations at physiological pH."
+            },
+            {
+              "label": "NaHCO₃ vs NaOH Extraction",
+              "outcome": "NaHCO₃ (Conj. Acid pKa 6.4) vs Phenol (pKa 10)",
+              "text": "Weak base NaHCO₃ deprotonates carboxylic acids (pKa ~5) into the aqueous layer, leaving phenols (pKa 10) neutral in the organic layer!"
             }
           ]
         }
@@ -229,22 +260,51 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Electron pairs move from donor to acceptor",
+          "layout": "flow",
+          "title": "Nucleophiles, Electrophiles, Leaving Group Ability & Solvent Effects",
           "items": [
             {
-              "label": "Donor",
-              "text": "Nucleophile supplies an electron pair"
+              "label": "Nucleophilicity vs. Basicity",
+              "text": "Basicity is thermodynamic affinity for H⁺; nucleophilicity is kinetic attack rate at carbon (sensitive to steric bulk and solvent).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Acceptor",
-              "text": "Electrophile receives the pair"
+              "label": "Protic vs. Polar Aprotic Solvents",
+              "text": "Protic solvents H-bond tightly to small F⁻ (I⁻ > Br⁻ > Cl⁻ > F⁻); polar aprotic solvents leave F⁻ bare and reactive (F⁻ > Cl⁻ > Br⁻ > I⁻).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Leaving group",
-              "text": "Takes the bonding pair on departure"
+              "label": "Leaving Group Rule (Weak Base = Good LG)",
+              "text": "The best leaving groups are stable weak bases whose conjugate acids have pKa < 0 (TsO⁻, MsO⁻, I⁻, Br⁻, Cl⁻, H₂O).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Nucleophile = Lewis Base (e⁻ Donor)",
+            "Electrophile = Lewis Acid (e⁻ Acceptor)",
+            "Good LG = Weak Base (Low pKaH)"
+          ],
+          "comparison": [
+            [
+              "Protic Solvent (ROH, H₂O)",
+              "H-bonds cage small anions",
+              "Nucleophilicity: I⁻ > Br⁻ > Cl⁻ > F⁻"
+            ],
+            [
+              "Polar Aprotic (DMSO, DMF)",
+              "Bare unsolvated anions!",
+              "Nucleophilicity: F⁻ > Cl⁻ > Br⁻ > I⁻"
+            ],
+            [
+              "Good Leaving Group",
+              "Conjugate base of strong acid",
+              "TsO⁻, I⁻, Br⁻, Cl⁻, H₂O (never HO⁻ in SN1/SN2)"
+            ]
+          ],
+          "theme": "nuc-elec-lg",
           "figure": {
             "type": "structures",
             "steps": [
@@ -255,43 +315,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Strong Nucleophile vs. Bulky Base & Leaving Group Activation",
+          "prompt": "What reagent or leaving group role are you diagnosing?",
           "items": [
             {
-              "label": "Lone pair or bond",
-              "text": "A curved arrow can start at these electrons"
+              "label": "Small Charged Anion (CN⁻, RS⁻, I⁻, N₃⁻, RO⁻)",
+              "outcome": "Strong Nucleophile (Attacks Unhindered C)",
+              "text": "High polarizability or localized negative charge with minimal steric bulk favors substitution attack at δ+ carbon."
             },
             {
-              "label": "Positive charge alone",
-              "text": "Not an electron source"
+              "label": "Sterically Hindered Base (t-BuO⁻, LDA, DBU)",
+              "outcome": "Strong Base Only → Forces E2 Elimination!",
+              "text": "Too bulky to reach a backside carbon σ* orbital; plucks an exposed β-proton instead."
+            },
+            {
+              "label": "Poor Leaving Group (–OH, –OR, –NH₂)",
+              "outcome": "Protonate (H⁺ → –OH₂⁺) or Tosylate (TsCl → –OTs)",
+              "text": "Strong bases (HO⁻, RO⁻, H₂N⁻) never leave directly in SN1/SN2; convert –OH into H₂O or –OTs first!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Kicking Out Hydroxide (HO⁻) Directly in SN1/SN2 or Reversing Curved Arrows",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Requiring a formal positive charge for electrophilicity"
+              "label": "Common Trap",
+              "text": "Drawing ROH + Br⁻ → RBr + HO⁻ directly, or drawing a curved arrow from the electrophile C⁺ to the nucleophile."
             },
             {
-              "label": "Check",
-              "text": "Carbonyl carbon is electron poor without a formal positive charge"
+              "label": "Correct Reasoning",
+              "text": "Curved arrows ALWAYS start at an electron source (lone pair or π bond) and point to an electron sink; protonate –OH to –OH₂⁺ before displacement."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Biological Leaving Groups (ATP Pyrophosphate PP_i) & SAM Methylation",
           "items": [
             {
-              "label": "Active sites",
-              "text": "Position donor and acceptor"
+              "label": "ATP & Pyrophosphate (PP_i)",
+              "outcome": "Nature’s Tosylate Equivalent",
+              "text": "Enzymes phosphorylate alcohols to convert poor –OH leaving groups into resonance-stabilized phosphate/pyrophosphate leaving groups."
             },
             {
-              "label": "Catalysis",
-              "text": "Stabilizes charge along a pathway"
+              "label": "Cysteine Thiolate (RS⁻)",
+              "outcome": "Super-Nucleophile in Active Sites",
+              "text": "Sulfur’s large, polarizable 3p valence shell makes Cys–S⁻ a far faster nucleophile than Ser–O⁻ in protic water."
+            },
+            {
+              "label": "S-Adenosylmethionine (SAM)",
+              "outcome": "Sulfonium Methyl Electrophile",
+              "text": "Positively charged R₂S⁺–CH₃ acts as a prime biological leaving group for SN2 methyl transfer."
             }
           ]
         }
@@ -344,21 +419,36 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Mechanism depends on substrate and conditions",
+          "title": "SN2 (Concerted Backside Inversion) vs. SN1 (Stepwise Carbocation Racemization)",
+          "formula": "SN2 Rate = k [Substrate][Nucleophile] (Bimolecular)     |     SN1 Rate = k [Substrate] (Unimolecular)",
           "items": [
             {
-              "label": "Substrate",
-              "text": "Steric access and carbocation stabilization"
+              "label": "SN2 Stereochemistry & Substrate",
+              "text": "1-step backside attack into σ* LUMO inverts the stereocenter umbrella (Methyl > 1° > 2°; 3° is blocked by steric hindrance)."
             },
             {
-              "label": "Conditions",
-              "text": "Nucleophile, base and solvent"
-            },
-            {
-              "label": "Mechanism",
-              "text": "Concerted attack versus stepwise ionization"
+              "label": "SN1 Stereochemistry & Rearrangement",
+              "text": "Rate-determining LG loss forms a planar sp² carbocation (3°/allylic/benzylic > 2°); attacked from both faces (racemization) and can rearrange!"
             }
           ],
+          "chips": [
+            "SN2: 1 Step · Rate=k[RX][Nu] · Inversion",
+            "SN1: 2 Steps · Rate=k[RX] · Racemization",
+            "3° Carbocation > 2° > 1°"
+          ],
+          "comparison": [
+            [
+              "SN2 (Concerted)",
+              "Methyl > 1° > 2° (No 3°!)",
+              "Strong Nu⁻ + Polar Aprotic → 100% Inversion"
+            ],
+            [
+              "SN1 (Carbocation)",
+              "3° > 2° (Resonance: Allylic/Benzylic)",
+              "Weak Nu (ROH/H₂O) + Polar Protic → Racemic"
+            ]
+          ],
+          "theme": "sn1-sn2-umbrella",
           "figure": {
             "type": "structures",
             "steps": [
@@ -370,43 +460,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "SN1 vs. SN2 4-Point Diagnostic Matrix",
+          "prompt": "Check the substrate, nucleophile, and solvent:",
           "items": [
             {
-              "label": "Ideal SN2",
-              "text": "Rate includes substrate and nucleophile"
+              "label": "Methyl or 1° Substrate + Strong Nu⁻ (CN⁻, I⁻, RS⁻)",
+              "outcome": "SN2 Mechanism (Concerted Backside Attack)",
+              "text": "Doubling [Nu⁻] doubles the rate; a chiral 1° deuterated or 2° substrate undergoes 100% configuration inversion."
             },
             {
-              "label": "Ideal SN1",
-              "text": "Rate includes substrate; slow ionization precedes attack"
+              "label": "3° Substrate + Weak/Neutral Solvolysis (H₂O, MeOH)",
+              "outcome": "SN1 Mechanism (Planar Carbocation Intermediate)",
+              "text": "Rate depends ONLY on [Substrate]; can partially racemize; ion pairing can bias the faces and shows two humps on the reaction coordinate diagram."
+            },
+            {
+              "label": "2° Substrate adjacent to 3° or Quaternary Carbon in SN1",
+              "outcome": "Watch for 1,2-Hydride or 1,2-Methyl Shift!",
+              "text": "Carbocation rearrangement is possible when an accessible shift produces a sufficiently favored intermediate; assess the actual structure."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Running SN2 on a Tertiary Halide or Doubling SN1 Rate with Nucleophile Concentration",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Assuming inversion always flips an R/S label"
+              "label": "Common Trap",
+              "text": "Drawing SN2 backside attack on tert-butyl bromide or saying doubling [Nu] doubles the rate of an SN1 reaction."
             },
             {
-              "label": "Check",
-              "text": "CIP priorities; SN1 ion pairing can also prevent exact 50:50 products"
+              "label": "Correct Reasoning",
+              "text": "3° substrates NEVER undergo SN2 (strong base/nucleophiles give E2 elimination instead), and nucleophiles do not appear in the SN1 rate law!"
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "SAM Biological SN2 Methylation & Terpene Carbocation Cascades",
           "items": [
             {
-              "label": "Double nucleophile concentration",
-              "text": "Ideal SN2 rate doubles"
+              "label": "SAM Methyltransferases",
+              "outcome": "Biological SN2 at Methyl Carbon",
+              "text": "DNA and histone methylation proceed via concerted SN2 attack on the unhindered methyl group of S-adenosylmethionine."
             },
             {
-              "label": "Same change for ideal SN1",
-              "text": "Rate does not change"
+              "label": "Farnesyl Pyrophosphate Cyclization",
+              "outcome": "Allylic SN1 Carbocation Cascade",
+              "text": "Loss of pyrophosphate generates a resonance-stabilized allylic cation that cyclizes into cholesterol precursors."
+            },
+            {
+              "label": "Glycosyltransferases",
+              "outcome": "Oxocarbenium Ion vs Invertase Mechanism",
+              "text": "Retaining vs inverting glycosidases control whether the anomeric carbon retains or inverts α/β stereochemistry."
             }
           ]
         }
@@ -464,22 +569,51 @@
       ],
       "visualCards": {
         "rule": {
-          "layout": "compare",
-          "title": "Track bonds to H and electronegative atoms",
+          "layout": "flow",
+          "title": "Organic Oxidation States & Chemoselective Oxidizing / Reducing Reagents",
           "items": [
             {
-              "label": "Count carbon bonds",
-              "text": "C–C contributes zero to carbon oxidation state"
+              "label": "Carbon Oxidation Ladder",
+              "text": "Alkane (−4 in CH₄) → Alcohol/Alkene → Aldehyde/Ketone → Carboxylic Acid/Derivative → CO₂ (+4).",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Oxidation",
-              "text": "Usually more bonds to electronegative atoms or fewer C–H bonds"
+              "label": "Anhydrous PCC vs. Aqueous Jones (CrO₃/H₂SO₄)",
+              "text": "PCC in CH₂Cl₂ stops cleanly at the ALDEHYDE on 1° alcohols; aqueous CrO₃ or KMnO₄ hydrates the aldehyde and oxidizes it to –COOH.",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Reduction",
-              "text": "Usually the reverse change"
+              "label": "NaBH₄ vs. LiAlH₄ Hydride Reactivity",
+              "text": "Mild NaBH₄ reduces ONLY aldehydes and ketones (plus acid chlorides); fierce LiAlH₄ reduces aldehydes, ketones, esters, acids, and amides!",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Oxidation = ↑ C–O/N/X or ↓ C–H",
+            "Reduction = ↑ C–H or ↓ C–O",
+            "Alkane < Alcohol < C=O < COOH < CO₂"
+          ],
+          "comparison": [
+            [
+              "1° Alcohol (RCH₂OH)",
+              "PCC → Aldehyde; CrO₃/KMnO₄ → COOH",
+              "NaBH₄/LiAlH₄ reduces back to 1° ROH"
+            ],
+            [
+              "2° Alcohol (R₂CHOH)",
+              "PCC or CrO₃ → Ketone (R₂C=O)",
+              "No α-OH C–H left to oxidize further"
+            ],
+            [
+              "3° Alcohol (R₃COH)",
+              "NO Oxidation (No carbinol C–H!)",
+              "Resists CrO₃/PCC unless C–C bonds break"
+            ]
+          ],
+          "theme": "redox-ladder",
           "figure": {
             "type": "reaction",
             "steps": [
@@ -491,43 +625,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Which Oxidant or Reductant Matches Your Target Transformation?",
+          "prompt": "Select your starting material and desired redox product:",
           "items": [
             {
-              "label": "Ordinary NaBH4",
-              "text": "Commonly reduces aldehydes and ketones"
+              "label": "1° Alcohol → Stop at Aldehyde (RCHO)",
+              "outcome": "Use Anhydrous PCC (or DMP / Swern)",
+              "text": "Without water, no geminal diol (hydrate) can form, so oxidation halts cleanly at the aldehyde stage."
             },
             {
-              "label": "LiAlH4 with separate workup",
-              "text": "Also acids/esters to alcohols; amides to amines"
+              "label": "1° Alcohol or Aldehyde → Carboxylic Acid (RCOOH)",
+              "outcome": "Use Jones (CrO₃/H₂SO₄, H₂O) or KMnO₄",
+              "text": "Water forms the geminal diol RCH(OH)₂, which has a second C–H bond for chromate to oxidize to –COOH."
+            },
+            {
+              "label": "Reduce Ketone/Aldehyde in Presence of an Ester",
+              "outcome": "Use Mild NaBH₄ in MeOH/EtOH",
+              "text": "NaBH₄ selectively reduces the more electrophilic ketone/aldehyde while leaving the ester untouched!"
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Oxidizing a 3° Alcohol with CrO₃ or Reducing an Ester with NaBH₄",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Using naming seniority as a redox ranking"
+              "label": "Common Trap",
+              "text": "Drawing a ketone product from a 3° alcohol + CrO₃, or using NaBH₄ to reduce a carboxylic acid or ester."
             },
             {
-              "label": "Check",
-              "text": "Actual bonds, reagent identity and conditions"
+              "label": "Correct Reasoning",
+              "text": "Oxidation of an alcohol to C=O requires breaking a C–H bond on the carbinol carbon (3° alcohols have zero!), and esters/acids require LiAlH₄."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "NAD⁺ / NADH Biological Hydride Transfer & Alcohol Dehydrogenase",
           "items": [
             {
-              "label": "NAD+/NADH",
-              "text": "Biological hydride transfer"
+              "label": "NAD⁺ ⇌ NADH + H⁺",
+              "outcome": "Biological Equivalent of PCC / NaBH₄",
+              "text": "NAD⁺ accepts a hydride (H:⁻) to oxidize alcohols to carbonyls; NADH delivers a hydride to reduce carbonyls (e.g., pyruvate → lactate)."
             },
             {
-              "label": "Analogy limit",
-              "text": "Not every lab reagent has a biological counterpart"
+              "label": "FAD ⇌ FADH₂",
+              "outcome": "Alkane C–C → Alkene C=C Dehydrogenation",
+              "text": "Flavin cofactors oxidize saturated C–C single bonds to conjugated alkenes (e.g., succinate → fumarate in the TCA cycle)."
+            },
+            {
+              "label": "Disulfide Bridge Redox",
+              "outcome": "2 Cys–SH ⇌ Cys–S–S–Cys + 2H⁺ + 2e⁻",
+              "text": "Extracellular oxidizing environments link cysteine thiols into disulfides; cytosolic glutathione keeps thiols reduced."
             }
           ]
         }
@@ -586,21 +735,50 @@
       "visualCards": {
         "rule": {
           "layout": "flow",
-          "title": "Choose by reactivity, not naming seniority",
+          "title": "Chemo-, Regio-, and Stereoselectivity & The SN1/SN2/E1/E2 Competition Grid",
           "items": [
             {
-              "label": "Inventory",
-              "text": "List functional groups and reactive sites"
+              "label": "Chemoselectivity (Functional Group Choice)",
+              "text": "Exploits intrinsic reactivity differences (e.g., Aldehyde > Ketone > Ester toward nucleophiles) or uses protecting groups.",
+              "step": "1",
+              "color": "green"
             },
             {
-              "label": "Reagent",
-              "text": "Include solvent and acid–base steps"
+              "label": "Regioselectivity (Constitutional Site Choice)",
+              "text": "Determines which positional isomer forms (e.g., small base EtO⁻ gives Zaitsev internal alkene; bulky t-BuO⁻ gives Hofmann less-substituted alkene).",
+              "step": "2",
+              "color": "blue"
             },
             {
-              "label": "Product check",
-              "text": "Track bonds and stereochemistry"
+              "label": "Stereoselectivity & Stereospecificity",
+              "text": "Stereoselective reactions favor the more stable stereoisomer (E > Z); stereospecific reactions map starting geometry directly to product (SN2 inversion, anti-E2).",
+              "step": "3",
+              "color": "orange"
             }
           ],
+          "chips": [
+            "Chemoselective = Which FG",
+            "Regioselective = Where on FG",
+            "Stereoselective = Which 3D Isomer"
+          ],
+          "comparison": [
+            [
+              "Chemoselectivity",
+              "Selects 1 functional group over another",
+              "NaBH₄ reduces ketone but spares ester"
+            ],
+            [
+              "Regioselectivity",
+              "Selects 1 constitutional site",
+              "Zaitsev (internal) vs Hofmann (terminal) alkene"
+            ],
+            [
+              "Stereoselectivity",
+              "Favors 1 stereoisomer",
+              "E2 anti-periplanar → E-alkene > Z-alkene"
+            ]
+          ],
+          "theme": "selectivity-compass",
           "figure": {
             "type": "structures",
             "steps": [
@@ -612,43 +790,58 @@
         },
         "cue": {
           "layout": "decision",
-          "title": "Choose the case that applies",
+          "title": "Master Substitution vs. Elimination Decision Engine",
+          "prompt": "Given an alkyl halide RX, how do you predict SN2 vs SN1 vs E2 vs E1?",
           "items": [
             {
-              "label": "Naming seniority",
-              "text": "Chooses a name"
+              "label": "Strong Unhindered Nucleophile (CN⁻, RS⁻, I⁻) + 1°/2° RX",
+              "outcome": "SN2 Dominates (Backside Inversion)",
+              "text": "Low basicity + minimal steric hindrance attacks the α-carbon σ* orbital cleanly."
             },
             {
-              "label": "Reaction analysis",
-              "text": "Uses substrate, reagent and conditions"
+              "label": "Strong Base (HO⁻, RO⁻ on 2°/3° RX) OR Bulky Base (t-BuO⁻, LDA)",
+              "outcome": "E2 Dominates (Concerted Anti-Periplanar)",
+              "text": "Strong bases abstract a β-proton; small bases give the more substituted Zaitsev alkene, while t-BuO⁻ gives the Hofmann alkene."
+            },
+            {
+              "label": "Weak Base/Nu (H₂O, ROH) + 3° RX",
+              "outcome": "SN1 + E1 Mixture (Heat Favors E1)",
+              "text": "Both share the same rate-determining carbocation step; higher temperature (Δ) favors E1 via entropy (TΔS)."
             }
           ]
         },
         "trap": {
           "layout": "contrast",
-          "title": "Shortcut versus a better check",
+          "title": "Confusing Regioselectivity with Chemoselectivity or Stereoselectivity",
           "items": [
             {
-              "label": "Avoid",
-              "text": "Senior in naming therefore more reactive"
+              "label": "Common Trap",
+              "text": "Calling Markovnikov vs anti-Markovnikov addition \"chemoselective\" or \"stereoselective\"."
             },
             {
-              "label": "Check",
-              "text": "Mechanism, resonance and reagent scope"
+              "label": "Correct Reasoning",
+              "text": "Different atom connectivity (1-ol vs 2-ol, or internal vs terminal alkene) is REGIOSELECTIVE; different 3D arrangement (R/S or E/Z) is STEREOSELECTIVE."
             }
           ]
         },
         "app": {
           "layout": "map",
-          "title": "Connect the concept",
+          "title": "Multi-Step Synthesis Planning & Enzyme Active-Site Specificity",
           "items": [
             {
-              "label": "Acetal protection",
-              "text": "Changes carbonyl reactivity"
+              "label": "Protecting Group Strategy",
+              "outcome": "Mask More Reactive FG as Acetal",
+              "text": "To reduce an ester in a keto-ester with LiAlH₄, first protect the ketone as a cyclic acetal (ethylene glycol, H⁺), reduce, then deprotect."
             },
             {
-              "label": "Aqueous acid",
-              "text": "Can restore the carbonyl"
+              "label": "Thermal Elimination Bias",
+              "outcome": "Heat (Δ) Favors Elimination Over Substitution",
+              "text": "Elimination splits 2 particles into 3 particles (↑ ΔS > 0), so raising T makes −TΔS more negative."
+            },
+            {
+              "label": "Enzyme Active Sites",
+              "outcome": "Simultaneous Chemo-, Regio- & Stereocontrol",
+              "text": "Chiral enzyme pockets hold substrates in a single orientation, achieving 100% selectivity without protecting groups."
             }
           ]
         }

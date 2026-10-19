@@ -1,7 +1,7 @@
 {
   "chapter": 4,
   "sourceSnapshot": {
-    "sha256": "561ac9387f96a3109b02d84c092c477affb477da6b3bffbc8c140c43f9550841",
+    "sha256": "da2bc9fa814ef298f105232378af42f8b11d4df69303deef3e612d2153bf8488",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -26,7 +26,7 @@
       "id": "acids-step-2",
       "kind": "learn-molecule",
       "file": "screenshots/acids-step-2.png",
-      "sha256": "49545ced90d9fd4c2ae06e34cb2f116c6f9f67701c85f9ccf281a06788e80209",
+      "sha256": "8cb4b92984e02d06783e803ff0356d6a85b065135520395778d32a749d6ba9c7",
       "width": 661,
       "height": 359
     },
@@ -34,7 +34,7 @@
       "id": "acids-step-3",
       "kind": "learn-molecule",
       "file": "screenshots/acids-step-3.png",
-      "sha256": "2b8db23fb534578abdc2e9b40b949d7bdba8522ad46dd492f013573dd52c4ccf",
+      "sha256": "8682c280c3d5b68ce1f3ac856eca4968b2ddbe19de19415114426f5ee9f5634e",
       "width": 661,
       "height": 359
     },
@@ -50,9 +50,9 @@
       "id": "acids-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/acids-visuals.png",
-      "sha256": "7b20f01f5d2347d197986c70430faee83e160d91214f18357571963f774e54c6",
+      "sha256": "59386389f270942c86f744c5a35cd5b4d0deee09310b0815347a470eab4ee9b5",
       "width": 607,
-      "height": 1827
+      "height": 2035
     },
     {
       "id": "partners-step-1",
@@ -82,9 +82,9 @@
       "id": "partners-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/partners-visuals.png",
-      "sha256": "16e81c632729dca3c5e161669253bf6a75604d574fd03928b4fae000d5627039",
+      "sha256": "509f43df4cbcbe9fd95be77a0f03e385914ccaf00d8e95a0246fd2abf87e866b",
       "width": 607,
-      "height": 1767
+      "height": 2273
     },
     {
       "id": "substitution-step-1",
@@ -106,9 +106,9 @@
       "id": "substitution-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/substitution-visuals.png",
-      "sha256": "d007cd5d5e92cb393d393e30b67eaef7177a46332c7eb3e86186442fa107d0b9",
+      "sha256": "e4561131c65e3c7201eb415ecbb4ac05f10fbcc7f52a40a0ba3f09fe021015f5",
       "width": 607,
-      "height": 1742
+      "height": 1980
     },
     {
       "id": "redox-step-1",
@@ -138,9 +138,9 @@
       "id": "redox-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/redox-visuals.png",
-      "sha256": "a5c4aa4b7d1204d776bbcb3d5127b351b12795c0cd5515e7bf37b93a5cc20c07",
+      "sha256": "80d5ee884cb5567db5a56d5446cb735f0e05cb9694411da9b855e19e63c9d37f",
       "width": 607,
-      "height": 1761
+      "height": 2032
     },
     {
       "id": "selectivity-step-1",
@@ -170,9 +170,9 @@
       "id": "selectivity-visuals",
       "kind": "canonical-visual-summaries",
       "file": "screenshots/selectivity-visuals.png",
-      "sha256": "44e85b8e45bb6e652ac2fdfe33b7a1f3fcf0a30b4db4a0361f34dc29092c54b9",
+      "sha256": "534cdab1498c183c94340bd4a32c8c0fb5b2889fd094f7fc73b7a01654111f04",
       "width": 607,
-      "height": 1735
+      "height": 2294
     },
     {
       "id": "pka-equilibrium-stage-1-molecule",
@@ -578,23 +578,23 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "0b17e4c4d03d2895ff811ef66c3cae494d31b2cf6c53eb4ab35fb22615274ea1",
+      "sha256": "76874cd67881578e10d6a382cbe354f372e0347a8306946ca8239981c93c394a",
       "width": 1360,
-      "height": 2211
+      "height": 2419
     },
     {
       "id": "visual-notes-expanded",
       "kind": "visual-notes",
       "file": "screenshots/visual-notes-expanded.png",
-      "sha256": "13b387124f1618f3ebefc9f304c09d5805da0993b212714d2855b844ace23a16",
+      "sha256": "8542ac5e5576226d3dd6412be7a9d182787a877fa51cf8672a279f350c749b61",
       "width": 607,
-      "height": 1162
+      "height": 2530
     },
     {
       "id": "projection-desktop-light",
       "kind": "illustrative-projection",
       "file": "screenshots/projection-desktop-light.png",
-      "sha256": "689c94fc4a9cc986b690c456b7a904cc3b432478746ce072db6388deb6774880",
+      "sha256": "06e62ea61421f234b4ecd2c10bfc69530553df22ae576a3aab6d66510da3818a",
       "width": 1000,
       "height": 741
     },
@@ -602,17 +602,17 @@
       "id": "layout-mobile-light",
       "kind": "layout",
       "file": "screenshots/layout-mobile-light.png",
-      "sha256": "cd40df143808a9160857b39ffbd1489be602a45dc93d21263de589422ed45c5f",
+      "sha256": "ae70f8da6845e8268611e953e26afe8fccbfee6e3ee968c9f872ec421df46a51",
       "width": 375,
-      "height": 4563
+      "height": 4921
     },
     {
       "id": "layout-mobile-dark",
       "kind": "layout",
       "file": "screenshots/layout-mobile-dark.png",
-      "sha256": "7fd8c1c26bdf20a9c4eaa330336e15946524e54ca5c8684bdb7dcfe028cd2275",
+      "sha256": "e3dc6102c7dd71ae72b80263f4a3dcbbb31ee20718b2781f56eb596b96a7eda2",
       "width": 375,
-      "height": 4563
+      "height": 4921
     },
     {
       "id": "projection-mobile-dark",

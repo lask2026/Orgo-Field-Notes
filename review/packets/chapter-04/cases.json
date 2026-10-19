@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "561ac9387f96a3109b02d84c092c477affb477da6b3bffbc8c140c43f9550841",
+    "sha256": "da2bc9fa814ef298f105232378af42f8b11d4df69303deef3e612d2153bf8488",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1061,10 +1061,6 @@
       "chapter": 4,
       "kind": "lesson",
       "itemIds": [
-        "acids:rule",
-        "acids:cue",
-        "acids:trap",
-        "acids:app",
         "acids:step-1",
         "acids:step-2",
         "acids:step-3"
@@ -1072,16 +1068,8 @@
       "payload": {
         "lesson": {
           "id": "acids",
-          "label": "Acid–base reasoning",
           "title": "Acid–base reasoning",
           "molecule": "aceticacid",
-          "tag": "Equilibrium favors the weaker acid/base pair",
-          "cards": {
-            "rule": "<p>Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. In a coordinate covalent bond, both shared electrons originate from the donor; the resulting bond is still covalent. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.</p><p>Amphoteric species can act as acids or bases, depending on the partner. Water can accept H+ to form H3O+ or donate H+ to form OH−; bicarbonate can likewise gain or lose a proton.</p>",
-            "cue": "<p>Lower pKa means stronger acid. Stabilize the conjugate base to increase acidity. Across a comparable row, electronegativity can stabilize negative charge; down a group, weaker H–X bonds and charge dispersion can dominate. Compare like structures and conditions, rather than applying a single trend everywhere.</p>",
-            "trap": "<p>Basicity is an equilibrium property; nucleophilicity is a reaction-rate property. Do not use a single periodic trend across different solvents or unrelated functional groups.</p>",
-            "app": "<p>A carboxylic acid with pKa 4.8 is mostly carboxylate at pH 7.4; that changes water solubility and membrane partitioning.</p>"
-          },
           "steps": [
             {
               "label": "1. Locate the acidic group",
@@ -1135,82 +1123,734 @@
                 "explanation": "A is the methyl carbon adjacent to the C=O group; its C–H hydrogens are alpha hydrogens."
               }
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Equilibrium favors the weaker acid/base pair",
-              "items": [
-                {
-                  "label": "Identify roles",
-                  "text": "Brønsted H+ transfer or Lewis electron-pair transfer"
-                },
-                {
-                  "label": "Compare conjugate pairs",
-                  "text": "Use compatible conditions"
-                },
-                {
-                  "label": "Equilibrium",
-                  "text": "Favors the weaker acid/base pair"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Illustrative acid/conjugate-base pair. Protonation depends on pH; the panels are not separate resonance contributors."
+          ]
+        },
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Lower pKa",
-                  "text": "Stronger acid"
-                },
-                {
-                  "label": "More stable conjugate base",
-                  "text": "Generally stronger acid"
-                },
-                {
-                  "label": "Periodic trend",
-                  "text": "Compare like structures and account for solvent"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Equating basicity and nucleophilicity"
-                },
-                {
-                  "label": "Check",
-                  "text": "Equilibrium strength versus reaction-rate behavior"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "pKa 4.8 at pH 7.4",
-                  "text": "Mostly carboxylate"
-                },
-                {
-                  "label": "Partitioning",
-                  "text": "Ionization changes water affinity"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:acids:rule",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "acids:rule"
+      ],
+      "payload": {
+        "lessonId": "acids",
+        "title": "Acid–base reasoning",
+        "fullNote": "<p>Brønsted acids donate H+ and bases accept it. Lewis acids accept an electron pair; Lewis bases donate one. In a coordinate covalent bond, both shared electrons originate from the donor; the resulting bond is still covalent. For HA + B ⇌ A− + BH+, K ≈ 10^[pKa(BH+) − pKa(HA)] when the pKa values use comparable conditions.</p><p>Amphoteric species can act as acids or bases, depending on the partner. Water can accept H+ to form H3O+ or donate H+ to form OH−; bicarbonate can likewise gain or lose a proton.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Acid–Base Strength (pKa), Conjugate Base Stability (ARIO) & Equilibrium Direction",
+          "formula": "pKa = −log₁₀(Ka)     |     pH = pKa + log₁₀([A⁻]/[HA])     |     Equilibrium Favors HIGHER pKa (Weaker Acid)",
+          "items": [
+            {
+              "label": "ARIO Priority Checklist",
+              "text": "1. Atom (Row: EN C<N<O<F; Column: Size F<Cl<Br<I) → 2. Resonance → 3. Induction (EDGs vs EWGs) → 4. Orbital (sp > sp² > sp³)."
+            },
+            {
+              "label": "Predicting Equilibrium Direction",
+              "text": "Compare the two acids (HA on left vs HB⁺ on right): equilibrium ALWAYS shifts toward the weaker acid (the side with the HIGHER pKa)."
             }
+          ],
+          "chips": [
+            "↓ pKa = ↑ Ka = Stronger Acid",
+            "ARIO: Atom > Resonance > Induction > Orbital",
+            "pH > pKa → A⁻ Predominates"
+          ],
+          "comparison": [
+            [
+              "pH < pKa",
+              "Acidic buffer region",
+              "Protonated form (HA / RNH₃⁺) predominates"
+            ],
+            [
+              "pH = pKa",
+              "Half-equivalence point",
+              "[HA] = [A⁻] (50:50 max buffer capacity)"
+            ],
+            [
+              "pH > pKa",
+              "Basic buffer region",
+              "Deprotonated conjugate base (A⁻ / RNH₂) wins"
+            ]
+          ],
+          "theme": "ario-pka-scale",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Illustrative acid/conjugate-base pair. Protonation depends on pH; the panels are not separate resonance contributors."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Locate the acidic group",
+            "text": "<p>Removing the carboxyl O–H proton gives a carboxylate whose negative charge is shared across two oxygens.</p>",
+            "molecule": "aceticacid",
+            "highlights": {
+              "prin": [
+                1,
+                2,
+                3
+              ]
+            },
+            "reveal": true,
+            "diagram": {
+              "type": "acid",
+              "pKa": 4.8,
+              "caption": "Illustrative monoprotic acid speciation; adjust pH."
+            }
+          },
+          {
+            "label": "2. Compare conjugate bases",
+            "text": "<p>An alcohol-derived alkoxide lacks the equivalent two-oxygen resonance of a carboxylate. This is a major reason simple carboxylic acids are more acidic than alcohols.</p>",
+            "molecule": "acetate",
+            "highlights": {
+              "prin": [
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:acids:cue",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "acids:cue"
+      ],
+      "payload": {
+        "lessonId": "acids",
+        "title": "Acid–base reasoning",
+        "fullNote": "<p>Lower pKa means stronger acid. Stabilize the conjugate base to increase acidity. Across a comparable row, electronegativity can stabilize negative charge; down a group, weaker H–X bonds and charge dispersion can dominate. Compare like structures and conditions, rather than applying a single trend everywhere.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "ARIO Conjugate Base Stability & pH vs. pKa Speciation",
+          "prompt": "How are you evaluating acid strength or protonation state?",
+          "items": [
+            {
+              "label": "Comparing Two Acids Without pKa Values",
+              "outcome": "Deprotonate Both → Apply ARIO to Conjugate Base A⁻",
+              "text": "More stable conjugate base = stronger acid! Across a row electronegativity wins (OH > NH₂); down a column size wins (I⁻ > F⁻, so HI > HF)."
+            },
+            {
+              "label": "Comparing pH to pKa in Solution",
+              "outcome": "pH < pKa → Protonated (HA); pH > pKa → Deprotonated (A⁻)",
+              "text": "If pH is 2 units above pKa, the ratio [A⁻]/[HA] is 10² = 100:1 (99% deprotonated)."
+            },
+            {
+              "label": "Inductive Effect (CF₃COOH vs CH₃COOH)",
+              "outcome": "EWGs Pull Electron Density → ↓ pKa (Stronger Acid)",
+              "text": "Inductive withdrawal falls off rapidly with distance (α-Cl > β-Cl > γ-Cl) and follows electronegativity (F > Cl > Br > I)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:acids:trap",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "acids:trap"
+      ],
+      "payload": {
+        "lessonId": "acids",
+        "title": "Acid–base reasoning",
+        "fullNote": "<p>Basicity is an equilibrium property; nucleophilicity is a reaction-rate property. Do not use a single periodic trend across different solvents or unrelated functional groups.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Thinking HF Is Stronger Than HI or That Electron-Withdrawing Groups Raise pKa",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Saying HF is stronger than HI because F is more electronegative, or saying EWGs \"increase pKa\"."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Down a periodic column, atomic radius dominates (I⁻ spreads negative charge over a huge volume, so HI pKa −10 ≪ HF pKa 3.2); stronger acids have LOWER pKa!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "aceticacid": {
+            "name": "ethanoic acid",
+            "formula": "C2H4O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanoic acid",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetate": {
+            "name": "acetate (one resonance contributor)",
+            "formula": "C2H3O2",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 55,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 115,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 115,
+                "y": 25
+              },
+              {
+                "e": "O",
+                "x": 175,
+                "y": 115,
+                "charge": -1
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ],
+              [
+                1,
+                3,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "acetate (one resonance contributor)",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:acids:app",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "acids:app"
+      ],
+      "payload": {
+        "lessonId": "acids",
+        "title": "Acid–base reasoning",
+        "fullNote": "<p>A carboxylic acid with pKa 4.8 is mostly carboxylate at pH 7.4; that changes water solubility and membrane partitioning.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Physiological pH (7.4) Charge States & Liquid–Liquid Acid/Base Extraction",
+          "items": [
+            {
+              "label": "Carboxylic Acids at pH 7.4",
+              "outcome": "pKa ~4.8 < pH 7.4 → RCOO⁻ (−1)",
+              "text": "Over 99% deprotonated as water-soluble carboxylate anions in blood plasma."
+            },
+            {
+              "label": "Alkyl Amines at pH 7.4",
+              "outcome": "pKaH ~10.5 > pH 7.4 → RNH₃⁺ (+1)",
+              "text": "Protonated as positively charged ammonium cations at physiological pH."
+            },
+            {
+              "label": "NaHCO₃ vs NaOH Extraction",
+              "outcome": "NaHCO₃ (Conj. Acid pKa 6.4) vs Phenol (pKa 10)",
+              "text": "Weak base NaHCO₃ deprotonates carboxylic acids (pKa ~5) into the aqueous layer, leaving phenols (pKa 10) neutral in the organic layer!"
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "aceticacid": {
             "name": "ethanoic acid",
@@ -1352,26 +1992,14 @@
       "chapter": 4,
       "kind": "lesson",
       "itemIds": [
-        "partners:rule",
-        "partners:cue",
-        "partners:trap",
-        "partners:app",
         "partners:step-1",
         "partners:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "partners",
-          "label": "Nucleophiles, electrophiles, and leaving groups",
           "title": "Nucleophiles, electrophiles, and leaving groups",
           "molecule": "bromoethane",
-          "tag": "Electron pairs move from donor to acceptor",
-          "cards": {
-            "rule": "<p>A nucleophile supplies an electron pair to an electrophile. A leaving group takes the bonding pair when it departs. Stable weak bases usually make better leaving groups. Protonation can turn poor leaving group OH− into neutral water.</p>",
-            "cue": "<p>Find electron-rich donor → electron-poor acceptor → possible leaving group. Curved arrows start at electrons, not positive charges.</p><p>Compare nucleophilicity using charge, reacting-atom identity, steric access, and solvent. For a similar reacting atom, an anion is often more nucleophilic than its neutral conjugate acid. Across comparable atoms in a row, lower electronegativity often favors donation. Bulky donors are hindered in SN2. Protic solvation and polarizability can reverse simple basicity-based trends down a group; polar aprotic conditions often favor anionic SN2 nucleophiles.</p>",
-            "trap": "<p>A carbonyl oxygen is electron rich while its carbon is electron poor. A positive charge is not required for electrophilicity. For comparable neutral acyl derivatives in nucleophilic acyl substitution, anhydrides are generally more reactive than esters, and esters more reactive than amides. A free carboxylic acid can instead protonate a basic nucleophile; protonation, activation and the leaving group prevent a universal acid/ester ranking.</p>",
-            "app": "<p>Enzyme active sites position nucleophiles and electrophiles while stabilizing charge; the same donor–acceptor logic applies.</p>"
-          },
           "steps": [
             {
               "label": "1. Polarize the bond",
@@ -1406,77 +2034,344 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Electron pairs move from donor to acceptor",
-              "items": [
-                {
-                  "label": "Donor",
-                  "text": "Nucleophile supplies an electron pair"
-                },
-                {
-                  "label": "Acceptor",
-                  "text": "Electrophile receives the pair"
-                },
-                {
-                  "label": "Leaving group",
-                  "text": "Takes the bonding pair on departure"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  1
-                ],
-                "caption": "Follow electron donation and the leaving-group bond in this illustrative graph."
+          ]
+        },
+        "molecules": {
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Lone pair or bond",
-                  "text": "A curved arrow can start at these electrons"
-                },
-                {
-                  "label": "Positive charge alone",
-                  "text": "Not an electron source"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:partners:rule",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "partners:rule"
+      ],
+      "payload": {
+        "lessonId": "partners",
+        "title": "Nucleophiles, electrophiles, and leaving groups",
+        "fullNote": "<p>A nucleophile supplies an electron pair to an electrophile. A leaving group takes the bonding pair when it departs. Stable weak bases usually make better leaving groups. Protonation can turn poor leaving group OH− into neutral water.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Nucleophiles, Electrophiles, Leaving Group Ability & Solvent Effects",
+          "items": [
+            {
+              "label": "Nucleophilicity vs. Basicity",
+              "text": "Basicity is thermodynamic affinity for H⁺; nucleophilicity is kinetic attack rate at carbon (sensitive to steric bulk and solvent).",
+              "step": "1",
+              "color": "green"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Requiring a formal positive charge for electrophilicity"
-                },
-                {
-                  "label": "Check",
-                  "text": "Carbonyl carbon is electron poor without a formal positive charge"
-                }
-              ]
+            {
+              "label": "Protic vs. Polar Aprotic Solvents",
+              "text": "Protic solvents H-bond tightly to small F⁻ (I⁻ > Br⁻ > Cl⁻ > F⁻); polar aprotic solvents leave F⁻ bare and reactive (F⁻ > Cl⁻ > Br⁻ > I⁻).",
+              "step": "2",
+              "color": "blue"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Active sites",
-                  "text": "Position donor and acceptor"
-                },
-                {
-                  "label": "Catalysis",
-                  "text": "Stabilizes charge along a pathway"
-                }
-              ]
+            {
+              "label": "Leaving Group Rule (Weak Base = Good LG)",
+              "text": "The best leaving groups are stable weak bases whose conjugate acids have pKa < 0 (TsO⁻, MsO⁻, I⁻, Br⁻, Cl⁻, H₂O).",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Nucleophile = Lewis Base (e⁻ Donor)",
+            "Electrophile = Lewis Acid (e⁻ Acceptor)",
+            "Good LG = Weak Base (Low pKaH)"
+          ],
+          "comparison": [
+            [
+              "Protic Solvent (ROH, H₂O)",
+              "H-bonds cage small anions",
+              "Nucleophilicity: I⁻ > Br⁻ > Cl⁻ > F⁻"
+            ],
+            [
+              "Polar Aprotic (DMSO, DMF)",
+              "Bare unsolvated anions!",
+              "Nucleophilicity: F⁻ > Cl⁻ > Br⁻ > I⁻"
+            ],
+            [
+              "Good Leaving Group",
+              "Conjugate base of strong acid",
+              "TsO⁻, I⁻, Br⁻, Cl⁻, H₂O (never HO⁻ in SN1/SN2)"
+            ]
+          ],
+          "theme": "nuc-elec-lg",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              1
+            ],
+            "caption": "Follow electron donation and the leaving-group bond in this illustrative graph."
           }
         },
+        "figureSteps": [
+          {
+            "label": "2. Follow bond cleavage",
+            "text": "<p>In substitution, a nucleophile forms a bond to the electrophilic carbon while the C–Br bond ultimately breaks with its electron pair going to Br. Conditions determine whether this is concerted or stepwise.</p>",
+            "molecule": "bromoethane",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:partners:cue",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "partners:cue"
+      ],
+      "payload": {
+        "lessonId": "partners",
+        "title": "Nucleophiles, electrophiles, and leaving groups",
+        "fullNote": "<p>Find electron-rich donor → electron-poor acceptor → possible leaving group. Curved arrows start at electrons, not positive charges.</p><p>Compare nucleophilicity using charge, reacting-atom identity, steric access, and solvent. For a similar reacting atom, an anion is often more nucleophilic than its neutral conjugate acid. Across comparable atoms in a row, lower electronegativity often favors donation. Bulky donors are hindered in SN2. Protic solvation and polarizability can reverse simple basicity-based trends down a group; polar aprotic conditions often favor anionic SN2 nucleophiles.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Strong Nucleophile vs. Bulky Base & Leaving Group Activation",
+          "prompt": "What reagent or leaving group role are you diagnosing?",
+          "items": [
+            {
+              "label": "Small Charged Anion (CN⁻, RS⁻, I⁻, N₃⁻, RO⁻)",
+              "outcome": "Strong Nucleophile (Attacks Unhindered C)",
+              "text": "High polarizability or localized negative charge with minimal steric bulk favors substitution attack at δ+ carbon."
+            },
+            {
+              "label": "Sterically Hindered Base (t-BuO⁻, LDA, DBU)",
+              "outcome": "Strong Base Only → Forces E2 Elimination!",
+              "text": "Too bulky to reach a backside carbon σ* orbital; plucks an exposed β-proton instead."
+            },
+            {
+              "label": "Poor Leaving Group (–OH, –OR, –NH₂)",
+              "outcome": "Protonate (H⁺ → –OH₂⁺) or Tosylate (TsCl → –OTs)",
+              "text": "Strong bases (HO⁻, RO⁻, H₂N⁻) never leave directly in SN1/SN2; convert –OH into H₂O or –OTs first!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:partners:trap",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "partners:trap"
+      ],
+      "payload": {
+        "lessonId": "partners",
+        "title": "Nucleophiles, electrophiles, and leaving groups",
+        "fullNote": "<p>A carbonyl oxygen is electron rich while its carbon is electron poor. A positive charge is not required for electrophilicity. For comparable neutral acyl derivatives in nucleophilic acyl substitution, anhydrides are generally more reactive than esters, and esters more reactive than amides. A free carboxylic acid can instead protonate a basic nucleophile; protonation, activation and the leaving group prevent a universal acid/ester ranking.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Kicking Out Hydroxide (HO⁻) Directly in SN1/SN2 or Reversing Curved Arrows",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Drawing ROH + Br⁻ → RBr + HO⁻ directly, or drawing a curved arrow from the electrophile C⁺ to the nucleophile."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Curved arrows ALWAYS start at an electron source (lone pair or π bond) and point to an electron sink; protonate –OH to –OH₂⁺ before displacement."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:partners:app",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "partners:app"
+      ],
+      "payload": {
+        "lessonId": "partners",
+        "title": "Nucleophiles, electrophiles, and leaving groups",
+        "fullNote": "<p>Enzyme active sites position nucleophiles and electrophiles while stabilizing charge; the same donor–acceptor logic applies.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Biological Leaving Groups (ATP Pyrophosphate PP_i) & SAM Methylation",
+          "items": [
+            {
+              "label": "ATP & Pyrophosphate (PP_i)",
+              "outcome": "Nature’s Tosylate Equivalent",
+              "text": "Enzymes phosphorylate alcohols to convert poor –OH leaving groups into resonance-stabilized phosphate/pyrophosphate leaving groups."
+            },
+            {
+              "label": "Cysteine Thiolate (RS⁻)",
+              "outcome": "Super-Nucleophile in Active Sites",
+              "text": "Sulfur’s large, polarizable 3p valence shell makes Cys–S⁻ a far faster nucleophile than Ser–O⁻ in protic water."
+            },
+            {
+              "label": "S-Adenosylmethionine (SAM)",
+              "outcome": "Sulfonium Methyl Electrophile",
+              "text": "Positively charged R₂S⁺–CH₃ acts as a prime biological leaving group for SN2 methyl transfer."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "bromoethane": {
             "name": "bromoethane",
@@ -1523,26 +2418,14 @@
       "chapter": 4,
       "kind": "lesson",
       "itemIds": [
-        "substitution:rule",
-        "substitution:cue",
-        "substitution:trap",
-        "substitution:app",
         "substitution:step-1",
         "substitution:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "substitution",
-          "label": "SN1 vs. SN2",
           "title": "SN1 vs. SN2",
           "molecule": "tbutylbromide",
-          "tag": "Mechanism depends on substrate and conditions",
-          "cards": {
-            "rule": "<p>SN2 is concerted backside attack: rate = k[substrate][nucleophile], with geometric inversion. Methyl and unhindered primary centers are favorable. SN1 ionizes to a carbocation: rate = k[substrate]; tertiary, allylic, and benzylic stabilization can help.</p>",
-            "cue": "<p>SN2: two species in the rate law, one concerted event. SN1: slow ionization, then attack.</p>",
-            "trap": "<p>SN1 can rearrange and often racemizes a stereocenter, but ion pairing can prevent exactly 50:50 products. SN2 inversion does not guarantee an R↔S label change if CIP priorities change. Strong bases and heat can make elimination compete.</p>",
-            "app": "<p>Use a rate change to distinguish mechanisms: doubling nucleophile concentration doubles an ideal SN2 rate but does not alter an ideal SN1 rate.</p>"
-          },
           "steps": [
             {
               "label": "1. Inspect crowding",
@@ -1574,78 +2457,577 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Mechanism depends on substrate and conditions",
-              "items": [
-                {
-                  "label": "Substrate",
-                  "text": "Steric access and carbocation stabilization"
-                },
-                {
-                  "label": "Conditions",
-                  "text": "Nucleophile, base and solvent"
-                },
-                {
-                  "label": "Mechanism",
-                  "text": "Concerted attack versus stepwise ionization"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Compare steric access in tertiary and primary substrates; mechanism also depends on conditions."
+          ]
+        },
+        "molecules": {
+          "tbutylbromide": {
+            "name": "2-bromo-2-methylpropane",
+            "formula": "C4H9Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 168,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "Br",
+                "x": 108,
+                "y": 145
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Ideal SN2",
-                  "text": "Rate includes substrate and nucleophile"
-                },
-                {
-                  "label": "Ideal SN1",
-                  "text": "Rate includes substrate; slow ionization precedes attack"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Assuming inversion always flips an R/S label"
-                },
-                {
-                  "label": "Check",
-                  "text": "CIP priorities; SN1 ion pairing can also prevent exact 50:50 products"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-bromo-2-methylpropane",
+            "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
+          },
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:substitution:rule",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "substitution:rule"
+      ],
+      "payload": {
+        "lessonId": "substitution",
+        "title": "SN1 vs. SN2",
+        "fullNote": "<p>SN2 is concerted backside attack: rate = k[substrate][nucleophile], with geometric inversion. Methyl and unhindered primary centers are favorable. SN1 ionizes to a carbocation: rate = k[substrate]; tertiary, allylic, and benzylic stabilization can help.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "SN2 (Concerted Backside Inversion) vs. SN1 (Stepwise Carbocation Racemization)",
+          "formula": "SN2 Rate = k [Substrate][Nucleophile] (Bimolecular)     |     SN1 Rate = k [Substrate] (Unimolecular)",
+          "items": [
+            {
+              "label": "SN2 Stereochemistry & Substrate",
+              "text": "1-step backside attack into σ* LUMO inverts the stereocenter umbrella (Methyl > 1° > 2°; 3° is blocked by steric hindrance)."
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Double nucleophile concentration",
-                  "text": "Ideal SN2 rate doubles"
-                },
-                {
-                  "label": "Same change for ideal SN1",
-                  "text": "Rate does not change"
-                }
-              ]
+            {
+              "label": "SN1 Stereochemistry & Rearrangement",
+              "text": "Rate-determining LG loss forms a planar sp² carbocation (3°/allylic/benzylic > 2°); attacked from both faces (racemization) and can rearrange!"
             }
+          ],
+          "chips": [
+            "SN2: 1 Step · Rate=k[RX][Nu] · Inversion",
+            "SN1: 2 Steps · Rate=k[RX] · Racemization",
+            "3° Carbocation > 2° > 1°"
+          ],
+          "comparison": [
+            [
+              "SN2 (Concerted)",
+              "Methyl > 1° > 2° (No 3°!)",
+              "Strong Nu⁻ + Polar Aprotic → 100% Inversion"
+            ],
+            [
+              "SN1 (Carbocation)",
+              "3° > 2° (Resonance: Allylic/Benzylic)",
+              "Weak Nu (ROH/H₂O) + Polar Protic → Racemic"
+            ]
+          ],
+          "theme": "sn1-sn2-umbrella",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Compare steric access in tertiary and primary substrates; mechanism also depends on conditions."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Inspect crowding",
+            "text": "<p>The carbon bonded to Br is tertiary: its three carbon neighbors are highlighted in orange. The cross is a 2D connectivity drawing, not a claim of 90° bond angles. Backside SN2 attack is strongly hindered; a suitable ionizing solvent can permit formation of a tertiary carbocation.</p>",
+            "molecule": "tbutylbromide",
+            "highlights": {
+              "prin": [
+                1
+              ],
+              "sub": [
+                0,
+                2,
+                3
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Compare a primary site",
+            "text": "<p>The primary carbon has only one carbon neighbor, highlighted in orange for comparison. With a small, strong nucleophile in a suitable polar aprotic solvent, bromoethane is a better SN2 candidate. An unstabilized primary carbocation is unfavorable; strong bases or heat can make elimination compete.</p>",
+            "molecule": "bromoethane",
+            "highlights": {
+              "prin": [
+                1
+              ],
+              "sub": [
+                0
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "tbutylbromide": {
+            "name": "2-bromo-2-methylpropane",
+            "formula": "C4H9Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 168,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "Br",
+                "x": 108,
+                "y": 145
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-bromo-2-methylpropane",
+            "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
+          },
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:substitution:cue",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "substitution:cue"
+      ],
+      "payload": {
+        "lessonId": "substitution",
+        "title": "SN1 vs. SN2",
+        "fullNote": "<p>SN2: two species in the rate law, one concerted event. SN1: slow ionization, then attack.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "SN1 vs. SN2 4-Point Diagnostic Matrix",
+          "prompt": "Check the substrate, nucleophile, and solvent:",
+          "items": [
+            {
+              "label": "Methyl or 1° Substrate + Strong Nu⁻ (CN⁻, I⁻, RS⁻)",
+              "outcome": "SN2 Mechanism (Concerted Backside Attack)",
+              "text": "Doubling [Nu⁻] doubles the rate; a chiral 1° deuterated or 2° substrate undergoes 100% configuration inversion."
+            },
+            {
+              "label": "3° Substrate + Weak/Neutral Solvolysis (H₂O, MeOH)",
+              "outcome": "SN1 Mechanism (Planar Carbocation Intermediate)",
+              "text": "Rate depends ONLY on [Substrate]; can partially racemize; ion pairing can bias the faces and shows two humps on the reaction coordinate diagram."
+            },
+            {
+              "label": "2° Substrate adjacent to 3° or Quaternary Carbon in SN1",
+              "outcome": "Watch for 1,2-Hydride or 1,2-Methyl Shift!",
+              "text": "Carbocation rearrangement is possible when an accessible shift produces a sufficiently favored intermediate; assess the actual structure."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "tbutylbromide": {
+            "name": "2-bromo-2-methylpropane",
+            "formula": "C4H9Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 168,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "Br",
+                "x": 108,
+                "y": 145
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-bromo-2-methylpropane",
+            "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
+          },
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:substitution:trap",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "substitution:trap"
+      ],
+      "payload": {
+        "lessonId": "substitution",
+        "title": "SN1 vs. SN2",
+        "fullNote": "<p>SN1 can rearrange and often racemizes a stereocenter, but ion pairing can prevent exactly 50:50 products. SN2 inversion does not guarantee an R↔S label change if CIP priorities change. Strong bases and heat can make elimination compete.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Running SN2 on a Tertiary Halide or Doubling SN1 Rate with Nucleophile Concentration",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Drawing SN2 backside attack on tert-butyl bromide or saying doubling [Nu] doubles the rate of an SN1 reaction."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "3° substrates NEVER undergo SN2 (strong base/nucleophiles give E2 elimination instead), and nucleophiles do not appear in the SN1 rate law!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "tbutylbromide": {
+            "name": "2-bromo-2-methylpropane",
+            "formula": "C4H9Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 48,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 168,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 25
+              },
+              {
+                "e": "Br",
+                "x": 108,
+                "y": 145
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                4,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "2-bromo-2-methylpropane",
+            "review": "Original connectivity graph; coordinates use a conventional 2D cross, not literal tetrahedral bond angles. Connectivity, indices and formula preserved; external expert review pending."
+          },
+          "bromoethane": {
+            "name": "bromoethane",
+            "formula": "C2H5Br",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "Br",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "bromoethane",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:substitution:app",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "substitution:app"
+      ],
+      "payload": {
+        "lessonId": "substitution",
+        "title": "SN1 vs. SN2",
+        "fullNote": "<p>Use a rate change to distinguish mechanisms: doubling nucleophile concentration doubles an ideal SN2 rate but does not alter an ideal SN1 rate.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "SAM Biological SN2 Methylation & Terpene Carbocation Cascades",
+          "items": [
+            {
+              "label": "SAM Methyltransferases",
+              "outcome": "Biological SN2 at Methyl Carbon",
+              "text": "DNA and histone methylation proceed via concerted SN2 attack on the unhindered methyl group of S-adenosylmethionine."
+            },
+            {
+              "label": "Farnesyl Pyrophosphate Cyclization",
+              "outcome": "Allylic SN1 Carbocation Cascade",
+              "text": "Loss of pyrophosphate generates a resonance-stabilized allylic cation that cyclizes into cholesterol precursors."
+            },
+            {
+              "label": "Glycosyltransferases",
+              "outcome": "Oxocarbenium Ion vs Invertase Mechanism",
+              "text": "Retaining vs inverting glycosidases control whether the anomeric carbon retains or inverts α/β stereochemistry."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "tbutylbromide": {
             "name": "2-bromo-2-methylpropane",
@@ -1749,10 +3131,6 @@
       "chapter": 4,
       "kind": "lesson",
       "itemIds": [
-        "redox:rule",
-        "redox:cue",
-        "redox:trap",
-        "redox:app",
         "redox:step-1",
         "redox:step-2",
         "redox:step-3"
@@ -1760,16 +3138,8 @@
       "payload": {
         "lesson": {
           "id": "redox",
-          "label": "Organic oxidation and reduction",
           "title": "Organic oxidation and reduction",
           "molecule": "ethanol",
-          "tag": "Track bonds to H and electronegative atoms",
-          "cards": {
-            "rule": "<p>Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero to carbon oxidation state. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde. Aqueous acidic CrO3 or dichromate (Na2Cr2O7/K2Cr2O7), or suitable KMnO4 conditions, can oxidize a primary alcohol further to a carboxylic acid; substrate and conditions determine the outcome.</p>",
-            "cue": "<p>More bonds to O, less H: carbon is oxidized. Hydride addition to C=O generally reduces it.</p>",
-            "trap": "<p>NaBH4 commonly reduces aldehydes and ketones but ordinarily not esters or carboxylic acids. LiAlH4 reduces esters and acids to alcohols and amides to amines, using suitable nonaqueous reaction conditions followed by a separate workup. Reagent, solvent and workup matter; do not treat LiAlH4 as compatible with an aqueous reaction medium.</p>",
-            "app": "<p>NAD+/NADH couples biological alcohol/carbonyl oxidation states through hydride transfer; not every laboratory reagent has a direct biological analogue.</p>"
-          },
           "steps": [
             {
               "label": "1. Alcohol carbon",
@@ -1807,78 +3177,693 @@
               },
               "reveal": true
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "compare",
-              "title": "Track bonds to H and electronegative atoms",
-              "items": [
-                {
-                  "label": "Count carbon bonds",
-                  "text": "C–C contributes zero to carbon oxidation state"
-                },
-                {
-                  "label": "Oxidation",
-                  "text": "Usually more bonds to electronegative atoms or fewer C–H bonds"
-                },
-                {
-                  "label": "Reduction",
-                  "text": "Usually the reverse change"
-                }
-              ],
-              "figure": {
-                "type": "reaction",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Schematic alcohol oxidation to an aldehyde under suitable conditions; not a balanced equation."
+          ]
+        },
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Ordinary NaBH4",
-                  "text": "Commonly reduces aldehydes and ketones"
-                },
-                {
-                  "label": "LiAlH4 with separate workup",
-                  "text": "Also acids/esters to alcohols; amides to amines"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
               ]
-            },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Using naming seniority as a redox ranking"
-                },
-                {
-                  "label": "Check",
-                  "text": "Actual bonds, reagent identity and conditions"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
               ]
-            },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "NAD+/NADH",
-                  "text": "Biological hydride transfer"
-                },
-                {
-                  "label": "Analogy limit",
-                  "text": "Not every lab reagent has a biological counterpart"
-                }
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
               ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:redox:rule",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "redox:rule"
+      ],
+      "payload": {
+        "lessonId": "redox",
+        "title": "Organic oxidation and reduction",
+        "fullNote": "<p>Oxidation of carbon usually increases bonds to O/N/halogens or decreases C–H bonds. Reduction does the reverse. C–C bonds contribute zero to carbon oxidation state. PCC under anhydrous conditions can oxidize a primary alcohol to an aldehyde. Aqueous acidic CrO3 or dichromate (Na2Cr2O7/K2Cr2O7), or suitable KMnO4 conditions, can oxidize a primary alcohol further to a carboxylic acid; substrate and conditions determine the outcome.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Organic Oxidation States & Chemoselective Oxidizing / Reducing Reagents",
+          "items": [
+            {
+              "label": "Carbon Oxidation Ladder",
+              "text": "Alkane (−4 in CH₄) → Alcohol/Alkene → Aldehyde/Ketone → Carboxylic Acid/Derivative → CO₂ (+4).",
+              "step": "1",
+              "color": "green"
+            },
+            {
+              "label": "Anhydrous PCC vs. Aqueous Jones (CrO₃/H₂SO₄)",
+              "text": "PCC in CH₂Cl₂ stops cleanly at the ALDEHYDE on 1° alcohols; aqueous CrO₃ or KMnO₄ hydrates the aldehyde and oxidizes it to –COOH.",
+              "step": "2",
+              "color": "blue"
+            },
+            {
+              "label": "NaBH₄ vs. LiAlH₄ Hydride Reactivity",
+              "text": "Mild NaBH₄ reduces ONLY aldehydes and ketones (plus acid chlorides); fierce LiAlH₄ reduces aldehydes, ketones, esters, acids, and amides!",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Oxidation = ↑ C–O/N/X or ↓ C–H",
+            "Reduction = ↑ C–H or ↓ C–O",
+            "Alkane < Alcohol < C=O < COOH < CO₂"
+          ],
+          "comparison": [
+            [
+              "1° Alcohol (RCH₂OH)",
+              "PCC → Aldehyde; CrO₃/KMnO₄ → COOH",
+              "NaBH₄/LiAlH₄ reduces back to 1° ROH"
+            ],
+            [
+              "2° Alcohol (R₂CHOH)",
+              "PCC or CrO₃ → Ketone (R₂C=O)",
+              "No α-OH C–H left to oxidize further"
+            ],
+            [
+              "3° Alcohol (R₃COH)",
+              "NO Oxidation (No carbinol C–H!)",
+              "Resists CrO₃/PCC unless C–C bonds break"
+            ]
+          ],
+          "theme": "redox-ladder",
+          "figure": {
+            "type": "reaction",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Schematic alcohol oxidation to an aldehyde under suitable conditions; not a balanced equation."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Alcohol carbon",
+            "text": "<p>For the CH2OH carbon, one C–O bond contributes +1 and two C–H bonds contribute −2: oxidation state −1.</p>",
+            "molecule": "ethanol",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Aldehyde carbon",
+            "text": "<p>For CHO, C=O contributes +2, C–H contributes −1, and C–C contributes 0: oxidation state +1. Alcohol → aldehyde is a two-electron oxidation.</p>",
+            "molecule": "acetaldehyde",
+            "highlights": {
+              "prin": [
+                1,
+                2
+              ]
+            },
+            "reveal": true
+          }
+        ],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:redox:cue",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "redox:cue"
+      ],
+      "payload": {
+        "lessonId": "redox",
+        "title": "Organic oxidation and reduction",
+        "fullNote": "<p>More bonds to O, less H: carbon is oxidized. Hydride addition to C=O generally reduces it.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Which Oxidant or Reductant Matches Your Target Transformation?",
+          "prompt": "Select your starting material and desired redox product:",
+          "items": [
+            {
+              "label": "1° Alcohol → Stop at Aldehyde (RCHO)",
+              "outcome": "Use Anhydrous PCC (or DMP / Swern)",
+              "text": "Without water, no geminal diol (hydrate) can form, so oxidation halts cleanly at the aldehyde stage."
+            },
+            {
+              "label": "1° Alcohol or Aldehyde → Carboxylic Acid (RCOOH)",
+              "outcome": "Use Jones (CrO₃/H₂SO₄, H₂O) or KMnO₄",
+              "text": "Water forms the geminal diol RCH(OH)₂, which has a second C–H bond for chromate to oxidize to –COOH."
+            },
+            {
+              "label": "Reduce Ketone/Aldehyde in Presence of an Ester",
+              "outcome": "Use Mild NaBH₄ in MeOH/EtOH",
+              "text": "NaBH₄ selectively reduces the more electrophilic ketone/aldehyde while leaving the ester untouched!"
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:redox:trap",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "redox:trap"
+      ],
+      "payload": {
+        "lessonId": "redox",
+        "title": "Organic oxidation and reduction",
+        "fullNote": "<p>NaBH4 commonly reduces aldehydes and ketones but ordinarily not esters or carboxylic acids. LiAlH4 reduces esters and acids to alcohols and amides to amines, using suitable nonaqueous reaction conditions followed by a separate workup. Reagent, solvent and workup matter; do not treat LiAlH4 as compatible with an aqueous reaction medium.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Oxidizing a 3° Alcohol with CrO₃ or Reducing an Ester with NaBH₄",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Drawing a ketone product from a 3° alcohol + CrO₃, or using NaBH₄ to reduce a carboxylic acid or ester."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Oxidation of an alcohol to C=O requires breaking a C–H bond on the carbinol carbon (3° alcohols have zero!), and esters/acids require LiAlH₄."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ethanol": {
+            "name": "ethanol",
+            "formula": "C2H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 166,
+                "y": 115
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanol",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetaldehyde": {
+            "name": "ethanal",
+            "formula": "C2H4O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 131,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 189,
+                "y": 85
+              },
+              {
+                "e": "O",
+                "x": 189,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "ethanal",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          },
+          "acetone": {
+            "name": "propanone",
+            "formula": "C3H6O",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 50,
+                "y": 115
+              },
+              {
+                "e": "C",
+                "x": 108,
+                "y": 85
+              },
+              {
+                "e": "C",
+                "x": 166,
+                "y": 115
+              },
+              {
+                "e": "O",
+                "x": 108,
+                "y": 25
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            "w": 320,
+            "h": 200,
+            "cond": "propanone",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:redox:app",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "redox:app"
+      ],
+      "payload": {
+        "lessonId": "redox",
+        "title": "Organic oxidation and reduction",
+        "fullNote": "<p>NAD+/NADH couples biological alcohol/carbonyl oxidation states through hydride transfer; not every laboratory reagent has a direct biological analogue.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "NAD⁺ / NADH Biological Hydride Transfer & Alcohol Dehydrogenase",
+          "items": [
+            {
+              "label": "NAD⁺ ⇌ NADH + H⁺",
+              "outcome": "Biological Equivalent of PCC / NaBH₄",
+              "text": "NAD⁺ accepts a hydride (H:⁻) to oxidize alcohols to carbonyls; NADH delivers a hydride to reduce carbonyls (e.g., pyruvate → lactate)."
+            },
+            {
+              "label": "FAD ⇌ FADH₂",
+              "outcome": "Alkane C–C → Alkene C=C Dehydrogenation",
+              "text": "Flavin cofactors oxidize saturated C–C single bonds to conjugated alkenes (e.g., succinate → fumarate in the TCA cycle)."
+            },
+            {
+              "label": "Disulfide Bridge Redox",
+              "outcome": "2 Cys–SH ⇌ Cys–S–S–Cys + 2H⁺ + 2e⁻",
+              "text": "Extracellular oxidizing environments link cysteine thiols into disulfides; cytosolic glutathione keeps thiols reduced."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "ethanol": {
             "name": "ethanol",
@@ -2009,26 +3994,14 @@
       "chapter": 4,
       "kind": "lesson",
       "itemIds": [
-        "selectivity:rule",
-        "selectivity:cue",
-        "selectivity:trap",
-        "selectivity:app",
         "selectivity:step-1",
         "selectivity:step-2"
       ],
       "payload": {
         "lesson": {
           "id": "selectivity",
-          "label": "Chemoselectivity and a reaction workflow",
           "title": "Chemoselectivity and a reaction workflow",
           "molecule": "ketoester",
-          "tag": "Choose by reactivity, not naming seniority",
-          "cards": {
-            "rule": "<p>Inventory functional groups, identify reagent roles, locate the likely reactive site, account for solvent and acid–base steps, then track bonds and stereochemistry. Chemoselectivity means preferential reaction at one functional group.</p>",
-            "cue": "<p>Group inventory → reagent → first step → bond changes → product checks.</p>",
-            "trap": "<p>Do not substitute a naming-priority or carbon-oxidation-state ranking for reaction analysis. An ester is senior to a ketone in naming, yet its alkoxy oxygen donates electron density into the carbonyl by resonance. Under ordinary NaBH4 conditions, the ketone can be reduced while the ester survives. An amide is also resonance-stabilized. Acid–base reactions, activation and conditions can change which site reacts first.</p>",
-            "app": "<p>Acetals protect aldehyde/ketone carbonyls from many basic and nucleophilic conditions; aqueous acid restores the carbonyl. Protection replaces the carbonyl pi system with a different functional group, changing electronic reactivity rather than merely adding steric bulk. Carbonyl compounds may also react through acidic alpha hydrogens: deprotonation creates an enolate nucleophile instead of nucleophilic addition at the carbonyl carbon.</p>"
-          },
           "steps": [
             {
               "label": "1. Inventory two carbonyls",
@@ -2066,78 +4039,609 @@
                 "explanation": "D is the ketone carbonyl carbon; A belongs to the ester."
               }
             }
-          ],
-          "visualCards": {
-            "rule": {
-              "layout": "flow",
-              "title": "Choose by reactivity, not naming seniority",
-              "items": [
-                {
-                  "label": "Inventory",
-                  "text": "List functional groups and reactive sites"
-                },
-                {
-                  "label": "Reagent",
-                  "text": "Include solvent and acid–base steps"
-                },
-                {
-                  "label": "Product check",
-                  "text": "Track bonds and stereochemistry"
-                }
-              ],
-              "figure": {
-                "type": "structures",
-                "steps": [
-                  0,
-                  1
-                ],
-                "caption": "Two functional-group foci on the same molecular graph, not a reactant/product pair."
+          ]
+        },
+        "molecules": {
+          "ketoester": {
+            "name": "methyl 4-oxopentanoate",
+            "formula": "C6H10O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 70,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 125,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 290,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 70,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 20,
+                "y": 140
+              },
+              {
+                "e": "C",
+                "x": 20,
+                "y": 195
+              },
+              {
+                "e": "O",
+                "x": 235,
+                "y": 195
               }
-            },
-            "cue": {
-              "layout": "decision",
-              "title": "Choose the case that applies",
-              "items": [
-                {
-                  "label": "Naming seniority",
-                  "text": "Chooses a name"
-                },
-                {
-                  "label": "Reaction analysis",
-                  "text": "Uses substrate, reagent and conditions"
-                }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                0,
+                5,
+                2
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                3,
+                8,
+                2
               ]
+            ],
+            "w": 330,
+            "h": 225,
+            "cond": "methyl 4-oxopentanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:selectivity:rule",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "selectivity:rule"
+      ],
+      "payload": {
+        "lessonId": "selectivity",
+        "title": "Chemoselectivity and a reaction workflow",
+        "fullNote": "<p>Inventory functional groups, identify reagent roles, locate the likely reactive site, account for solvent and acid–base steps, then track bonds and stereochemistry. Chemoselectivity means preferential reaction at one functional group.</p>",
+        "visualCard": {
+          "layout": "flow",
+          "title": "Chemo-, Regio-, and Stereoselectivity & The SN1/SN2/E1/E2 Competition Grid",
+          "items": [
+            {
+              "label": "Chemoselectivity (Functional Group Choice)",
+              "text": "Exploits intrinsic reactivity differences (e.g., Aldehyde > Ketone > Ester toward nucleophiles) or uses protecting groups.",
+              "step": "1",
+              "color": "green"
             },
-            "trap": {
-              "layout": "contrast",
-              "title": "Shortcut versus a better check",
-              "items": [
-                {
-                  "label": "Avoid",
-                  "text": "Senior in naming therefore more reactive"
-                },
-                {
-                  "label": "Check",
-                  "text": "Mechanism, resonance and reagent scope"
-                }
-              ]
+            {
+              "label": "Regioselectivity (Constitutional Site Choice)",
+              "text": "Determines which positional isomer forms (e.g., small base EtO⁻ gives Zaitsev internal alkene; bulky t-BuO⁻ gives Hofmann less-substituted alkene).",
+              "step": "2",
+              "color": "blue"
             },
-            "app": {
-              "layout": "map",
-              "title": "Connect the concept",
-              "items": [
-                {
-                  "label": "Acetal protection",
-                  "text": "Changes carbonyl reactivity"
-                },
-                {
-                  "label": "Aqueous acid",
-                  "text": "Can restore the carbonyl"
-                }
-              ]
+            {
+              "label": "Stereoselectivity & Stereospecificity",
+              "text": "Stereoselective reactions favor the more stable stereoisomer (E > Z); stereospecific reactions map starting geometry directly to product (SN2 inversion, anti-E2).",
+              "step": "3",
+              "color": "orange"
             }
+          ],
+          "chips": [
+            "Chemoselective = Which FG",
+            "Regioselective = Where on FG",
+            "Stereoselective = Which 3D Isomer"
+          ],
+          "comparison": [
+            [
+              "Chemoselectivity",
+              "Selects 1 functional group over another",
+              "NaBH₄ reduces ketone but spares ester"
+            ],
+            [
+              "Regioselectivity",
+              "Selects 1 constitutional site",
+              "Zaitsev (internal) vs Hofmann (terminal) alkene"
+            ],
+            [
+              "Stereoselectivity",
+              "Favors 1 stereoisomer",
+              "E2 anti-periplanar → E-alkene > Z-alkene"
+            ]
+          ],
+          "theme": "selectivity-compass",
+          "figure": {
+            "type": "structures",
+            "steps": [
+              0,
+              1
+            ],
+            "caption": "Two functional-group foci on the same molecular graph, not a reactant/product pair."
           }
         },
+        "figureSteps": [
+          {
+            "label": "1. Inventory two carbonyls",
+            "text": "<p>This molecule contains an ester at the left and a ketone at the right. The ester has an oxygen substituent directly on its carbonyl carbon.</p>",
+            "molecule": "ketoester",
+            "highlights": {
+              "prin": [
+                0,
+                5,
+                6
+              ],
+              "sub": [
+                3,
+                8
+              ]
+            },
+            "reveal": true
+          },
+          {
+            "label": "2. Predict a selective step",
+            "text": "<p>Ordinary NaBH4 conditions favor reduction of the ketone. Ester resonance donation lowers its electrophilicity relative to the ketone; a stronger reducing system can change the outcome.</p>",
+            "molecule": "ketoester",
+            "highlights": {
+              "prin": [
+                3,
+                8
+              ]
+            },
+            "reveal": false,
+            "challenge": {
+              "prompt": "Select the ketone carbonyl carbon targeted preferentially by ordinary NaBH4 conditions.",
+              "answer": [
+                3
+              ],
+              "explanation": "D is the ketone carbonyl carbon; A belongs to the ester."
+            }
+          }
+        ],
+        "molecules": {
+          "ketoester": {
+            "name": "methyl 4-oxopentanoate",
+            "formula": "C6H10O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 70,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 125,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 290,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 70,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 20,
+                "y": 140
+              },
+              {
+                "e": "C",
+                "x": 20,
+                "y": 195
+              },
+              {
+                "e": "O",
+                "x": 235,
+                "y": 195
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                0,
+                5,
+                2
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                3,
+                8,
+                2
+              ]
+            ],
+            "w": 330,
+            "h": 225,
+            "cond": "methyl 4-oxopentanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:selectivity:cue",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "selectivity:cue"
+      ],
+      "payload": {
+        "lessonId": "selectivity",
+        "title": "Chemoselectivity and a reaction workflow",
+        "fullNote": "<p>Group inventory → reagent → first step → bond changes → product checks.</p>",
+        "visualCard": {
+          "layout": "decision",
+          "title": "Master Substitution vs. Elimination Decision Engine",
+          "prompt": "Given an alkyl halide RX, how do you predict SN2 vs SN1 vs E2 vs E1?",
+          "items": [
+            {
+              "label": "Strong Unhindered Nucleophile (CN⁻, RS⁻, I⁻) + 1°/2° RX",
+              "outcome": "SN2 Dominates (Backside Inversion)",
+              "text": "Low basicity + minimal steric hindrance attacks the α-carbon σ* orbital cleanly."
+            },
+            {
+              "label": "Strong Base (HO⁻, RO⁻ on 2°/3° RX) OR Bulky Base (t-BuO⁻, LDA)",
+              "outcome": "E2 Dominates (Concerted Anti-Periplanar)",
+              "text": "Strong bases abstract a β-proton; small bases give the more substituted Zaitsev alkene, while t-BuO⁻ gives the Hofmann alkene."
+            },
+            {
+              "label": "Weak Base/Nu (H₂O, ROH) + 3° RX",
+              "outcome": "SN1 + E1 Mixture (Heat Favors E1)",
+              "text": "Both share the same rate-determining carbocation step; higher temperature (Δ) favors E1 via entropy (TΔS)."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ketoester": {
+            "name": "methyl 4-oxopentanoate",
+            "formula": "C6H10O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 70,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 125,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 290,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 70,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 20,
+                "y": 140
+              },
+              {
+                "e": "C",
+                "x": 20,
+                "y": 195
+              },
+              {
+                "e": "O",
+                "x": 235,
+                "y": 195
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                0,
+                5,
+                2
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                3,
+                8,
+                2
+              ]
+            ],
+            "w": 330,
+            "h": 225,
+            "cond": "methyl 4-oxopentanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:selectivity:trap",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "selectivity:trap"
+      ],
+      "payload": {
+        "lessonId": "selectivity",
+        "title": "Chemoselectivity and a reaction workflow",
+        "fullNote": "<p>Do not substitute a naming-priority or carbon-oxidation-state ranking for reaction analysis. An ester is senior to a ketone in naming, yet its alkoxy oxygen donates electron density into the carbonyl by resonance. Under ordinary NaBH4 conditions, the ketone can be reduced while the ester survives. An amide is also resonance-stabilized. Acid–base reactions, activation and conditions can change which site reacts first.</p>",
+        "visualCard": {
+          "layout": "contrast",
+          "title": "Confusing Regioselectivity with Chemoselectivity or Stereoselectivity",
+          "items": [
+            {
+              "label": "Common Trap",
+              "text": "Calling Markovnikov vs anti-Markovnikov addition \"chemoselective\" or \"stereoselective\"."
+            },
+            {
+              "label": "Correct Reasoning",
+              "text": "Different atom connectivity (1-ol vs 2-ol, or internal vs terminal alkene) is REGIOSELECTIVE; different 3D arrangement (R/S or E/Z) is STEREOSELECTIVE."
+            }
+          ]
+        },
+        "figureSteps": [],
+        "molecules": {
+          "ketoester": {
+            "name": "methyl 4-oxopentanoate",
+            "formula": "C6H10O3",
+            "atoms": [
+              {
+                "e": "C",
+                "x": 70,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 125,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 180,
+                "y": 100
+              },
+              {
+                "e": "C",
+                "x": 235,
+                "y": 135
+              },
+              {
+                "e": "C",
+                "x": 290,
+                "y": 100
+              },
+              {
+                "e": "O",
+                "x": 70,
+                "y": 40
+              },
+              {
+                "e": "O",
+                "x": 20,
+                "y": 140
+              },
+              {
+                "e": "C",
+                "x": 20,
+                "y": 195
+              },
+              {
+                "e": "O",
+                "x": 235,
+                "y": 195
+              }
+            ],
+            "bonds": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                1
+              ],
+              [
+                2,
+                3,
+                1
+              ],
+              [
+                3,
+                4,
+                1
+              ],
+              [
+                0,
+                5,
+                2
+              ],
+              [
+                0,
+                6,
+                1
+              ],
+              [
+                6,
+                7,
+                1
+              ],
+              [
+                3,
+                8,
+                2
+              ]
+            ],
+            "w": 330,
+            "h": 225,
+            "cond": "methyl 4-oxopentanoate",
+            "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+          }
+        }
+      }
+    },
+    {
+      "id": "ch04:lesson:selectivity:app",
+      "chapter": 4,
+      "kind": "lesson",
+      "itemIds": [
+        "selectivity:app"
+      ],
+      "payload": {
+        "lessonId": "selectivity",
+        "title": "Chemoselectivity and a reaction workflow",
+        "fullNote": "<p>Acetals protect aldehyde/ketone carbonyls from many basic and nucleophilic conditions; aqueous acid restores the carbonyl. Protection replaces the carbonyl pi system with a different functional group, changing electronic reactivity rather than merely adding steric bulk. Carbonyl compounds may also react through acidic alpha hydrogens: deprotonation creates an enolate nucleophile instead of nucleophilic addition at the carbonyl carbon.</p>",
+        "visualCard": {
+          "layout": "map",
+          "title": "Multi-Step Synthesis Planning & Enzyme Active-Site Specificity",
+          "items": [
+            {
+              "label": "Protecting Group Strategy",
+              "outcome": "Mask More Reactive FG as Acetal",
+              "text": "To reduce an ester in a keto-ester with LiAlH₄, first protect the ketone as a cyclic acetal (ethylene glycol, H⁺), reduce, then deprotect."
+            },
+            {
+              "label": "Thermal Elimination Bias",
+              "outcome": "Heat (Δ) Favors Elimination Over Substitution",
+              "text": "Elimination splits 2 particles into 3 particles (↑ ΔS > 0), so raising T makes −TΔS more negative."
+            },
+            {
+              "label": "Enzyme Active Sites",
+              "outcome": "Simultaneous Chemo-, Regio- & Stereocontrol",
+              "text": "Chiral enzyme pockets hold substrates in a single orientation, achieving 100% selectivity without protecting groups."
+            }
+          ]
+        },
+        "figureSteps": [],
         "molecules": {
           "ketoester": {
             "name": "methyl 4-oxopentanoate",
