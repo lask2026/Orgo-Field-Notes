@@ -26,7 +26,7 @@ export function startApp(data){
     document.getElementById('progressText').textContent=`${solved} / ${ch.exercises.length} workshops solved independently`;
     document.getElementById('progFill').style.width=`${100*solved/ch.exercises.length}%`;
     document.getElementById('storageWarn').hidden=!storageError;
-    document.getElementById('view').innerHTML=`<p class="chapter-intro">Chapter ${ch.id} · ${esc(ch.description)}</p><nav class="cnav" aria-label="Concepts">${ch.lessons.map((l,i)=>`<button class="cbtn" data-act="lesson" data-idx="${i}" aria-pressed="${i===state.lesson}"><span>${ch.id}.${i+1}</span>${esc(l.label)}</button>`).join('')}</nav>`+(state.mode==='learn'?renderLearn(ch,molecules,state,ui):renderPractice(ch,molecules,state,ui));
+    document.getElementById('view').innerHTML=`<p class="chapter-intro">Chapter ${ch.id} · ${esc(ch.title)} — ${esc(ch.description)}</p><nav class="cnav" aria-label="Concepts">${ch.lessons.map((l,i)=>`<button class="cbtn" data-act="lesson" data-idx="${i}" aria-pressed="${i===state.lesson}"><span>Lesson ${i+1}</span>${esc(l.label)}</button>`).join('')}</nav>`+(state.mode==='learn'?renderLearn(ch,molecules,state,ui):renderPractice(ch,molecules,state,ui));
     if(focus)document.querySelector(focus)?.focus();
   }
   function check(value){const ex=exercise(),p=getProgress(state,chapter(),ex),s=ex.stages[p.stage];if(!s||ui.correct)return;

@@ -38,6 +38,9 @@
               "type": "integer",
               "minimum": -1,
               "maximum": 1
+            },
+            "showHydrogens": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -123,6 +126,10 @@
           "additionalProperties": false
         },
         "minItems": 0
+      },
+      "displayFormula": {
+        "type": "string",
+        "pattern": "^[A-Z][A-Za-z0-9]*$"
       }
     },
     "required": [

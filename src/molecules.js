@@ -7,13 +7,13 @@ export function molecularFormula(m){
   return order.filter(e=>counts[e]).map(e=>e+(counts[e]===1?'':counts[e])).join('');
 }
 export function netCharge(m){return m.atoms.reduce((sum,a)=>sum+(a.charge||0),0);}
-export function formulaLabel(m){const charge=netCharge(m);return m.formula+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
+export function formulaLabel(m){const charge=netCharge(m);return (m.displayFormula||m.formula)+(charge?`; net charge ${charge<0?'−':'+'}${Math.abs(charge)}`:'');}
 export function graphDescription(m){return m.atoms.map((a,i)=>`${atomLabel(i)}: ${a.e}${a.charge?` charge ${a.charge}`:''}, ${hydrogens(m,i)} implicit H`).join('; ')+'. Bonds: '+m.bonds.map(([a,b,n])=>`${atomLabel(a)}–${atomLabel(b)} ${['','single','double','triple'][n]}`).join('; ')+'.';}
-export function numberBadgePosition(m,i){
+export function numberBadgePosition(m,i,radius=28){
   const a=m.atoms[i];
   const distance=(p,u,v)=>{const dx=v.x-u.x,dy=v.y-u.y,t=Math.max(0,Math.min(1,((p.x-u.x)*dx+(p.y-u.y)*dy)/(dx*dx+dy*dy||1)));return Math.hypot(p.x-u.x-t*dx,p.y-u.y-t*dy);};
   // Search around the vertex instead of placing every number on an upward carbonyl bond.
-  const candidates=Array.from({length:16},(_,j)=>{const angle=-Math.PI/2+j*Math.PI/8;return{x:a.x+28*Math.cos(angle),y:a.y+28*Math.sin(angle)};});
+  const candidates=Array.from({length:16},(_,j)=>{const angle=-Math.PI/2+j*Math.PI/8;return{x:a.x+radius*Math.cos(angle),y:a.y+radius*Math.sin(angle)};}).filter(p=>p.x>=-6&&p.x<=m.w+6&&p.y>=-10&&p.y<=m.h+10);
   const score=p=>Math.min(...m.bonds.map(([u,v])=>distance(p,m.atoms[u],m.atoms[v])),...m.atoms.filter((b,j)=>j!==i&&b.e!=='C').map(b=>Math.hypot(p.x-b.x,p.y-b.y)-16));
   return candidates.reduce((best,p)=>score(p)>score(best)+.01?p:best,candidates[0]);
 }
@@ -28,7 +28,7 @@ export function electronFlowGeometry(m,flow){
 export function drawMolecule(m,opts={}){
   const path=opts.path||[],prin=opts.prin||[],sub=opts.sub||[],sel=opts.sel||[];
   const label=(a,i)=>{
-    if(a.e==='C'&&!a.charge&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
+    if(a.e==='C'&&!a.charge&&!a.showHydrogens&&!(m.atoms.length===2&&m.atoms.every(a=>a.e==='C')))return '';
     const count=hydrogens(m,i),h=count?'H'+(count>1?String(count).replace(/\d/g,n=>'₀₁₂₃₄₅₆₇₈₉'[n]):''):'';
     const bond=m.bonds.find(([u,v])=>u===i||v===i),neighbor=bond?m.atoms[bond[0]===i?bond[1]:bond[0]]:null;
     return (h&&neighbor?.x>a.x+14?h+a.e:a.e+h)+(a.charge===1?'⁺':a.charge===-1?'⁻':'');
@@ -52,8 +52,8 @@ export function drawMolecule(m,opts={}){
     const l=label(a,i);
     if(l)h+=`<text x="${a.x}" y="${a.y+6}" text-anchor="middle" style="font-size:16px;fill:${a.e==='O'?'#047857':a.e==='N'?'#1d4ed8':'#0f172a'}">${esc(l)}</text>`;
     if(opts.click){
-      const y=l?a.y+26:a.y;
-      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${a.x}" cy="${y}" r="16"/><text x="${a.x}" y="${y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
+      const p=l?numberBadgePosition(m,i,42):a;
+      h+=`<g class="ahit ${sel.includes(i)?'sel':''}" role="button" tabindex="0" data-act="${opts.act||'selectAtom'}" data-idx="${i}" aria-label="Atom ${atomLabel(i)}, ${a.e}" aria-pressed="${sel.includes(i)}">${l?`<path d="M${a.x},${a.y} L${p.x},${p.y}" style="stroke:transparent;stroke-width:20;pointer-events:stroke"/><circle class="atom-label-hit" cx="${a.x}" cy="${a.y}" r="16" style="fill:transparent;stroke:none"/>`:""}<circle cx="${p.x}" cy="${p.y}" r="16"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle">${atomLabel(i)}</text></g>`;
     }
     if(opts.num?.includes(i)){const ix=opts.num.indexOf(i),p=numberBadgePosition(m,i);h+=`<g class="anim-loc" style="--i:${ix}"><circle cx="${p.x}" cy="${p.y}" r="10" fill="#2563eb"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" style="font-size:11px;fill:#fff">${ix+1}</text></g>`;}
   });

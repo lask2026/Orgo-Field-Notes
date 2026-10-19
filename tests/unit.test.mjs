@@ -18,7 +18,7 @@ test('storage handles missing, corrupt, blocked and out-of-bounds state',()=>{
 });
 test('molecule graph integrity, valence, formula, connectivity and geometry bounds',()=>{
  for(const [id,m] of Object.entries(molecules)){
-  const seen=new Set(),v=valences(m);assert.equal(molecularFormula(m),m.formula,id+' formula');
+  const seen=new Set(),v=valences(m);assert.equal(molecularFormula(m),m.formula,id+' formula');if(m.displayFormula){const counts=f=>[...f.matchAll(/([A-Z][a-z]?)([0-9]*)/g)].map(x=>[x[1],Number(x[2]||1)]).sort((a,b)=>a[0].localeCompare(b[0]));assert.deepEqual(counts(m.displayFormula),counts(m.formula),id+' display composition');}
   m.bonds.forEach(([a,b,n])=>{assert.ok(m.atoms[a]&&m.atoms[b]&&a!==b,id+' endpoints');assert.ok([1,2,3].includes(n));const key=[a,b].sort((a,b)=>a-b).join(':');assert.ok(!seen.has(key),id+' duplicate');seen.add(key);});
   m.atoms.forEach((a,i)=>{assert.ok(a.x>=0&&a.x<=m.w&&a.y>=0&&a.y<=m.h,id+' bounds');assert.ok(v[i]<=({C:4,N:a.charge===1?4:3,O:a.charge===-1?1:2,H:1,S:6,P:5,F:1,Cl:1,Br:1,I:1}[a.e]),id+' valence');});
   const reached=new Set([0]);for(let i=0;i<m.atoms.length;i++)for(const [a,b] of m.bonds){if(reached.has(a))reached.add(b);if(reached.has(b))reached.add(a);}assert.equal(reached.size,m.atoms.length,id+' disconnected');

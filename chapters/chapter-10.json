@@ -12,11 +12,15 @@
     {
       "label": "Supplied Kaplan curriculum: Chapter 10; section scope checked against local body and summary",
       "location": "organic_chemistry_kaplan/OEBPS/chapter10b.xhtml"
+    },
+    {
+      "label": "Buffer action and capacity: OpenStax Chemistry 2e 14.6, inspected",
+      "location": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
     }
   ],
   "review": {
     "status": "author-reviewed",
-    "note": "Original explanations and exercises; source-backed author review, not independent expert verification."
+    "note": "Chapter 10 candidate audit adjudicated; twelve original keys retained and a three-stage Gabriel workshop added. Atom tracking, rendering, precision and phosphate-buffer qualifications repaired. Source-backed author review; independent expert verification pending."
   },
   "lessons": [
     {
@@ -26,10 +30,10 @@
       "molecule": "alanine",
       "tag": "Ionization depends on pH",
       "cards": {
-        "rule": "<p>An alpha amino acid has amino and carboxyl groups attached to the same alpha carbon. At many near-neutral pH conditions, simple amino acids predominantly form zwitterions. Side chains add nonpolar, aromatic, polar, acidic, or basic behavior. Glycine has no stereocenter; most proteinogenic L amino acids are S, with cysteine the familiar R exception.</p>",
+        "rule": "<p>An alpha amino acid has amino and carboxyl groups attached to the same alpha carbon. At many near-neutral pH conditions, simple amino acids predominantly form zwitterions. Side chains add nonpolar, aromatic, polar, acidic, or basic behavior. Glycine has no stereocenter; most proteinogenic L amino acids are S, with cysteine the familiar R exception. Amino acids are amphoteric: an acidic carboxyl group can donate H+ and a basic amino group can accept H+; side chains may add further ionizable sites.</p>",
         "cue": "<p>Low pH adds protons; high pH removes them. Net charge is the sum of all ionized groups.</p>",
         "trap": "<p>A zwitterion has formal charges despite net zero charge. The pI is the pH of average net zero charge; for ionizable side chains, average the two pKa values bracketing the neutral species, not automatically the terminal pKa pair.</p>",
-        "app": "<p>Aliphatic side chains such as Ala, Val, Leu, and Ile are nonpolar; Ser and Thr have polar OH groups; Asn and Gln have polar amides. Asp/Glu are usually negatively charged near neutral pH; Lys/Arg usually positive. Histidine protonation is strongly pH- and environment-dependent. Aromatic does not always mean purely nonpolar: Tyr has a phenolic OH. At pH below pI a protein tends positive; above pI it tends negative.</p>"
+        "app": "<p>Aliphatic side chains such as Ala, Val, Leu, and Ile are nonpolar; Ser and Thr have polar OH groups; Asn and Gln have polar amides. Asp/Glu are usually negatively charged near neutral pH; Lys/Arg usually positive. Histidine protonation is strongly pH- and environment-dependent. Aromatic does not always mean purely nonpolar: Tyr has a phenolic OH. At pH below pI a protein tends positive; above pI it tends negative. Methionine has a largely nonpolar thioether side chain; cysteine has a polar thiol and can form disulfides on oxidation. Proline has a cyclic side chain bonded to its nitrogen (a secondary amine in the free amino acid); phenylalanine and tryptophan are commonly grouped as nonpolar aromatic amino acids, although tryptophan has an indole N–H donor.</p>"
       },
       "steps": [
         {
@@ -66,7 +70,7 @@
         },
         {
           "label": "3. Relative configuration",
-          "text": "<p>This Fischer projection is the L-alanine arrangement. The carboxyl group is above, side chain below, amino group left. L is not a statement about optical-rotation sign.</p>",
+          "text": "<p>The separate Fischer projection below shows L-alanine: carboxyl above, methyl below, amino left. The skeletal canvas above specifies connectivity without configuration. In the Fischer projection, horizontal bonds point toward you. L does not specify the optical-rotation sign.</p>",
           "molecule": "alanine",
           "highlights": {
             "prin": [
@@ -92,7 +96,7 @@
       "molecule": "glycylglycine",
       "tag": "An amide links amino-acid residues",
       "cards": {
-        "rule": "<p>A peptide bond joins one residue’s carbonyl carbon to the next residue’s nitrogen. Resonance makes the peptide group approximately planar with restricted C–N rotation. Sequence is conventionally read N-terminus → C-terminus. Primary sequence supports secondary structures, tertiary folding, and sometimes quaternary assembly.</p>",
+        "rule": "<p>A peptide bond joins one residue’s carbonyl carbon to the next residue’s nitrogen. Resonance makes the peptide group approximately planar with restricted C–N rotation. Sequence is conventionally read N-terminus → C-terminus. Primary sequence supports secondary structures, tertiary folding, and sometimes quaternary assembly. Net peptide formation is a condensation/dehydration, eliminating water from amino and carboxyl groups in formal bookkeeping. Activation enables synthesis; hydrolysis consumes water to cleave the amide, with enzymes or suitable strong acid/base and often heat. Basic cleavage is base-promoted and gives carboxylate, not necessarily a neutral acid before workup.</p>",
         "cue": "<p>N to C is the reading direction. Peptide C–N is the restricted bond; adjacent backbone single bonds supply much of the flexibility.</p>",
         "trap": "<p>A peptide bond is not a C–C bond between two alpha carbons. Peptide formation is thermodynamically and kinetically enabled by activation in cells; plain amino acids in water do not rapidly polymerize by themselves.</p>",
         "app": "<p>Hydrogen bonding organizes alpha helices and beta sheets; hydrophobic effects and side-chain interactions help stabilize folded proteins.</p>"
@@ -111,6 +115,7 @@
             "sub": [
               0,
               6,
+              7,
               8
             ]
           },
@@ -145,24 +150,25 @@
       "molecule": "aminonitrile",
       "tag": "Track where the carboxyl carbon comes from",
       "cards": {
-        "rule": "<p>In the Strecker route, an aldehyde reacts through an imine/iminium stage with ammonia and cyanide to form an alpha-aminonitrile. Nitrile hydrolysis gives the carboxyl group. A Gabriel–malonic ester route installs protected nitrogen and an alkyl side chain, then hydrolyzes and decarboxylates to an alpha amino acid.</p>",
-        "cue": "<p>Strecker: nitrile carbon becomes carboxyl carbon. Gabriel–malonate: alkylation builds the side chain; decarboxylation removes one carboxyl group.</p>",
+        "rule": "<p>In the Strecker route, an aldehyde reacts through an imine/iminium stage with ammonia and cyanide to form an alpha-aminonitrile. Nitrile hydrolysis gives the carboxyl group. A Gabriel–malonic ester route installs protected nitrogen and an alkyl side chain, then hydrolyzes and decarboxylates to an alpha amino acid. One Strecker teaching reagent set uses NH4Cl/KCN, followed by aqueous acid and heat: imine/iminium formation, cyanide carbon addition, then nitrile hydrolysis. These are reaction-recognition details, not an experimental procedure.</p>",
+        "cue": "<p>Strecker: nitrile carbon becomes carboxyl carbon. Gabriel–malonate: alkylation builds the side chain; decarboxylation removes one carboxyl group. In the Gabriel–malonic ester variant, potassium phthalimide substitutes at the brominated carbon of diethyl bromomalonate. Deprotonation of the protected aminomalonate then enables carbon alkylation with a suitable alkyl halide by SN2. Hydrolysis/deprotection and decarboxylation give the amino acid; the phthalimide framework can leave as phthalic acid under acidic hydrolysis conditions. The electrophile must be compatible with SN2; tertiary halides do not serve as a universal choice.</p>",
         "trap": "<p>Achiral starting materials and conditions usually give a racemic chiral amino-acid product; glycine is achiral. Ordinary Gabriel amine synthesis and the malonic-ester amino-acid variant are related but not identical.</p>",
         "app": "<p>Laboratory racemic synthesis contrasts with enzyme-controlled production of stereochemically selected amino acids.</p>"
       },
       "steps": [
         {
           "label": "1. Aminonitrile intermediate",
-          "text": "<p>The central carbon carries an amino group, methyl, H, and a nitrile carbon. This is the carbon skeleton leading to alanine on nitrile hydrolysis.</p>",
+          "text": "<p>The central carbon carries an amino group, methyl, H, and a nitrile carbon. This is the carbon skeleton leading to alanine on nitrile hydrolysis. Green tracks the nitrile-derived future carboxyl carbon, red the future alpha carbon, and orange the retained methyl side chain. The nitrile N is not retained in the amino acid.</p>",
           "molecule": "aminonitrile",
           "highlights": {
             "prin": [
-              1,
-              4
+              2
             ],
             "sub": [
-              2,
-              3
+              0
+            ],
+            "alpha": [
+              1
             ]
           },
           "reveal": true
@@ -173,29 +179,27 @@
           "molecule": "alanine",
           "highlights": {
             "prin": [
-              1,
               2
             ],
             "sub": [
               5
+            ],
+            "alpha": [
+              1
             ]
           },
           "reveal": true
         },
         {
           "label": "3. Alternative protected route",
-          "text": "<p>In the Gabriel–malonic ester amino-acid variant, phthalimide supplies protected nitrogen, malonate chemistry enables side-chain alkylation, and hydrolysis/deprotection plus decarboxylation yields the amino acid. This is a route overview, not a laboratory protocol.</p>",
-          "molecule": "alanine",
+          "text": "<p>The phthalimide anion shown supplies protected nitrogen; its potassium counterion is omitted. N substitution on diethyl bromomalonate installs the protected amino group. Subsequent malonate carbon alkylation installs a side chain; hydrolysis/deprotection and decarboxylation then give an alpha amino acid. This reagent canvas is not the complete reaction sequence.</p>",
+          "molecule": "phthalimide-anion",
           "highlights": {
             "prin": [
-              0,
-              1
-            ],
-            "sub": [
-              5
+              7
             ]
           },
-          "reveal": false
+          "reveal": true
         }
       ]
     },
@@ -206,8 +210,8 @@
       "molecule": "dimethylphosphate",
       "tag": "Phosphoesters differ from phosphoanhydrides",
       "cards": {
-        "rule": "<p>A phosphate ester contains P–O–C; a phosphodiester has two such ester links. A phosphoanhydride contains P–O–P. Phosphoric acid has successive dissociations, so charge depends on pH. Formal P=O Lewis drawings are bookkeeping models of delocalized bonding.</p>",
-        "cue": "<p>DNA/RNA backbone: phosphodiester. Between ATP phosphate groups: phosphoanhydride. Approximate aqueous phosphoric-acid pKa values are 2.1, 7.2, and 12.3, so the H2PO4−/HPO4²− pair can buffer near neutral pH; temperature and ionic conditions shift these values.</p>",
+        "rule": "<p>A phosphate ester contains P–O–C; a phosphodiester has two such ester links. A phosphoanhydride contains P–O–P. Phosphoric acid has successive dissociations, so charge depends on pH. Formal P=O Lewis drawings are bookkeeping models of delocalized bonding. Organic phosphate esters attach carbon groups through P–O–C. Inorganic orthophosphate (Pi) lacks such ester links and includes protonation states set by pH. Pyrophosphate (PPi) joins two phosphate units through P–O–P; its charge also depends on pH.</p>",
+        "cue": "<p>DNA/RNA backbone: phosphodiester. Between ATP phosphate groups: phosphoanhydride. Approximate aqueous phosphoric-acid pKa values are 2.1, 7.2 and 12.3; H₂PO₄⁻/HPO₄²⁻ buffers near neutral pH. Temperature and ionic conditions shift the values. Useful buffering regions lie near each pKa, often within about one pH unit; capacity depends on concentration and component ratio. Three separated regions do not give uniformly effective buffering at all intervening pH values.</p>",
         "trap": "<p>Breaking a bond requires energy. Favorable ATP hydrolysis reflects the overall free-energy difference between reactants and solvated products, including resonance, electrostatics, and solvation; energy is not released simply by breaking one bond.</p>",
         "app": "<p>Phosphoryl transfer can couple reactions. Nucleic-acid synthesis releases pyrophosphate, whose subsequent hydrolysis can help favor polymerization.</p>"
       },
@@ -300,7 +304,7 @@
         },
         {
           "type": "number",
-          "prompt": "Using pKa values 2.3 and 9.6 for this neutral-side-chain model, calculate pI.",
+          "prompt": "Using model pKa values 2.30 and 9.60, calculate pI. Report two decimal places.",
           "skill": "Calculate and interpret",
           "answer": 5.95,
           "unit": "pH units",
@@ -308,7 +312,7 @@
           "explanation": "The neutral form lies between those dissociations: (2.3+9.6)/2=5.95.",
           "hints": [
             "Use the pKa pair bracketing net zero.",
-            "Average the two supplied numbers."
+            "Average the two supplied numbers; retain two decimal places."
           ],
           "highlights": {}
         }
@@ -399,8 +403,7 @@
           ],
           "highlights": {
             "prin": [
-              2,
-              3
+              2
             ]
           }
         },
@@ -419,7 +422,11 @@
             "Follow the carbon skeleton.",
             "No new aromatic group is introduced."
           ],
-          "highlights": {}
+          "highlights": {
+            "sub": [
+              0
+            ]
+          }
         },
         {
           "type": "choice",
@@ -502,6 +509,66 @@
         }
       ],
       "summary": "Phosphodiesters connect P through oxygen to two carbon groups."
+    },
+    {
+      "id": "gabriel-route",
+      "lesson": "synthesis",
+      "molecule": "phthalimide-anion",
+      "label": "Reason through the Gabriel route",
+      "title": "Track protected nitrogen and side-chain installation",
+      "context": "The canvas shows the protected nitrogen reagent, with its potassium counterion omitted; later questions refer to the route described in Learn & Explore.",
+      "stages": [
+        {
+          "type": "atoms",
+          "prompt": "Select the nitrogen nucleophile of the displayed phthalimide anion.",
+          "skill": "Track the nitrogen source",
+          "answer": [
+            7
+          ],
+          "explanation": "H is the imide nitrogen, bearing the formal negative charge. The badge H is an atom identifier, not a hydrogen element symbol.",
+          "hints": [
+            "Locate N in the five-membered imide ring.",
+            "The nucleophilic atom bears the formal negative charge."
+          ],
+          "highlights": {
+            "prin": [
+              7
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "prompt": "After protected aminomalonate formation and deprotonation, a suitable primary alkyl halide installs the side chain mainly by…",
+          "skill": "Identify the reaction type",
+          "options": [
+            "SN2 carbon alkylation",
+            "Electrophilic aromatic substitution on the product amino acid",
+            "Direct reduction of the ester to an alkane"
+          ],
+          "answer": 0,
+          "explanation": "The malonate-derived carbon nucleophile substitutes for halide; suitable unhindered electrophiles favor SN2.",
+          "hints": [
+            "Identify the nucleophile and the leaving group.",
+            "An alkyl halide is attacked at its saturated carbon."
+          ],
+          "highlights": {}
+        },
+        {
+          "type": "number",
+          "prompt": "After hydrolysis of the malonate esters, how many carboxyl carbons are lost as CO2 in the usual single decarboxylation?",
+          "skill": "Track carbon loss",
+          "answer": 1,
+          "unit": "carboxyl carbons",
+          "tolerance": 0,
+          "explanation": "One malonate-derived carboxyl group is lost, leaving the amino acid carboxyl group.",
+          "hints": [
+            "Distinguish deprotection from the decarboxylation step.",
+            "The aminomalonic acid framework starts with two carboxyl groups and retains one."
+          ],
+          "highlights": {}
+        }
+      ],
+      "summary": "Protected nitrogen installation and side-chain alkylation precede hydrolysis/deprotection and one decarboxylation."
     }
   ]
 }
