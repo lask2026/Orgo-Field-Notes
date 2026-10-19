@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "5637575dec7c1af3eaaec7357befc0a72897b2e2b86825c54344949f5cd8a9a8",
+    "sha256": "bd860a7c171bc4d28b7677ad593e7070d0f487f67abefceca60f29f22ecb868e",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

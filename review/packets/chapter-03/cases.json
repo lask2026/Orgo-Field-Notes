@@ -3,7 +3,7 @@
   "chapter": 3,
   "title": "Bonding",
   "sourceSnapshot": {
-    "sha256": "521e89fcbb1f092d4a6f4f9718e92bc66ebf8d573e2c3af43d35f43158d8f927",
+    "sha256": "a137d07fbe7003683ca81d12ba579a8e6761f381c98d75e008b988c7f2fbda97",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -140,7 +140,7 @@
           {
             "id": "bond-count:stage-3",
             "type": "number",
-            "prompt": "Including implicit C–H bonds, how many sigma bonds are present?",
+            "prompt": "Including the C–H bonds represented by the CH labels, how many sigma bonds are present?",
             "unit": "sigma bonds"
           }
         ]
@@ -425,14 +425,14 @@
             },
             {
               "type": "number",
-              "prompt": "Including implicit C–H bonds, how many sigma bonds are present?",
+              "prompt": "Including the C–H bonds represented by the CH labels, how many sigma bonds are present?",
               "skill": "Calculate and interpret",
               "answer": 3,
               "unit": "sigma bonds",
               "tolerance": 0,
               "explanation": "One C–C sigma bond plus two C–H sigma bonds gives three.",
               "hints": [
-                "Each carbon has one implicit H.",
+                "Each CH label includes one C–H single bond not drawn as a separate line.",
                 "Count the C–C sigma bond once."
               ],
               "highlights": {}
@@ -1382,7 +1382,7 @@
             "stages": [
               "Select the atoms joined by the triple bond.",
               "How many pi bonds are present?",
-              "Including implicit C–H bonds, how many sigma bonds are present?"
+              "Including the C–H bonds represented by the CH labels, how many sigma bonds are present?"
             ]
           },
           {

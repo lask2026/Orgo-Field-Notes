@@ -13,7 +13,7 @@ test('the C1-top Fischer drawing preserves the S assignment and mirrored step re
  const d=ch.exercises.find(e=>e.id==='fischer-cip').diagram;assert.equal(d.top,'CH₃');
  const assignment=d=>{const coords={right:[1,0],left:[-1,0],top:[0,1],bottom:[0,-1]},pos=label=>Object.keys(coords).find(k=>d[k]===label);const [a,b,c]=['OH','CH₂CH₃','CH₃'].map(label=>coords[pos(label)]);const cross=(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);const toward=['left','right'].includes(pos('H'));return (cross<0)!==toward?'R':'S';};
  assert.equal(assignment(d),'S');assert.equal(assignment(ch.lessons.find(l=>l.id==='configuration').steps[2].diagram),'R');
- const steps=ch.lessons.find(l=>l.id==='configuration').steps;assert.deepEqual(steps[0].diagram,steps[1].diagram);assert.ok(!steps[1].text.includes('180° rotation'));assert.ok(!steps[0].text.includes('index 3'));
+ const steps=ch.lessons.find(l=>l.id==='configuration').steps;assert.deepEqual(steps[0].diagram,steps[1].diagram);assert.ok(!steps[1].text.includes('180° rotation'));assert.ok(!steps[0].text.includes('index 3'));assert.deepEqual(steps[0].highlights.sub,[2,3]);assert.ok(steps[0].text.includes('competing methyl carbon is unhighlighted'));
 });
 test('active atom challenges remove walkthrough highlights and expose lettered selectable atoms',()=>{
  const index=ch.lessons.findIndex(l=>l.id==='chirality'),state={lesson:index,step:0};

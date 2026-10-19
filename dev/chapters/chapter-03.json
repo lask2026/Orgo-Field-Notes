@@ -375,14 +375,14 @@
         },
         {
           "type": "number",
-          "prompt": "Including implicit C–H bonds, how many sigma bonds are present?",
+          "prompt": "Including the C–H bonds represented by the CH labels, how many sigma bonds are present?",
           "skill": "Calculate and interpret",
           "answer": 3,
           "unit": "sigma bonds",
           "tolerance": 0,
           "explanation": "One C–C sigma bond plus two C–H sigma bonds gives three.",
           "hints": [
-            "Each carbon has one implicit H.",
+            "Each CH label includes one C–H single bond not drawn as a separate line.",
             "Count the C–C sigma bond once."
           ],
           "highlights": {}

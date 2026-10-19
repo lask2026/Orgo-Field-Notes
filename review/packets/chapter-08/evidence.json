@@ -1,7 +1,7 @@
 {
   "chapter": 8,
   "sourceSnapshot": {
-    "sha256": "43aef83377c8a518954bd06366f60c41c02ef0ded79fc9bf52b50f8e2731565d",
+    "sha256": "a5681a8efd4fd7f05ab6ac941f057bbfd23a13c1196fc5435c9fced0ba6c2485",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",

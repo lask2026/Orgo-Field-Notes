@@ -1,7 +1,7 @@
 {
   "chapter": 2,
   "sourceSnapshot": {
-    "sha256": "9a800919ca77b16c4906fed565b7d6465a2952dd97300f7ea94960e3a2f84600",
+    "sha256": "df2ed305c060fdd0110da4c763149ef545a773453a95236d3b2e09c597ffeb13",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -90,7 +90,7 @@
       "id": "configuration-step-1",
       "kind": "learn-molecule",
       "file": "screenshots/configuration-step-1.png",
-      "sha256": "4a4662e5b54a2f3da0cfd7cdc728f6fd7d4a0b2fdd842fc860505a5f4ba51fbf",
+      "sha256": "7bae2d8e5162074c952a2ebc40fd6f2a5460f2ea7a5c479c4d9875a15eb958fd",
       "width": 661,
       "height": 359
     },

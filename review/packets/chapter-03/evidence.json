@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "521e89fcbb1f092d4a6f4f9718e92bc66ebf8d573e2c3af43d35f43158d8f927",
+    "sha256": "a137d07fbe7003683ca81d12ba579a8e6761f381c98d75e008b988c7f2fbda97",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "captureStatus": "passed",
@@ -298,23 +298,23 @@
       "id": "bond-count-stage-3-question",
       "kind": "practice-question",
       "file": "screenshots/bond-count-stage-3-question.png",
-      "sha256": "e4ff5b7f28900c9363d8944e0a5d3dca708178a3cb1c873e9978913a18888f20",
+      "sha256": "d786f2f91625dfb69493afe570d7cd793b4bcf92c45ea879b4472bb963249bf8",
       "width": 607,
-      "height": 255
+      "height": 280
     },
     {
       "id": "bond-count-stage-3-feedback",
       "kind": "practice-feedback",
       "file": "screenshots/bond-count-stage-3-feedback.png",
-      "sha256": "f52ba12f0b18eea2153db164402b5e50a0e19e51c273ccd0da0b28a30c68550b",
+      "sha256": "515a8ce3526d52124347ce27cfe6cca96ca7281f81829b736e7b609d434bf9d5",
       "width": 607,
-      "height": 291
+      "height": 316
     },
     {
       "id": "bond-count-complete",
       "kind": "practice-complete",
       "file": "screenshots/bond-count-complete.png",
-      "sha256": "df75d47f7af9121c7dfdc6adf7c0a1c4004eebc3277590b0e3cafdb02eafa14c",
+      "sha256": "5c5640c04a5ca0cb6459f7f792c56ec4dfa7bb4ce9e29ef2aecb6b5bc67ccbe9",
       "width": 1324,
       "height": 595
     },
@@ -402,7 +402,7 @@
       "id": "layout-desktop-light",
       "kind": "layout",
       "file": "screenshots/layout-desktop-light.png",
-      "sha256": "52331d4636759221ac8bc8c6377c47c9fa53957a10f9b949f0e0ac5e948af239",
+      "sha256": "ce1e90a1f37a57ddec0b3974a3c0286db6a4dbb00ca2242b7e216c768b52e19d",
       "width": 1360,
       "height": 1460
     },

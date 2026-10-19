@@ -16,6 +16,14 @@
     {
       "label": "IUPAC Blue Book: nomenclature conventions",
       "location": "https://iupac.qmul.ac.uk/BlueBook/contents.html"
+    },
+    {
+      "label": "IUPAC Blue Book P-14.5.1–2: simple and compound substituent ordering (inspected 2026-10-19)",
+      "location": "https://iupac.qmul.ac.uk/BlueBook/P1.html#1405"
+    },
+    {
+      "label": "OpenStax Organic Chemistry 3.4: Naming Alkanes (inspected 2026-10-19)",
+      "location": "https://openstax.org/books/organic-chemistry/pages/3-4-naming-alkanes"
     }
   ],
   "review": {
@@ -31,7 +39,7 @@
       "molecule": "fig15",
       "cards": {
         "rule": "<p>For the simple saturated acyclic structures here, choose the longest continuous carbon chain; tied lengths favor more substituents. For functionalized structures, first include the principal suffix group and required unsaturation. Compare locant sets at their first difference, not by their sum.</p>",
-        "cue": "<p><strong>Alphabetization Rule:</strong><br>• <strong>IGNORE:</strong> Multipliers (<code>di-, tri-, tetra-</code>) and hyphenated prefixes (<code>n-, sec-, tert-</code>).<br>• <strong>INCLUDE:</strong> Non-hyphenated roots (<code>iso-, neo-, cyclo-</code>).</p>",
+        "cue": "<p><strong>Alphabetize substituent names:</strong> Ignore locants and multipliers that count repeated simple substituents: dimethyl is ordered under m. In traditional alkyl names, ignore n-, sec-, and tert-; include iso-, neo-, and cyclo- when part of the substituent name (isopropyl under i; cyclopropyl under c). The parent name is not part of this substituent list.<br>For a compound substituent in parentheses, use its complete name: (1,1-dimethylethyl) is ordered under d. A multiplier within that substituent is retained for alphabetization.</p>",
         "trap": "<p><strong>The \"Fake Parent Chain\" Trap (\"2,3-diethylpentane\"):</strong><br>An ethyl group at C2 of a pentane chain extends the longest chain to 6 carbons (<strong>3-ethyl-4-methylhexane</strong>). Always draw out suspect names!</p>",
         "app": "<p><strong>Branched Amino Acids (Val, Leu, Ile):</strong><br>Recognizing <strong>isopropyl</strong> (Valine), <strong>isobutyl</strong> (Leucine), and <strong>sec-butyl</strong> (Isoleucine) lets you classify hydrophobic side chains on sight.</p>"
       },
@@ -1130,8 +1138,8 @@
           ],
           "explanation": "Correct! Carbons A–F form the 6-carbon hexane chain; G is a methyl branch.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Trace a continuous route between two terminal carbons without visiting any carbon twice.",
+            "The parent contains six carbons; at the branch point, follow the longer route and leave the short methyl arm outside the parent."
           ],
           "highlights": {
             "path": [
@@ -1155,12 +1163,12 @@
           "answer": 0,
           "feedback": [
             "Correct! Left-to-right gives C3 instead of C4.",
-            "Red counter-example shown: Right-to-left puts the methyl group at C4 instead of C3!"
+            "Right-to-left puts the methyl group at C4 instead of C3!"
           ],
           "explanation": "Correct! Left-to-right gives C3 instead of C4.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Keep the same parent chain and count the branch position from each end.",
+            "Compare locants 3 and 4; choose the direction with the smaller branch locant."
           ],
           "highlights": {
             "path": [
@@ -1240,8 +1248,8 @@
           ],
           "explanation": "Correct! An \"ethyl\" group at C2 extends the parent chain to 6 carbons.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "A parent chain may turn at a branch; it does not have to follow the most horizontal line.",
+            "Include the two-carbon arm in a continuous six-carbon route. The proposed pentane parent is too short."
           ],
           "highlights": {
             "path": [
@@ -1265,12 +1273,12 @@
           "answer": 0,
           "feedback": [
             "Correct! At the first point of difference, 2 < 3.",
-            "Red counter-example shown: Right-to-left gives locants (3,5), which loses to (2,4) at the first point of difference!"
+            "Right-to-left gives locants (3,5), which loses to (2,4) at the first point of difference!"
           ],
           "explanation": "Correct! At the first point of difference, 2 < 3.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "List the methyl locants in increasing order for each numbering direction.",
+            "Compare (2,4) with (3,5) at the first differing entry; do not compare their sums."
           ],
           "highlights": {
             "path": [
@@ -1351,8 +1359,8 @@
           ],
           "explanation": "Correct! Alcohol supplies –ol and alkene stays in the stem as –en–.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Decide which characteristic group takes the principal suffix when an alcohol and an alkene are both present.",
+            "The hydroxyl group supplies -ol; the double bond is still represented by -en-."
           ],
           "highlights": {
             "prin": [
@@ -1369,8 +1377,8 @@
           ],
           "explanation": "Correct! Carbon D (right end) gives –OH locant 2 instead of 3.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Number the four-carbon parent from both ends and compare the hydroxyl locant first.",
+            "Start at the terminal carbon nearest the hydroxyl-bearing carbon, even though that gives the double bond a larger locant."
           ],
           "highlights": {
             "path": [
@@ -1447,8 +1455,8 @@
           ],
           "explanation": "Correct! Alcohols outrank alkynes.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "An alkyne does not outrank an alcohol for the principal suffix.",
+            "Use -ol for the principal group and retain -yn- for the triple bond."
           ],
           "highlights": {
             "prin": [
@@ -1465,8 +1473,8 @@
           ],
           "explanation": "Correct! Carbon E (right end) gives the principal alcohol C2 instead of C4.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Compare the hydroxyl position when the five-carbon chain is numbered from each end.",
+            "The end nearest the hydroxyl gives it locant 2 rather than 4; choose that end as C1."
           ],
           "highlights": {
             "path": [
@@ -1539,8 +1547,8 @@
           ],
           "explanation": "Correct! Carbon E is C1 because numbering clockwise through C1=C2 (E → F → A → B) gives substituent locants (1,4) instead of (2,5).",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "In this cycloalkene, the two double-bond carbons receive locants 1 and 2.",
+            "Choose the alkene carbon bearing methyl as C1; this also lowers the substituent locants."
           ],
           "highlights": {
             "path": [
@@ -1576,8 +1584,8 @@
           ],
           "explanation": "Correct! Continuing clockwise from C1 through C2 places the ethyl group at C4; alphabetize 4-ethyl before 1-methyl.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Follow the fixed C1-to-C2 direction around the ring to the ethyl attachment.",
+            "Count ring carbons only for the locant; the carbons inside the ethyl branch do not extend the ring numbering."
           ],
           "highlights": {
             "path": [
@@ -1654,8 +1662,8 @@
           ],
           "explanation": "Correct! Carbon A bears the principal –OH group and is automatically C1.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "The hydroxyl group supplies the ring alcohol suffix.",
+            "The ring carbon directly bonded to oxygen receives locant 1."
           ],
           "highlights": {
             "path": [
@@ -1682,12 +1690,12 @@
           "answer": 0,
           "feedback": [
             "Correct! Clockwise gives C3 instead of counter-clockwise C5.",
-            "Red counter-example shown: Counter-clockwise puts methyl at C5 instead of C3!"
+            "Counter-clockwise puts methyl at C5 instead of C3!"
           ],
           "explanation": "Correct! Clockwise gives C3 instead of counter-clockwise C5.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Keep the hydroxyl-bearing carbon at C1 and compare both routes around the ring.",
+            "Choose methyl at C3 rather than C5; the ring orientation on the page does not override the lower-locant rule."
           ],
           "highlights": {
             "path": [
@@ -1771,8 +1779,8 @@
           ],
           "explanation": "Correct! Vicinal diols (glycols) have –OH on adjacent carbons.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Find the carbon attached to each hydroxyl oxygen.",
+            "Hydroxyls on neighboring carbons are vicinal; hydroxyls on the same carbon are geminal."
           ],
           "highlights": {
             "path": [
@@ -1840,8 +1848,8 @@
           ],
           "explanation": "Correct! Carbon B (C2) carries both –OH groups (formed by hydration of propanone/acetone).",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Follow both carbon–oxygen single bonds to their carbon endpoints.",
+            "Both hydroxyl oxygens connect to the central carbon of the three-carbon chain."
           ],
           "highlights": {
             "path": [
@@ -1912,8 +1920,8 @@
           ],
           "explanation": "Correct! Carbons A and C flank the C=O carbon and are both α-carbons.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "An alpha carbon is directly bonded to the carbonyl carbon; the carbonyl carbon itself is excluded.",
+            "Find the C=O carbon, then select its two carbon neighbors, one on each side."
           ],
           "highlights": {
             "alpha": [
@@ -1936,12 +1944,12 @@
           "answer": 0,
           "feedback": [
             "Correct! C2 < C4.",
-            "Red counter-example shown: Right-to-left gives the ketone C4 instead of C2!"
+            "Right-to-left gives the ketone C4 instead of C2!"
           ],
           "explanation": "Correct! C2 < C4.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Compare the carbonyl-carbon locant when counting from either end of the five-carbon chain.",
+            "The ketone receives locant 2 from one end and 4 from the other; choose the smaller value."
           ],
           "highlights": {
             "path": [
@@ -2018,8 +2026,8 @@
           ],
           "explanation": "Correct! Carbon D is the terminal aldehyde carbon and is automatically C1.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "An aldehyde carbon belongs to the parent chain and outranks the alcohol for the suffix.",
+            "Select the carbon double-bonded to oxygen and single-bonded to the explicitly drawn H; select the carbon, not that H."
           ],
           "highlights": {
             "path": [
@@ -2055,8 +2063,8 @@
           ],
           "explanation": "Correct! Subordinate alcohols use the prefix hydroxy–.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "The aldehyde already supplies -al, so the alcohol must be expressed as a prefix.",
+            "Use hydroxy- with the hydroxyl-bearing carbon locant; do not add a second -ol suffix."
           ],
           "highlights": {
             "path": [
@@ -2130,8 +2138,8 @@
           ],
           "explanation": "Correct! Carbon C is C1 of the 3-carbon propanamide parent.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "The amide parent includes the carbonyl carbon; nitrogen-bound alkyl groups are named separately.",
+            "Choose the carbon double-bonded to oxygen and single-bonded to nitrogen."
           ],
           "highlights": {
             "path": [
@@ -2165,8 +2173,8 @@
           ],
           "explanation": "Correct! Each N-group gets N– in alphabetical order.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Substituents attached directly to nitrogen use the letter locant N, not a parent-chain carbon number.",
+            "Give each nitrogen-bound group its own N locant and list ethyl before methyl alphabetically."
           ],
           "highlights": {
             "path": [
@@ -2251,8 +2259,8 @@
           ],
           "explanation": "Correct! Acid outranks ketone and alcohol.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "Compare carboxylic acid, ketone, and alcohol naming seniority before choosing the suffix.",
+            "The carboxylic acid supplies -oic acid; the ketone and alcohol are named as prefixes."
           ],
           "highlights": {
             "path": [
@@ -2279,12 +2287,12 @@
           "answer": 0,
           "feedback": [
             "Correct! Alphabetized as 4-hydroxy-2-oxo–.",
-            "Red counter-example shown: C1 is the acid on the right, so the ketone is C2 and the alcohol is C4!"
+            "C1 is the acid on the right, so the ketone is C2 and the alcohol is C4!"
           ],
           "explanation": "Correct! Alphabetized as 4-hydroxy-2-oxo–.",
           "hints": [
-            "Use the molecular connectivity, then apply the rule.",
-            "Identify the principal group or the longest required parent before numbering."
+            "With the acid fixed as C1, a subordinate ketone uses oxo- and a subordinate alcohol uses hydroxy-.",
+            "Attach 2 to oxo and 4 to hydroxy, then list the prefixes alphabetically."
           ],
           "highlights": {
             "path": [

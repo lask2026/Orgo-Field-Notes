@@ -1,7 +1,7 @@
 {
   "chapter": 3,
   "sourceSnapshot": {
-    "sha256": "521e89fcbb1f092d4a6f4f9718e92bc66ebf8d573e2c3af43d35f43158d8f927",
+    "sha256": "a137d07fbe7003683ca81d12ba579a8e6761f381c98d75e008b988c7f2fbda97",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "exercises": [
@@ -114,7 +114,7 @@
         {
           "id": "bond-count:stage-3",
           "type": "number",
-          "prompt": "Including implicit C–H bonds, how many sigma bonds are present?",
+          "prompt": "Including the C–H bonds represented by the CH labels, how many sigma bonds are present?",
           "unit": "sigma bonds"
         }
       ]

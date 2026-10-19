@@ -1,6 +1,35 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
-import {validateAnswer} from '../../dev/src/validation.js';import {molecularFormula,electronFlowGeometry} from '../../dev/src/molecules.js';import {renderPractice} from '../../dev/src/practice.js';import {freshState,cleanState} from '../../dev/src/progress.js';
+import {validateAnswer} from '../../dev/src/validation.js';import {drawMolecule,molecularFormula,electronFlowGeometry} from '../../dev/src/molecules.js';import {renderPractice} from '../../dev/src/practice.js';import {freshState,cleanState} from '../../dev/src/progress.js';
 const ch=JSON.parse(fs.readFileSync('dev/chapters/chapter-06.json')),m=JSON.parse(fs.readFileSync('dev/chapters/molecules.json')),ex=id=>ch.exercises.find(e=>e.id===id);
+test('electron-flow explanation appears on correct submission, stays concealed before it, and clears on an empty next answer',()=>{
+ const state={...freshState(),lesson:0,exercise:0,practice:{'6:addition-site':{stage:1,hints:0}}};
+ for(const ui of [{},{correct:false,feedback:'Not yet.'}])assert.ok(!renderPractice(ch,m,state,{selected:[],...ui}).includes('marker-end='));
+ const correct=renderPractice(ch,m,state,{selected:[],correct:true});
+ assert.ok(correct.includes('marker-end='));assert.ok(!correct.includes('Formula:'));assert.ok(correct.includes('Stage 2 of 3'));
+ state.practice['6:addition-site'].stage=2;
+ assert.ok(renderPractice(ch,m,state,{selected:[]}).includes('marker-end='));
+ assert.deepEqual(ex('addition-site').stages[2].highlights,{});
+ assert.ok(!renderPractice(ch,m,state,{selected:[],correct:true}).includes('marker-end='));
+});
+test('each replacement graph clears preceding highlights, while its preceding correct answer gets its own illustration',()=>{
+ let switches=0;
+ for(let n=1;n<=12;n++){
+  const c=JSON.parse(fs.readFileSync(`dev/chapters/chapter-${String(n).padStart(2,'0')}.json`));
+  for(const e of c.exercises)for(let i=1;i<e.stages.length;i++){
+   const previous=e.stages[i-1],current=e.stages[i];
+   if(!current.molecule||current.molecule===(previous.molecule||e.molecule))continue;
+   switches++;
+   const key=`${c.id}:${e.id}`,state={...freshState(),lesson:c.lessons.findIndex(l=>l.id===e.lesson),exercise:c.exercises.filter(x=>x.lesson===e.lesson).indexOf(e),practice:{[key]:{stage:i-1,hints:0}}};
+   const answered=renderPractice(c,m,state,{selected:[],correct:true});
+   assert.ok(answered.includes(drawMolecule(m[previous.molecule||e.molecule],{...(previous.highlights||{}),...(previous.type==='atoms'?{click:true,sel:[]}:{} )})),`${key}: previous feedback`);
+   state.practice[key].stage=i;
+   const next=renderPractice(c,m,state,{selected:[]});
+   assert.ok(next.includes(drawMolecule(m[current.molecule],current.type==='atoms'?{click:true,sel:[]}:{})),`${key}: cleared graph`);
+   assert.ok(!next.includes('class="diagram"'),`${key}: previous diagram hidden`);
+  }
+ }
+ assert.equal(switches,7);
+});
 test('Chapter 6 original eleven tasks remain keyed, reduction aliases are explicit and product graph is consistent',()=>{
  assert.deepEqual(ch.exercises.flatMap(e=>e.stages.map(s=>s.answer)),[[1],0,0,[1],0,0,[4],4,[1,4],[1],0,undefined]);
  const s=ex('hydride-product').stages[2];for(const a of ['isopropyl alcohol','isopropanol','propan-2-ol','2-propanol'])assert.ok(validateAnswer(s,a));for(const a of ['propan-1-ol','propan2ol','propanone'])assert.ok(!validateAnswer(s,a));assert.equal(s.molecule,'isopropanol');assert.equal(molecularFormula(m[s.molecule]),'C3H8O');

@@ -217,7 +217,7 @@
       "steps": [
         {
           "label": "1. Rank the substituents",
-          "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted. H ranks fourth.</p>",
+          "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted in orange, while the competing methyl carbon is unhighlighted. H ranks fourth.</p>",
           "molecule": "butanol2",
           "highlights": {
             "prin": [
@@ -225,8 +225,7 @@
             ],
             "sub": [
               2,
-              3,
-              0
+              3
             ]
           },
           "reveal": false,

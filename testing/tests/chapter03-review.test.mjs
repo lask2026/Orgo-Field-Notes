@@ -14,6 +14,7 @@ test('ionic formulas retain composition metadata and explicitly display net char
  const ex=ch.exercises.find(e=>e.id==='amide-resonance'),guided={...state,exercise:0,practice:{}};assert.ok(!renderPractice(ch,m,guided,{selected:[]}).includes('Formula:'));guided.practice={'3:amide-resonance':{stage:ex.stages.length}};assert.ok(renderPractice(ch,m,guided,{selected:[]}).includes('Formula: C2H5NO'));
 });
 test('two-carbon unsaturated structures show hydrogen groups without changing atom indices or bond counts',()=>{
+ const s=ch.exercises.find(e=>e.id==='bond-count').stages[2];assert.ok(s.prompt.includes('CH labels'));assert.ok(s.hints[0].includes('not drawn as a separate line'));assert.ok(validateAnswer(s,'3'));assert.ok(!validateAnswer(s,'1'));
  for(const [id,sigma,pi,group]of [['ethene',5,1,'H₂C'],['ethyne',3,2,'HC']]){const g=m[id],h=g.atoms.reduce((n,_,i)=>n+hydrogens(g,i),0);assert.equal(g.atoms.length,2);assert.equal(g.bonds.length+h,sigma);assert.equal(g.bonds.reduce((n,b)=>n+b[2]-1,0),pi);const html=drawMolecule(g,{click:true});assert.ok(html.includes('>'+group+'</text>'));assert.ok(html.includes('aria-label="Select atom B, C"'));assert.ok(!html.includes('data-idx="2"'));}
 });
 test('atomic filling diagram obeys carbon occupancy and is absent from active quantum practice',()=>{

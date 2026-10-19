@@ -3,7 +3,7 @@
   "chapter": 2,
   "title": "Isomers",
   "sourceSnapshot": {
-    "sha256": "9a800919ca77b16c4906fed565b7d6465a2952dd97300f7ea94960e3a2f84600",
+    "sha256": "df2ed305c060fdd0110da4c763149ef545a773453a95236d3b2e09c597ffeb13",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -2501,7 +2501,7 @@
           "steps": [
             {
               "label": "1. Rank the substituents",
-              "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted. H ranks fourth.</p>",
+              "text": "<p>OH ranks first. Ethyl beats methyl at the next sphere: [C,H,H] beats [H,H,H]. The terminal CH₃ carbon of the ethyl group supplies the C that breaks the tie; both carbons of ethyl are highlighted in orange, while the competing methyl carbon is unhighlighted. H ranks fourth.</p>",
               "molecule": "butanol2",
               "highlights": {
                 "prin": [
@@ -2509,8 +2509,7 @@
                 ],
                 "sub": [
                   2,
-                  3,
-                  0
+                  3
                 ]
               },
               "reveal": false,

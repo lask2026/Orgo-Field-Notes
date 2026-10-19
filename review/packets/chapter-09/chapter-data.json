@@ -417,7 +417,14 @@
             "methanol",
             "methyl alcohol",
             "CH3OH",
-            "MeOH"
+            "CH3-OH",
+            "H3COH",
+            "H3C-OH",
+            "HOCH3",
+            "HO-CH3",
+            "MeOH",
+            "Me-OH",
+            "carbinol"
           ],
           "explanation": "The departing methoxide is protonated to methanol.",
           "hints": [

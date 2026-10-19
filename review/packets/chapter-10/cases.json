@@ -3,7 +3,7 @@
   "chapter": 10,
   "title": "Nitrogen- and Phosphorus-Containing Compounds",
   "sourceSnapshot": {
-    "sha256": "c79826a794164a21394863004b938faf59738f32cccc97169d32a44eb89edb60",
+    "sha256": "7528368d36838d7a2bcf7a8a00016b1c6df22abc946dd12abc614e35aae1a5a1",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,

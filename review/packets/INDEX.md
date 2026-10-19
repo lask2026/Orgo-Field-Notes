@@ -4,9 +4,9 @@ Read [START-HERE.md](START-HERE.md) for the AI Studio and PowerShell Llama workf
 
 | Chapter | Independent solving | Content/rendering audit | Instructions |
 |---|---|---|---|
-| 01 · Nomenclature | [Blind exercises](chapter-01/01-BLIND-EXERCISES.pdf) (13 pages, 209 KiB) | [Full review](chapter-01/02-CHAPTER-REVIEW.pdf) (101 pages, 2740 KiB) | [Prompt](chapter-01/AI-STUDIO-PROMPT.txt) |
-| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (12 pages, 142 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (66 pages, 1653 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
-| 03 · Bonding | [Blind exercises](chapter-03/01-BLIND-EXERCISES.pdf) (5 pages, 75 KiB) | [Full review](chapter-03/02-CHAPTER-REVIEW.pdf) (34 pages, 947 KiB) | [Prompt](chapter-03/AI-STUDIO-PROMPT.txt) |
+| 01 · Nomenclature | [Blind exercises](chapter-01/01-BLIND-EXERCISES.pdf) (13 pages, 209 KiB) | [Full review](chapter-01/02-CHAPTER-REVIEW.pdf) (101 pages, 2741 KiB) | [Prompt](chapter-01/AI-STUDIO-PROMPT.txt) |
+| 02 · Isomers | [Blind exercises](chapter-02/01-BLIND-EXERCISES.pdf) (12 pages, 142 KiB) | [Full review](chapter-02/02-CHAPTER-REVIEW.pdf) (66 pages, 1652 KiB) | [Prompt](chapter-02/AI-STUDIO-PROMPT.txt) |
+| 03 · Bonding | [Blind exercises](chapter-03/01-BLIND-EXERCISES.pdf) (5 pages, 75 KiB) | [Full review](chapter-03/02-CHAPTER-REVIEW.pdf) (34 pages, 950 KiB) | [Prompt](chapter-03/AI-STUDIO-PROMPT.txt) |
 | 04 · Analyzing Organic Reactions | [Blind exercises](chapter-04/01-BLIND-EXERCISES.pdf) (6 pages, 128 KiB) | [Full review](chapter-04/02-CHAPTER-REVIEW.pdf) (44 pages, 1368 KiB) | [Prompt](chapter-04/AI-STUDIO-PROMPT.txt) |
 | 05 · Alcohols | [Blind exercises](chapter-05/01-BLIND-EXERCISES.pdf) (8 pages, 132 KiB) | [Full review](chapter-05/02-CHAPTER-REVIEW.pdf) (36 pages, 1039 KiB) | [Prompt](chapter-05/AI-STUDIO-PROMPT.txt) |
 | 06 · Aldehydes and Ketones I | [Blind exercises](chapter-06/01-BLIND-EXERCISES.pdf) (6 pages, 107 KiB) | [Full review](chapter-06/02-CHAPTER-REVIEW.pdf) (37 pages, 998 KiB) | [Prompt](chapter-06/AI-STUDIO-PROMPT.txt) |

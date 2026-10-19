@@ -188,3 +188,11 @@
 - Windows PowerShell 5.1 lacked GetRelativePath in the migration helper; switched to a verified workspace-relative substring before moving anything. A temporary Python text-edit helper used the Windows default encoding on a symbol-bearing test; the font check caught it. Restored original Git UTF-8 literals and reapplied only paths, then passed the affected and full Node/font checks. No chemistry content or validator behavior was weakened to repair tests.
 - Added a reusable subject starter: npm run subject:new -- --name Biology-Field-Notes --subject Biology (or Physics) previews a new direct child under MCAT. --create is explicit and existing book/project folders are refused. Creation was tested only in temporary Biology/Physics directories; no actual sibling subject application was created. Starters contain the shared folder/path contract and review prompts/rubrics, no textbook or Orgo content, and explicitly mark scientific adapters/app/test suites not implemented.
 - No external deployment, paid/API request or model review was performed by this migration. Independent chemistry sign-off and the prior Chapter 1/Chapter 2/cross-browser/accessibility follow-ups remain outstanding. Software/provenance evidence is not independent scientific verification.
+
+
+## GitHub publication preparation — 2026-10-19
+
+- Prepared the current uncommitted content/hint corrections and correct-submission highlighting behavior for the initial private GitHub push under lask2026, preserving earlier local history.
+- Rebuilt website and offline HTML. Passed 13 schema documents, all 90 Node tests, the full 12-chapter browser suite, all 24 regression groups and three PDF font tests. Browser and regression suites use the same local port and were run sequentially after an initial overlapping server startup failed.
+- Refreshed all 12 review packets, including 279 cases, 827 screenshots and 24 PDFs; packet/source integrity checks pass. No model review or independent chemistry sign-off was performed.
+- Confirmed source books, EPUB contents and private local settings are absent from tracked files and scanned Git path history. Biology has its own private repository. GitHub Pages activation is outside this code-push checkpoint.
