@@ -3,7 +3,7 @@
   "chapter": 4,
   "title": "Analyzing Organic Reactions",
   "sourceSnapshot": {
-    "sha256": "ff9e9e86d9189a902e3d3ad10d87e9fb11c5ce0400ceb0ce4a42e48bfe256a68",
+    "sha256": "561ac9387f96a3109b02d84c092c477affb477da6b3bffbc8c140c43f9550841",
     "note": "Hash covers chapter data, molecule repository and rendering sources; regenerate packets after changes."
   },
   "referencePassagesIncluded": false,
@@ -1153,7 +1153,15 @@
                   "label": "Equilibrium",
                   "text": "Favors the weaker acid/base pair"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Illustrative acid/conjugate-base pair. Protonation depends on pH; the panels are not separate resonance contributors."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1416,7 +1424,14 @@
                   "label": "Leaving group",
                   "text": "Takes the bonding pair on departure"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  1
+                ],
+                "caption": "Follow electron donation and the leaving-group bond in this illustrative graph."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1577,7 +1592,15 @@
                   "label": "Mechanism",
                   "text": "Concerted attack versus stepwise ionization"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Compare steric access in tertiary and primary substrates; mechanism also depends on conditions."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -1802,7 +1825,15 @@
                   "label": "Reduction",
                   "text": "Usually the reverse change"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "reaction",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Schematic alcohol oxidation to an aldehyde under suitable conditions; not a balanced equation."
+              }
             },
             "cue": {
               "layout": "decision",
@@ -2053,7 +2084,15 @@
                   "label": "Product check",
                   "text": "Track bonds and stereochemistry"
                 }
-              ]
+              ],
+              "figure": {
+                "type": "structures",
+                "steps": [
+                  0,
+                  1
+                ],
+                "caption": "Two functional-group foci on the same molecular graph, not a reactant/product pair."
+              }
             },
             "cue": {
               "layout": "decision",
