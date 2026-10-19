@@ -635,6 +635,30 @@
             "$ref": "#/$defs/step"
           },
           "minItems": 2
+        },
+        "visualCards": {
+          "type": "object",
+          "properties": {
+            "rule": {
+              "$ref": "#/$defs/visualCard"
+            },
+            "cue": {
+              "$ref": "#/$defs/visualCard"
+            },
+            "trap": {
+              "$ref": "#/$defs/visualCard"
+            },
+            "app": {
+              "$ref": "#/$defs/visualCard"
+            }
+          },
+          "required": [
+            "rule",
+            "cue",
+            "trap",
+            "app"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
@@ -644,7 +668,8 @@
         "tag",
         "molecule",
         "cards",
-        "steps"
+        "steps",
+        "visualCards"
       ],
       "additionalProperties": false
     },
@@ -895,6 +920,53 @@
           }
         }
       ]
+    },
+    "visualCard": {
+      "type": "object",
+      "properties": {
+        "layout": {
+          "enum": [
+            "flow",
+            "decision",
+            "contrast",
+            "map",
+            "compare"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "label",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "layout",
+        "title",
+        "items"
+      ],
+      "additionalProperties": false
     }
   }
 }

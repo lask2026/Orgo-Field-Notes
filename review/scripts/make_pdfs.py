@@ -115,6 +115,9 @@ def build(directory):
     add(story,lesson['id']+' | '+lesson['title'],'Heading1');add(story,lesson['tag'])
     for key,label in [('rule','Core Rules'),('cue','Memory Cues'),('trap','Common Mistakes / MCAT Traps'),('app','MCAT Applications')]:
      add(story,f"{lesson['id']}:{key} | {label}",'Heading2');add(story,lesson['cards'][key])
+     visual=lesson['visualCards'][key];add(story,'Schematic summary: '+escape(visual['title']));
+     for item in visual['items']:add(story,escape(item['label']+' — '+item['text']))
+    picture(story,directory,shots,lesson['id']+'-visuals',600)
     for i,s in enumerate(lesson['steps']):
      sid=f"{lesson['id']}-step-{i+1}";add(story,f"{lesson['id']}:step-{i+1} | {s['label']}",'Heading2');add(story,s['text'])
      add(story,'Displayed molecule ID: '+s.get('molecule',lesson['molecule']),'SmallAudit');json_text(story,{'highlights':s['highlights'],'revealName':s['reveal']})

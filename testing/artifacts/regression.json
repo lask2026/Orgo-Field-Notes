@@ -1,6 +1,7 @@
 {
   "date": "2026-10-19",
   "checks": [
+    "Visual/full views differ; individual and bulk toggles preserve state through theme and step changes; cue branches update their outcome",
     "Canonical visual notes expand/compact; inline projection keyboard rotation; concealed modal identity; Escape cleanup and focus restoration",
     "Correct stage progress persists across reload",
     "Export/import round trip; reset cancellation and confirmation",

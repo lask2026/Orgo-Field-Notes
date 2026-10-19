@@ -208,3 +208,13 @@ The remix's independent molecular-geometry, chair-energy and stereochemical clai
 
 
 Validation checkpoint: schema validation passed for 13 documents; npm test passed all 94 tests (existing suites retained, four interface tests added); the full browser suite passed all 12 chapters/181 stages; regression passed 25 groups. Current packet checks passed 279 cases, 863 screenshots and 24 PDFs. Chemistry font tests passed; PDF QA checked all 24 records and rendered 93 sample pages. Desktop/light and mobile/dark viewer screenshots and a sample PDF contact sheet were visually inspected. These are software, provenance and sampled layout checks, not independent chemistry verification.
+
+
+## 2026-10-19 — Distinct schematic summaries and stable note controls
+
+Corrected the first port's limitation: compact cards had repeated the full-note prose and their controls lost state on redraw. Added 204 concise original schematic summaries to `visualCards` in canonical chapter JSON across all 51 lessons. Reusable rendering now supplies flow/checklist diagrams, unconnected comparisons for classifications, selectable cue cases with outcomes, trap contrasts and application maps. Full notes remain available separately with all original qualifications. These are author summaries based on the existing lesson cards, not imported unreviewed chemistry prose, molecular structures, measured data or independent chemistry verification. No existing curriculum strings, exercise IDs, keys, hints, explanations or molecular graphs were changed.
+
+Individual and bulk note controls now use shared per-lesson state, preserve disclosure/branch selection across theme and walkthrough changes, and keep keyboard focus on the selected control. Visual schema constraints, all-lesson browser toggles and regression checks cover distinct summary/full views and cue behavior. Keyed review payloads, PDFs and lesson screenshots include the new summaries; blind inputs remain isolated. Independent chemistry sign-off remains pending.
+
+
+Validation checkpoint: 13 schema documents and all 95 npm tests passed. Full browser checks passed all 12 chapters and exercised the four visual/full-note switches in every lesson; all 26 regression groups passed, including independent note toggles, cue outcomes, and state retention through theme/step redraws. Packet checks passed 279 cases, 914 screenshots and 24 PDFs. All three chemistry-font tests passed. PDF QA checked 24 records and rendered 93 sampled pages; a targeted visual-summary PDF page and desktop/light and mobile/dark card captures were also inspected. Historical review results were not changed. These checks establish software behavior and provenance, not independent chemistry sign-off.

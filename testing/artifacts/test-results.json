@@ -47,7 +47,7 @@
     "file": "testing/tests/layout.test.mjs"
   },
   "visualInterfaceInfrastructure": {
-    "groups": 4,
+    "groups": 5,
     "status": "passed",
     "file": "testing/tests/visuals.test.mjs"
   },
@@ -140,6 +140,7 @@
       }
     ],
     "checks": [
+      "All 51 lessons: bulk full-note and visual-summary views",
       "Keyboard atom selection",
       "Incorrect answers rejected",
       "All lesson steps and challenges",
@@ -155,6 +156,7 @@
   "regression": {
     "status": "passed",
     "checks": [
+      "Visual/full views differ; individual and bulk toggles preserve state through theme and step changes; cue branches update their outcome",
       "Canonical visual notes expand/compact; inline projection keyboard rotation; concealed modal identity; Escape cleanup and focus restoration",
       "Correct stage progress persists across reload",
       "Export/import round trip; reset cancellation and confirmation",

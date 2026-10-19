@@ -10,6 +10,12 @@ try{
  // Visual cards and projection controls must work with keyboard, offline and concealed names.
  await page.locator('[data-act="expandCards"]').click();assert.equal(await page.locator('.visual-card-note:not([hidden])').count(),4);
  await page.locator('[data-act="expandCards"]').click();assert.equal(await page.locator('.visual-card-note:not([hidden])').count(),0);
+ const summary=await page.locator('.tcard').first().locator('.visual-card-compact').innerText();await page.locator('[data-act="cardNote"]').first().click();assert.notEqual(await page.locator('.tcard').first().locator('.visual-card-note').innerText(),summary);assert.equal(await page.locator('.tcard').first().locator('.visual-card-compact').isVisible(),false);
+ await page.locator('#themeBtn').click();assert.equal(await page.locator('.tcard').first().locator('[data-act="cardNote"]').getAttribute('aria-expanded'),'true');await page.locator('#themeBtn').click();
+ await page.locator('[data-act="step"][data-idx="1"]').click();assert.equal(await page.locator('.tcard').first().locator('[data-act="cardNote"]').getAttribute('aria-expanded'),'true');
+ await page.locator('[data-act="cardNote"]').first().click();const branch=page.locator('[data-act="cueBranch"][data-idx="1"]');await branch.click();assert.ok((await page.locator('.visual-outcome').innerText()).includes('Ignore n-, sec-, tert-'));await page.locator('[data-act="step"][data-idx="0"]').click();assert.equal(await page.locator('[data-act="cueBranch"][data-idx="1"]').getAttribute('aria-pressed'),'true');
+ report.checks.push('Visual/full views differ; individual and bulk toggles preserve state through theme and step changes; cue branches update their outcome');
+
  await page.locator('[data-act="stageView"]').click();assert.equal(await page.locator('#inlineProjectionViewport svg').count(),1);
  const beforeProjection=await page.locator('#inlineProjectionViewport').innerHTML();await page.locator('[data-projection="yaw"]').focus();await page.keyboard.press('ArrowRight');assert.notEqual(await page.locator('#inlineProjectionViewport').innerHTML(),beforeProjection);
  await page.locator('[data-act="open3d"]').click();assert.equal(await page.locator('#viewer3dTitle').innerText(),'Displayed molecular graph');assert.ok(!(await page.locator('#viewer3dDialog').innerText()).includes('Formula:'));

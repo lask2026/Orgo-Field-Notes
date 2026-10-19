@@ -87,6 +87,7 @@
     }
   ],
   "checks": [
+    "All 51 lessons: bulk full-note and visual-summary views",
     "Keyboard atom selection",
     "Incorrect answers rejected",
     "All lesson steps and challenges",

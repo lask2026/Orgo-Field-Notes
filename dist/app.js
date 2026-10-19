@@ -169,15 +169,22 @@ function drawDiagram(d,value,{concealAnswers=false}={}){
 
 return {drawDiagram};})();
 const visuals=(()=>{
-// Presentation only: teaching text remains in the canonical chapter cards.
-function renderVisualCardBody(lesson,kind){
- const text=lesson.cards[kind],labels={rule:['01','Rule'],cue:['02','Recall'],trap:['03','Check'],app:['04','Apply']},[number,label]=labels[kind];
- // Split only explicit paragraph/break boundaries, retaining every qualification.
- const pieces=text.replace(/^<p>|<\/p>$/g,'').split(/<br\s*\/?>(?:\s*)|<\/p>\s*<p>/i).filter(Boolean);
- return `<div class="visual-card-body"><div class="visual-card-strip"><span class="visual-card-number">${number}</span>${label}<button type="button" class="btn" data-act="cardNote" aria-expanded="false">Full note</button></div><div class="visual-card-compact">${pieces.map((p,i)=>`<div class="visual-card-item"><span aria-hidden="true">${i+1}</span><div>${p}</div></div>`).join('')}</div><div class="visual-card-note" hidden>${text}</div></div>`;
+const {escapeHTML:esc}=validation;
+function cardKey(ch,lesson,kind){return `${ch.id}:${lesson.id}:${kind}`;}
+function renderVisualSummary(spec,key,selected=0){
+ const nodes=spec.items.map((item,i)=>`<li class="visual-node"><span class="visual-step" aria-hidden="true">${i+1}</span><div><strong>${esc(item.label)}</strong><p>${esc(item.text)}</p></div></li>`).join('');
+ if(spec.layout==='decision'){
+  const index=Number.isInteger(selected)&&selected>=0&&selected<spec.items.length?selected:0,chosen=spec.items[index];
+  return `<div class="visual-diagram visual-decision" role="group" aria-label="Decision schematic"><div class="visual-root">${esc(spec.title)}</div><div class="visual-branches" role="group" aria-label="Choose a cue branch">${spec.items.map((item,i)=>`<button type="button" class="visual-branch" data-act="cueBranch" data-card="${esc(key)}" data-idx="${i}" aria-pressed="${i===index}">${esc(item.label)}</button>`).join('')}</div><div class="visual-outcome" role="status"><span>Then check</span><strong>${esc(chosen.text)}</strong></div></div>`;
+ }
+ return `<div class="visual-diagram visual-${esc(spec.layout)}" role="group" aria-label="${esc(spec.layout)} schematic"><div class="visual-root">${esc(spec.title)}</div><${spec.layout==='flow'?'ol':'ul'} class="visual-nodes">${nodes}</${spec.layout==='flow'?'ol':'ul'}></div>`;
+}
+function renderVisualCardBody(lesson,kind,ui={},key=lesson.id+':'+kind){
+ const full=Boolean(ui.fullNotes?.[key]),spec=lesson.visualCards[kind],id='note-'+key.replace(/[^a-zA-Z0-9_-]/g,'-');
+ return `<div class="visual-card-body" data-card="${esc(key)}"><div class="visual-card-strip"><span>Schematic summary</span><button type="button" class="btn" data-act="cardNote" data-card="${esc(key)}" aria-expanded="${full}" aria-controls="${id}">${full?'Compact card':'Full note'}</button></div><div class="visual-card-compact" ${full?'hidden':''}>${renderVisualSummary(spec,key,ui.cueBranches?.[key])}<p class="visual-scope">Summary only; open the full note for scope and conditions.</p></div><div class="visual-card-note" id="${id}" ${full?'':'hidden'}>${lesson.cards[kind]}</div></div>`;
 }
 
-return {renderVisualCardBody};})();
+return {cardKey,renderVisualSummary,renderVisualCardBody};})();
 const viewer3d=(()=>{
 const {escapeHTML:esc,atomLabel}=validation;
 const {formulaLabel,hydrogens}=molecules;
@@ -224,7 +231,7 @@ function open3DViewer(mol,revealed=false){
 
 return {renderStageToolbar,renderInline3D,projectGraph,renderProjection,open3DViewer};})();
 const learn=(()=>{
-const {renderVisualCardBody}=visuals;
+const {renderVisualCardBody,cardKey}=visuals;
 const {renderStageToolbar,renderInline3D}=viewer3d;
 const {escapeHTML:esc,validateAnswer}=validation;
 const {drawMolecule,formulaLabel}=molecules;
@@ -238,10 +245,15 @@ function renderLearn(ch,molecules,state,ui){
   const opts=challenge?{click:true,sel:ui.selected}:s.highlights;
   return `<div class="grid2"><section class="card"><div class="c-head"><h1 class="c-title">${esc(l.title)}</h1><span class="c-tag">${esc(l.tag)}</span></div>${challenge?'':renderStageToolbar(ui.stage3d)}<div class="stage">${ui.stage3d&&!challenge?renderInline3D(m):drawMolecule(m,opts)}</div>${drawDiagram(s.diagram,ui.diagramValue)}
   ${challenge?`<p>${esc(s.challenge.prompt)}</p><button class="btn pri" data-act="checkTry">Check selection</button> <button class="btn" data-act="try">Back to walkthrough</button>${ui.checked?`<div role="status" class="fbox ${good?'ok':'err'}">${good?esc(s.challenge.explanation):'Not yet. Select exactly the requested atoms; use the walkthrough for a hint.'}</div>`:''}`:`<div class="sbar"><button class="sbtn" data-act="prev" ${state.step===0?'disabled':''}>← Previous</button>${l.steps.map((t,i)=>`<button class="sbtn" data-act="step" data-idx="${i}" aria-pressed="${i===state.step}">${esc(t.label)}</button>`).join('')}<button class="sbtn" data-act="next" ${state.step===l.steps.length-1?'disabled':''}>Next →</button></div><div class="sexp" role="status">${s.text}</div>${revealed?anatomy(s.anatomy,m.name)+`<p class="formula">Formula: ${esc(formulaLabel(m))}</p>`:'<div class="abar">Structure name concealed until its explanation. <button class="btn" data-act="revealLearn">Reveal name</button></div>'}${s.challenge?'<button class="btn try-btn" data-act="try">🖐 Try It Yourself</button>':''}`}</section>
-  <aside class="tstack"><button type="button" class="btn" data-act="expandCards">Expand all notes</button>${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details class="tcard ${c} ${s.focus===k?'focus':''}" ${k===(s.focus||'rule')?'open':''}><summary><h2>${t}</h2></summary>${renderVisualCardBody(l,k)}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details></aside></div>`;
+  <aside class="tstack">${renderLearnCards(ch,l,s,ui)}</aside></div>`;
 }
 
-return {anatomy,renderLearn};})();
+function renderLearnCards(ch,l,s,ui={}){
+ const allFull=['rule','cue','trap','app'].every(k=>ui.fullNotes?.[cardKey(ch,l,k)]);
+ return `<button type="button" class="btn" data-act="expandCards">${allFull?'Compact notes':'Expand all notes'}</button>${[['rule','Core Rules','tc-rule'],['cue','Memory Cues','tc-cue'],['trap','Common Mistakes / MCAT Traps','tc-trap'],['app','MCAT Applications','tc-app']].map(([k,t,c])=>`<details data-section="${cardKey(ch,l,k)}" class="tcard ${c} ${s.focus===k?'focus':''}" ${(ui.openSections?.[cardKey(ch,l,k)]??k===(s.focus||'rule'))?'open':''}><summary><h2>${t}</h2></summary>${renderVisualCardBody(l,k,ui,cardKey(ch,l,k))}</details>`).join('')}<button class="btn pri" data-act="practiceConcept">Practice this concept →</button><details class="drw"><summary>Chapter objectives & sources</summary><ul>${ch.objectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p>Original educational content following the supplied curriculum. ${esc(ch.review.note)}</p>${ch.sources.map(s=>`<p>${s.location.startsWith('https://')?`<a href="${esc(s.location)}" target="_blank" rel="noreferrer">${esc(s.label)}</a>`:esc(s.label)}</p>`).join('')}</details>`;
+}
+
+return {anatomy,renderLearn,renderLearnCards};})();
 const practice=(()=>{
 const {renderStageToolbar,renderInline3D}=viewer3d;
 const {escapeHTML:esc,atomLabel}=validation;
@@ -272,7 +284,7 @@ const {open3DViewer,renderProjection}=viewer3d;
 const {escapeHTML:esc,validateAnswer}=validation;
 const {readProgress,writeProgress,getProgress,freshState}=progress;
 const {applyPreferences}=animations;
-const {renderLearn}=learn;
+const {renderLearn,renderLearnCards}=learn;
 const {renderPractice}=practice;
 function startApp(data){
   const {chapters,molecules}=data;
@@ -281,7 +293,7 @@ function startApp(data){
   let ui={},storageError=loaded.error;
   let toastTimer;
   function showToast(message){clearTimeout(toastTimer);document.getElementById('toast').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('toast').textContent='';},4500);}
-  const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined};};resetUI();
+  const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined,fullNotes:ui.fullNotes||{},cueBranches:ui.cueBranches||{},openSections:ui.openSections||{}};};resetUI();
   const chapter=()=>chapters.find(c=>c.id===state.chapter)||chapters[0];
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
   const exercise=()=>labs()[state.exercise]||labs()[0];
@@ -290,7 +302,13 @@ function startApp(data){
     const ch=chapter();if(state.mode==='learn'){const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return null;return molecules[s.molecule||l.molecule];}
     const ex=exercise(),p=getProgress(state,ch,ex);return p.stage===ex.stages.length?molecules[ex.stages.at(-1).molecule||ex.molecule]:null;
   }
+  function syncCards(){document.querySelectorAll('.tstack details[data-section]').forEach(d=>{ui.openSections[d.dataset.section]=d.open;});}
+  function renderCardsOnly(focus){
+    const stack=document.querySelector('.tstack');if(!stack||state.mode!=='learn')return;
+    const ch=chapter(),l=ch.lessons[state.lesson];stack.innerHTML=renderLearnCards(ch,l,l.steps[state.step],ui);if(focus)stack.querySelector(focus)?.focus();
+  }
   function render(focus){
+    syncCards();
     const ch=chapter();applyPreferences(state);
     document.title=`Orgo Field Notes · ${ch.id}. ${ch.title}`;
     const solved=ch.exercises.filter(e=>state.practice[`${ch.id}:${e.id}`]?.solved).length;
@@ -319,6 +337,7 @@ function startApp(data){
   document.addEventListener('keydown',e=>{const hit=e.target.closest?.('.ahit');if(hit&&(e.key==='Enter'||e.key===' ')){e.preventDefault();hit.dispatchEvent(new MouseEvent('click',{bubbles:true}));}});
   document.addEventListener('click',async e=>{
     const b=e.target.closest('[data-act]');if(!b||b.disabled)return;const act=b.dataset.act,i=Number(b.dataset.idx);let focus;
+    syncCards();
     if(act==='theme'){state.theme=state.theme==='dark'?'light':'dark';}
     else if(act==='animations'){state.animations=!state.animations;}
     else if(act==='mode'){state.mode=b.dataset.mode;resetUI();}
@@ -337,8 +356,18 @@ function startApp(data){
     else if(act==='revealSolution'){const ex=exercise(),p=getProgress(state,chapter(),ex);p.stage=ex.stages.length;p.assisted=true;p.solved=false;resetUI();}
     else if(act==='replay'){state.practice[`${chapter().id}:${exercise().id}`]={stage:0,assisted:false,solved:false,hints:0};resetUI();}
     else if(act==='nextExercise'){if(state.exercise+1<labs().length)state.exercise++;else{state.exercise=0;if(state.lesson+1<chapter().lessons.length)state.lesson++;else{state.lesson=0;state.chapter=chapters[(chapters.findIndex(c=>c.id===state.chapter)+1)%chapters.length].id;}}resetUI();}
-    else if(act==='cardNote'){const card=b.closest('.visual-card-body'),open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));b.textContent=open?'Compact card':'Full note';card.querySelector('.visual-card-note').hidden=!open;card.querySelector('.visual-card-compact').hidden=open;return;}
-    else if(act==='expandCards'){const cards=[...document.querySelectorAll('.tstack .visual-card-body')],open=cards.some(c=>c.querySelector('.visual-card-note').hidden);cards.forEach(c=>{c.closest('details').open=true;c.querySelector('.visual-card-note').hidden=!open;c.querySelector('.visual-card-compact').hidden=open;const btn=c.querySelector('[data-act="cardNote"]');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Compact card':'Full note';});b.textContent=open?'Compact notes':'Expand all notes';return;}
+    else if(act==='cardNote'){
+      syncCards();ui.fullNotes[b.dataset.card]=!ui.fullNotes[b.dataset.card];
+      renderCardsOnly(`[data-act="cardNote"][data-card="${b.dataset.card}"]`);return;
+    }
+    else if(act==='expandCards'){
+      syncCards();const ch=chapter(),l=ch.lessons[state.lesson],keys=['rule','cue','trap','app'].map(k=>`${ch.id}:${l.id}:${k}`),full=!keys.every(k=>ui.fullNotes[k]);
+      keys.forEach(k=>{ui.fullNotes[k]=full;ui.openSections[k]=true;});renderCardsOnly('[data-act="expandCards"]');return;
+    }
+    else if(act==='cueBranch'){
+      syncCards();const key=b.dataset.card,l=chapter().lessons[state.lesson];if(!Number.isInteger(i)||i<0||i>=l.visualCards.cue.items.length)return;
+      ui.cueBranches[key]=i;renderCardsOnly(`[data-act="cueBranch"][data-card="${key}"][data-idx="${i}"]`);return;
+    }
     else if(act==='stageView'){if(!currentViewerMolecule())return;ui.stage3d=!ui.stage3d;render('[data-act="stageView"]');return;}
     else if(act==='open3d'){
       const ch=chapter();

@@ -2,7 +2,7 @@ import {open3DViewer,renderProjection} from './viewer3d.js';
 import {escapeHTML as esc,validateAnswer} from './validation.js';
 import {readProgress,writeProgress,getProgress,freshState} from './progress.js';
 import {applyPreferences} from './animations.js';
-import {renderLearn} from './learn.js';
+import {renderLearn,renderLearnCards} from './learn.js';
 import {renderPractice} from './practice.js';
 export function startApp(data){
   const {chapters,molecules}=data;
@@ -11,7 +11,7 @@ export function startApp(data){
   let ui={},storageError=loaded.error;
   let toastTimer;
   function showToast(message){clearTimeout(toastTimer);document.getElementById('toast').textContent=message;toastTimer=setTimeout(()=>{document.getElementById('toast').textContent='';},4500);}
-  const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined};};resetUI();
+  const resetUI=()=>{ui={selected:[],value:'',feedback:'',correct:false,checked:false,tryMode:false,revealLearn:false,diagramValue:undefined,fullNotes:ui.fullNotes||{},cueBranches:ui.cueBranches||{},openSections:ui.openSections||{}};};resetUI();
   const chapter=()=>chapters.find(c=>c.id===state.chapter)||chapters[0];
   const labs=()=>chapter().exercises.filter(e=>e.lesson===chapter().lessons[state.lesson].id);
   const exercise=()=>labs()[state.exercise]||labs()[0];
@@ -20,7 +20,13 @@ export function startApp(data){
     const ch=chapter();if(state.mode==='learn'){const l=ch.lessons[state.lesson],s=l.steps[state.step];if(ui.tryMode&&s.challenge)return null;return molecules[s.molecule||l.molecule];}
     const ex=exercise(),p=getProgress(state,ch,ex);return p.stage===ex.stages.length?molecules[ex.stages.at(-1).molecule||ex.molecule]:null;
   }
+  function syncCards(){document.querySelectorAll('.tstack details[data-section]').forEach(d=>{ui.openSections[d.dataset.section]=d.open;});}
+  function renderCardsOnly(focus){
+    const stack=document.querySelector('.tstack');if(!stack||state.mode!=='learn')return;
+    const ch=chapter(),l=ch.lessons[state.lesson];stack.innerHTML=renderLearnCards(ch,l,l.steps[state.step],ui);if(focus)stack.querySelector(focus)?.focus();
+  }
   function render(focus){
+    syncCards();
     const ch=chapter();applyPreferences(state);
     document.title=`Orgo Field Notes · ${ch.id}. ${ch.title}`;
     const solved=ch.exercises.filter(e=>state.practice[`${ch.id}:${e.id}`]?.solved).length;
@@ -49,6 +55,7 @@ export function startApp(data){
   document.addEventListener('keydown',e=>{const hit=e.target.closest?.('.ahit');if(hit&&(e.key==='Enter'||e.key===' ')){e.preventDefault();hit.dispatchEvent(new MouseEvent('click',{bubbles:true}));}});
   document.addEventListener('click',async e=>{
     const b=e.target.closest('[data-act]');if(!b||b.disabled)return;const act=b.dataset.act,i=Number(b.dataset.idx);let focus;
+    syncCards();
     if(act==='theme'){state.theme=state.theme==='dark'?'light':'dark';}
     else if(act==='animations'){state.animations=!state.animations;}
     else if(act==='mode'){state.mode=b.dataset.mode;resetUI();}
@@ -67,8 +74,18 @@ export function startApp(data){
     else if(act==='revealSolution'){const ex=exercise(),p=getProgress(state,chapter(),ex);p.stage=ex.stages.length;p.assisted=true;p.solved=false;resetUI();}
     else if(act==='replay'){state.practice[`${chapter().id}:${exercise().id}`]={stage:0,assisted:false,solved:false,hints:0};resetUI();}
     else if(act==='nextExercise'){if(state.exercise+1<labs().length)state.exercise++;else{state.exercise=0;if(state.lesson+1<chapter().lessons.length)state.lesson++;else{state.lesson=0;state.chapter=chapters[(chapters.findIndex(c=>c.id===state.chapter)+1)%chapters.length].id;}}resetUI();}
-    else if(act==='cardNote'){const card=b.closest('.visual-card-body'),open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));b.textContent=open?'Compact card':'Full note';card.querySelector('.visual-card-note').hidden=!open;card.querySelector('.visual-card-compact').hidden=open;return;}
-    else if(act==='expandCards'){const cards=[...document.querySelectorAll('.tstack .visual-card-body')],open=cards.some(c=>c.querySelector('.visual-card-note').hidden);cards.forEach(c=>{c.closest('details').open=true;c.querySelector('.visual-card-note').hidden=!open;c.querySelector('.visual-card-compact').hidden=open;const btn=c.querySelector('[data-act="cardNote"]');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Compact card':'Full note';});b.textContent=open?'Compact notes':'Expand all notes';return;}
+    else if(act==='cardNote'){
+      syncCards();ui.fullNotes[b.dataset.card]=!ui.fullNotes[b.dataset.card];
+      renderCardsOnly(`[data-act="cardNote"][data-card="${b.dataset.card}"]`);return;
+    }
+    else if(act==='expandCards'){
+      syncCards();const ch=chapter(),l=ch.lessons[state.lesson],keys=['rule','cue','trap','app'].map(k=>`${ch.id}:${l.id}:${k}`),full=!keys.every(k=>ui.fullNotes[k]);
+      keys.forEach(k=>{ui.fullNotes[k]=full;ui.openSections[k]=true;});renderCardsOnly('[data-act="expandCards"]');return;
+    }
+    else if(act==='cueBranch'){
+      syncCards();const key=b.dataset.card,l=chapter().lessons[state.lesson];if(!Number.isInteger(i)||i<0||i>=l.visualCards.cue.items.length)return;
+      ui.cueBranches[key]=i;renderCardsOnly(`[data-act="cueBranch"][data-card="${key}"][data-idx="${i}"]`);return;
+    }
     else if(act==='stageView'){if(!currentViewerMolecule())return;ui.stage3d=!ui.stage3d;render('[data-act="stageView"]');return;}
     else if(act==='open3d'){
       const ch=chapter();

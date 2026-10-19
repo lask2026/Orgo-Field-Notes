@@ -17,6 +17,7 @@ try{for(const ch of chapters){
    const step=l.steps[si],id=`${l.id}-step-${si+1}`;await page.locator(`[data-act="step"][data-idx="${si}"]`).click();await shot(id,'learn-molecule',page.locator('.stage'));if(await page.locator('.diagram').count())await shot(id+'-diagram','learn-diagram',page.locator('.diagram'));
    if(step.challenge){await page.locator('[data-act="try"]').click();for(const a of step.challenge.answer)await page.locator(`.atom-key[data-idx="${a}"]`).click();await page.locator('[data-act="checkTry"]').click();assert.equal(await page.locator('.fbox.ok').count(),1);await shot(id+'-challenge','learn-challenge',page.locator('.grid2 > .card'));evidence.interactions.push({id,result:'encoded challenge accepted'});await page.locator('[data-act="try"]').click();}
   }
+  await page.locator('[data-act="expandCards"]').click();await page.locator('[data-act="expandCards"]').click();await shot(l.id+'-visuals','canonical-visual-summaries',page.locator('.tstack'));
  }
  await page.locator('[data-mode="guided"]').click();
  for(const ex of ch.exercises){const li=ch.lessons.findIndex(l=>l.id===ex.lesson),ei=ch.exercises.filter(e=>e.lesson===ex.lesson).indexOf(ex);

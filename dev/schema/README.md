@@ -30,3 +30,10 @@ Molecule `displayFormula` optionally changes conventional element ordering for r
 Spectrum peaks may declare `shape: "broad"` with positive `width` (illustrative full width at half maximum in axis units), or `lines` (1–7) and positive `spacing` for a first-order binomial line cluster. Multiplets with more than one line require spacing; broad bands require width. Spectra are illustrative, never experimental data. Signal identifiers must be distinct from atom letters. Width/spacing/peak height are not integration or inferred experimental coupling constants. Match each lesson step's diagram to its displayed structure.
 
 Concept tabs use explicit Lesson numbers, not textbook section numbers. The wrapped chapter introduction includes the full chapter title even when a native narrow select control abbreviates its option text. Heteroatom selection badges are positioned clear of element labels and bonds; direct element hit regions and alternative 44px atom buttons retain the same stable indices.
+
+
+### Canonical visual summaries
+
+Each lesson declares `visualCards.rule`, `.cue`, `.trap`, and `.app`. Each contains `layout` (`flow`, `compare`, `decision`, `contrast`, or `map`), a plain-text `title`, and 2–5 plain-text `items` with `label` and `text`. These are schematic teaching summaries, not molecular graphs or experimental data. The full HTML prose remains in `cards`; keep the summary consistent with its conditions and scope. Decision items are selectable cases with an outcome in `text`. Use comparisons rather than directional flows for independent classifications. Do not put answer-bearing diagrams in active practice through this interface.
+
+Both the visual summary and full note are included in keyed lesson-review inputs and PDFs. Blind exercise inputs exclude these lesson summaries. Summary/branch selection and note expansion are transient interface state; they do not count as independently solved work.
