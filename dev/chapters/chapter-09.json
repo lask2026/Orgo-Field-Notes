@@ -100,7 +100,77 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "compare",
+          "title": "Read the atom directly attached to acyl carbon",
+          "items": [
+            {
+              "label": "Read the acyl neighbor",
+              "text": "O, N or an acyl-linked O"
+            },
+            {
+              "label": "Classify",
+              "text": "Ester, amide or anhydride"
+            },
+            {
+              "label": "Ring context",
+              "text": "Lactone = cyclic ester; lactam = cyclic amide"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Acyl C attached to O–C",
+              "text": "Ester"
+            },
+            {
+              "label": "Acyl C attached to N",
+              "text": "Amide"
+            },
+            {
+              "label": "Acyl C attached to O–acyl C",
+              "text": "Anhydride"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "No N–H means no amide"
+            },
+            {
+              "label": "Check",
+              "text": "Connectivity; N-substituted amides can lack N–H"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Triacylglycerols",
+              "text": "Ester links"
+            },
+            {
+              "label": "Proteins",
+              "text": "Amide links"
+            },
+            {
+              "label": "Beta-lactams",
+              "text": "Strained cyclic amides"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "acyl-mechanism",
@@ -173,7 +243,69 @@
           },
           "reveal": false
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Addition → tetrahedral intermediate → elimination",
+          "items": [
+            {
+              "label": "Addition",
+              "text": "Nucleophile attacks; pi pair shifts to O"
+            },
+            {
+              "label": "Intermediate",
+              "text": "Tetrahedral acyl center"
+            },
+            {
+              "label": "Elimination",
+              "text": "C=O reforms as leaving group departs"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Acyl substituent replaced",
+              "text": "Addition–elimination retains C=O"
+            },
+            {
+              "label": "Aldehyde/ketone without viable leaving group",
+              "text": "Compare ordinary nucleophilic addition"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Conjugation predicts a universal rate effect"
+            },
+            {
+              "label": "Check",
+              "text": "Leaving group, resonance, substrate and conditions"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Ordinary peptide bond",
+              "text": "Resonance helps resist uncatalyzed hydrolysis"
+            },
+            {
+              "label": "Beta-lactams",
+              "text": "Ring geometry can reduce ordinary amide stabilization"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "derivative-reactions",
@@ -238,7 +370,69 @@
           },
           "reveal": true
         }
-      ]
+      ],
+      "visualCards": {
+        "rule": {
+          "layout": "flow",
+          "title": "Conditions determine the protonation state",
+          "items": [
+            {
+              "label": "Acyl fragment",
+              "text": "Track what remains with C=O"
+            },
+            {
+              "label": "Departing group",
+              "text": "Track separately"
+            },
+            {
+              "label": "Workup",
+              "text": "Sets final protonation state"
+            }
+          ]
+        },
+        "cue": {
+          "layout": "decision",
+          "title": "Choose the case that applies",
+          "items": [
+            {
+              "label": "Basic ester hydrolysis",
+              "text": "Carboxylate is the major acid-derived product"
+            },
+            {
+              "label": "Acid workup",
+              "text": "Can give the neutral carboxylic acid"
+            }
+          ]
+        },
+        "trap": {
+          "layout": "contrast",
+          "title": "Shortcut versus a better check",
+          "items": [
+            {
+              "label": "Avoid",
+              "text": "Drawing neutral acid before acid workup"
+            },
+            {
+              "label": "Check",
+              "text": "Reaction-medium protonation; amide hydrolysis usually needs stronger conditions"
+            }
+          ]
+        },
+        "app": {
+          "layout": "map",
+          "title": "Connect the concept",
+          "items": [
+            {
+              "label": "Proteases",
+              "text": "Catalyze peptide hydrolysis"
+            },
+            {
+              "label": "Catalysis",
+              "text": "Activates nucleophiles and stabilizes intermediates"
+            }
+          ]
+        }
+      }
     }
   ],
   "exercises": [
