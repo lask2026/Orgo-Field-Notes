@@ -4184,5 +4184,292 @@
     "h": 200,
     "cond": "ethyl ethanoate",
     "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "benzoicacid": {
+    "name": "benzoic acid",
+    "formula": "C7H6O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 160,
+        "y": 95
+      },
+      {
+        "e": "C",
+        "x": 220,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 220,
+        "y": 200
+      },
+      {
+        "e": "C",
+        "x": 160,
+        "y": 235
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 200
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 160,
+        "y": 35
+      },
+      {
+        "e": "O",
+        "x": 225,
+        "y": 5
+      },
+      {
+        "e": "O",
+        "x": 95,
+        "y": 5
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        2
+      ],
+      [
+        6,
+        8,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 265,
+    "cond": "benzoic acid",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "benzoate": {
+    "name": "benzoate",
+    "formula": "C7H5O2",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 160,
+        "y": 95
+      },
+      {
+        "e": "C",
+        "x": 220,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 220,
+        "y": 200
+      },
+      {
+        "e": "C",
+        "x": 160,
+        "y": 235
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 200
+      },
+      {
+        "e": "C",
+        "x": 100,
+        "y": 130
+      },
+      {
+        "e": "C",
+        "x": 160,
+        "y": 35
+      },
+      {
+        "e": "O",
+        "x": 225,
+        "y": 5
+      },
+      {
+        "e": "O",
+        "x": 95,
+        "y": 5,
+        "charge": -1
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        2
+      ],
+      [
+        6,
+        8,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 265,
+    "cond": "benzoate",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
+  },
+  "toluene": {
+    "name": "methylbenzene (toluene)",
+    "formula": "C7H8",
+    "atoms": [
+      {
+        "e": "C",
+        "x": 170,
+        "y": 37
+      },
+      {
+        "e": "C",
+        "x": 228.88972745734185,
+        "y": 71
+      },
+      {
+        "e": "C",
+        "x": 228.88972745734185,
+        "y": 139
+      },
+      {
+        "e": "C",
+        "x": 170,
+        "y": 173
+      },
+      {
+        "e": "C",
+        "x": 111.11027254265817,
+        "y": 139
+      },
+      {
+        "e": "C",
+        "x": 111.11027254265818,
+        "y": 71
+      },
+      {
+        "e": "C",
+        "x": 170,
+        "y": 5
+      }
+    ],
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        6,
+        1
+      ]
+    ],
+    "w": 320,
+    "h": 203,
+    "cond": "methylbenzene (toluene)",
+    "review": "Original teaching graph; author reviewed connectivity and formula; external expert review pending."
   }
 }
